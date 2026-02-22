@@ -150,13 +150,32 @@ const STEPS: StepData[] = [
     content: (
       <>
         <p>An <strong>Individual Taxpayer Identification Number (ITIN)</strong> is a tax ID from the IRS for people who aren&apos;t eligible for an SSN. You need this for Chase, Citi, Capital One, and most non-Amex issuers.</p>
-        <h4 className="font-semibold mt-4 mb-2">Method 1: Use a Tax Service (Recommended)</h4>
+
+        <h4 className="font-semibold mt-4 mb-2">Method 1: Use a Tax Service (Hands-off)</h4>
         <p>Services like <strong>US Tax Resources</strong> handle the entire process for $150–300. They prepare your W-7 form and file a 1040-NR tax return on your behalf.</p>
-        <h4 className="font-semibold mt-4 mb-2">Method 2: DIY (Cheaper but Riskier)</h4>
-        <p>Fill out Form W-7, prepare a 1040-NR with US-source income, and mail everything to the IRS with identity documentation.</p>
+
+        <h4 className="font-semibold mt-4 mb-2">Method 2: DIY with Gambling Income (~$10)</h4>
+        <TipBox>
+          <strong>The DIY approach is straightforward.</strong> File a 1040-NR declaring $75–100 of US-source gambling income (from US online casinos — self-declared, no proof needed). You&apos;ll owe ~$9 in taxes, and this creates a valid reason for an ITIN.
+        </TipBox>
+        <p>You&apos;ll need: <strong>Form W-7</strong>, <strong>Form 1040-NR</strong>, <strong>Schedule 1</strong>, <strong>Schedule OI</strong>, your Canadian SIN, and a list of dates you were in the US during the tax year.</p>
+
         <WarningBox>
-          <strong>Important 2025 update:</strong> The IRS no longer accepts certified passport copies. You must either send your <strong>original passport</strong> or visit an <strong>IRS Taxpayer Assistance Center</strong> in person.
+          <strong>Important 2025 update:</strong> The IRS <strong>no longer accepts certified passport copies</strong>. Your options: (1) Visit an <strong>IRS TAC in person</strong> with your passport (best), (2) mail your original passport (~5 months to return), or (3) use a Certified Acceptance Agent.
         </WarningBox>
+
+        <details className="mt-3 mb-3 border border-gray-200 dark:border-gray-700 rounded-lg">
+          <summary className="cursor-pointer p-3 font-semibold text-blue-600 dark:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg text-sm">
+            📋 TAC appointments, payment details &amp; more
+          </summary>
+          <div className="p-3 pt-0 text-sm space-y-3">
+            <p><strong>TAC Appointments:</strong> Call 844-545-5640 (or 267-941-1000 from Canada). Book up to 2 months ahead. Bring passport + copies of all forms. Takes 20 min–1 hour.</p>
+            <p><strong>Timeline:</strong> 6–8 weeks processing. Late penalty caps at ~$9. Pay via check or IRS online. ITIN expires if unused for 3 years — renew by filing.</p>
+            <p><strong>Lost your ITIN letter?</strong> Call IRS at +1 267-941-1000 with your name, address, and birthdate.</p>
+            <p className="text-gray-500 dark:text-gray-400 italic">This is general information, not tax advice.</p>
+          </div>
+        </details>
+
         <TipBox>
           You don&apos;t need to wait for your ITIN to start building credit — that&apos;s why we get the Amex card first. Apply for your ITIN in parallel while your card builds history.
         </TipBox>

@@ -359,22 +359,73 @@ export default function USCardsGuidePage() {
               An <strong>Individual Taxpayer Identification Number (ITIN)</strong> is essentially a tax ID number issued by the IRS for people who aren&apos;t eligible for a Social Security Number. You need this to apply for cards from Chase, Citi, Capital One, Bank of America, and most non-Amex issuers.
             </p>
 
-            <h4 className="font-semibold mt-4 mb-2">Method 1: Use a Tax Service (Recommended)</h4>
+            <h4 className="font-semibold mt-4 mb-2">Method 1: Use a Tax Service (Easiest)</h4>
             <p>
-              Services like <strong>US Tax Resources</strong> and <strong>FrugalFlyer&apos;s ITIN service</strong> handle the entire process for $150–300. They prepare your W-7 form and file a 1040-NR tax return on your behalf. This is the easiest and safest option for most people.
+              Services like <strong>US Tax Resources</strong> and <strong>FrugalFlyer&apos;s ITIN service</strong> handle the entire process for $150–300. They prepare your W-7 form and file a 1040-NR tax return on your behalf. This is the hands-off option if you don&apos;t want to deal with IRS forms.
             </p>
 
-            <h4 className="font-semibold mt-4 mb-2">Method 2: DIY (Cheaper but Riskier)</h4>
+            <h4 className="font-semibold mt-4 mb-2">Method 2: DIY with the Gambling Income Method (~$10)</h4>
+            <TipBox>
+              <strong>The DIY method is straightforward</strong> and costs under $10. You file a 1040-NR tax return declaring a small amount of US-source gambling income ($75–100 USD) from US-based online casinos. You self-declare the income — no proof of gambling is required. This creates a valid reason to need an ITIN and you&apos;ll owe about $9 USD in taxes.
+            </TipBox>
             <p>
-              You can do it yourself: fill out Form W-7, prepare a 1040-NR with a small amount of US-source income declared, and mail everything to the IRS. You&apos;ll also need to include identity documentation.
+              You fill out <strong>Form W-7</strong> (the ITIN application), <strong>Form 1040-NR</strong> (non-resident tax return), <strong>Schedule 1</strong>, and <strong>Schedule OI</strong>. You&apos;ll also need your Canadian SIN and a list of dates you were physically present in the US during the tax year.
             </p>
 
             <WarningBox>
-              <strong>Important 2025 update:</strong> The IRS no longer accepts certified passport copies. You must either send your <strong>original passport</strong> to the IRS or visit an <strong>IRS Taxpayer Assistance Center</strong> in person. If mailing your passport, use tracked priority mail — there have been cases of passports being lost in the process.
+              <strong>Important 2025 update:</strong> The IRS <strong>no longer accepts certified passport copies</strong> from Service Canada. Your identity verification options are now:
+              <ol className="list-decimal ml-5 mt-2">
+                <li><strong>Visit an IRS Taxpayer Assistance Center (TAC) in person</strong> — bring your passport, no mailing needed. This is the best option.</li>
+                <li><strong>Mail your original passport</strong> to the IRS — they return it, but it takes ~5 months. Risky.</li>
+                <li><strong>Use a Certified Acceptance Agent</strong> — more expensive but avoids mailing your passport.</li>
+              </ol>
             </WarningBox>
 
+            <details className="mt-4 mb-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+              <summary className="cursor-pointer p-4 font-semibold text-blue-600 dark:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg">
+                📋 Detailed ITIN Application Guide (TAC appointments, payment, timelines)
+              </summary>
+              <div className="p-4 pt-0 space-y-4">
+                <h5 className="font-semibold mt-2">In-Person TAC Appointment Tips</h5>
+                <ul>
+                  <li>Call <strong>844-545-5640</strong> to schedule an appointment (up to 2 months in advance).</li>
+                  <li>If you have trouble calling from a Canadian number, try <strong>267-941-1000</strong> (not toll-free).</li>
+                  <li>Bring your passport plus a <strong>duplicate copy of all forms</strong>.</li>
+                  <li>The appointment takes 20 minutes to 1 hour.</li>
+                  <li>The clerk checks completeness, not approval — remind them you&apos;re filing to submit a 1040-NR.</li>
+                </ul>
+
+                <h5 className="font-semibold mt-2">What You Need</h5>
+                <ul>
+                  <li>W-7 Form (ITIN application)</li>
+                  <li>1040-NR Form (non-resident tax return)</li>
+                  <li>Schedule 1 and Schedule OI (supplementary forms)</li>
+                  <li>Your passport (for identity verification)</li>
+                  <li>Your Canadian SIN</li>
+                  <li>List of dates physically present in the USA for the tax year</li>
+                </ul>
+
+                <h5 className="font-semibold mt-2">Timeline &amp; Payment</h5>
+                <ul>
+                  <li>Processing takes <strong>6–8 weeks</strong> after submission (can stretch longer during tax season).</li>
+                  <li>Late filing penalty caps at 100% of tax owed — so about <strong>$9</strong>.</li>
+                  <li>Pay via check or the IRS online system.</li>
+                  <li>Your ITIN <strong>expires if not used</strong> on a tax return every 3 years — renew by filing.</li>
+                </ul>
+
+                <h5 className="font-semibold mt-2">If You Lose Your ITIN Letter</h5>
+                <p>
+                  Call the IRS at <strong>+1 267-941-1000</strong> with your name, address, and birthdate. Request a generic letter with your ITIN.
+                </p>
+
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-4 italic">
+                  Note: This is general information, not tax advice. Tax forms and requirements may change — always verify with the IRS or a tax professional.
+                </p>
+              </div>
+            </details>
+
             <p>
-              Processing currently takes about <strong>8 weeks</strong>, though it can stretch longer during peak tax season. You&apos;ll receive your ITIN in a letter mailed to your US address.
+              You&apos;ll receive your ITIN in a letter mailed to your US address.
             </p>
 
             <TipBox>
