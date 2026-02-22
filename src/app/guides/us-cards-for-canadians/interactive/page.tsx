@@ -531,8 +531,8 @@ function USCardsGuideWizard() {
 
     // Update URL
     if (step === 0) router.replace('/guides/us-cards-for-canadians/interactive', { scroll: false });
-    else if (step > TOTAL_STEPS) router.replace('/guides/us-cards-for-canadians?step=summary', { scroll: false });
-    else router.replace(`/guides/us-cards-for-canadians?step=${step}`, { scroll: false });
+    else if (step > TOTAL_STEPS) router.replace('/guides/us-cards-for-canadians/interactive?step=summary', { scroll: false });
+    else router.replace(`/guides/us-cards-for-canadians/interactive?step=${step}`, { scroll: false });
 
     setTimeout(() => {
       setCurrentStep(step);
