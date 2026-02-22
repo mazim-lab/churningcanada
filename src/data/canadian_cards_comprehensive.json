@@ -1347,7 +1347,7 @@
   {
     "slug": "brim-mastercard",
     "name": "Brim Mastercard",
-    "issuer": "CIBC",
+    "issuer": "Brim Financial",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -1418,7 +1418,7 @@
   {
     "slug": "brim-world-mastercard",
     "name": "Brim World Mastercard",
-    "issuer": "CIBC",
+    "issuer": "Brim Financial",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 99,
@@ -1708,7 +1708,7 @@
   {
     "slug": "cibc-aeroplan-visa-business-card",
     "name": "CIBC Aeroplan Visa Business Card",
-    "issuer": "Scotiabank",
+    "issuer": "CIBC",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 180,
@@ -1876,7 +1876,7 @@
   {
     "slug": "cibc-aeroplan-visa-infinite-privilege-card",
     "name": "CIBC Aeroplan Visa Infinite Privilege Card",
-    "issuer": "Scotiabank",
+    "issuer": "CIBC",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 599,
@@ -2228,7 +2228,7 @@
   {
     "slug": "cibc-aventura-visa-card-for-business",
     "name": "CIBC Aventura Visa Card for Business",
-    "issuer": "Scotiabank",
+    "issuer": "CIBC",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 120,
@@ -2538,7 +2538,7 @@
   {
     "slug": "cibc-costco-mastercard",
     "name": "CIBC Costco Mastercard",
-    "issuer": "Scotiabank",
+    "issuer": "CIBC",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -2574,7 +2574,7 @@
   {
     "slug": "cibc-dividend-visa-card-for-students",
     "name": "CIBC Dividend Visa Card for Students",
-    "issuer": "Scotiabank",
+    "issuer": "CIBC",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -2912,7 +2912,7 @@
   {
     "slug": "cibc-select-visa-card",
     "name": "CIBC Select Visa Card",
-    "issuer": "Scotiabank",
+    "issuer": "CIBC",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 29,
@@ -2948,7 +2948,7 @@
   {
     "slug": "canadian-tire-triangle-world-elite-mastercard",
     "name": "Canadian Tire Triangle World Elite Mastercard",
-    "issuer": "RBC",
+    "issuer": "Canadian Tire",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -3158,7 +3158,7 @@
   {
     "slug": "desjardins-odyssey-gold-visa",
     "name": "Desjardins Odyssey Gold Visa",
-    "issuer": "TD",
+    "issuer": "Desjardins",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 110,
@@ -3200,7 +3200,7 @@
   {
     "slug": "desjardins-odyssey-visa-infinite-privilege",
     "name": "Desjardins Odyssey Visa Infinite Privilege",
-    "issuer": "TD",
+    "issuer": "Desjardins",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 395,
@@ -3245,7 +3245,7 @@
   {
     "slug": "desjardins-odyssey-world-elite-mastercard",
     "name": "Desjardins Odyssey World Elite Mastercard",
-    "issuer": "TD",
+    "issuer": "Desjardins",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 130,
@@ -3288,7 +3288,7 @@
   {
     "slug": "home-trust-preferred-visa-card",
     "name": "Home Trust Preferred Visa Card",
-    "issuer": "MBNA",
+    "issuer": "Home Trust",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -3667,7 +3667,7 @@
   {
     "slug": "mbna-true-line-mastercard",
     "name": "MBNA True Line Mastercard",
-    "issuer": "Capital One",
+    "issuer": "MBNA",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -4303,7 +4303,7 @@
   {
     "slug": "pc-financial-world-elite-mastercard",
     "name": "PC Financial World Elite Mastercard",
-    "issuer": "Simplii Financial",
+    "issuer": "PC Financial",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 120,
@@ -4527,7 +4527,7 @@
   {
     "slug": "rbc-british-airways-visa-infinite",
     "name": "RBC British Airways Visa Infinite",
-    "issuer": "Brim Financial",
+    "issuer": "RBC",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 165,
@@ -4682,7 +4682,7 @@
   {
     "slug": "rbc-cash-back-preferred-world-elite-mastercard",
     "name": "RBC Cash Back Preferred World Elite Mastercard",
-    "issuer": "Brim Financial",
+    "issuer": "RBC",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 99,
@@ -4867,7 +4867,7 @@
   {
     "slug": "rogers-red-mastercard",
     "name": "Rogers Red Mastercard",
-    "issuer": "Home Trust",
+    "issuer": "Rogers",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -4903,7 +4903,7 @@
   {
     "slug": "rogers-red-world-elite-mastercard",
     "name": "Rogers Red World Elite Mastercard",
-    "issuer": "Home Trust",
+    "issuer": "Rogers",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -5593,7 +5593,7 @@
   {
     "slug": "scotiabank-scene-visa-card",
     "name": "Scotiabank Scene+ Visa Card",
-    "issuer": "Canadian Tire",
+    "issuer": "Scotiabank",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -5706,7 +5706,7 @@
   {
     "slug": "simplii-financial-cash-back-visa-card",
     "name": "Simplii Financial Cash Back Visa Card",
-    "issuer": "Desjardins",
+    "issuer": "Simplii Financial",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -5805,7 +5805,7 @@
   {
     "slug": "td-aeroplan-visa-infinite-card",
     "name": "TD Aeroplan Visa Infinite Card",
-    "issuer": "Meridian",
+    "issuer": "TD",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 139,
@@ -6497,7 +6497,7 @@
   {
     "slug": "td-rewards-visa-card",
     "name": "TD Rewards Visa Card",
-    "issuer": "Meridian",
+    "issuer": "TD",
     "network": "Visa",
     "card_type": "rewards",
     "annual_fee": 0,
@@ -6766,7 +6766,7 @@
   {
     "slug": "westjet-rbc-mastercard",
     "name": "WestJet RBC Mastercard",
-    "issuer": "Brim Financial",
+    "issuer": "RBC",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 39,
@@ -6804,7 +6804,7 @@
   {
     "slug": "westjet-rbc-world-elite-mastercard",
     "name": "WestJet RBC World Elite Mastercard",
-    "issuer": "Brim Financial",
+    "issuer": "RBC",
     "network": "Mastercard",
     "card_type": "rewards",
     "annual_fee": 139,
