@@ -530,7 +530,7 @@ function USCardsGuideWizard() {
     setAnimating(true);
 
     // Update URL
-    if (step === 0) router.replace('/guides/us-cards-for-canadians', { scroll: false });
+    if (step === 0) router.replace('/guides/us-cards-for-canadians/interactive', { scroll: false });
     else if (step > TOTAL_STEPS) router.replace('/guides/us-cards-for-canadians?step=summary', { scroll: false });
     else router.replace(`/guides/us-cards-for-canadians?step=${step}`, { scroll: false });
 
@@ -558,6 +558,19 @@ function USCardsGuideWizard() {
 
   return (
     <>
+      {/* Article toggle banner */}
+      <div className="mx-auto max-w-3xl px-4 pt-6">
+        <a
+          href="/guides/us-cards-for-canadians"
+          className="flex items-center justify-between gap-3 rounded-xl border border-gold/20 bg-gold/[0.04] dark:bg-gold/[0.08] px-5 py-3.5 group hover:border-gold/40 transition-colors"
+        >
+          <span className="text-sm text-foreground/80">
+            <strong className="text-gold-dark dark:text-gold">Prefer to read everything at once?</strong>{' '}View the full article →
+          </span>
+          <ArrowRight className="w-4 h-4 text-gold-dark dark:text-gold shrink-0 group-hover:translate-x-0.5 transition-transform" />
+        </a>
+      </div>
+
       <div className="min-h-screen">
         {/* Progress bar (hidden on intro) */}
         {!isIntro && (
