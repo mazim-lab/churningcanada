@@ -68,17 +68,17 @@ export function getNetworkStyle(network: string): NetworkStyle {
   return { label: network.slice(0, 4).toUpperCase(), bg: 'bg-slate-500', text: 'text-white' };
 }
 
-// Category color coding for left border
+// Category color coding for left border — warm tones
 export function getCategoryColor(cardType: string): string {
   switch (cardType.toLowerCase()) {
-    case 'travel': return 'border-l-blue-500';
-    case 'cashback': return 'border-l-green-500';
-    case 'rewards': return 'border-l-purple-500';
-    case 'hotel': return 'border-l-orange-500';
-    case 'airline': return 'border-l-red-500';
-    case 'business': return 'border-l-indigo-500';
-    case 'student': return 'border-l-teal-500';
-    case 'secured': return 'border-l-slate-500';
-    default: return 'border-l-slate-400';
+    case 'travel': return 'border-l-emerald-700';
+    case 'cashback': return 'border-l-amber-500';
+    case 'rewards': return 'border-l-purple-700';
+    case 'hotel': return 'border-l-amber-800';
+    case 'airline': return 'border-l-sky-500';
+    case 'business': return 'border-l-stone-600';
+    case 'student': return 'border-l-teal-600';
+    case 'secured': return 'border-l-stone-400';
+    default: return 'border-l-stone-400';
   }
 }

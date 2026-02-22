@@ -43,7 +43,7 @@ export function CardGrid({ cards, listView = false }: { cards: Card[]; listView?
   }
 
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 animate-fade-in">
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-fade-in">
       {cards.map(card => (
         <CardGridItem key={`${card.country}-${card.slug}`} card={card} />
       ))}
@@ -53,9 +53,9 @@ export function CardGrid({ cards, listView = false }: { cards: Card[]; listView?
 
 export function CardSkeleton() {
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {Array.from({ length: 6 }).map((_, i) => (
-        <div key={i} className="rounded-xl border border-border bg-card p-5 space-y-3">
+        <div key={i} className="rounded-2xl border border-border bg-card p-6 space-y-3">
           <div className="flex items-start justify-between">
             <div className="space-y-2 flex-1">
               <div className="skeleton h-4 w-16" />
@@ -87,7 +87,7 @@ function CardGridItem({ card }: { card: Card }) {
   return (
     <a
       href={`/cards/${card.slug}`}
-      className={`card-hover group rounded-xl border border-border bg-card p-5 hover:shadow-lg hover:border-primary/20 border-l-[3px] ${categoryBorder}`}
+      className={`card-hover group rounded-2xl border border-border bg-card p-6 hover:shadow-lg hover:border-primary/20 border-l-[3px] ${categoryBorder}`}
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-3">
@@ -165,7 +165,7 @@ function CardListItem({ card }: { card: Card }) {
   return (
     <a
       href={`/cards/${card.slug}`}
-      className={`card-hover group flex items-center gap-4 rounded-xl border border-border bg-card p-4 hover:shadow-md hover:border-primary/20 border-l-[3px] ${categoryBorder}`}
+      className={`card-hover group flex items-center gap-4 rounded-2xl border border-border bg-card p-5 hover:shadow-md hover:border-primary/20 border-l-[3px] ${categoryBorder}`}
     >
       <IssuerAvatar issuer={card.issuer} size="md" />
       <div className="flex-1 min-w-0">

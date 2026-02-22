@@ -122,7 +122,7 @@ function CardsContent() {
         <div className="flex gap-1">
           {(['all', 'CA', 'US'] as const).map(c => (
             <button key={c} onClick={() => setCountry(c)}
-              className={`flex-1 rounded-lg py-2 text-sm font-medium transition-colors ${country === c ? 'bg-primary text-white' : 'bg-muted hover:bg-muted/80'}`}>
+              className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${country === c ? 'bg-primary text-white' : 'bg-muted hover:bg-muted/80'}`}>
               {c === 'all' ? 'All' : c === 'CA' ? '🇨🇦 Canada' : '🇺🇸 US'}
             </button>
           ))}
@@ -142,9 +142,9 @@ function CardsContent() {
 
       <CollapsibleSection title="Personal / Business" defaultOpen>
         <div className="flex gap-1">
-          <button onClick={() => { setPersonalOnly(false); setBusinessOnly(false); }} className={`flex-1 rounded-lg py-2 text-sm font-medium transition-colors ${!personalOnly && !businessOnly ? 'bg-primary text-white' : 'bg-muted'}`}>All</button>
-          <button onClick={() => { setPersonalOnly(true); setBusinessOnly(false); }} className={`flex-1 rounded-lg py-2 text-sm font-medium transition-colors ${personalOnly ? 'bg-primary text-white' : 'bg-muted'}`}>Personal</button>
-          <button onClick={() => { setBusinessOnly(true); setPersonalOnly(false); }} className={`flex-1 rounded-lg py-2 text-sm font-medium transition-colors ${businessOnly ? 'bg-primary text-white' : 'bg-muted'}`}>Business</button>
+          <button onClick={() => { setPersonalOnly(false); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${!personalOnly && !businessOnly ? 'bg-primary text-white' : 'bg-muted'}`}>All</button>
+          <button onClick={() => { setPersonalOnly(true); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${personalOnly ? 'bg-primary text-white' : 'bg-muted'}`}>Personal</button>
+          <button onClick={() => { setBusinessOnly(true); setPersonalOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${businessOnly ? 'bg-primary text-white' : 'bg-muted'}`}>Business</button>
         </div>
       </CollapsibleSection>
 
@@ -225,7 +225,7 @@ function CardsContent() {
             className="rounded-lg border border-border bg-background py-2 px-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary">
             {SORT_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
-          <div className="hidden sm:flex border border-border rounded-lg overflow-hidden">
+          <div className="hidden sm:flex border border-border rounded-full overflow-hidden">
             <button onClick={() => setListView(false)} className={`p-2 ${!listView ? 'bg-primary text-white' : 'bg-background'}`}><Grid3X3 className="w-4 h-4" /></button>
             <button onClick={() => setListView(true)} className={`p-2 ${listView ? 'bg-primary text-white' : 'bg-background'}`}><List className="w-4 h-4" /></button>
           </div>
@@ -239,7 +239,7 @@ function CardsContent() {
       {activeFilterPills.length > 0 && (
         <div className="flex flex-wrap items-center gap-2 mb-5">
           {activeFilterPills.map((pill, i) => (
-            <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 text-primary px-3 py-1 text-xs font-medium dark:bg-primary-light/20 dark:text-blue-300">
+            <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 text-primary px-3 py-1 text-xs font-medium dark:bg-primary-light/20 dark:text-emerald-300">
               {pill.label}
               <button onClick={pill.onRemove} className="hover:text-red-500 transition-colors"><X className="w-3 h-3" /></button>
             </span>

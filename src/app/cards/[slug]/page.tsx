@@ -117,7 +117,7 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
                   const isTop = i === 0;
                   return (
                     <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${isTop ? 'bg-gold/10 border border-gold/20' : 'bg-muted/70'}`}>
-                      <span className={`inline-flex items-center justify-center rounded-full min-w-[3rem] h-9 px-2 text-base font-bold ${isTop ? 'bg-gradient-to-br from-gold to-gold-dark text-primary-dark' : 'bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-blue-300'}`}>
+                      <span className={`inline-flex items-center justify-center rounded-full min-w-[3rem] h-9 px-2 text-base font-bold ${isTop ? 'bg-gradient-to-br from-gold to-gold-dark text-primary-dark' : 'bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-emerald-300'}`}>
                         {multiplier}
                       </span>
                       <span className="text-sm font-medium">{er.category}</span>
@@ -214,7 +214,7 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
 
       {/* Apply link */}
       {card.apply_url && (
-        <a href={card.apply_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-medium text-white hover:bg-primary-light transition-colors mb-8">
+        <a href={card.apply_url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-medium text-white hover:bg-primary-light transition-colors mb-8">
           Learn More <ExternalLink className="w-4 h-4" />
         </a>
       )}
@@ -226,7 +226,7 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
           <div className="flex gap-4 overflow-x-auto pb-2 -mx-1 px-1 snap-x">
             {similar.map(c => (
               <Link key={c.slug} href={`/cards/${c.slug}`}
-                className="card-hover flex-none w-[260px] snap-start rounded-xl border border-border bg-card p-4 hover:shadow-md hover:border-primary/20">
+                className="card-hover flex-none w-[260px] snap-start rounded-2xl border border-border bg-card p-5 hover:shadow-md hover:border-primary/20">
                 <div className="flex items-center gap-3 mb-2">
                   <IssuerAvatar issuer={c.issuer} size="sm" />
                   <div className="min-w-0">

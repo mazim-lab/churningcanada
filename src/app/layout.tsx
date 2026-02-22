@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, DM_Sans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
@@ -8,6 +8,12 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-display",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${inter.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`scroll-smooth ${inter.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground antialiased font-sans">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />
           <main className="min-h-[calc(100vh-140px)]">{children}</main>
           <Footer />
@@ -42,8 +48,9 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
-        <a href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground">
-          <span className="text-gold-text dark:text-gold text-2xl leading-none">✦</span> ChurningCanada
+        <a href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight font-[family-name:var(--font-display)]">
+          <span className="text-primary text-2xl leading-none">Churning</span><span className="text-gold-text dark:text-gold text-2xl leading-none">Canada</span>
+          <span className="text-xl leading-none ml-0.5">🍁</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           <a href="/cards" className="text-muted-foreground hover:text-foreground transition-colors">Cards</a>
@@ -52,7 +59,7 @@ function Header() {
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <a href="/cards" className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-light transition-colors">
+          <a href="/cards" className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-white hover:bg-primary-light transition-colors">
             Explore Cards
           </a>
         </div>

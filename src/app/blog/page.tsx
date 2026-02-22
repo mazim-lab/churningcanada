@@ -43,13 +43,13 @@ export default function BlogPage() {
       {/* Posts */}
       <div className="space-y-6 animate-fade-in">
         {filtered.map(post => (
-          <article key={post.title} className="card-hover rounded-xl border border-border bg-card overflow-hidden hover:shadow-md">
+          <article key={post.title} className="card-hover rounded-2xl border border-border bg-card overflow-hidden hover:shadow-md">
             <div className={`h-32 ${post.gradient} flex items-center justify-center`}>
               <span className="text-white/20 text-sm font-medium tracking-wider uppercase">Coming Soon</span>
             </div>
-            <div className="p-5">
+            <div className="p-6">
               <div className="flex items-center gap-3 mb-3">
-                <span className="rounded-full bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-blue-300 px-3 py-0.5 text-xs font-medium">{post.category}</span>
+                <span className="rounded-full bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-emerald-300 px-3 py-0.5 text-xs font-medium">{post.category}</span>
                 <span className="text-xs text-muted-foreground">{post.date}</span>
               </div>
               <h2 className="text-lg font-semibold mb-2 leading-snug hover:text-primary transition-colors cursor-pointer">{post.title}</h2>
@@ -72,7 +72,7 @@ export default function BlogPage() {
             placeholder="your@email.com"
             className="flex-1 rounded-lg bg-white/10 border border-white/20 px-4 py-2.5 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-gold/50 backdrop-blur-sm"
           />
-          <button type="submit" className="rounded-lg bg-gold px-5 py-2.5 text-sm font-semibold text-primary-dark hover:bg-gold-light transition-colors">
+          <button type="submit" className="rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-primary-dark hover:bg-gold-light transition-colors">
             Subscribe
           </button>
         </form>

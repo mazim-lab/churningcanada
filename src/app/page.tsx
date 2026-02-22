@@ -126,7 +126,7 @@ export default function HomePage() {
 
       {/* Blog placeholder */}
       <section className="bg-muted/50 border-t border-border/50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-24">
           <h2 className="text-2xl font-bold tracking-tight mb-10">Latest from the Blog</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -134,11 +134,11 @@ export default function HomePage() {
               { title: 'Top US Cards for Canadians in 2025', gradient: 'blog-gradient-2' },
               { title: 'Aeroplan vs Scene+: Which is Better?', gradient: 'blog-gradient-3' },
             ].map((post, i) => (
-              <div key={post.title} className="card-hover rounded-xl border border-border bg-card overflow-hidden hover:shadow-md">
+              <div key={post.title} className="card-hover rounded-2xl border border-border bg-card overflow-hidden hover:shadow-md">
                 <div className={`h-36 ${post.gradient} flex items-center justify-center`}>
                   <CreditCard className="w-8 h-8 text-white/20" />
                 </div>
-                <div className="p-5">
+                <div className="p-6">
                   <h3 className="font-semibold mb-2 leading-snug">{post.title}</h3>
                   <p className="text-sm text-muted-foreground">Coming soon...</p>
                 </div>
