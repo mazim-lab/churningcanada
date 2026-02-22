@@ -1,4 +1,4 @@
-import { allCards, Card, BENEFIT_LABELS, Benefits } from '@/data/cards';
+import { allCards, Card, BENEFIT_LABELS, Benefits, getMaxFirstYearValue } from '@/data/cards';
 import { IssuerAvatar } from '@/components/IssuerAvatar';
 import { NetworkBadge } from '@/components/NetworkBadge';
 import { Check, X, ExternalLink, ChevronRight } from 'lucide-react';
@@ -76,6 +76,11 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
         <StatCard label="First Year Value" value={card.first_year_value > 0 ? `$${card.first_year_value}` : '—'} highlight />
       </div>
 
+      {/* Value Meter */}
+      {card.first_year_value > 0 && (
+        <ValueMeter value={card.first_year_value} max={getMaxFirstYearValue()} />
+      )}
+
       {/* Welcome bonus conditions */}
       {card.welcome_bonus_conditions && (
         <div className="rounded-xl border border-gold/30 bg-gold/5 p-5 mb-8">
@@ -86,12 +91,12 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
 
       {/* Notes for Canadians */}
       {card.notes_for_canadians && (
-        <div className="rounded-xl border-2 border-red-200 dark:border-red-800/50 bg-gradient-to-r from-red-50 to-white dark:from-red-900/10 dark:to-card p-5 mb-8">
+        <div className="rounded-xl border-2 border-red-200 dark:border-red-800/50 bg-gradient-to-br from-red-50/80 via-orange-50/30 to-white dark:from-red-900/15 dark:via-orange-900/5 dark:to-card p-5 mb-8">
           <div className="flex items-center gap-2 mb-2">
-            <span className="text-2xl">🇨🇦</span>
-            <p className="text-sm font-bold text-red-800 dark:text-red-300">Notes for Canadians</p>
+            <span className="text-2xl">🍁</span>
+            <p className="text-sm font-bold tracking-wide text-red-800 dark:text-red-300">Notes for Canadians</p>
           </div>
-          <p className="text-sm text-muted-foreground leading-relaxed">{card.notes_for_canadians}</p>
+          <p className="text-sm text-muted-foreground leading-relaxed italic">{card.notes_for_canadians}</p>
         </div>
       )}
 
@@ -101,12 +106,24 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
           <h2 className="text-lg font-bold mb-4">Earn Rates</h2>
           {card.earn_rates.length > 0 ? (
             <div className="space-y-2">
-              {card.earn_rates.map((er, i) => (
-                <div key={i} className="flex items-center justify-between rounded-lg bg-muted/70 px-4 py-3">
-                  <span className="text-sm">{er.category}</span>
-                  <span className="rounded-full bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-blue-300 px-3 py-0.5 text-xs font-bold">{er.rate}</span>
-                </div>
-              ))}
+              {[...card.earn_rates]
+                .sort((a, b) => {
+                  const numA = parseFloat(a.rate) || 0;
+                  const numB = parseFloat(b.rate) || 0;
+                  return numB - numA;
+                })
+                .map((er, i) => {
+                  const multiplier = er.rate.match(/^[\d.]+x?/)?.[0] || er.rate;
+                  const isTop = i === 0;
+                  return (
+                    <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${isTop ? 'bg-gold/10 border border-gold/20' : 'bg-muted/70'}`}>
+                      <span className={`inline-flex items-center justify-center rounded-full min-w-[3rem] h-9 px-2 text-base font-bold ${isTop ? 'bg-gradient-to-br from-gold to-gold-dark text-primary-dark' : 'bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-blue-300'}`}>
+                        {multiplier}
+                      </span>
+                      <span className="text-sm font-medium">{er.category}</span>
+                    </div>
+                  );
+                })}
             </div>
           ) : card.earn_rates_summary ? (
             <p className="text-sm text-muted-foreground leading-relaxed">{card.earn_rates_summary}</p>
@@ -120,17 +137,17 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
           <h2 className="text-lg font-bold mb-4">Benefits & Insurance</h2>
           <div className="space-y-1.5">
             {activeBenefits.map(([key]) => (
-              <div key={key} className="flex items-center gap-3 rounded-lg bg-green-50/80 dark:bg-green-900/10 px-4 py-2.5 text-sm">
-                <span className="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0">
-                  <Check className="w-3 h-3 text-green-600 dark:text-green-400" />
+              <div key={key} className="flex items-center gap-3 rounded-lg bg-green-50 dark:bg-green-900/15 px-4 py-2.5 text-sm font-medium">
+                <span className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center shrink-0">
+                  <Check className="w-3 h-3 text-white" />
                 </span>
                 <span>{BENEFIT_LABELS[key]}</span>
               </div>
             ))}
             {inactiveBenefits.map(([key]) => (
-              <div key={key} className="flex items-center gap-3 rounded-lg bg-muted/50 px-4 py-2.5 text-sm text-muted-foreground">
-                <span className="w-5 h-5 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center shrink-0">
-                  <X className="w-3 h-3 text-red-400" />
+              <div key={key} className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-muted-foreground/60">
+                <span className="w-5 h-5 rounded-full bg-muted flex items-center justify-center shrink-0">
+                  <X className="w-3 h-3 text-muted-foreground/40" />
                 </span>
                 <span>{BENEFIT_LABELS[key]}</span>
               </div>
@@ -247,9 +264,28 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
 
 function StatCard({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
-    <div className="rounded-xl border border-border/50 bg-card p-4">
+    <div className={`rounded-xl border p-4 ${highlight ? 'border-gold/30 bg-gold/[0.04]' : 'border-border/50 bg-card'}`}>
       <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium mb-1">{label}</p>
-      <p className={`text-xl font-bold ${highlight ? 'text-gold-dark' : ''}`}>{value}</p>
+      <p className={`font-bold ${highlight ? 'text-2xl text-gold-text dark:text-gold' : 'text-xl'}`}>{value}</p>
+    </div>
+  );
+}
+
+function ValueMeter({ value, max }: { value: number; max: number }) {
+  const pct = Math.min(Math.max((value / max) * 100, 0), 100);
+  return (
+    <div className="mb-8">
+      <div className="flex items-center justify-between mb-2">
+        <span className="text-xs font-medium text-muted-foreground">Card Value Score</span>
+        <span className="text-sm font-bold text-gold-text dark:text-gold">${value}</span>
+      </div>
+      <div className="h-2.5 rounded-full bg-muted overflow-hidden">
+        <div
+          className="h-full rounded-full bg-gradient-to-r from-gold-dark to-gold value-meter-fill"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+      <p className="text-[10px] text-muted-foreground mt-1">Relative to best card (${max})</p>
     </div>
   );
 }

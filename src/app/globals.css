@@ -6,7 +6,8 @@
   --color-primary-dark: #152a45;
   --color-gold: #d4a853;
   --color-gold-light: #e4c47a;
-  --color-gold-dark: #b8903e;
+  --color-gold-dark: #c9952a;
+  --color-gold-text: #b8860b;
   --color-background: #ffffff;
   --color-foreground: #1a1a2e;
   --color-muted: #f8f9fc;
@@ -26,9 +27,10 @@
     --color-border: #1e293b;
     --color-card: #1e293b;
     --color-card-foreground: #e2e8f0;
-    --color-gold: #e4c47a;
+    --color-gold: #e5b94e;
     --color-gold-light: #f0d694;
-    --color-gold-dark: #d4a853;
+    --color-gold-dark: #e5b94e;
+    --color-gold-text: #e5b94e;
   }
 }
 
@@ -105,19 +107,49 @@ input[type="checkbox"]:focus-visible {
   animation: fadeIn 0.3s ease-out forwards;
 }
 
+/* Hero animated gradient */
+@keyframes heroGradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.hero-gradient {
+  background: linear-gradient(135deg, #152a45, #1e3a5f, #1a3352, #213d63, #152a45);
+  background-size: 400% 400%;
+  animation: heroGradient 12s ease infinite;
+}
+
 /* Hero floating cards decoration */
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(2deg); }
+  50% { transform: translateY(-14px) rotate(3deg); }
+}
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(-2deg); }
+}
+@keyframes floatDiamond {
+  0%, 100% { transform: translateY(0) rotate(45deg); }
+  50% { transform: translateY(-12px) rotate(48deg); }
 }
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
 .animate-float-delayed {
-  animation: float 6s ease-in-out 2s infinite;
+  animation: floatReverse 7s ease-in-out 1.5s infinite;
 }
 .animate-float-slow {
-  animation: float 8s ease-in-out 1s infinite;
+  animation: float 9s ease-in-out 0.5s infinite;
+}
+.animate-float-diamond {
+  animation: floatDiamond 8s ease-in-out 3s infinite;
+}
+
+/* Value meter */
+@keyframes fillBar {
+  from { width: 0; }
+}
+.value-meter-fill {
+  animation: fillBar 1s ease-out forwards;
 }
 
 /* Footer gradient */

@@ -119,7 +119,7 @@ function CardGridItem({ card }: { card: Card }) {
         </div>
         <div className="rounded-lg bg-muted/70 p-2.5">
           <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">Bonus Value</p>
-          <p className="font-bold text-sm mt-0.5 text-gold-dark">{card.welcome_bonus_value > 0 ? `$${card.welcome_bonus_value}` : '—'}</p>
+          <p className="font-bold text-sm mt-0.5 text-gold-text dark:text-gold">{card.welcome_bonus_value > 0 ? `$${card.welcome_bonus_value}` : '—'}</p>
         </div>
       </div>
 
@@ -151,7 +151,7 @@ function CardGridItem({ card }: { card: Card }) {
       {card.first_year_value > 0 && (
         <div className="mt-3 pt-3 border-t border-border/50 flex items-center justify-between">
           <span className="text-xs text-muted-foreground">First year value</span>
-          <span className="text-sm font-bold text-green-600 dark:text-green-400">${card.first_year_value}</span>
+          <span className="text-base font-extrabold text-gold-text dark:text-gold">${card.first_year_value}</span>
         </div>
       )}
     </a>

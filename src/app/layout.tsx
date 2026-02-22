@@ -43,7 +43,7 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         <a href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground">
-          <span className="text-gold">✦</span> ChurningCanada
+          <span className="text-gold-text dark:text-gold text-2xl leading-none">✦</span> ChurningCanada
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           <a href="/cards" className="text-muted-foreground hover:text-foreground transition-colors">Cards</a>

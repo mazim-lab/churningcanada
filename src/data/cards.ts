@@ -295,6 +295,10 @@ export function formatCurrency(value: number, country: 'CA' | 'US' = 'CA'): stri
   return `${prefix}${value.toLocaleString()}`;
 }
 
+export function getMaxFirstYearValue(): number {
+  return Math.max(...allCards.map(c => c.first_year_value), 1);
+}
+
 export const BENEFIT_LABELS: Record<keyof Benefits, string> = {
   lounge_access: 'Airport Lounge',
   no_fx_fee: 'No FX Fee',
