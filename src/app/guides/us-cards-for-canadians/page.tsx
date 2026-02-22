@@ -217,19 +217,6 @@ export default function USCardsGuidePage() {
         </div>
       </section>
 
-      {/* Interactive guide toggle */}
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 pt-8">
-        <a
-          href="/guides/us-cards-for-canadians/interactive"
-          className="flex items-center justify-between gap-3 rounded-xl border border-primary/20 bg-primary/[0.04] dark:bg-primary/[0.08] px-5 py-3.5 group hover:border-primary/40 transition-colors"
-        >
-          <span className="text-sm text-foreground/80">
-            <strong className="text-primary">Prefer a step-by-step walkthrough?</strong>{' '}Try our interactive guide →
-          </span>
-          <ArrowRight className="w-4 h-4 text-primary shrink-0 group-hover:translate-x-0.5 transition-transform" />
-        </a>
-      </div>
-
       <div className="mx-auto max-w-4xl px-4 sm:px-6 py-16">
         {/* Table of Contents */}
         <nav className="mb-16 rounded-2xl border border-border bg-card p-6">
