@@ -171,21 +171,6 @@ export default function USCardsGuidePage() {
   return (
     <>
       <ReadingProgress />
-      {/* Cross-link banner */}
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 pt-4">
-        <a href="/guides/us-cards-for-canadians/interactive" className="block rounded-2xl border border-primary/20 bg-primary/5 p-4 hover:bg-primary/10 transition-colors">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🧭</span>
-              <div>
-                <p className="font-semibold text-sm">Prefer a step-by-step walkthrough?</p>
-                <p className="text-xs text-muted-foreground">Try our interactive guide with progress tracking</p>
-              </div>
-            </div>
-            <span className="text-primary font-medium text-sm">Start →</span>
-          </div>
-        </a>
-      </div>
 
       {/* Hero */}
       <section className="relative overflow-hidden hero-gradient text-white">
@@ -216,6 +201,32 @@ export default function USCardsGuidePage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Guide CTA */}
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 pt-10">
+        <a
+          href="/guides/us-cards-for-canadians/interactive"
+          className="group block rounded-2xl border-2 border-gold/30 bg-gradient-to-r from-gold/[0.08] to-primary/[0.06] dark:from-gold/[0.12] dark:to-primary/[0.10] p-6 sm:p-8 hover:border-gold/50 hover:shadow-lg hover:shadow-gold/10 transition-all"
+        >
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex items-start gap-4">
+              <span className="text-4xl">🧭</span>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold font-[family-name:var(--font-display)] mb-1">
+                  Try the Interactive Step-by-Step Guide
+                </h3>
+                <p className="text-muted-foreground text-sm sm:text-base">
+                  Follow along one step at a time with checklists, progress tracking, and your place saved automatically.
+                </p>
+              </div>
+            </div>
+            <span className="shrink-0 rounded-full bg-primary text-white px-6 py-3 font-semibold text-sm group-hover:bg-primary-dark transition-colors flex items-center gap-2">
+              Start Guide
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            </span>
+          </div>
+        </a>
+      </div>
 
       <div className="mx-auto max-w-4xl px-4 sm:px-6 py-16">
         {/* Table of Contents */}
