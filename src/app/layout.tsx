@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ThemeProvider } from "next-themes";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
 const inter = Inter({
@@ -24,11 +26,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${inter.variable}`}>
+    <html lang="en" className={`scroll-smooth ${inter.variable}`} suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground antialiased font-sans">
-        <Header />
-        <main className="min-h-[calc(100vh-140px)]">{children}</main>
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Header />
+          <main className="min-h-[calc(100vh-140px)]">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
@@ -46,9 +50,12 @@ function Header() {
           <a href="/compare" className="text-muted-foreground hover:text-foreground transition-colors">Compare</a>
           <a href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a>
         </nav>
-        <a href="/cards" className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-light transition-colors">
-          Explore Cards
-        </a>
+        <div className="flex items-center gap-2">
+          <ThemeToggle />
+          <a href="/cards" className="rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-light transition-colors">
+            Explore Cards
+          </a>
+        </div>
       </div>
     </header>
   );
