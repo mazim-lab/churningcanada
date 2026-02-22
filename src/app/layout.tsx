@@ -55,6 +55,7 @@ function Header() {
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           <a href="/cards" className="text-muted-foreground hover:text-foreground transition-colors">Cards</a>
           <a href="/compare" className="text-muted-foreground hover:text-foreground transition-colors">Compare</a>
+          <a href="/guides/us-cards-for-canadians" className="text-muted-foreground hover:text-foreground transition-colors">Guides</a>
           <a href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a>
         </nav>
         <div className="flex items-center gap-2">
@@ -94,6 +95,7 @@ function Footer() {
               <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 text-foreground/70">Learn</h3>
               <ul className="space-y-2.5 text-sm text-muted-foreground">
                 <li><a href="/blog" className="hover:text-foreground transition-colors">Blog</a></li>
+                <li><a href="/guides/us-cards-for-canadians" className="hover:text-foreground transition-colors">US Cards for Canadians</a></li>
               </ul>
             </div>
             <div>

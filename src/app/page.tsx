@@ -16,7 +16,7 @@ const quickFilters = [
   { label: 'Best Travel', icon: Plane, href: '/cards?type=travel&sort=value' },
   { label: 'Best Cashback', icon: DollarSign, href: '/cards?type=cashback&sort=value' },
   { label: 'No Annual Fee', icon: CreditCard, href: '/cards?maxFee=0' },
-  { label: 'US Cards for Canadians', icon: Flag, href: '/cards?country=US&sort=value' },
+  { label: 'US Cards Guide 🇺🇸', icon: Flag, href: '/guides/us-cards-for-canadians' },
 ];
 
 export default function HomePage() {
