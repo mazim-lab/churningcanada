@@ -18,7 +18,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/card/amex-everyday/"
   },
   {
     "slug": "platinum-card",
@@ -43,7 +43,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/platinum-card/"
   },
   {
     "slug": "american-express-gold-card",
@@ -68,7 +68,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/card/gold-card/"
   },
   {
     "slug": "blue-cash-preferred-card",
@@ -93,7 +93,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-preferred/"
   },
   {
     "slug": "blue-cash-everyday-card",
@@ -118,7 +118,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/card/blue-cash-everyday/"
   },
   {
     "slug": "delta-skymiles-gold-american-express-card",
@@ -143,7 +143,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold/"
   },
   {
     "slug": "delta-skymiles-platinum-american-express-card",
@@ -168,7 +168,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-platinum/"
   },
   {
     "slug": "marriott-bonvoy-bevy-american-express-card",
@@ -193,7 +193,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy/"
   },
   {
     "slug": "marriott-bonvoy-brilliant-american-express-card",
@@ -218,7 +218,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy/"
   },
   {
     "slug": "hilton-honors-american-express-card",
@@ -243,7 +243,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/hilton-honors/"
   },
   {
     "slug": "hilton-honors-american-express-surpass-card",
@@ -268,7 +268,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/hilton-honors/"
   },
   {
     "slug": "delta-skymiles-reserve-american-express-card",
@@ -293,7 +293,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-reserve/"
   },
   {
     "slug": "american-express-green-card",
@@ -318,7 +318,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/green-card/"
   },
   {
     "slug": "hilton-honors-american-express-aspire-card",
@@ -343,7 +343,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/hilton-honors/"
   },
   {
     "slug": "delta-skymiles-blue-american-express-card",
@@ -368,7 +368,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-blue/"
   },
   {
     "slug": "business-platinum-card",
@@ -395,7 +395,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/business-platinum-card/"
   },
   {
     "slug": "business-gold-card",
@@ -421,7 +421,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/business-gold-rewards-card/"
   },
   {
     "slug": "blue-business-cashtm-card",
@@ -446,7 +446,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/blue-business-cash/"
   },
   {
     "slug": "blue-business-plus-credit-card",
@@ -471,7 +471,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/blue-business-plus/"
   },
   {
     "slug": "delta-skymiles-reserve-business-card",
@@ -496,7 +496,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/delta-skymiles-reserve-business/"
   },
   {
     "slug": "plum-card",
@@ -521,7 +521,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/plum-card/"
   },
   {
     "slug": "business-green-rewards-card",
@@ -546,7 +546,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/green-rewards/"
   },
   {
     "slug": "delta-skymiles-platinum-business-card",
@@ -570,7 +570,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/delta-skymiles-platinum-business/"
   },
   {
     "slug": "marriott-bonvoy-business-card",
@@ -595,7 +595,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/"
   },
   {
     "slug": "hilton-honors-business-card",
@@ -620,7 +620,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/hilton-honors/"
   },
   {
     "slug": "amazon-business-prime-card",
@@ -641,7 +641,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/amazon-business-prime/"
   },
   {
     "slug": "amazon-business-card",
@@ -662,7 +662,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/amazon-business/"
   },
   {
     "slug": "the-new-chase-sapphire-reserve-credit-card",
@@ -956,7 +956,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/all-credit-cards"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy/"
   },
   {
     "slug": "marriott-bonvoy-bountiful-credit-card",
@@ -977,7 +977,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/all-credit-cards"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy/"
   },
   {
     "slug": "marriott-bonvoy-bold-credit-card",
@@ -998,7 +998,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/all-credit-cards"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy/"
   },
   {
     "slug": "ihg-one-rewards-premier-credit-card",
@@ -1145,7 +1145,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/all-credit-cards"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/aeroplan-card/"
   },
   {
     "slug": "british-airways-visa-signature-credit-card",
