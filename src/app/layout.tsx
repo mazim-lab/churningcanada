@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Newsreader } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { MobileMenu } from "@/components/MobileMenu";
+import { MobileMenu, MobileMenuButton, MobileMenuProvider } from "@/components/MobileMenu";
 import "./globals.css";
 
 const body = Plus_Jakarta_Sans({
@@ -37,9 +37,12 @@ export default function RootLayout({
     <html lang="en" className={`scroll-smooth ${body.variable} ${display.variable}`} suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground antialiased font-sans">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <Header />
-          <main className="min-h-[calc(100vh-140px)]">{children}</main>
-          <Footer />
+          <MobileMenuProvider>
+            <MobileMenu />
+            <Header />
+            <main className="min-h-[calc(100vh-140px)]">{children}</main>
+            <Footer />
+          </MobileMenuProvider>
         </ThemeProvider>
       </body>
     </html>
@@ -48,10 +51,12 @@ export default function RootLayout({
 
 function Header() {
   return (
+    <>
+    <MobileMenu />
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-3">
-          <MobileMenu />
+          <MobileMenuButton />
           <a href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight font-[family-name:var(--font-display)]">
             <span className="text-accent text-2xl leading-none">Churning</span><span className="text-gold-text dark:text-gold text-2xl leading-none">Canada</span>
             <span className="text-xl leading-none ml-0.5">🍁</span>
@@ -71,6 +76,7 @@ function Header() {
         </div>
       </div>
     </header>
+    </>
   );
 }
 
