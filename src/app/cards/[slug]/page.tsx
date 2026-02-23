@@ -135,24 +135,30 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
         {/* Benefits */}
         <div>
           <h2 className="text-lg font-bold mb-4">Benefits & Insurance</h2>
-          <div className="space-y-1.5">
-            {activeBenefits.map(([key]) => (
-              <div key={key} className="flex items-center gap-3 rounded-lg bg-green-50 dark:bg-green-900/15 px-4 py-2.5 text-sm font-medium">
-                <span className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center shrink-0">
-                  <Check className="w-3 h-3 text-white" />
-                </span>
-                <span>{BENEFIT_LABELS[key]}</span>
-              </div>
-            ))}
-            {inactiveBenefits.map(([key]) => (
-              <div key={key} className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-muted-foreground/60">
-                <span className="w-5 h-5 rounded-full bg-muted flex items-center justify-center shrink-0">
-                  <X className="w-3 h-3 text-muted-foreground/40" />
-                </span>
-                <span>{BENEFIT_LABELS[key]}</span>
-              </div>
-            ))}
-          </div>
+          {card.benefits_incomplete ? (
+            <div className="rounded-lg border border-border/50 bg-muted/50 px-4 py-6 text-center">
+              <p className="text-sm text-muted-foreground">Benefits data coming soon</p>
+            </div>
+          ) : (
+            <div className="space-y-1.5">
+              {activeBenefits.map(([key]) => (
+                <div key={key} className="flex items-center gap-3 rounded-lg bg-green-50 dark:bg-green-900/15 px-4 py-2.5 text-sm font-medium">
+                  <span className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center shrink-0">
+                    <Check className="w-3 h-3 text-white" />
+                  </span>
+                  <span>{BENEFIT_LABELS[key]}</span>
+                </div>
+              ))}
+              {inactiveBenefits.map(([key]) => (
+                <div key={key} className="flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm text-muted-foreground/60">
+                  <span className="w-5 h-5 rounded-full bg-muted flex items-center justify-center shrink-0">
+                    <X className="w-3 h-3 text-muted-foreground/40" />
+                  </span>
+                  <span>{BENEFIT_LABELS[key]}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 

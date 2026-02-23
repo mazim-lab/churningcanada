@@ -12,11 +12,12 @@ export default function ComparePage() {
 
   const results = useMemo(() => {
     if (!search) return [];
-    const q = search.toLowerCase();
-    return allCards.filter(c =>
-      !selected.find(s => s.slug === c.slug) &&
-      (c.name.toLowerCase().includes(q) || c.issuer.toLowerCase().includes(q))
-    ).slice(0, 10);
+    const words = search.toLowerCase().split(/\s+/).filter(Boolean);
+    return allCards.filter(c => {
+      if (selected.find(s => s.slug === c.slug)) return false;
+      const searchText = `${c.name} ${c.issuer}`.toLowerCase();
+      return words.every(w => searchText.includes(w));
+    }).slice(0, 10);
   }, [search, selected]);
 
   const addCard = (card: Card) => {

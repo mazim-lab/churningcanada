@@ -51,6 +51,7 @@ export interface Card {
   benefits: Benefits;
   first_year_value: number;
   apply_url: string | null;
+  benefits_incomplete: boolean;
 }
 
 // ── Helpers ────────────────────────────────────────────
@@ -166,7 +167,8 @@ function normalizeCA(raw: RawCA): Card {
     is_business: false,
     benefits: { lounge_access: false, no_fx_fee: false, car_rental_insurance: false, travel_medical: false, trip_cancellation: false, flight_delay: false, mobile_insurance: false, purchase_protection: false, extended_warranty: false, free_checked_bags: false },
     first_year_value: 0,
-    apply_url: raw.pot_url || null,
+    apply_url: null,
+    benefits_incomplete: false,
   };
 
   card.is_business = textContains(card.name + ' ' + card.card_type, 'business');
@@ -177,6 +179,11 @@ function normalizeCA(raw: RawCA): Card {
   }
   if (card.foreign_transaction_fee === false) {
     card.benefits.no_fx_fee = true;
+  }
+  // Flag premium cards with no detected benefits as incomplete
+  const allBenefitsFalse = Object.values(card.benefits).every(v => !v);
+  if (allBenefitsFalse && fee >= 150) {
+    card.benefits_incomplete = true;
   }
   const effectiveFee = firstYearFee !== null ? firstYearFee : fee;
   card.first_year_value = bonusValue - effectiveFee;
@@ -244,12 +251,17 @@ function normalizeUS(raw: RawUS): Card {
     benefits: { lounge_access: false, no_fx_fee: false, car_rental_insurance: false, travel_medical: false, trip_cancellation: false, flight_delay: false, mobile_insurance: false, purchase_protection: false, extended_warranty: false, free_checked_bags: false },
     first_year_value: 0,
     apply_url: null,
+    benefits_incomplete: false,
   };
 
   card.is_business = textContains(card.name + ' ' + card.card_type, 'business');
   card.benefits = extractBenefits(card);
   if (raw.foreign_transaction_fee === false) {
     card.benefits.no_fx_fee = true;
+  }
+  const allBenefitsFalseUS = Object.values(card.benefits).every(v => !v);
+  if (allBenefitsFalseUS && fee >= 150) {
+    card.benefits_incomplete = true;
   }
   card.first_year_value = bonusValue - fee;
 

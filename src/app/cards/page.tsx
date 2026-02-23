@@ -64,11 +64,11 @@ function CardsContent() {
   const filtered = useMemo(() => {
     let cards = allCards;
     if (query) {
-      const q = query.toLowerCase();
-      cards = cards.filter(c =>
-        c.name.toLowerCase().includes(q) || c.issuer.toLowerCase().includes(q) ||
-        c.rewards_program.toLowerCase().includes(q) || c.card_type.toLowerCase().includes(q)
-      );
+      const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+      cards = cards.filter(c => {
+        const searchText = `${c.name} ${c.issuer} ${c.rewards_program} ${c.card_type}`.toLowerCase();
+        return words.every(w => searchText.includes(w));
+      });
     }
     if (country !== 'all') cards = cards.filter(c => c.country === country);
     if (selectedTypes.length > 0) cards = cards.filter(c => selectedTypes.includes(c.card_type));
