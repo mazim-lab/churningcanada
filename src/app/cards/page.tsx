@@ -122,7 +122,7 @@ function CardsContent() {
         <div className="flex gap-1">
           {(['all', 'CA', 'US'] as const).map(c => (
             <button key={c} onClick={() => setCountry(c)}
-              className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${country === c ? 'bg-primary text-white' : 'bg-muted hover:bg-muted/80'}`}>
+              className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${country === c ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
               {c === 'all' ? 'All' : c === 'CA' ? '🇨🇦 Canada' : '🇺🇸 US'}
             </button>
           ))}
@@ -133,7 +133,7 @@ function CardsContent() {
         <div className="flex flex-wrap gap-2">
           {CARD_TYPES.map(t => (
             <button key={t} onClick={() => toggleType(t)}
-              className={`rounded-full px-3 py-1 text-xs font-medium capitalize transition-colors ${selectedTypes.includes(t) ? 'bg-primary text-white' : 'bg-muted hover:bg-muted/80'}`}>
+              className={`rounded-full px-3 py-1 text-xs font-medium capitalize transition-colors ${selectedTypes.includes(t) ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
               {t}
             </button>
           ))}
@@ -153,7 +153,7 @@ function CardsContent() {
           className="w-full rounded-lg border border-border bg-background px-3 py-1.5 text-sm mb-2 focus:outline-none focus:ring-1 focus:ring-primary" />
         <div className="max-h-40 overflow-y-auto space-y-1">
           {filteredIssuers.map(i => (
-            <label key={i} className="flex items-center gap-2 text-sm cursor-pointer hover:text-primary">
+            <label key={i} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-primary">
               <input type="checkbox" checked={selectedIssuers.includes(i)} onChange={() => toggleIssuer(i)} />
               {i}
             </label>
@@ -164,7 +164,7 @@ function CardsContent() {
       <CollapsibleSection title="Network">
         <div className="space-y-1">
           {allNetworks.map(n => (
-            <label key={n} className="flex items-center gap-2 text-sm cursor-pointer hover:text-primary">
+            <label key={n} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-primary">
               <input type="checkbox" checked={selectedNetworks.includes(n)} onChange={() => toggleNetwork(n)} />
               {n}
             </label>
@@ -176,7 +176,7 @@ function CardsContent() {
         <div className="flex flex-wrap gap-1.5">
           {FEE_RANGES.map(r => (
             <button key={r.value} onClick={() => setFeeRange(r.value)}
-              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${feeRange === r.value ? 'bg-primary text-white' : 'bg-muted hover:bg-muted/80'}`}>
+              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${feeRange === r.value ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
               {r.label}
             </button>
           ))}
@@ -191,7 +191,7 @@ function CardsContent() {
       <CollapsibleSection title="Benefits">
         <div className="space-y-1">
           {(Object.keys(BENEFIT_LABELS) as (keyof Benefits)[]).map(b => (
-            <label key={b} className="flex items-center gap-2 text-sm cursor-pointer hover:text-primary">
+            <label key={b} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-primary">
               <input type="checkbox" checked={selectedBenefits.includes(b)} onChange={() => toggleBenefit(b)} />
               {BENEFIT_LABELS[b]}
             </label>
