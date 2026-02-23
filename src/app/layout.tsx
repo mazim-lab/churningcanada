@@ -53,7 +53,7 @@ function Header() {
         <div className="flex items-center gap-3">
           <MobileMenu />
           <a href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight font-[family-name:var(--font-display)]">
-            <span className="text-primary text-2xl leading-none">Churning</span><span className="text-gold-text dark:text-gold text-2xl leading-none">Canada</span>
+            <span className="text-accent text-2xl leading-none">Churning</span><span className="text-gold-text dark:text-gold text-2xl leading-none">Canada</span>
             <span className="text-xl leading-none ml-0.5">🍁</span>
           </a>
         </div>

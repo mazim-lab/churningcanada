@@ -73,7 +73,7 @@ function StepCard({
       {/* Timeline line */}
       <div className="absolute left-[18px] md:left-[26px] top-0 bottom-0 w-px bg-gradient-to-b from-primary/40 via-gold/30 to-border/20" />
       {/* Timeline dot */}
-      <div className="absolute left-[7px] md:left-[15px] top-1 w-[23px] h-[23px] rounded-full bg-primary text-white dark:text-background text-xs font-bold flex items-center justify-center ring-4 ring-background z-10">
+      <div className="absolute left-[7px] md:left-[15px] top-1 w-[23px] h-[23px] rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center ring-4 ring-background z-10">
         {number}
       </div>
 
@@ -83,10 +83,10 @@ function StepCard({
       >
         <div className="flex items-start gap-3">
           <div className="rounded-lg bg-primary/[0.07] dark:bg-primary/[0.15] p-2 mt-0.5">
-            <Icon className="w-5 h-5 text-primary" />
+            <Icon className="w-5 h-5 text-accent" />
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="text-xl font-bold font-[family-name:var(--font-display)] group-hover:text-primary transition-colors">
+            <h3 className="text-xl font-bold font-[family-name:var(--font-display)] group-hover:text-accent transition-colors">
               {title}
             </h3>
             <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
@@ -117,7 +117,7 @@ function CardRec({ name, slug, note }: { name: string; slug?: string; note?: str
       href={slug ? `/cards/${slug}` : '/cards?country=US'}
       className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium hover:border-primary/40 hover:shadow-sm transition-all no-underline"
     >
-      <CreditCard className="w-3.5 h-3.5 text-primary" />
+      <CreditCard className="w-3.5 h-3.5 text-accent" />
       <span>{name}</span>
       {note && <span className="text-muted-foreground font-normal">— {note}</span>}
     </a>
@@ -129,7 +129,7 @@ function CardRec({ name, slug, note }: { name: string; slug?: string; note?: str
 function RoadmapItem({ month, label, description, accent }: { month: string; label: string; description: string; accent?: boolean }) {
   return (
     <div className={`flex gap-4 items-start p-4 rounded-xl border ${accent ? 'border-gold/40 bg-gold/[0.04]' : 'border-border bg-card'}`}>
-      <div className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-bold ${accent ? 'bg-gold/20 text-gold-dark dark:text-gold' : 'bg-primary/10 text-primary'}`}>
+      <div className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-bold ${accent ? 'bg-gold/20 text-gold-dark dark:text-gold' : 'bg-primary/10 text-accent'}`}>
         {month}
       </div>
       <div>
@@ -220,7 +220,7 @@ export default function USCardsGuidePage() {
                 </p>
               </div>
             </div>
-            <span className="shrink-0 rounded-full bg-primary text-white dark:text-background px-6 py-3 font-semibold text-sm group-hover:bg-primary-dark transition-colors flex items-center gap-2">
+            <span className="shrink-0 rounded-full bg-primary text-white px-6 py-3 font-semibold text-sm group-hover:bg-primary-dark transition-colors flex items-center gap-2">
               Start Guide
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </span>
@@ -234,7 +234,7 @@ export default function USCardsGuidePage() {
           <h2 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-4">In this guide</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             {tocSections.map(s => (
-              <a key={s.id} href={`#${s.id}`} className="text-sm text-muted-foreground hover:text-primary transition-colors py-1">
+              <a key={s.id} href={`#${s.id}`} className="text-sm text-muted-foreground hover:text-accent transition-colors py-1">
                 {s.label}
               </a>
             ))}
@@ -380,7 +380,7 @@ export default function USCardsGuidePage() {
                 {/* Path A */}
                 <div className="rounded-xl border-2 border-primary/30 bg-primary/[0.03] dark:bg-primary/[0.06] p-5">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="rounded-full bg-primary text-white dark:text-background text-xs font-bold px-2.5 py-1">Recommended</span>
+                    <span className="rounded-full bg-primary text-white text-xs font-bold px-2.5 py-1">Recommended</span>
                   </div>
                   <h5 className="font-bold mb-2">Path A: In-Person at IRS Taxpayer Assistance Center</h5>
                   <ul className="text-sm space-y-2 text-foreground/80">
@@ -420,7 +420,7 @@ export default function USCardsGuidePage() {
               </TipBox>
 
               <p className="text-xs text-muted-foreground italic mb-6">
-                ⚠️ Form line numbers may change year to year. Always verify against the current year&apos;s forms from <a href="https://www.irs.gov/forms-instructions" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">irs.gov</a>.
+                ⚠️ Form line numbers may change year to year. Always verify against the current year&apos;s forms from <a href="https://www.irs.gov/forms-instructions" className="underline hover:text-accent" target="_blank" rel="noopener noreferrer">irs.gov</a>.
               </p>
 
               {/* W-7 Form */}
@@ -594,7 +594,7 @@ export default function USCardsGuidePage() {
                     <p className="text-sm"><strong>F:</strong> No</p>
                   </div>
                   <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>G:</strong> List all dates you entered/left the USA that year (including layovers). Check travel records at <a href="https://i94.cbp.dhs.gov" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">i94.cbp.dhs.gov</a>. Leave blank if you weren&apos;t in the US.</p>
+                    <p className="text-sm"><strong>G:</strong> List all dates you entered/left the USA that year (including layovers). Check travel records at <a href="https://i94.cbp.dhs.gov" className="underline hover:text-accent" target="_blank" rel="noopener noreferrer">i94.cbp.dhs.gov</a>. Leave blank if you weren&apos;t in the US.</p>
                   </div>
                   <div className="rounded-lg bg-card border border-border p-3">
                     <p className="text-sm"><strong>H:</strong> Number of days present in USA for each of the 3 tax years.</p>
@@ -631,11 +631,11 @@ export default function USCardsGuidePage() {
             {/* ── Payment Section ─────────────────────────── */}
             <div className="rounded-xl border border-border bg-card p-5 mb-6">
               <h4 className="font-bold mb-3 flex items-center gap-2">
-                <DollarSign className="w-5 h-5 text-primary" />
+                <DollarSign className="w-5 h-5 text-accent" />
                 Payment (~$9 USD)
               </h4>
               <ul className="text-sm space-y-2 text-foreground/80">
-                <li>💵 Pay by check (payable to <strong>&quot;United States Treasury&quot;</strong>) included with your mailing, or pay online at <a href="https://www.irs.gov/payments" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">irs.gov/payments</a></li>
+                <li>💵 Pay by check (payable to <strong>&quot;United States Treasury&quot;</strong>) included with your mailing, or pay online at <a href="https://www.irs.gov/payments" className="underline hover:text-accent" target="_blank" rel="noopener noreferrer">irs.gov/payments</a></li>
                 <li>📋 Late filing penalty caps at 100% of tax (~$9 max penalty), plus a few dollars interest</li>
                 <li>😌 Don&apos;t stress about being &quot;late&quot; — the total additional cost is minimal</li>
               </ul>
@@ -736,7 +736,7 @@ export default function USCardsGuidePage() {
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <div className="rounded-xl border border-border bg-card p-6">
               <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <DollarSign className="w-5 h-5 text-primary" />
+                <DollarSign className="w-5 h-5 text-accent" />
                 Paying Your Bills
               </h3>
               <p>
@@ -746,7 +746,7 @@ export default function USCardsGuidePage() {
 
             <div className="rounded-xl border border-border bg-card p-6">
               <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <Globe className="w-5 h-5 text-primary" />
+                <Globe className="w-5 h-5 text-accent" />
                 Using US Cards in Canada
               </h3>
               <p>
@@ -756,7 +756,7 @@ export default function USCardsGuidePage() {
 
             <div className="rounded-xl border border-border bg-card p-6">
               <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <CreditCard className="w-5 h-5 text-primary" />
+                <CreditCard className="w-5 h-5 text-accent" />
                 Two-Player Mode
               </h3>
               <p>

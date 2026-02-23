@@ -76,7 +76,7 @@ export default function ComparePage() {
               <>
                 <button
                   onClick={() => setShowSearch(!showSearch)}
-                  className="flex items-center gap-2 rounded-xl border-2 border-dashed border-border px-6 py-4 text-sm text-muted-foreground hover:border-primary hover:text-primary transition-all"
+                  className="flex items-center gap-2 rounded-xl border-2 border-dashed border-border px-6 py-4 text-sm text-muted-foreground hover:border-primary hover:text-accent transition-all"
                 >
                   <Plus className="w-4 h-4" />
                   Add a card

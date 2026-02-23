@@ -121,7 +121,7 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold tracking-tight">Top Cards by First-Year Value</h2>
             <p className="text-muted-foreground mt-1.5">Highest welcome bonus minus annual fee</p>
           </div>
-          <a href="/cards?sort=value" className="text-sm font-medium text-primary hover:text-primary-light transition-colors">
+          <a href="/cards?sort=value" className="text-sm font-medium text-accent hover:text-accent-light transition-colors">
             View all →
           </a>
         </div>

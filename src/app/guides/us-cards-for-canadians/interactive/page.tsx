@@ -48,7 +48,7 @@ function WarningBox({ children }: { children: React.ReactNode }) {
 function CardRec({ name, note }: { name: string; note?: string }) {
   return (
     <span className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium">
-      <CreditCard className="w-3.5 h-3.5 text-primary" />
+      <CreditCard className="w-3.5 h-3.5 text-accent" />
       <span>{name}</span>
       {note && <span className="text-muted-foreground font-normal">— {note}</span>}
     </span>
@@ -165,7 +165,7 @@ const STEPS: StepData[] = [
           <h4 className="font-bold mb-3">How to Submit</h4>
           <div className="space-y-3">
             <div className="rounded-xl border-2 border-primary/30 bg-primary/[0.03] dark:bg-primary/[0.06] p-4">
-              <p className="text-sm font-bold mb-1">✅ Path A: In-Person at IRS TAC <span className="text-xs font-normal text-primary">(Recommended)</span></p>
+              <p className="text-sm font-bold mb-1">✅ Path A: In-Person at IRS TAC <span className="text-xs font-normal text-accent">(Recommended)</span></p>
               <ul className="text-sm space-y-1 text-foreground/80">
                 <li>Call <strong>844-545-5640</strong> to book (up to 2 months ahead). Backup: <strong>267-941-1000</strong></li>
                 <li>Bring passport + completed W-7, 1040-NR, Schedule 1, Schedule OI + copies</li>
@@ -193,7 +193,7 @@ const STEPS: StepData[] = [
             <strong>Don&apos;t be intimidated!</strong> The key entries are your name, address, SIN, passport info, and a small gambling income number. That&apos;s it.
           </TipBox>
 
-          <p className="text-xs text-muted-foreground italic mb-4">⚠️ Form line numbers may change year to year — verify against current forms from <a href="https://www.irs.gov/forms-instructions" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">irs.gov</a>.</p>
+          <p className="text-xs text-muted-foreground italic mb-4">⚠️ Form line numbers may change year to year — verify against current forms from <a href="https://www.irs.gov/forms-instructions" className="underline hover:text-accent" target="_blank" rel="noopener noreferrer">irs.gov</a>.</p>
 
           {/* W-7 */}
           <details className="mb-3 rounded-xl border border-border bg-card overflow-hidden">
@@ -280,7 +280,7 @@ const STEPS: StepData[] = [
                 <strong>E:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1 py-0.5 rounded text-emerald-700 dark:text-emerald-300">&quot;Not present in U.S.—No U.S. immigration status&quot;</span>
               </div>
               <p><strong>F:</strong> No</p>
-              <p><strong>G:</strong> Dates entered/left USA (check <a href="https://i94.cbp.dhs.gov" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">i94.cbp.dhs.gov</a>). Blank if not in US.</p>
+              <p><strong>G:</strong> Dates entered/left USA (check <a href="https://i94.cbp.dhs.gov" className="underline hover:text-accent" target="_blank" rel="noopener noreferrer">i94.cbp.dhs.gov</a>). Blank if not in US.</p>
               <p><strong>H:</strong> Days in USA for each of 3 tax years</p>
               <WarningBox>
                 <strong>Substantial Presence Test:</strong> If (current year × 1) + (prior year × ⅓) + (2 years ago × ⅙) ≥ 183, get professional help.
@@ -307,7 +307,7 @@ const STEPS: StepData[] = [
         {/* Payment & After */}
         <div className="rounded-xl border border-border bg-card p-4 mb-3">
           <p className="text-sm font-bold mb-2">💰 Payment (~$9 USD)</p>
-          <p className="text-sm text-foreground/80">Pay by check to &quot;United States Treasury&quot; or online at <a href="https://www.irs.gov/payments" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">irs.gov/payments</a>. Late penalty caps at ~$9 + minimal interest.</p>
+          <p className="text-sm text-foreground/80">Pay by check to &quot;United States Treasury&quot; or online at <a href="https://www.irs.gov/payments" className="underline hover:text-accent" target="_blank" rel="noopener noreferrer">irs.gov/payments</a>. Late penalty caps at ~$9 + minimal interest.</p>
         </div>
 
         <div className="rounded-xl border border-border bg-card p-4 mb-3">
@@ -460,7 +460,7 @@ function StepIndicator({ current, onNavigate }: { current: number; onNavigate: (
               isCurrent
                 ? 'bg-gold text-primary-dark scale-110 ring-2 ring-gold/40'
                 : isCompleted
-                ? 'bg-primary text-white dark:text-background'
+                ? 'bg-primary text-white'
                 : 'bg-border/40 text-muted-foreground hover:bg-border/60'
             }`}
             aria-label={`Go to step ${stepNum}`}
@@ -511,13 +511,13 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
     <div className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4">
       <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/[0.05] px-4 py-1.5 text-sm mb-8">
         <span>🇨🇦</span>
-        <ArrowRight className="w-3.5 h-3.5 text-primary" />
+        <ArrowRight className="w-3.5 h-3.5 text-accent" />
         <span>🇺🇸</span>
         <span className="ml-1 text-muted-foreground">Step-by-step guide</span>
       </div>
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-5 font-[family-name:var(--font-display)]">
         The Complete Guide to{' '}
-        <span className="text-primary">US Credit Cards</span>{' '}
+        <span className="text-accent">US Credit Cards</span>{' '}
         for Canadians
       </h1>
       <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-4">
@@ -538,7 +538,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
 
       <button
         onClick={onStart}
-        className="rounded-full bg-primary text-white dark:text-background px-10 py-4 font-semibold text-lg hover:bg-primary-dark transition-colors flex items-center gap-2 shadow-lg shadow-primary/20"
+        className="rounded-full bg-primary text-white px-10 py-4 font-semibold text-lg hover:bg-primary-dark transition-colors flex items-center gap-2 shadow-lg shadow-primary/20"
       >
         Start Guide
         <ArrowRight className="w-5 h-5" />
@@ -559,7 +559,7 @@ function SummaryScreen({ checked, toggle, onBack }: { checked: Record<string, bo
     <div className="max-w-2xl mx-auto px-4">
       <div className="text-center mb-10">
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-          <CheckCircle2 className="w-8 h-8 text-primary" />
+          <CheckCircle2 className="w-8 h-8 text-accent" />
         </div>
         <h2 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-display)] mb-2">
           Your Master Checklist
@@ -581,10 +581,10 @@ function SummaryScreen({ checked, toggle, onBack }: { checked: Record<string, bo
           return (
             <div key={i} className="rounded-xl border border-border bg-card p-5">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 rounded-full bg-primary text-white dark:text-background text-xs font-bold flex items-center justify-center shrink-0">
+                <div className="w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center shrink-0">
                   {i + 1}
                 </div>
-                <Icon className="w-4 h-4 text-primary" />
+                <Icon className="w-4 h-4 text-accent" />
                 <h3 className="font-semibold text-sm">{step.title}</h3>
               </div>
               <div className="space-y-2 pl-11">
@@ -650,7 +650,7 @@ function SummaryScreen({ checked, toggle, onBack }: { checked: Record<string, bo
       </div>
 
       <div className="flex justify-start mb-8">
-        <button onClick={onBack} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+        <button onClick={onBack} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors">
           <ArrowLeft className="w-4 h-4" />
           Back to Step 7
         </button>
@@ -774,7 +774,7 @@ function USCardsGuideWizard() {
               {/* Step header */}
               <div className="text-center mb-8">
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 mb-4">
-                  <stepData.icon className="w-7 h-7 text-primary" />
+                  <stepData.icon className="w-7 h-7 text-accent" />
                 </div>
                 <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Step {currentStep}</p>
                 <h2 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-display)]">
@@ -817,7 +817,7 @@ function USCardsGuideWizard() {
                 </button>
                 <button
                   onClick={() => navigateTo(currentStep + 1)}
-                  className="flex items-center gap-2 rounded-full bg-primary text-white dark:text-background px-6 py-2.5 text-sm font-semibold hover:bg-primary-dark transition-colors"
+                  className="flex items-center gap-2 rounded-full bg-primary text-white px-6 py-2.5 text-sm font-semibold hover:bg-primary-dark transition-colors"
                 >
                   {currentStep === TOTAL_STEPS ? 'View Summary' : 'Next Step'}
                   <ChevronRight className="w-4 h-4" />

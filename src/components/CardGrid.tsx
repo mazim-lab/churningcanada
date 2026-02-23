@@ -103,7 +103,7 @@ function CardGridItem({ card }: { card: Card }) {
               </span>
             )}
           </div>
-          <h3 className="font-semibold text-[15px] text-card-foreground group-hover:text-primary transition-colors leading-tight">
+          <h3 className="font-semibold text-[15px] text-card-foreground group-hover:text-accent transition-colors leading-tight">
             {card.name}
           </h3>
           <p className="text-xs text-muted-foreground mt-0.5">{card.issuer}</p>
@@ -134,7 +134,7 @@ function CardGridItem({ card }: { card: Card }) {
           {activeBenefits.slice(0, 5).map(([key]) => {
             const Icon = benefitIcons[key];
             return (
-              <span key={key} title={BENEFIT_LABELS[key]} className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-muted text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+              <span key={key} title={BENEFIT_LABELS[key]} className="inline-flex items-center justify-center w-7 h-7 rounded-md bg-muted text-muted-foreground hover:text-accent hover:bg-accent/10 transition-colors">
                 <Icon className="w-3.5 h-3.5" />
               </span>
             );
@@ -170,7 +170,7 @@ function CardListItem({ card }: { card: Card }) {
       <IssuerAvatar issuer={card.issuer} size="md" />
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2">
-          <h3 className="font-semibold text-sm group-hover:text-primary transition-colors truncate">{card.name}</h3>
+          <h3 className="font-semibold text-sm group-hover:text-accent transition-colors truncate">{card.name}</h3>
           <span className={`shrink-0 rounded-full px-1.5 py-0.5 text-xs font-semibold ${card.country === 'CA' ? 'bg-red-50 text-red-700 dark:bg-red-900/30 dark:text-red-300' : 'bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300'}`}>
             {card.country === 'CA' ? '🇨🇦' : '🇺🇸'}
           </span>

@@ -3,39 +3,56 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
+  /* === LIGHT MODE (default) === */
+  /* Surfaces */
+  --color-background: #fdfcfb;
+  --color-card: #ffffff;
+  --color-muted: #f5f2ef;
+  --color-border: #e7e3df;
+  /* Text */
+  --color-foreground: #2d2a26;
+  --color-card-foreground: #2d2a26;
+  --color-muted-foreground: #6b6560;
+  /* Primary (buttons + text links share same dark green — works in light mode) */
   --color-primary: #1a5632;
   --color-primary-light: #22724a;
   --color-primary-dark: #14432a;
+  /* Accent (for text links/highlights — same as primary in light mode) */
+  --color-accent: #1a5632;
+  --color-accent-light: #22724a;
+  /* Gold */
   --color-gold: #d4a853;
   --color-gold-light: #e4c47a;
   --color-gold-dark: #c9952a;
   --color-gold-text: #8a6000;
-  --color-background: #fdfcfb;
-  --color-foreground: #2d2a26;
-  --color-muted: #f7f5f2;
-  --color-muted-foreground: #6b6560;
-  --color-border: #e7e3df;
-  --color-card: #ffffff;
-  --color-card-foreground: #2d2a26;
+  /* Fonts */
   --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
 }
 
 .dark {
-  --color-background: #1c1917;
-  --color-foreground: #f5f5f4;
-  --color-muted: #292524;
-  --color-muted-foreground: #d6d3d1;
-  --color-border: #57534e;
-  --color-card: #302b28;
-  --color-card-foreground: #f5f5f4;
-  --color-primary: #34d27a;
-  --color-primary-light: #4ade8a;
-  --color-primary-dark: #22b862;
-  --color-gold: #e5b94e;
-  --color-gold-light: #f0d694;
-  --color-gold-dark: #e5b94e;
-  --color-gold-text: #e5b94e;
+  /* === DARK MODE — fully independent palette === */
+  /* Surfaces */
+  --color-background: #0f0d0c;
+  --color-card: #1e1a17;
+  --color-muted: #161311;
+  --color-border: #3a3530;
+  /* Text */
+  --color-foreground: #ede9e5;
+  --color-card-foreground: #ede9e5;
+  --color-muted-foreground: #a09a95;
+  /* Primary (buttons — dark enough green for white text, 5.4:1) */
+  --color-primary: #1a7a3f;
+  --color-primary-light: #1d8847;
+  --color-primary-dark: #156832;
+  /* Accent (text links/highlights — bright green for readability, 11:1+) */
+  --color-accent: #5ddb94;
+  --color-accent-light: #7ee8ab;
+  /* Gold */
+  --color-gold: #f0c556;
+  --color-gold-light: #f5d88a;
+  --color-gold-dark: #dab240;
+  --color-gold-text: #f0c556;
 }
 
 /* Selection styling */
@@ -103,6 +120,12 @@ input[type="checkbox"]:focus-visible {
 .card-hover:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(45, 42, 38, 0.08), 0 4px 12px rgba(45, 42, 38, 0.04);
+}
+:is(.dark) .card-hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+:is(.dark) .card-hover:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Button variants */

@@ -27,7 +27,7 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
     return (
       <div className="mx-auto max-w-3xl px-4 py-16 text-center">
         <h1 className="text-2xl font-bold mb-4">Card Not Found</h1>
-        <Link href="/cards" className="text-primary hover:underline">← Back to Card Explorer</Link>
+        <Link href="/cards" className="text-accent hover:underline">← Back to Card Explorer</Link>
       </div>
     );
   }
@@ -123,7 +123,7 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
                   const isTop = i === 0;
                   return (
                     <div key={i} className={`flex items-center gap-3 rounded-lg px-4 py-3 ${isTop ? 'bg-gold/10 border border-gold/20' : 'bg-muted/70'}`}>
-                      <span className={`inline-flex items-center justify-center rounded-full min-w-[3rem] h-9 px-2 text-base font-bold ${isTop ? 'bg-gradient-to-br from-gold to-gold-dark text-primary-dark' : 'bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-emerald-300'}`}>
+                      <span className={`inline-flex items-center justify-center rounded-full min-w-[3rem] h-9 px-2 text-base font-bold ${isTop ? 'bg-gradient-to-br from-gold to-gold-dark text-primary-dark' : 'bg-accent/10 text-accent'}`}>
                         {multiplier}
                       </span>
                       <span className="text-sm font-medium">{er.category}</span>
@@ -175,7 +175,7 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
           <ul className="space-y-2">
             {card.key_perks.map((p, i) => (
               <li key={i} className="flex items-start gap-2 text-sm">
-                <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                <Check className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                 <span className="leading-relaxed">{p}</span>
               </li>
             ))}

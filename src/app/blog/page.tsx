@@ -31,7 +31,7 @@ export default function BlogPage() {
             key={cat}
             onClick={() => setActive(cat)}
             className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${active === cat
-              ? 'bg-primary text-white dark:text-background shadow-md shadow-primary/20'
+              ? 'bg-primary text-white shadow-md shadow-primary/20'
               : 'bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground'
             }`}
           >
@@ -49,10 +49,10 @@ export default function BlogPage() {
             </div>
             <div className="p-6">
               <div className="flex items-center gap-3 mb-3">
-                <span className="rounded-full bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-emerald-300 px-3 py-0.5 text-xs font-medium">{post.category}</span>
+                <span className="rounded-full bg-accent/10 text-accent px-3 py-0.5 text-xs font-medium">{post.category}</span>
                 <span className="text-xs text-muted-foreground">{post.date}</span>
               </div>
-              <h2 className="text-lg font-semibold mb-2 leading-snug hover:text-primary transition-colors cursor-pointer">{post.title}</h2>
+              <h2 className="text-lg font-semibold mb-2 leading-snug hover:text-accent transition-colors cursor-pointer">{post.title}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed">{post.excerpt}</p>
             </div>
           </article>

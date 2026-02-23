@@ -122,7 +122,7 @@ function CardsContent() {
         <div className="flex gap-1">
           {(['all', 'CA', 'US'] as const).map(c => (
             <button key={c} onClick={() => setCountry(c)}
-              className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${country === c ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
+              className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${country === c ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
               {c === 'all' ? 'All' : c === 'CA' ? '🇨🇦 Canada' : '🇺🇸 US'}
             </button>
           ))}
@@ -133,7 +133,7 @@ function CardsContent() {
         <div className="flex flex-wrap gap-2">
           {CARD_TYPES.map(t => (
             <button key={t} onClick={() => toggleType(t)}
-              className={`rounded-full px-3 py-1 text-xs font-medium capitalize transition-colors ${selectedTypes.includes(t) ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
+              className={`rounded-full px-3 py-1 text-xs font-medium capitalize transition-colors ${selectedTypes.includes(t) ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
               {t}
             </button>
           ))}
@@ -142,9 +142,9 @@ function CardsContent() {
 
       <CollapsibleSection title="Personal / Business" defaultOpen>
         <div className="flex gap-1">
-          <button onClick={() => { setPersonalOnly(false); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${!personalOnly && !businessOnly ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground'}`}>All</button>
-          <button onClick={() => { setPersonalOnly(true); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${personalOnly ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground'}`}>Personal</button>
-          <button onClick={() => { setBusinessOnly(true); setPersonalOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${businessOnly ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground'}`}>Business</button>
+          <button onClick={() => { setPersonalOnly(false); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${!personalOnly && !businessOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>All</button>
+          <button onClick={() => { setPersonalOnly(true); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${personalOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>Personal</button>
+          <button onClick={() => { setBusinessOnly(true); setPersonalOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${businessOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>Business</button>
         </div>
       </CollapsibleSection>
 
@@ -153,7 +153,7 @@ function CardsContent() {
           className="w-full rounded-lg border border-border bg-background px-3 py-1.5 text-sm mb-2 focus:outline-none focus:ring-1 focus:ring-primary" />
         <div className="max-h-40 overflow-y-auto space-y-1">
           {filteredIssuers.map(i => (
-            <label key={i} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-primary">
+            <label key={i} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-accent">
               <input type="checkbox" checked={selectedIssuers.includes(i)} onChange={() => toggleIssuer(i)} />
               {i}
             </label>
@@ -164,7 +164,7 @@ function CardsContent() {
       <CollapsibleSection title="Network">
         <div className="space-y-1">
           {allNetworks.map(n => (
-            <label key={n} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-primary">
+            <label key={n} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-accent">
               <input type="checkbox" checked={selectedNetworks.includes(n)} onChange={() => toggleNetwork(n)} />
               {n}
             </label>
@@ -176,7 +176,7 @@ function CardsContent() {
         <div className="flex flex-wrap gap-1.5">
           {FEE_RANGES.map(r => (
             <button key={r.value} onClick={() => setFeeRange(r.value)}
-              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${feeRange === r.value ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
+              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${feeRange === r.value ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
               {r.label}
             </button>
           ))}
@@ -191,7 +191,7 @@ function CardsContent() {
       <CollapsibleSection title="Benefits">
         <div className="space-y-1">
           {(Object.keys(BENEFIT_LABELS) as (keyof Benefits)[]).map(b => (
-            <label key={b} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-primary">
+            <label key={b} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-accent">
               <input type="checkbox" checked={selectedBenefits.includes(b)} onChange={() => toggleBenefit(b)} />
               {BENEFIT_LABELS[b]}
             </label>
@@ -226,8 +226,8 @@ function CardsContent() {
             {SORT_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
           <div className="hidden sm:flex border border-border rounded-full overflow-hidden">
-            <button onClick={() => setListView(false)} className={`p-2 ${!listView ? 'bg-primary text-white dark:text-background' : 'bg-background'}`}><Grid3X3 className="w-4 h-4" /></button>
-            <button onClick={() => setListView(true)} className={`p-2 ${listView ? 'bg-primary text-white dark:text-background' : 'bg-background'}`}><List className="w-4 h-4" /></button>
+            <button onClick={() => setListView(false)} className={`p-2 ${!listView ? 'bg-primary text-white' : 'bg-background'}`}><Grid3X3 className="w-4 h-4" /></button>
+            <button onClick={() => setListView(true)} className={`p-2 ${listView ? 'bg-primary text-white' : 'bg-background'}`}><List className="w-4 h-4" /></button>
           </div>
           <button onClick={() => setMobileFiltersOpen(true)} className="lg:hidden rounded-lg border border-border p-2 hover:bg-muted">
             <SlidersHorizontal className="w-4 h-4" />
@@ -239,7 +239,7 @@ function CardsContent() {
       {activeFilterPills.length > 0 && (
         <div className="flex flex-wrap items-center gap-2 mb-5">
           {activeFilterPills.map((pill, i) => (
-            <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 text-primary px-3 py-1 text-xs font-medium dark:bg-primary-light/20 dark:text-emerald-300">
+            <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-accent/10 text-accent px-3 py-1 text-xs font-medium">
               {pill.label}
               <button onClick={pill.onRemove} className="hover:text-red-500 transition-colors"><X className="w-3 h-3" /></button>
             </span>
@@ -280,7 +280,7 @@ function CollapsibleSection({ title, children, defaultOpen = false }: { title: s
   const [open, setOpen] = useState(defaultOpen);
   return (
     <div className="border-b border-border/50 pb-4 pt-3">
-      <button onClick={() => setOpen(!open)} className="flex items-center justify-between w-full text-sm font-semibold text-foreground hover:text-primary transition-colors">
+      <button onClick={() => setOpen(!open)} className="flex items-center justify-between w-full text-sm font-semibold text-foreground hover:text-accent transition-colors">
         {title}
         <ChevronDown className={`w-4 h-4 text-muted-foreground transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
