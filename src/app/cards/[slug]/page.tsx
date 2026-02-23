@@ -87,11 +87,48 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
         <ValueMeter value={card.first_year_value} max={getMaxFirstYearValue()} />
       )}
 
-      {/* Welcome bonus conditions */}
-      {card.welcome_bonus_conditions && (
+      {/* Welcome bonus breakdown */}
+      {(card.welcome_bonus || card.welcome_bonus_value > 0) && (
         <div className="rounded-xl border border-gold/30 bg-gold/5 p-5 mb-8">
-          <p className="text-sm font-semibold text-gold-dark">Welcome Bonus: {card.welcome_bonus}</p>
-          <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{card.welcome_bonus_conditions}</p>
+          <h3 className="text-base font-semibold text-foreground mb-3">Welcome Bonus Breakdown</h3>
+          <div className="space-y-2">
+            {card.welcome_bonus && (
+              <div className="flex justify-between items-baseline">
+                <span className="text-sm text-muted-foreground">Offer</span>
+                <span className="text-sm font-medium text-foreground">{card.welcome_bonus}</span>
+              </div>
+            )}
+            {card.welcome_bonus_value > 0 && (
+              <div className="flex justify-between items-baseline">
+                <span className="text-sm text-muted-foreground">Estimated Value</span>
+                <span className="text-sm font-bold text-gold-dark">${card.welcome_bonus_value.toLocaleString()}</span>
+              </div>
+            )}
+            {card.annual_fee > 0 && (
+              <div className="flex justify-between items-baseline">
+                <span className="text-sm text-muted-foreground">Annual Fee</span>
+                <span className="text-sm font-medium text-red-500">−${card.annual_fee}</span>
+              </div>
+            )}
+            {card.first_year_fee !== null && card.first_year_fee !== card.annual_fee && (
+              <div className="flex justify-between items-baseline">
+                <span className="text-sm text-muted-foreground">First Year Fee</span>
+                <span className="text-sm font-medium text-foreground">{card.first_year_fee === 0 ? 'Waived' : `$${card.first_year_fee}`}</span>
+              </div>
+            )}
+            {card.first_year_value > 0 && (
+              <>
+                <div className="border-t border-gold/20 my-2" />
+                <div className="flex justify-between items-baseline">
+                  <span className="text-sm font-semibold text-foreground">Net First Year Value</span>
+                  <span className="text-base font-bold text-gold-dark">${card.first_year_value.toLocaleString()}</span>
+                </div>
+              </>
+            )}
+          </div>
+          {card.welcome_bonus_conditions && (
+            <p className="text-xs text-muted-foreground mt-3 leading-relaxed border-t border-gold/20 pt-3">{card.welcome_bonus_conditions}</p>
+          )}
         </div>
       )}
 
