@@ -142,9 +142,9 @@ function CardsContent() {
 
       <CollapsibleSection title="Personal / Business" defaultOpen>
         <div className="flex gap-1">
-          <button onClick={() => { setPersonalOnly(false); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${!personalOnly && !businessOnly ? 'bg-primary text-white' : 'bg-muted'}`}>All</button>
-          <button onClick={() => { setPersonalOnly(true); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${personalOnly ? 'bg-primary text-white' : 'bg-muted'}`}>Personal</button>
-          <button onClick={() => { setBusinessOnly(true); setPersonalOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${businessOnly ? 'bg-primary text-white' : 'bg-muted'}`}>Business</button>
+          <button onClick={() => { setPersonalOnly(false); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${!personalOnly && !businessOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>All</button>
+          <button onClick={() => { setPersonalOnly(true); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${personalOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>Personal</button>
+          <button onClick={() => { setBusinessOnly(true); setPersonalOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${businessOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>Business</button>
         </div>
       </CollapsibleSection>
 

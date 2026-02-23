@@ -95,17 +95,17 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-5 flex justify-center gap-10">
           <div className="text-center">
             <p className="text-3xl font-bold text-gold-text dark:text-gold"><AnimatedCounter end={stats.cards} suffix="+" /></p>
-            <p className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">Cards tracked</p>
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground dark:text-foreground/70 mt-1">Cards tracked</p>
           </div>
           <div className="w-px bg-border" />
           <div className="text-center">
             <p className="text-3xl font-bold text-gold-text dark:text-gold"><AnimatedCounter end={stats.issuers} /></p>
-            <p className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">Issuers</p>
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground dark:text-foreground/70 mt-1">Issuers</p>
           </div>
           <div className="w-px bg-border" />
           <div className="text-center">
             <p className="text-3xl font-bold text-gold-text dark:text-gold"><AnimatedCounter end={2} /></p>
-            <p className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">Countries</p>
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground dark:text-foreground/70 mt-1">Countries</p>
           </div>
         </div>
       </section>
