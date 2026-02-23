@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import {
   Lightbulb, AlertTriangle, Clock, MapPin, Building2, CreditCard,
   FileText, TrendingUp, ShieldCheck, Rocket, ChevronDown, ChevronUp,
-  DollarSign, Globe, CheckCircle2, XCircle, ArrowRight
+  DollarSign, Globe, CheckCircle2, XCircle, ArrowRight, Info
 } from 'lucide-react';
 
 // ── Reading Progress Bar ─────────────────────────────────
@@ -372,65 +372,294 @@ export default function USCardsGuidePage() {
               You fill out <strong>Form W-7</strong> (the ITIN application), <strong>Form 1040-NR</strong> (non-resident tax return), <strong>Schedule 1</strong>, and <strong>Schedule OI</strong>. You&apos;ll also need your Canadian SIN and a list of dates you were physically present in the US during the tax year.
             </p>
 
-            <WarningBox>
-              <strong>Important 2025 update:</strong> The IRS <strong>no longer accepts certified passport copies</strong> from Service Canada. Your identity verification options are now:
-              <ol className="list-decimal ml-5 mt-2">
-                <li><strong>Visit an IRS Taxpayer Assistance Center (TAC) in person</strong> — bring your passport, no mailing needed. This is the best option.</li>
-                <li><strong>Mail your original passport</strong> to the IRS — they return it, but it takes ~5 months. Risky.</li>
-                <li><strong>Use a Certified Acceptance Agent</strong> — more expensive but avoids mailing your passport.</li>
-              </ol>
-            </WarningBox>
+            {/* ── Submission Paths ─────────────────────────── */}
+            <div className="mt-8 mb-6">
+              <h4 className="text-lg font-bold font-[family-name:var(--font-display)] mb-4">How to Submit Your Application</h4>
 
-            <details className="mt-4 mb-4 border border-gray-200 dark:border-gray-700 rounded-lg">
-              <summary className="cursor-pointer p-4 font-semibold text-blue-600 dark:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg">
-                📋 Detailed ITIN Application Guide (TAC appointments, payment, timelines)
-              </summary>
-              <div className="p-4 pt-0 space-y-4">
-                <h5 className="font-semibold mt-2">In-Person TAC Appointment Tips</h5>
-                <ul>
-                  <li>Call <strong>844-545-5640</strong> to schedule an appointment (up to 2 months in advance).</li>
-                  <li>If you have trouble calling from a Canadian number, try <strong>267-941-1000</strong> (not toll-free).</li>
-                  <li>Bring your passport plus a <strong>duplicate copy of all forms</strong>.</li>
-                  <li>The appointment takes 20 minutes to 1 hour.</li>
-                  <li>The clerk checks completeness, not approval — remind them you&apos;re filing to submit a 1040-NR.</li>
-                </ul>
+              <div className="grid md:grid-cols-2 gap-4">
+                {/* Path A */}
+                <div className="rounded-xl border-2 border-primary/30 bg-primary/[0.03] dark:bg-primary/[0.06] p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="rounded-full bg-primary text-white text-xs font-bold px-2.5 py-1">Recommended</span>
+                  </div>
+                  <h5 className="font-bold mb-2">Path A: In-Person at IRS Taxpayer Assistance Center</h5>
+                  <ul className="text-sm space-y-2 text-foreground/80">
+                    <li>✅ Best option — bring your passport, no mailing needed, get it stamped as received</li>
+                    <li>📞 Call <strong>844-545-5640</strong> to book appointment (up to 2 months ahead)</li>
+                    <li>📞 Backup: <strong>267-941-1000</strong> (not toll-free, works from Canadian numbers)</li>
+                    <li>📋 Bring: completed W-7, 1040-NR, Schedule 1, Schedule OI, passport, duplicate copies of all forms</li>
+                    <li>⏱️ Appointment takes 20 min to 1 hour</li>
+                    <li>ℹ️ The clerk checks completeness only — they don&apos;t approve/deny. Remind them you&apos;re filing a 1040-NR.</li>
+                  </ul>
+                </div>
 
-                <h5 className="font-semibold mt-2">What You Need</h5>
-                <ul>
-                  <li>W-7 Form (ITIN application)</li>
-                  <li>1040-NR Form (non-resident tax return)</li>
-                  <li>Schedule 1 and Schedule OI (supplementary forms)</li>
-                  <li>Your passport (for identity verification)</li>
-                  <li>Your Canadian SIN</li>
-                  <li>List of dates physically present in the USA for the tax year</li>
-                </ul>
-
-                <h5 className="font-semibold mt-2">Timeline &amp; Payment</h5>
-                <ul>
-                  <li>Processing takes <strong>6–8 weeks</strong> after submission (can stretch longer during tax season).</li>
-                  <li>Late filing penalty caps at 100% of tax owed — so about <strong>$9</strong>.</li>
-                  <li>Pay via check or the IRS online system.</li>
-                  <li>Your ITIN <strong>expires if not used</strong> on a tax return every 3 years — renew by filing.</li>
-                </ul>
-
-                <h5 className="font-semibold mt-2">If You Lose Your ITIN Letter</h5>
-                <p>
-                  Call the IRS at <strong>+1 267-941-1000</strong> with your name, address, and birthdate. Request a generic letter with your ITIN.
-                </p>
-
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-4 italic">
-                  Note: This is general information, not tax advice. Tax forms and requirements may change — always verify with the IRS or a tax professional.
-                </p>
+                {/* Path B */}
+                <div className="rounded-xl border border-border bg-card p-5">
+                  <h5 className="font-bold mb-2">Path B: Mail-In</h5>
+                  <ul className="text-sm space-y-2 text-foreground/80">
+                    <li>📬 Mail to: <strong>Internal Revenue Service, ITIN Operation, P.O. Box 149342, Austin, TX 78714-9342, USA</strong></li>
+                    <li>📮 Send via Canada Post registered mail (~$15) for tracking/proof</li>
+                    <li>🛂 You must include your <strong>original passport</strong> — IRS no longer accepts certified copies</li>
+                  </ul>
+                  <WarningBox>
+                    Your passport can take <strong>~5 months to return</strong>. Some people have had passports lost in transit. Do you have upcoming travel that needs your passport? If so, choose Path A.
+                  </WarningBox>
+                </div>
               </div>
-            </details>
+            </div>
 
-            <p>
-              You&apos;ll receive your ITIN in a letter mailed to your US address.
-            </p>
+            {/* ── Detailed Form Instructions ──────────────── */}
+            <div className="mt-10 mb-6 rounded-2xl border border-primary/20 bg-gradient-to-b from-primary/[0.03] to-transparent dark:from-primary/[0.06] p-6 md:p-8">
+              <div className="text-center mb-6">
+                <h4 className="text-xl font-bold font-[family-name:var(--font-display)]">📝 Line-by-Line Form Instructions</h4>
+                <p className="text-sm text-muted-foreground mt-1">Follow along field by field — most fields are left blank</p>
+              </div>
+
+              <TipBox>
+                <strong>Don&apos;t be intimidated!</strong> The whole process looks scarier than it is. Most fields are left blank. The key entries are your name, address, SIN, passport info, and a small gambling income number.
+              </TipBox>
+
+              <p className="text-xs text-muted-foreground italic mb-6">
+                ⚠️ Form line numbers may change year to year. Always verify against the current year&apos;s forms from <a href="https://www.irs.gov/forms-instructions" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">irs.gov</a>.
+              </p>
+
+              {/* W-7 Form */}
+              <details className="mb-4 rounded-xl border border-border bg-card overflow-hidden" open>
+                <summary className="cursor-pointer p-4 md:p-5 font-bold text-base hover:bg-primary/[0.03] transition-colors flex items-center gap-3">
+                  <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center shrink-0">1</span>
+                  Form W-7 — ITIN Application
+                </summary>
+                <div className="px-4 md:px-5 pb-5 space-y-3">
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>Top right checkbox:</strong> Check <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">&quot;Apply for a New ITIN&quot;</span></p>
+                  </div>
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>Reason for applying:</strong> Check box <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">(b) — filing a tax return</span></p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Name section:</strong> Must match your passport <em>exactly</em></p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Mailing address:</strong> Your Canadian address is fine — the IRS returns documents here</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Foreign address:</strong> Write your address again even if same as mailing address</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Birth information:</strong> Complete as on passport. If your birth country is not recognized by the USA, use a recognized country.</p>
+                  </div>
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>6a — Countries of citizenship:</strong> Enter all countries you hold citizenship in</p>
+                  </div>
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>6b — Foreign Tax ID Number:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Enter your Canadian SIN</span> — this is <strong>REQUIRED</strong></p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Type of US Visa:</strong> Leave blank (unless you have a work visa — if so, get professional help)</p>
+                  </div>
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>Identification Document:</strong> Check <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">&quot;Passport&quot;</span>, enter Canada, your passport number, and expiry date. Leave &quot;date of entry&quot; blank.</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>6e:</strong> No &nbsp;|&nbsp; <strong>6f, 6g:</strong> Leave blank</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Sign Here:</strong> Sign <em>in ink</em> (NOT digital), enter date and phone number (Canadian number is fine)</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Acceptance Agent section:</strong> Do not complete</p>
+                  </div>
+                </div>
+              </details>
+
+              {/* 1040-NR Form */}
+              <details className="mb-4 rounded-xl border border-border bg-card overflow-hidden">
+                <summary className="cursor-pointer p-4 md:p-5 font-bold text-base hover:bg-primary/[0.03] transition-colors flex items-center gap-3">
+                  <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center shrink-0">2</span>
+                  Form 1040-NR — Non-Resident Tax Return
+                </summary>
+                <div className="px-4 md:px-5 pb-5 space-y-3">
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Filing status:</strong> Single (or Married Filing Separately / Qualifying Widower)</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Name:</strong> Must match your W-7 exactly</p>
+                  </div>
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>Identifying number:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Leave blank</span> — you&apos;re applying for one!</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Address:</strong> Your Canadian mailing address</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Virtual currency question:</strong> Just put Yes or No (about crypto — you don&apos;t need to report income)</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Dependents:</strong> Leave blank</p>
+                  </div>
+
+                  <div className="mt-2 mb-2 p-4 rounded-xl bg-emerald-50/60 dark:bg-emerald-500/[0.08] border border-emerald-200/50 dark:border-emerald-500/20">
+                    <p className="text-sm font-bold text-emerald-700 dark:text-emerald-300 mb-3">💰 Income &amp; Tax Lines (using $85 gambling income as example):</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 8</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$85</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 9</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$85</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 11</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$85</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 15</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$85</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 16</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 18</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 22</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 24</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 26</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$0</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 32</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$0</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 33</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$0</span>
+                      </div>
+                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
+                        <span className="font-semibold">Line 37</span>
+                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
+                      </div>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-3">Line 16 ($9) comes from the IRS Tax Table for income $75–$99. Pick any amount in that range (e.g. $85).</p>
+                  </div>
+
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Line 38:</strong> Leave blank (income under $1,000 = no penalty)</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Third Party Designee:</strong> Check &quot;No&quot;</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Sign Here:</strong> Sign in ink, enter date and occupation. Phone/email optional. Leave PIN blank.</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Paid Preparer:</strong> Leave blank (unless using a paid service — they MUST include their PTIN)</p>
+                  </div>
+                </div>
+              </details>
+
+              {/* Schedule OI */}
+              <details className="mb-4 rounded-xl border border-border bg-card overflow-hidden">
+                <summary className="cursor-pointer p-4 md:p-5 font-bold text-base hover:bg-primary/[0.03] transition-colors flex items-center gap-3">
+                  <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center shrink-0">3</span>
+                  Schedule OI — Other Information
+                </summary>
+                <div className="px-4 md:px-5 pb-5 space-y-3">
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Name:</strong> Your name at the top of the page</p>
+                  </div>
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>A:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Country of citizenship during tax year</span></p>
+                  </div>
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>B:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Canada</span> (if you live/work in Canada)</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>C, D:</strong> Expected to be &quot;No&quot;</p>
+                  </div>
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>E:</strong> Write <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">&quot;Not present in U.S.—No U.S. immigration status&quot;</span> (unless you were in the US on Dec 31)</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>F:</strong> No</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>G:</strong> List all dates you entered/left the USA that year (including layovers). Check travel records at <a href="https://i94.cbp.dhs.gov" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">i94.cbp.dhs.gov</a>. Leave blank if you weren&apos;t in the US.</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>H:</strong> Number of days present in USA for each of the 3 tax years.</p>
+                  </div>
+                  <WarningBox>
+                    <strong>Substantial Presence Test:</strong> If (current year days × 1) + (prior year × ⅓) + (2 years ago × ⅙) ≥ 183, you may be treated as a US tax resident. <strong>Get professional help immediately.</strong>
+                  </WarningBox>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>I, J, K:</strong> Expected &quot;No&quot;</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>L, M:</strong> Leave blank</p>
+                  </div>
+                </div>
+              </details>
+
+              {/* Schedule 1 */}
+              <details className="mb-4 rounded-xl border border-border bg-card overflow-hidden">
+                <summary className="cursor-pointer p-4 md:p-5 font-bold text-base hover:bg-primary/[0.03] transition-colors flex items-center gap-3">
+                  <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center shrink-0">4</span>
+                  Schedule 1 — Additional Income
+                </summary>
+                <div className="px-4 md:px-5 pb-5 space-y-3">
+                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
+                    <p className="text-sm"><strong>Line 8b:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Enter your gambling income amount</span> (same as 1040-NR Line 8, e.g. $85)</p>
+                  </div>
+                  <div className="rounded-lg bg-card border border-border p-3">
+                    <p className="text-sm"><strong>Everything else:</strong> Leave blank or $0</p>
+                  </div>
+                </div>
+              </details>
+            </div>
+
+            {/* ── Payment Section ─────────────────────────── */}
+            <div className="rounded-xl border border-border bg-card p-5 mb-6">
+              <h4 className="font-bold mb-3 flex items-center gap-2">
+                <DollarSign className="w-5 h-5 text-primary" />
+                Payment (~$9 USD)
+              </h4>
+              <ul className="text-sm space-y-2 text-foreground/80">
+                <li>💵 Pay by check (payable to <strong>&quot;United States Treasury&quot;</strong>) included with your mailing, or pay online at <a href="https://www.irs.gov/payments" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">irs.gov/payments</a></li>
+                <li>📋 Late filing penalty caps at 100% of tax (~$9 max penalty), plus a few dollars interest</li>
+                <li>😌 Don&apos;t stress about being &quot;late&quot; — the total additional cost is minimal</li>
+              </ul>
+            </div>
+
+            {/* ── After Submission ────────────────────────── */}
+            <div className="rounded-xl border border-border bg-card p-5 mb-6">
+              <h4 className="font-bold mb-3">After Submission</h4>
+              <ul className="text-sm space-y-2 text-foreground/80">
+                <li>⏱️ Processing: <strong>6–8 weeks</strong></li>
+                <li>📬 You&apos;ll receive a letter with your 9-digit ITIN</li>
+                <li>🚨 <strong>IMMEDIATELY</strong> link it to your Amex US account</li>
+                <li>🔄 ITIN expires if not used on a tax return every 3 years — file periodically to keep it active</li>
+                <li>📞 Lost your letter? Call <strong>+1 267-941-1000</strong> with your name, address, and birthdate to retrieve it</li>
+              </ul>
+            </div>
 
             <TipBox>
               You don&apos;t need to wait for your ITIN to start building credit — that&apos;s why we get the Amex card first via Global Transfer. Apply for your ITIN in parallel while your Amex card is building your credit history.
             </TipBox>
+
+            <p className="text-xs text-muted-foreground italic mt-4">
+              ⚖️ <strong>Disclaimer:</strong> This guide is for informational purposes only and does not constitute tax advice. Consult a tax professional for your specific situation.
+            </p>
           </StepCard>
 
           {/* Step 5 */}
