@@ -50,6 +50,9 @@ export interface Card {
   is_business: boolean;
   benefits: Benefits;
   first_year_value: number;
+  first_year_value_formula: string | null;
+  cpp_cad: number | null;
+  welcome_bonus_points: number | null;
   apply_url: string | null;
   benefits_incomplete: boolean;
 }
@@ -171,6 +174,9 @@ function normalizeCA(raw: RawCA): Card {
     is_business: false,
     benefits: { lounge_access: false, no_fx_fee: false, car_rental_insurance: false, travel_medical: false, trip_cancellation: false, flight_delay: false, mobile_insurance: false, purchase_protection: false, extended_warranty: false, free_checked_bags: false },
     first_year_value: 0,
+    first_year_value_formula: null,
+    cpp_cad: null,
+    welcome_bonus_points: null,
     apply_url: (raw as any).apply_url || null,
     benefits_incomplete: false,
   };
@@ -191,6 +197,22 @@ function normalizeCA(raw: RawCA): Card {
   }
   const effectiveFee = firstYearFee !== null ? firstYearFee : fee;
   card.first_year_value = precomputedFYV != null ? precomputedFYV : (bonusValue - effectiveFee);
+
+  // Build formula string
+  const pts = raw.welcome_bonus_points;
+  const cpp = raw.cpp_cad;
+  card.cpp_cad = cpp || null;
+  card.welcome_bonus_points = pts || null;
+  if (card.first_year_value > 0 && pts && cpp) {
+    const bonusVal = Math.round(pts * cpp / 100);
+    const feePart = effectiveFee > 0 ? ` − $${effectiveFee} fee` : '';
+    card.first_year_value_formula = `${pts.toLocaleString()} pts × ${cpp}¢${feePart}`;
+  } else if (card.first_year_value > 0 && bonusValue > 0) {
+    const feePart = effectiveFee > 0 ? ` − $${effectiveFee} fee` : '';
+    card.first_year_value_formula = `$${bonusValue} bonus${feePart}`;
+  } else {
+    card.first_year_value_formula = null;
+  }
 
   return card;
 }
@@ -254,6 +276,9 @@ function normalizeUS(raw: RawUS): Card {
     is_business: false,
     benefits: { lounge_access: false, no_fx_fee: false, car_rental_insurance: false, travel_medical: false, trip_cancellation: false, flight_delay: false, mobile_insurance: false, purchase_protection: false, extended_warranty: false, free_checked_bags: false },
     first_year_value: 0,
+    first_year_value_formula: null,
+    cpp_cad: null,
+    welcome_bonus_points: null,
     apply_url: (raw as any).apply_url || null,
     benefits_incomplete: false,
   };
@@ -268,6 +293,9 @@ function normalizeUS(raw: RawUS): Card {
     card.benefits_incomplete = true;
   }
   card.first_year_value = bonusValue - fee;
+  card.first_year_value_formula = null;
+  card.cpp_cad = null;
+  card.welcome_bonus_points = null;
 
   return card;
 }

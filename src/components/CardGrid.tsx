@@ -122,9 +122,12 @@ function CardGridItem({ card }: { card: Card }) {
           <p className="font-bold text-sm mt-0.5 text-gold-text dark:text-gold line-clamp-1">{card.welcome_bonus || '—'}</p>
         </div>
         {card.first_year_value > 0 && (
-          <div className="rounded-lg bg-emerald-50 dark:bg-emerald-900/20 p-2.5">
+          <div className="rounded-lg bg-emerald-50 dark:bg-emerald-900/20 p-2.5" title={card.first_year_value_formula || undefined}>
             <p className="text-[10px] uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-medium">1st Year Value</p>
             <p className="font-bold text-sm mt-0.5 text-emerald-700 dark:text-emerald-300">${Math.round(card.first_year_value).toLocaleString()}</p>
+            {card.first_year_value_formula && (
+              <p className="text-[9px] text-emerald-600/70 dark:text-emerald-400/70 mt-0.5 leading-tight">{card.first_year_value_formula}</p>
+            )}
           </div>
         )}
       </div>

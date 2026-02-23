@@ -78,6 +78,9 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
         <StatCard label="Welcome Bonus" value={card.welcome_bonus || '—'} highlight />
         {card.first_year_value > 0 && <StatCard label="1st Year Value" value={`$${Math.round(card.first_year_value).toLocaleString()}`} />}
       </div>
+      {card.first_year_value > 0 && card.first_year_value_formula && (
+        <p className="text-xs text-muted-foreground -mt-6 mb-6 ml-1">💡 {card.first_year_value_formula} = <strong>${Math.round(card.first_year_value).toLocaleString()}</strong></p>
+      )}
         </div>
       </div>
 
