@@ -1,0 +1,97 @@
+[
+  {
+    "name": "TD Cash Back Visa Infinite* Card",
+    "welcome_bonus": "TD Cash Back Visa Infinite* Card",
+    "annual_fee": "$139",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "TD Cash Back Visa* Card",
+    "welcome_bonus": "TD Cash Back Visa* Card",
+    "annual_fee": "$0",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "TD\u00ae Aeroplan\u00ae Visa Infinite* Card",
+    "welcome_bonus": "Up to $1,350 in value^ including up to 40,000 Aeroplan points1 could be yours. Plus, receive an annual fee rebate for the first year1. Conditions Apply.",
+    "annual_fee": "$139",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "TD\u00ae Aeroplan\u00ae Visa Platinum* Credit Card",
+    "welcome_bonus": "Up to $400 in value#, including up to 15,000 Aeroplan points11 could be yours, Plus, receive an annual fee rebate for the first year11. Conditions Apply.",
+    "annual_fee": "$89",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "TD\u00ae Aeroplan\u00ae Visa Infinite Privilege* Credit Card",
+    "welcome_bonus": "Up to $3,000 in value* including up to 85,000 Aeroplan points12 could be yours. Conditions Apply.",
+    "annual_fee": "$599",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "TD First Class Travel\u00ae Visa Infinite* Card",
+    "welcome_bonus": "Earn up to $1,400 in value16, including up to 165,000 TD Rewards Points3 and receive an annual fee rebate for the first year3. Conditions Apply.",
+    "annual_fee": "$139",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "TD Platinum Travel Visa* Card",
+    "welcome_bonus": "Earn up to $370 in value14, including up to 50,000 TD Rewards Points4 and receive an annual fee rebate for the first year4. Conditions Apply.",
+    "annual_fee": "$89",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "TD Rewards Visa* Card",
+    "welcome_bonus": "Earn a value of $5015,13 in TD Rewards Points to use on eligible Amazon.ca purchases plus, no Annual Fee. Conditions Apply.",
+    "annual_fee": "$0",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "TD Low Rate Visa* Card",
+    "annual_fee": "$25",
+    "interest_purchases": "12.90%18",
+    "type": "personal"
+  },
+  {
+    "name": "TD U.S. Dollar Visa* Card",
+    "annual_fee": "$39 USD",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "TD Business Travel Visa* Card",
+    "welcome_bonus": "Earn up to $1,247 in value17, including up to 200,000 TD Rewards Points7,17, and an Annual Fee Rebate for the first year17 for the Primary Cardholder and first two Additional Cardholders7,17. Account must be approved, open and in Good Standing. Offer effective as of January 13, 2026. Conditions apply.",
+    "annual_fee": "$149",
+    "interest_purchases": "19.99%",
+    "type": "business"
+  },
+  {
+    "name": "TD\u00ae Aeroplan\u00ae Visa* Business Card",
+    "welcome_bonus": "Up to 60,000 Aeroplan points2 could be yours with the TD\u00ae Aeroplan\u00ae Visa* Business Card2. Conditions Apply. Account must be approved, open and in Good Standing. Offer effective as of January 13, 2026.",
+    "annual_fee": "$149",
+    "interest_purchases": "14.99%",
+    "type": "business"
+  },
+  {
+    "name": "TD Business Cash Back Visa* Card",
+    "welcome_bonus": "TD Business Cash Back Visa* Card",
+    "annual_fee": "$0",
+    "interest_purchases": "19.99%",
+    "type": "business"
+  },
+  {
+    "name": "TD Business Select RateTM Visa* Card",
+    "annual_fee": "$0",
+    "interest_purchases": "11.99%",
+    "type": "business"
+  }
+]

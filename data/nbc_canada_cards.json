@@ -1,0 +1,51 @@
+[
+  {
+    "name": "National Bank World Elite Mastercard",
+    "annual_fee": "$150",
+    "welcome_bonus": "Up to 35,000 points",
+    "interest_purchases": "20.99%",
+    "type": "personal"
+  },
+  {
+    "name": "National Bank Syncro Mastercard",
+    "annual_fee": "$35",
+    "welcome_bonus": "Get up to $105 cashback",
+    "interest_purchases": "8.90%",
+    "type": "personal"
+  },
+  {
+    "name": "National Bank Platinum Mastercard",
+    "annual_fee": "$70",
+    "welcome_bonus": null,
+    "interest_purchases": "20.99%",
+    "type": "personal"
+  },
+  {
+    "name": "National Bank Business Mastercard",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "20.99%",
+    "type": "business"
+  },
+  {
+    "name": "National Bank Business Line Mastercard",
+    "annual_fee": "$50",
+    "welcome_bonus": null,
+    "interest_purchases": "Prime + 5%",
+    "type": "business"
+  },
+  {
+    "name": "National Bank Platinum Business Mastercard",
+    "annual_fee": "$125",
+    "welcome_bonus": null,
+    "interest_purchases": "20.99%",
+    "type": "business"
+  },
+  {
+    "name": "National Bank Corporate Mastercard",
+    "annual_fee": "Contact bank",
+    "welcome_bonus": null,
+    "interest_purchases": "20.99%",
+    "type": "business"
+  }
+]

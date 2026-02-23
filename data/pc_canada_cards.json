@@ -1,0 +1,36 @@
+[
+  {
+    "name": "PC\u00ae Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": "Earn 20,000 bonus PC Optimum Points",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "PC\u00ae World Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": "Earn 20,000 bonus PC Optimum Points",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "PC\u00ae World Elite\u00ae Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": "Earn 20,000 bonus PC Optimum Points",
+    "interest_purchases": "21.99%",
+    "type": "personal",
+    "features": [
+      "Up to 3% back at grocery stores",
+      "3\u00a2/L at Esso and Mobil",
+      "Up to 4.5% at Shoppers Drug Mart",
+      "1% everywhere else"
+    ]
+  },
+  {
+    "name": "PC Insiders\u2122 World Elite\u00ae Mastercard\u00ae",
+    "annual_fee": "$119/year membership",
+    "welcome_bonus": null,
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  }
+]

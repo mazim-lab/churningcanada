@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Neo Mastercard",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "N/A (secured)",
+    "type": "personal",
+    "features": [
+      "Guaranteed approval",
+      "1% grocery",
+      "1% gas",
+      "Build credit history"
+    ]
+  },
+  {
+    "name": "Neo World Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "TBD",
+    "type": "personal",
+    "features": [
+      "2% grocery",
+      "2% gas",
+      "2% recurring payments",
+      "0.5% everything else",
+      "Purchase protection",
+      "Min income $50K"
+    ]
+  },
+  {
+    "name": "Neo World Elite\u00ae Mastercard",
+    "annual_fee": "$125",
+    "welcome_bonus": null,
+    "interest_purchases": "TBD",
+    "type": "personal",
+    "features": [
+      "5% grocery",
+      "3% gas",
+      "4% recurring payments",
+      "1% everything else",
+      "Purchase protection",
+      "Travel benefits",
+      "Min income $80K"
+    ]
+  }
+]

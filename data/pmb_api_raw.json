@@ -1,0 +1,26 @@
+{
+  "source": "pointsmilesandbling.com",
+  "scraped_at": "2026-02-22T21:28:00Z",
+  "method": "WP REST API pages + web_fetch of issuer pages",
+  "pages_found": {
+    "tangerine": "https://pointsmilesandbling.com/tangerine/",
+    "royal-bank-of-canada": "https://pointsmilesandbling.com/royal-bank-of-canada/",
+    "scotiabank": "https://pointsmilesandbling.com/scotiabank/",
+    "td-canada": "https://pointsmilesandbling.com/td-canada/",
+    "bmo-accounts": "https://pointsmilesandbling.com/bmo-accounts/ (bank accounts only, no credit cards)"
+  },
+  "pages_not_found": {
+    "rogers-bank": "404 - no page exists",
+    "credit-cards": "404 - main listing page does not exist"
+  },
+  "notes": [
+    "PMB organizes credit cards by issuer as WordPress pages (not posts or custom post types)",
+    "No structured WP REST API custom post type for credit cards - data is in page HTML content",
+    "BMO page only contains bank account offers, not credit cards",
+    "Rogers Bank appears in nav menu but has no corresponding page",
+    "Nav menu shows issuers: BMO, Rogers Bank, RBC, Scotiabank, Tangerine, TD Canada",
+    "All card data extracted from HTML content of issuer pages via WP REST API and web_fetch"
+  ],
+  "cards_extracted": 17,
+  "issuers_with_cards": ["Tangerine", "RBC", "Scotiabank", "TD"]
+}

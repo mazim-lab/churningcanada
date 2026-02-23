@@ -1,0 +1,706 @@
+[
+  [
+    {
+      "name": "American Express Business Edge Card",
+      "issuer": "American Express",
+      "country": "CA",
+      "slug": "american-express-business-edge-card"
+    },
+    {
+      "name": "American Express Green Card",
+      "issuer": "American Express",
+      "country": "CA",
+      "slug": "american-express-green-card"
+    },
+    {
+      "name": "BMO eclipse Visa Infinite Card",
+      "issuer": "BMO",
+      "country": "CA",
+      "slug": "bmo-eclipse-visa-infinite-card"
+    },
+    {
+      "name": "BMO eclipse Visa Infinite Privilege Card",
+      "issuer": "BMO",
+      "country": "CA",
+      "slug": "bmo-eclipse-visa-infinite-privilege-card"
+    },
+    {
+      "name": "Brim Mastercard",
+      "issuer": "Brim Financial",
+      "country": "CA",
+      "slug": "brim-mastercard"
+    }
+  ],
+  [
+    {
+      "name": "Cathay World Elite Mastercard \u2013 powered by Neo",
+      "issuer": "Rogers",
+      "country": "CA",
+      "slug": "cathay-world-elite-mastercard-powered-by-neo"
+    },
+    {
+      "name": "Coast Capital Visa Platinum",
+      "issuer": "Coast Capital",
+      "country": "CA",
+      "slug": "coast-capital-visa-platinum"
+    },
+    {
+      "name": "Desjardins Cash Back Mastercard",
+      "issuer": "Desjardins",
+      "country": "CA",
+      "slug": "desjardins-cash-back-mastercard"
+    },
+    {
+      "name": "Desjardins Cash Back World Elite Mastercard",
+      "issuer": "Desjardins",
+      "country": "CA",
+      "slug": "desjardins-cash-back-world-elite-mastercard"
+    },
+    {
+      "name": "Desjardins Odyssey Gold Visa",
+      "issuer": "Desjardins",
+      "country": "CA",
+      "slug": "desjardins-odyssey-gold-visa"
+    }
+  ],
+  [
+    {
+      "name": "Desjardins Odyssey Visa Infinite Privilege",
+      "issuer": "Desjardins",
+      "country": "CA",
+      "slug": "desjardins-odyssey-visa-infinite-privilege"
+    },
+    {
+      "name": "Desjardins Odyssey World Elite Mastercard",
+      "issuer": "Desjardins",
+      "country": "CA",
+      "slug": "desjardins-odyssey-world-elite-mastercard"
+    },
+    {
+      "name": "Innovation Federal Credit Union Visa",
+      "issuer": "Innovation FCU",
+      "country": "CA",
+      "slug": "innovation-federal-credit-union-visa"
+    },
+    {
+      "name": "KOHO Mastercard Prepaid",
+      "issuer": "KOHO",
+      "country": "CA",
+      "slug": "koho-mastercard-prepaid"
+    },
+    {
+      "name": "MBNA Amazon.ca Rewards Mastercard",
+      "issuer": "MBNA",
+      "country": "CA",
+      "slug": "mbna-amazon-ca-rewards-mastercard"
+    }
+  ],
+  [
+    {
+      "name": "MBNA Rewards World Elite Mastercard",
+      "issuer": "MBNA",
+      "country": "CA",
+      "slug": "mbna-rewards-world-elite-mastercard"
+    },
+    {
+      "name": "MBNA Smart Cash Platinum Plus Mastercard (QC)",
+      "issuer": "MBNA",
+      "country": "CA",
+      "slug": "mbna-smart-cash-platinum-plus-mastercard"
+    },
+    {
+      "name": "Marriott Bonvoy Business American Express Card",
+      "issuer": "American Express",
+      "country": "CA",
+      "slug": "marriott-bonvoy-business-american-express-card"
+    },
+    {
+      "name": "Neo Secured World Elite Mastercard",
+      "issuer": "Neo Financial",
+      "country": "CA",
+      "slug": "neo-secured-world-elite-mastercard"
+    },
+    {
+      "name": "Neo World Elite Mastercard",
+      "issuer": "Neo Financial",
+      "country": "CA",
+      "slug": "neo-world-elite-mastercard"
+    }
+  ],
+  [
+    {
+      "name": "PC Financial World Elite Mastercard",
+      "issuer": "PC Financial",
+      "country": "CA",
+      "slug": "pc-financial-world-elite-mastercard"
+    },
+    {
+      "name": "RBC Avion Visa Infinite",
+      "issuer": "RBC",
+      "country": "CA",
+      "slug": "rbc-avion-visa-infinite"
+    },
+    {
+      "name": "RBC British Airways Visa Infinite",
+      "issuer": "RBC",
+      "country": "CA",
+      "slug": "rbc-british-airways-visa-infinite"
+    },
+    {
+      "name": "RBC Cash Back Mastercard",
+      "issuer": "RBC",
+      "country": "CA",
+      "slug": "rbc-cash-back-mastercard"
+    },
+    {
+      "name": "RBC Cash Back Preferred World Elite Mastercard",
+      "issuer": "RBC",
+      "country": "CA",
+      "slug": "rbc-cash-back-preferred-world-elite-mastercard"
+    }
+  ],
+  [
+    {
+      "name": "RBC ION Visa",
+      "issuer": "RBC",
+      "country": "CA",
+      "slug": "rbc-ion-visa"
+    },
+    {
+      "name": "RBC ION+ Visa",
+      "issuer": "RBC",
+      "country": "CA",
+      "slug": "rbc-ion-visa"
+    },
+    {
+      "name": "Rogers Red Mastercard",
+      "issuer": "Rogers",
+      "country": "CA",
+      "slug": "rogers-red-mastercard"
+    },
+    {
+      "name": "Rogers Red World Elite Mastercard",
+      "issuer": "Rogers",
+      "country": "CA",
+      "slug": "rogers-red-world-elite-mastercard"
+    },
+    {
+      "name": "Scotia Momentum Visa Infinite Card",
+      "issuer": "Scotiabank",
+      "country": "CA",
+      "slug": "scotia-momentum-visa-infinite-card"
+    }
+  ],
+  [
+    {
+      "name": "Scotiabank American Express Card",
+      "issuer": "Scotiabank",
+      "country": "CA",
+      "slug": "scotiabank-american-express-card"
+    },
+    {
+      "name": "Scotiabank American Express Platinum Card",
+      "issuer": "Scotiabank",
+      "country": "CA",
+      "slug": "scotiabank-american-express-platinum-card"
+    },
+    {
+      "name": "Scotiabank Gold American Express Card",
+      "issuer": "Scotiabank",
+      "country": "CA",
+      "slug": "scotiabank-gold-american-express-card"
+    },
+    {
+      "name": "Scotiabank Passport Visa Infinite Card",
+      "issuer": "Scotiabank",
+      "country": "CA",
+      "slug": "scotiabank-passport-visa-infinite-card"
+    },
+    {
+      "name": "Scotiabank Scene+ Visa Card",
+      "issuer": "Scotiabank",
+      "country": "CA",
+      "slug": "scotiabank-scene-visa-card"
+    }
+  ],
+  [
+    {
+      "name": "Simplii Financial Cash Back Visa Card",
+      "issuer": "Simplii Financial",
+      "country": "CA",
+      "slug": "simplii-financial-cash-back-visa-card"
+    },
+    {
+      "name": "SimplyCash Preferred Card from American Express",
+      "issuer": "American Express",
+      "country": "CA",
+      "slug": "simplycash-preferred-card-from-american-express"
+    },
+    {
+      "name": "TD Aeroplan Visa Infinite Card",
+      "issuer": "TD",
+      "country": "CA",
+      "slug": "td-aeroplan-visa-infinite-card"
+    },
+    {
+      "name": "TD Cash Back Visa Infinite Card",
+      "issuer": "TD",
+      "country": "CA",
+      "slug": "td-cash-back-visa-infinite-card"
+    },
+    {
+      "name": "TD First Class Travel Visa Infinite Card",
+      "issuer": "TD",
+      "country": "CA",
+      "slug": "td-first-class-travel-visa-infinite-card"
+    }
+  ],
+  [
+    {
+      "name": "TD Platinum Travel Visa Card",
+      "issuer": "TD",
+      "country": "CA",
+      "slug": "td-platinum-travel-visa-card"
+    },
+    {
+      "name": "TD Rewards Visa Card",
+      "issuer": "TD",
+      "country": "CA",
+      "slug": "td-rewards-visa-card"
+    },
+    {
+      "name": "Tangerine Money-Back Credit Card",
+      "issuer": "Tangerine",
+      "country": "CA",
+      "slug": "tangerine-money-back-credit-card"
+    },
+    {
+      "name": "Tangerine Money-Back World Mastercard",
+      "issuer": "Tangerine",
+      "country": "CA",
+      "slug": "tangerine-money-back-world-mastercard"
+    },
+    {
+      "name": "Tims Financial World Mastercard",
+      "issuer": "Tims Financial",
+      "country": "CA",
+      "slug": "tims-financial-world-mastercard"
+    }
+  ],
+  [
+    {
+      "name": "Vancity enviro Visa Infinite Card",
+      "issuer": "Vancity",
+      "country": "CA",
+      "slug": "vancity-enviro-visa-infinite-card"
+    },
+    {
+      "name": "Wealthsimple Visa Infinite Privilege",
+      "issuer": "Unknown",
+      "country": "CA",
+      "slug": "wealthsimple-visa-infinite-privilege"
+    },
+    {
+      "name": "WestJet RBC Mastercard",
+      "issuer": "RBC",
+      "country": "CA",
+      "slug": "westjet-rbc-mastercard"
+    },
+    {
+      "name": "WestJet RBC World Elite Mastercard",
+      "issuer": "RBC",
+      "country": "CA",
+      "slug": "westjet-rbc-world-elite-mastercard"
+    },
+    {
+      "name": "Zolve Visa Credit Card",
+      "issuer": "Zolve",
+      "country": "CA",
+      "slug": "zolve-visa-credit-card"
+    }
+  ],
+  [
+    {
+      "name": "Scotia Momentum for Business Visa Card",
+      "issuer": "Scotiabank",
+      "country": "CA",
+      "slug": "scotia-momentum-business-visa"
+    },
+    {
+      "name": "Neo Secured Credit",
+      "issuer": "Neo Financial",
+      "country": "CA",
+      "slug": "neo-secured-credit"
+    },
+    {
+      "name": "KOHO Extra Mastercard",
+      "issuer": "KOHO",
+      "country": "CA",
+      "slug": "koho-extra-mc"
+    },
+    {
+      "name": "The Platinum Card from American Express",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-platinum"
+    },
+    {
+      "name": "American Express Gold Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-gold"
+    }
+  ],
+  [
+    {
+      "name": "American Express Green Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-green"
+    },
+    {
+      "name": "Blue Cash Preferred Card from American Express",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-blue-cash-preferred"
+    },
+    {
+      "name": "Blue Cash Everyday Card from American Express",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-blue-cash-everyday"
+    },
+    {
+      "name": "The Business Platinum Card from American Express",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-business-platinum"
+    },
+    {
+      "name": "American Express Business Gold Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-business-gold"
+    }
+  ],
+  [
+    {
+      "name": "Blue Business Plus Credit Card from American Express",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-blue-business-plus"
+    },
+    {
+      "name": "Hilton Honors American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-hilton-honors"
+    },
+    {
+      "name": "Hilton Honors American Express Surpass Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-hilton-honors-surpass"
+    },
+    {
+      "name": "Delta SkyMiles Gold American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-delta-skymiles-gold"
+    },
+    {
+      "name": "Marriott Bonvoy Brilliant American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-marriott-bonvoy-brilliant"
+    }
+  ],
+  [
+    {
+      "name": "Citi Strata Premier Card",
+      "issuer": "Citi",
+      "country": "US",
+      "slug": "citi-strata-premier"
+    },
+    {
+      "name": "Citi Strata Elite Card",
+      "issuer": "Citi",
+      "country": "US",
+      "slug": "citi-strata-elite"
+    },
+    {
+      "name": "Citi / AAdvantage Executive World Elite Mastercard",
+      "issuer": "Citi",
+      "country": "US",
+      "slug": "citi-aadvantage-executive"
+    },
+    {
+      "name": "Citi / AAdvantage Globe Mastercard",
+      "issuer": "Citi",
+      "country": "US",
+      "slug": "citi-aadvantage-globe"
+    },
+    {
+      "name": "Citi Double Cash Card",
+      "issuer": "Citi",
+      "country": "US",
+      "slug": "citi-double-cash"
+    }
+  ],
+  [
+    {
+      "name": "Citi Custom Cash Card",
+      "issuer": "Citi",
+      "country": "US",
+      "slug": "citi-custom-cash"
+    },
+    {
+      "name": "Capital One Venture X Rewards Credit Card",
+      "issuer": "Capital One",
+      "country": "US",
+      "slug": "capital-one-venture-x"
+    },
+    {
+      "name": "Capital One Venture X Business Card",
+      "issuer": "Capital One",
+      "country": "US",
+      "slug": "capital-one-venture-x-business"
+    },
+    {
+      "name": "Capital One Venture Rewards Credit Card",
+      "issuer": "Capital One",
+      "country": "US",
+      "slug": "capital-one-venture"
+    },
+    {
+      "name": "Capital One SavorOne Cash Rewards Credit Card",
+      "issuer": "Capital One",
+      "country": "US",
+      "slug": "capital-one-savor-one"
+    }
+  ],
+  [
+    {
+      "name": "Capital One Quicksilver Cash Rewards Credit Card",
+      "issuer": "Capital One",
+      "country": "US",
+      "slug": "capital-one-quicksilver"
+    },
+    {
+      "name": "Bank of America Premium Rewards Credit Card",
+      "issuer": "Bank of America",
+      "country": "US",
+      "slug": "boa-premium-rewards"
+    },
+    {
+      "name": "Bank of America Customized Cash Rewards Credit Card",
+      "issuer": "Bank of America",
+      "country": "US",
+      "slug": "boa-customized-cash"
+    },
+    {
+      "name": "Alaska Airlines Visa Signature Credit Card",
+      "issuer": "Bank of America",
+      "country": "US",
+      "slug": "boa-alaska-airlines-visa"
+    },
+    {
+      "name": "Bank of America Atmos Rewards Summit Credit Card",
+      "issuer": "Bank of America",
+      "country": "US",
+      "slug": "boa-atmos-rewards-summit"
+    }
+  ],
+  [
+    {
+      "name": "Bilt Blue Card",
+      "issuer": "Bilt / Cardless",
+      "country": "US",
+      "slug": "bilt-blue"
+    },
+    {
+      "name": "Bilt Obsidian Card",
+      "issuer": "Bilt / Cardless",
+      "country": "US",
+      "slug": "bilt-obsidian"
+    },
+    {
+      "name": "Bilt Palladium Card",
+      "issuer": "Bilt / Cardless",
+      "country": "US",
+      "slug": "bilt-palladium"
+    },
+    {
+      "name": "Wells Fargo Autograph Card",
+      "issuer": "Wells Fargo",
+      "country": "US",
+      "slug": "wells-fargo-autograph"
+    },
+    {
+      "name": "Wells Fargo Autograph Journey Card",
+      "issuer": "Wells Fargo",
+      "country": "US",
+      "slug": "wells-fargo-autograph-journey"
+    }
+  ],
+  [
+    {
+      "name": "Wells Fargo Active Cash Card",
+      "issuer": "Wells Fargo",
+      "country": "US",
+      "slug": "wells-fargo-active-cash"
+    },
+    {
+      "name": "U.S. Bank Altitude Reserve Visa Infinite Card",
+      "issuer": "U.S. Bank",
+      "country": "US",
+      "slug": "us-bank-altitude-reserve"
+    },
+    {
+      "name": "U.S. Bank Altitude Connect Visa Signature Card",
+      "issuer": "U.S. Bank",
+      "country": "US",
+      "slug": "us-bank-altitude-connect"
+    },
+    {
+      "name": "U.S. Bank Altitude Go Visa Signature Card",
+      "issuer": "U.S. Bank",
+      "country": "US",
+      "slug": "us-bank-altitude-go"
+    },
+    {
+      "name": "JetBlue Plus Card",
+      "issuer": "Barclays",
+      "country": "US",
+      "slug": "barclays-jetblue-plus"
+    }
+  ],
+  [
+    {
+      "name": "Wyndham Rewards Earner Plus Card",
+      "issuer": "Barclays",
+      "country": "US",
+      "slug": "barclays-wyndham-earner-plus"
+    },
+    {
+      "name": "AAdvantage Aviator Red World Elite Mastercard",
+      "issuer": "Barclays",
+      "country": "US",
+      "slug": "barclays-aadvantage-aviator-red"
+    },
+    {
+      "name": "Delta SkyMiles\u00ae Blue American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-delta-skymiles-blue"
+    },
+    {
+      "name": "Delta SkyMiles\u00ae Platinum American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-delta-skymiles-platinum"
+    },
+    {
+      "name": "Delta SkyMiles\u00ae Reserve American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-delta-skymiles-reserve"
+    }
+  ],
+  [
+    {
+      "name": "Delta SkyMiles\u00ae Gold Business American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-delta-skymiles-gold-business"
+    },
+    {
+      "name": "Delta SkyMiles\u00ae Platinum Business American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-delta-skymiles-platinum-business"
+    },
+    {
+      "name": "Delta SkyMiles\u00ae Reserve Business American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-delta-skymiles-reserve-business"
+    },
+    {
+      "name": "Hilton Honors American Express Aspire Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-hilton-honors-aspire"
+    },
+    {
+      "name": "Hilton Honors American Express Business Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-hilton-honors-business"
+    }
+  ],
+  [
+    {
+      "name": "Marriott Bonvoy Bevy\u00ae American Express\u00ae Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-marriott-bonvoy-bevy"
+    },
+    {
+      "name": "Marriott Bonvoy Business\u00ae American Express\u00ae Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-marriott-bonvoy-business"
+    },
+    {
+      "name": "Blue Business\u00ae Cash Card from American Express",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-blue-business-cash"
+    },
+    {
+      "name": "American Express\u00ae Cash Magnet Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-cash-magnet"
+    },
+    {
+      "name": "American Express\u00ae EveryDay\u00ae Credit Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-everyday"
+    }
+  ],
+  [
+    {
+      "name": "American Express\u00ae EveryDay\u00ae Preferred Credit Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-everyday-preferred"
+    },
+    {
+      "name": "Centurion\u00ae Card from American Express (Black Card)",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-centurion"
+    },
+    {
+      "name": "Amazon Business Prime American Express Card",
+      "issuer": "American Express",
+      "country": "US",
+      "slug": "amex-amazon-business-prime"
+    },
+    {
+      "name": "Slate\u00ae Credit Card from Chase",
+      "issuer": "Chase",
+      "country": "US",
+      "slug": "chase-slate"
+    },
+    {
+      "name": "Disney\u00ae Inspire Visa\u00ae Card",
+      "issuer": "Chase",
+      "country": "US",
+      "slug": "chase-disney-inspire-visa"
+    }
+  ]
+]

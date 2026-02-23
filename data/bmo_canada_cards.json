@@ -1,0 +1,100 @@
+[
+  {
+    "name": "BMO eclipse rise Visa* Card",
+    "annual_fee": "$0",
+    "welcome_bonus": "Get 20,000 points and 0.99% intro rate on Balance Transfers for 9 months",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO eclipse Visa Infinite* Card",
+    "annual_fee": "$120",
+    "welcome_bonus": "Get up to $1,150 in value including up to 70,000 Bonus points, no annual fee first year",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO Ascend World Elite\u00ae* Mastercard\u00ae*",
+    "annual_fee": "$150",
+    "welcome_bonus": "Get up to $1,600 in value and annual fees waived first year",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO eclipse Visa Infinite Privilege* Card",
+    "annual_fee": "$599",
+    "welcome_bonus": "Get up to $2,300 including up to 200,000 points and NEXUS Statement Credit",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO CashBack\u00ae Mastercard\u00ae*",
+    "annual_fee": "$0",
+    "welcome_bonus": "Get up to 5% cash back in first 3 months",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO Preferred Rate Mastercard\u00ae*",
+    "annual_fee": "$29",
+    "welcome_bonus": "0% intro rate on Balance Transfers for 9 months, annual fee waived first year",
+    "interest_purchases": "13.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO CashBack\u00ae World Elite\u00ae* Mastercard\u00ae*",
+    "annual_fee": "$120",
+    "welcome_bonus": "Get up to $650 in value and annual fees waived first year",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO Prepaid Mastercard\u00ae*",
+    "annual_fee": "$9.99",
+    "welcome_bonus": null,
+    "interest_purchases": "0%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO U.S. Dollar Mastercard\u00ae*",
+    "annual_fee": "US $49",
+    "welcome_bonus": null,
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "Student BMO CashBack\u00ae Mastercard\u00ae*",
+    "annual_fee": "$0",
+    "welcome_bonus": "Get 5% cash back in first 3 months",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO VIPorter Mastercard\u00ae*",
+    "annual_fee": "$89",
+    "welcome_bonus": "Get up to $1,800 in value including 40,000 VIPorter points",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO VIPorter World Elite\u00ae* Mastercard\u00ae*",
+    "annual_fee": "$199",
+    "welcome_bonus": "Get up to $2,400 in value including 70,000 VIPorter points",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "BMO Ascend World Elite\u00ae* Business Mastercard\u00ae*",
+    "annual_fee": "$149",
+    "welcome_bonus": "Get over $1,500 in value including up to 100,000 bonus BMO Rewards Points in first year",
+    "interest_purchases": "18.99%",
+    "type": "business"
+  },
+  {
+    "name": "BMO CashBack\u00ae Business Mastercard\u00ae*",
+    "annual_fee": "$0",
+    "welcome_bonus": "Get 10% cash back on gas, office supplies, and recurring cell phone/internet bill payments for 3 months",
+    "interest_purchases": "20.99%",
+    "type": "business"
+  }
+]

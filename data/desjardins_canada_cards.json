@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Desjardins Flexi Visa",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "10.9%",
+    "type": "personal"
+  },
+  {
+    "name": "Desjardins Cash Back Visa",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "20.9%",
+    "type": "personal",
+    "features": [
+      "Up to 2% cash back"
+    ]
+  },
+  {
+    "name": "Desjardins Cash Back Mastercard",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "20.9%",
+    "type": "personal",
+    "features": [
+      "Up to 2% cash back"
+    ]
+  },
+  {
+    "name": "Desjardins Bonus Visa",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "20.9%",
+    "type": "personal",
+    "features": [
+      "Up to 2% in BONUSDOLLARS"
+    ]
+  },
+  {
+    "name": "Desjardins Cash Back World Elite Mastercard",
+    "annual_fee": "$120",
+    "welcome_bonus": null,
+    "interest_purchases": "20.9%",
+    "type": "personal",
+    "features": [
+      "Up to 3% cash back"
+    ]
+  },
+  {
+    "name": "Desjardins Odyssey Gold Visa",
+    "annual_fee": "$139",
+    "welcome_bonus": null,
+    "interest_purchases": "20.9%",
+    "type": "personal",
+    "features": [
+      "Travel rewards",
+      "BONUSDOLLARS"
+    ]
+  },
+  {
+    "name": "Desjardins Odyssey World Elite Mastercard",
+    "annual_fee": "$149",
+    "welcome_bonus": null,
+    "interest_purchases": "20.9%",
+    "type": "personal",
+    "features": [
+      "Travel rewards",
+      "BONUSDOLLARS",
+      "Lounge access"
+    ]
+  },
+  {
+    "name": "Desjardins Odyssey Visa Infinite Privilege",
+    "annual_fee": "$399",
+    "welcome_bonus": null,
+    "interest_purchases": "20.9%",
+    "type": "personal",
+    "features": [
+      "Premium travel rewards",
+      "BONUSDOLLARS",
+      "Lounge access",
+      "Concierge"
+    ]
+  }
+]

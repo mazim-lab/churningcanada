@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Scotiabank Passport\u00ae Visa Infinite* Card",
+    "type": "personal",
+    "welcome_bonus": "Earn up to $1,500\u0394 in first year welcome offers, rewards and savings, including up to 60,000 bonus Scene+TM points\u2662.",
+    "annual_fee": "$150",
+    "interest_rates": "20.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotia Momentum\u00ae Visa Infinite* Card",
+    "type": "personal",
+    "welcome_bonus": "Earn 10% cash back on all purchases for the first 3 months (up to $2,000 in total purchases).1",
+    "annual_fee": "$120",
+    "interest_rates": "20.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotiabank Gold American Express\u00ae Card",
+    "type": "personal",
+    "welcome_bonus": "Earn up to $850^ in welcome offers, first year rewards and savings value, including no annual fee in your first year, and up to 45,000 bonus Scene+ points.**",
+    "annual_fee": "$120",
+    "interest_rates": "20.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotiabank\u00ae Scene+TM Visa* Card",
+    "type": "personal",
+    "welcome_bonus": "Earn up to 10,000 bonus Scene+ points within your first 3 months.2",
+    "annual_fee": "$0",
+    "interest_rates": "20.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotia Momentum\u00ae Visa*  Card",
+    "type": "personal",
+    "annual_fee": "$49",
+    "interest_rates": "20.99% purchases / 22.99% cash advances",
+    "welcome_bonus": "Earn 5% cash back on all purchases for the first 3 months (up to $2,000 in total purchases).2"
+  },
+  {
+    "name": "Scotia Momentum\u00ae No-Fee Visa* Card",
+    "type": "personal",
+    "welcome_bonus": "Earn 5% cash back on all purchases for the first 3 months (up to $2,000 in total purchases).2",
+    "annual_fee": "$0",
+    "interest_rates": "19.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotiabank American Express\u00ae Card",
+    "type": "personal",
+    "welcome_bonus": "Earn up to 5,000 bonus Scene+ points within your first 3 months (that\u2019s up to $50 towards travel).1",
+    "annual_fee": "$0",
+    "interest_rates": "9.99% purchases / 9.99% cash advances"
+  },
+  {
+    "name": "Scotiabank Platinum American Express\u00ae Card",
+    "type": "personal",
+    "welcome_bonus": "Earn up to $2,500* in value in the first 14 months, including up to 80,0004 bonus Scene+ points.",
+    "annual_fee": "$399",
+    "interest_rates": "20.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotiabank Passport\u00ae Visa Infinite Privilege* Card",
+    "type": "personal",
+    "welcome_bonus": "Earn up to $1,500\u0394 in first year welcome offers, rewards and savings, including up to 60,000 bonus Scene+TM points\u2662.",
+    "annual_fee": "$599",
+    "interest_rates": "20.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotia Momentum\u00ae Mastercard\u00ae* credit card",
+    "type": "personal",
+    "annual_fee": "$0",
+    "interest_rates": "19.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotiabank\u00ae U.S. Dollar Visa* Card",
+    "type": "personal",
+    "annual_fee": "$35",
+    "interest_rates": "13.99% purchases / 13.99% cash advances"
+  },
+  {
+    "name": "Scotiabank Value\u00ae Visa* Card",
+    "type": "personal",
+    "annual_fee": "$29",
+    "interest_rates": "20.99% purchases / 22.99% cash advances",
+    "welcome_bonus": "Earn up to 10,000 bonus Scene+ points within your first 3 months.2"
+  },
+  {
+    "name": "Scotiabank\u00ae Scene+TM Visa* Card (for students)",
+    "type": "personal",
+    "welcome_bonus": "Earn up to 10,000 bonus Scene+ points within your first 3 months.2",
+    "annual_fee": "$0",
+    "interest_rates": "13.99% purchases / 13.99% cash advances"
+  },
+  {
+    "name": "Scotiabank Value\u00ae  Visa* Card (for students)",
+    "type": "personal",
+    "annual_fee": "$0",
+    "interest_rates": "20.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotia Momentum\u00ae Visa* Card (for students)",
+    "type": "personal",
+    "annual_fee": "$0",
+    "interest_rates": "20.99% purchases / 22.99% cash advances",
+    "welcome_bonus": "Earn 5% cash back on all purchases for the first 3 months (up to $2,000 in total purchases).2"
+  },
+  {
+    "name": "Scotia Momentum\u00ae No-Fee Visa* Card (for students)",
+    "type": "personal",
+    "welcome_bonus": "Earn 5% cash back on all purchases for the first 3 months (up to $2,000 in total purchases).2",
+    "annual_fee": "$0",
+    "interest_rates": "19.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotiabank American Express\u00ae  Card (for students)",
+    "type": "personal",
+    "welcome_bonus": "Earn up to 7,500 bonus Scene+ points within your first 3 months (that\u2019s up to $75 towards travel).4",
+    "annual_fee": "$0",
+    "interest_rates": "19.99% purchases / 22.99% cash advances"
+  },
+  {
+    "name": "Scotia Momentum\u00ae for business Visa* Card",
+    "annual_fee": "$79",
+    "welcome_bonus": "2.99% introductory interest rate on Balance transfers for the first 6 months",
+    "interest_purchases": "20.99%",
+    "type": "business"
+  },
+  {
+    "name": "Scotiabank Passport\u00ae Visa Infinite Business* Card",
+    "annual_fee": "$199",
+    "welcome_bonus": "Earn up to $2,800 in first year savings including up to 40,000 bonus Scene+ points",
+    "interest_purchases": "19.99%",
+    "type": "business"
+  },
+  {
+    "name": "ScotiaLine\u00ae for business Visa* Credit Card",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "As low as Prime + 1.99% (secured) / Prime + 3.49% (unsecured)",
+    "type": "business"
+  },
+  {
+    "name": "Scotia\u00ae Home Hardware PRO Visa* Business Card",
+    "annual_fee": "$0",
+    "welcome_bonus": "Earn up to 7,500 bonus Scene+ points in first 3 months",
+    "interest_purchases": "Competitive rate tied to prime",
+    "type": "business"
+  }
+]

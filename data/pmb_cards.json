@@ -1,0 +1,493 @@
+[
+  {
+    "slug": "tangerine-money-back-world-mastercard",
+    "name": "Tangerine Money-Back World Mastercard",
+    "issuer": "Tangerine",
+    "network": "MC",
+    "card_type": "cashback",
+    "annual_fee": 0,
+    "welcome_bonus": "$120 bonus with $1,500 spend in first 3 months (apply by April 30, 2026)",
+    "welcome_bonus_value_cad": 120,
+    "welcome_bonus_conditions": "Spend $1,500 in first 3 months. Apply by April 30, 2026.",
+    "earn_rates": {
+      "2_chosen_categories": "2%",
+      "3rd_category_with_savings_account": "2%",
+      "everything_else": "0.5%"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "FlexiRoam: Complimentary 1GB Global Data Roaming Plan + 15% off data plans",
+      "Purchase Assurance and Extended Warranty ($60,000 lifetime max)",
+      "Mobile Device Insurance up to $1,000",
+      "Rental Car Insurance",
+      "Up to 5 authorized users"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "tangerine-money-back-credit-card",
+    "name": "Tangerine Money-Back Credit Card",
+    "issuer": "Tangerine",
+    "network": "MC",
+    "card_type": "cashback",
+    "annual_fee": 0,
+    "welcome_bonus": "Extra 10% Cash Back (up to $100) on everyday purchases within first 2 months (apply by April 30, 2026)",
+    "welcome_bonus_value_cad": 100,
+    "welcome_bonus_conditions": "10% cash back up to $100 on everyday purchases within first 2 months. Apply by April 30, 2026.",
+    "earn_rates": {
+      "2_chosen_categories": "2%",
+      "3rd_category_with_savings_account": "2%",
+      "everything_else": "0.5%"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "1.95% promo interest on balance transfers for 6 months (1% BT fee)",
+      "Up to 5 authorized users",
+      "Purchase Assurance and Extended Warranty ($60,000 lifetime max)"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "rbc-avion-visa-infinite-privilege",
+    "name": "RBC Avion Visa Infinite Privilege Card",
+    "issuer": "RBC",
+    "network": "Visa",
+    "card_type": "travel",
+    "annual_fee": 399,
+    "welcome_bonus": "Up to 70,000 Avion Points: 35,000 on approval + 20,000 with $5,000 spend in 6 months + 15,000 anniversary bonus",
+    "welcome_bonus_value_cad": 700,
+    "welcome_bonus_conditions": "35,000 on approval, 20,000 with $5,000 spend in first 6 months, 15,000 one-time anniversary bonus. Income req: $200,000 personal or household.",
+    "earn_rates": {
+      "all_purchases": "1.25 Avion points per $1"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "6 complimentary global airport lounge passes (Visa Airport Companion)",
+      "Security fast-track at select Canadian airports",
+      "2X redemption value on first/business class (100 pts = $2)",
+      "12-month complimentary DashPass subscription",
+      "3¢/litre savings at Petro-Canada + 20% more Petro-Points and Avion points",
+      "Trip cancellation/interruption insurance",
+      "Emergency medical insurance",
+      "Mobile Device Insurance up to $1,500",
+      "Auto Rental Collision/Loss Damage Insurance",
+      "Purchase Security and Extended Warranty"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "rbc-avion-visa-infinite",
+    "name": "RBC Avion Visa Infinite Card",
+    "issuer": "RBC",
+    "network": "Visa",
+    "card_type": "travel",
+    "annual_fee": 120,
+    "welcome_bonus": "Up to 55,000 Avion Points: 35,000 on approval + 20,000 with $5,000 spend in 6 months (apply by June 15, 2026)",
+    "welcome_bonus_value_cad": 550,
+    "welcome_bonus_conditions": "35,000 on approval, 20,000 with $5,000 spend in first 6 months. Apply by June 15, 2026. Income req: $60,000 personal or $100,000 household.",
+    "earn_rates": {
+      "travel": "1.25 Avion points per $1",
+      "everything_else": "1 Avion point per $1"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "12-month complimentary DashPass subscription",
+      "3¢/litre savings at Petro-Canada + 20% more Petro-Points and Avion points",
+      "Trip cancellation/interruption insurance",
+      "Emergency medical insurance",
+      "Mobile Device Insurance up to $1,500",
+      "Auto Rental Collision/Loss Damage Insurance",
+      "Purchase Security and Extended Warranty",
+      "Visa Infinite benefits (events, dining, hotel exclusives)",
+      "Avion Collection access"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "rbc-ion-plus-visa",
+    "name": "RBC ION+ Visa Card",
+    "issuer": "RBC",
+    "network": "Visa",
+    "card_type": "rewards",
+    "annual_fee": 48,
+    "welcome_bonus": "Up to 21,000 Avion points: 7,000 welcome + 14,000 with $1,500 spend in 6 months (apply by May 6, 2026)",
+    "welcome_bonus_value_cad": 210,
+    "welcome_bonus_conditions": "7,000 welcome points, 14,000 bonus with $1,500 spend in first 6 months. Apply by May 6, 2026.",
+    "earn_rates": {
+      "grocery_dining_food_delivery": "3 Avion points per $1",
+      "rides_gas_ev_charging": "3 Avion points per $1",
+      "streaming_digital_gaming_subscriptions": "3 Avion points per $1",
+      "everything_else": "1 Avion point per $1"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "6-month complimentary DashPass subscription",
+      "3¢/litre savings at Petro-Canada + 20% more Petro-Points and Avion points",
+      "Purchase Security & Extended Warranty Insurance",
+      "Mobile Device Insurance up to $1,000"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "rbc-ion-visa",
+    "name": "RBC ION Visa Card",
+    "issuer": "RBC",
+    "network": "Visa",
+    "card_type": "rewards",
+    "annual_fee": 0,
+    "welcome_bonus": "Up to 11,000 Avion points: 4,000 welcome + 7,000 with $500 spend in 3 months (apply by May 6, 2026)",
+    "welcome_bonus_value_cad": 110,
+    "welcome_bonus_conditions": "4,000 welcome points, 7,000 bonus with $500 spend in first 3 months. Apply by May 6, 2026.",
+    "earn_rates": {
+      "grocery": "1.5 Avion points per $1",
+      "rides_gas_ev_charging": "1.5 Avion points per $1",
+      "streaming_digital_gaming_subscriptions": "1.5 Avion points per $1",
+      "everything_else": "1 Avion point per $1"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "3-month complimentary DashPass subscription",
+      "3¢/litre savings at Petro-Canada + 20% more Petro-Points and Avion points",
+      "Purchase Security & Extended Warranty Insurance"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "rbc-cash-back-preferred-world-elite-mastercard",
+    "name": "RBC Cash Back Preferred World Elite Mastercard",
+    "issuer": "RBC",
+    "network": "MC",
+    "card_type": "cashback",
+    "annual_fee": 99,
+    "welcome_bonus": "12% cash back for first 3 months on up to $2,000 in purchases (apply by March 25, 2026)",
+    "welcome_bonus_value_cad": 240,
+    "welcome_bonus_conditions": "12% cash back (10.5% bonus + 1.5% standard) for first 3 months on up to $2,000 in total purchases. Apply by March 25, 2026. Income req: $80,000 personal or $150,000 household.",
+    "earn_rates": {
+      "all_purchases_up_to_25k": "1.5%",
+      "all_purchases_over_25k": "1.0%"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "Access to 1,300+ airport lounges via Dragon Pass (Mastercard World Elite)",
+      "12-month complimentary DashPass subscription",
+      "3¢/litre savings at Petro-Canada + 20% more Petro-Points and Avion points",
+      "Earn extra Moi points at Metro",
+      "Purchase Security and Extended Warranty Insurance",
+      "Auto Rental Collision/Loss Damage Waiver Insurance"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "scotiabank-gold-amex",
+    "name": "Scotiabank Gold American Express Card",
+    "issuer": "Scotiabank",
+    "network": "Amex",
+    "card_type": "travel",
+    "annual_fee": 120,
+    "welcome_bonus": "Up to 45,000 Scene+ points: 25,000 with $2,000 spend in 3 months + 20,000 with $7,500 spend in first year (apply by July 1, 2026)",
+    "welcome_bonus_value_cad": 450,
+    "welcome_bonus_conditions": "25,000 points with $2,000 spend in first 3 months, 20,000 with $7,500 in first year. Apply by July 1, 2026.",
+    "earn_rates": {
+      "sobeys_safeway_freshco_foodland": "6x Scene+ per $1",
+      "other_grocery_dining_entertainment_canada": "5x Scene+ per $1",
+      "gas_transit_streaming_canada": "3x Scene+ per $1",
+      "everything_else": "1x Scene+ per $1"
+    },
+    "foreign_transaction_fee": false,
+    "key_perks": [
+      "No foreign transaction fees (save 2.5%)",
+      "4X on Scene+ Travel (Expedia) hotel/car/activities bookings",
+      "Travel Medical Emergency Insurance",
+      "Trip Cancellation/Interruption Insurance",
+      "Flight Delay Insurance",
+      "Delayed and Lost Baggage Insurance",
+      "Rental Car Collision Loss/Damage Insurance",
+      "Mobile Device Insurance",
+      "Purchase Security & Extended Warranty"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "scotiabank-passport-visa-infinite",
+    "name": "Scotiabank Passport Visa Infinite Card",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "card_type": "travel",
+    "annual_fee": 150,
+    "welcome_bonus": "Up to 60,000 Scene+ points: 40,000 with $2,000 spend in 3 months + 10,000 with $10,000 in 6 months + 10,000 with $40,000 annually (apply by July 1, 2026)",
+    "welcome_bonus_value_cad": 600,
+    "welcome_bonus_conditions": "40,000 with $2,000 in 3 months, 10,000 with $10,000 in 6 months, 10,000 with $40,000 annually. Apply by July 1, 2026.",
+    "earn_rates": {
+      "sobeys_safeway_freshco_foodland": "3x Scene+ per $1",
+      "other_grocery_dining_entertainment_transit": "2x Scene+ per $1",
+      "everything_else": "1x Scene+ per $1"
+    },
+    "foreign_transaction_fee": false,
+    "key_perks": [
+      "No foreign transaction fees (save 2.5%)",
+      "6 free airport lounge visits per year (Visa Airport Companion)",
+      "Comprehensive travel and shopping insurance"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "scotiabank-passport-visa-infinite-privilege",
+    "name": "Scotiabank Passport Visa Infinite Privilege Card",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "card_type": "travel",
+    "annual_fee": 599,
+    "welcome_bonus": "Up to 100,000 Scene+ points: 30,000 with $3,000 in 3 months + 45,000 with $20,000 in 6 months + 25,000 anniversary bonus (apply by April 30, 2026)",
+    "welcome_bonus_value_cad": 1000,
+    "welcome_bonus_conditions": "30,000 with $3,000 in 3 months, 45,000 with $20,000 in 6 months, 25,000 with one purchase in 14th month. Apply by April 30, 2026.",
+    "earn_rates": {
+      "travel_scene_plus_expedia": "6x Scene+ per $1 (3x base + 3x Expedia bonus)",
+      "dining_entertainment": "2x Scene+ per $1",
+      "everything_else": "1x Scene+ per $1"
+    },
+    "foreign_transaction_fee": false,
+    "key_perks": [
+      "No foreign transaction fees",
+      "$250 annual travel credit (Scene+ Travel/Expedia)",
+      "10 complimentary airport lounge visits (Visa Airport Companion)",
+      "Avis President's Club membership (2 car-class upgrades)",
+      "Visa Infinite Luxury Hotel Collection",
+      "Visa Infinite Dining Series & Concierge 24/7",
+      "Emergency medical up to $5M",
+      "Trip cancellation up to $2,500/person",
+      "Rental car insurance up to 48 days ($85,000 vehicle value)",
+      "Mobile Device Insurance up to $1,000"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "scotiabank-passport-visa-infinite-business",
+    "name": "Scotiabank Passport Visa Infinite Business Card",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "card_type": "travel",
+    "annual_fee": 199,
+    "welcome_bonus": "40,000 Scene+ points: 30,000 with $5,000 spend in 3 months + 10,000 with $60,000 annually. First year annual fee waived (apply by April 30, 2026)",
+    "welcome_bonus_value_cad": 400,
+    "welcome_bonus_conditions": "30,000 with $5,000 in 3 months, 10,000 with $60,000 annually. FYF. Apply by April 30, 2026.",
+    "earn_rates": {
+      "all_business_purchases": "1.5x Scene+ per $1"
+    },
+    "foreign_transaction_fee": false,
+    "key_perks": [
+      "No foreign transaction fees",
+      "First year annual fee waived",
+      "6 complimentary airport lounge visits per year",
+      "Complimentary Avis Preferred Plus membership",
+      "Visa Infinite Concierge and Luxury Hotel Collection",
+      "Comprehensive travel and shopping insurance"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "scotiabank-platinum-amex",
+    "name": "Scotiabank Platinum American Express Card",
+    "issuer": "Scotiabank",
+    "network": "Amex",
+    "card_type": "travel",
+    "annual_fee": 399,
+    "welcome_bonus": "Up to 80,000 Scene+ points: 60,000 with $3,000 in 3 months + 20,000 with $10,000 in 14 months (apply by July 1, 2026)",
+    "welcome_bonus_value_cad": 800,
+    "welcome_bonus_conditions": "60,000 with $3,000 in first 3 months, 20,000 with $10,000 in first 14 months. Apply by July 1, 2026.",
+    "earn_rates": {
+      "all_purchases": "2x Scene+ per $1"
+    },
+    "foreign_transaction_fee": false,
+    "key_perks": [
+      "No foreign transaction fees (0% FX markup)",
+      "Airport lounge access: Priority Pass + Plaza Premium (10 visits primary, 4 supplementary)",
+      "Travel Emergency Medical Insurance",
+      "Trip Cancellation/Interruption Insurance",
+      "Flight Delay Insurance",
+      "Rental Car Collision Loss/Damage Insurance",
+      "Mobile Device Insurance",
+      "Purchase Security & Extended Warranty"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "scotia-momentum-visa-infinite",
+    "name": "Scotia Momentum Visa Infinite Card",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "card_type": "cashback",
+    "annual_fee": 120,
+    "welcome_bonus": "10% cash back on all purchases for first 3 months (up to $2,000 in purchases) (apply by April 30, 2026). First year annual fee waived.",
+    "welcome_bonus_value_cad": 200,
+    "welcome_bonus_conditions": "10% cash back on up to $2,000 in purchases in first 3 months. FYF on primary and supplementary cards. Apply by April 30, 2026.",
+    "earn_rates": {
+      "groceries_recurring_bills_subscriptions": "4% ($25k annual limit)",
+      "gas_daily_transit": "2% ($25k annual limit)",
+      "everything_else": "1%"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "First year annual fee waived",
+      "Travel Emergency Medical Insurance (under 65)",
+      "Trip Cancellation/Interruption Insurance",
+      "Flight Delay Insurance",
+      "Delayed/Lost Luggage Insurance",
+      "Rental Car Collision/Loss Damage Insurance",
+      "Extended Warranty & Purchase Security",
+      "Mobile Device Insurance"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "scotia-momentum-business-visa",
+    "name": "Scotia Momentum for Business Visa Card",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "card_type": "cashback",
+    "annual_fee": 79,
+    "welcome_bonus": "2.99% introductory interest rate on balance transfers for first 6 months (apply by October 31, 2026)",
+    "welcome_bonus_value_cad": 0,
+    "welcome_bonus_conditions": "2.99% intro rate on balance transfers for 6 months. Apply by October 31, 2026.",
+    "earn_rates": {
+      "gas_restaurants_office_supplies": "3%",
+      "recurring_bill_payments": "3%",
+      "everything_else": "1%"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "25-day interest-free grace period",
+      "Scotia SelectPay (buy now, pay over time)",
+      "Travel Emergency Medical Coverage",
+      "Rental Car Collision/Loss Damage Insurance",
+      "Purchase Security & Extended Warranty"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "td-first-class-travel-visa-infinite",
+    "name": "TD First Class Travel Visa Infinite Card",
+    "issuer": "TD",
+    "network": "Visa",
+    "card_type": "travel",
+    "annual_fee": 139,
+    "welcome_bonus": "Up to 165,000 TD Rewards Points: 20,000 on first purchase + 145,000 with $7,500 spend in 180 days. First year annual fee rebate.",
+    "welcome_bonus_value_cad": 660,
+    "welcome_bonus_conditions": "20,000 on first purchase, 145,000 with $7,500 in 180 days. FYF rebate. Income req: $60,000 personal or $100,000 household.",
+    "earn_rates": {
+      "expedia_for_td_travel": "8 TD Rewards pts per $1",
+      "groceries_dining_transit": "6 TD Rewards pts per $1",
+      "recurring_bills_streaming_gaming": "4 TD Rewards pts per $1",
+      "everything_else": "2 TD Rewards pts per $1"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "First year annual fee rebate",
+      "$100 TD Travel Credit annually (on $500+ Expedia for TD booking)",
+      "4 complimentary airport lounge visits (Visa Airport Companion)",
+      "Birthday Bonus up to 10,000 TD Rewards points",
+      "Travel Medical Insurance up to $2M (21 days)",
+      "Trip Cancellation/Interruption Insurance",
+      "Flight/Trip Delay Insurance up to $500",
+      "Mobile Device Insurance up to $1,000",
+      "Auto Rental Collision/Loss Damage Insurance (48 days)",
+      "Purchase Security & Extended Warranty",
+      "Visa Infinite Luxury Hotel Collection, Dining Series, Wine Country"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "td-aeroplan-visa-infinite-privilege",
+    "name": "TD Aeroplan Visa Infinite Privilege Card",
+    "issuer": "TD",
+    "network": "Visa",
+    "card_type": "travel",
+    "annual_fee": 599,
+    "welcome_bonus": "Up to 85,000 Aeroplan Points: 20,000 on first purchase + 35,000 with $12,000 in 180 days + 30,000 anniversary with $24,000 in 12 months",
+    "welcome_bonus_value_cad": 1700,
+    "welcome_bonus_conditions": "20,000 on first purchase, 35,000 with $12,000 in 180 days, 30,000 anniversary with $24,000 in 12 months. Income req: $150,000 personal or $200,000 household.",
+    "earn_rates": {
+      "air_canada_purchases": "2 Aeroplan pts per $1",
+      "gas_ev_grocery_travel_transit_dining": "1.5 Aeroplan pts per $1",
+      "everything_else": "1.25 Aeroplan pts per $1"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "Annual round-trip companion pass from $99",
+      "Priority Boarding, Baggage, Standby & Upgrades",
+      "First checked bag free for cardholder + up to 8 companions",
+      "Unlimited Maple Leaf Lounge access + 1 guest",
+      "6 global lounge visits (Visa Airport Companion/DragonPass)",
+      "NEXUS partial fee rebate (up to $100 every 48 months)",
+      "Aeroplan points never expire while cardholder",
+      "Extended eUpgrade validity (24 months for Elite Status holders)",
+      "Travel Medical Insurance up to $5M (31 days)",
+      "Trip Delay Insurance up to $1,000",
+      "Trip Cancellation up to $2,500/person",
+      "Auto Rental Insurance (48 days)"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  },
+  {
+    "slug": "td-aeroplan-visa-infinite",
+    "name": "TD Aeroplan Visa Infinite Card",
+    "issuer": "TD",
+    "network": "Visa",
+    "card_type": "travel",
+    "annual_fee": 139,
+    "welcome_bonus": "Up to 40,000 Aeroplan Points: 10,000 on first purchase + 15,000 with $7,500 in 180 days + 15,000 anniversary with $12,000 in 12 months. First year annual fee rebate.",
+    "welcome_bonus_value_cad": 800,
+    "welcome_bonus_conditions": "10,000 on first purchase, 15,000 with $7,500 in 180 days, 15,000 anniversary with $12,000 in 12 months. FYF rebate. Income req: $60,000 personal or $100,000 household.",
+    "earn_rates": {
+      "gas_ev_grocery_air_canada": "1.5 Aeroplan pts per $1",
+      "everything_else": "1 Aeroplan pt per $1"
+    },
+    "foreign_transaction_fee": true,
+    "key_perks": [
+      "First year annual fee rebate",
+      "First checked bag free for cardholder + up to 8 companions",
+      "NEXUS fee rebate (up to $100 every 48 months)",
+      "Aeroplan points never expire while cardholder",
+      "Visa Infinite Concierge",
+      "Visa Infinite Luxury Hotel Collection",
+      "Travel Medical Insurance up to $2M (21 days)",
+      "Trip Cancellation/Interruption Insurance",
+      "Flight/Trip Delay Insurance up to $500",
+      "Auto Rental Collision/Loss Damage Insurance (48 days)"
+    ],
+    "country": "CA",
+    "sources": ["pointsmilesandbling"],
+    "last_updated": "2026-02-22"
+  }
+]

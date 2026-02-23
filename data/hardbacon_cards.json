@@ -1,0 +1,676 @@
+{
+  "source": "hardbacon.ca",
+  "scraped_at": "2026-02-22",
+  "notes": "Scraped from hardbacon.ca best cash back, travel, and rewards pages. Hardbacon is a Canadian fintech comparison site. Data as of February 2026.",
+  "cards": [
+    {
+      "slug": "bmo-cashback-world-elite-mc",
+      "name": "BMO CashBack World Elite Mastercard",
+      "issuer": "BMO",
+      "network": "MC",
+      "card_type": "cashback",
+      "annual_fee": 120,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "groceries": "5%",
+        "transportation": "4%",
+        "gas": "3%",
+        "recurring_bills": "2%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Overall Cash Back (Hardbacon)",
+        "Redeem cash back from $1",
+        "BMO World Elite Travel Insurance",
+        "Collision damage waiver on rentals",
+        "25% off National/Alamo car rentals",
+        "Emergency medical up to $2M for 8 days",
+        "Purchase insurance 180 days",
+        "Extended warranty doubled (max 2 years)"
+      ],
+      "min_income": 80000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "bmo-cashback-mc",
+      "name": "BMO CashBack Mastercard",
+      "issuer": "BMO",
+      "network": "MC",
+      "card_type": "cashback",
+      "annual_fee": 0,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "groceries": "3%",
+        "recurring_bills": "1%",
+        "other": "0.5%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "No annual fee",
+        "Best for Groceries (Hardbacon)",
+        "Purchase insurance",
+        "Extended warranty"
+      ],
+      "min_income": 15000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "rogers-world-elite-mc",
+      "name": "Rogers World Elite Mastercard",
+      "issuer": "Rogers",
+      "network": "MC",
+      "card_type": "cashback",
+      "annual_fee": 0,
+      "welcome_bonus": "$25 cash back on first purchase within 3 months",
+      "welcome_bonus_value_cad": 25,
+      "earn_rates": {
+        "usd_purchases": "3%",
+        "all_other": "1.5%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for USD Purchases (Hardbacon)",
+        "No annual fee",
+        "Extended warranty + purchase protection",
+        "Collision/damage insurance on rentals",
+        "Emergency medical + trip interruption/cancellation",
+        "Mastercard Travel Pass (1,300 lounges at $32 USD/visit)"
+      ],
+      "min_income": 80000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "neo-secured-credit",
+      "name": "Neo Secured Credit",
+      "issuer": "Neo Financial",
+      "network": "MC",
+      "card_type": "cashback",
+      "annual_fee": 0,
+      "welcome_bonus": "Up to 15% cash back on first-time purchases at partners",
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "neo_partners_avg": "5%",
+        "minimum_guaranteed": "0.5%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Secured Cash Back Card (Hardbacon)",
+        "Guaranteed approval, no credit check",
+        "No annual or monthly fees"
+      ],
+      "min_income": null,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "tangerine-money-back-visa",
+      "name": "Tangerine Money-Back Credit Card",
+      "issuer": "Tangerine",
+      "network": "MC",
+      "card_type": "cashback",
+      "annual_fee": 0,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "two_chosen_categories": "2%",
+        "third_category_with_savings": "2%",
+        "other": "0.5%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for Customized Bonus Categories (Hardbacon)",
+        "No annual fee",
+        "Choose 2 categories: groceries, entertainment, transit, furniture, restaurants, hotels, gas, recurring bills, pharmacy, home improvement",
+        "3rd category at 2% with Tangerine savings deposit",
+        "Monthly cash back payout",
+        "Unlimited cash back",
+        "Purchase insurance 90 days",
+        "Extended warranty +1 year"
+      ],
+      "min_income": 12000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "td-cash-back-visa-infinite",
+      "name": "TD Cash Back Visa Infinite Card",
+      "issuer": "TD",
+      "network": "Visa",
+      "card_type": "cashback",
+      "annual_fee": 139,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "gas_groceries_recurring_bills": "3%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for Recurring Bill Payments (Hardbacon)",
+        "Deluxe TD Auto Club membership",
+        "10% off Avis/Budget in CA/US, 5% international",
+        "Travel medical up to $2M for 10 days (<65)",
+        "$1,000 baggage insurance"
+      ],
+      "min_income": 60000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotia-momentum-visa-infinite",
+      "name": "Scotia Momentum Visa Infinite Card",
+      "issuer": "Scotiabank",
+      "network": "Visa",
+      "card_type": "cashback",
+      "annual_fee": 120,
+      "welcome_bonus": "No annual fee first year",
+      "welcome_bonus_value_cad": 120,
+      "earn_rates": {
+        "groceries": "4%",
+        "recurring_payments": "4%",
+        "gas_transit": "2%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for Newcomers (Hardbacon)",
+        "First year fee waived",
+        "Mobile device protection",
+        "Visa Infinite concierge service",
+        "Emergency medical up to $1M (<65)",
+        "Trip cancellation/interruption"
+      ],
+      "min_income": 60000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "simplii-cash-back-visa",
+      "name": "Simplii Financial Cash Back Visa",
+      "issuer": "Simplii Financial",
+      "network": "Visa",
+      "card_type": "cashback",
+      "annual_fee": 0,
+      "welcome_bonus": "20% cash back on gas, groceries, drugstore, pre-auth for first 3 months (up to $100)",
+      "welcome_bonus_value_cad": 100,
+      "earn_rates": {
+        "restaurants_coffee_bars": "4% (up to $5,000/yr)",
+        "gas_groceries_drugstore_preauth": "1.5% (up to $15,000/yr)",
+        "other": "0.5%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Highest Welcome Offer (Hardbacon)",
+        "No annual fee",
+        "Up to 3 additional cardholders free",
+        "Annual cash back payout (December)",
+        "Purchase security + extended protection",
+        "Not available in Quebec"
+      ],
+      "min_income": 15000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "koho-extra-mc",
+      "name": "KOHO Extra Mastercard",
+      "issuer": "KOHO",
+      "network": "MC",
+      "card_type": "cashback",
+      "annual_fee": 84,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "eating_drinking_billing_groceries": "1%",
+        "all_purchases_minimum": "0.25%",
+        "select_merchants": "up to 50% extra"
+      },
+      "foreign_transaction_fee": false,
+      "key_perks": [
+        "5% interest on balance",
+        "1 free international withdrawal/month",
+        "No foreign exchange fees",
+        "No credit check (prepaid)"
+      ],
+      "min_income": null,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "mbna-smart-cash-world-mc",
+      "name": "MBNA Smart Cash World Mastercard",
+      "issuer": "MBNA",
+      "network": "MC",
+      "card_type": "cashback",
+      "annual_fee": 0,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "gas_groceries": "2%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for Authorized Users (Hardbacon)",
+        "Up to 9 authorized users at no cost",
+        "Rental vehicle collision damage waiver",
+        "1-hour credit line increase decision"
+      ],
+      "min_income": 60000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "cibc-dividend-visa-infinite",
+      "name": "CIBC Dividend Visa Infinite Card",
+      "issuer": "CIBC",
+      "network": "Visa",
+      "card_type": "cashback",
+      "annual_fee": 120,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "gas_ev_groceries": "4%",
+        "dining_transportation_recurring_bills": "2%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for Gas/EV Charging (Hardbacon)",
+        "Journie Rewards: save up to 10¢/litre at Pioneer/Fas Gas/Ultramar/Chevron",
+        "Emergency medical up to $5M",
+        "Purchase security + extended warranty"
+      ],
+      "min_income": 60000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "bmo-ascend-world-elite-mc",
+      "name": "BMO Ascend World Elite Mastercard",
+      "issuer": "BMO",
+      "network": "MC",
+      "card_type": "travel",
+      "annual_fee": 150,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "travel": "5 pts/$1",
+        "dining_entertainment": "3 pts/$1",
+        "recurring_bills": "3 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Travel Card Overall (Hardbacon)",
+        "Mastercard Travel Rewards Program",
+        "DragonPass membership + 4 free lounge passes",
+        "Comprehensive travel + medical insurance"
+      ],
+      "min_income": 80000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "td-first-class-travel-visa-infinite",
+      "name": "TD First Class Travel Visa Infinite Card",
+      "issuer": "TD",
+      "network": "Visa",
+      "card_type": "travel",
+      "annual_fee": 139,
+      "welcome_bonus": "Up to 135,000 TD Points + first year fee waived",
+      "welcome_bonus_value_cad": 1350,
+      "earn_rates": {
+        "expedia_for_td": "8 pts/$1",
+        "groceries_restaurants": "6 pts/$1",
+        "recurring_bills": "4 pts/$1",
+        "other": "2 pts/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for Travel Insurance (Hardbacon)",
+        "Medical insurance up to $2M (21 days <65)",
+        "Trip cancellation up to $1,500/person",
+        "Flight delay up to $500/person",
+        "Common carrier accident up to $500K",
+        "Birthday bonus up to 10,000 pts",
+        "$100 annual Expedia for TD credit",
+        "Free 12-month Uber One membership"
+      ],
+      "min_income": 60000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "rbc-avion-visa-infinite",
+      "name": "RBC Avion Visa Infinite Card",
+      "issuer": "RBC",
+      "network": "Visa",
+      "card_type": "travel",
+      "annual_fee": 120,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "travel": "1.25 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for North American Travel (Hardbacon)",
+        "Travel cancellation/interruption + medical insurance",
+        "Avion Collection experiences (golf, ski)"
+      ],
+      "min_income": 60000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "bmo-air-miles-mc",
+      "name": "BMO AIR MILES Mastercard",
+      "issuer": "BMO",
+      "network": "MC",
+      "card_type": "travel",
+      "annual_fee": 0,
+      "welcome_bonus": "800 AIR MILES after $1,000 in 3 months",
+      "welcome_bonus_value_cad": 80,
+      "earn_rates": {
+        "air_miles_partners": "3 miles/$25",
+        "grocery_stores": "2x miles",
+        "other": "1 mile/$25"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for AIR MILES (Hardbacon)",
+        "No annual fee",
+        "0.99% interest on balance transfers for 9 months"
+      ],
+      "min_income": null,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "bmo-eclipse-visa-infinite",
+      "name": "BMO eclipse Visa Infinite Card",
+      "issuer": "BMO",
+      "network": "Visa",
+      "card_type": "travel",
+      "annual_fee": 99,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "transportation_groceries_restaurants_gas": "5 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Premium Travel Card (Hardbacon)",
+        "10% more points with second cardholder",
+        "Best point value when redeemed for travel"
+      ],
+      "min_income": 60000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotiabank-gold-amex",
+      "name": "Scotiabank Gold American Express Card",
+      "issuer": "Scotiabank",
+      "network": "Amex",
+      "card_type": "travel",
+      "annual_fee": 120,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "details": "Scene+ points on purchases"
+      },
+      "foreign_transaction_fee": false,
+      "key_perks": [
+        "Best for Foreign Spending (Hardbacon)",
+        "No 2.5% currency conversion fee",
+        "Priority Pass discount ($99 membership)",
+        "1,200+ airport lounges",
+        "Lost luggage, travel accident, hotel theft insurance"
+      ],
+      "min_income": 12000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotiabank-scene-visa",
+      "name": "Scotiabank Scene+ Visa Card",
+      "issuer": "Scotiabank",
+      "network": "Visa",
+      "card_type": "rewards",
+      "annual_fee": 0,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "groceries_home_improvement_cineplex": "2 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for Everyday Spending (Hardbacon)",
+        "No annual fee",
+        "Scene+ points for travel, dining, movies, merchandise",
+        "Scotia Select Payment Plan (interest-free on $100+ purchases)"
+      ],
+      "min_income": 12000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "koho-travel-mc",
+      "name": "KOHO Travel Mastercard",
+      "issuer": "KOHO",
+      "network": "MC",
+      "card_type": "travel",
+      "annual_fee": 0,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "booking_com": "6%",
+        "contiki": "5%",
+        "dining_groceries": "up to 2%"
+      },
+      "foreign_transaction_fee": false,
+      "key_perks": [
+        "Best Prepaid Travel Card (Hardbacon)",
+        "No FX fees with Extra ($84/yr) or Everything ($228/yr) plan",
+        "1.5% FX fee on free/Essential plans",
+        "Up to 4.5% interest on savings",
+        "Credit building feature",
+        "Prepaid - no credit check"
+      ],
+      "min_income": null,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "td-aeroplan-visa-infinite",
+      "name": "TD Aeroplan Visa Infinite Card",
+      "issuer": "TD",
+      "network": "Visa",
+      "card_type": "travel",
+      "annual_fee": 139,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "gas_groceries_air_canada": "1.5 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Aeroplan Card (Hardbacon)",
+        "Aeroplan Family Sharing (up to 10 members)",
+        "Checked baggage savings",
+        "Concierge service",
+        "Travel medical + cancellation insurance",
+        "50% more Aeroplan at Starbucks"
+      ],
+      "min_income": 60000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotiabank-passport-visa-infinite",
+      "name": "Scotiabank Passport Visa Infinite Card",
+      "issuer": "Scotiabank",
+      "network": "Visa",
+      "card_type": "travel",
+      "annual_fee": 150,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "sobeys_related_groceries": "3 pts/$1",
+        "groceries_restaurants_entertainment_transit": "2 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": false,
+      "key_perks": [
+        "Best for Lounge Access (Hardbacon)",
+        "Visa Airport Companion + 6 free Plaza Premium passes",
+        "No currency conversion fees",
+        "Visa Infinite concierge + hotel collection"
+      ],
+      "min_income": 60000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotiabank-amex-card",
+      "name": "Scotiabank American Express Card",
+      "issuer": "Scotiabank",
+      "network": "Amex",
+      "card_type": "rewards",
+      "annual_fee": 0,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "sobeys_safeway_foodland_freshco": "3 pts/$1",
+        "dining_entertainment_transit_gas_streaming": "2 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for Grocery Rewards (Hardbacon)",
+        "No annual fee",
+        "Scene+ points (flexible: travel, cash back, etc.)",
+        "American Express Invites access",
+        "25% off Avis/Budget car rentals"
+      ],
+      "min_income": 80000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "amex-cobalt",
+      "name": "American Express Cobalt Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "card_type": "rewards",
+      "annual_fee": 155.88,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "restaurants_bars_cafes_delivery": "5 pts/$1",
+        "travel_transport_fuel": "2 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Amex Card (Hardbacon)",
+        "Redeem for streaming, movie tickets, Amazon, gift cards, travel",
+        "American Express Invites (exclusive events)",
+        "$100 USD resort credit + room upgrade",
+        "Emergency medical, flight delay, baggage, hotel burglary insurance",
+        "Mobile device insurance",
+        "Monthly fee: $12.99"
+      ],
+      "min_income": 40000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "tims-credit-card",
+      "name": "Tim's Credit Card",
+      "issuer": "Tims Financial",
+      "network": "Visa",
+      "card_type": "rewards",
+      "annual_fee": 0,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "tim_hortons": "15 pts/$1",
+        "groceries_gas_transit_ev": "5 pts/$1",
+        "other": "1 pt/$2"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best for Coffee (Hardbacon)",
+        "No annual fee",
+        "Redeem points at Tim Hortons (10 pts = $1)",
+        "No credit check required"
+      ],
+      "min_income": null,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotiabank-amex-platinum",
+      "name": "Scotiabank American Express Platinum Card",
+      "issuer": "Scotiabank",
+      "network": "Amex",
+      "card_type": "rewards",
+      "annual_fee": 399,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "all_purchases": "2 pts/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Premium Rewards Card (Hardbacon)",
+        "Low 9.99% interest rate on purchases and cash advances",
+        "24/7 concierge service",
+        "600+ Priority Pass VIP lounges",
+        "VIP international events access",
+        "Scene+ / Scotia Rewards redemption"
+      ],
+      "min_income": 150000,
+      "country": "CA",
+      "sources": ["hardbacon"],
+      "last_updated": "2026-02-22"
+    }
+  ]
+}

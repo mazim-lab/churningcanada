@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Sapphire Reserve for BusinessSM Credit Card",
+    "type": "business",
+    "annual_fee": "$795\u2020; Employee Cards at no additional cost",
+    "at_a_glance": "Access $6,000+ in value your first year. Earn 8x on Chase TravelSM, get complimentary access to the Chase Sapphire Lounge\u00ae by the Club network, including Priority PassTM Select, and more.",
+    "welcome_bonus": "Earn 150,000 bonus points",
+    "apr": "Flex for Business variable APR: 17.74%\u201325.74%.\u2020"
+  },
+  {
+    "name": "Ink Business Unlimited\u00ae Credit Card",
+    "type": "business",
+    "annual_fee": "$0\u2020",
+    "at_a_glance": "Unlimited 1.5% cash back rewards on every purchase made for your business \u2013 with this no annual fee credit card.",
+    "welcome_bonus": "Unlimited 1.5% cash back rewards on every purchase made for your business \u2013 with this no annual fee credit card.",
+    "apr": "0% intro APR for 12 months from account opening on purchases.\u2020 After that, 16.74%\u201324.74% variable APR.\u2020"
+  },
+  {
+    "name": "Ink Business Preferred\u00ae Credit Card",
+    "type": "business",
+    "annual_fee": "$95\u2020",
+    "at_a_glance": "Reward your business with flexible and rich rewards.",
+    "welcome_bonus": "100,000 bonus points",
+    "apr": "19.49%\u201325.49% variable APR.\u2020"
+  },
+  {
+    "name": "Ink Business Cash\u00ae Credit Card",
+    "type": "business",
+    "annual_fee": "$0\u2020",
+    "at_a_glance": "Earn 5% cash back in select business categories",
+    "welcome_bonus": "Earn 5% cash back in select business categories",
+    "apr": "0% intro APR for 12 months from account opening on purchases.\u2020 After that, 16.74%\u201324.74% variable APR.\u2020"
+  },
+  {
+    "name": "Ink Business Premier\u00ae Credit Card",
+    "type": "business",
+    "annual_fee": "$195\u2020",
+    "at_a_glance": "Pay in Full Card with Unlimited Earn Potential",
+    "welcome_bonus": "Earn 2.5% cash back on every purchase of $5,000 or more and 2% cash back on all other business purchases.",
+    "apr": "Flex for Business variable APR: 17.74%\u201325.74%.\u2020"
+  },
+  {
+    "name": "UnitedSM Business Card",
+    "type": "business",
+    "annual_fee": "$150 Annual Fee\u2020",
+    "at_a_glance": "2 United ClubSM one-time passes each year, a free first checked bag, and over $600 in annual partner credits.",
+    "welcome_bonus": "Earn 100,000 bonus miles + 2,000 Premier qualifying points (PQP) after qualifying purchases.",
+    "apr": "19.74%\u201328.24% variable APR.\u2020"
+  },
+  {
+    "name": "United ClubSM Business Card",
+    "type": "business",
+    "annual_fee": "$695\u2020",
+    "at_a_glance": "United ClubSM card membership, Premier Access travel services, and over $925 in annual partner credits.",
+    "welcome_bonus": "Earn 100,000 bonus miles + 2,000 Premier qualifying points (PQP) after qualifying purchases.",
+    "apr": "19.74%\u201328.24% variable APR.\u2020"
+  },
+  {
+    "name": "Southwest Rapid Rewards\u00ae Performance Business Credit Card",
+    "type": "business",
+    "annual_fee": "$299 applied to first billing statement.\u2020",
+    "at_a_glance": "Complimentary Preferred seat selection at booking and Extra Legroom seat upgrades 48 hs. prior to departure, when available. Plus, free first checked bag.",
+    "welcome_bonus": "Earn 80,000 points",
+    "apr": "19.24%\u201327.74% variable APR.\u2020"
+  },
+  {
+    "name": "Southwest Rapid Rewards\u00ae Premier Business Credit Card",
+    "type": "business",
+    "annual_fee": "$149 applied to first billing statement.\u2020",
+    "at_a_glance": "Free first checked bag, select a Standard or Preferred seat within 48 hours prior to departure, when available, and a boarding benefit. Plus, 6,000 anniversary points each year.",
+    "welcome_bonus": "Earn 60,000 points",
+    "apr": "19.24%\u201327.74% variable APR.\u2020"
+  },
+  {
+    "name": "IHG One Rewards Premier Business Credit Card",
+    "type": "business",
+    "annual_fee": "$99\u2020",
+    "at_a_glance": "Earn IHG One Rewards points on every purchase. Up to 26X total points per $1 spent when you stay at IHG\u00ae Hotels and Resorts.",
+    "welcome_bonus": "Earn 140,000 Bonus Points after spending $4,000 in the first 3 months from account opening.",
+    "apr": "19.24%\u201327.74% variable APR. \u2020"
+  },
+  {
+    "name": "World of Hyatt Business Credit Card",
+    "type": "business",
+    "annual_fee": "$199\u2020",
+    "at_a_glance": "Make the most of your small business spending with accelerated earning wherever you spend the most.",
+    "welcome_bonus": "Earn 2 Bonus Points total per $1 spent in your top three spend categories each quarter.",
+    "apr": "19.24%\u201327.74% variable APR.\u2020"
+  }
+]

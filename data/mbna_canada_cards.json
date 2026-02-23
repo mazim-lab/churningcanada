@@ -1,0 +1,30 @@
+[
+  {
+    "name": "MBNA True Line\u00ae Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": "0% promo rate for 12 months on balance transfers",
+    "interest_purchases": "12.99%",
+    "type": "personal"
+  },
+  {
+    "name": "MBNA True Line\u00ae Gold Mastercard\u00ae",
+    "annual_fee": "$39",
+    "welcome_bonus": null,
+    "interest_purchases": "10.99%",
+    "type": "personal"
+  },
+  {
+    "name": "MBNA Rewards Platinum Plus\u00ae Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": "Earn up to 10,000 bonus points",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  },
+  {
+    "name": "MBNA Rewards World Elite\u00ae Mastercard\u00ae",
+    "annual_fee": "$120",
+    "welcome_bonus": "Earn up to 30,000 bonus MBNA Rewards Points",
+    "interest_purchases": "21.99%",
+    "type": "personal"
+  }
+]

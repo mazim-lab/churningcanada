@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Tangerine Money-Back Credit Card",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "20.99%",
+    "type": "personal",
+    "features": [
+      "2% cash back in up to 2 categories",
+      "0.5% on everything else"
+    ]
+  },
+  {
+    "name": "Tangerine Money-Back World Mastercard",
+    "annual_fee": "$0",
+    "welcome_bonus": "Get $120 when you spend $1,500 in first 3 months",
+    "interest_purchases": "20.99%",
+    "type": "personal",
+    "features": [
+      "2% cash back in up to 3 categories",
+      "0.5% on everything else",
+      "Mobile device insurance",
+      "DragonPass lounge access"
+    ]
+  }
+]

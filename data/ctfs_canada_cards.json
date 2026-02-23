@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Cash Advantage\u00ae Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "22.99%",
+    "type": "personal",
+    "features": [
+      "Up to 1.5% cash back on all purchases",
+      "Up to 3% at Canadian Tire stores",
+      "No fee no interest financing on $150+ at CT"
+    ]
+  },
+  {
+    "name": "Triangle\u00ae Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": "$150 CT Money (online exclusive, apply by Mar 19 2026)",
+    "interest_purchases": "22.99%",
+    "type": "personal",
+    "features": [
+      "4% CT Money at CT/Sport Chek/Marks/etc",
+      "1.5% at grocery stores (first $12K/yr)",
+      "5\u00a2/L at Gas+ and Petro-Canada",
+      "0.5% everywhere else"
+    ]
+  },
+  {
+    "name": "Triangle\u00ae World Elite\u00ae Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": "$150 CT Money (online exclusive)",
+    "interest_purchases": "22.99%",
+    "type": "personal",
+    "features": [
+      "Highest CT Money earn rate",
+      "Min income $80K personal or $150K household"
+    ]
+  }
+]

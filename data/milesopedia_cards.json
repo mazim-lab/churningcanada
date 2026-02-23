@@ -1,0 +1,444 @@
+{
+  "source": "milesopedia.com",
+  "scraped_at": "2026-02-22",
+  "notes": "Scraped from milesopedia.com/en/best-credit-cards-in-canada/ (travel and cash-back pages). Milesopedia is a major Canadian points/miles authority. Data as of February 2026.",
+  "cards": [
+    {
+      "slug": "td-first-class-travel-visa-infinite",
+      "name": "TD First Class Travel Visa Infinite Card",
+      "issuer": "TD",
+      "network": "Visa",
+      "card_type": "travel",
+      "annual_fee": 139,
+      "welcome_bonus": "Up to 165,000 TD Rewards points + first year annual fee rebate",
+      "welcome_bonus_value_cad": 1650,
+      "earn_rates": {
+        "expedia_for_td": "8 pts/$1",
+        "groceries_dining_transit": "6 pts/$1",
+        "recurring_bills_streaming": "4 pts/$1",
+        "other": "2 pts/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Milesopedia's top travel card pick",
+        "Birthday bonus up to 10,000 pts",
+        "4 free airport lounge visits/year",
+        "First year fee waived"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "amex-gold-rewards",
+      "name": "American Express Gold Rewards Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "card_type": "travel",
+      "annual_fee": 250,
+      "welcome_bonus": "Up to 60,000 Membership Rewards points (5,000/month for 12 months when spending $1,000/month)",
+      "welcome_bonus_value_cad": 600,
+      "earn_rates": {
+        "travel_gas_groceries_drugstores": "2 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Transferable points (Aeroplan, Avios, Flying Blue, Marriott Bonvoy, Hilton)",
+        "$100 annual travel credit",
+        "Priority Pass + 4 Plaza Premium visits/year",
+        "$50 NEXUS credit",
+        "No minimum income requirement"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotiabank-passport-visa-infinite",
+      "name": "Scotiabank Passport Visa Infinite Card",
+      "issuer": "Scotiabank",
+      "network": "Visa",
+      "card_type": "travel",
+      "annual_fee": 150,
+      "welcome_bonus": "Up to 60,000 bonus Scene+ points",
+      "welcome_bonus_value_cad": 600,
+      "earn_rates": {
+        "sobeys_iga_safeway_etc": "3 pts/$1",
+        "groceries_restaurants_entertainment_transit": "2 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": false,
+      "key_perks": [
+        "No foreign currency transaction fees",
+        "6 VIP airport lounge passes/year",
+        "Scene+ points redeemable for travel/cashback",
+        "Best no-FX-fee card 2024-2026 (Milesopedia)",
+        "Concierge service"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "national-bank-world-elite-mc",
+      "name": "National Bank World Elite Mastercard",
+      "issuer": "National Bank",
+      "network": "MC",
+      "card_type": "travel",
+      "annual_fee": 150,
+      "welcome_bonus": "Up to 50,000 points (Milesopedia exclusive)",
+      "welcome_bonus_value_cad": 500,
+      "earn_rates": {
+        "groceries_restaurants": "5 pts/$1",
+        "gas_ev_charging": "2 pts/$1",
+        "recurring_bills": "2 pts/$1",
+        "travel": "2 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Travel Credit Card 2023-2026 (Milesopedia)",
+        "$150 annual travel credit",
+        "DragonPass airport lounge access",
+        "Unlimited access to National Bank Lounge at YUL",
+        "Outstanding travel insurance",
+        "Works at Costco (Mastercard)"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "amex-aeroplan-reserve",
+      "name": "American Express Aeroplan Reserve Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "card_type": "travel",
+      "annual_fee": 599,
+      "welcome_bonus": "Up to 85,000 Aeroplan points (60,000 after $7,500 in 3 months + 25,000 at 13th month)",
+      "welcome_bonus_value_cad": 1700,
+      "earn_rates": {
+        "air_canada": "3x pts/$1",
+        "dining_food_delivery": "2x pts/$1",
+        "other": "1.25x pts/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Maple Leaf Lounge access for you + guest",
+        "Priority check-in, boarding, baggage",
+        "Free first checked bag for up to 9 people",
+        "No minimum income requirement"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "amex-platinum",
+      "name": "American Express Platinum Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "card_type": "travel",
+      "annual_fee": 799,
+      "welcome_bonus": "Up to 100,000 Membership Rewards points (70,000 after $10,000 in 3 months + 30,000 at 15-17 months)",
+      "welcome_bonus_value_cad": 1000,
+      "earn_rates": {
+        "dining": "2 pts/$1",
+        "travel": "2 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Premium Card in Canada (Milesopedia)",
+        "$200 annual travel credit",
+        "$200 annual meal credit",
+        "$100 NEXUS credit",
+        "1,400+ airport lounges access for you + guest",
+        "Hilton Gold Elite status",
+        "Marriott Bonvoy Gold Elite status",
+        "Fine Hotels and Resorts program",
+        "Transferable to Aeroplan, Avios, Flying Blue, Delta, Marriott, Hilton"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "marriott-bonvoy-amex",
+      "name": "Marriott Bonvoy American Express Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "card_type": "travel",
+      "annual_fee": 120,
+      "welcome_bonus": "Up to 110,000 Marriott Bonvoy points (80,000 after $6,000 in 6 months + 30,000 at 15th month). Offer ends April 7, 2026.",
+      "welcome_bonus_value_cad": 880,
+      "earn_rates": {
+        "marriott_properties": "5 pts/$1",
+        "other": "2 pts/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Annual Free Night Award (up to 35,000 pts)",
+        "15 Elite nights/year toward status",
+        "Best card for free hotel nights (Milesopedia)",
+        "No minimum income requirement"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "cibc-aventura-visa-infinite",
+      "name": "CIBC Aventura Visa Infinite Card",
+      "issuer": "CIBC",
+      "network": "Visa",
+      "card_type": "travel",
+      "annual_fee": 139,
+      "welcome_bonus": "Up to 45,000 Aventura points + first year fee rebate",
+      "welcome_bonus_value_cad": 450,
+      "earn_rates": {
+        "cibc_rewards_centre_travel": "2 pts/$1",
+        "gas_ev_groceries_drugstores": "1.5 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Visa Airport Companion (4 free lounge visits/year)",
+        "NEXUS fee reimbursement ($160 value)",
+        "First year fee waived"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "rbc-avion-visa-infinite",
+      "name": "RBC Avion Visa Infinite Card",
+      "issuer": "RBC",
+      "network": "Visa",
+      "card_type": "travel",
+      "annual_fee": 120,
+      "welcome_bonus": "Up to 55,000 Avion points (35,000 on approval + 20,000 after $5,000 in 6 months)",
+      "welcome_bonus_value_cad": 550,
+      "earn_rates": {
+        "travel": "1.25 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Transferable to British Airways Avios, WestJet, AA, Cathay",
+        "Trip cancellation/interruption insurance",
+        "Emergency medical insurance",
+        "Mobile device insurance"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotiabank-gold-amex",
+      "name": "Scotiabank Gold American Express Card",
+      "issuer": "Scotiabank",
+      "network": "Amex",
+      "card_type": "travel",
+      "annual_fee": 120,
+      "welcome_bonus": "Up to 45,000 Scene+ points (25,000 after $2,000 in 3 months + 20,000 after $7,500 in 1 year). Until July 1, 2026.",
+      "welcome_bonus_value_cad": 450,
+      "earn_rates": {
+        "sobeys_iga_safeway_etc": "6 pts/$1",
+        "groceries_restaurants_entertainment": "5 pts/$1",
+        "gas_transit_streaming": "3 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": false,
+      "key_perks": [
+        "No foreign currency transaction fees",
+        "Points redeemable for travel incl Airbnb",
+        "Concierge service",
+        "American Express Front of the Line program"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "bmo-ascend-world-elite-mc",
+      "name": "BMO Ascend World Elite Mastercard",
+      "issuer": "BMO",
+      "network": "MC",
+      "card_type": "travel",
+      "annual_fee": 150,
+      "welcome_bonus": "Up to 115,000 BMO Rewards points (Milesopedia exclusive) + first year fee waived. Ends March 31, 2026.",
+      "welcome_bonus_value_cad": 770,
+      "earn_rates": {
+        "travel": "5 pts/$1",
+        "dining_entertainment_recurring_bills": "3 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "First year fee waived (exclusive offer)",
+        "0% intro rate on balance transfers for 12 months",
+        "Works at Costco (Mastercard)",
+        "4 free lounge passes",
+        "Mastercard Travel Pass by DragonPass"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "bmo-cashback-world-elite-mc",
+      "name": "BMO CashBack World Elite Mastercard",
+      "issuer": "BMO",
+      "network": "MC",
+      "card_type": "cashback",
+      "annual_fee": 120,
+      "welcome_bonus": "Up to $480 cash back in first year ($40/month when spending $2,000/month) + first year fee waived",
+      "welcome_bonus_value_cad": 480,
+      "earn_rates": {
+        "groceries": "5% (first $500/month)",
+        "transit": "4% (first $300/month)",
+        "gas_ev": "3% (first $300/month)",
+        "recurring_bills": "2% (first $500/month)",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "First year fee waived",
+        "0% intro rate on balance transfers for 12 months",
+        "2 years extended warranty",
+        "Works at Costco (Mastercard)",
+        "Redeem cash back from $1"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "amex-cobalt",
+      "name": "American Express Cobalt Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "card_type": "cashback",
+      "annual_fee": 155.88,
+      "welcome_bonus": "Up to 15,000 Membership Rewards points (1,250/month for 12 months when spending $750/month)",
+      "welcome_bonus_value_cad": 150,
+      "earn_rates": {
+        "groceries_dining_delivery_convenience": "5 pts/$1",
+        "streaming": "3 pts/$1",
+        "gas_transit": "2 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best Amex card for cash back or travel",
+        "Transferable to Aeroplan, Avios, Flying Blue, Marriott, Hilton",
+        "Cash out at 1,000 pts = $10",
+        "No minimum income requirement",
+        "Monthly fee: $12.99"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "td-cash-back-visa-infinite",
+      "name": "TD Cash Back Visa Infinite Card",
+      "issuer": "TD",
+      "network": "Visa",
+      "card_type": "cashback",
+      "annual_fee": 139,
+      "welcome_bonus": "10% cash back on gas, groceries, pre-authorized payments for first 3 months (up to $350) + first year fee rebate",
+      "welcome_bonus_value_cad": 350,
+      "earn_rates": {
+        "groceries_gas_ev_transit_recurring_bills_streaming": "3%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best TD cash back card for gas",
+        "Travel medical insurance",
+        "Collision/loss damage for car rentals",
+        "Mobile device insurance",
+        "First year fee rebate"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "cibc-dividend-visa-infinite",
+      "name": "CIBC Dividend Visa Infinite Card",
+      "issuer": "CIBC",
+      "network": "Visa",
+      "card_type": "cashback",
+      "annual_fee": 120,
+      "welcome_bonus": "10% welcome bonus (up to $250 cash back) + $50 for setting up pre-authorized payment + first year fee rebate",
+      "welcome_bonus_value_cad": 300,
+      "earn_rates": {
+        "gas_ev_groceries": "4%",
+        "transportation_dining_recurring_bills": "2%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "First year fee rebate",
+        "Auto Rental Collision/Loss Insurance",
+        "$500,000 Common Carrier Accident Insurance",
+        "Emergency Travel Medical Insurance"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotia-momentum-visa-infinite",
+      "name": "Scotia Momentum Visa Infinite Card",
+      "issuer": "Scotiabank",
+      "network": "Visa",
+      "card_type": "cashback",
+      "annual_fee": 120,
+      "welcome_bonus": "10% cash back on all purchases for first 3 months (up to $2,000) + first year fee waived",
+      "welcome_bonus_value_cad": 200,
+      "earn_rates": {
+        "groceries_recurring_payments": "4%",
+        "gas_transit": "2%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "First year fee waived including additional cards",
+        "Pay rent via Chexy for 4% cash back",
+        "Excellent insurance"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "mbna-rewards-world-elite-mc",
+      "name": "MBNA Rewards World Elite Mastercard",
+      "issuer": "MBNA",
+      "network": "MC",
+      "card_type": "rewards",
+      "annual_fee": 89,
+      "welcome_bonus": "20,000-30,000 points (varies by province)",
+      "welcome_bonus_value_cad": 250,
+      "earn_rates": {
+        "dining_groceries_digital_media_memberships_utilities": "5 pts/$1",
+        "other": "1 pt/$1"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "Best MBNA card for restaurants, groceries, digital media",
+        "Best for Walmart (recognized as grocery)",
+        "Birthday bonus (10% of annual earning, max 15,000 pts)"
+      ],
+      "country": "CA",
+      "sources": ["milesopedia"],
+      "last_updated": "2026-02-22"
+    }
+  ]
+}

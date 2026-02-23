@@ -1,0 +1,129 @@
+{
+  "source": "rewardscanada.ca",
+  "scraped_at": "2026-02-22",
+  "notes": "Rewards Canada uses a custom static site (not WordPress). Only the /topcashback/ page returned card data. Travel card URLs returned 404s. Data extracted from top cash back rankings.",
+  "cards": [
+    {
+      "slug": "simplycash-preferred-amex",
+      "name": "SimplyCash Preferred Card from American Express",
+      "issuer": "American Express",
+      "network": "Amex",
+      "card_type": "cashback",
+      "annual_fee": null,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {},
+      "foreign_transaction_fee": true,
+      "key_perks": ["#1 ranked cash back card by Rewards Canada"],
+      "country": "CA",
+      "sources": ["rewardscanada"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "mbna-rewards-world-elite-mc",
+      "name": "MBNA Rewards World Elite Mastercard",
+      "issuer": "MBNA",
+      "network": "MC",
+      "card_type": "rewards",
+      "annual_fee": null,
+      "welcome_bonus": "Up to 30,000 points (worth $240 cash back)",
+      "welcome_bonus_value_cad": 240,
+      "earn_rates": {
+        "base_points": "1-5.5 pts per $1",
+        "cash_back_equivalent": "0.833%-4.58%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "#5 best overall travel rewards card",
+        "#2 best cash back card",
+        "Cash out at 6,000 pts ($50)",
+        "Year 1 cash back: $376-$1,403+"
+      ],
+      "country": "CA",
+      "sources": ["rewardscanada"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "amex-cobalt",
+      "name": "American Express Cobalt Card",
+      "issuer": "American Express",
+      "network": "Amex",
+      "card_type": "rewards",
+      "annual_fee": 155.88,
+      "welcome_bonus": "Up to 15,000 points (worth $150 cash back)",
+      "welcome_bonus_value_cad": 150,
+      "earn_rates": {
+        "dining_groceries_delivery": "5%",
+        "streaming": "3%",
+        "gas_transit": "2%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "#1 top travel rewards card for 9 years",
+        "#3 best cash back card",
+        "Cash out at 1,000 pts ($10)",
+        "Year 1 cash back: $264-$1,344+",
+        "Monthly fee: $12.99"
+      ],
+      "country": "CA",
+      "sources": ["rewardscanada"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "neo-world-elite-mc",
+      "name": "Neo World Elite Mastercard",
+      "issuer": "Neo Financial",
+      "network": "MC",
+      "card_type": "cashback",
+      "annual_fee": 0,
+      "welcome_bonus": null,
+      "welcome_bonus_value_cad": null,
+      "earn_rates": {
+        "groceries": "5%",
+        "recurring_bills": "4%",
+        "gas": "3%",
+        "other": "1%",
+        "neo_partners": "additional cashback"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "#4 best cash back card",
+        "$1,000/month cap per accelerated category",
+        "Cash out at $1",
+        "Year 1 cash back: $135-$1,025+"
+      ],
+      "country": "CA",
+      "sources": ["rewardscanada"],
+      "last_updated": "2026-02-22"
+    },
+    {
+      "slug": "scotia-momentum-visa-infinite",
+      "name": "Scotia Momentum Visa Infinite",
+      "issuer": "Scotiabank",
+      "network": "Visa",
+      "card_type": "cashback",
+      "annual_fee": 120,
+      "welcome_bonus": "First year annual fee waived",
+      "welcome_bonus_value_cad": 120,
+      "earn_rates": {
+        "groceries": "4%",
+        "recurring_bills": "4%",
+        "food_delivery": "2%",
+        "gas_transit": "2%",
+        "other": "1%"
+      },
+      "foreign_transaction_fee": true,
+      "key_perks": [
+        "#5 best cash back card",
+        "First year fee waived",
+        "Cash out at $25",
+        "Year 1 cash back: $384-$1,304+",
+        "On demand cash back at $25 balance"
+      ],
+      "country": "CA",
+      "sources": ["rewardscanada"],
+      "last_updated": "2026-02-22"
+    }
+  ]
+}

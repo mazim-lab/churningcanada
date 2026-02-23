@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Rogers Red Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "20.99%",
+    "type": "personal",
+    "features": [
+      "2% on non-USD with Rogers service",
+      "1% without Rogers service",
+      "2% on USD purchases"
+    ]
+  },
+  {
+    "name": "Rogers Red World Elite\u00ae Mastercard\u00ae",
+    "annual_fee": "$0",
+    "welcome_bonus": null,
+    "interest_purchases": "20.99%",
+    "type": "personal",
+    "features": [
+      "1.5% on non-USD with Rogers service",
+      "3% on USD purchases",
+      "Extended warranty",
+      "Rental car insurance",
+      "Emergency medical",
+      "Trip interruption",
+      "Lounge access ($32 USD)"
+    ]
+  }
+]

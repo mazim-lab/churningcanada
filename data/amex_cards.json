@@ -1,0 +1,149 @@
+[
+  {
+    "name": "The Platinum Card\u00ae",
+    "annual_fee": "$799",
+    "welcome_bonus": "Earn up to 100,000 Membership Rewards\u00ae points1 \u2013 that\u2019s up to $1,000 in value.2",
+    "features": [
+      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39",
+      "Access to a $200 Annual Travel Credit6",
+      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply."
+    ]
+  },
+  {
+    "name": "American\u00a0Express\u00ae Gold Rewards Card",
+    "annual_fee": "$250 Annual Fee",
+    "welcome_bonus": "Earn up to 60,000 Membership Rewards\u00ae points1 \u2013 that\u2019s up to $600 in value.12",
+    "features": [
+      "Earn 2x the points on eligible travel and everyday purchases3",
+      "Priority PassTM Membership37",
+      "Enjoy 4 complimentary visits per year to Plaza Premium Lounges38"
+    ]
+  },
+  {
+    "name": "Marriott Bonvoy\u00ae American Express\u00ae* Card",
+    "annual_fee": "$120",
+    "welcome_bonus": "Earn up to 110,000 Bonus Marriott Bonvoy\u00ae points1",
+    "features": [
+      "Earn 5 points for every $1 spent in eligible Card purchases at hotels participating in Marriott Bonvoy.5",
+      "Enjoy an Annual Free Night Award3",
+      "Receive complimentary Marriott Bonvoy Silver Elite status"
+    ]
+  },
+  {
+    "name": "American\u00a0Express\u00ae Aeroplan\u00ae* Reserve Card",
+    "annual_fee": "$599",
+    "welcome_bonus": "Earn up to 85,000 Welcome Bonus Aeroplan\u00ae* points1",
+    "features": [
+      "Priority\u00a0access to the standby list and eUpgrades on Air Canada flights12\u2021",
+      "You can earn up to $4,400 or more in value within your first 13 months!35",
+      "Earn 3X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae* purchases6"
+    ]
+  },
+  {
+    "name": "Business Platinum Card\u00ae from American\u00a0Express",
+    "annual_fee": "$799",
+    "welcome_bonus": "Earn up to 120,000 Welcome Bonus Membership Rewards\u00ae points.1 That\u2019s up to $1,200 in statement credits that can be reinvested in your business.10",
+    "features": [
+      "Bolster your business with up to $820 in additional annual statement credits41",
+      "With Flexible Payment Option2, you have options when paying your balance",
+      "Multiple ways to maximize cash flow with up to 55 interest-free days4"
+    ]
+  },
+  {
+    "name": "American\u00a0Express\u00ae Business Gold Rewards Card",
+    "annual_fee": "$199",
+    "welcome_bonus": "Earn a Welcome Bonus of up to 70,000 Membership Rewards\u00ae points.1 That's up to $700 in statement credits that can be reinvested in your business.6",
+    "features": [
+      "Earn 10,000 bonus points each quarter when you charge $20,000 to your Card5",
+      "With Flexible Payment Option2, you have options when paying your balance",
+      "Maximize cash flow with up to 55 interest-free days3"
+    ]
+  },
+  {
+    "name": "Marriott Bonvoy\u00ae Business American\u00a0Express\u00ae* Card",
+    "annual_fee": "$150",
+    "welcome_bonus": "Earn up to 110,000 Bonus Marriott Bonvoy\u00ae points1",
+    "features": [
+      "Earn 5X the points on eligible Marriott purchases6",
+      "Receive an Annual Free Night Award3",
+      "Receive 15 Elite Night Credits each calendar year5"
+    ]
+  },
+  {
+    "name": "American\u00a0Express\u00ae Aeroplan\u00ae* Business Reserve Card",
+    "annual_fee": "$599",
+    "welcome_bonus": "Earn up to 90,000 Welcome Bonus Aeroplan\u00ae* points.2",
+    "features": [
+      "You could earn up to $5,600 or more in value within your first 13 months26",
+      "Get 1,000 Status Qualifying Credits and more4\u2021",
+      "Get an Annual Worldwide Companion Pass9\u2021"
+    ]
+  },
+  {
+    "name": "American\u00a0Express\u00ae Aeroplan\u00ae* Card",
+    "annual_fee": "$120",
+    "welcome_bonus": "Earn up to 40,000 Welcome Bonus Aeroplan\u00ae* points1",
+    "features": [
+      "You could earn up to $1,450 or more in value within your first 13 months!25",
+      "Earn 2X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae*\u00a0purchases5",
+      "Reach Aeroplan EliteTM Status faster6\u2021"
+    ]
+  },
+  {
+    "name": "American\u00a0Express Cobalt\u00ae Card",
+    "annual_fee": "$15.99/month (Equals $191.88 annually) for non-Quebec residents. $191.88/year for Quebec residents.",
+    "welcome_bonus": "Earn up to 15,000 Welcome Bonus Membership Rewards\u00ae points1 \u2013 that\u2019s up to $150 in value11.",
+    "features": [
+      "Earn 5X the points on eligible eats & drinks3",
+      "Earn 3X the points on eligible streaming subscriptions3",
+      "Front Of The Line\u00ae Access18"
+    ]
+  },
+  {
+    "name": "American\u00a0Express\u00aeGreen Card",
+    "welcome_bonus": "Earn a Welcome Bonus of 10,000 Membership Rewards\u00ae points1 \u2013 that\u2019s $100 in value11",
+    "features": [
+      "Earn 1X the points for every $1 in eligible Card purchases3",
+      "Pay for almost anything charged to your Card with points11",
+      "Front Of The Line\u00ae Access15"
+    ]
+  },
+  {
+    "name": "SimplyCash\u00ae Preferred Card from American\u00a0Express",
+    "annual_fee": "For non-Quebec residents, $9.99/month (Equals $119.88 annually). For Quebec residents, $119/year.",
+    "welcome_bonus": "Make more happen with a bonus of up to 10% cash back1",
+    "features": [
+      "Earn up to 4% cash back on eligible gas and grocery purchases3",
+      "Earn 2% cash back on everything else3",
+      "Front\u00a0Of The Line\u00ae Access6"
+    ]
+  },
+  {
+    "name": "SimplyCash\u00ae Card from American Express",
+    "welcome_bonus": "Make it happen with a bonus of up to 5% cash back1",
+    "features": [
+      "Earn up to 2% cash back on eligible gas and grocery purchases3",
+      "Earn 1.25% cash back on everything else3",
+      "Travel & Shopping coverage"
+    ]
+  },
+  {
+    "name": "American\u00a0Express EssentialTM Credit\u00a0Card",
+    "annual_fee": "$25",
+    "features": [
+      "Save\u00a0on interest payments with an interest rate of 12.99%",
+      "Get more flexibility when paying off your balance",
+      "Access to Amex\u00a0ExperiencesTM2"
+    ]
+  },
+  {
+    "name": "The Platinum Card\u00ae",
+    "annual_fee": "$799",
+    "welcome_bonus": "Earn up to 100,000 Membership Rewards\u00ae points1 \u2013 that\u2019s up to $1,000 in value.2",
+    "features": [
+      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39",
+      "Access to a $200 Annual Travel Credit6",
+      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply."
+    ]
+  }
+]
