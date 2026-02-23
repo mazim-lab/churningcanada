@@ -111,8 +111,8 @@ function CardGridItem({ card }: { card: Card }) {
         <IssuerAvatar issuer={card.issuer} size="md" />
       </div>
 
-      {/* Fee & Bonus */}
-      <div className="grid grid-cols-2 gap-3 mb-3">
+      {/* Fee, Bonus & First Year Value */}
+      <div className={`grid gap-3 mb-3 ${card.first_year_value ? 'grid-cols-3' : 'grid-cols-2'}`}>
         <div className="rounded-lg bg-muted/70 p-2.5">
           <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">Annual Fee</p>
           <p className="font-bold text-sm mt-0.5">{card.annual_fee === 0 ? 'Free' : `$${card.annual_fee}`}</p>
@@ -121,6 +121,12 @@ function CardGridItem({ card }: { card: Card }) {
           <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">Welcome Bonus</p>
           <p className="font-bold text-sm mt-0.5 text-gold-text dark:text-gold line-clamp-1">{card.welcome_bonus || '—'}</p>
         </div>
+        {card.first_year_value > 0 && (
+          <div className="rounded-lg bg-emerald-50 dark:bg-emerald-900/20 p-2.5">
+            <p className="text-[10px] uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-medium">1st Year Value</p>
+            <p className="font-bold text-sm mt-0.5 text-emerald-700 dark:text-emerald-300">${Math.round(card.first_year_value).toLocaleString()}</p>
+          </div>
+        )}
       </div>
 
       {/* Earn rates summary */}

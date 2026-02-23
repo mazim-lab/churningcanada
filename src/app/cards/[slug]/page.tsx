@@ -76,6 +76,7 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
         <StatCard label="Annual Fee" value={card.annual_fee === 0 ? 'Free' : `$${card.annual_fee}`} />
         {card.first_year_fee !== null && <StatCard label="First Year Fee" value={card.first_year_fee === 0 ? 'Free' : `$${card.first_year_fee}`} />}
         <StatCard label="Welcome Bonus" value={card.welcome_bonus || '—'} highlight />
+        {card.first_year_value > 0 && <StatCard label="1st Year Value" value={`$${Math.round(card.first_year_value).toLocaleString()}`} />}
       </div>
         </div>
       </div>
