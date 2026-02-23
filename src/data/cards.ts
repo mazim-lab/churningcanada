@@ -123,6 +123,9 @@ interface RawCA {
   card_image_url: string | null;
   pot_url?: string | null;
   pot_first_year_value?: number | null;
+  first_year_value_cad?: number | null;
+  cpp_cad?: number | null;
+  welcome_bonus_points?: number | null;
   pros?: string[] | null;
   cons?: string[] | null;
   min_spend?: number | null;
@@ -136,6 +139,7 @@ function normalizeCA(raw: RawCA): Card {
 
   const earnSummary = earnRates.map(e => `${e.rate} ${e.category}`).join(', ');
   const bonusValue = raw.welcome_bonus_value_cad || raw.pot_first_year_value || 0;
+  const precomputedFYV = raw.first_year_value_cad;
   const firstYearFee = typeof raw.first_year_fee === 'number' ? raw.first_year_fee : null;
   const fee = raw.annual_fee || 0;
 
@@ -186,7 +190,7 @@ function normalizeCA(raw: RawCA): Card {
     card.benefits_incomplete = true;
   }
   const effectiveFee = firstYearFee !== null ? firstYearFee : fee;
-  card.first_year_value = bonusValue - effectiveFee;
+  card.first_year_value = precomputedFYV != null ? precomputedFYV : (bonusValue - effectiveFee);
 
   return card;
 }

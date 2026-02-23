@@ -8,14 +8,14 @@
     "annual_fee": 799.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 100,000 Membership Rewards\u00ae points1 \u2013 that\u2019s up to $1,000 in value.2",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1950.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -35,7 +35,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.95,
+    "welcome_bonus_points": 100000.0,
+    "first_year_value_cad": 1151.0
   },
   {
     "slug": "americanexpress-gold-rewards-card",
@@ -46,14 +49,14 @@
     "annual_fee": 250.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 60,000 Membership Rewards\u00ae points1 \u2013 that\u2019s up to $600 in value.12",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1170.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -73,7 +76,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.95,
+    "welcome_bonus_points": 60000.0,
+    "first_year_value_cad": 920.0
   },
   {
     "slug": "marriott-bonvoy-american-express-card",
@@ -84,14 +90,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 110,000 Bonus Marriott Bonvoy\u00ae points1",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 880.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "marriott bonvoy",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -111,7 +117,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.8,
+    "welcome_bonus_points": 110000.0,
+    "first_year_value_cad": 760.0
   },
   {
     "slug": "americanexpress-aeroplan-reserve-card",
@@ -122,14 +131,14 @@
     "annual_fee": 599.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 85,000 Welcome Bonus Aeroplan\u00ae* points1",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1742.5,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -149,7 +158,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 85000.0,
+    "first_year_value_cad": 1143.5
   },
   {
     "slug": "business-platinum-card-from-americanexpress",
@@ -160,14 +172,14 @@
     "annual_fee": 799.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 120,000 Welcome Bonus Membership Rewards\u00ae points.1 That\u2019s up to $1,200 in statement credits that can be reinvested in your business.10",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 2340.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -187,7 +199,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.95,
+    "welcome_bonus_points": 120000.0,
+    "first_year_value_cad": 1541.0
   },
   {
     "slug": "americanexpress-business-gold-rewards-card",
@@ -198,14 +213,14 @@
     "annual_fee": 199.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn a Welcome Bonus of up to 70,000 Membership Rewards\u00ae points.1 That's up to $700 in statement credits that can be reinvested in your business.6",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1365.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -225,7 +240,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.95,
+    "welcome_bonus_points": 70000.0,
+    "first_year_value_cad": 1166.0
   },
   {
     "slug": "marriott-bonvoy-business-americanexpress-card",
@@ -236,14 +254,14 @@
     "annual_fee": 150.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 110,000 Bonus Marriott Bonvoy\u00ae points1",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 880.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "marriott bonvoy",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -263,7 +281,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 0.8,
+    "welcome_bonus_points": 110000.0,
+    "first_year_value_cad": 730.0
   },
   {
     "slug": "americanexpress-aeroplan-business-reserve-card",
@@ -274,14 +295,14 @@
     "annual_fee": 599.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 90,000 Welcome Bonus Aeroplan\u00ae* points.2",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1845.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -301,7 +322,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 90000.0,
+    "first_year_value_cad": 1246.0
   },
   {
     "slug": "americanexpress-aeroplan-card",
@@ -312,14 +336,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 40,000 Welcome Bonus Aeroplan\u00ae* points1",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 820.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -339,7 +363,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 40000.0,
+    "first_year_value_cad": 700.0
   },
   {
     "slug": "americanexpress-cobalt-card",
@@ -350,14 +377,14 @@
     "annual_fee": 15.99,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 15,000 Welcome Bonus Membership Rewards\u00ae points1 \u2013 that\u2019s up to $150 in value11.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 292.5,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -377,7 +404,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.95,
+    "welcome_bonus_points": 15000.0,
+    "first_year_value_cad": 276.51
   },
   {
     "slug": "americanexpressgreen-card",
@@ -388,14 +418,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn a Welcome Bonus of 10,000 Membership Rewards\u00ae points1 \u2013 that\u2019s $100 in value11",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 195.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -415,7 +445,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.95,
+    "welcome_bonus_points": 10000.0,
+    "first_year_value_cad": 195.0
   },
   {
     "slug": "simplycash-preferred-card-from-americanexpress",
@@ -433,7 +466,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -453,7 +486,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.95
   },
   {
     "slug": "simplycash-card-from-american-express",
@@ -471,7 +505,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -491,7 +525,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.95
   },
   {
     "slug": "americanexpress-essentialtm-creditcard",
@@ -509,7 +544,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -529,7 +564,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.95
   },
   {
     "slug": "the-platinum-card",
@@ -540,14 +576,14 @@
     "annual_fee": 799.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 100,000 Membership Rewards\u00ae points1 \u2013 that\u2019s up to $1,000 in value.2",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1950.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -567,7 +603,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.95,
+    "welcome_bonus_points": 100000.0,
+    "first_year_value_cad": 1151.0
   },
   {
     "slug": "td-cash-back-visa-infinite-card",
@@ -585,7 +624,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -601,7 +640,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "td-cash-back-visa-card",
@@ -619,7 +659,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -635,7 +675,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-card",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "td-aeroplan-visa-infinite-card",
@@ -646,14 +687,14 @@
     "annual_fee": 139.0,
     "first_year_fee": null,
     "welcome_bonus": "Up to $1,350 in value^ including up to 40,000 Aeroplan points1 could be yours. Plus, receive an annual fee rebate for the first year1. Conditions Apply.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 820.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -669,7 +710,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/browse-all",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 40000.0,
+    "first_year_value_cad": 681.0
   },
   {
     "slug": "td-aeroplan-visa-platinum-credit-card",
@@ -680,14 +724,14 @@
     "annual_fee": 89.0,
     "first_year_fee": null,
     "welcome_bonus": "Up to $400 in value#, including up to 15,000 Aeroplan points11 could be yours, Plus, receive an annual fee rebate for the first year11. Conditions Apply.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 307.5,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -703,7 +747,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/browse-all",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 15000.0,
+    "first_year_value_cad": 218.5
   },
   {
     "slug": "td-aeroplan-visa-infinite-privilege-credit-card",
@@ -714,14 +761,14 @@
     "annual_fee": 599.0,
     "first_year_fee": null,
     "welcome_bonus": "Up to $3,000 in value* including up to 85,000 Aeroplan points12 could be yours. Conditions Apply.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1742.5,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -737,7 +784,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/browse-all",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 85000.0,
+    "first_year_value_cad": 1143.5
   },
   {
     "slug": "td-first-class-travel-visa-infinite-card",
@@ -748,14 +798,14 @@
     "annual_fee": 139.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $1,400 in value16, including up to 165,000 TD Rewards Points3 and receive an annual fee rebate for the first year3. Conditions Apply.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 825.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "td rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -771,7 +821,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.5,
+    "welcome_bonus_points": 165000.0,
+    "first_year_value_cad": 686.0
   },
   {
     "slug": "td-platinum-travel-visa-card",
@@ -782,14 +835,14 @@
     "annual_fee": 89.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $370 in value14, including up to 50,000 TD Rewards Points4 and receive an annual fee rebate for the first year4. Conditions Apply.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 250.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "td rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -805,7 +858,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/platinum-travel-visa-card",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.5,
+    "welcome_bonus_points": 50000.0,
+    "first_year_value_cad": 161.0
   },
   {
     "slug": "td-rewards-visa-card",
@@ -823,7 +879,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "td rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -839,7 +895,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/browse-all",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.5
   },
   {
     "slug": "td-low-rate-visa-card",
@@ -857,7 +914,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "td rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -873,7 +930,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/low-rate/low-rate-visa-card",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.5
   },
   {
     "slug": "td-u-s-dollar-visa-card",
@@ -891,7 +949,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "td rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -907,7 +965,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/us-dollar/us-dollar-visa-card",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.5
   },
   {
     "slug": "td-business-travel-visa-card",
@@ -918,14 +977,14 @@
     "annual_fee": 149.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $1,247 in value17, including up to 200,000 TD Rewards Points7,17, and an Annual Fee Rebate for the first year17 for the Primary Cardholder and first two Additional Cardholders7,17. Account must be approved, open and in Good Standing. Offer effective as of January 13, 2026. Conditions apply.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1000.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "td rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -941,7 +1000,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/business-banking/small-business/credit-cards/business-travel-visa-card",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 0.5,
+    "welcome_bonus_points": 200000.0,
+    "first_year_value_cad": 851.0
   },
   {
     "slug": "td-aeroplan-visa-business-card",
@@ -952,14 +1014,14 @@
     "annual_fee": 149.0,
     "first_year_fee": null,
     "welcome_bonus": "Up to 60,000 Aeroplan points2 could be yours with the TD\u00ae Aeroplan\u00ae Visa* Business Card2. Conditions Apply. Account must be approved, open and in Good Standing. Offer effective as of January 13, 2026.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1230.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 14.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -975,7 +1037,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/business-banking/small-business/credit-cards/aeroplan-visa-business-card",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 60000.0,
+    "first_year_value_cad": 1081.0
   },
   {
     "slug": "td-business-cash-back-visa-card",
@@ -993,7 +1058,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1009,7 +1074,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/business-banking/small-business/credit-cards/business-cash-back-visa-card",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.0
   },
   {
     "slug": "td-business-select-ratetm-visa-card",
@@ -1027,7 +1093,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "td rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1043,7 +1109,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.td.com/ca/en/business-banking/small-business/credit-cards/business-select-rate-visa-card",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 0.5
   },
   {
     "slug": "rbc-avion-visa-infinite",
@@ -1054,14 +1121,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to 55,000 Avion points1 (max travel value of $1,100\u2020), that\u2019s up to 3 round trip flights^",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 990.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc avion",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1077,7 +1144,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 55000.0,
+    "first_year_value_cad": 870.0
   },
   {
     "slug": "rbc-ion-visa",
@@ -1088,14 +1158,14 @@
     "annual_fee": 48.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to 21,000 Avion points^ - that\u2019s up to $150 of value in gift cards!\u2020 Apply by May 6, 2026.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 378.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1111,7 +1181,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 21000.0,
+    "first_year_value_cad": 330.0
   },
   {
     "slug": "westjet-rbc-world-elite-mastercard",
@@ -1122,14 +1195,14 @@
     "annual_fee": 139.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to 45,000 WestJet points1",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 450.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "westjet rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1145,7 +1218,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 45000.0,
+    "first_year_value_cad": 311.0
   },
   {
     "slug": "rbc-cash-back-mastercard",
@@ -1163,7 +1239,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1179,7 +1255,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "rbc-cash-back-preferred-world-elite-mastercard",
@@ -1197,7 +1274,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1213,7 +1290,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/cash-back/rbc-cashback-preferred-world-elite-mastercard.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "rbc-visa-classic-low-rate-option",
@@ -1231,7 +1309,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1247,7 +1325,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8
   },
   {
     "slug": "rbc-ion-visa",
@@ -1258,14 +1337,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to 11,000 Avion points^ - that's up to $75 of value in gift cards\u2020! Apply by May 6, 2026.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 198.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1281,7 +1360,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 11000.0,
+    "first_year_value_cad": 198.0
   },
   {
     "slug": "more-rewards-rbc-visa",
@@ -1299,7 +1381,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1315,7 +1397,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8
   },
   {
     "slug": "moi-rbc-visa",
@@ -1326,14 +1409,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to 5,000 bonus Moi points1 \u2013 that\u2019s a value of $40. Apply by January 20, 2027.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 90.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1349,7 +1432,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 5000.0,
+    "first_year_value_cad": 90.0
   },
   {
     "slug": "rbc-avion-visa-platinum",
@@ -1360,14 +1446,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to 55,000 Avion points1 (max travel value of $1,100\u2020), that\u2019s up to 3 round trip flights^",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 990.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc avion",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1383,7 +1469,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 55000.0,
+    "first_year_value_cad": 870.0
   },
   {
     "slug": "westjet-rbc-mastercard",
@@ -1394,14 +1483,14 @@
     "annual_fee": 39.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to 10,000 WestJet points1",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 100.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "westjet rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1417,7 +1506,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 10000.0,
+    "first_year_value_cad": 61.0
   },
   {
     "slug": "rbc-avion-visa-infinite-privilege",
@@ -1428,14 +1520,14 @@
     "annual_fee": 399.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to 70,000 Avion points1",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1260.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc avion",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1451,7 +1543,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 70000.0,
+    "first_year_value_cad": 861.0
   },
   {
     "slug": "rbc-british-airways-visa-infinite",
@@ -1462,14 +1557,14 @@
     "annual_fee": 165.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to 60,000 Avios1",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1080.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.5,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1485,7 +1580,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 60000.0,
+    "first_year_value_cad": 915.0
   },
   {
     "slug": "rbc-visa-platinum",
@@ -1503,7 +1601,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1519,7 +1617,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8
   },
   {
     "slug": "rbc-u-s-dollar-visa-gold",
@@ -1537,7 +1636,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1553,7 +1652,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8
   },
   {
     "slug": "rbc-rateadvantage-visa",
@@ -1571,7 +1671,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1587,7 +1687,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8
   },
   {
     "slug": "more-rewards-rbc-visa-infinite",
@@ -1605,7 +1706,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1621,7 +1722,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.8
   },
   {
     "slug": "westjet-rbc-world-elite-mastercard-for-business",
@@ -1632,14 +1734,14 @@
     "annual_fee": 175.0,
     "first_year_fee": null,
     "welcome_bonus": "Receive 35,000 welcome WestJet points after your first purchase",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 350.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "westjet rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1655,7 +1757,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/westjet-rbc-world-elite-mastercard-business.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 35000.0,
+    "first_year_value_cad": 175.0
   },
   {
     "slug": "rbc-avion-visa-infinite-business",
@@ -1666,14 +1771,14 @@
     "annual_fee": 175.0,
     "first_year_fee": null,
     "welcome_bonus": "Receive 35,000 Welcome Avion points upon enrollment",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 630.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc avion",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1689,7 +1794,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/avion-visa-infinite-business.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 35000.0,
+    "first_year_value_cad": 455.0
   },
   {
     "slug": "rbc-avion-visa-business",
@@ -1700,14 +1808,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Receive 35,000 Welcome Avion points upon enrollment",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 630.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc avion",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1723,7 +1831,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/rbc-avion-visa-business.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 35000.0,
+    "first_year_value_cad": 510.0
   },
   {
     "slug": "rbc-business-cash-back-mastercard",
@@ -1741,7 +1852,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1757,7 +1868,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/business-cash-back-mastercard.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.0
   },
   {
     "slug": "rbc-visa-business-card",
@@ -1775,7 +1887,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1791,7 +1903,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-business.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.8
   },
   {
     "slug": "rbc-visa-creditline-for-small-business",
@@ -1802,14 +1915,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn 1 Avion point for every $2 spent",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 0.02,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 2.9,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "rbc rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1825,7 +1938,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-creditline.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.8,
+    "welcome_bonus_points": 1.0,
+    "first_year_value_cad": 0.02
   },
   {
     "slug": "scotiabank-passport-visa-infinite-card",
@@ -1836,14 +1952,14 @@
     "annual_fee": 150.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $1,500\u0394 in first year welcome offers, rewards and savings, including up to 60,000 bonus Scene+TM points\u2662.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 600.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1859,7 +1975,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 60000.0,
+    "first_year_value_cad": 450.0
   },
   {
     "slug": "scotia-momentum-visa-infinite-card",
@@ -1877,7 +1996,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1893,7 +2012,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotiabank-gold-american-express-card",
@@ -1904,14 +2024,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $850^ in welcome offers, first year rewards and savings value, including no annual fee in your first year, and up to 45,000 bonus Scene+ points.**",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 450.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1927,7 +2047,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 45000.0,
+    "first_year_value_cad": 330.0
   },
   {
     "slug": "scotiabank-scene-tm-visa-card",
@@ -1938,14 +2061,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 10,000 bonus Scene+ points within your first 3 months.2",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 100.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1961,7 +2084,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 10000.0,
+    "first_year_value_cad": 100.0
   },
   {
     "slug": "scotia-momentum-visa-card",
@@ -1979,7 +2105,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -1995,7 +2121,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-cash-back-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotia-momentum-no-fee-visa-card",
@@ -2013,7 +2140,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2029,7 +2156,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-no-fee-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotiabank-american-express-card",
@@ -2040,14 +2168,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 5,000 bonus Scene+ points within your first 3 months (that\u2019s up to $50 towards travel).1",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 50.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 9.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2063,7 +2191,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/no-fee-amex-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 5000.0,
+    "first_year_value_cad": 50.0
   },
   {
     "slug": "scotiabank-platinum-american-express-card",
@@ -2074,14 +2205,14 @@
     "annual_fee": 399.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $2,500* in value in the first 14 months, including up to 80,0004 bonus Scene+ points.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 800.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2097,7 +2228,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/platinum-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 80000.0,
+    "first_year_value_cad": 401.0
   },
   {
     "slug": "scotiabank-passport-visa-infinite-privilege-card",
@@ -2108,14 +2242,14 @@
     "annual_fee": 599.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $1,500\u0394 in first year welcome offers, rewards and savings, including up to 60,000 bonus Scene+TM points\u2662.",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 600.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2131,7 +2265,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-privilege-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 60000.0,
+    "first_year_value_cad": 1.0
   },
   {
     "slug": "scotia-momentum-mastercard-credit-card",
@@ -2149,7 +2286,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2165,7 +2302,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/mastercard/momentum-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotiabank-u-s-dollar-visa-card",
@@ -2183,7 +2321,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2199,7 +2337,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/us-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotiabank-value-visa-card",
@@ -2210,14 +2349,14 @@
     "annual_fee": 29.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 10,000 bonus Scene+ points within your first 3 months.2",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 100.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2233,7 +2372,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/value-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 10000.0,
+    "first_year_value_cad": 71.0
   },
   {
     "slug": "scotiabank-scene-tm-visa-card-for-students",
@@ -2244,14 +2386,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 10,000 bonus Scene+ points within your first 3 months.2",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 100.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 13.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2267,7 +2409,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-student-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 10000.0,
+    "first_year_value_cad": 100.0
   },
   {
     "slug": "scotiabank-value-visa-card-for-students",
@@ -2285,7 +2430,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2301,7 +2446,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-value-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotia-momentum-visa-card-for-students",
@@ -2319,7 +2465,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2335,7 +2481,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-momentum-cash-back-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotia-momentum-no-fee-visa-card-for-students",
@@ -2353,7 +2500,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2369,7 +2516,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/compare-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotiabank-american-express-card-for-students",
@@ -2380,14 +2528,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 7,500 bonus Scene+ points within your first 3 months (that\u2019s up to $75 towards travel).4",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 75.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2403,7 +2551,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/student-scotiabank-american-express-card.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 7500.0,
+    "first_year_value_cad": 75.0
   },
   {
     "slug": "scotia-momentum-for-business-visa-card",
@@ -2421,7 +2572,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2437,7 +2588,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/compare-cards.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotiabank-passport-visa-infinite-business-card",
@@ -2448,14 +2600,14 @@
     "annual_fee": 199.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $2,800 in first year savings including up to 40,000 bonus Scene+ points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 400.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2471,7 +2623,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/compare-cards.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 40000.0,
+    "first_year_value_cad": 201.0
   },
   {
     "slug": "scotialine-for-business-visa-credit-card",
@@ -2489,7 +2644,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2505,7 +2660,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/compare-cards.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.0
   },
   {
     "slug": "scotia-home-hardware-pro-visa-business-card",
@@ -2516,14 +2672,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 7,500 bonus Scene+ points in first 3 months",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 75.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2539,7 +2695,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/compare-cards.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 7500.0,
+    "first_year_value_cad": 75.0
   },
   {
     "slug": "cibc-aventura-visa-infinite-card",
@@ -2550,14 +2709,14 @@
     "annual_fee": 139.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $1,800 in value including up to bonus points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1800.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cibc aventura",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2573,7 +2732,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.1,
+    "welcome_bonus_points": 1800.0,
+    "first_year_value_cad": 1661.0
   },
   {
     "slug": "cibc-aeroplan-visa-infinite-card",
@@ -2584,14 +2746,14 @@
     "annual_fee": 139.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $1,200 in value including up to 45,000 Aeroplan points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 922.5,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2607,7 +2769,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 45000.0,
+    "first_year_value_cad": 783.5
   },
   {
     "slug": "cibc-aventura-visa-infinite-privilege-card",
@@ -2618,14 +2783,14 @@
     "annual_fee": 499.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $2,450 in value",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 2450.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cibc aventura",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2641,7 +2806,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.1,
+    "welcome_bonus_points": 2450.0,
+    "first_year_value_cad": 1951.0
   },
   {
     "slug": "cibc-aeroplan-visa-infinite-privilege-card",
@@ -2652,14 +2820,14 @@
     "annual_fee": 599.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $3,200 in value including up to 100,000 Aeroplan points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 2050.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2675,7 +2843,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 100000.0,
+    "first_year_value_cad": 1451.0
   },
   {
     "slug": "cibc-aventura-gold-visa-card",
@@ -2686,14 +2857,14 @@
     "annual_fee": 139.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $1,800 in value",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1800.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cibc aventura",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2709,7 +2880,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.1,
+    "welcome_bonus_points": 1800.0,
+    "first_year_value_cad": 1661.0
   },
   {
     "slug": "cibc-aventura-visa-card",
@@ -2720,14 +2894,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 12,500 Aventura Points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 137.5,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cibc aventura",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2743,7 +2917,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.1,
+    "welcome_bonus_points": 12500.0,
+    "first_year_value_cad": 137.5
   },
   {
     "slug": "cibc-aeroplan-visa-card",
@@ -2754,14 +2931,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $200 in value including up to 10,000 Aeroplan points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 205.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2777,7 +2954,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 10000.0,
+    "first_year_value_cad": 205.0
   },
   {
     "slug": "cibc-adapta-mastercard",
@@ -2788,14 +2968,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $150 in value with no annual fee",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 150.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cibc aventura",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2811,7 +2991,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.1,
+    "welcome_bonus_points": 150.0,
+    "first_year_value_cad": 150.0
   },
   {
     "slug": "cibc-dividend-visa-infinite-card",
@@ -2822,14 +3005,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $450 in value including annual fee rebate",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 450.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2845,7 +3028,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 450.0,
+    "first_year_value_cad": 330.0
   },
   {
     "slug": "cibc-dividend-platinum-visa-card",
@@ -2856,14 +3042,14 @@
     "annual_fee": 99.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $400 in value including annual fee rebate",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 400.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2879,7 +3065,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 400.0,
+    "first_year_value_cad": 301.0
   },
   {
     "slug": "cibc-dividend-visa-card",
@@ -2897,7 +3086,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2913,7 +3102,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "cibc-costco-mastercard",
@@ -2931,7 +3121,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cibc aventura",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2947,7 +3137,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.1
   },
   {
     "slug": "cibc-adapta-mastercard-for-students",
@@ -2958,14 +3149,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $150 in value with no annual fee",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 150.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cibc aventura",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -2981,7 +3172,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.1,
+    "welcome_bonus_points": 150.0,
+    "first_year_value_cad": 150.0
   },
   {
     "slug": "cibc-dividend-visa-card-for-students",
@@ -2992,14 +3186,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $125 cash back",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 125.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3015,7 +3209,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 125.0,
+    "first_year_value_cad": 125.0
   },
   {
     "slug": "cibc-aventura-visa-card-for-students",
@@ -3026,14 +3223,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 12,500 Aventura Points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 137.5,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cibc aventura",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3049,7 +3246,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.1,
+    "welcome_bonus_points": 12500.0,
+    "first_year_value_cad": 137.5
   },
   {
     "slug": "cibc-aeroplan-visa-card-for-students",
@@ -3060,14 +3260,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 10,000 Aeroplan points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 205.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3083,7 +3283,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 2.05,
+    "welcome_bonus_points": 10000.0,
+    "first_year_value_cad": 205.0
   },
   {
     "slug": "bmo-eclipse-rise-visa-card",
@@ -3094,14 +3297,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Get 20,000 points and 0.99% intro rate on Balance Transfers for 9 months",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 134.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3117,7 +3320,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67,
+    "welcome_bonus_points": 20000.0,
+    "first_year_value_cad": 134.0
   },
   {
     "slug": "bmo-eclipse-visa-infinite-card",
@@ -3128,14 +3334,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to $1,150 in value including up to 70,000 Bonus points, no annual fee first year",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 469.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3151,7 +3357,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67,
+    "welcome_bonus_points": 70000.0,
+    "first_year_value_cad": 349.0
   },
   {
     "slug": "bmo-ascend-world-elite-mastercard",
@@ -3162,14 +3371,14 @@
     "annual_fee": 150.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to $1,600 in value and annual fees waived first year",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1600.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3185,7 +3394,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-ascend-world-elite-mastercard/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67,
+    "welcome_bonus_points": 1600.0,
+    "first_year_value_cad": 1450.0
   },
   {
     "slug": "bmo-eclipse-visa-infinite-privilege-card",
@@ -3196,14 +3408,14 @@
     "annual_fee": 599.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to $2,300 including up to 200,000 points and NEXUS Statement Credit",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 1340.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3219,7 +3431,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-visa-infinite-privilege/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67,
+    "welcome_bonus_points": 200000.0,
+    "first_year_value_cad": 741.0
   },
   {
     "slug": "bmo-cashback-mastercard",
@@ -3237,7 +3452,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3253,7 +3468,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/main/personal/credit-cards/bmo-cashback-mastercard/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67
   },
   {
     "slug": "bmo-preferred-rate-mastercard",
@@ -3271,7 +3487,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3287,7 +3503,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/main/personal/credit-cards/all-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67
   },
   {
     "slug": "bmo-cashback-world-elite-mastercard",
@@ -3298,14 +3515,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to $650 in value and annual fees waived first year",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 650.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3321,7 +3538,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67,
+    "welcome_bonus_points": 650.0,
+    "first_year_value_cad": 530.0
   },
   {
     "slug": "bmo-prepaid-mastercard",
@@ -3339,7 +3559,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3355,7 +3575,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/main/personal/credit-cards/all-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67
   },
   {
     "slug": "bmo-u-s-dollar-mastercard",
@@ -3373,7 +3594,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3389,7 +3610,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/main/personal/credit-cards/all-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67
   },
   {
     "slug": "student-bmo-cashback-mastercard",
@@ -3407,7 +3629,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3423,7 +3645,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/main/personal/credit-cards/all-cards/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67
   },
   {
     "slug": "bmo-viporter-mastercard",
@@ -3434,14 +3657,14 @@
     "annual_fee": 89.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to $1,800 in value including 40,000 VIPorter points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 268.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3457,7 +3680,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67,
+    "welcome_bonus_points": 40000.0,
+    "first_year_value_cad": 179.0
   },
   {
     "slug": "bmo-viporter-world-elite-mastercard",
@@ -3468,14 +3694,14 @@
     "annual_fee": 199.0,
     "first_year_fee": null,
     "welcome_bonus": "Get up to $2,400 in value including 70,000 VIPorter points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 469.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3491,7 +3717,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-world-elite-mastercard/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.67,
+    "welcome_bonus_points": 70000.0,
+    "first_year_value_cad": 270.0
   },
   {
     "slug": "bmo-ascend-world-elite-business-mastercard",
@@ -3502,14 +3731,14 @@
     "annual_fee": 149.0,
     "first_year_fee": null,
     "welcome_bonus": "Get over $1,500 in value including up to 100,000 bonus BMO Rewards Points in first year",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 670.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 18.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3525,7 +3754,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/main/personal/credit-cards/all-cards/",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 0.67,
+    "welcome_bonus_points": 100000.0,
+    "first_year_value_cad": 521.0
   },
   {
     "slug": "bmo-cashback-business-mastercard",
@@ -3543,7 +3775,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "bmo rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3559,7 +3791,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.bmo.com/main/personal/credit-cards/all-cards/",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 0.67
   },
   {
     "slug": "national-bank-world-elite-mastercard",
@@ -3570,14 +3803,14 @@
     "annual_fee": 150.0,
     "first_year_fee": null,
     "welcome_bonus": "Up to 35,000 points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 332.5,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "national bank",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3593,7 +3826,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.nbc.ca/personal/mastercard-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.95,
+    "welcome_bonus_points": 35000.0,
+    "first_year_value_cad": 182.5
   },
   {
     "slug": "national-bank-syncro-mastercard",
@@ -3611,7 +3847,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "national bank",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3627,7 +3863,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.nbc.ca/personal/mastercard-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.95
   },
   {
     "slug": "national-bank-platinum-mastercard",
@@ -3645,7 +3882,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "national bank",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3661,7 +3898,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.nbc.ca/personal/mastercard-credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.95
   },
   {
     "slug": "national-bank-business-mastercard",
@@ -3679,7 +3917,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "national bank",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3695,7 +3933,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.nbc.ca/personal/mastercard-credit-cards.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 0.95
   },
   {
     "slug": "national-bank-business-line-mastercard",
@@ -3713,7 +3952,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "national bank",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3729,7 +3968,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.nbc.ca/personal/mastercard-credit-cards.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 0.95
   },
   {
     "slug": "national-bank-platinum-business-mastercard",
@@ -3747,7 +3987,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "national bank",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3763,7 +4003,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.nbc.ca/personal/mastercard-credit-cards.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 0.95
   },
   {
     "slug": "national-bank-corporate-mastercard",
@@ -3781,7 +4022,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "national bank",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3797,7 +4038,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.nbc.ca/personal/mastercard-credit-cards.html",
-    "is_business": true
+    "is_business": true,
+    "cpp_cad": 0.95
   },
   {
     "slug": "mbna-true-line-mastercard",
@@ -3815,7 +4057,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "mbna rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3831,7 +4073,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.mbna.ca/en/credit-cards/low-interest/true-line-mastercard",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "mbna-true-line-gold-mastercard",
@@ -3849,7 +4092,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "mbna rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3865,7 +4108,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.mbna.ca/en/credit-cards/low-interest/true-line-gold-mastercard",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "mbna-rewards-platinum-plus-mastercard",
@@ -3876,14 +4120,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 10,000 bonus points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 100.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "mbna rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3899,7 +4143,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.mbna.ca/en/credit-cards/rewards/mbna-rewards-mastercard",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 10000.0,
+    "first_year_value_cad": 100.0
   },
   {
     "slug": "mbna-rewards-world-elite-mastercard",
@@ -3910,14 +4157,14 @@
     "annual_fee": 120.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to 30,000 bonus MBNA Rewards Points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 300.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "mbna rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -3933,7 +4180,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.mbna.ca/en/credit-cards/rewards/mbna-rewards-world-elite-mastercard",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 30000.0,
+    "first_year_value_cad": 180.0
   },
   {
     "slug": "tangerine-money-back-credit-card",
@@ -3951,7 +4201,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -3970,7 +4220,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.tangerine.ca/en/personal/spend/credit-cards",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "tangerine-money-back-world-mastercard",
@@ -3981,14 +4232,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Get $120 when you spend $1,500 in first 3 months",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 120.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4009,7 +4260,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.tangerine.ca/en/personal/spend/credit-cards",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 120.0,
+    "first_year_value_cad": 120.0
   },
   {
     "slug": "rogers-red-mastercard",
@@ -4027,7 +4281,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4047,7 +4301,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rogersbank.com/en/compare_cards",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "rogers-red-world-elite-mastercard",
@@ -4065,7 +4320,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4089,7 +4344,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.rogersbank.com/en/compare_cards",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "wealthsimple-cash-back-visa",
@@ -4107,7 +4363,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4130,7 +4386,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.wealthsimple.com/en-ca/credit-card",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "neo-mastercard",
@@ -4148,7 +4405,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4169,7 +4426,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.neofinancial.com/credit-cards",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "neo-world-mastercard",
@@ -4187,7 +4445,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4210,7 +4468,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.neofinancial.com/credit-cards",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "neo-world-elite-mastercard",
@@ -4228,7 +4487,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4252,7 +4511,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.neofinancial.com/credit-cards",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "simplii-financial-cash-back-visa-card",
@@ -4263,14 +4523,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn up to $100 cash back in first 3 months (up to 20% on eligible purchases)",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 100.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4291,7 +4551,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.simplii.com/en/credit-cards/cash-back-visa.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0,
+    "welcome_bonus_points": 100.0,
+    "first_year_value_cad": 100.0
   },
   {
     "slug": "pc-mastercard",
@@ -4302,14 +4565,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn 20,000 bonus PC Optimum Points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 140.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "pc optimum",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -4325,7 +4588,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.pcfinancial.ca/en/credit-cards/pc-mastercard/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.7,
+    "welcome_bonus_points": 20000.0,
+    "first_year_value_cad": 140.0
   },
   {
     "slug": "pc-world-mastercard",
@@ -4336,14 +4602,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn 20,000 bonus PC Optimum Points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 140.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "pc optimum",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -4359,7 +4625,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.pcfinancial.ca/en/credit-cards/world-mastercard/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.7,
+    "welcome_bonus_points": 20000.0,
+    "first_year_value_cad": 140.0
   },
   {
     "slug": "pc-world-elite-mastercard",
@@ -4370,14 +4639,14 @@
     "annual_fee": 0.0,
     "first_year_fee": null,
     "welcome_bonus": "Earn 20,000 bonus PC Optimum Points",
-    "welcome_bonus_value_cad": null,
+    "welcome_bonus_value_cad": 140.0,
     "welcome_bonus_conditions": null,
     "min_spend": null,
     "purchase_interest_rate": 21.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "pc optimum",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4398,7 +4667,10 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.pcfinancial.ca/en/credit-cards/world-elite/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.7,
+    "welcome_bonus_points": 20000.0,
+    "first_year_value_cad": 140.0
   },
   {
     "slug": "pc-insiders-world-elite-mastercard",
@@ -4416,7 +4688,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "pc optimum",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -4432,7 +4704,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.pcfinancial.ca/en/credit-cards/insiders/",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.7
   },
   {
     "slug": "cash-advantage-mastercard",
@@ -4450,7 +4723,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "triangle rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4470,7 +4743,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.ctfs.com/content/ctfs3/en/homepage.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.5
   },
   {
     "slug": "triangle-mastercard",
@@ -4488,7 +4762,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "triangle rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4509,7 +4783,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.ctfs.com/content/ctfs3/en/homepage.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.5
   },
   {
     "slug": "triangle-world-elite-mastercard",
@@ -4527,7 +4802,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "triangle rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4546,7 +4821,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.ctfs.com/content/ctfs3/en/homepage.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 0.5
   },
   {
     "slug": "desjardins-flexi-visa",
@@ -4564,7 +4840,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "desjardins bonusdollars",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
@@ -4580,7 +4856,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "desjardins-cash-back-visa",
@@ -4598,7 +4875,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4616,7 +4893,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "desjardins-cash-back-mastercard",
@@ -4634,7 +4912,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4652,7 +4930,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "desjardins-bonus-visa",
@@ -4670,7 +4949,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "desjardins bonusdollars",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4688,7 +4967,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "desjardins-cash-back-world-elite-mastercard",
@@ -4706,7 +4986,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4724,7 +5004,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "desjardins-odyssey-gold-visa",
@@ -4742,7 +5023,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "desjardins bonusdollars",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4761,7 +5042,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "desjardins-odyssey-world-elite-mastercard",
@@ -4779,7 +5061,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "desjardins bonusdollars",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4799,7 +5081,8 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   },
   {
     "slug": "desjardins-odyssey-visa-infinite-privilege",
@@ -4817,7 +5100,7 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {},
-    "rewards_program": null,
+    "rewards_program": "desjardins bonusdollars",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
@@ -4838,6 +5121,7 @@
     "pot_url": null,
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
-    "is_business": false
+    "is_business": false,
+    "cpp_cad": 1.0
   }
 ]
