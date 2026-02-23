@@ -788,7 +788,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/balance-transfer-credit-cards/slate-edge"
+    "apply_url": "https://creditcards.chase.com/balance-transfer-credit-cards/slate"
   },
   {
     "slug": "unitedsm-explorer-card",
@@ -809,7 +809,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/explorer"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/united-explorer"
   },
   {
     "slug": "united-questsm-card",
@@ -830,7 +830,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/quest"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/united-quest"
   },
   {
     "slug": "united-gatewaysm-card",
@@ -851,7 +851,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/gateway"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/united-gateway"
   },
   {
     "slug": "united-clubsm-card",
@@ -872,7 +872,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/club"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite"
   },
   {
     "slug": "southwest-rapid-rewards-plus-credit-card",
@@ -1019,7 +1019,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/ihg/premier"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier"
   },
   {
     "slug": "ihg-one-rewards-traveler-credit-card",
@@ -1040,7 +1040,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/ihg/traveler"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/traveler"
   },
   {
     "slug": "disney-inspire-visa-card",
@@ -1061,7 +1061,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/disney-credit-cards/inspire"
+    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/disney/inspire"
   },
   {
     "slug": "disney-premier-visa-card",
@@ -1082,7 +1082,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/disney-credit-cards/premier"
+    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/disney/premier"
   },
   {
     "slug": "disney-visa-card",
@@ -1103,7 +1103,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/disney-credit-cards"
+    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/disney/rewards"
   },
   {
     "slug": "world-of-hyatt-credit-card",
@@ -1124,7 +1124,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/hyatt"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card"
   },
   {
     "slug": "aeroplan-card",
@@ -1166,7 +1166,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/british-airways"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways"
   },
   {
     "slug": "aer-lingus-visa-signature-credit-card",
@@ -1187,7 +1187,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/aer-lingus"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus"
   },
   {
     "slug": "iberia-visa-signature-credit-card",
@@ -1208,7 +1208,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/iberia"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/avios/iberia"
   },
   {
     "slug": "prime-visa",
@@ -1229,7 +1229,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime"
+    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards"
   },
   {
     "slug": "amazon-visa",
@@ -1250,7 +1250,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon"
+    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-rewards"
   },
   {
     "slug": "doordash-rewards-mastercard",
@@ -1355,7 +1355,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/preferred"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/business-preferred"
   },
   {
     "slug": "ink-business-cash-credit-card",
@@ -1418,7 +1418,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/united/business"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/united/united-business-card"
   },
   {
     "slug": "united-clubsm-business-card",
@@ -1439,7 +1439,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/united/club-business"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/united/united-club-business"
   },
   {
     "slug": "southwest-rapid-rewards-performance-business-credit-card",
@@ -1460,7 +1460,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/southwest/performance"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/southwest/performance-business"
   },
   {
     "slug": "southwest-rapid-rewards-premier-business-credit-card",
@@ -1502,7 +1502,7 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/ihg/premier-business"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier"
   },
   {
     "slug": "world-of-hyatt-business-credit-card",
@@ -1523,6 +1523,6 @@
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/hyatt/business"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card"
   }
 ]
