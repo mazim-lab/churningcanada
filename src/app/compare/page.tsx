@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { allCards, Card, BENEFIT_LABELS, Benefits } from '@/data/cards';
 import { IssuerAvatar } from '@/components/IssuerAvatar';
 import { Search, X, CreditCard, Check, Minus, Trophy, Plus } from 'lucide-react';
@@ -30,6 +30,20 @@ export default function ComparePage() {
 
   const removeCard = (slug: string) => setSelected(selected.filter(c => c.slug !== slug));
 
+  const searchRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!showSearch) return;
+    const handler = (e: MouseEvent) => {
+      if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
+        setShowSearch(false);
+        setSearch('');
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, [showSearch]);
+
   const benefitKeys = Object.keys(BENEFIT_LABELS) as (keyof Benefits)[];
 
   const bestFee = selected.length > 1 ? Math.min(...selected.map(c => c.annual_fee)) : null;
@@ -57,7 +71,7 @@ export default function ComparePage() {
         ))}
         {/* Empty slots */}
         {Array.from({ length: Math.max(0, (selected.length > 0 ? 4 : 1) - selected.length) }).map((_, i) => (
-          <div key={`empty-${i}`} className="relative">
+          <div key={`empty-${i}`} className="relative" ref={i === 0 ? searchRef : undefined}>
             {i === 0 ? (
               <>
                 <button
@@ -154,7 +168,7 @@ export default function ComparePage() {
 function CompareRow({ label, values, winners, isBenefit, odd }: { label: string; values: string[]; winners?: boolean[]; isBenefit?: boolean; odd?: boolean }) {
   return (
     <tr className={`border-t border-border/50 ${odd ? 'bg-muted/30' : ''}`}>
-      <td className="p-3 text-sm font-medium text-muted-foreground">{label}</td>
+      <td className="p-3 text-sm font-medium text-muted-foreground sticky left-0 bg-card z-10 min-w-[120px]">{label}</td>
       {values.map((v, i) => (
         <td key={i} className={`p-3 text-center text-sm ${winners?.[i] ? 'bg-gold/10' : ''}`}>
           <span className={`${winners?.[i] ? 'text-gold-dark font-bold' : ''} ${isBenefit && v === '✓' ? 'text-green-600 dark:text-green-400 font-bold text-base' : ''} ${isBenefit && v === '—' ? 'text-muted-foreground/30' : ''}`}>

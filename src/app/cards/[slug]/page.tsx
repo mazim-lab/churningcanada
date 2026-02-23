@@ -41,7 +41,10 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
     .slice(0, 3);
 
   return (
-    <div className="mx-auto max-w-4xl px-4 sm:px-6 py-8">
+    <div>
+      {/* Gradient banner */}
+      <div className="bg-gradient-to-b from-muted to-background pt-4 pb-8">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-1.5 text-sm text-muted-foreground mb-6">
         <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
@@ -75,7 +78,10 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
         <StatCard label="Welcome Bonus" value={card.welcome_bonus_value > 0 ? `$${card.welcome_bonus_value}` : '—'} highlight />
         <StatCard label="First Year Value" value={card.first_year_value > 0 ? `$${card.first_year_value}` : '—'} highlight />
       </div>
+        </div>
+      </div>
 
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 py-8">
       {/* Value Meter */}
       {card.first_year_value > 0 && (
         <ValueMeter value={card.first_year_value} max={getMaxFirstYearValue()} />
@@ -264,6 +270,7 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
           }),
         }}
       />
+      </div>
     </div>
   );
 }

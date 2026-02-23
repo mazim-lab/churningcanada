@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
-import { Inter, DM_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Newsreader } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { MobileMenu } from "@/components/MobileMenu";
 import "./globals.css";
 
-const inter = Inter({
+const body = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
 });
 
-const dmSans = DM_Sans({
+const display = Newsreader({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-display",
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -32,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${inter.variable} ${dmSans.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`scroll-smooth ${body.variable} ${display.variable}`} suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground antialiased font-sans">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />
@@ -48,19 +50,22 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
-        <a href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight font-[family-name:var(--font-display)]">
-          <span className="text-primary text-2xl leading-none">Churning</span><span className="text-gold-text dark:text-gold text-2xl leading-none">Canada</span>
-          <span className="text-xl leading-none ml-0.5">🍁</span>
-        </a>
+        <div className="flex items-center gap-3">
+          <MobileMenu />
+          <a href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight font-[family-name:var(--font-display)]">
+            <span className="text-primary text-2xl leading-none">Churning</span><span className="text-gold-text dark:text-gold text-2xl leading-none">Canada</span>
+            <span className="text-xl leading-none ml-0.5">🍁</span>
+          </a>
+        </div>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="/cards" className="text-muted-foreground hover:text-foreground transition-colors">Cards</a>
-          <a href="/compare" className="text-muted-foreground hover:text-foreground transition-colors">Compare</a>
-          <a href="/guides/us-cards-for-canadians" className="text-muted-foreground hover:text-foreground transition-colors">Guides</a>
-          <a href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a>
+          <a href="/cards" className="relative text-muted-foreground hover:text-foreground transition-colors after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Cards</a>
+          <a href="/compare" className="relative text-muted-foreground hover:text-foreground transition-colors after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Compare</a>
+          <a href="/guides/us-cards-for-canadians" className="relative text-muted-foreground hover:text-foreground transition-colors after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Guides</a>
+          <a href="/blog" className="relative text-muted-foreground hover:text-foreground transition-colors after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Blog</a>
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <a href="/cards" className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-white hover:bg-primary-light transition-colors">
+          <a href="/cards" className="hidden sm:inline-flex rounded-full bg-gradient-to-r from-gold-dark to-gold px-5 py-2 text-sm font-semibold text-primary-dark hover:brightness-110 transition-all shadow-sm shadow-gold/20">
             Explore Cards
           </a>
         </div>
@@ -72,6 +77,8 @@ function Header() {
 function Footer() {
   return (
     <footer className="footer-gradient mt-20">
+      {/* Gold divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
       <div className="border-t border-border/50 bg-muted">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

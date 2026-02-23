@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { getTopCardsByValue, allCards, getUniqueIssuers } from '@/data/cards';
 import { CardGrid } from '@/components/CardGrid';
 import { AnimatedCounter } from '@/components/AnimatedCounter';
+import { FadeIn } from '@/components/FadeIn';
 
 const stats = {
   cards: allCards.length,
@@ -91,8 +92,9 @@ export default function HomePage() {
       </section>
 
       {/* Stats bar with animated counters */}
+      <FadeIn>
       <section className="border-b border-border/50 bg-muted/50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-5 flex justify-center gap-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-5 flex flex-wrap justify-center gap-6 sm:gap-10">
           <div className="text-center">
             <p className="text-3xl font-bold text-gold-text dark:text-gold"><AnimatedCounter end={stats.cards} suffix="+" /></p>
             <p className="text-[11px] uppercase tracking-wider text-muted-foreground dark:text-foreground/70 mt-1">Cards tracked</p>
@@ -109,8 +111,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </FadeIn>
 
       {/* Featured Cards */}
+      <FadeIn delay={150}>
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-20">
         <div className="flex items-center justify-between mb-10">
           <div>
@@ -123,30 +127,20 @@ export default function HomePage() {
         </div>
         <CardGrid cards={featured} />
       </section>
+      </FadeIn>
 
-      {/* Blog placeholder */}
+      {/* Blog — Coming Soon */}
+      <FadeIn delay={300}>
       <section className="bg-muted/50 border-t border-border/50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-24">
-          <h2 className="text-2xl font-bold tracking-tight mb-10">Latest from the Blog</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: 'Getting Started with Churning in Canada', gradient: 'blog-gradient-1' },
-              { title: 'Top US Cards for Canadians in 2025', gradient: 'blog-gradient-2' },
-              { title: 'Aeroplan vs Scene+: Which is Better?', gradient: 'blog-gradient-3' },
-            ].map((post, i) => (
-              <div key={post.title} className="card-hover rounded-2xl border border-border bg-card overflow-hidden hover:shadow-md">
-                <div className={`h-36 ${post.gradient} flex items-center justify-center`}>
-                  <CreditCard className="w-8 h-8 text-white/20" />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-semibold mb-2 leading-snug">{post.title}</h3>
-                  <p className="text-sm text-muted-foreground">Coming soon...</p>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-24 text-center">
+          <h2 className="text-2xl font-bold tracking-tight mb-3">Blog</h2>
+          <p className="text-muted-foreground mb-6 max-w-md mx-auto">Guides, reviews, and churning strategies — coming soon.</p>
+          <a href="/blog" className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-2.5 text-sm font-medium hover:bg-muted transition-all duration-200">
+            View Blog →
+          </a>
         </div>
       </section>
+      </FadeIn>
     </div>
   );
 }

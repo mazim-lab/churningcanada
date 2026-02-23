@@ -43,8 +43,8 @@ export default function BlogPage() {
       {/* Posts */}
       <div className="space-y-6 animate-fade-in">
         {filtered.map(post => (
-          <article key={post.title} className="card-hover rounded-2xl border border-border bg-card overflow-hidden hover:shadow-md">
-            <div className={`h-32 ${post.gradient} flex items-center justify-center`}>
+          <article key={post.title} className="group card-hover rounded-2xl border border-border bg-card overflow-hidden hover:shadow-md">
+            <div className={`h-32 ${post.gradient} flex items-center justify-center transition-all duration-300 group-hover:brightness-110`}>
               <span className="text-white/20 text-sm font-medium tracking-wider uppercase">Coming Soon</span>
             </div>
             <div className="p-6">

@@ -60,7 +60,7 @@ export function IssuerAvatar({ issuer, size = 'md' }: { issuer: string; size?: '
 
   if (logo) {
     return (
-      <div className={`${sizeClasses[size]} rounded-lg overflow-hidden shrink-0 shadow-sm bg-white`}>
+      <div className={`${sizeClasses[size]} rounded-lg overflow-hidden shrink-0 shadow-sm bg-white dark:bg-stone-100`}>
         <Image
           src={logo}
           alt={issuer}
