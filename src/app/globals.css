@@ -2,7 +2,7 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
+@theme {
   /* === LIGHT MODE (default) === */
   /* Surfaces */
   --color-background: #fdfcfb;
