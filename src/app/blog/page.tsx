@@ -31,7 +31,7 @@ export default function BlogPage() {
             key={cat}
             onClick={() => setActive(cat)}
             className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${active === cat
-              ? 'bg-primary text-white shadow-md shadow-primary/20'
+              ? 'bg-primary text-white dark:text-background shadow-md shadow-primary/20'
               : 'bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground'
             }`}
           >

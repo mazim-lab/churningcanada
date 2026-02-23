@@ -460,7 +460,7 @@ function StepIndicator({ current, onNavigate }: { current: number; onNavigate: (
               isCurrent
                 ? 'bg-gold text-primary-dark scale-110 ring-2 ring-gold/40'
                 : isCompleted
-                ? 'bg-primary text-white'
+                ? 'bg-primary text-white dark:text-background'
                 : 'bg-border/40 text-muted-foreground hover:bg-border/60'
             }`}
             aria-label={`Go to step ${stepNum}`}
@@ -538,7 +538,7 @@ function IntroScreen({ onStart }: { onStart: () => void }) {
 
       <button
         onClick={onStart}
-        className="rounded-full bg-primary text-white px-10 py-4 font-semibold text-lg hover:bg-primary-dark transition-colors flex items-center gap-2 shadow-lg shadow-primary/20"
+        className="rounded-full bg-primary text-white dark:text-background px-10 py-4 font-semibold text-lg hover:bg-primary-dark transition-colors flex items-center gap-2 shadow-lg shadow-primary/20"
       >
         Start Guide
         <ArrowRight className="w-5 h-5" />
@@ -581,7 +581,7 @@ function SummaryScreen({ checked, toggle, onBack }: { checked: Record<string, bo
           return (
             <div key={i} className="rounded-xl border border-border bg-card p-5">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center shrink-0">
+                <div className="w-8 h-8 rounded-full bg-primary text-white dark:text-background text-xs font-bold flex items-center justify-center shrink-0">
                   {i + 1}
                 </div>
                 <Icon className="w-4 h-4 text-primary" />
@@ -817,7 +817,7 @@ function USCardsGuideWizard() {
                 </button>
                 <button
                   onClick={() => navigateTo(currentStep + 1)}
-                  className="flex items-center gap-2 rounded-full bg-primary text-white px-6 py-2.5 text-sm font-semibold hover:bg-primary-dark transition-colors"
+                  className="flex items-center gap-2 rounded-full bg-primary text-white dark:text-background px-6 py-2.5 text-sm font-semibold hover:bg-primary-dark transition-colors"
                 >
                   {currentStep === TOTAL_STEPS ? 'View Summary' : 'Next Step'}
                   <ChevronRight className="w-4 h-4" />

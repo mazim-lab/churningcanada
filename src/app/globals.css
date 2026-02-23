@@ -9,11 +9,11 @@
   --color-gold: #d4a853;
   --color-gold-light: #e4c47a;
   --color-gold-dark: #c9952a;
-  --color-gold-text: #b8860b;
+  --color-gold-text: #8a6000;
   --color-background: #fdfcfb;
   --color-foreground: #2d2a26;
   --color-muted: #f7f5f2;
-  --color-muted-foreground: #78716c;
+  --color-muted-foreground: #6b6560;
   --color-border: #e7e3df;
   --color-card: #ffffff;
   --color-card-foreground: #2d2a26;
@@ -29,9 +29,9 @@
   --color-border: #57534e;
   --color-card: #302b28;
   --color-card-foreground: #f5f5f4;
-  --color-primary: #5cdb8b;
-  --color-primary-light: #8ee8b0;
-  --color-primary-dark: #3cc973;
+  --color-primary: #34d27a;
+  --color-primary-light: #4ade8a;
+  --color-primary-dark: #22b862;
   --color-gold: #e5b94e;
   --color-gold-light: #f0d694;
   --color-gold-dark: #e5b94e;

@@ -73,7 +73,7 @@ function StepCard({
       {/* Timeline line */}
       <div className="absolute left-[18px] md:left-[26px] top-0 bottom-0 w-px bg-gradient-to-b from-primary/40 via-gold/30 to-border/20" />
       {/* Timeline dot */}
-      <div className="absolute left-[7px] md:left-[15px] top-1 w-[23px] h-[23px] rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center ring-4 ring-background z-10">
+      <div className="absolute left-[7px] md:left-[15px] top-1 w-[23px] h-[23px] rounded-full bg-primary text-white dark:text-background text-xs font-bold flex items-center justify-center ring-4 ring-background z-10">
         {number}
       </div>
 
@@ -220,7 +220,7 @@ export default function USCardsGuidePage() {
                 </p>
               </div>
             </div>
-            <span className="shrink-0 rounded-full bg-primary text-white px-6 py-3 font-semibold text-sm group-hover:bg-primary-dark transition-colors flex items-center gap-2">
+            <span className="shrink-0 rounded-full bg-primary text-white dark:text-background px-6 py-3 font-semibold text-sm group-hover:bg-primary-dark transition-colors flex items-center gap-2">
               Start Guide
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </span>
@@ -380,7 +380,7 @@ export default function USCardsGuidePage() {
                 {/* Path A */}
                 <div className="rounded-xl border-2 border-primary/30 bg-primary/[0.03] dark:bg-primary/[0.06] p-5">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="rounded-full bg-primary text-white text-xs font-bold px-2.5 py-1">Recommended</span>
+                    <span className="rounded-full bg-primary text-white dark:text-background text-xs font-bold px-2.5 py-1">Recommended</span>
                   </div>
                   <h5 className="font-bold mb-2">Path A: In-Person at IRS Taxpayer Assistance Center</h5>
                   <ul className="text-sm space-y-2 text-foreground/80">

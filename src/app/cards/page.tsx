@@ -122,7 +122,7 @@ function CardsContent() {
         <div className="flex gap-1">
           {(['all', 'CA', 'US'] as const).map(c => (
             <button key={c} onClick={() => setCountry(c)}
-              className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${country === c ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
+              className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${country === c ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
               {c === 'all' ? 'All' : c === 'CA' ? '🇨🇦 Canada' : '🇺🇸 US'}
             </button>
           ))}
@@ -133,7 +133,7 @@ function CardsContent() {
         <div className="flex flex-wrap gap-2">
           {CARD_TYPES.map(t => (
             <button key={t} onClick={() => toggleType(t)}
-              className={`rounded-full px-3 py-1 text-xs font-medium capitalize transition-colors ${selectedTypes.includes(t) ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
+              className={`rounded-full px-3 py-1 text-xs font-medium capitalize transition-colors ${selectedTypes.includes(t) ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
               {t}
             </button>
           ))}
@@ -142,9 +142,9 @@ function CardsContent() {
 
       <CollapsibleSection title="Personal / Business" defaultOpen>
         <div className="flex gap-1">
-          <button onClick={() => { setPersonalOnly(false); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${!personalOnly && !businessOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>All</button>
-          <button onClick={() => { setPersonalOnly(true); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${personalOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>Personal</button>
-          <button onClick={() => { setBusinessOnly(true); setPersonalOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${businessOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>Business</button>
+          <button onClick={() => { setPersonalOnly(false); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${!personalOnly && !businessOnly ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground'}`}>All</button>
+          <button onClick={() => { setPersonalOnly(true); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${personalOnly ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground'}`}>Personal</button>
+          <button onClick={() => { setBusinessOnly(true); setPersonalOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${businessOnly ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground'}`}>Business</button>
         </div>
       </CollapsibleSection>
 
@@ -176,7 +176,7 @@ function CardsContent() {
         <div className="flex flex-wrap gap-1.5">
           {FEE_RANGES.map(r => (
             <button key={r.value} onClick={() => setFeeRange(r.value)}
-              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${feeRange === r.value ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
+              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${feeRange === r.value ? 'bg-primary text-white dark:text-background' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
               {r.label}
             </button>
           ))}
@@ -226,8 +226,8 @@ function CardsContent() {
             {SORT_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
           </select>
           <div className="hidden sm:flex border border-border rounded-full overflow-hidden">
-            <button onClick={() => setListView(false)} className={`p-2 ${!listView ? 'bg-primary text-white' : 'bg-background'}`}><Grid3X3 className="w-4 h-4" /></button>
-            <button onClick={() => setListView(true)} className={`p-2 ${listView ? 'bg-primary text-white' : 'bg-background'}`}><List className="w-4 h-4" /></button>
+            <button onClick={() => setListView(false)} className={`p-2 ${!listView ? 'bg-primary text-white dark:text-background' : 'bg-background'}`}><Grid3X3 className="w-4 h-4" /></button>
+            <button onClick={() => setListView(true)} className={`p-2 ${listView ? 'bg-primary text-white dark:text-background' : 'bg-background'}`}><List className="w-4 h-4" /></button>
           </div>
           <button onClick={() => setMobileFiltersOpen(true)} className="lg:hidden rounded-lg border border-border p-2 hover:bg-muted">
             <SlidersHorizontal className="w-4 h-4" />
