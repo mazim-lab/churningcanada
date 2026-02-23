@@ -22,7 +22,7 @@ export function MobileMenu() {
       {open && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setOpen(false)} />
-          <div className="absolute top-0 left-0 h-full w-72 bg-card shadow-2xl animate-fade-in border-r border-border">
+          <div className="absolute top-0 left-0 h-full w-72 bg-card shadow-2xl border-r border-border" style={{ opacity: 1 }}>
             <div className="flex items-center justify-between p-4 border-b border-border/50">
               <a href="/" className="font-bold text-lg font-[family-name:var(--font-display)]">
                 <span className="text-accent">Churning</span><span className="text-gold-text dark:text-gold">Canada</span>
