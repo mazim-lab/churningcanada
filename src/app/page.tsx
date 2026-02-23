@@ -67,7 +67,7 @@ export default function HomePage() {
                 placeholder="Search cards, issuers, or rewards programs..."
                 value={query}
                 onChange={e => setQuery(e.target.value)}
-                className="w-full rounded-l-2xl border-0 bg-white py-4 pl-12 pr-4 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-gold focus:shadow-[0_0_15px_rgba(212,168,83,0.3)]"
+                className="w-full rounded-l-2xl border-0 bg-white dark:bg-card py-4 pl-12 pr-4 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-gold focus:shadow-[0_0_15px_rgba(212,168,83,0.3)]"
               />
             </div>
             <button type="submit" className="rounded-r-2xl bg-gold px-8 font-semibold text-primary-dark hover:bg-gold-light transition-colors">

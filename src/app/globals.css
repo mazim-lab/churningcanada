@@ -27,8 +27,11 @@
   --color-muted: #292524;
   --color-muted-foreground: #d6d3d1;
   --color-border: #57534e;
-  --color-card: #292524;
+  --color-card: #302b28;
   --color-card-foreground: #f5f5f4;
+  --color-primary: #4ade80;
+  --color-primary-light: #86efac;
+  --color-primary-dark: #22c55e;
   --color-gold: #e5b94e;
   --color-gold-light: #f0d694;
   --color-gold-dark: #e5b94e;

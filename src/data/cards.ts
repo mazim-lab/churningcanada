@@ -270,10 +270,19 @@ function normalizeUS(raw: RawUS): Card {
 
 // ── Export all cards ───────────────────────────────────
 
-export const allCards: Card[] = [
-  ...(canadianCardsRaw as RawCA[]).map(normalizeCA),
-  ...(usCardsRaw as RawUS[]).map(normalizeUS),
-];
+export const allCards: Card[] = (() => {
+  const raw: Card[] = [
+    ...(canadianCardsRaw as RawCA[]).map(normalizeCA),
+    ...(usCardsRaw as RawUS[]).map(normalizeUS),
+  ];
+  // Deduplicate by slug — keep first occurrence
+  const seen = new Set<string>();
+  return raw.filter(c => {
+    if (seen.has(c.slug)) return false;
+    seen.add(c.slug);
+    return true;
+  });
+})();
 
 export const canadianCards = allCards.filter(c => c.country === 'CA');
 export const usCards = allCards.filter(c => c.country === 'US');
