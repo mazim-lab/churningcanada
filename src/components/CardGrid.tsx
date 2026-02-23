@@ -151,6 +151,21 @@ function CardGridItem({ card }: { card: Card }) {
       {card.welcome_bonus && !card.earn_rates_summary && (
         <p className="text-xs text-muted-foreground mt-2 line-clamp-2 leading-relaxed">{card.welcome_bonus}</p>
       )}
+
+      {/* Card page link */}
+      {card.apply_url && (
+        <div className="mt-3 pt-3 border-t border-border/50">
+          <a
+            href={card.apply_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="text-xs font-medium text-primary hover:text-primary-light transition-colors flex items-center gap-1"
+          >
+            View on {card.issuer} →
+          </a>
+        </div>
+      )}
     </a>
   );
 }

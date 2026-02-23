@@ -167,7 +167,7 @@ function normalizeCA(raw: RawCA): Card {
     is_business: false,
     benefits: { lounge_access: false, no_fx_fee: false, car_rental_insurance: false, travel_medical: false, trip_cancellation: false, flight_delay: false, mobile_insurance: false, purchase_protection: false, extended_warranty: false, free_checked_bags: false },
     first_year_value: 0,
-    apply_url: null,
+    apply_url: (raw as any).apply_url || null,
     benefits_incomplete: false,
   };
 
@@ -250,7 +250,7 @@ function normalizeUS(raw: RawUS): Card {
     is_business: false,
     benefits: { lounge_access: false, no_fx_fee: false, car_rental_insurance: false, travel_medical: false, trip_cancellation: false, flight_delay: false, mobile_insurance: false, purchase_protection: false, extended_warranty: false, free_checked_bags: false },
     first_year_value: 0,
-    apply_url: null,
+    apply_url: (raw as any).apply_url || null,
     benefits_incomplete: false,
   };
 
