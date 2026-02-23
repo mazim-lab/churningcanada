@@ -15,20 +15,20 @@
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
     "earn_rates": {
-      "at_grocery_stores<sup>\u2020</sup>": "3x",
+      "at_grocery_stores<sup>†</sup>": "3x",
       "dining_at_restaurants_includin": "3x",
       "purchases_made_directly_with_a": "3x",
-      "all_other_purchases<sup>\u2020</sup": "1x"
+      "all_other_purchases<sup>†</sup": "1x"
     },
     "rewards_program": "Aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Free first checked bag for you and up to 8 companions on the same Air Canada reservation<sup>\u2020</sup>",
-      "Preferred pricing on Aeroplan redemptions<sup>\u2020</sup>",
-      "Aeroplan Elite Status earning accelerators<sup>\u2020</sup>",
-      "Global Entry, TSA PreCheck, or NEXUS application fee credit: up to $120 every 4 years<sup>\u2020</sup>",
-      "No foreign transaction fees<sup>\u2020</sup>"
+      "Free first checked bag for you and up to 8 companions on the same Air Canada reservation<sup>†</sup>",
+      "Preferred pricing on Aeroplan redemptions<sup>†</sup>",
+      "Aeroplan Elite Status earning accelerators<sup>†</sup>",
+      "Global Entry, TSA PreCheck, or NEXUS application fee credit: up to $120 every 4 years<sup>†</sup>",
+      "No foreign transaction fees<sup>†</sup>"
     ],
     "insurance": {
       "strength": "Comprehensive",
@@ -130,7 +130,7 @@
       "trip_cancellation": "Trip cancellation: Up to $1,500",
       "flight_delay": "Flight delay insurance: Up to $1,000",
       "car_rental": "Car rental theft and damage insurance: Comprehensive coverage for up to 48 consecutive days for cars",
-      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you\u2019ve "
+      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you’ve "
     },
     "minimum_income": 0,
     "minimum_credit_score": null,
@@ -238,7 +238,7 @@
         "welcome_bonus_points": 130000,
         "required_spend": 45000,
         "annual_fee": 599,
-        "notes": "60k @ $7500, 40k $ $45k, 30k purchase in months 15\u201317"
+        "notes": "60k @ $7500, 40k $ $45k, 30k purchase in months 15–17"
       },
       {
         "start_date": "20250819",
@@ -280,7 +280,7 @@
       "trip_cancellation": "trip cancellation & trip interruption insurance, which are a couple of very significant benefits tha",
       "flight_delay": "Flight delay insurance: Up to $500",
       "car_rental": "Car rental theft and damage insurance: Comprehensive coverage for up to 48 consecutive days for cars",
-      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan , covering most eligible items you\u2019ve"
+      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan , covering most eligible items you’ve"
     },
     "minimum_income": 0,
     "minimum_credit_score": null,
@@ -410,8 +410,34 @@
     "earn_rates": null,
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "3x Aeroplan points on Air Canada purchases",
+      "2x Aeroplan points on dining and food delivery",
+      "1.25x Aeroplan points on everything else",
+      "Head Start benefit (10% SQC carryover, capped at 12,500)",
+      "Extra year of eUpgrade validity",
+      "Annual Worldwide Companion Pass (after $25,000 spend)",
+      "Aeroplan points never expire while cardholder",
+      "1,000 SQC per $5,000 spent (up to 25,000 SQC/year)",
+      "Priority benefits at Toronto Pearson Airport",
+      "Avis President's Club upgrade",
+      "$100 NEXUS credit",
+      "Amex Offers"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 for 15 days (under 65)",
+      "trip_cancellation": "up to $1,500 per person, $3,000 per trip",
+      "trip_interruption": "up to $1,500 per person, $6,000 per trip",
+      "flight_delay": "up to $1,000 (aggregate with baggage delay)",
+      "baggage_delay": "up to $1,000 (aggregate with flight delay)",
+      "lost_baggage": "up to $1,000",
+      "hotel_burglary": "up to $1,000",
+      "travel_accident": "up to $500,000",
+      "car_rental": "MSRP up to $85,000, up to 48 days",
+      "purchase_protection": "up to $1,000 for 90 days",
+      "extended_warranty": "1 additional year",
+      "mobile_insurance": null
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -527,7 +553,7 @@
       "travel_medical": "Emergency Medical Insurance - a crucial benefit many travellers rely on. As a business credit card, ",
       "flight_delay": "Flight delay insurance: Up to $500",
       "car_rental": "Car rental theft and damage insurance: Comprehensive coverage for up to 48 consecutive days for cars",
-      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you\u2019ve "
+      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you’ve "
     },
     "minimum_income": 0,
     "minimum_credit_score": null,
@@ -684,7 +710,7 @@
       "trip_cancellation": "Trip Cancellation coverage. Additionally, it is one of the few credit cards to offer Mobile Device I",
       "flight_delay": "Flight delay insurance: Up to $500",
       "car_rental": "Car rental theft and damage insurance: Comprehensive coverage for up to 48 consecutive days for cars",
-      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you\u2019ve "
+      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you’ve "
     },
     "minimum_income": 0,
     "minimum_credit_score": null,
@@ -797,8 +823,32 @@
     "earn_rates": null,
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "2x MR points on gas, groceries, drugstores, and travel",
+      "$100 annual travel credit",
+      "4 complimentary Plaza Premium lounge visits per year",
+      "Priority Pass membership (no free visits)",
+      "The Hotel Collection access ($100 USD credit on 2+ night stays)",
+      "$50 NEXUS credit every 4 years",
+      "Front Of The Line presale tickets",
+      "Metal card (Gold or Rose Gold)",
+      "Transfer MR to Aeroplan, Avios, Flying Blue, Marriott, Hilton, etc.",
+      "Amex Offers"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 for 15 days (under 65)",
+      "trip_cancellation": "up to $1,500 per person, $3,000 per trip",
+      "trip_interruption": "up to $1,500 per person, $6,000 per trip",
+      "flight_delay": "up to $500 (aggregate with baggage delay)",
+      "baggage_delay": "up to $500 (aggregate with flight delay)",
+      "lost_baggage": "up to $500",
+      "hotel_burglary": "up to $500",
+      "travel_accident": "up to $500,000",
+      "car_rental": "MSRP up to $85,000, up to 48 days",
+      "purchase_protection": "up to $1,000 for 90 days",
+      "extended_warranty": "1 additional year",
+      "mobile_insurance": null
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -844,7 +894,7 @@
     ],
     "insurance": {
       "strength": "Basic",
-      "purchase_protection": "Purchase Protection Plan, which covers most eligible items you\u2019ve purchased with your card up to $1,"
+      "purchase_protection": "Purchase Protection Plan, which covers most eligible items you’ve purchased with your card up to $1,"
     },
     "minimum_income": 0,
     "minimum_credit_score": null,
@@ -869,8 +919,34 @@
     "earn_rates": null,
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "Centurion Lounge access and Priority Pass membership",
+      "Complimentary Marriott Gold Elite and Hilton Gold status",
+      "$200 annual travel credit",
+      "$200 annual dining credit",
+      "Fine Hotels & Resorts program access",
+      "International Airline Program discounts on premium cabins",
+      "Priority security at Toronto Pearson Airport",
+      "Hertz Gold Plus Rewards Five Star and Avis Preferred status",
+      "Amex Concierge service",
+      "Front Of The Line presale tickets",
+      "$50 NEXUS credit every 4 years",
+      "Amex Offers"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 for 15 days (under 65)",
+      "trip_cancellation": "up to $2,500 per person, $5,000 per trip",
+      "trip_interruption": "up to $2,500 per person, $6,000 per trip",
+      "flight_delay": "up to $1,000 (aggregate with baggage delay)",
+      "baggage_delay": "up to $1,000 (aggregate with flight delay)",
+      "lost_baggage": "up to $1,000",
+      "hotel_burglary": "up to $1,000",
+      "travel_accident": "up to $500,000",
+      "car_rental": "MSRP up to $85,000, up to 48 days",
+      "purchase_protection": "up to $1,000 for 120 days",
+      "extended_warranty": "1 additional year",
+      "mobile_insurance": null
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -919,7 +995,7 @@
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
     "key_perks": [
-      "Get up to 7 cents off per litre on all Shell\u00ae\u00b1 fuel*",
+      "Get up to 7 cents off per litre on all Shell®± fuel*",
       "Virtual healthcare with Maple",
       "DragonPass membership with 2 visits per year"
     ],
@@ -1134,8 +1210,32 @@
     "earn_rates": null,
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "3x VIPorter points on Porter purchases",
+      "2x VIPorter points on gas, dining, groceries, hotels",
+      "VIPorter Venture Avid Traveller status",
+      "Free carry-on and checked bag on Porter (for you + 8 guests)",
+      "Free PorterClassic seat selection for 2",
+      "Priority re-accommodation, check-in, security, and boarding",
+      "Round-trip companion pass (after $9,000 spend in first 180 days)",
+      "Mastercard Travel Pass lounge access ($32 USD/visit)",
+      "6 months Instacart+ and $10/month Instacart credit",
+      "VIPorter points never expire while cardholder"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 for 21 days (under 65)",
+      "trip_cancellation": "up to $1,500 per person, $5,000 per trip",
+      "trip_interruption": "up to $2,000 per person, $10,000 per trip",
+      "flight_delay": "up to $500 per trip",
+      "baggage_delay": "up to $500 per person, $1,000 per trip",
+      "lost_baggage": "up to $500 per person, $1,000 per trip",
+      "hotel_burglary": "up to $1,000",
+      "travel_accident": "up to $500,000",
+      "car_rental": "MSRP up to $65,000, up to 48 days",
+      "purchase_protection": "90 days",
+      "extended_warranty": "1 additional year",
+      "mobile_insurance": null
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -1186,7 +1286,7 @@
       "Visa Airport Companion Program membership with six complimentary visits per year",
       "Up to $200 statement credit for the NEXUS application fee in the first year",
       "Priority airport services at YVR, YUL, YOW, and YTZ",
-      "Six months of Instacart+ and a $10 monthly Instacart credit when you enroll your eligible BMO Credit Card*\u201d"
+      "Six months of Instacart+ and a $10 monthly Instacart credit when you enroll your eligible BMO Credit Card*”"
     ],
     "insurance": {
       "strength": "Comprehensive",
@@ -1249,8 +1349,32 @@
     "rewards_program": "bmo-rewards",
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "5x BMO Rewards on travel, dining, groceries, gas, and drugstores",
+      "6 complimentary airport lounge visits per year (DragonPass)",
+      "$200 annual lifestyle credit",
+      "Visa Infinite Privilege Concierge",
+      "Priority airport services (Vancouver, Montreal, Ottawa, Toronto Billy Bishop)",
+      "NEXUS credit up to $200 (first year)",
+      "25% earning boost with supplementary card",
+      "6 months Instacart+ and $10/month Instacart credit",
+      "Partial-cost trip insurance trigger (unique to BMO)",
+      "Mobile device insurance up to $1,000"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 for 22 days (under 65), 3 days (65+)",
+      "trip_cancellation": "up to $2,500 per person, $5,000 per trip",
+      "trip_interruption": "up to $5,000 per person, $25,000 per trip",
+      "flight_delay": "included",
+      "baggage_delay": "included",
+      "lost_baggage": "included",
+      "hotel_burglary": "included",
+      "travel_accident": "up to $500,000",
+      "car_rental": "Collision Damage Waiver included",
+      "purchase_protection": "120 days",
+      "extended_warranty": "triples warranty up to 2 additional years",
+      "mobile_insurance": "up to $1,000"
+    },
     "minimum_income": 150000,
     "minimum_credit_score": null,
     "country": "CA",
@@ -1305,7 +1429,7 @@
   },
   {
     "slug": "bmo-cashback-mastercard",
-    "name": "BMO\u00a0CashBack\u00a0Mastercard",
+    "name": "BMO CashBack Mastercard",
     "issuer": "BMO",
     "network": "Mastercard",
     "card_type": "rewards",
@@ -1323,7 +1447,7 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Discounts at National Car Rental, Alamo Rent A Car, and Enterprise Rent-A-Car<sup>\u00ae\u2020\u2020</sup>",
+      "Discounts at National Car Rental, Alamo Rent A Car, and Enterprise Rent-A-Car<sup>®††</sup>",
       "Three months of complimentary Instacart+ membership",
       "$5 Instacart credit each month, valid on orders of $35 or more"
     ],
@@ -1495,7 +1619,7 @@
       "trip_cancellation": "Trip cancellation: Up to $1,500",
       "flight_delay": "Flight delay insurance: Up to $1,000",
       "car_rental": "Car rental theft and damage insurance: Comprehensive coverage for up to 48 consecutive days for cars",
-      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you\u2019ve "
+      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you’ve "
     },
     "minimum_income": 0,
     "minimum_credit_score": null,
@@ -1627,7 +1751,7 @@
         "welcome_bonus_points": 150000,
         "required_spend": 15000,
         "annual_fee": 799,
-        "notes": "40k in second year upon purchase in months 14\u201317"
+        "notes": "40k in second year upon purchase in months 14–17"
       },
       {
         "start_date": "20250220",
@@ -1635,7 +1759,7 @@
         "welcome_bonus_points": 130000,
         "required_spend": 15000,
         "annual_fee": 799,
-        "notes": "40k in second year upon purchase in months 14\u201317"
+        "notes": "40k in second year upon purchase in months 14–17"
       },
       {
         "start_date": "20250612",
@@ -1651,7 +1775,7 @@
         "welcome_bonus_points": 130000,
         "required_spend": 15000,
         "annual_fee": 799,
-        "notes": "40k in second year upon purchase in months 14\u201317"
+        "notes": "40k in second year upon purchase in months 14–17"
       }
     ]
   },
@@ -1713,7 +1837,7 @@
     "card_type": "rewards",
     "annual_fee": 180,
     "first_year_fee": 0,
-    "welcome_bonus": "Up to 75,000 Aeroplan points\u2020",
+    "welcome_bonus": "Up to 75,000 Aeroplan points†",
     "welcome_bonus_value_cad": 2415,
     "welcome_bonus_conditions": null,
     "min_spend": 40000,
@@ -1723,16 +1847,16 @@
     "earn_rates": {
       "eligible_air_canada_and_air_ca": "2x",
       "eligible_shipping,_internet,_c": "1.5x",
-      "all_other_eligible_purchases\u2020": "1x",
+      "all_other_eligible_purchases†": "1x",
       "eligible_air_canada,_air_canad": "1x"
     },
     "rewards_program": "Aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Free first checked bag on Air Canada flights\u2020",
-      "Preferred pricing on Air Canada flights\u2020",
-      "Four Complimentary Maple Leaf Lounge visits\u2020"
+      "Free first checked bag on Air Canada flights†",
+      "Preferred pricing on Air Canada flights†",
+      "Four Complimentary Maple Leaf Lounge visits†"
     ],
     "insurance": {
       "strength": "Good",
@@ -1891,25 +2015,25 @@
     "earn_rates": {
       "eligible_air_canada_and_air_ca": "2x",
       "eligible_grocery,_gas,_dining,": "1.5x",
-      "all_other_eligible_purchases\u2020": "1.25x"
+      "all_other_eligible_purchases†": "1.25x"
     },
     "rewards_program": "Aeroplan",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Priority check-in, boarding, and free first checked bag on Air Canada flights\u2020",
-      "Maple Leaf Lounge access within North America\u2020",
-      "Six annual complimentary visits to Visa Airport Companion Program lounges\u2020",
-      "Priority airport services at YVR, YUL, YOW, YTZ\u2020",
-      "Preferred pricing on Air Canada flights\u2020",
-      "$200 NEXUS credit\u2020"
+      "Priority check-in, boarding, and free first checked bag on Air Canada flights†",
+      "Maple Leaf Lounge access within North America†",
+      "Six annual complimentary visits to Visa Airport Companion Program lounges†",
+      "Priority airport services at YVR, YUL, YOW, YTZ†",
+      "Preferred pricing on Air Canada flights†",
+      "$200 NEXUS credit†"
     ],
     "insurance": {
       "strength": "Very strong",
       "travel_medical": "Emergency medical insurance: Up to $5 million",
       "trip_cancellation": "Trip cancellation / trip interruption insurance: For Trip Cancellation, up to $2,500",
       "flight_delay": "Flight delay insurance: Up to $500",
-      "extended_warranty": "Extended Warranty Protection, covering most eligible items you\u2019ve purchased with your card should th"
+      "extended_warranty": "Extended Warranty Protection, covering most eligible items you’ve purchased with your card should th"
     },
     "minimum_income": 150000,
     "minimum_credit_score": null,
@@ -2153,8 +2277,30 @@
     "rewards_program": "cibc-aventura-rewards",
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "2x Aventura points on travel via CIBC Rewards Centre",
+      "1.5x Aventura points on gas, groceries, EV charging, drugstores",
+      "4 complimentary airport lounge visits per year (DragonPass)",
+      "$200 NEXUS credit every 4 years",
+      "12-month Skip+ free trial",
+      "Up to 10¢/L savings at participating gas stations via Journie Rewards",
+      "Mobile device insurance up to $1,000",
+      "No trip cancellation/interruption insurance",
+      "Car rental discounts (Avis/Budget)"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 (under 65)",
+      "trip_cancellation": null,
+      "trip_interruption": null,
+      "flight_delay": "included",
+      "baggage_delay": "included",
+      "lost_baggage": null,
+      "hotel_burglary": "included",
+      "car_rental": "included",
+      "purchase_protection": null,
+      "extended_warranty": null,
+      "mobile_insurance": "up to $1,000 for 24 months"
+    },
     "minimum_income": 0,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2203,8 +2349,30 @@
     "rewards_program": "cibc-aventura-rewards",
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "2x Aventura points on travel via CIBC Rewards Centre",
+      "1.5x Aventura points on gas, groceries, EV charging, drugstores",
+      "4 complimentary airport lounge visits per year (DragonPass)",
+      "$200 NEXUS credit every 4 years",
+      "12-month Skip+ free trial",
+      "Up to 10¢/L savings at participating gas stations via Journie Rewards",
+      "Mobile device insurance up to $1,000",
+      "No trip cancellation/interruption insurance",
+      "Car rental discounts (Avis/Budget)"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 (under 65)",
+      "trip_cancellation": null,
+      "trip_interruption": null,
+      "flight_delay": "included",
+      "baggage_delay": "included",
+      "lost_baggage": null,
+      "hotel_burglary": "included",
+      "car_rental": "included",
+      "purchase_protection": null,
+      "extended_warranty": null,
+      "mobile_insurance": "up to $1,000 for 24 months"
+    },
     "minimum_income": 0,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2373,7 +2541,7 @@
     "card_type": "rewards",
     "annual_fee": 139,
     "first_year_fee": 139,
-    "welcome_bonus": "Up to 45,000 bonus points, first year annual fee waived \u2020 ( terms )",
+    "welcome_bonus": "Up to 45,000 bonus points, first year annual fee waived † ( terms )",
     "welcome_bonus_value_cad": 570,
     "welcome_bonus_conditions": null,
     "min_spend": 1000,
@@ -2392,21 +2560,21 @@
       "eligible_gas_stations,_grocery": "1.5x",
       "all_other_eligible_purchases<s": "1x",
       "eligible_dining,_entertainment": "2x",
-      "all_other_eligible_purchases\u2020": "1.25x"
+      "all_other_eligible_purchases†": "1.25x"
     },
     "rewards_program": "cibc-aventura-rewards",
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
     "key_perks": [
-      "Four lounge visits through Visa Airport Companion Program<sup>\u2020</sup>",
-      "NEXUS application fee rebate of up to $200 (CAD)<sup>\u2020</sup>",
-      "EV charging multiplier<sup>\u2020</sup>"
+      "Four lounge visits through Visa Airport Companion Program<sup>†</sup>",
+      "NEXUS application fee rebate of up to $200 (CAD)<sup>†</sup>",
+      "EV charging multiplier<sup>†</sup>"
     ],
     "insurance": {
       "strength": "Comprehensive",
       "travel_medical": "emergency medical insurance of up to $5,000,000,",
       "trip_cancellation": "Trip Cancellation/Trip Interruption insurance, or emergency medical insurance for anyone over the ag",
-      "car_rental": "car rental loss or damage.\u2020 It's worth noting that the CIBC Aventura \u00ae Gold Visa * Card doesn't feat"
+      "car_rental": "car rental loss or damage.† It's worth noting that the CIBC Aventura ® Gold Visa * Card doesn't feat"
     },
     "minimum_income": 60000,
     "minimum_credit_score": null,
@@ -2473,7 +2641,7 @@
         "welcome_bonus_points": 80000,
         "required_spend": 6000,
         "annual_fee": 499,
-        "notes": "30,000 Aventura Points as an additional anniversary bonus when you have at least $25,000 in net eligible purchases posted on your account during the first 12 monthly statement periods\u2020"
+        "notes": "30,000 Aventura Points as an additional anniversary bonus when you have at least $25,000 in net eligible purchases posted on your account during the first 12 monthly statement periods†"
       },
       {
         "start_date": "20250708",
@@ -2481,7 +2649,7 @@
         "welcome_bonus_points": 80000,
         "required_spend": 6000,
         "annual_fee": 499,
-        "notes": "30,000 Aventura Points as an additional anniversary bonus when you have at least $25,000 in net eligible purchases posted on your account during the first 12 monthly statement periods\u2020"
+        "notes": "30,000 Aventura Points as an additional anniversary bonus when you have at least $25,000 in net eligible purchases posted on your account during the first 12 monthly statement periods†"
       }
     ]
   },
@@ -2493,7 +2661,7 @@
     "card_type": "rewards",
     "annual_fee": 139,
     "first_year_fee": 139,
-    "welcome_bonus": "Up to 45,000 bonus points, first year annual fee waived \u2020 ( terms )",
+    "welcome_bonus": "Up to 45,000 bonus points, first year annual fee waived † ( terms )",
     "welcome_bonus_value_cad": 570,
     "welcome_bonus_conditions": null,
     "min_spend": 1000,
@@ -2512,8 +2680,31 @@
     "rewards_program": "cibc-aventura-rewards",
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "2x Aventura points on travel via CIBC Rewards Centre",
+      "1.5x Aventura points on gas, groceries, EV charging, drugstores",
+      "4 complimentary airport lounge visits per year (DragonPass)",
+      "$200 NEXUS credit every 4 years",
+      "12-month Skip+ free trial",
+      "Up to 10¢/L savings at participating gas stations via Journie Rewards",
+      "Mobile device insurance up to $1,000",
+      "Out-of-province emergency medical insurance up to $5,000,000",
+      "Trip cancellation and interruption coverage",
+      "Car rental loss/damage insurance"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 (under 65)",
+      "trip_cancellation": "included",
+      "trip_interruption": "included",
+      "flight_delay": "included",
+      "baggage_delay": "included",
+      "lost_baggage": null,
+      "hotel_burglary": "included",
+      "car_rental": "included",
+      "purchase_protection": null,
+      "extended_warranty": null,
+      "mobile_insurance": "up to $1,000 for 24 months"
+    },
     "minimum_income": 60000,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2579,7 +2770,7 @@
     "card_type": "rewards",
     "annual_fee": 0,
     "first_year_fee": 0,
-    "welcome_bonus": "Up to $125 cash back\u2020",
+    "welcome_bonus": "Up to $125 cash back†",
     "welcome_bonus_value_cad": 125,
     "welcome_bonus_conditions": null,
     "min_spend": 1000,
@@ -2639,8 +2830,8 @@
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
     "key_perks": [
-      "Free first checked bag on Air Canada flights<sup>\u2020</sup>",
-      "Preferred pricing on Air Canada flights<sup>\u2020</sup>"
+      "Free first checked bag on Air Canada flights<sup>†</sup>",
+      "Preferred pricing on Air Canada flights<sup>†</sup>"
     ],
     "insurance": {
       "strength": "Comprehensive",
@@ -2887,8 +3078,30 @@
     "rewards_program": null,
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "4% cash back on gas, EV charging, and groceries",
+      "2% cash back on transportation, dining, and recurring payments",
+      "1% cash back on everything else",
+      "No limit on total cash back earned",
+      "Up to 10¢/L savings via Journie Rewards at participating gas stations",
+      "12-month Skip+ free trial",
+      "Car rental discounts (Avis/Budget)",
+      "Mobile device insurance up to $1,000",
+      "Send money abroad to 120+ countries with $0 transfer fee"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 for 10 days (under 65)",
+      "trip_cancellation": null,
+      "trip_interruption": null,
+      "flight_delay": null,
+      "baggage_delay": null,
+      "lost_baggage": null,
+      "travel_accident": "up to $500,000",
+      "car_rental": "MSRP up to $65,000",
+      "purchase_protection": "90 days",
+      "extended_warranty": "1 additional year",
+      "mobile_insurance": "up to $1,000 for 24 months"
+    },
     "minimum_income": 60000,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2987,7 +3200,7 @@
   },
   {
     "slug": "cathay-world-elite-mastercard-powered-by-neo",
-    "name": "Cathay World Elite Mastercard \u2013 powered by Neo",
+    "name": "Cathay World Elite Mastercard – powered by Neo",
     "issuer": "Rogers",
     "network": "Mastercard",
     "card_type": "rewards",
@@ -3136,8 +3349,28 @@
     "earn_rates": null,
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "4% cash back on groceries (up to $400/year)",
+      "3% cash back on restaurants (up to $180/year)",
+      "3% cash back on entertainment and alternative transportation",
+      "1% cash back on everything else",
+      "Dragon Pass airport lounge access (pass only, per-visit fee)",
+      "Boingo Wi-Fi at 1M+ hotspots worldwide",
+      "25% off Hertz car rental, 10% off Thrifty/Dollar",
+      "Mobile device insurance up to $1,000"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 for trips up to 3 days",
+      "trip_cancellation": "up to $500 for trips up to 3 days",
+      "trip_interruption": "up to $1,000 for trips up to 3 days",
+      "flight_delay": null,
+      "baggage_delay": "up to $500 for trips up to 3 days",
+      "lost_baggage": "up to $500 for trips up to 3 days",
+      "car_rental": "included",
+      "purchase_protection": "90 days",
+      "extended_warranty": "1 additional year",
+      "mobile_insurance": "up to $1,000"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -3536,12 +3769,12 @@
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
     "key_perks": [
-      "Discounts on car rentals at Avis and Budget\u2020"
+      "Discounts on car rentals at Avis and Budget†"
     ],
     "insurance": {
       "strength": "Strong",
-      "trip_cancellation": "trip cancellation, and interruption \u2020 . Lastly, this card also provides better coverage than most ca",
-      "car_rental": "car rental insurance policies, since it covers personal injuries and car burglaries \u2020 . The insuranc"
+      "trip_cancellation": "trip cancellation, and interruption † . Lastly, this card also provides better coverage than most ca",
+      "car_rental": "car rental insurance policies, since it covers personal injuries and car burglaries † . The insuranc"
     },
     "minimum_income": 80000,
     "minimum_credit_score": null,
@@ -3725,7 +3958,7 @@
       "strength": "Standard",
       "flight_delay": "Flight Delay insurance), for items purchased within four days when your baggage is delayed Car renta",
       "car_rental": "Car rental theft and damage insurance , which helps you save the daily insurance fee that most car r",
-      "extended_warranty": "Extended Warranty Protection, covering most eligible items you\u2019ve purchased with your card should th"
+      "extended_warranty": "Extended Warranty Protection, covering most eligible items you’ve purchased with your card should th"
     },
     "minimum_income": 0,
     "minimum_credit_score": null,
@@ -4162,8 +4395,29 @@
     "rewards_program": null,
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "Up to 7% cash back on groceries (with $10K+ Neo Everyday balance)",
+      "Up to 5% cash back on recurring bills",
+      "Up to 4% cash back on gas and EV charging",
+      "1% cash back on everything else",
+      "Secured card (builds credit)",
+      "Mastercard Travel Pass lounge access (fees may apply)",
+      "Instant cash back redemption",
+      "No minimum income requirement"
+    ],
+    "insurance": {
+      "travel_medical": "$1,000,000 for 14 days (under 60)",
+      "trip_cancellation": "up to $1,000 per person per trip",
+      "trip_interruption": "up to $1,000 per person per trip",
+      "flight_delay": "up to $250/day, max $500",
+      "baggage_delay": "up to $1,000 per person per trip",
+      "lost_baggage": "up to $1,000 per person per trip",
+      "hotel_burglary": "up to $1,000",
+      "car_rental": "up to 48 days",
+      "purchase_protection": "up to $1,000 per item for 90 days",
+      "extended_warranty": "1 additional year, up to $1,000 per item",
+      "mobile_insurance": null
+    },
     "minimum_income": 80000,
     "minimum_credit_score": null,
     "country": "CA",
@@ -4500,8 +4754,31 @@
     "rewards_program": "rbc-avion-rewards-elite",
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "1.25x Avion points on all purchases",
+      "6 complimentary airport lounge visits per year (DragonPass)",
+      "Priority airport services at select Canadian airports",
+      "Visa Infinite Privilege Concierge",
+      "Redeem points for premium cabin flights at 2 cpp",
+      "Transfer to British Airways, Cathay Pacific, WestJet, American Airlines",
+      "31 days emergency medical coverage (under 65)",
+      "3¢/L savings at Petro-Canada",
+      "12-month DashPass subscription",
+      "Mobile device insurance up to $1,500"
+    ],
+    "insurance": {
+      "travel_medical": "unlimited coverage for 31 days (under 65), 7 days (65+)",
+      "trip_cancellation": "up to $2,500 per person",
+      "trip_interruption": "up to $5,000 per person",
+      "flight_delay": "up to $1,000",
+      "baggage_delay": "up to $3,000",
+      "lost_baggage": "up to $2,500",
+      "travel_accident": "up to $500,000",
+      "car_rental": "MSRP up to $85,000",
+      "purchase_protection": "120 days",
+      "extended_warranty": "up to 2 additional years",
+      "mobile_insurance": "up to $1,500 for 2 years"
+    },
     "minimum_income": 200000,
     "minimum_credit_score": null,
     "country": "CA",
@@ -4532,7 +4809,7 @@
     "card_type": "rewards",
     "annual_fee": 165,
     "first_year_fee": 165,
-    "welcome_bonus": "60,000 Avios\u2020",
+    "welcome_bonus": "60,000 Avios†",
     "welcome_bonus_value_cad": 1235,
     "welcome_bonus_conditions": null,
     "min_spend": 10000,
@@ -4544,13 +4821,13 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Companion Award eVoucher when you spend $30,000 on the card in one calendar year\u2020",
-      "10% off British Airways flights\u2020"
+      "Companion Award eVoucher when you spend $30,000 on the card in one calendar year†",
+      "10% off British Airways flights†"
     ],
     "insurance": {
       "strength": "Strong",
-      "travel_medical": "Emergency medical insurance \u2020 for the first 31 consecutive days of any out-of-province trips for tra",
-      "flight_delay": "Flight delay and emergency purchases insurance \u2020 in the event of a missed connection, delayed flight",
+      "travel_medical": "Emergency medical insurance † for the first 31 consecutive days of any out-of-province trips for tra",
+      "flight_delay": "Flight delay and emergency purchases insurance † in the event of a missed connection, delayed flight",
       "car_rental": "car rental companies charge for vehicles up to a MSRP of $65,000"
     },
     "minimum_income": 60000,
@@ -4872,7 +5149,7 @@
     "card_type": "rewards",
     "annual_fee": 0,
     "first_year_fee": "",
-    "welcome_bonus": "2% cash back on all eligible non-U.S. dollar purchases\u2020",
+    "welcome_bonus": "2% cash back on all eligible non-U.S. dollar purchases†",
     "welcome_bonus_value_cad": 0,
     "welcome_bonus_conditions": null,
     "min_spend": 0,
@@ -4908,7 +5185,7 @@
     "card_type": "rewards",
     "annual_fee": 0,
     "first_year_fee": 0,
-    "welcome_bonus": "2% cash back on all eligible non-US dollar purchases\u2020",
+    "welcome_bonus": "2% cash back on all eligible non-US dollar purchases†",
     "welcome_bonus_value_cad": 0,
     "welcome_bonus_conditions": null,
     "min_spend": 0,
@@ -4920,8 +5197,8 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "DragonPass membership (32 USD per person per visit)\u2020",
-      "Exclusive perks for Rogers customers\u2020"
+      "DragonPass membership (32 USD per person per visit)†",
+      "Exclusive perks for Rogers customers†"
     ],
     "insurance": {
       "strength": "Standard",
@@ -5100,7 +5377,7 @@
       "trip_cancellation": "Trip cancellation: Up to $2,500",
       "flight_delay": "Flight delay insurance: Up to $1,000",
       "car_rental": "Car rental theft and damage insurance: Comprehensive coverage for up to 48 consecutive days for cars",
-      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you\u2019ve "
+      "purchase_protection": "Purchase Protection Plan and Buyer's Assurance Protection Plan, covering most eligible items you’ve "
     },
     "minimum_income": 12000,
     "minimum_credit_score": null,
@@ -5255,7 +5532,7 @@
         "welcome_bonus_points": 140000,
         "required_spend": 10000,
         "annual_fee": 799,
-        "notes": "40k in year two with purchase in months 14\u201317"
+        "notes": "40k in year two with purchase in months 14–17"
       },
       {
         "start_date": "20250220",
@@ -5263,7 +5540,7 @@
         "welcome_bonus_points": 100000,
         "required_spend": 10000,
         "annual_fee": 799,
-        "notes": "30k in year two with purchase in months 14\u201317"
+        "notes": "30k in year two with purchase in months 14–17"
       },
       {
         "start_date": "20250612",
@@ -5307,12 +5584,12 @@
       "recurring_bills": "1x",
       "travel": "1x",
       "dining,_groceries,_movie_theat": "2x",
-      "all_purchases<sup>\u2020</sup>": "1x",
+      "all_purchases<sup>†</sup>": "1x",
       "hotel_bookings,_car_rentals,_a": "4x",
       "sobeys,_iga,_safeway,_freshco,": "6x",
       "groceries,_dining,_and_enterta": "5x",
       "gas,_transit,_and_streaming_se": "3x",
-      "all_other_purchases\u2020": "1x"
+      "all_other_purchases†": "1x"
     },
     "rewards_program": "scene",
     "foreign_transaction_fee": false,
@@ -5330,7 +5607,7 @@
       "trip_cancellation": "Trip cancellation: Up to $1,500",
       "flight_delay": "Flight delay insurance: Up to $500",
       "car_rental": "Car rental theft and damage insurance: Comprehensive coverage for up to 48 consecutive days for cars",
-      "extended_warranty": "Extended Warranty Protection, covering most eligible items you\u2019ve purchased with your Gold card up t"
+      "extended_warranty": "Extended Warranty Protection, covering most eligible items you’ve purchased with your Gold card up t"
     },
     "minimum_income": 12000,
     "minimum_credit_score": null,
@@ -5542,7 +5819,7 @@
       "No foreign transaction fees",
       "10 Visa Airport Companion Program lounge visits per year",
       "$250 annual travel credit",
-      "Complimentary Avis\u00ae President\u2019s Club membership",
+      "Complimentary Avis® President’s Club membership",
       "Visa Infinite Privilege Priority Benefits at Canadian Airports"
     ],
     "insurance": {
@@ -5723,7 +6000,7 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Get cash back when you send Global Money Transfer with your Simplii Financial\u2122 Cash Back Visa* Card"
+      "Get cash back when you send Global Money Transfer with your Simplii Financial™ Cash Back Visa* Card"
     ],
     "insurance": {
       "strength": "Basic",
@@ -5774,7 +6051,7 @@
     "insurance": {
       "strength": "Strong",
       "travel_medical": "Emergency medical insurance: Up to $5 million",
-      "flight_delay": "Flight Delay insurance), for items purchased within four days when your baggage is delayed \u2013 this is",
+      "flight_delay": "Flight Delay insurance), for items purchased within four days when your baggage is delayed – this is",
       "car_rental": "car rental company would otherwise charge. Additionally, the card also offers Purchase Security and "
     },
     "minimum_income": 0,
@@ -5810,7 +6087,7 @@
     "card_type": "rewards",
     "annual_fee": 139,
     "first_year_fee": 0,
-    "welcome_bonus": "Up to 40,000 Aeroplan points \u2020",
+    "welcome_bonus": "Up to 40,000 Aeroplan points †",
     "welcome_bonus_value_cad": 683,
     "welcome_bonus_conditions": null,
     "min_spend": 7500,
@@ -5822,9 +6099,9 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Free first checked bag on Air Canada\u00ae flights<sup>\u2020</sup>",
-      "Preferred pricing on Air Canada\u00ae flights<sup>\u2020</sup>",
-      "$100 partial rebate for the NEXUS application fee every 48 months\u2020"
+      "Free first checked bag on Air Canada® flights<sup>†</sup>",
+      "Preferred pricing on Air Canada® flights<sup>†</sup>",
+      "$100 partial rebate for the NEXUS application fee every 48 months†"
     ],
     "insurance": {
       "strength": "Strong",
@@ -6222,7 +6499,7 @@
     "ccgenius_rating": 4.574880637714278,
     "pros": [
       "Up to 165,000 TD Rewards points. Conditions apply.",
-      "Earn 8 TD Reward Points for every $1 you spend when you book travel through Expedia<sup>\u00ae</sup> For TD.",
+      "Earn 8 TD Reward Points for every $1 you spend when you book travel through Expedia<sup>®</sup> For TD.",
       "Visa Airport Companion membership with 4 free passes (conditions apply).",
       "Annual $100 travel credit (conditions apply).",
       "12 types of insurance (conditions apply).",
@@ -6413,7 +6690,7 @@
       "dining": "4.5x",
       "recurring_bills": "3x",
       "travel": "1.5x",
-      "eligible_expedia\u00ae_for_td<sup>\u2020": "6x",
+      "eligible_expedia®_for_td<sup>†": "6x",
       "eligible_groceries,_dining,_an": "4.5x",
       "eligible_recurring_bill_paymen": "3x"
     },
@@ -6421,13 +6698,13 @@
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
     "key_perks": [
-      "Preferred pricing on Air Canada\u00ae flights<sup>\u2020</sup>"
+      "Preferred pricing on Air Canada® flights<sup>†</sup>"
     ],
     "insurance": {
       "strength": "Standard",
       "travel_medical": "emergency medical insurance or trip cancellation & trip interruption insurance, which are two very s",
       "trip_cancellation": "trip cancellation & trip interruption insurance, which are two very significant benefits that you'll",
-      "car_rental": "car rental company would otherwise charge. \u2020 It's important to note that these benefits would also a"
+      "car_rental": "car rental company would otherwise charge. † It's important to note that these benefits would also a"
     },
     "minimum_income": 0,
     "minimum_credit_score": null,
@@ -6502,7 +6779,7 @@
     "card_type": "rewards",
     "annual_fee": 0,
     "first_year_fee": 0,
-    "welcome_bonus": "15,152 TD Rewards Points\u2020",
+    "welcome_bonus": "15,152 TD Rewards Points†",
     "welcome_bonus_value_cad": 75,
     "welcome_bonus_conditions": null,
     "min_spend": 0,
@@ -6698,8 +6975,27 @@
     "rewards_program": null,
     "foreign_transaction_fee": true,
     "foreign_transaction_fee_pct": 2.5,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "5x points on public transit and ferries",
+      "3x points on groceries",
+      "Visa Airport Companion Program lounge access (per-visit fee)",
+      "Supports community and environmental initiatives",
+      "Vancity Rewards redeemable for cash back, travel, or merchandise",
+      "Partner offers with Modo, JJ Bean, Fresh Prep"
+    ],
+    "insurance": {
+      "travel_medical": "$5,000,000 per insured person",
+      "trip_cancellation": "included",
+      "trip_interruption": "included",
+      "flight_delay": null,
+      "baggage_delay": null,
+      "lost_baggage": null,
+      "travel_accident": "included (Common Carrier)",
+      "car_rental": "Liability Waiver Insurance included",
+      "purchase_protection": "included",
+      "extended_warranty": null,
+      "mobile_insurance": null
+    },
     "minimum_income": 60000,
     "minimum_credit_score": null,
     "country": "CA",
@@ -6739,8 +7035,29 @@
     "rewards_program": null,
     "foreign_transaction_fee": false,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": null,
+    "key_perks": [
+      "1.5% unlimited cash back on all purchases (with $100K+ assets)",
+      "1% cash back base rate",
+      "No foreign transaction fees",
+      "Metal card",
+      "Visa Infinite Privilege airport lounge access",
+      "Priority airport services at select Canadian airports",
+      "Visa Infinite Privilege Concierge",
+      "Integrated with Wealthsimple investment platform",
+      "Cash back auto-deposited to Wealthsimple Cash account"
+    ],
+    "insurance": {
+      "travel_medical": "included",
+      "trip_cancellation": "included",
+      "trip_interruption": "included",
+      "flight_delay": "included",
+      "baggage_delay": "included",
+      "lost_baggage": "included",
+      "car_rental": "included",
+      "purchase_protection": "included",
+      "extended_warranty": "included",
+      "mobile_insurance": "included"
+    },
     "minimum_income": 150000,
     "minimum_credit_score": null,
     "country": "CA",
@@ -6771,7 +7088,7 @@
     "card_type": "rewards",
     "annual_fee": 39,
     "first_year_fee": 39,
-    "welcome_bonus": "10,000 WestJet points\u2020",
+    "welcome_bonus": "10,000 WestJet points†",
     "welcome_bonus_value_cad": 121,
     "welcome_bonus_conditions": null,
     "min_spend": 1000,
@@ -6783,7 +7100,7 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Annual WestJet round-trip companion voucher upon spending $2,500 annually<sup>\u2020</sup>"
+      "Annual WestJet round-trip companion voucher upon spending $2,500 annually<sup>†</sup>"
     ],
     "insurance": {
       "strength": "Standard"
@@ -6809,7 +7126,7 @@
     "card_type": "rewards",
     "annual_fee": 139,
     "first_year_fee": 139,
-    "welcome_bonus": "45,000 WestJet points\u2020",
+    "welcome_bonus": "45,000 WestJet points†",
     "welcome_bonus_value_cad": 536,
     "welcome_bonus_conditions": null,
     "min_spend": 5000,
@@ -6821,9 +7138,9 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Annual WestJet companion voucher<sup>\u2020</sup>",
-      "Status Lift up to 50 times per year<sup>\u2020</sup>",
-      "Free first checked bag on WestJet flights<sup>\u2020</sup>"
+      "Annual WestJet companion voucher<sup>†</sup>",
+      "Status Lift up to 50 times per year<sup>†</sup>",
+      "Free first checked bag on WestJet flights<sup>†</sup>"
     ],
     "insurance": {
       "strength": "Comprehensive",
