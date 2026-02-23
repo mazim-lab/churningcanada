@@ -1,0 +1,3 @@
+module.exports=[96936,a=>{"use strict";var b=a.i(7997);function c({children:a}){return(0,b.jsx)(b.Fragment,{children:a})}a.s(["default",()=>c,"metadata",0,{title:"Interactive Guide: US Credit Cards for Canadians (Step-by-Step Wizard)",description:"Interactive step-by-step wizard to help Canadians get a US mailing address, ITIN, build US credit history, and apply for the best US rewards credit cards.",openGraph:{title:"Interactive Guide: US Credit Cards for Canadians",description:"Walk through 7 steps to unlock US credit cards as a Canadian — with checklists and progress tracking.",type:"article"}}])}];
+
+//# sourceMappingURL=src_app_guides_us-cards-for-canadians_interactive_layout_tsx_edfe5b42._.js.map

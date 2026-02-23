@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/app/guides/layout.tsx"],"sourcesContent":["export default function GuidesLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return <>{children}</>;\n}\n"],"names":[],"mappings":"uDAAe,SAAS,EAAa,UACnC,CAAQ,CAGT,EACC,MAAO,CAAA,EAAA,EAAA,GAAA,EAAA,EAAA,QAAA,CAAA,UAAG,GACZ"}

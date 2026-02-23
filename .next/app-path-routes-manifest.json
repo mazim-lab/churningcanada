@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/blog/page": "/blog",
+  "/cards/[slug]/page": "/cards/[slug]",
+  "/cards/page": "/cards",
+  "/compare/page": "/compare",
+  "/favicon.ico/route": "/favicon.ico",
+  "/guides/us-cards-for-canadians/interactive/page": "/guides/us-cards-for-canadians/interactive",
+  "/guides/us-cards-for-canadians/page": "/guides/us-cards-for-canadians",
+  "/page": "/"
+}

@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/cards/layout,_N_T_/cards/[slug]/layout,_N_T_/cards/[slug]/page,_N_T_/cards/neo-world-elite-mastercard"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/cards/$d$slug/__PAGE__",
+    "/cards/$d$slug",
+    "/cards",
+    "/_index",
+    "/_head"
+  ]
+}

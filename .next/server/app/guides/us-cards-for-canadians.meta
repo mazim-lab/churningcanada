@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/guides/layout,_N_T_/guides/us-cards-for-canadians/layout,_N_T_/guides/us-cards-for-canadians/page,_N_T_/guides/us-cards-for-canadians"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/guides/us-cards-for-canadians/__PAGE__",
+    "/guides/us-cards-for-canadians",
+    "/guides",
+    "/_index",
+    "/_head"
+  ]
+}

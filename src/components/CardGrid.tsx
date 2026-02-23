@@ -118,8 +118,8 @@ function CardGridItem({ card }: { card: Card }) {
           <p className="font-bold text-sm mt-0.5">{card.annual_fee === 0 ? 'Free' : `$${card.annual_fee}`}</p>
         </div>
         <div className="rounded-lg bg-muted/70 p-2.5">
-          <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">Bonus Value</p>
-          <p className="font-bold text-sm mt-0.5 text-gold-text dark:text-gold">{card.welcome_bonus_value > 0 ? `$${card.welcome_bonus_value}` : '—'}</p>
+          <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">Welcome Bonus</p>
+          <p className="font-bold text-sm mt-0.5 text-gold-text dark:text-gold line-clamp-1">{card.welcome_bonus || '—'}</p>
         </div>
       </div>
 
@@ -147,12 +147,9 @@ function CardGridItem({ card }: { card: Card }) {
         </div>
       )}
 
-      {/* First year value */}
-      {card.first_year_value > 0 && (
-        <div className="mt-3 pt-3 border-t border-border/50 flex items-center justify-between">
-          <span className="text-xs text-muted-foreground">First year value</span>
-          <span className="text-base font-extrabold text-gold-text dark:text-gold">${card.first_year_value}</span>
-        </div>
+      {/* Welcome bonus text */}
+      {card.welcome_bonus && !card.earn_rates_summary && (
+        <p className="text-xs text-muted-foreground mt-2 line-clamp-2 leading-relaxed">{card.welcome_bonus}</p>
       )}
     </a>
   );
@@ -186,7 +183,7 @@ function CardListItem({ card }: { card: Card }) {
       </div>
       <div className="text-right shrink-0">
         <p className="text-sm font-semibold">{card.annual_fee === 0 ? 'Free' : `$${card.annual_fee}/yr`}</p>
-        {card.welcome_bonus_value > 0 && <p className="text-xs text-gold-dark font-bold">${card.welcome_bonus_value} bonus</p>}
+        {card.welcome_bonus && <p className="text-xs text-gold-dark font-bold truncate max-w-[120px]">{card.welcome_bonus}</p>}
       </div>
     </a>
   );
