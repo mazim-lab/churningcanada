@@ -29,7 +29,7 @@ import urllib.request
 import ssl
 
 DATA_DIR = Path(__file__).parent.parent / "data"
-WEBSITE_DATA_DIR = Path(__file__).parent.parent / "website" / "src" / "data"
+WEBSITE_DATA_DIR = Path(__file__).parent.parent / "src" / "data"  # Vercel builds from repo root
 
 # ============================================================
 # Bank scraper configurations
