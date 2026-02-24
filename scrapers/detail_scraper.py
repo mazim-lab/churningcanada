@@ -331,11 +331,10 @@ def parse_card_text(text, card):
     return details
 
 
-def enrich_cards(cards, issuer_filter=None, country_filter=None, slug_filter=None, limit=None):
-    """Scrape and enrich a list of cards."""
+def enrich_cards(cards, all_cards_ref, issuer_filter=None, country_filter=None, slug_filter=None, limit=None):
+    """Scrape and enrich a list of cards. Saves JSON after every 5 cards."""
     enriched = 0
     errors = 0
-    skipped = 0
 
     filtered = cards
     if issuer_filter:
@@ -362,7 +361,6 @@ def enrich_cards(cards, issuer_filter=None, country_filter=None, slug_filter=Non
                 elif key == "insurance" and val:
                     card["insurance"] = val
                 elif key == "key_perks" and val:
-                    # Merge with existing perks
                     existing = card.get("key_perks") or []
                     merged = list(set(existing + val))
                     card["key_perks"] = merged
@@ -372,10 +370,27 @@ def enrich_cards(cards, issuer_filter=None, country_filter=None, slug_filter=Non
         else:
             errors += 1
 
+        # Save incrementally every 5 cards (skip in dry-run)
+        if all_cards_ref and ((i + 1) % 5 == 0 or (i + 1) == len(filtered)):
+            _save_cards(all_cards_ref)
+            print(f"  💾 Saved progress ({enriched} enriched, {errors} errors so far)")
+
     # Close browser at end
     run_ab("close", timeout=5)
 
     return enriched, errors
+
+
+def _save_cards(all_cards):
+    """Write current card state to JSON files."""
+    ca_path = DATA_DIR / "canadian_cards_comprehensive.json"
+    us_path = DATA_DIR / "us_cards_comprehensive.json"
+    ca_out = [c for c in all_cards if c.get("country", "").upper() == "CA"]
+    us_out = [c for c in all_cards if c.get("country", "").upper() == "US"]
+    with open(ca_path, "w") as f:
+        json.dump(ca_out, f, indent=2)
+    with open(us_path, "w") as f:
+        json.dump(us_out, f, indent=2)
 
 
 def main():
@@ -406,6 +421,7 @@ def main():
 
     enriched, errors = enrich_cards(
         all_cards,
+        all_cards_ref=all_cards if not args.dry_run else None,
         issuer_filter=args.issuer,
         country_filter=args.country,
         slug_filter=args.card,
@@ -416,15 +432,10 @@ def main():
     print(f"Results: {enriched} enriched, {errors} errors")
 
     if not args.dry_run and enriched > 0:
-        # Split back into CA and US
-        ca_out = [c for c in all_cards if c.get("country", "").upper() == "CA"]
-        us_out = [c for c in all_cards if c.get("country", "").upper() == "US"]
-
-        with open(ca_path, "w") as f:
-            json.dump(ca_out, f, indent=2)
-        with open(us_path, "w") as f:
-            json.dump(us_out, f, indent=2)
-        print(f"✅ Written {len(ca_out)} CA cards and {len(us_out)} US cards")
+        _save_cards(all_cards)
+        ca_count = sum(1 for c in all_cards if c.get("country", "").upper() == "CA")
+        us_count = sum(1 for c in all_cards if c.get("country", "").upper() == "US")
+        print(f"✅ Final save: {ca_count} CA cards and {us_count} US cards")
 
 
 if __name__ == "__main__":
