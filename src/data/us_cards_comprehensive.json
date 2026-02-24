@@ -109,16 +109,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "3% cash back at U.S. supermarkets on up to $6K in purchases (then 1%)\u2021",
+      "Priority Pass lounge access",
+      "Airport lounge access",
+      "3% cash back at U.S. gas stations on up to $6K in purchases (then 1%)\u2021",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
       "3% cash back on U.S. online retail purchases, on up to $6K in purchases (then 1%)\u2021",
-      "3% cash back at U.S. gas stations on up to $6K in purchases (then 1%)\u2021"
+      "Statement credits",
+      "3% cash back at U.S. supermarkets on up to $6K in purchases (then 1%)\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "delta-skymiles-gold-american-express-card",
@@ -184,16 +194,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "6X points at hotels participating in Marriott Bonvoy\u00ae\u2021",
+      "Priority Pass lounge access",
+      "Airport lounge access",
       "4X points at restaurants worldwide & U.S. Supermarkets (up to $15K in combined purchases per calendar year) then 2X points\u2021",
-      "2X points on all other eligible purchases\u2021"
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "2X points on all other eligible purchases\u2021",
+      "6X points at hotels participating in Marriott Bonvoy\u00ae\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "marriott-bonvoy-brilliant-american-express-card",
@@ -209,16 +229,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "6X points at hotels participating in Marriott Bonvoy\u00ae\u2021",
+      "Priority Pass lounge access",
+      "Airport lounge access",
+      "Each calendar year, get up to $300 (up to $25 per month) in statement credits for eligible purchases made on the Card at restaurants worldwide.\u2021",
+      "Free first checked bag",
       "3X points at restaurants worldwide & on flights booked directly with airlines\u2021",
-      "Each calendar year, get up to $300 (up to $25 per month) in statement credits for eligible purchases made on the Card at restaurants worldwide.\u2021"
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "6X points at hotels participating in Marriott Bonvoy\u00ae\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "hilton-honors-american-express-card",
@@ -234,16 +264,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "Earn 7X Hilton Honors Bonus Points on eligible Hilton purchases\u2021",
+      "Priority Pass lounge access",
+      "Airport lounge access",
+      "Complimentary Hilton Honors\u2122 Silver Status\u2021",
       "Earn 5X Hilton Honors Bonus Points at U.S. restaurants, U.S. gas stations, and U.S. supermarkets\u2021",
-      "Complimentary Hilton Honors\u2122 Silver Status\u2021"
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Earn 7X Hilton Honors Bonus Points on eligible Hilton purchases\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "hilton-honors-american-express-surpass-card",
@@ -259,16 +299,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "Earn 12X Hilton Honors Bonus Points on eligible Hilton purchases.\u2021",
+      "Priority Pass lounge access",
+      "Airport lounge access",
       "Earn 6X Hilton Honors Bonus Points at U.S. restaurants, U.S. gas stations, and U.S. supermarkets.\u2021",
-      "Earn 4X Hilton Honors Bonus Points on U.S. Online Retail Purchases.\u2021"
+      "Earn 4X Hilton Honors Bonus Points on U.S. Online Retail Purchases.\u2021",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Hotel elite status/collection",
+      "Earn 12X Hilton Honors Bonus Points on eligible Hilton purchases.\u2021"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "delta-skymiles-reserve-american-express-card",
@@ -284,16 +334,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "Delta Sky Club\u00ae Access\u2021",
+      "Priority Pass lounge access",
+      "Airport lounge access",
       "Get closer to Medallion Status With MQD Headstart\u2021 and MQD Boost\u2021",
-      "With the $240 Resy Credit, earn up to $20 per month in statement credits on eligible Resy purchases using your enrolled Card\u2021"
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "With the $240 Resy Credit, earn up to $20 per month in statement credits on eligible Resy purchases using your enrolled Card\u2021",
+      "Statement credits",
+      "Delta Sky Club\u00ae Access\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "american-express-green-card",
@@ -309,16 +369,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "3X Membership Rewards\u00ae points on Travel\u2021",
       "3X Membership Rewards\u00ae points on Transit\u2021",
-      "3X Membership Rewards\u00ae points at Restaurants\u2021"
+      "Priority Pass lounge access",
+      "Airport lounge access",
+      "3X Membership Rewards\u00ae points on Travel\u2021",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "3X Membership Rewards\u00ae points at Restaurants\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "hilton-honors-american-express-aspire-card",
@@ -334,16 +404,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "Earn 14X Hilton Honors Bonus Points on eligible Hilton purchases\u2021",
+      "Priority Pass lounge access",
       "Earn 7X Hilton Honors Bonus Points at U.S. Restaurants and on Select Travel Purchases\u2021",
-      "Complimentary Hilton Honors\u2122 Diamond Status\u2021"
+      "Airport lounge access",
+      "Complimentary Hilton Honors\u2122 Diamond Status\u2021",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Earn 14X Hilton Honors Bonus Points on eligible Hilton purchases\u2021",
+      "Statement credits",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "delta-skymiles-blue-american-express-card",
@@ -359,16 +439,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
+      "Priority Pass lounge access",
+      "Airport lounge access",
       "2X Miles at Restaurants and on Delta Purchases\u2021",
+      "20% Back on In-Flight Purchases\u2021",
       "No Foreign Transaction Fees\u2021\u00a4",
-      "20% Back on In-Flight Purchases\u2021"
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "business-platinum-card",
@@ -384,18 +474,28 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "Earn 5X Membership Rewards Points on Flights and Prepaid Hotels Booked at AmexTravel.com.\u2021",
-      "Get 35% points back after you use Pay with Points for flights booked through Amex Travel with your selected qualifying airline. Terms and cap apply.\u2021",
-      "Up to $600 back annually ($300 back semi-annually) on select prepaid hotel bookings through American Express Travel.\u2021NEW",
+      "Priority Pass lounge access",
       "Reward Your Growth",
-      "Choose Your Color"
+      "Earn 5X Membership Rewards Points on Flights and Prepaid Hotels Booked at AmexTravel.com.\u2021",
+      "Up to $600 back annually ($300 back semi-annually) on select prepaid hotel bookings through American Express Travel.\u2021NEW",
+      "Airport lounge access",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Choose Your Color",
+      "Get 35% points back after you use Pay with Points for flights booked through Amex Travel with your selected qualifying airline. Terms and cap apply.\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "business-gold-card",
@@ -411,17 +511,27 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "4X Points on Your Top 2 Eligible Categories Each Month. Cap Applies.\u2021",
+      "Priority Pass lounge access",
+      "Airport lounge access",
       "$240 Flexible Business Credit (up to $20 per month)\u2021",
+      "Discover which Card with Flexible Payment Solutions is best for your business",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
       "Walmart+ Monthly Membership Credit\u2021",
-      "Discover which Card with Flexible Payment Solutions is best for your business"
+      "Statement credits",
+      "4X Points on Your Top 2 Eligible Categories Each Month. Cap Applies.\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "blue-business-cashtm-card",
@@ -437,16 +547,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "2% Cash Back on All Eligible Purchases, on up to $50K in Purchases each calendar year\u2021",
+      "Priority Pass lounge access",
+      "Expanded Buying Power\u2021",
+      "Airport lounge access",
       "1% Cash Back on Purchases Thereafter\u2021",
-      "Expanded Buying Power\u2021"
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "2% Cash Back on All Eligible Purchases, on up to $50K in Purchases each calendar year\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "blue-business-plus-credit-card",
@@ -462,16 +582,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "2X points on All Eligible Purchases, up to $50K per calendar year\u2021",
+      "Priority Pass lounge access",
+      "Expanded Buying Power\u2021",
+      "Airport lounge access",
+      "Free first checked bag",
       "1X points on Purchases Thereafter\u2021",
-      "Expanded Buying Power\u2021"
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "2X points on All Eligible Purchases, up to $50K per calendar year\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "delta-skymiles-reserve-business-card",
@@ -487,16 +617,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
+      "Priority Pass lounge access",
       "Enjoy Delta Sky Club\u00ae Access\u2021",
+      "Airport lounge access",
+      "Earn 3X Miles on Eligible Delta Purchases\u2021",
       "Get Closer to Medallion Status with MQD Headstart\u2021 and MQD Boost\u2021",
-      "Earn 3X Miles on Eligible Delta Purchases\u2021"
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "plum-card",
@@ -512,16 +652,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
+      "Priority Pass lounge access",
+      "Airport lounge access",
+      "No Foreign Transaction Fees\u2021\u00a4",
+      "Free first checked bag",
+      "Premium lounge access",
       "1.5% Early Pay Discount\u2021",
-      "Extra Days To Pay\u2021",
-      "No Foreign Transaction Fees\u2021\u00a4"
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Hotel elite status/collection",
+      "Extra Days To Pay\u2021"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "business-green-rewards-card",
@@ -537,16 +687,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "2X points on AmexTravel.com\u2021",
+      "Priority Pass lounge access",
+      "Airport lounge access",
       "Pay Over Time with Interest\u2021",
-      "American Express\u00ae App \u2021"
+      "American Express\u00ae App \u2021",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "2X points on AmexTravel.com\u2021",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "delta-skymiles-platinum-business-card",
@@ -562,15 +722,25 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
+      "Priority Pass lounge access",
+      "Airport lounge access",
+      "3X Miles on Eligible Delta & Hotel Purchases\u2021",
       "Get Closer to Medallion Status with MQD Headstart\u2021 and MQD Boost\u2021",
-      "3X Miles on Eligible Delta & Hotel Purchases\u2021"
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "marriott-bonvoy-business-card",
@@ -586,16 +756,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
-      "Earn 6X Marriott Bonvoy Points at hotels participating in the Marriott Bonvoy\u00ae program\u2021",
+      "Priority Pass lounge access",
+      "Airport lounge access",
+      "Marriott Bonvoy Gold Elite Status\u2021",
       "Marriott Bonvoy\u00ae Room Rate Discount\u2021",
-      "Marriott Bonvoy Gold Elite Status\u2021"
+      "Earn 6X Marriott Bonvoy Points at hotels participating in the Marriott Bonvoy\u00ae program\u2021",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "hilton-honors-business-card",
@@ -611,16 +791,26 @@
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
     "key_perks": [
+      "Priority Pass lounge access",
+      "Airport lounge access",
       "12X Hilton Honors Bonus Points on Eligible Hilton Purchases\u2021",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Get up to $240 Back Per Year on Eligible Hilton Purchases\u2021",
       "5X Hilton Honors Bonus Points on Other Eligible Purchases (Points cap applies)\u2021.",
-      "Get up to $240 Back Per Year on Eligible Hilton Purchases\u2021"
+      "Hotel elite status/collection"
     ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "amazon-business-prime-card",
@@ -635,13 +825,24 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Priority Pass lounge access",
+      "Airport lounge access",
+      "Premium lounge access",
+      "Free first checked bag",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Hotel elite status/collection"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "everything else": "1.25%"
+    }
   },
   {
     "slug": "amazon-business-card",
@@ -656,13 +857,31 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Priority Pass lounge access",
+      "No foreign transaction fee",
+      "Food delivery credits",
+      "Subscription perks",
+      "Premium lounge access",
+      "Statement credits",
+      "Travel program credit (NEXUS/Global Entry)"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/"
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "earn_rates": {
+      "top booked hotels, including The Edit, and flights": "2x"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "travel_accident": "1000000",
+      "purchase_protection": "120",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": ""
+    }
   },
   {
     "slug": "the-new-chase-sapphire-reserve-credit-card",
@@ -677,13 +896,31 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Premium lounge access",
+      "Travel program credit (NEXUS/Global Entry)",
+      "Priority Pass lounge access",
+      "No foreign transaction fee",
+      "Statement credits",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve"
+    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+    "earn_rates": {
+      "top booked hotels, including The Edit, and flights": "2x"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "travel_accident": "1000000",
+      "purchase_protection": "120",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": ""
+    }
   },
   {
     "slug": "chase-sapphire-preferred-credit-card",
@@ -698,13 +935,28 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred"
+    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+    "earn_rates": {
+      "other travel purchases.*APR": "2x",
+      "other travel purchases.*Earn": "2x"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": ""
+    }
   },
   {
     "slug": "chase-freedom-unlimited-credit-card",
@@ -719,13 +971,27 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited",
+    "earn_rates": {
+      "dining and drugstores and": "3%",
+      "dining at restaurants, including takeout and eligib": "3%",
+      "Lyft Rides": "2%"
+    },
+    "insurance": {
+      "purchase_protection": "120",
+      "trip_cancellation": "1500"
+    }
   },
   {
     "slug": "chase-freedom-flex-credit-card",
@@ -740,13 +1006,30 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex"
+    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex",
+    "earn_rates": {
+      "up to $": "5%",
+      "dining including takeout and drug stores, and": "3%",
+      "different categories like gas stations, grocery sto": "5%",
+      "dining at restaurants, including takeout and eligib": "3%",
+      "Lyft RidesEarn": "2%"
+    },
+    "insurance": {
+      "purchase_protection": "120",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": "1500"
+    }
   },
   {
     "slug": "chase-freedom-rise-credit-card",
@@ -761,13 +1044,25 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/rise"
+    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/rise",
+    "earn_rates": {
+      "Lyft Rides": "2%"
+    },
+    "insurance": {
+      "purchase_protection": "120",
+      "trip_cancellation": "1500"
+    }
   },
   {
     "slug": "slate-credit-card",
@@ -782,13 +1077,21 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/balance-transfer-credit-cards/slate"
+    "apply_url": "https://creditcards.chase.com/balance-transfer-credit-cards/slate",
+    "insurance": {
+      "purchase_protection": "120"
+    }
   },
   {
     "slug": "unitedsm-explorer-card",
@@ -803,13 +1106,26 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Travel program credit (NEXUS/Global Entry)",
+      "No foreign transaction fee",
+      "Concierge service",
+      "Statement credits",
+      "Food delivery credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/united-explorer"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/united-explorer",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": "1500"
+    }
   },
   {
     "slug": "united-questsm-card",
@@ -824,13 +1140,26 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Travel program credit (NEXUS/Global Entry)",
+      "No foreign transaction fee",
+      "Concierge service",
+      "Statement credits",
+      "Food delivery credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/united-quest"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "1500",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": "1500"
+    }
   },
   {
     "slug": "united-gatewaysm-card",
@@ -845,13 +1174,22 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Concierge service",
+      "No foreign transaction fee",
+      "Statement credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/united-gateway"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/united-gateway",
+    "insurance": {
+      "purchase_protection": "120",
+      "trip_cancellation": "1500"
+    }
   },
   {
     "slug": "united-clubsm-card",
@@ -866,13 +1204,31 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Travel program credit (NEXUS/Global Entry)",
+      "Airport lounge access",
+      "No foreign transaction fee",
+      "Concierge service",
+      "Statement credits",
+      "Food delivery credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite",
+    "earn_rates": {
+      "United purchases": "4x",
+      "travel": "2x"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": ""
+    }
   },
   {
     "slug": "southwest-rapid-rewards-plus-credit-card",
@@ -887,13 +1243,22 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Food delivery credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/southwest/plus"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/southwest/plus",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "3000"
+    }
   },
   {
     "slug": "southwest-rapid-rewards-priority-credit-card",
@@ -908,13 +1273,22 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Food delivery credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/southwest/priority"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/southwest/priority",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "3000"
+    }
   },
   {
     "slug": "southwest-rapid-rewards-premier-credit-card",
@@ -929,13 +1303,23 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Statement credits",
+      "Food delivery credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/southwest/premier"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/southwest/premier",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": ""
+    }
   },
   {
     "slug": "marriott-bonvoy-boundless-credit-card",
@@ -950,13 +1334,23 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Concierge service",
+      "Statement credits",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/boundless",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "100"
+    }
   },
   {
     "slug": "marriott-bonvoy-bountiful-credit-card",
@@ -971,13 +1365,25 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Food delivery credits",
+      "Concierge service"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bountiful"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bountiful",
+    "earn_rates": {
+      "all other": "2x"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": ""
+    }
   },
   {
     "slug": "marriott-bonvoy-bold-credit-card",
@@ -992,13 +1398,23 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Concierge service",
+      "Statement credits",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bold"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/marriott-bonvoy/bold",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "100"
+    }
   },
   {
     "slug": "ihg-one-rewards-premier-credit-card",
@@ -1013,13 +1429,24 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Travel program credit (NEXUS/Global Entry)",
+      "No foreign transaction fee",
+      "Statement credits",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "100",
+      "trip_cancellation": ""
+    }
   },
   {
     "slug": "ihg-one-rewards-traveler-credit-card",
@@ -1034,13 +1461,23 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "No foreign transaction fee"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/traveler"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/traveler",
+    "earn_rates": {
+      "purchases, except at IHG Hotels & Resorts, in the f": "3x"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "100",
+      "trip_cancellation": ""
+    }
   },
   {
     "slug": "disney-inspire-visa-card",
@@ -1055,13 +1492,25 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/disney/inspire"
+    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/disney/inspire",
+    "earn_rates": {
+      "eligible grocery stores and restaurants, and earn": "2%"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "120"
+    }
   },
   {
     "slug": "disney-premier-visa-card",
@@ -1076,13 +1525,25 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/disney/premier"
+    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/disney/premier",
+    "earn_rates": {
+      "a total of": "1%"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "120"
+    }
   },
   {
     "slug": "disney-visa-card",
@@ -1097,13 +1558,22 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/disney/rewards"
+    "apply_url": "https://creditcards.chase.com/rewards-credit-cards/disney/rewards",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "120"
+    }
   },
   {
     "slug": "world-of-hyatt-credit-card",
@@ -1118,13 +1588,23 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Food delivery credits",
+      "Concierge service"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "",
+      "trip_cancellation": ""
+    }
   },
   {
     "slug": "aeroplan-card",
@@ -1139,13 +1619,30 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Priority Pass lounge access",
+      "Statement credits",
+      "Food delivery credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/all-credit-cards"
+    "apply_url": "https://creditcards.chase.com/all-credit-cards",
+    "earn_rates": {
+      "other travel purchases.APR": "2x",
+      "purchases, except at IHG Hotels & Resorts, in the f": "3x",
+      "Chase TravelSM, get complimentary access to the Cha": "8x",
+      "dining and drugstores and": "3%",
+      "up to $": "5%",
+      "dining and drugstores, and": "3%",
+      "eligible grocery stores and restaurants, and": "2%",
+      "DoorDash and Caviar orders": "4%",
+      "grocery stores online or in-store and": "2%"
+    }
   },
   {
     "slug": "british-airways-visa-signature-credit-card",
@@ -1160,13 +1657,22 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/avios/british-airways",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "100"
+    }
   },
   {
     "slug": "aer-lingus-visa-signature-credit-card",
@@ -1181,13 +1687,25 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/avios/aer-lingus",
+    "earn_rates": {
+      "selected flights": "3x",
+      "hotel accommodation": "2x"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": ""
+    }
   },
   {
     "slug": "iberia-visa-signature-credit-card",
@@ -1202,13 +1720,21 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/travel-credit-cards/avios/iberia"
+    "apply_url": "https://creditcards.chase.com/travel-credit-cards/avios/iberia",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": ""
+    }
   },
   {
     "slug": "prime-visa",
@@ -1223,13 +1749,20 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "No foreign transaction fee"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards"
+    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards",
+    "insurance": {
+      "baggage_delay": "100",
+      "travel_accident": "500000",
+      "purchase_protection": "120"
+    }
   },
   {
     "slug": "amazon-visa",
@@ -1244,13 +1777,21 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-rewards"
+    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/amazon-rewards",
+    "insurance": {
+      "baggage_delay": "100",
+      "travel_accident": "500000",
+      "purchase_protection": ""
+    }
   },
   {
     "slug": "doordash-rewards-mastercard",
@@ -1265,13 +1806,29 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Concierge service",
+      "Statement credits",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/doordash"
+    "apply_url": "https://creditcards.chase.com/cash-back-credit-cards/doordash",
+    "earn_rates": {
+      "DoorDash and Caviar orders": "4%",
+      "grocery stores online or\u00a0in-store\u00a0and": "2%",
+      "grocery stores online or\u00a0in-store": "2%"
+    },
+    "insurance": {
+      "purchase_protection": "120",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": "1500"
+    }
   },
   {
     "slug": "instacart-mastercard",
@@ -1286,7 +1843,11 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
@@ -1307,13 +1868,34 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Food delivery credits",
+      "Travel program credit (NEXUS/Global Entry)",
+      "Airport lounge access",
+      "Priority Pass lounge access",
+      "No foreign transaction fee",
+      "Concierge service",
+      "Statement credits",
+      "Premium lounge access"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+    "earn_rates": {
+      "Select Flights and Hotels through Chase Travel with": "2x",
+      "qualifying rentals at participating locations (U.S": "25%"
+    },
+    "insurance": {
+      "baggage_delay": "100",
+      "travel_accident": "1000000",
+      "purchase_protection": "",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": ""
+    }
   },
   {
     "slug": "ink-business-unlimited-credit-card",
@@ -1328,13 +1910,23 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Statement credits",
+      "No foreign transaction fee"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/unlimited"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/unlimited",
+    "earn_rates": {
+      "Lyft rides": "5%",
+      "Lyft rides through September": "5%"
+    },
+    "insurance": {
+      "purchase_protection": "120"
+    }
   },
   {
     "slug": "ink-business-preferred-credit-card",
@@ -1349,13 +1941,21 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/business-preferred"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/business-preferred",
+    "earn_rates": {
+      "the first $": "3x",
+      "all other purchases - with no limit to the amount y": "1x"
+    }
   },
   {
     "slug": "ink-business-cash-credit-card",
@@ -1370,13 +1970,24 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Statement credits",
+      "No foreign transaction fee"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/cash"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/cash",
+    "earn_rates": {
+      "the first $": "2%",
+      "Lyft rides": "5%",
+      "Lyft rides through September": "5%"
+    },
+    "insurance": {
+      "purchase_protection": "120"
+    }
   },
   {
     "slug": "ink-business-premier-credit-card",
@@ -1391,13 +2002,18 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "No foreign transaction fee"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/premier"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/ink/premier",
+    "insurance": {
+      "purchase_protection": ""
+    }
   },
   {
     "slug": "unitedsm-business-card",
@@ -1412,13 +2028,24 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "No foreign transaction fee",
+      "Concierge service",
+      "Statement credits",
+      "Food delivery credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/united/united-business-card"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/united/united-business-card",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "120",
+      "trip_cancellation": "1500"
+    }
   },
   {
     "slug": "united-clubsm-business-card",
@@ -1433,13 +2060,20 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "No foreign transaction fee",
+      "Food delivery credits",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/united/united-club-business"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/united/united-club-business",
+    "insurance": {
+      "purchase_protection": "100"
+    }
   },
   {
     "slug": "southwest-rapid-rewards-performance-business-credit-card",
@@ -1454,7 +2088,12 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Statement credits",
+      "Travel program credit (NEXUS/Global Entry)",
+      "No foreign transaction fee",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
@@ -1475,13 +2114,21 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Statement credits",
+      "No foreign transaction fee",
+      "Free first checked bag"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/southwest/premier-business"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/southwest/premier-business",
+    "insurance": {
+      "baggage_delay": "100",
+      "purchase_protection": "120"
+    }
   },
   {
     "slug": "ihg-one-rewards-premier-business-credit-card",
@@ -1496,13 +2143,21 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Statement credits",
+      "Travel program credit (NEXUS/Global Entry)",
+      "No foreign transaction fee"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+    "insurance": {
+      "purchase_protection": "120",
+      "trip_cancellation": ""
+    }
   },
   {
     "slug": "world-of-hyatt-business-credit-card",
@@ -1517,12 +2172,21 @@
     "signup_bonus_currency": "points",
     "welcome_bonus_conditions": null,
     "earn_rates_summary": null,
-    "key_perks": [],
+    "key_perks": [
+      "Subscription perks",
+      "Statement credits",
+      "No foreign transaction fee",
+      "Food delivery credits"
+    ],
     "foreign_transaction_fee": false,
     "country": "US",
     "source": "bank_website",
     "last_verified": "2026-02-23",
     "notes_for_canadians": null,
-    "apply_url": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card"
+    "apply_url": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card",
+    "insurance": {
+      "purchase_protection": "120",
+      "trip_cancellation": "1500"
+    }
   }
 ]

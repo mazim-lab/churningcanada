@@ -23,11 +23,11 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply.",
       "Access to a $200 Annual Travel Credit6",
+      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39",
+      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply.",
       "Statement credits",
-      "Food delivery credits",
-      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39"
+      "Food delivery credits"
     ],
     "insurance": {},
     "minimum_income": null,
@@ -70,15 +70,15 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
+      "Earn 2x the points on eligible travel and everyday purchases3",
       "Premium lounge access",
       "Travel program credit (NEXUS/Global Entry)",
-      "Earn 2x the points on eligible travel and everyday purchases3",
+      "Priority PassTM Membership37",
+      "Enjoy 4 complimentary visits per year to Plaza Premium Lounges38",
       "Statement credits",
       "Airport lounge access",
-      "Priority PassTM Membership37",
-      "Priority Pass lounge access",
       "Food delivery credits",
-      "Enjoy 4 complimentary visits per year to Plaza Premium Lounges38"
+      "Priority Pass lounge access"
     ],
     "insurance": {},
     "minimum_income": null,
@@ -117,11 +117,11 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Receive complimentary Marriott Bonvoy Silver Elite status",
       "Enjoy an Annual Free Night Award3",
+      "Earn 5 points for every $1 spent in eligible Card purchases at hotels participating in Marriott Bonvoy.5",
+      "Receive complimentary Marriott Bonvoy Silver Elite status",
       "Front of the Line presale tickets",
-      "Free first checked bag",
-      "Earn 5 points for every $1 spent in eligible Card purchases at hotels participating in Marriott Bonvoy.5"
+      "Free first checked bag"
     ],
     "insurance": {
       "flight_delay": "4",
@@ -166,16 +166,16 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
+      "You can earn up to $4,400 or more in value within your first 13 months!35",
+      "Priority\u00a0access to the standby list and eUpgrades on Air Canada flights12\u2021",
+      "Earn 3X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae* purchases6",
       "Premium lounge access",
       "Travel program credit (NEXUS/Global Entry)",
+      "Front of the Line presale tickets",
       "Statement credits",
       "Airport lounge access",
-      "Earn 3X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae* purchases6",
-      "Front of the Line presale tickets",
       "Free first checked bag",
-      "You can earn up to $4,400 or more in value within your first 13 months!35",
-      "Priority Pass lounge access",
-      "Priority\u00a0access to the standby list and eUpgrades on Air Canada flights12\u2021"
+      "Priority Pass lounge access"
     ],
     "insurance": {
       "travel_medical": "5000000",
@@ -225,16 +225,16 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Premium lounge access",
       "With Flexible Payment Option2, you have options when paying your balance",
-      "Bolster your business with up to $820 in additional annual statement credits41",
+      "Multiple ways to maximize cash flow with up to 55 interest-free days4",
+      "Free first checked bag",
+      "Premium lounge access",
+      "Hotel elite status/collection",
       "Statement credits",
       "Airport lounge access",
-      "Free first checked bag",
-      "Hotel elite status/collection",
-      "Priority Pass lounge access",
-      "Multiple ways to maximize cash flow with up to 55 interest-free days4",
-      "Food delivery credits"
+      "Food delivery credits",
+      "Bolster your business with up to $820 in additional annual statement credits41",
+      "Priority Pass lounge access"
     ],
     "insurance": {
       "travel_medical": "5000000",
@@ -284,12 +284,12 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Maximize cash flow with up to 55 interest-free days3",
       "With Flexible Payment Option2, you have options when paying your balance",
+      "Maximize cash flow with up to 55 interest-free days3",
+      "Hotel elite status/collection",
       "Statement credits",
       "Earn 10,000 bonus points each quarter when you charge $20,000 to your Card5",
       "Free first checked bag",
-      "Hotel elite status/collection",
       "Food delivery credits"
     ],
     "insurance": {
@@ -336,9 +336,9 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Receive an Annual Free Night Award3",
       "Receive 15 Elite Night Credits each calendar year5",
       "Earn 5X the points on eligible Marriott purchases6",
+      "Receive an Annual Free Night Award3",
       "Free first checked bag"
     ],
     "insurance": {
@@ -384,14 +384,14 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
+      "You could earn up to $5,600 or more in value within your first 13 months26",
+      "Get an Annual Worldwide Companion Pass9\u2021",
       "Premium lounge access",
       "Travel program credit (NEXUS/Global Entry)",
       "Get 1,000 Status Qualifying Credits and more4\u2021",
       "Statement credits",
-      "You could earn up to $5,600 or more in value within your first 13 months26",
       "Free first checked bag",
-      "Priority Pass lounge access",
-      "Get an Annual Worldwide Companion Pass9\u2021"
+      "Priority Pass lounge access"
     ],
     "insurance": {
       "travel_medical": "5000000",
@@ -438,11 +438,11 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
+      "Earn 2X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae*\u00a0purchases5",
+      "Reach Aeroplan EliteTM Status faster6\u2021",
       "You could earn up to $1,450 or more in value within your first 13 months!25",
       "Front of the Line presale tickets",
-      "Free first checked bag",
-      "Reach Aeroplan EliteTM Status faster6\u2021",
-      "Earn 2X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae*\u00a0purchases5"
+      "Free first checked bag"
     ],
     "insurance": {
       "flight_delay": "4",
@@ -492,13 +492,13 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Front Of The Line\u00ae Access18",
       "Earn 5X the points on eligible eats & drinks3",
-      "Statement credits",
-      "Front of the Line presale tickets",
       "Hotel elite status/collection",
-      "Food delivery credits",
-      "Earn 3X the points on eligible streaming subscriptions3"
+      "Front of the Line presale tickets",
+      "Front Of The Line\u00ae Access18",
+      "Statement credits",
+      "Earn 3X the points on eligible streaming subscriptions3",
+      "Food delivery credits"
     ],
     "insurance": {
       "mobile_insurance": "Yes"
@@ -586,13 +586,13 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Statement credits",
-      "Front\u00a0Of The Line\u00ae Access6",
-      "Earn up to 4% cash back on eligible gas and grocery purchases3",
+      "Earn 2% cash back on everything else3",
       "Front of the Line presale tickets",
-      "Free first checked bag",
+      "Front\u00a0Of The Line\u00ae Access6",
+      "Statement credits",
       "Food delivery credits",
-      "Earn 2% cash back on everything else3"
+      "Free first checked bag",
+      "Earn up to 4% cash back on eligible gas and grocery purchases3"
     ],
     "insurance": {
       "travel_medical": "5000000",
@@ -641,10 +641,10 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Statement credits",
-      "Front of the Line presale tickets",
-      "Earn 1.25% cash back on everything else3",
       "Earn up to 2% cash back on eligible gas and grocery purchases3",
+      "Earn 1.25% cash back on everything else3",
+      "Front of the Line presale tickets",
+      "Statement credits",
       "Travel & Shopping coverage"
     ],
     "insurance": {
@@ -685,10 +685,10 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Get more flexibility when paying off your balance",
       "Save\u00a0on interest payments with an interest rate of 12.99%",
-      "Statement credits",
+      "Get more flexibility when paying off your balance",
       "Front of the Line presale tickets",
+      "Statement credits",
       "Access to Amex\u00a0ExperiencesTM2"
     ],
     "insurance": {
@@ -733,11 +733,11 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply.",
       "Access to a $200 Annual Travel Credit6",
+      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39",
+      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply.",
       "Statement credits",
-      "Food delivery credits",
-      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39"
+      "Food delivery credits"
     ],
     "insurance": {},
     "minimum_income": null,
@@ -1209,9 +1209,9 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Travel program credit (NEXUS/Global Entry)",
       "Premium lounge access",
-      "Free first checked bag"
+      "Free first checked bag",
+      "Travel program credit (NEXUS/Global Entry)"
     ],
     "insurance": {
       "lost_baggage": "1000",
@@ -1977,10 +1977,10 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Food delivery credits",
-      "Free first checked bag",
       "Airport lounge access",
-      "Subscription perks"
+      "Subscription perks",
+      "Free first checked bag",
+      "Food delivery credits"
     ],
     "insurance": {
       "car_rental": "",
@@ -2027,11 +2027,11 @@
     "foreign_transaction_fee_pct": null,
     "key_perks": [
       "Concierge service",
-      "Food delivery credits",
-      "Free first checked bag",
       "Hotel elite status/collection",
       "Airport lounge access",
-      "Subscription perks"
+      "Subscription perks",
+      "Free first checked bag",
+      "Food delivery credits"
     ],
     "insurance": {
       "flight_delay": "250",
@@ -2080,8 +2080,8 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Food delivery credits",
-      "Subscription perks"
+      "Subscription perks",
+      "Food delivery credits"
     ],
     "insurance": {
       "purchase_protection": "",
@@ -2124,8 +2124,8 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Food delivery credits",
-      "Subscription perks"
+      "Subscription perks",
+      "Food delivery credits"
     ],
     "insurance": {
       "purchase_protection": "1",
@@ -2165,8 +2165,8 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Food delivery credits",
-      "Subscription perks"
+      "Subscription perks",
+      "Food delivery credits"
     ],
     "insurance": {
       "purchase_protection": "",
@@ -2206,8 +2206,8 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Food delivery credits",
-      "Subscription perks"
+      "Subscription perks",
+      "Food delivery credits"
     ],
     "insurance": {
       "purchase_protection": "7",
@@ -2251,12 +2251,12 @@
     "foreign_transaction_fee": false,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Priority Pass lounge access",
       "Concierge service",
       "Premium lounge access",
       "Hotel elite status/collection",
       "No foreign transaction fee",
-      "Airport lounge access"
+      "Airport lounge access",
+      "Priority Pass lounge access"
     ],
     "insurance": {
       "flight_delay": "500",
@@ -2308,9 +2308,9 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Hotel elite status/collection",
+      "Concierge service",
       "Statement credits",
-      "Concierge service"
+      "Hotel elite status/collection"
     ],
     "insurance": {
       "flight_delay": "500",
@@ -2357,12 +2357,12 @@
     "foreign_transaction_fee": false,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Priority Pass lounge access",
       "Concierge service",
       "Premium lounge access",
       "No foreign transaction fee",
+      "Front of the Line presale tickets",
       "Airport lounge access",
-      "Front of the Line presale tickets"
+      "Priority Pass lounge access"
     ],
     "insurance": {
       "flight_delay": "500",
@@ -2491,11 +2491,20 @@
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "up to $": "5%",
+      "groceries, food delivery and food subscription serv": "1%",
+      "gas, electric vehicle charging, and daily transit l": "1%",
+      "eligible recurring subscription services like music": "1%",
+      "the first $": "5%",
+      "that category so that you will earn a total of": "4%"
+    },
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
+    "key_perks": [
+      "Statement credits"
+    ],
     "insurance": {},
     "minimum_income": null,
     "minimum_credit_score": null,
@@ -2509,7 +2518,10 @@
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-no-fee-card.html",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 20.99
+    }
   },
   {
     "slug": "scotiabank-american-express-card",
@@ -2530,8 +2542,13 @@
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": {},
+    "key_perks": [
+      "Front of the Line presale tickets"
+    ],
+    "insurance": {
+      "purchase_protection": "10",
+      "mobile_insurance": "Yes"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2546,7 +2563,10 @@
     "is_business": false,
     "cpp_cad": 1.0,
     "welcome_bonus_points": 5000.0,
-    "first_year_value_cad": 50.0
+    "first_year_value_cad": 50.0,
+    "interest_rates": {
+      "purchases": 19.99
+    }
   },
   {
     "slug": "scotiabank-platinum-american-express-card",
@@ -2565,10 +2585,22 @@
     "balance_transfer_rate": null,
     "earn_rates": {},
     "rewards_program": "scene+",
-    "foreign_transaction_fee": null,
+    "foreign_transaction_fee": false,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": {},
+    "key_perks": [
+      "Concierge service",
+      "Premium lounge access",
+      "No foreign transaction fee",
+      "Front of the Line presale tickets",
+      "Statement credits",
+      "Airport lounge access",
+      "Priority Pass lounge access"
+    ],
+    "insurance": {
+      "purchase_protection": "12",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": "12"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2583,7 +2615,10 @@
     "is_business": false,
     "cpp_cad": 1.0,
     "welcome_bonus_points": 80000.0,
-    "first_year_value_cad": 401.0
+    "first_year_value_cad": 401.0,
+    "interest_rates": {
+      "purchases": 9.99
+    }
   },
   {
     "slug": "scotiabank-passport-visa-infinite-privilege-card",
@@ -2604,8 +2639,18 @@
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": {},
+    "key_perks": [
+      "Concierge service",
+      "Hotel elite status/collection",
+      "Statement credits",
+      "Airport lounge access",
+      "Free first checked bag"
+    ],
+    "insurance": {
+      "purchase_protection": "20",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": "20"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2637,7 +2682,9 @@
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "all eligible gas station, grocery store, drug store": "1%"
+    },
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -2655,7 +2702,10 @@
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/mastercard/momentum-card.html",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 20.99
+    }
   },
   {
     "slug": "scotiabank-u-s-dollar-visa-card",
@@ -2677,7 +2727,9 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
-    "insurance": {},
+    "insurance": {
+      "purchase_protection": "46"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2690,7 +2742,10 @@
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/us-card.html",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 19.99
+    }
   },
   {
     "slug": "scotiabank-value-visa-card",
@@ -2727,7 +2782,10 @@
     "is_business": false,
     "cpp_cad": 1.0,
     "welcome_bonus_points": 10000.0,
-    "first_year_value_cad": 71.0
+    "first_year_value_cad": 71.0,
+    "interest_rates": {
+      "purchases": 13.99
+    }
   },
   {
     "slug": "scotiabank-scene-tm-visa-card-for-students",
@@ -2764,7 +2822,10 @@
     "is_business": false,
     "cpp_cad": 1.0,
     "welcome_bonus_points": 10000.0,
-    "first_year_value_cad": 100.0
+    "first_year_value_cad": 100.0,
+    "interest_rates": {
+      "purchases": 20.99
+    }
   },
   {
     "slug": "scotiabank-value-visa-card-for-students",
@@ -2799,7 +2860,10 @@
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-value-card.html",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 13.99
+    }
   },
   {
     "slug": "scotia-momentum-visa-card-for-students",
@@ -2816,12 +2880,20 @@
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "groceries, food delivery and food subscription serv": "2%",
+      "gas, electric vehicle charging, and daily transit l": "2%",
+      "eligible recurring subscription services like music": "2%"
+    },
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": {},
+    "key_perks": [
+      "Statement credits"
+    ],
+    "insurance": {
+      "purchase_protection": ""
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2834,7 +2906,10 @@
     "historical_offers": [],
     "apply_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-momentum-cash-back-card.html",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 20.99
+    }
   },
   {
     "slug": "scotia-momentum-no-fee-visa-card-for-students",
@@ -2851,7 +2926,9 @@
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "all eligible gas station, grocery store, drug store": "1%"
+    },
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -2891,7 +2968,10 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [],
-    "insurance": {},
+    "insurance": {
+      "purchase_protection": "10",
+      "mobile_insurance": "Yes"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -2906,7 +2986,10 @@
     "is_business": false,
     "cpp_cad": 1.0,
     "welcome_bonus_points": 7500.0,
-    "first_year_value_cad": 75.0
+    "first_year_value_cad": 75.0,
+    "interest_rates": {
+      "purchases": 19.99
+    }
   },
   {
     "slug": "scotia-momentum-for-business-visa-card",
@@ -2923,7 +3006,9 @@
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "all eligible gas station, grocery store, drug store": "1%"
+    },
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -2958,7 +3043,9 @@
     "purchase_interest_rate": 19.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "all eligible gas station, grocery store, drug store": "1%"
+    },
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -2995,7 +3082,9 @@
     "purchase_interest_rate": 1.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "all eligible gas station, grocery store, drug store": "1%"
+    },
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -3030,7 +3119,9 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "all eligible gas station, grocery store, drug store": "1%"
+    },
     "rewards_program": "scene+",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -4552,7 +4643,10 @@
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "everything else": "0.5%",
+      "everything elseAdditional Benefits\u00a0\u00a0\u21b3\u00a0FlexiRoam": "0.5%"
+    },
     "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -4560,7 +4654,10 @@
       "2% cash back in up to 2 categories",
       "0.5% on everything else"
     ],
-    "insurance": {},
+    "insurance": {
+      "purchase_protection": "5",
+      "mobile_insurance": "Yes"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -4573,7 +4670,12 @@
     "historical_offers": [],
     "apply_url": "https://www.tangerine.ca/en/personal/spend/credit-cards",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 20.95,
+      "balance_transfer": 111.95
+    },
+    "min_income": 12000
   },
   {
     "slug": "tangerine-money-back-world-mastercard",
@@ -4821,7 +4923,10 @@
     "historical_offers": [],
     "apply_url": "https://www.neofinancial.com/credit-cards",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 10.99
+    }
   },
   {
     "slug": "neo-world-elite-mastercard",
@@ -4843,15 +4948,19 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "5% grocery",
-      "3% gas",
-      "4% recurring payments",
-      "1% everything else",
       "Purchase protection",
+      "5% grocery",
+      "4% recurring payments",
       "Travel benefits",
-      "Min income $80K"
+      "1% everything else",
+      "3% gas",
+      "Min income $80K",
+      "Statement credits"
     ],
-    "insurance": {},
+    "insurance": {
+      "lost_baggage": "1000",
+      "mobile_insurance": "Yes"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -4864,7 +4973,10 @@
     "historical_offers": [],
     "apply_url": "https://www.neofinancial.com/credit-cards",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 21.99
+    }
   },
   {
     "slug": "simplii-financial-cash-back-visa-card",
@@ -5113,7 +5225,12 @@
     "purchase_interest_rate": 22.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "Triangle Mastercard or": "0.5%",
+      "Triangle World Elite Mastercard": "1%",
+      "all other charges. Some applicants may receive a hi": "21.99%",
+      "all charges (including cash transactions and relate": "28.99%"
+    },
     "rewards_program": "triangle rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -5191,12 +5308,20 @@
     "purchase_interest_rate": 10.9,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "everything else.\u00a0 Rogers Red World Elite Mastercard": "1%",
+      "everything else": "1.5%"
+    },
     "rewards_program": "desjardins bonusdollars",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
-    "key_perks": [],
-    "insurance": {},
+    "key_perks": [
+      "Statement credits"
+    ],
+    "insurance": {
+      "purchase_protection": "1300",
+      "trip_cancellation": "1300"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -5263,7 +5388,12 @@
     "purchase_interest_rate": 20.9,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "Triangle Mastercard or": "0.5%",
+      "Triangle World Elite Mastercard": "1%",
+      "all other charges. Some applicants may receive a hi": "21.99%",
+      "all charges (including cash transactions and relate": "28.99%"
+    },
     "rewards_program": "cash back",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -5357,7 +5487,10 @@
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 10.9
+    }
   },
   {
     "slug": "desjardins-odyssey-gold-visa",
@@ -5395,7 +5528,10 @@
     "historical_offers": [],
     "apply_url": "https://www.desjardins.com/qc/en/credit-cards.html",
     "is_business": false,
-    "cpp_cad": 1.0
+    "cpp_cad": 1.0,
+    "interest_rates": {
+      "purchases": 10.9
+    }
   },
   {
     "slug": "desjardins-odyssey-world-elite-mastercard",
