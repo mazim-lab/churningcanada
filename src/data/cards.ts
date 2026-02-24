@@ -304,8 +304,8 @@ function normalizeUS(raw: RawUS): Card {
 
 export const allCards: Card[] = (() => {
   const raw: Card[] = [
-    ...(canadianCardsRaw as RawCA[]).map(normalizeCA),
-    ...(usCardsRaw as RawUS[]).map(normalizeUS),
+    ...(canadianCardsRaw as unknown as RawCA[]).map(normalizeCA),
+    ...(usCardsRaw as unknown as RawUS[]).map(normalizeUS),
   ];
   // Deduplicate by slug — keep first occurrence
   const seen = new Set<string>();
