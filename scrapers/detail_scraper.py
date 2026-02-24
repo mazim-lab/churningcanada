@@ -89,65 +89,247 @@ def get_snapshot():
 
 
 def parse_earn_rates(text):
-    """Extract earn rate categories from page text."""
-    rates = {}
+    """Extract earn rate categories from page text.
 
-    # Amex duplicates earn rates in text: "2X POINTS On dining...2XPOINTSOn dining..."
-    # Also footnote digits like "42X" where 4 is a superscript footnote before "2X"
-    # Strategy: find all "NX POINTS On category" patterns, filter to reasonable multipliers (1-15)
+    Handles formats from all major banks:
+    - Amex: "5X POINTS On eats & drinks", "5XPOINTSOn eats"
+    - Chase: "5Xon Chase Travel", "Earn 3x points on dining"
+    - TD: "Earn 3% in Cash Back Dollars on Grocery, Gas..."
+    - CIBC: "4% cash back on eligible gas...", "2 points per $1 on travel"
+    - Scotiabank: "4 Scene+ points for every $1 spent on groceries"
+    - BMO: "1 point for every $2 spent on everything else"
+    - PC Financial: "3% back in points at our grocery stores", "3¢ / litre"
+    - RBC: "1.5 points per $1" patterns
+    - Desjardins: "N% cash back on..."
+    - General: "N% cash back on X", "Nx on X", "N points per $1 on X"
+    """
+    rates = {}
 
     def clean_category(raw):
         """Clean category text — remove trailing descriptions after the core category."""
         cat = raw.strip().rstrip('0123456789').strip()
         # Truncate at common description starters
-        for sep in ['Such as', 'From ', 'For eligible', 'For ', 'With ', 'Including', 'On eligible']:
+        for sep in ['Such as', 'From ', 'For eligible', 'With ', 'Including',
+                     'On eligible', 'Excluding', 'Plus,', 'And ', 'This ',
+                     'Subject to', 'Conditions', 'Terms ', 'See ', 'Learn ',
+                     'Want to', 'Earn points', 'Earn more', '. ', 'directly',
+                     'direct through', ' purchases (', ' made with', ' purchased ']:
             idx = cat.find(sep)
             if idx > 2:
                 cat = cat[:idx].strip()
-        # Remove trailing punctuation
-        cat = cat.rstrip('.,;:*†').strip()
+        # Remove trailing punctuation and footnote markers
+        cat = re.sub(r'[\s.,;:*†‡◊♢#^ⓘ]+$', '', cat).strip()
+        # Remove leading articles
+        cat = re.sub(r'^(?:eligible|all|other|your)\s+', '', cat, flags=re.IGNORECASE).strip()
         return cat if len(cat) >= 2 else None
 
-    # Pattern: "5X POINTS On eats & drinks" or "5XPOINTSOn eats" (Amex no-space duplicate)
-    matches = re.findall(r'(\d+)\s*[Xx]\s*POINTS?\s*(?:On|on|for|For)\s+([A-Za-z][^\d\n]{3,50})', text)
-    for mult, category in matches:
-        m = int(mult)
-        if m > 15:
-            continue
-        cat = clean_category(category)
-        if cat and len(cat) < 60:
-            rates[cat] = f"{m}x"
+    # === Pre-normalization patterns (need original newlines) ===
+    # TD "Earn N points\n\nfor every $1 spent on X" (multiline)
+    raw_text = text.replace('&nbsp;', ' ').replace('&amp;', '&').replace('&#39;', "'")
+    for m in re.finditer(r'Earn (\d+(?:\.\d+)?)\s+(?:TD\s+Rewards?\s+|Aeroplan\s+)?[Pp]oints?\d*\s*\n\s*\n\s*for every \$1 (?:you )?(?:spend |spent )?(?:on |when you (?:book )?)?(.+?)(?:\d{1,2}[,.]|\n)', raw_text):
+        mult = m.group(1)
+        if float(mult) <= 15:
+            cat = m.group(2).strip()
+            # Clean up category
+            for sep in ['Such as', 'From ', 'For eligible', 'With ', 'Including',
+                         'On eligible', 'Excluding', 'Plus,', 'And ', 'This ',
+                         'Subject to', 'Conditions', 'Terms ', 'See ', 'Learn ',
+                         'directly', 'direct through', ' purchases (', ' made with',
+                         ' purchased ']:
+                idx = cat.find(sep)
+                if idx > 2:
+                    cat = cat[:idx].strip()
+            cat = re.sub(r'[\s.,;:*†‡◊♢#^ⓘ]+$', '', cat).strip()
+            cat = re.sub(r'^(?:eligible|all|other|your)\s+', '', cat, flags=re.IGNORECASE).strip()
+            if cat and len(cat) >= 2 and len(cat) < 80:
+                rates[cat] = f"{mult}x"
 
-    # Pattern: "Earn Nx on category" or "N points per $1 on category"
-    matches2 = re.findall(r'(?:Earn\s+)?(\d+(?:\.\d+)?)\s*(?:points?\s+per\s+\$1|x|X)\s+(?:on|for)\s+([A-Za-z][^\d\n]{3,50})', text)
-    for mult, category in matches2:
-        m = float(mult)
-        if m > 15:
-            continue
-        cat = clean_category(category)
-        if cat and len(cat) < 60 and cat not in rates:
-            rates[cat] = f"{mult}x"
+    # Hyatt "9X\nTotal points per $1 spent at\nX" (multiline)
+    for m in re.finditer(r'(\d+)\s*[Xx]\s*\n\s*(?:Total\s+)?(?:[Bb]onus\s+)?[Pp]oints?\s+per\s+\$1\s+(?:spent\s+)?(?:at|on|for)\s*\n?\s*([A-Za-z][^\n]{3,60})', raw_text):
+        mult = int(m.group(1))
+        if mult <= 15:
+            cat = re.sub(r'[\s.,;:*†‡◊♢#^ⓘ]+$', '', m.group(2).strip()).strip()
+            if cat and len(cat) >= 2 and len(cat) < 80:
+                rates[cat] = f"{mult}x"
 
-    # Pattern: "X% cash back on Y" or "X% On Y" (e.g., SimplyCash "4% On gas")
-    matches3 = re.findall(r'(\d+(?:\.\d+)?)\s*%\s*(?:cash\s*back|CB)?\s*(?:On|on|for)\s+([A-Za-z][^\d\n]{3,50})', text, re.IGNORECASE)
-    for pct, category in matches3:
-        p = float(pct)
-        if p > 30:
-            continue
-        cat = clean_category(category)
-        skip_words = ['interest', 'apr', 'purchase', 'advance', 'fee', 'balance', 'transfer', 'payment', 'funds']
-        if cat and len(cat) < 60 and not any(w in cat.lower() for w in skip_words):
-            rates[cat] = f"{pct}%"
+    # Normalize HTML entities and whitespace
+    text = text.replace('&nbsp;', ' ').replace('&amp;', '&').replace('&#39;', "'")
+    text = re.sub(r'\s+', ' ', text)
+    # Strip footnote markers stuck to multipliers (e.g. "purchases51.5X" → "purchases 1.5X")
+    text = re.sub(r'([a-zA-Z])\d{1,2}(\d+(?:\.\d+)?\s*[Xx]\s)', r'\1 \2', text)
 
-    # Pattern: "N ADDITIONAL POINT On category"
-    matches4 = re.findall(r'(\d+)\s*ADDITIONAL\s+POINTS?\s+(?:On|on)\s+([A-Za-z][^\d\n]{3,50})', text)
-    for mult, category in matches4:
-        m = int(mult)
-        if m > 10:
-            continue
-        cat = clean_category(category)
-        if cat and len(cat) < 60:
-            rates[cat] = f"+{m}x bonus"
+    skip_words = ['interest', 'apr', 'purchase rate', 'advance', 'fee',
+                  'balance', 'transfer', 'payment', 'funds', 'bonus',
+                  'welcome', 'introductory', 'promotional', 'standard',
+                  'variable', 'annual', 'minimum']
+
+    def should_skip(cat):
+        """Check if a category is actually a financial term, not a spend category."""
+        if not cat:
+            return True
+        low = cat.lower()
+        return any(w in low for w in skip_words)
+
+    def add_rate(cat, rate_str):
+        """Add a rate if the category is valid and not already present."""
+        if cat and len(cat) < 80 and not should_skip(cat) and cat not in rates:
+            rates[cat] = rate_str
+
+    # === Pattern 1: Amex "NX [AEROPLAN] POINTS On category" (with/without spaces) ===
+    for m in re.finditer(r'(\d+(?:\.\d+)?)\s*[Xx]\s*(?:AEROPLAN\s+)?POINTS?\s*(?:On|on|for|For)\s+([A-Za-z][^\d\n]{3,50})', text, re.IGNORECASE):
+        mult = float(m.group(1))
+        if mult <= 15:
+            add_rate(clean_category(m.group(2)), f"{m.group(1)}x")
+
+    # === Pattern 2: Chase "5Xon travel" or "3x on dining" (no space before "on") ===
+    for m in re.finditer(r'(\d+)\s*[Xx]\s*(?:on|On)\s+([A-Za-z][^\d\n]{3,60})', text):
+        mult = int(m.group(1))
+        if mult <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 3: "Earn Nx points/miles on X" or "N points per $1 on X" ===
+    for m in re.finditer(r'(?:Earn\s+)?(\d+(?:\.\d+)?)\s*(?:x|X)\s+(?:total\s+)?(?:points?|miles?)\s+(?:on|for|at)\s+([A-Za-z][^\d\n]{3,60})', text):
+        mult = m.group(1)
+        if float(mult) <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 4: "N points per $1 on/at X" or "Earn N points per $1 on X" ===
+    for m in re.finditer(r'(?:Earn\s+)?(\d+(?:\.\d+)?)\s*(?:points?\s+per\s+\$1)\s+(?:on|at|for)\s+([A-Za-z][^\d\n]{3,60})', text):
+        mult = m.group(1)
+        if float(mult) <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 5: "Nx on X" or "Earn Nx on X" or "Nx miles on X" (without "points") ===
+    for m in re.finditer(r'(?:Earn\s+)?(\d+(?:\.\d+)?)\s*[Xx]\s+(?:miles?\s+)?(?:on|for|at)\s+([A-Za-z][^\d\n]{3,60})', text):
+        mult = m.group(1)
+        if float(mult) <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 6: "X% cash back on Y" or "X% On Y" or "X% on Y" ===
+    for m in re.finditer(r'(\d+(?:\.\d+)?)\s*%\s*(?:cash\s*back|CB)?\s*(?:On|on|for|at)\s+([A-Za-z][^\d\n]{3,60})', text, re.IGNORECASE):
+        pct = float(m.group(1))
+        if pct <= 30:
+            add_rate(clean_category(m.group(2)), f"{m.group(1)}%")
+
+    # === Pattern 7: TD "Earn N% in Cash Back Dollars on X" ===
+    for m in re.finditer(r'(?:Earn\s+)?(\d+(?:\.\d+)?)\s*%\s*(?:in\s+)?Cash\s*Back(?:\s+Dollars?)?\s+(?:on|for|at)\s+([A-Za-z][^\d\n]{3,80})', text, re.IGNORECASE):
+        pct = m.group(1)
+        if float(pct) <= 30:
+            add_rate(clean_category(m.group(2)), f"{pct}%")
+
+    # === Pattern 8: PC Financial "N% back in points at/on X" ===
+    for m in re.finditer(r'(\d+(?:\.\d+)?)\s*%\s*back\s+in\s+points?\s*\d*\s*(?:at|on|for)\s+([A-Za-z][^\d\n]{3,60})', text, re.IGNORECASE):
+        pct = m.group(1)
+        if float(pct) <= 30:
+            add_rate(clean_category(m.group(2)), f"{pct}%")
+
+    # === Pattern 9: "N¢ / litre" or "N cents per litre" (gas rewards) ===
+    for m in re.finditer(r'(\d+(?:\.\d+)?)\s*(?:¢|cents?)\s*/?\s*(?:per\s+)?(?:litre|liter|L)\s*(?:back\s+in\s+points?)?\s*(?:at|on|for)?\s*([A-Za-z][^\d\n]{3,60})?', text, re.IGNORECASE):
+        cents = m.group(1)
+        cat = m.group(2)
+        if cat:
+            add_rate(clean_category(cat), f"{cents}¢/litre")
+        else:
+            add_rate("Gas stations", f"{cents}¢/litre")
+
+    # === Pattern 10: Scotiabank/BMO/CIBC "N point(s) for every $N (you spend) on X" ===
+    for m in re.finditer(r'(\d+(?:\.\d+)?)\s*(?:Scene\+?\s+|Aeroplan\s+)?points?\s+for\s+(?:every\s+)?\$(\d+)\s+(?:you\s+)?(?:spend\s+)?(?:spent\s+)?(?:on|at|for|in)\s+([A-Za-z][^\d\n]{3,80})', text, re.IGNORECASE):
+        pts = m.group(1)
+        per_dollar = m.group(2)
+        cat = clean_category(m.group(3))
+        if cat:
+            if per_dollar == "1":
+                add_rate(cat, f"{pts}x")
+            else:
+                add_rate(cat, f"{pts}pt/${per_dollar}")
+
+    # === Pattern 11: CIBC "N points per $1 on X" (without Earn prefix) ===
+    for m in re.finditer(r'(\d+(?:\.\d+)?)\s+points?\s+per\s+\$1\s+(?:on|at|for)\s+([A-Za-z][^\d\n]{3,60})', text, re.IGNORECASE):
+        mult = m.group(1)
+        if float(mult) <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 12: "N ADDITIONAL POINT On category" ===
+    for m in re.finditer(r'(\d+)\s*ADDITIONAL\s+POINTS?\s+(?:On|on)\s+([A-Za-z][^\d\n]{3,50})', text):
+        mult = int(m.group(1))
+        if mult <= 10:
+            add_rate(clean_category(m.group(2)), f"+{mult}x bonus")
+
+    # === Pattern 13: "1 point per dollar" or "N point(s) per $1" catch-all ===
+    for m in re.finditer(r'(\d+(?:\.\d+)?)\s+points?\s+per\s+(?:dollar|\$1)\s+(?:spent\s+)?(?:on|at|for)\s+([A-Za-z][^\d\n]{3,60})', text, re.IGNORECASE):
+        mult = m.group(1)
+        if float(mult) <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 14: "N% back on X" (generic cash back without "cash") ===
+    for m in re.finditer(r'(\d+(?:\.\d+)?)\s*%\s*back\s+(?:on|at|for)\s+([A-Za-z][^\d\n]{3,60})', text, re.IGNORECASE):
+        pct = float(m.group(1))
+        if pct <= 30:
+            add_rate(clean_category(m.group(2)), f"{m.group(1)}%")
+
+    # === Pattern 15: Chase "2Xpoints on" (no space after multiplier) ===
+    for m in re.finditer(r'(\d+)\s*[Xx]\s*points\s+(?:on|On)\s+([A-Za-z][^\d\n]{3,60})', text, re.IGNORECASE):
+        mult = int(m.group(1))
+        if mult <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 16: Neo "N%category" (no space between % and category) ===
+    for m in re.finditer(r'(?<!\d)(\d+(?:\.\d+)?)\s*%([a-z][a-z ]{2,30})(?:[²³\d]|$)', text):
+        pct = float(m.group(1))
+        if pct <= 30:
+            add_rate(clean_category(m.group(2)), f"{m.group(1)}%")
+
+    # === Pattern 17: "Nx total miles on X" (Chase United cards) ===
+    for m in re.finditer(r'(?<!\d)(\d+(?:\.\d+)?)\s*[Xx]\s+total\s+miles?\s+(?:on|for|at)\s+([A-Za-z][^\d\n]{3,60})', text, re.IGNORECASE):
+        mult = float(m.group(1))
+        if mult <= 15:
+            add_rate(clean_category(m.group(2)), f"{m.group(1)}x")
+
+    # === Pattern 18: "N.Nx miles on X" (Chase fractional miles) ===
+    for m in re.finditer(r'(?<!\d)(\d+(?:\.\d+)?)\s*[Xx]\s+miles?\s+(?:on|for|at)\s+([A-Za-z][^\d\n]{3,60})', text, re.IGNORECASE):
+        mult = float(m.group(1))
+        if mult <= 15:
+            add_rate(clean_category(m.group(2)), f"{m.group(1)}x")
+
+    # Pattern 19 moved to pre-normalization section above
+
+    # === Pattern 20: Chase "N Avios for every $1 spent on X" ===
+    for m in re.finditer(r'(?:earn\s+)?(\d+)\s+(?:Avios|Bonus\s+Points?)\s+(?:for\s+every|per)\s+\$1\s+(?:spent\s+)?(?:on|at|for)\s+([A-Za-z][^\d\n]{3,80})', text, re.IGNORECASE):
+        mult = m.group(1)
+        if int(mult) <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 21: "N Avios for every $1 spent on all other purchases" (inline prose) ===
+    for m in re.finditer(r'(\d+)\s+(?:Avios|points?)\s+for\s+every\s+\$1\s+spent\s+on\s+([A-Za-z][^\d\n\.]{3,60})', text, re.IGNORECASE):
+        mult = m.group(1)
+        if int(mult) <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 22: "Earn N points for every $1 spent" (Scotiabank/BMO/MBNA inline prose) ===
+    for m in re.finditer(r'(?:earn\s+)?(\d+)\s+points?\s*(?:‡|†|\*)*\s*for\s+every\s+\$1\s+spent\s+on\s+([A-Za-z][^\d\n]{3,80})', text, re.IGNORECASE):
+        mult = m.group(1)
+        if int(mult) <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
+
+    # === Pattern 23: "N points per dollar spent" or "N points per $1 spent" (National Bank) ===
+    for m in re.finditer(r'(\d+(?:\.\d+)?)\s+(?:rewards?\s+)?points?\s+per\s+(?:dollar|\$1)\s+spent', text, re.IGNORECASE):
+        mult = m.group(1)
+        if float(mult) <= 15:
+            add_rate("All purchases", f"{mult}x")
+
+    # === Pattern 24: "Up to N% of your purchases in BONUSDOLLARS/rewards" (Desjardins) ===
+    for m in re.finditer(r'(?:Up\s+to\s+)?(\d+(?:\.\d+)?)\s*%\s*(?:of\s+your\s+purchases\s+)?(?:in\s+)?(?:BONUSDOLLARS|rewards|cash\s*back)', text, re.IGNORECASE):
+        pct = float(m.group(1))
+        if pct <= 30:
+            add_rate("All purchases", f"{m.group(1)}%")
+
+    # Pattern 25 moved to pre-normalization section above
+
+    # === Pattern 26: "N Bonus Points per $1" or "N total Points per $1 spent at X" (Hyatt inline) ===
+    for m in re.finditer(r'(\d+)\s+(?:Bonus\s+|total\s+)?[Pp]oints?\s+per\s+\$1\s+(?:spent\s+)?(?:at|on|for)\s+([A-Za-z][^\d\n]{3,60})', text, re.IGNORECASE):
+        mult = int(m.group(1))
+        if mult <= 15:
+            add_rate(clean_category(m.group(2)), f"{mult}x")
 
     return rates
 
@@ -436,6 +618,7 @@ def main():
         ca_count = sum(1 for c in all_cards if c.get("country", "").upper() == "CA")
         us_count = sum(1 for c in all_cards if c.get("country", "").upper() == "US")
         print(f"✅ Final save: {ca_count} CA cards and {us_count} US cards")
+
 
 
 if __name__ == "__main__":
