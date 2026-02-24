@@ -241,8 +241,23 @@ interface RawUS {
   [key: string]: unknown;
 }
 
+// Default cents-per-point valuations for US rewards programs
+const US_CPP: Record<string, number> = {
+  'points': 1.5,       // Chase Ultimate Rewards, Amex MR (conservative)
+  'miles': 1.3,        // Airline miles
+  'avios': 1.3,        // British Airways / Iberia
+  'skymiles': 1.2,     // Delta
+  'cash back': 100,    // Already dollars (in cents)
+};
+
 function normalizeUS(raw: RawUS): Card {
-  const bonusValue = raw.signup_bonus_value_usd || 0;
+  let bonusValue = raw.signup_bonus_value_usd || 0;
+  // If value > 1000 it's raw points, not USD — convert using cpp
+  if (bonusValue > 1000) {
+    const currency = (raw.signup_bonus_currency || 'points').toLowerCase();
+    const cpp = US_CPP[currency] || 1.5;
+    bonusValue = Math.round(bonusValue * cpp / 100);
+  }
   const fee = raw.annual_fee || 0;
   const bonusText = raw.signup_bonus_formatted
     ? `${raw.signup_bonus_formatted} ${raw.signup_bonus_currency || 'points'}`
