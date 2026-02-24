@@ -14,14 +14,20 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "dining & food delivery purchases in Canada": "2x",
+      "travel": "42x",
+      "everything else": "41x"
+    },
     "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39",
+      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply.",
       "Access to a $200 Annual Travel Credit6",
-      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply."
+      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39",
+      "Food delivery credits",
+      "Statement credits"
     ],
     "insurance": {},
     "minimum_income": null,
@@ -34,7 +40,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card",
     "is_business": false,
     "cpp_cad": 1.95,
     "welcome_bonus_points": 100000.0,
@@ -55,14 +61,24 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "travel": "2x",
+      "everyday purchases": "32x",
+      "everything else": "31x"
+    },
     "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Earn 2x the points on eligible travel and everyday purchases3",
+      "Priority Pass lounge access",
+      "Enjoy 4 complimentary visits per year to Plaza Premium Lounges38",
+      "Premium lounge access",
       "Priority PassTM Membership37",
-      "Enjoy 4 complimentary visits per year to Plaza Premium Lounges38"
+      "Earn 2x the points on eligible travel and everyday purchases3",
+      "Airport lounge access",
+      "Travel program credit (NEXUS/Global Entry)",
+      "Food delivery credits",
+      "Statement credits"
     ],
     "insurance": {},
     "minimum_income": null,
@@ -75,7 +91,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card",
     "is_business": false,
     "cpp_cad": 1.95,
     "welcome_bonus_points": 60000.0,
@@ -102,10 +118,18 @@
     "foreign_transaction_fee_pct": null,
     "key_perks": [
       "Earn 5 points for every $1 spent in eligible Card purchases at hotels participating in Marriott Bonvoy.5",
+      "Free first checked bag",
+      "Receive complimentary Marriott Bonvoy Silver Elite status",
       "Enjoy an Annual Free Night Award3",
-      "Receive complimentary Marriott Bonvoy Silver Elite status"
+      "Front of the Line presale tickets"
     ],
-    "insurance": {},
+    "insurance": {
+      "flight_delay": "4",
+      "lost_baggage": "500",
+      "travel_accident": "500000",
+      "car_rental": "16",
+      "purchase_protection": "14"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -116,7 +140,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-card",
     "is_business": false,
     "cpp_cad": 0.8,
     "welcome_bonus_points": 110000.0,
@@ -142,11 +166,26 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
+      "Priority Pass lounge access",
+      "Premium lounge access",
+      "Free first checked bag",
+      "Front of the Line presale tickets",
+      "Earn 3X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae* purchases6",
       "Priority\u00a0access to the standby list and eUpgrades on Air Canada flights12\u2021",
+      "Airport lounge access",
       "You can earn up to $4,400 or more in value within your first 13 months!35",
-      "Earn 3X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae* purchases6"
+      "Travel program credit (NEXUS/Global Entry)",
+      "Statement credits"
     ],
-    "insurance": {},
+    "insurance": {
+      "travel_medical": "5000000",
+      "flight_delay": "4",
+      "lost_baggage": "1000",
+      "travel_accident": "500000",
+      "car_rental": "20",
+      "purchase_protection": "20",
+      "trip_cancellation": "20"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -157,7 +196,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/aeroplan-reserve",
     "is_business": false,
     "cpp_cad": 2.05,
     "welcome_bonus_points": 85000.0,
@@ -178,16 +217,35 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "everything": "1.25x",
+      "everything for every $": "25x"
+    },
     "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
+      "Hotel elite status/collection",
+      "Priority Pass lounge access",
+      "Premium lounge access",
+      "Free first checked bag",
       "Bolster your business with up to $820 in additional annual statement credits41",
       "With Flexible Payment Option2, you have options when paying your balance",
-      "Multiple ways to maximize cash flow with up to 55 interest-free days4"
+      "Airport lounge access",
+      "Multiple ways to maximize cash flow with up to 55 interest-free days4",
+      "Food delivery credits",
+      "Statement credits"
     ],
-    "insurance": {},
+    "insurance": {
+      "travel_medical": "5000000",
+      "flight_delay": "4",
+      "lost_baggage": "1000",
+      "travel_accident": "500000",
+      "car_rental": "17",
+      "purchase_protection": "17",
+      "mobile_insurance": "Yes",
+      "trip_cancellation": "17"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -198,7 +256,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-platinum-card",
     "is_business": true,
     "cpp_cad": 1.95,
     "welcome_bonus_points": 120000.0,
@@ -219,16 +277,29 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "everything": "51x"
+    },
     "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Earn 10,000 bonus points each quarter when you charge $20,000 to your Card5",
+      "Hotel elite status/collection",
+      "Maximize cash flow with up to 55 interest-free days3",
+      "Free first checked bag",
       "With Flexible Payment Option2, you have options when paying your balance",
-      "Maximize cash flow with up to 55 interest-free days3"
+      "Earn 10,000 bonus points each quarter when you charge $20,000 to your Card5",
+      "Food delivery credits",
+      "Statement credits"
     ],
-    "insurance": {},
+    "insurance": {
+      "flight_delay": "4",
+      "lost_baggage": "500",
+      "travel_accident": "100000",
+      "car_rental": "16",
+      "purchase_protection": "22",
+      "mobile_insurance": "Yes"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -239,7 +310,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-gold-card",
     "is_business": true,
     "cpp_cad": 1.95,
     "welcome_bonus_points": 70000.0,
@@ -265,11 +336,18 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Earn 5X the points on eligible Marriott purchases6",
       "Receive an Annual Free Night Award3",
+      "Free first checked bag",
+      "Earn 5X the points on eligible Marriott purchases6",
       "Receive 15 Elite Night Credits each calendar year5"
     ],
-    "insurance": {},
+    "insurance": {
+      "flight_delay": "4",
+      "lost_baggage": "500",
+      "travel_accident": "500000",
+      "car_rental": "17",
+      "purchase_protection": "20"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -280,7 +358,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card",
     "is_business": true,
     "cpp_cad": 0.8,
     "welcome_bonus_points": 110000.0,
@@ -306,11 +384,24 @@
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
+      "Priority Pass lounge access",
       "You could earn up to $5,600 or more in value within your first 13 months26",
+      "Premium lounge access",
+      "Free first checked bag",
       "Get 1,000 Status Qualifying Credits and more4\u2021",
-      "Get an Annual Worldwide Companion Pass9\u2021"
+      "Travel program credit (NEXUS/Global Entry)",
+      "Get an Annual Worldwide Companion Pass9\u2021",
+      "Statement credits"
     ],
-    "insurance": {},
+    "insurance": {
+      "travel_medical": "5000000",
+      "flight_delay": "4",
+      "lost_baggage": "1000",
+      "travel_accident": "500000",
+      "car_rental": "15",
+      "purchase_protection": "15",
+      "trip_cancellation": "15"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -321,7 +412,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/aeroplan-business-reserve-card",
     "is_business": true,
     "cpp_cad": 2.05,
     "welcome_bonus_points": 90000.0,
@@ -348,10 +439,18 @@
     "foreign_transaction_fee_pct": null,
     "key_perks": [
       "You could earn up to $1,450 or more in value within your first 13 months!25",
-      "Earn 2X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae*\u00a0purchases5",
-      "Reach Aeroplan EliteTM Status faster6\u2021"
+      "Free first checked bag",
+      "Front of the Line presale tickets",
+      "Reach Aeroplan EliteTM Status faster6\u2021",
+      "Earn 2X the points on eligible Air Canada\u00ae* & Air Canada Vacations\u00ae*\u00a0purchases5"
     ],
-    "insurance": {},
+    "insurance": {
+      "flight_delay": "4",
+      "lost_baggage": "500",
+      "travel_accident": "500000",
+      "car_rental": "10",
+      "purchase_protection": "10"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -362,7 +461,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/charge-cards/aeroplan-card",
     "is_business": false,
     "cpp_cad": 2.05,
     "welcome_bonus_points": 40000.0,
@@ -383,16 +482,27 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "eats & drinks": "5x",
+      "streaming subscriptions": "33x",
+      "gas, transit & ride share": "32x",
+      "everything else": "31x"
+    },
     "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Earn 5X the points on eligible eats & drinks3",
+      "Hotel elite status/collection",
+      "Front Of The Line\u00ae Access18",
       "Earn 3X the points on eligible streaming subscriptions3",
-      "Front Of The Line\u00ae Access18"
+      "Front of the Line presale tickets",
+      "Earn 5X the points on eligible eats & drinks3",
+      "Food delivery credits",
+      "Statement credits"
     ],
-    "insurance": {},
+    "insurance": {
+      "mobile_insurance": "Yes"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -403,7 +513,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card",
     "is_business": false,
     "cpp_cad": 1.95,
     "welcome_bonus_points": 15000.0,
@@ -424,7 +534,9 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "everyday purchases": "1x"
+    },
     "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -444,7 +556,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/green-card",
     "is_business": false,
     "cpp_cad": 1.95,
     "welcome_bonus_points": 10000.0,
@@ -465,16 +577,33 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "all purchases (up to $": "10%",
+      "gas": "4%",
+      "grocery": "34%",
+      "everything else": "32%"
+    },
     "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
+      "Free first checked bag",
+      "Front of the Line presale tickets",
       "Earn up to 4% cash back on eligible gas and grocery purchases3",
       "Earn 2% cash back on everything else3",
-      "Front\u00a0Of The Line\u00ae Access6"
+      "Front\u00a0Of The Line\u00ae Access6",
+      "Food delivery credits",
+      "Statement credits"
     ],
-    "insurance": {},
+    "insurance": {
+      "travel_medical": "5000000",
+      "flight_delay": "4",
+      "lost_baggage": "500",
+      "travel_accident": "100000",
+      "car_rental": "9",
+      "purchase_protection": "2",
+      "mobile_insurance": "Yes"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -485,7 +614,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash-preferred",
     "is_business": false,
     "cpp_cad": 1.95
   },
@@ -504,16 +633,26 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "all purchases (up to $": "5%",
+      "gas": "2%",
+      "grocery": "32%",
+      "everything else": "31.25%"
+    },
     "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
       "Earn up to 2% cash back on eligible gas and grocery purchases3",
+      "Front of the Line presale tickets",
       "Earn 1.25% cash back on everything else3",
-      "Travel & Shopping coverage"
+      "Travel & Shopping coverage",
+      "Statement credits"
     ],
-    "insurance": {},
+    "insurance": {
+      "travel_accident": "100000",
+      "purchase_protection": "11"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -524,7 +663,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash",
     "is_business": false,
     "cpp_cad": 1.95
   },
@@ -550,9 +689,14 @@
     "key_perks": [
       "Save\u00a0on interest payments with an interest rate of 12.99%",
       "Get more flexibility when paying off your balance",
-      "Access to Amex\u00a0ExperiencesTM2"
+      "Front of the Line presale tickets",
+      "Access to Amex\u00a0ExperiencesTM2",
+      "Statement credits"
     ],
-    "insurance": {},
+    "insurance": {
+      "travel_accident": "100000",
+      "purchase_protection": "7"
+    },
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
@@ -563,7 +707,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/essential-credit-card",
     "is_business": false,
     "cpp_cad": 1.95
   },
@@ -582,14 +726,20 @@
     "purchase_interest_rate": null,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "dining & food delivery purchases in Canada": "2x",
+      "travel": "42x",
+      "everything else": "41x"
+    },
     "rewards_program": "membership rewards",
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39",
+      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply.",
       "Access to a $200 Annual Travel Credit6",
-      "Unlock access to more than 1,400 airport lounges worldwide with the Global Lounge Collection.7 Terms and Conditions apply."
+      "Enjoy a $200 Annual Dining Credit at some of Canada\u2019s best restaurants39",
+      "Food delivery credits",
+      "Statement credits"
     ],
     "insurance": {},
     "minimum_income": null,
@@ -602,7 +752,7 @@
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
+    "apply_url": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card",
     "is_business": false,
     "cpp_cad": 1.95,
     "welcome_bonus_points": 100000.0,
