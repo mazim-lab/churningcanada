@@ -2478,5 +2478,81 @@
     "source": "bank_website",
     "last_verified": "2026-03-16",
     "notes_for_canadians": null
+  },
+  {
+    "slug": "journey-student",
+    "name": "Compare Student Credit Cards",
+    "issuer": "Capital One",
+    "network": "Mastercard",
+    "card_type": "personal",
+    "annual_fee": 0,
+    "signup_bonus": null,
+    "signup_bonus_formatted": null,
+    "signup_bonus_value_usd": null,
+    "signup_bonus_currency": "miles",
+    "welcome_bonus_conditions": null,
+    "earn_rates_summary": "2% Business Banking Accounts Business Checking Accounts for any stage of business Business Savings Grow; 3% grocery stores, on dining &amp; entertainment 1 and; 1.5% every purchase",
+    "key_perks": [
+      "2% Business Banking Accounts Business Checking Accounts for any stage of business Business Savings Grow",
+      "3% grocery stores, on dining &amp; entertainment 1 and",
+      "1.5% every purchase"
+    ],
+    "foreign_transaction_fee": null,
+    "country": "US",
+    "source": "bank_website",
+    "last_verified": "2026-03-16",
+    "notes_for_canadians": null
+  },
+  {
+    "slug": "spark-miles-select",
+    "name": "Spark Miles Select",
+    "issuer": "Capital One",
+    "network": "Mastercard",
+    "card_type": "business",
+    "annual_fee": 0,
+    "signup_bonus": null,
+    "signup_bonus_formatted": null,
+    "signup_bonus_value_usd": null,
+    "signup_bonus_currency": "miles",
+    "welcome_bonus_conditions": null,
+    "earn_rates_summary": "1.5X miles Select Credit Level: Excellent; 1.5X miles every purchase; 1.5X miles Select Venture X Business Spark",
+    "key_perks": [
+      "1.5X miles Select Credit Level: Excellent",
+      "1.5X miles every purchase",
+      "1.5X miles Select Venture X Business Spark",
+      "2X miles Card Details Rewards Calculator Benefits Reviews Rates &amp; Fees Rates &amp; Fees Information Apply",
+      "1.5X miles every purchase for your business"
+    ],
+    "foreign_transaction_fee": null,
+    "country": "US",
+    "source": "bank_website",
+    "last_verified": "2026-03-16",
+    "notes_for_canadians": null
+  },
+  {
+    "slug": "spark-cash-select",
+    "name": "Spark 1.5% Cash Select Business Card",
+    "issuer": "Capital One",
+    "network": "Mastercard",
+    "card_type": "business",
+    "annual_fee": 0,
+    "signup_bonus": null,
+    "signup_bonus_formatted": null,
+    "signup_bonus_value_usd": null,
+    "signup_bonus_currency": "miles",
+    "welcome_bonus_conditions": null,
+    "earn_rates_summary": "2X miles Welcome Bonus:; 1.5X miles Select Welcome Bonus:; 2% Business Banking Accounts Business Checking Accounts for any stage of business Business Savings Grow",
+    "key_perks": [
+      "2X miles Welcome Bonus:",
+      "1.5X miles Select Welcome Bonus:",
+      "2% Business Banking Accounts Business Checking Accounts for any stage of business Business Savings Grow",
+      "1.5% every purchase",
+      "1.5% for your business on every purchase, everywhere, no limits or category restrictions"
+    ],
+    "foreign_transaction_fee": null,
+    "country": "US",
+    "source": "bank_website",
+    "last_verified": "2026-03-16",
+    "notes_for_canadians": null
   }
 ]

@@ -606,5 +606,126 @@
       "No foreign transaction fees Pay zero foreign transaction fees on purchases made outside of the United States",
       "Roadside assistance Our business cards offer services to help you during auto-related emergencies, such as jump-starting, tire changing and towing"
     ]
+  },
+  {
+    "name": "Compare Student Credit Cards",
+    "slug": "journey-student",
+    "url": "https://www.capitalone.com/credit-cards/journey-student/",
+    "issuer": "Capital One",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "Business Banking Accounts Business Checking Accounts for any stage of business Business Savings Grow"
+      },
+      {
+        "rate": "3%",
+        "category": "grocery stores, on dining &amp; entertainment 1 and"
+      },
+      {
+        "rate": "1.5%",
+        "category": "every purchase"
+      }
+    ],
+    "benefits": [
+      "CreditWise"
+    ]
+  },
+  {
+    "name": "Spark Miles Select",
+    "slug": "spark-miles-select",
+    "url": "https://www.capitalone.com/small-business/credit-cards/spark-miles-select/",
+    "issuer": "Capital One",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "1.5X miles",
+        "category": "Select Credit Level: Excellent"
+      },
+      {
+        "rate": "1.5X miles",
+        "category": "every purchase"
+      },
+      {
+        "rate": "1.5X miles",
+        "category": "Select Venture X Business Spark"
+      },
+      {
+        "rate": "2X miles",
+        "category": "Card Details Rewards Calculator Benefits Reviews Rates &amp; Fees Rates &amp; Fees Information Apply"
+      },
+      {
+        "rate": "1.5X miles",
+        "category": "every purchase for your business"
+      },
+      {
+        "rate": "5X miles",
+        "category": "hotels and rental cars booked through Capital One Business Travel"
+      },
+      {
+        "rate": "1.5X miles",
+        "category": "6 7 Featured benefits Manage your accounts Employee access Travel Service &amp; protection Automatic"
+      },
+      {
+        "rate": "1.5X miles",
+        "category": "Rates and fees information Rewards terms Customer Reviews 5 Star 76% 4 Star 13% 3 Star 5% 2 Star 3% "
+      }
+    ],
+    "benefits": [
+      "CreditWise",
+      "Virtual Card",
+      "No Foreign Transaction",
+      "Global Entry"
+    ]
+  },
+  {
+    "name": "Spark 1.5% Cash Select Business Card",
+    "slug": "spark-cash-select",
+    "url": "https://www.capitalone.com/small-business/credit-cards/spark-cash-select/",
+    "issuer": "Capital One",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "2X miles",
+        "category": "Welcome Bonus:"
+      },
+      {
+        "rate": "1.5X miles",
+        "category": "Select Welcome Bonus:"
+      },
+      {
+        "rate": "2%",
+        "category": "Business Banking Accounts Business Checking Accounts for any stage of business Business Savings Grow"
+      },
+      {
+        "rate": "1.5%",
+        "category": "every purchase"
+      },
+      {
+        "rate": "1.5%",
+        "category": "for your business on every purchase, everywhere, no limits or category restrictions"
+      },
+      {
+        "rate": "5%",
+        "category": "hotels and rental cars booked through Capital One Business Travel"
+      }
+    ],
+    "benefits": [
+      "CreditWise",
+      "Virtual Card",
+      "No Foreign Transaction"
+    ]
   }
 ]
