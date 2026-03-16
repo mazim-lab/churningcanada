@@ -1,0 +1,218 @@
+[
+  {
+    "name": "World Elite Mastercard credit card promotion",
+    "slug": "nbc-world-elite",
+    "url": "https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "welcome_bonus": "Earn 5,000 rewards points When you complete $5,000 in net purchases in the first",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "1 Travel insurance and exclusives 4-5-7 Extended warranty on your purchases 7 Minimum annual income: $80,000 for the app"
+      },
+      {
+        "rate": "2X",
+        "category": "eligible grocery and restaurant purchases"
+      },
+      {
+        "rate": "2X",
+        "category": "eligible purchases 10 Recurring bill payments:"
+      },
+      {
+        "rate": "2X",
+        "category": "purchases 11 À la carte Travel TM :"
+      },
+      {
+        "rate": "2X",
+        "category": "purchases 12 Other purchases:"
+      },
+      {
+        "rate": "1X",
+        "category": "purchases 13 Travel deals 1 With the À la carte Rewards TM , you have the freedom to travel with the agency and airline "
+      },
+      {
+        "rate": "2X",
+        "category": "purchases, you will need to purchase gas or an electrical vehicle charge from a service station or from certain big-box "
+      }
+    ],
+    "benefits": [
+      "Travel insurance and exclusives 4-5-7 Extended warranty on your purchases 7 Minimum annual income: $80,000 for the applicant, or $150,000 for household income",
+      "Purchase protection 7 insurance (up to 180 days) Contactless payments with Apple Pay ® and Google Pay ® Enhanced security with Mastercard ® ID Check TM Fraud protection 9 Redeem yo",
+      "Extended warranty on your purchases 7 Minimum annual income: $80,000 for the applicant, or $150,000 for household income",
+      "car rentals and more",
+      "lounge access, etc",
+      "Trip cancellation insurance 7 Up to $2,500 per person Trip interruption insurance 7 Up to $5,000 per person Out-of-province-of-residence medical/hospital insurance 7 Up to $5,000,0",
+      "Baggage insurance in case of delay 7 Up to $500 per person (over 6 hours) Baggage insurance in case of theft or loss 7 Up to $1,000 per person Vehicle rental insurance 7 Against co",
+      "flight delay insurance 7 Up to $500 per person (over 4 hours) Baggage insurance in case of delay 7 Up to $500 per person (over 6 hours) Baggage insurance in case of theft or loss 7",
+      "Zero Liability 9 Included Purchase protection in the event of theft or damage 7 ${p1",
+      "Lost or stolen card In Canada or the U"
+    ]
+  },
+  {
+    "name": "National Bank Platinum Mastercard credit card",
+    "slug": "nbc-platinum",
+    "url": "https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "earn 2 points for every dollar in eligible grocery and restaurant purchases until a total of $1,000 in gross monthly purchases is charged to the account. After that, you will earn 1.5 points per dollar in eligible grocery and restaurant purchases. Gas and electric vehicle charging: 1.5 points per dollar in eligible purchases 8 Recurring bill payments: 1.5 points per dollar in eligible purchases 9 ",
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "1 Travel insurance for trips of 10 days or less 4 Mobile device insurance 4 No minimum annual income required"
+      },
+      {
+        "rate": "5X",
+        "category": "eligible grocery and restaurant purchases"
+      },
+      {
+        "rate": "5X",
+        "category": "Exclusive travel benefits Guaranteed extended warranty on purchases See our World Elite We’re here for you Is the Platin"
+      },
+      {
+        "rate": "5X",
+        "category": "eligible purchases 8 Recurring bill payments: 1"
+      },
+      {
+        "rate": "5X",
+        "category": "purchases, you will need to purchase gas or an electrical vehicle charge from a service station or from certain big box "
+      }
+    ],
+    "benefits": [
+      "travel insurance ${p1",
+      "Purchase protection 4 insurance (up to 180 days) Contactless payments with Apple Pay ® and Google Pay ® Enhanced security with Mastercard ® ID Check TM Fraud protection 5 Redeem yo",
+      "extended warranty on purchases See our World Elite We’re here for you Is the Platinum Mastercard right for you? Apply online in minutes",
+      "car rentals and more",
+      "lounge access, etc",
+      "trip cancellation and travel interruption insurance",
+      "Baggage insurance in case of delay 4 Up to $500 per person (over 6 hours) Baggage insurance in case of theft or loss 4 Up to $1,000 per person Vehicle rental insurance 4 Against co",
+      "Flight delay insurance 4 Up to $500 per person (over 4 hours) Baggage insurance in case of delay 4 Up to $500 per person (over 6 hours) Baggage insurance in case of theft or loss 4",
+      "Zero Liability 5 Included Purchase protection against theft or damage 4 ${p1",
+      "Lost or stolen card In Canada or the U"
+    ]
+  },
+  {
+    "name": "Mastercard Cashback Credit Cards",
+    "slug": "nbc-cashback",
+    "url": "https://www.nbc.ca/personal/mastercard-credit-cards/cashback.html",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "benefits": [
+      "Purchase protection 4 Extended warranty 4 Annual fee 2 ${p1",
+      "Extended warranty 4 Annual fee 2 ${p1",
+      "Lounge access and for additional guests, admission is around $40 for adults and $25 for children, plus tax",
+      "baggage fees (maximum $100) and seat selection fees (maximum $50)",
+      "Lost or stolen card Subsidiaries National Bank Trust National Bank Investments Natbank National Bank Financial Divisions of National Bank Financial National Bank Direct Brokerage P"
+    ]
+  },
+  {
+    "name": "No Annual Fee Mastercard Credit Cards",
+    "slug": "nbc-no-fee",
+    "url": "https://www.nbc.ca/personal/mastercard-credit-cards/no-fee.html",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "benefits": [
+      "Purchase protection 4 Extended warranty 4 Annual fee 2 ${p1",
+      "Extended warranty 4 Annual fee 2 ${p1",
+      "Lounge access and for additional guests, admission is around $40 for adults and $25 for children, plus tax",
+      "baggage fees (maximum $100) and seat selection fees (maximum $50)",
+      "Lost or stolen? Lock or replace your card online or on the mobile app"
+    ]
+  },
+  {
+    "name": "Syncro Mastercard credit card",
+    "slug": "nbc-syncro",
+    "url": "https://www.nbc.ca/personal/mastercard-credit-cards/syncro.html",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "1.5%",
+        "category": "your everyday purchases 9 Up to 90 days of theft or damage purchase insurance 1 Double the manufacturer's warranty, 1 up"
+      }
+    ],
+    "benefits": [
+      "Purchase protection Up to 90 days after purchase in case of theft or damage 1 Adapted limit Minimum credit limit of $500 which can be increased under certain conditions 5 Enhanced ",
+      "extended warranty on your purchases 1 Annual fee ${p1",
+      "Zero liability protection No liability for unauthorized transactions 6 Purchase protection Up to 90 days after purchase in case of theft or damage 1 Adapted limit Minimum credit li",
+      "Lost or stolen card In Canada or the U"
+    ]
+  },
+  {
+    "name": "Mastercard Rewards Credit Cards",
+    "slug": "nbc-rewards",
+    "url": "https://www.nbc.ca/personal/mastercard-credit-cards/rewards.html",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "1 Refund for travel expenses ($150) 6 Access to the National Bank Lounge 7 Travel insurance for up to 60 days 4 Annual f"
+      },
+      {
+        "rate": "2X",
+        "category": "1 Mobile device insurance 8 Extended warranty on purchases 4 Travel insurance for trips of 10 days or less 4 Annual fee "
+      },
+      {
+        "rate": "2X",
+        "category": "1 Vehicle rental insurance 4 Extended warranty on purchases 4 Travel insurance for up to 60 days 4 Annual fee 2 ${p2"
+      }
+    ],
+    "benefits": [
+      "Travel insurance for up to 60 days 4 Annual fee 2 ${p1",
+      "Purchase protection 4 insurance (up to 180 days) Extended manufacturer’s warranty on purchases 4 Fraud protection 5 Enhanced security with Mastercard ® ID Check TM Contactless paym",
+      "Extended warranty on purchases 4 Travel insurance for trips of 10 days or less 4 Annual fee for the cardholder 2 ${p3",
+      "Car rental insurance 4 Purchase protection 4 insurance (up to 180 days) Extended manufacturer’s warranty on purchases 4 Fraud protection 5 Enhanced security with Mastercard ® ID Ch",
+      "baggage fees - seat selection fees - access to airport lounges worldwide - airline ticket upgrades The claim must be submitted within 60 days of the purchase date and accompanied b",
+      "Lost or stolen card Subsidiaries National Bank Trust National Bank Investments Natbank National Bank Financial Divisions of National Bank Financial National Bank Direct Brokerage P"
+    ]
+  },
+  {
+    "name": "Mastercard Travel Credit Cards",
+    "slug": "nbc-travel",
+    "url": "https://www.nbc.ca/personal/mastercard-credit-cards/travel.html",
+    "issuer": "National Bank",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "3 Refund for travel expenses ($150) 5 Access to the National Bank Lounge 4 Travel insurance for up to 60 days 6 Vehicle "
+      }
+    ],
+    "benefits": [
+      "Travel insurance for up to 60 days 6 Vehicle rental insurance 6 Extended warranty on purchases 6 Annual fee 1 ${p1",
+      "Purchase protection 6 insurance (up to 180 days) Contactless payments with Apple Pay ® and Google Pay ® Enhanced security with Mastercard ® ID Check TM Fraud protection 8 Redeem yo",
+      "Extended warranty on purchases 6 Annual fee 1 ${p1",
+      "lounge access charges will be billed to the credit card connected to cardholder’s Mastercard ® Travel Pass membership",
+      "baggage fees - seat selection fees - access to airport lounges worldwide - airline ticket upgrades The claim must be submitted within 60 days of the purchase date and accompanied b",
+      "Lost or stolen card Subsidiaries National Bank Trust National Bank Investments Natbank National Bank Financial Divisions of National Bank Financial National Bank Direct Brokerage P"
+    ]
+  }
+]
