@@ -1,0 +1,542 @@
+[
+  {
+    "name": "Bank of America® Customized Cash Rewards Credit Card",
+    "slug": "cash-back-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/cash-back-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "17.49% - 27.49% variable",
+    "welcome_bonus": "$200 cash rewards bonus offer",
+    "earn_rates": [
+      {
+        "rate": "6%",
+        "category": "the category of your choice for the first year"
+      },
+      {
+        "rate": "2%",
+        "category": "grocery stores and wholesale clubs Unlimited"
+      },
+      {
+        "rate": "1%",
+        "category": "all other purchases"
+      },
+      {
+        "rate": "2%",
+        "category": "the first $2,500 in combined purchases each quarter in the choice category, and at grocery stores an"
+      },
+      {
+        "rate": "2%",
+        "category": "these purchases up to the quarterly maximum"
+      },
+      {
+        "rate": "6%",
+        "category": "– for the first year: gas and EV charging stations; online shopping, including cable, internet, phon"
+      },
+      {
+        "rate": "3%",
+        "category": "purchases in your choice category"
+      }
+    ],
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ]
+  },
+  {
+    "name": "Cash Rewards Secured Credit Card from Bank of America",
+    "slug": "cash-back-secured-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/cash-back-secured-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "6%",
+        "category": "the category of your choice – for the first year No annual fee† Review rates and fees† Apply Now for"
+      },
+      {
+        "rate": "2%",
+        "category": "grocery stores and wholesale clubs Unlimited"
+      },
+      {
+        "rate": "1%",
+        "category": "all other purchases"
+      },
+      {
+        "rate": "2%",
+        "category": "the first $2,500 in combined purchases each quarter in the choice category, and at grocery stores an"
+      },
+      {
+        "rate": "2%",
+        "category": "these purchases up to the quarterly maximum"
+      },
+      {
+        "rate": "6%",
+        "category": "– for the first year: gas and EV charging stations; online shopping, including cable, internet, phon"
+      },
+      {
+        "rate": "3%",
+        "category": "purchases in your choice category"
+      }
+    ],
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ]
+  },
+  {
+    "name": "BankAmericard® Credit Card for Students",
+    "slug": "low-interest-student-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/low-interest-student-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "14.99% - 25.99% variable",
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ]
+  },
+  {
+    "name": "Norwegian Cruise Line® World Mastercard® Credit Card",
+    "slug": "norwegian-cruise-lines-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/norwegian-cruise-lines-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "17.49% - 27.49% variable",
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ],
+    "earn_rates": [
+      {
+        "rate": "3X",
+        "category": "Norwegian Cruise Line purchases"
+      },
+      {
+        "rate": "2X",
+        "category": "Dining, gas, grocery"
+      },
+      {
+        "rate": "1X",
+        "category": "All other purchases"
+      }
+    ]
+  },
+  {
+    "name": "Bank of America® Premium Rewards® Credit Card",
+    "slug": "premium-rewards-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$95",
+    "interest_rate": "19.49% - 27.49% variable",
+    "welcome_bonus": "Earn 2 points for every $1 spent on travel & dining purchase",
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Travel Insurance protections to assist with trip delays, cancellations and interruptions, baggage delays, lost luggage a",
+      "Purchase protections Shop with confidence, with excellent purchase protections like Warranty Manager Service, Return Pro",
+      "trip delays, cancellations and interruptions, baggage delays, lost luggage and emergency evacuation and transportation",
+      "baggage fees, in-flight services, and airline lounge fees - automatically applied to your card statement Get up to $100",
+      "Roadside Dispatch Program, plus added protection with Auto Rental Collision Damage Waiver",
+      "Concierge Service The Visa Signature® concierge service gives you access to concierges who can help with travel planning",
+      "Global Entry application fees, every four years Unlock premium value for your everyday spend Earn unlimited 2 points for",
+      "TSA PreCheck® or Global Entry application fees, every four years Unlock premium value for your everyday spend Earn unlim",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "Auto Rental Collision Damage Waiver",
+      "emergency evacuation and transportation"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "Travel and dining"
+      },
+      {
+        "rate": "1.5X",
+        "category": "All other purchases"
+      }
+    ]
+  },
+  {
+    "name": "Bank of America® Premium Rewards® Elite Credit Card",
+    "slug": "premium-rewards-elite-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/premium-rewards-elite-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$550",
+    "interest_rate": "19.49% - 27.49% variable",
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Travel Insurance protections to assist with trip delays, cancellations and interruptions, baggage delay, lost luggage re",
+      "trip delays, cancellations and interruptions, baggage delay, lost luggage reimbursement, roadside assistance, and emerge",
+      "baggage fees, airline lounge fees and in-flight services Receive up to $150 annually for lifestyle conveniences includin",
+      "roadside assistance, and emergency evacuation and transportation",
+      "Concierge to book your travel, dinner reservations, event tickets and more Earn even more rewards Bank of America Prefer",
+      "Global Entry, and Lifestyle Statement Credits $550 annual fee and no foreign transaction fees† Review rates and fees† Se",
+      "TSA PreCheck®/Global Entry, and Lifestyle Statement Credits $550 annual fee and no foreign transaction fees† Review rate",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "emergency evacuation and transportation",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "Travel and dining"
+      },
+      {
+        "rate": "1.5X",
+        "category": "All other purchases"
+      }
+    ]
+  },
+  {
+    "name": "BankAmericard® Secured Credit Card from Bank of America",
+    "slug": "secured-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/secured-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ]
+  },
+  {
+    "name": "Free Spirit® World Elite Mastercard® from Bank of America",
+    "slug": "spirit-airlines-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/spirit-airlines-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$79",
+    "interest_rate": "19.49% - 27.49% variable",
+    "welcome_bonus": "earn 3 points per $1 spent on eligible Spirit purchase",
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ],
+    "earn_rates": [
+      {
+        "rate": "3X miles",
+        "category": "Spirit Airlines purchases"
+      },
+      {
+        "rate": "2X miles",
+        "category": "Dining"
+      },
+      {
+        "rate": "1X miles",
+        "category": "All other purchases"
+      }
+    ]
+  },
+  {
+    "name": "Bank of America® Customized Cash Rewards Credit Card for Students",
+    "slug": "student-cash-back-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/student-cash-back-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "17.49% - 27.49% variable",
+    "welcome_bonus": "$200 cash rewards bonus offer",
+    "earn_rates": [
+      {
+        "rate": "6%",
+        "category": "the category of your choice for the first year"
+      },
+      {
+        "rate": "2%",
+        "category": "grocery stores and wholesale clubs Unlimited"
+      },
+      {
+        "rate": "1%",
+        "category": "all other purchases"
+      },
+      {
+        "rate": "2%",
+        "category": "the first $2,500 in combined purchases each quarter in the choice category, and at grocery stores an"
+      },
+      {
+        "rate": "2%",
+        "category": "these purchases up to the quarterly maximum"
+      },
+      {
+        "rate": "6%",
+        "category": "– for the first year: gas and EV charging stations; online shopping, including cable, internet, phon"
+      },
+      {
+        "rate": "3%",
+        "category": "purchases in your choice category"
+      }
+    ],
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ]
+  },
+  {
+    "name": "Bank of America® Travel Rewards Credit Card for Students",
+    "slug": "student-rewards-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/student-rewards-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "17.49% - 27.49% variable",
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "baggage fees, and also at restaurants – including takeout Establish good credit habits Easily manage your bank accounts",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ],
+    "earn_rates": [
+      {
+        "rate": "1.5X",
+        "category": "All purchases"
+      }
+    ]
+  },
+  {
+    "name": "Susan G. Komen® Customized Cash Rewards Credit Card",
+    "slug": "susan-komen-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/susan-komen-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "17.49% - 27.49% variable",
+    "welcome_bonus": "$200 online cash rewards bonus offer",
+    "earn_rates": [
+      {
+        "rate": "6%",
+        "category": "the category of your choice for the first year"
+      },
+      {
+        "rate": "2%",
+        "category": "grocery stores and wholesale clubs Unlimited"
+      },
+      {
+        "rate": "1%",
+        "category": "all other purchases"
+      },
+      {
+        "rate": "2%",
+        "category": "the first $2,500 in combined purchases each quarter in the choice category, and at grocery stores an"
+      },
+      {
+        "rate": "2%",
+        "category": "these purchases up to the quarterly maximum"
+      },
+      {
+        "rate": "6%",
+        "category": "- for the first year: gas and EV charging stations; online shopping, including cable, internet, phon"
+      },
+      {
+        "rate": "3%",
+        "category": "purchases in your choice category"
+      },
+      {
+        "rate": "6%",
+        "category": "– for the first year: gas and EV charging stations; online shopping, including cable, internet, phon"
+      }
+    ],
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ]
+  },
+  {
+    "name": "Bank of America® Travel Rewards Credit Card",
+    "slug": "travel-rewards-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/travel-rewards-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "17.49% - 27.49% variable",
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "baggage fees, and also at restaurants – including takeout",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ],
+    "earn_rates": [
+      {
+        "rate": "1.5X",
+        "category": "All purchases"
+      }
+    ]
+  },
+  {
+    "name": "Bank of America® Secured Travel Rewards Credit Card",
+    "slug": "travel-rewards-secured-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/travel-rewards-secured-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "baggage fees, and also at restaurants – including takeout",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ],
+    "earn_rates": [
+      {
+        "rate": "1.5X",
+        "category": "All purchases"
+      }
+    ]
+  },
+  {
+    "name": "Bank of America® Unlimited Cash Rewards Credit Card",
+    "slug": "unlimited-cash-back-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/unlimited-cash-back-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "17.49% - 27.49% variable",
+    "welcome_bonus": "$200 online cash rewards bonus offer",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "all purchases for the first year from account opening,"
+      },
+      {
+        "rate": "2%",
+        "category": "purchases for the first year"
+      },
+      {
+        "rate": "5%",
+        "category": "all purchases"
+      },
+      {
+        "rate": "5%",
+        "category": "all purchases No limit to the amount of cash back you can"
+      },
+      {
+        "rate": "5%",
+        "category": "all purchases Slider - Decrease value by 100 dollars - $0$100$200$300$400$500$600$700$800$900$1,000$"
+      }
+    ],
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ]
+  },
+  {
+    "name": "Bank of America® Unlimited Cash Rewards Secured Credit Card",
+    "slug": "unlimited-cash-back-secured-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/unlimited-cash-back-secured-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "$200 online cash rewards bonus offer",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "all purchases,"
+      },
+      {
+        "rate": "2%",
+        "category": "purchases for the first year No annual fee† Review rates and fees† Apply Now for Bank of America® Un"
+      },
+      {
+        "rate": "5%",
+        "category": "all purchases"
+      },
+      {
+        "rate": "5%",
+        "category": "all purchases No limit to the amount of cash back you can"
+      }
+    ],
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ]
+  },
+  {
+    "name": "Bank of America® Unlimited Cash Rewards Credit Card for Students",
+    "slug": "unlimited-cash-back-student-credit-card",
+    "url": "https://www.bankofamerica.com/credit-cards/products/unlimited-cash-back-student-credit-card/",
+    "issuer": "Bank of America",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "17.49% - 27.49% variable",
+    "welcome_bonus": "$200 online cash rewards bonus offer",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "purchases for the first year from account opening"
+      },
+      {
+        "rate": "5%",
+        "category": "all purchases No limit to the amount of cash back you can"
+      },
+      {
+        "rate": "1.5%",
+        "category": "all purchases"
+      }
+    ],
+    "benefits": [
+      "No Foreign Transaction Fee Credit CardsPreferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balanc",
+      "Preferred Rewards Credit CardsCredit Cards with No Annual FeeLow Intro APR Balance Transfer Credit CardsLow Intro Intere",
+      "fraud if abnormal patterns are detected and let you know if we suspect fraudulent activity"
+    ]
+  }
+]
