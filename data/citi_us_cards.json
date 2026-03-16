@@ -1,0 +1,759 @@
+[
+  {
+    "name": "Citi Double Cash® Credit Card",
+    "slug": "citi-double-cash",
+    "url": "https://www.citi.com/credit-cards/citi-double-cash-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "earn 1 ThankYou ® Point per $1 spent on purchase",
+    "earn_rates": [
+      {
+        "rate": "1%",
+        "category": "when you buy,"
+      },
+      {
+        "rate": "3%",
+        "category": "hotels, car rentals, and attractions booked through the Citi Travel ® portal"
+      },
+      {
+        "rate": "2%",
+        "category": "by"
+      },
+      {
+        "rate": "1%",
+        "category": "purchases,"
+      },
+      {
+        "rate": "1%",
+        "category": "as they pay for those purchases"
+      },
+      {
+        "rate": "5%",
+        "category": "your top eligible spend category up to $500 spent each billing cycle and"
+      },
+      {
+        "rate": "2%",
+        "category": "purchases with"
+      },
+      {
+        "rate": "1%",
+        "category": "when you make a purchase and an additional"
+      }
+    ],
+    "benefits": [
+      "Extended warranty Citi® Merchant Offers Citi Entertainment® Citi Entertainment® is an entertainment access program avail",
+      "Citi Entertainment® Citi Entertainment® is an entertainment access program available to eligible Citi® credit card and C",
+      "Citi Flex Plans subject to an APR, the variable APR is % - %, based on creditworthiness"
+    ]
+  },
+  {
+    "name": "Citi Custom Cash® Card",
+    "slug": "citi-custom-cash",
+    "url": "https://www.citi.com/credit-cards/citi-custom-cash-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "earn 5 points per $1 on purchase",
+    "earn_rates": [
+      {
+        "rate": "5%",
+        "category": "your top eligible spend category each billing cycle up to $500 spent"
+      },
+      {
+        "rate": "1%",
+        "category": "thereafter on all other purchases"
+      },
+      {
+        "rate": "5%",
+        "category": "purchases in your top eligible spend category each billing cycle, up to the first $500 spent,"
+      },
+      {
+        "rate": "1%",
+        "category": "thereafter"
+      },
+      {
+        "rate": "1%",
+        "category": "all other purchases"
+      },
+      {
+        "rate": "4%",
+        "category": "hotels, car rentals, and attractions booked on the Citi Travel ℠ site"
+      },
+      {
+        "rate": "5%",
+        "category": "purchases in the top eligible spend category each billing cycle, up to the first $500 spent"
+      },
+      {
+        "rate": "5%",
+        "category": "(up to the first $500 spent) for the Citi Custom Cash® Card? The eligible categories are: Restaurant"
+      }
+    ],
+    "benefits": [
+      "Extended warranty Citi® Merchant Offers Mastercard® ID Theft Protection The ID Theft Protection program offered by Maste",
+      "Citi Entertainment® Citi Entertainment® is an entertainment access program available to eligible Citi® credit card and C",
+      "Citi Flex Plans subject to an APR, the variable APR is % - %, based on creditworthiness"
+    ]
+  },
+  {
+    "name": "Citi Strata Premier® - Travel Credit Card",
+    "slug": "citi-strata-premier",
+    "url": "https://www.citi.com/credit-cards/citi-strata-premier-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$95",
+    "earn_rates": [
+      {
+        "rate": "10X",
+        "category": "10 points per dollar spent on Hotels, Car Rentals and Attractions booked on cititravel"
+      },
+      {
+        "rate": "3X",
+        "category": "3 points per dollar spent on Air Travel and Other Hotel Purchases 2"
+      },
+      {
+        "rate": "1X",
+        "category": "1 point per dollar spent on All Other Purchases 2 $100 Annual Hotel Benefit Once per calendar year, "
+      },
+      {
+        "rate": "10X",
+        "category": "Hotels, Car Rentals, and Attractions booked through cititravel"
+      },
+      {
+        "rate": "3X",
+        "category": "Air Travel and Other Hotel Purchases 2"
+      },
+      {
+        "rate": "3X",
+        "category": "Restaurants 2"
+      },
+      {
+        "rate": "3X",
+        "category": "Supermarkets 2"
+      },
+      {
+        "rate": "3X",
+        "category": "Gas and EV Charging Stations 2"
+      }
+    ],
+    "benefits": [
+      "No foreign transaction fees 1 Tap your card with contactless pay Shop safely with a contactless, chip-enabled card",
+      "Trip Cancellation and Trip Interruption (Common Carrier) Trip Delay Lost or Damaged Luggage MasterRental Coverage (Car R",
+      "Citi Entertainment ® Citi Entertainment ® is an entertainment access program available to eligible Citi ® credit card an",
+      "Citi Flex Plans subject to an APR, the variable APR is 20"
+    ]
+  },
+  {
+    "name": "Citi Strata Elite℠ - Travel Credit Card",
+    "slug": "citi-strata-elite",
+    "url": "https://www.citi.com/credit-cards/citi-strata-elite-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$595",
+    "earn_rates": [
+      {
+        "rate": "12X",
+        "category": "12 points per dollar spent on Hotels, Car Rentals, and Attractions booked on cititravel"
+      },
+      {
+        "rate": "6X",
+        "category": "6 points per dollar spent on Air Travel booked on cititravel"
+      },
+      {
+        "rate": "3X",
+        "category": "3 points per dollar spent at Restaurants any other time 2 1"
+      },
+      {
+        "rate": "12X",
+        "category": "Hotels, Car Rentals, and Attractions booked through cititravel"
+      },
+      {
+        "rate": "6X",
+        "category": "Air Travel booked through cititravel"
+      },
+      {
+        "rate": "6X",
+        "category": "Restaurants on Citi Nights ℠ purchases (Friday and Saturday from 6 p"
+      },
+      {
+        "rate": "3X",
+        "category": "Restaurants at any other time 2 1"
+      },
+      {
+        "rate": "5X",
+        "category": "All Other Purchases 2 Enjoy an Annual Hotel Benefit, complimentary Priority Pass Select membership, "
+      }
+    ],
+    "benefits": [
+      "No foreign transaction fees 1 Security and protection Citi ® Quick Lock Misplaced your card? Use Citi ® Quick Lock in th",
+      "travel insurances, including Trip Delay Protection, Enhanced Trip Cancellation and Trip Interruption Protection, Lost or",
+      "Extended Warranty and Purchase Assurance Plus",
+      "Trip Cancellation and Trip Interruption Protection, Lost or Damaged Luggage, MasterRental Coverage (car rental insurance",
+      "Citi Entertainment ® The Reserve by Citi Travel ® Citigold ® Relationship Credit Qualifying Citigold clients receive a $",
+      "Global Entry ® or TSA PreCheck ® Application Fee Credit Receive a statement credit, up to $120 every four years, as reim",
+      "TSA PreCheck ® Application Fee Credit Receive a statement credit, up to $120 every four years, as reimbursement for your",
+      "Admirals Club ® Lounge Access Passes Every calendar year, receive 4 Admirals Club® Citi Strata Elite ℠ Passes for access",
+      "Priority Pass ™ Select membership Enjoy complimentary access to 1,500+ airport lounges worldwide",
+      "Citi Flex Plans subject to an APR, the variable APR is % - %, based on creditworthiness"
+    ]
+  },
+  {
+    "name": "Citi Strata℠ Card",
+    "slug": "citi-strata",
+    "url": "https://www.citi.com/credit-cards/citi-strata-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "5 points per dollar spent on Hotels, Car Rentals, and Attractions booked on cititravel"
+      },
+      {
+        "rate": "3X",
+        "category": "3 points per dollar spent at Supermarkets 2"
+      },
+      {
+        "rate": "2X",
+        "category": "2 points per dollar spent at Restaurants 2"
+      },
+      {
+        "rate": "1X",
+        "category": "1 point per dollar spent on All Other Purchases 2"
+      },
+      {
+        "rate": "3X",
+        "category": "an eligible Self-Select Category of your choice Fitness Clubs, Select Streaming Services, Live Enter"
+      },
+      {
+        "rate": "5X",
+        "category": "Hotels, Car Rentals, and Attractions booked through cititravel"
+      },
+      {
+        "rate": "3X",
+        "category": "Supermarkets 2"
+      },
+      {
+        "rate": "3X",
+        "category": "Select Transit and at Gas &amp; EV Charging Stations 2"
+      }
+    ],
+    "benefits": [
+      "Citi Entertainment ® Transfer your ThankYou ® Points Mastercard ID Theft Protection Automatic account alerts Stay update",
+      "Citi Flex Plans subject to an APR, the variable APR is % - %, based on creditworthiness"
+    ]
+  },
+  {
+    "name": "Citi® Diamond Preferred® Card - low intro APR Credit Card",
+    "slug": "citi-diamond-preferred",
+    "url": "https://www.citi.com/credit-cards/citi-diamond-preferred-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "benefits": [
+      "Citi Entertainment ® Citi Entertainment takes the once out of once in a lifetime",
+      "Citi Flex Plan is % to %, based on your creditworthiness"
+    ]
+  },
+  {
+    "name": "Citi Simplicity® Credit Card with introductory APR",
+    "slug": "citi-simplicity",
+    "url": "https://www.citi.com/credit-cards/citi-simplicity-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "benefits": [
+      "Citi Flex Plans subject to an APR, the variable APR is % - %, based on creditworthiness"
+    ]
+  },
+  {
+    "name": "Citi® Secured Mastercard®",
+    "slug": "citi-secured",
+    "url": "https://www.citi.com/credit-cards/citi-secured-credit-card",
+    "issuer": "Citi",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "benefits": [
+      "Citi Flex Plan is %"
+    ],
+    "earn_rates": [
+      {
+        "rate": "1%",
+        "category": "All purchases"
+      }
+    ]
+  },
+  {
+    "name": "Citi® / AAdvantage® Platinum Select® World Elite Mastercard®",
+    "slug": "citi-aadvantage-platinum",
+    "url": "https://www.citi.com/credit-cards/citi-aadvantage-platinum-select-world-elite-mastercard",
+    "issuer": "Citi",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$99",
+    "benefits": [
+      "No foreign transaction fees 1 Shop like a local wherever your travels take you",
+      "Citi Entertainment® Citi Entertainment® is an entertainment access program available to eligible Citi® credit card and C",
+      "Admirals Club ® membership Citi ® / AAdvantage ® Executive card For business Citi ® / AAdvantage Business ™ card No annu",
+      "priority",
+      "free checked bag on domestic American Airlines itineraries for you and up to 4 travel companions on the same reservation",
+      "Citi Flex Pay is a convenient way to split eligible purchases of $75 or more into fixed monthly payments and pay over ti"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X miles",
+        "category": "American Airlines purchases"
+      },
+      {
+        "rate": "2X miles",
+        "category": "Restaurants and gas stations"
+      },
+      {
+        "rate": "1X miles",
+        "category": "All other purchases"
+      }
+    ]
+  },
+  {
+    "name": "Citi® / AAdvantage® Executive World Elite Mastercard®",
+    "slug": "citi-aadvantage-executive",
+    "url": "https://www.citi.com/credit-cards/citi-aadvantage-executive-world-elite-mastercard",
+    "issuer": "Citi",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$595",
+    "benefits": [
+      "No Foreign Transaction Fees 1 Loyalty Points bonuses Earn a 10,000 Loyalty Point bonus after reaching 50,000 Loyalty Poi",
+      "travel insurances, including Trip Delay Protection, Common Carrier Trip Cancellation and Interruption Protection, Lost o",
+      "Trip Cancellation and Interruption Protection, Lost or Damaged Luggage and MasterRental Coverage (car rental insurance)",
+      "Baggage Protection 2 What additional benefits does the Citi ® / AAdvantage ® Executive Card offer? Up to $120 back on el",
+      "Citi Entertainment® Citi Entertainment® is an entertainment access program available to eligible Citi® credit card and C",
+      "Global Entry ® or TSA PreCheck ® Application Fee Credit Receive a statement credit, up to $120 every 4 years, as reimbur",
+      "TSA PreCheck ® Application Fee Credit Receive a statement credit, up to $120 every 4 years, as reimbursement for your ap",
+      "Admirals Club ® membership Earn AAdvantage ® bonus miles after $ in purchases in the first months 2 Annual Fee 1 Unlock",
+      "priority",
+      "Citi Flex Plans subject to an APR: % - %, based on creditworthiness"
+    ],
+    "earn_rates": [
+      {
+        "rate": "10,000 miles",
+        "category": "Loyalty bonus after $40K spend"
+      },
+      {
+        "rate": "2X miles",
+        "category": "American Airlines purchases"
+      },
+      {
+        "rate": "1X miles",
+        "category": "All other purchases"
+      }
+    ]
+  },
+  {
+    "name": "Citi® / AAdvantage® Globe™ Mastercard®",
+    "slug": "citi-aadvantage-globe",
+    "url": "https://www.citi.com/credit-cards/citi-aadvantage-globe-mastercard",
+    "issuer": "Citi",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$0 intro, then $150",
+    "benefits": [
+      "No foreign transaction fees 1 Flight Streak™ bonus Earn a 5,000 Loyalty Point bonus after every 4 qualifying American Ai",
+      "Extended Warranty and Purchase Assurance Plus",
+      "Trip Cancellation Interruption, Lost or Damaged Luggage, MasterRental® Coverage (Car Rental), Trip Delay, Extended Warra",
+      "Citi Entertainment® Citi Entertainment® is an entertainment access program available to eligible Citi® credit card and C",
+      "Global Entry® or TSA PreCheck® application fee credit Receive a statement credit, up to $120 every 4 years, as reimburse",
+      "TSA PreCheck® application fee credit Receive a statement credit, up to $120 every 4 years, as reimbursement for your app",
+      "Admirals Club® Globe™ Passes (over $300 in value) Every calendar year, receive 4 Admirals Club® Globe™ Passes and enjoy",
+      "priority",
+      "Companion Certificate Earn an American Airlines Companion Certificate starting in your second cardmembership year as lon",
+      "Citi Flex Plans subject to an APR: % - %, based on creditworthiness"
+    ],
+    "earn_rates": [
+      {
+        "rate": "3X miles",
+        "category": "American Airlines purchases"
+      },
+      {
+        "rate": "2X miles",
+        "category": "Dining and grocery"
+      },
+      {
+        "rate": "1X miles",
+        "category": "All other purchases"
+      }
+    ]
+  },
+  {
+    "name": "American Airlines AAdvantage® MileUp℠ Card",
+    "slug": "aadvantage-mile-up",
+    "url": "https://www.citi.com/credit-cards/aadvantage-mile-up-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "benefits": [
+      "Citi Entertainment® Citi Entertainment® is an entertainment access program available to eligible Citi® credit card and C",
+      "Admirals Club ® membership Citi ® / AAdvantage ® Executive card FAQs How many AAdvantage ® miles do you earn when you pu",
+      "priority",
+      "Citi Flex Plans subject to an APR, the variable APR is % - %, based on creditworthiness"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X miles",
+        "category": "American Airlines purchases and dining"
+      },
+      {
+        "rate": "1X miles",
+        "category": "All other purchases"
+      }
+    ]
+  },
+  {
+    "name": "Costco Anywhere Visa Card by Citi — Citi.com",
+    "slug": "citi-costco-visa",
+    "url": "https://www.citi.com/credit-cards/citi-costco-anywhere-visa-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "5%",
+        "category": "gas at Costco and"
+      },
+      {
+        "rate": "4%",
+        "category": "other eligible gas and electric vehicle (EV) charging with the Costco Anywhere Visa ®"
+      },
+      {
+        "rate": "5%",
+        "category": "gas purchased at Costco warehouse locations worldwide"
+      },
+      {
+        "rate": "3%",
+        "category": "restaurant purchases (including cafes, bars, lounges, and fast food restaurants) and eligible travel"
+      },
+      {
+        "rate": "1%",
+        "category": "is"
+      },
+      {
+        "rate": "2%",
+        "category": "all other purchases from Costco and Costco"
+      }
+    ],
+    "benefits": [
+      "No foreign transaction fees 1 Travel and emergency assistance** Worldwide car rental insurance* Travel accident insuranc",
+      "purchase protection* No foreign transaction fees 1 Travel and emergency assistance** Worldwide car rental insurance* Tra",
+      "Citi Entertainment ® Citi Entertainment takes the once out of once in a lifetime",
+      "Citi Flex Plans subject to an APR: % - % variable APR, based on your creditworthiness"
+    ]
+  },
+  {
+    "name": "Costco Anywhere Visa Business Credit Card - Citi.com",
+    "slug": "citi-costco-biz",
+    "url": "https://www.citi.com/credit-cards/citi-costco-anywhere-visa-business-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "5%",
+        "category": "gas at Costco and"
+      },
+      {
+        "rate": "4%",
+        "category": "other eligible gas and electric vehicle (EV) charging with the Costco Anywhere Visa ®"
+      },
+      {
+        "rate": "5%",
+        "category": "gas purchased at Costco warehouse locations worldwide"
+      },
+      {
+        "rate": "3%",
+        "category": "restaurant purchases (including cafes, bars, lounges, and fast food restaurants) and eligible travel"
+      },
+      {
+        "rate": "1%",
+        "category": "is"
+      },
+      {
+        "rate": "2%",
+        "category": "all other purchases from Costco and Costco"
+      }
+    ],
+    "benefits": [
+      "No foreign transaction fees 1 Lost baggage protection* Travel and emergency assistance** Worldwide car rental insurance*",
+      "travel insurance? Yes",
+      "purchase protection* No foreign transaction fees 1 Lost baggage protection* Travel and emergency assistance** Worldwide",
+      "baggage protection* Travel and emergency assistance** Worldwide car rental insurance* Travel accident insurance* Roadsid",
+      "Citi Entertainment ® Citi Entertainment takes the once out of once in a lifetime",
+      "Citi Flex Plans subject to an APR: % variable APR, based on your creditworthiness"
+    ]
+  },
+  {
+    "name": "Citi® / AAdvantage Business™ World Elite Mastercard®",
+    "slug": "citi-aadvantage-biz",
+    "url": "https://www.citi.com/credit-cards/citi-aadvantage-business-credit-card",
+    "issuer": "Citi",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "$99",
+    "benefits": [
+      "No foreign transaction fees 1 Keep your business expenses and budget on track when you shop overseas",
+      "Citi Entertainment ® Citi Entertainment® is an entertainment access program available to eligible Citi® credit card and",
+      "Admirals Club ® membership Citi ® / AAdvantage ® Executive card No annual fee AAdvantage ® MileUp ® card FAQs Who earns",
+      "priority",
+      "Companion Certificate Earn an American Airlines Companion Certificate for qualifying domestic travel after you spend $30"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X miles",
+        "category": "American Airlines, telecoms, car rentals, gas"
+      },
+      {
+        "rate": "1X miles",
+        "category": "All other purchases"
+      }
+    ]
+  },
+  {
+    "name": "AT&amp;T Points Plus® - Rewards Credit Card",
+    "slug": "citi-att-pointsplus",
+    "url": "https://www.citi.com/credit-cards/citi-att-pointsplus-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "Earn 3 ThankYou ® Points for every $1 spent at gas and EV charging stations . 2 Earn 2 ThankYou ® Points for every $1 spent at grocery stores , including grocery delivery services. 2 Earn 1 ThankYou ® Point for every $1 spent on all other purchase",
+    "earn_rates": [
+      {
+        "rate": "3X",
+        "category": "Gas and EV Charging Stations"
+      },
+      {
+        "rate": "2X",
+        "category": "Grocery Stores"
+      },
+      {
+        "rate": "1X",
+        "category": "All Other Purchases"
+      }
+    ],
+    "benefits": [
+      "Citi Entertainment ® Let Citi Entertainment bring the fun to you",
+      "Citi Flex Plans subject to an APR"
+    ]
+  },
+  {
+    "name": "My Best Buy® Credit Cards",
+    "slug": "citi-best-buy",
+    "url": "https://www.citi.com/credit-cards/citi-best-buy-credit-cards",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "earn_rates": [
+      {
+        "rate": "10%",
+        "category": "2 in rewards or flexible financing"
+      },
+      {
+        "rate": "10%",
+        "category": "in rewards on your first day of purchases at Best Buy ® or choose flexible financing when you are ap"
+      },
+      {
+        "rate": "1%",
+        "category": "2 in rewards My Best Buy ® Visa ® Cardmembers"
+      },
+      {
+        "rate": "3%",
+        "category": "2 in rewards on gas purchases"
+      },
+      {
+        "rate": "5%",
+        "category": "2 in rewards (2"
+      },
+      {
+        "rate": "3%",
+        "category": "in rewards), 1 point 2 per $1 spent at restaurants, bars and grocery stores ("
+      },
+      {
+        "rate": "2%",
+        "category": "in rewards) and 1 point 2 per $2 spent ("
+      },
+      {
+        "rate": "1%",
+        "category": "in rewards) on other purchases outside Best Buy ® or Pacific Kitchen &amp; Home ®"
+      }
+    ],
+    "benefits": [
+      "No foreign transaction fees * 2 Additional Information + Apply Now COMPARE CARDS Cards Comparision My Best Buy ® Credit"
+    ],
+    "fee": "No Annual Fee"
+  },
+  {
+    "name": "The Home Depot® Consumer Credit Card",
+    "slug": "citi-home-depot",
+    "url": "https://www.citi.com/credit-cards/citi-home-depot-consumer-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "4X",
+        "category": "longer to make returns Cardmembers get 1 year to make returns, not just 3 months"
+      },
+      {
+        "rate": "4X",
+        "category": "faster 2 when you Join Pro Xtra, Register &amp; Use your Card"
+      }
+    ]
+  },
+  {
+    "name": "L.L.Bean® Mastercard®",
+    "slug": "citi-llbean",
+    "url": "https://www.citi.com/credit-cards/citi-llbean-credit-card",
+    "issuer": "Citi",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee"
+  },
+  {
+    "name": "Macy's Credit Cards",
+    "slug": "citi-macys",
+    "url": "https://www.citi.com/credit-cards/citi-macys-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee"
+  },
+  {
+    "name": "TSC Credit Cards",
+    "slug": "citi-tractor-supply",
+    "url": "https://www.citi.com/credit-cards/citi-tractor-supply-credit-cards",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "earn 5 points per dollar on eligible Tractor Supply purchase"
+  },
+  {
+    "name": "Apply for a Dillard’s Credit Card",
+    "slug": "dillards",
+    "url": "https://www.citi.com/credit-cards/dillards-credit-cards",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "Earn 2 points 4 for qualifying purchase"
+  },
+  {
+    "name": "Exxon Mobil Smart Card+™ Credit Card",
+    "slug": "exxon-mobil",
+    "url": "https://www.citi.com/credit-cards/exxon-mobil-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "5%",
+        "category": "2 on drinks, snacks, car washes and more"
+      },
+      {
+        "rate": "5%",
+        "category": "2 on convenience store purchases and car washes as a statement credit on the first $1,200 in non-fue"
+      },
+      {
+        "rate": "5%",
+        "category": "2 via statement credit on your first $1,200 of non-fuel purchases per year, including drinks, snacks"
+      }
+    ]
+  },
+  {
+    "name": "Pro Xtra Credit Card",
+    "slug": "home-depot-pro",
+    "url": "https://www.citi.com/credit-cards/home-depot-pro-xtra-credit-card",
+    "issuer": "Citi",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "4X",
+        "category": "Faster 2 when you join Pro Xtra, register and use your card"
+      },
+      {
+        "rate": "4X",
+        "category": "longer to make returns"
+      },
+      {
+        "rate": "4X",
+        "category": "rewards on purchases made with their Pro Xtra Credit Card, which can be redeemed for eligible purcha"
+      },
+      {
+        "rate": "4X",
+        "category": "faster when you join Pro Xtra, register and use your Pro Xtra Credit Card"
+      }
+    ]
+  }
+]
