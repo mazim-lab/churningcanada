@@ -4844,7 +4844,7 @@
     "issuer": "Rogers",
     "network": "Mastercard",
     "card_type": "rewards",
-    "annual_fee": 0.0,
+    "annual_fee": 0,
     "first_year_fee": null,
     "welcome_bonus": "",
     "welcome_bonus_value_cad": null,
@@ -4853,7 +4853,9 @@
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "value": "3%"
+    },
     "rewards_program": null,
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
@@ -4866,14 +4868,16 @@
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
-    "sources": [],
-    "last_updated": "2026-02-23",
+    "sources": [
+      "rogersbank_website"
+    ],
+    "last_updated": "2026-03-16",
     "card_image_url": null,
     "pot_first_year_value": null,
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": null,
+    "apply_url": "https://www.rogersbank.com/en/rogers_platinum_mastercard_details",
     "is_business": false
   },
   {
@@ -4882,7 +4886,7 @@
     "issuer": "Rogers",
     "network": "Mastercard",
     "card_type": "rewards",
-    "annual_fee": 0.0,
+    "annual_fee": 495.0,
     "first_year_fee": null,
     "welcome_bonus": "",
     "welcome_bonus_value_cad": null,
@@ -4891,31 +4895,30 @@
     "purchase_interest_rate": 20.99,
     "cash_advance_rate": null,
     "balance_transfer_rate": null,
-    "earn_rates": {},
+    "earn_rates": {
+      "1 with no FX fees 2 and unlock legendary experiences": "2%",
+      "1 ($1,800 value) No FX fees 2 ($180 value) Get 10 Roam Like Home days 4 ($180 value) Rogers Entertai": "2%"
+    },
     "rewards_program": null,
     "foreign_transaction_fee": null,
     "foreign_transaction_fee_pct": null,
     "key_perks": [
-      "1.5% on non-USD with Rogers service",
-      "3% on USD purchases",
-      "Extended warranty",
-      "Rental car insurance",
-      "Emergency medical",
-      "Trip interruption",
-      "Lounge access ($32 USD)"
+      "World Legend Mastercard Rogers Red World Legend TM Mastercard Earn 2% cash back globally 1 with no FX fees 2 and unlock legendary experiences"
     ],
     "insurance": {},
     "minimum_income": null,
     "minimum_credit_score": null,
     "country": "CA",
-    "sources": [],
-    "last_updated": "2026-02-23",
+    "sources": [
+      "rogersbank_website"
+    ],
+    "last_updated": "2026-03-16",
     "card_image_url": null,
     "pot_first_year_value": null,
     "pot_rewards_valuation_cpp": null,
     "pot_url": null,
     "historical_offers": [],
-    "apply_url": null,
+    "apply_url": "https://www.rogersbank.com/en/rogers_red_worldlegend_mastercard_details",
     "is_business": false
   },
   {

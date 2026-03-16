@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Rogers Red World Legend Mastercard",
+    "slug": "rogers-red-world-legend",
+    "url": "https://www.rogersbank.com/en/rogers_red_worldlegend_mastercard_details",
+    "issuer": "Rogers",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$495",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "1 with no FX fees 2 and unlock legendary experiences"
+      },
+      {
+        "rate": "2%",
+        "category": "1 ($1,800 value) No FX fees 2 ($180 value) Get 10 Roam Like Home days 4 ($180 value) Rogers Entertai"
+      }
+    ],
+    "benefits": [
+      "World Legend Mastercard Rogers Red World Legend TM Mastercard Earn 2% cash back globally 1 with no FX fees 2 and unlock legendary experiences"
+    ]
+  },
+  {
+    "name": "Rogers Red Mastercard",
+    "slug": "rogers-red-mastercard",
+    "url": "https://www.rogersbank.com/en/rogers_red_mastercard_details",
+    "issuer": "Rogers",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "3%",
+        "category": "value"
+      }
+    ]
+  },
+  {
+    "name": "Rogers Red Mastercard",
+    "slug": "rogers-platinum-mastercard",
+    "url": "https://www.rogersbank.com/en/rogers_platinum_mastercard_details",
+    "issuer": "Rogers",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "3%",
+        "category": "value"
+      }
+    ]
+  }
+]
