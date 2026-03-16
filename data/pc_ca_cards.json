@@ -1,0 +1,156 @@
+[
+  {
+    "name": "PC Mastercard",
+    "slug": "pc-mastercard",
+    "url": "https://www.pcfinancial.ca/en/credit-cards/pc-mastercard/",
+    "issuer": "PC Financial",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "20,000 bonus PC Optimum points",
+    "earn_rates": [
+      {
+        "rate": "1%",
+        "category": "Grocery stores and Shoppers Drug Mart"
+      },
+      {
+        "rate": "At least 1¢/litre",
+        "category": "Esso and Mobil stations"
+      },
+      {
+        "rate": "0.5%",
+        "category": "Everywhere else"
+      }
+    ],
+    "benefits": []
+  },
+  {
+    "name": "PC World Mastercard",
+    "slug": "pc-world-mastercard",
+    "url": "https://www.pcfinancial.ca/en/credit-cards/world-mastercard/",
+    "issuer": "PC Financial",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "20,000 bonus PC Optimum points",
+    "interest_rate": "20.97%",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "Grocery stores"
+      },
+      {
+        "rate": "At least 3¢/litre",
+        "category": "Esso and Mobil stations"
+      },
+      {
+        "rate": "3.5%",
+        "category": "Shoppers Drug Mart"
+      },
+      {
+        "rate": "2%",
+        "category": "Clothing (Joe Fresh)"
+      },
+      {
+        "rate": "1%",
+        "category": "Everywhere else"
+      }
+    ],
+    "benefits": [
+      "Purchase Assurance",
+      "Extended Warranty",
+      "Car Rental CDW",
+      "Identity Theft Assistance",
+      "Mobile Device Insurance"
+    ]
+  },
+  {
+    "name": "PC World Elite Mastercard",
+    "slug": "pc-world-elite-mastercard",
+    "url": "https://www.pcfinancial.ca/en/credit-cards/world-elite/",
+    "issuer": "PC Financial",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "20,000 bonus PC Optimum points (equivalent to $20)",
+    "interest_rate": "21.99%",
+    "earn_rates": [
+      {
+        "rate": "3%",
+        "category": "Grocery stores"
+      },
+      {
+        "rate": "At least 3¢/litre",
+        "category": "Esso and Mobil stations"
+      },
+      {
+        "rate": "4.5%",
+        "category": "Shoppers Drug Mart"
+      },
+      {
+        "rate": "3%",
+        "category": "Clothing (Joe Fresh)"
+      },
+      {
+        "rate": "1%",
+        "category": "Dining, transit, everywhere else"
+      }
+    ],
+    "benefits": [
+      "Purchase Assurance",
+      "Extended Warranty",
+      "Travel Emergency Medical Insurance (up to 10 days)",
+      "Car Rental CDW",
+      "Identity Theft Assistance"
+    ]
+  },
+  {
+    "name": "PC Insiders World Elite Mastercard",
+    "slug": "pc-insiders-world-elite-mastercard",
+    "url": "https://www.pcfinancial.ca/en/credit-cards/insiders/",
+    "issuer": "PC Financial",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$120 (first year waived)",
+    "welcome_bonus": "Up to 200,000 PC Optimum points",
+    "interest_rate": "21.97%",
+    "earn_rates": [
+      {
+        "rate": "4%",
+        "category": "Grocery stores (+2% on pickup orders)"
+      },
+      {
+        "rate": "Up to 7¢/litre",
+        "category": "Esso and Mobil stations"
+      },
+      {
+        "rate": "5%",
+        "category": "Shoppers Drug Mart"
+      },
+      {
+        "rate": "4%",
+        "category": "Clothing (Joe Fresh)"
+      },
+      {
+        "rate": "1%",
+        "category": "Dining, travel, everywhere else"
+      }
+    ],
+    "benefits": [
+      "FREE PC Express Pass ($99.99/yr)",
+      "Purchase Insurance",
+      "Extended Warranty",
+      "Travel Emergency Medical Insurance (up to 10 days)",
+      "Car Rental CDW",
+      "Identity Theft Assistance"
+    ]
+  }
+]
