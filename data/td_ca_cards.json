@@ -1,0 +1,531 @@
+[
+  {
+    "name": "TD Aeroplan Visa Infinite Credit Card",
+    "slug": "td-aeroplan-visa-infinite",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$139",
+    "interest_rate": "21.99%",
+    "welcome_bonus": "Earn a welcome bonus of 10,000 Aeroplan points when you make your first",
+    "benefits": [
+      "Travel Medical Insurance 10 : Up to $2 million of coverage for the first 21 days",
+      "Extended Warranty Protection 20 You automatically have access to Purchase Security and Extended Warranty Protection, covering eligible new items you’ve purchased with your Card, sh",
+      "car rentals",
+      "auto rental)",
+      "Concierge 8 : On-call 24 hours a day, seven days a week, the Visa Infinite Concierge can help with any Cardholder request — big or small, to help you get the most out of life whene",
+      "Mobile Device Insurance 14 Up to $1,000 of coverage in the event of loss, theft, accidental damage, or mechanical breakdown for eligible mobile devices",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Delay Insurance 12 : Up to $500 in coverage per insured person if your flight/trip is delayed for over 4 hours",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "companions 3 Get an annual fee rebate for the first year 1 To receive the first-year annual fee rebate, you must activate your Card and make your first Purchase on the Account with",
+      "Common Carrier Travel Accident Insurance 13 : Up to $500,000 of coverage for covered losses while travelling on a common carrier (for example, a bus, ferry, plane, train or auto re"
+    ],
+    "earn_rates": [
+      {
+        "rate": "1.5X",
+        "category": "eligible gas, electric vehicle charging, grocery and direct through Air Canada® purchases (including Air Canada Vacation"
+      },
+      {
+        "rate": "1X",
+        "category": "all other Purchases made with your Card Earn points twice 6 Earn points twice when you pay with your Card and provide yo"
+      }
+    ]
+  },
+  {
+    "name": "TD Aeroplan Visa Infinite Privilege* Card",
+    "slug": "td-aeroplan-visa-infinite-privilege",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-privilege-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$599",
+    "interest_rate": "21.99%",
+    "welcome_bonus": "Earn a welcome bonus of 20,000 Aeroplan points when you make your first",
+    "benefits": [
+      "Travel Medical Insurance 12 : Up to $5 million of coverage for the first 31 days",
+      "Extended Warranty Protection 22 You automatically have access to Purchase Security and Extended Warranty Protection, covering eligible new items you’ve purchased with your Card, sh",
+      "car rentals",
+      "auto rental)",
+      "Lounge Access 11 : Receive a complimentary membership to the Visa Airport Companion 11 Program hosted by Dragonpass International Ltd",
+      "Maple Leaf Lounges 4 , 5 including complementary access for one guest",
+      "Concierge 10 : On call, 24 hours a day, seven days a week, the Visa Infinite Privilege Concierge can help with any Cardholder request - big or small, to help you get the most from ",
+      "Mobile Device Insurance 16 Up to $1,500 of coverage in the event of loss, theft, accidental damage, or mechanical breakdown for eligible mobile devices",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Delay Insurance 14 : Up to $1,000 in coverage if your flight/trip is delayed more than 4 hours",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "companions 26 , and get unlimited access to Maple Leaf Lounges 4 , 5 including complementary access for one guest",
+      "free checked bags with up to 8 travel companions 26 , and get unlimited access to Maple Leaf Lounges 4 , 5 including complementary access for one guest",
+      "Common Carrier Travel Accident Insurance 15 : Up to $500,000 of coverage for covered losses while travelling on a common carrier (for example, a bus, ferry, plane, train or auto re",
+      "Visa Airport Companion Program"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "eligible purchases made directly with Air Canada® including Air Canada Vacations®"
+      }
+    ]
+  },
+  {
+    "name": "TD Aeroplan Visa Platinum Credit Card",
+    "slug": "td-aeroplan-visa-platinum",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-platinum-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$89",
+    "interest_rate": "21.99%",
+    "welcome_bonus": "Earn a welcome bonus of 10,000 Aeroplan points when you make your first",
+    "earn_rates": [
+      {
+        "rate": "1X",
+        "category": "you spend on eligible gas, electric vehicle charging, grocery and Air Canada® purchases, including Air Canada Vacations®"
+      }
+    ],
+    "benefits": [
+      "Travel Medical Insurance 14 , Trip Cancellation and Trip Interruption Insurance 15",
+      "Extended Warranty Protection 12 : You automatically have access to Purchase Security and Extended Warranty Protection, covering eligible new items you’ve purchased with your card, ",
+      "car rentals",
+      "Auto Rental Collision/Loss Damage Insurance 8 : Coverage for up to 48 consecutive days",
+      "Mobile Device Insurance 7 : Up to $1,000 of coverage in the event of loss, theft, accidental damage or mechanical breakdown for eligible mobile devices",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Delay Insurance 5 : Up to $500 in coverage per insured person if your flight/trip is delayed for over 4 hours",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "Common Carrier Travel Accident Insurance 6 : Up to $500,000 of coverage for covered losses while travelling on a common carrier (for example, a bus, ferry, plane or train)"
+    ]
+  },
+  {
+    "name": "TD Cash Back Visa Infinite* Card",
+    "slug": "td-cash-back-visa-infinite",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "interest_rate": "21.99%",
+    "earn_rates": [
+      {
+        "rate": "10%",
+        "category": "the first 3 months on Bonus Eligible Purchases up to a total spend of $3,500 2 , 19 and receive an Annual Fee rebate for"
+      },
+      {
+        "rate": "3%",
+        "category": "Grocery, Gas &amp; Electric Vehicle Charging, and Public Transit Purchases 3 , #"
+      },
+      {
+        "rate": "3%",
+        "category": "Recurring Bill Payments, and Streaming, Digital Gaming &amp; Media Purchases 3 , #"
+      },
+      {
+        "rate": "1%",
+        "category": "all other Purchases 5 , #"
+      },
+      {
+        "rate": "10%",
+        "category": "eligible Grocery, Gas &amp; Electric Vehicle Charging, Public Transit, Recurring Bill Payments, and Streaming, Digital G"
+      },
+      {
+        "rate": "3%",
+        "category": "Purchases you make on your TD Cash Back Visa Infinite Card (\"Account\") at merchants classified by the Visa payment netwo"
+      }
+    ],
+    "benefits": [
+      "Travel Medical Insurance 7 - Up to $2 million of coverage for the first 10 days",
+      "Extended Warranty Protection 15 - You automatically have access to Purchase Security and Extended Warranty Protection, which includes coverage for most eligible new items you’ve pu",
+      "car rentals at participating Avis and Budget locations",
+      "Auto Rental Collision/Loss Damage Insurance 13 - Use your Canadian TD Credit Card to charge the full cost of a car rental to get the Collision/Loss Damage coverage at no additional",
+      "Concierge service 8 available 24/7",
+      "Mobile Device Insurance 17",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "Roadside Assistance with Free Deluxe TD Auto Club membership 18"
+    ],
+    "fee": "$139"
+  },
+  {
+    "name": "Apply for a TD Cash Back Visa* Card",
+    "slug": "td-cash-back-visa",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "21.99%",
+    "earn_rates": [
+      {
+        "rate": "1%",
+        "category": "Grocery, Gas &amp; Electric Vehicle Charging, Public Transit, Recurring Bill Payments, and Streaming, Digital Gaming &am"
+      },
+      {
+        "rate": "0.5%",
+        "category": "all other Purchases 4 , 11"
+      },
+      {
+        "rate": "1%",
+        "category": "Recurring Bill Payments, and Streaming, Digital Gaming &amp; Media Purchases 2 , 11"
+      },
+      {
+        "rate": "1%",
+        "category": "Purchases you make on your TD Cash Back Visa Card (\"Account\") at merchants classified by the Visa payment network's Merc"
+      }
+    ],
+    "benefits": [
+      "Travel Medical Insurance 14 , Trip Cancellation and Trip Interruption Insurance 15",
+      "Extended Warranty Protection 6 - You automatically have access to Purchase Security and Extended Warranty Protection, which includes coverage for most eligible new items you’ve pur",
+      "car rentals at participating Avis and Budget locations",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "roadside assistance services in case something goes wrong when you are out on the road"
+    ]
+  },
+  {
+    "name": "TD First Class Travel Visa Infinite* Card",
+    "slug": "td-first-class-travel-visa-infinite",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$139",
+    "interest_rate": "21.99%",
+    "welcome_bonus": "Earn a welcome Bonus of 20,000 TD Rewards Points when you make your first",
+    "earn_rates": [
+      {
+        "rate": "8X",
+        "category": "you spend when you book travel through Expedia® For TD 6 , 19 , 29 Earn"
+      },
+      {
+        "rate": "6X",
+        "category": "you spend on Groceries, Dining, and Public Transit 20, 29 Earn"
+      },
+      {
+        "rate": "4X",
+        "category": "you spend on Recurring Bill Payments and Streaming, Digital Gaming &amp; Media 28, 29 Earn"
+      },
+      {
+        "rate": "2X",
+        "category": "you spend on other Purchases made using your Card 21 , 29"
+      },
+      {
+        "rate": "8X",
+        "category": "Purchases made through Expedia For TD and charged to your TD First Class Travel® Visa Infinite* Card Account"
+      },
+      {
+        "rate": "6X",
+        "category": "Purchases you make on your TD First Class Travel Visa Infinite Card (\"Account\") at merchants classified by the Visa paym"
+      }
+    ],
+    "benefits": [
+      "Travel Medical Insurance 7 Up to $2 million of coverage for the first 21 days",
+      "Extended Warranty Protection 15 : You automatically have access to Purchase Security and Extended Warranty Protection, covering most eligible new items you’ve purchased with your C",
+      "car rentals at participating Avis and Budget locations",
+      "auto rental) Emergency Travel Assistance Services 11 Help is just a call away",
+      "lounge access and 4 complimentary lounge visits with Visa Airport Companion Program (a value of up to $277) 18",
+      "Concierge 26 : On-call 24 hours a day, seven days a week, the Visa Infinite Concierge can help with any Cardholder request — big or small, to help you get the most out of life when",
+      "Mobile Device Insurance 24 Up to $1,000 of coverage in the event of loss, theft, accidental damage, or mechanical breakdown for eligible mobile devices",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Delay Insurance 8 Up to $500 in coverage per insured person if your flight/trip is delayed for over 4 hours",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "Companion Program (a value of up to $277) 18",
+      "Common Carrier Travel Accident Insurance 10 Up to $500,000 of coverage for covered losses while travelling on a common carrier (for example, a bus, ferry, plane, train, or auto ren",
+      "roadside assistance services in case something goes wrong when you are out on the road",
+      "Visa Airport Companion Program (a value of up to $277) 18"
+    ]
+  },
+  {
+    "name": "TD Platinum Travel Visa* Card",
+    "slug": "td-platinum-travel-visa",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/platinum-travel-visa-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$89",
+    "interest_rate": "21.99%",
+    "welcome_bonus": "Earn 6 TD Rewards Points for every $1 you spend when you book travel through Expedia® For TD 3 , 6 , 22 Earn 4.5 TD Rewards Points for every $1 you spend on Groceries, Dining, and Public Transit 4 , 22 Earn 3 TD Rewards Points for every $1 you spend on Recurring Bill Payments and Streaming, Digital Gaming &amp; Media 21 , 22 Earn 1.5 TD Rewards Points for every $1 you spend on other Purchase",
+    "earn_rates": [
+      {
+        "rate": "6X",
+        "category": "you spend when you book travel through Expedia® For TD 3 , 6 , 22 Earn 4"
+      },
+      {
+        "rate": "5X",
+        "category": "you spend on Groceries, Dining, and Public Transit 4 , 22 Earn"
+      },
+      {
+        "rate": "3X",
+        "category": "you spend on Recurring Bill Payments and Streaming, Digital Gaming &amp; Media 21 , 22 Earn 1"
+      },
+      {
+        "rate": "5X",
+        "category": "you spend on other Purchases made using your Card 5 , 22 Redeem your TD Rewards Points how you want, for what you want E"
+      },
+      {
+        "rate": "6X",
+        "category": "Purchases made through Expedia For TD and charged to your TD Platinum Travel Visa* Card Account (“Account”)"
+      },
+      {
+        "rate": "5X",
+        "category": "Purchases you make on your TD Platinum Travel Visa* Card (\"Account\") at merchants classified by the Visa payment network"
+      },
+      {
+        "rate": "3X",
+        "category": "net Purchases you make on your TD Platinum Travel Visa* Card (\"Account\") that are classified by the Visa payment network"
+      }
+    ],
+    "benefits": [
+      "Travel Medical Insurance 25 , Trip Cancellation and Trip Interruption Insurance 26",
+      "Extended Warranty Protection 16 You automatically have access to Purchase Security and Extended Warranty Protection, which includes coverage for most eligible new items you’ve purc",
+      "car rental and get the Auto Rental Collision/Loss Damage Insurance at no additional cost Emergency Travel Assistance Services 11 Help is just a call away",
+      "Auto Rental Collision/ Loss Damage Insurance 14 Use your eligible Canadian TD Credit Card to charge the full cost of a car rental and get the Auto Rental Collision/Loss Damage Insu",
+      "Mobile Device Insurance 19 Up to $1,000 of coverage in the event of loss, theft, accidental damage, or mechanical breakdown for eligible mobile devices",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Delay Insurance 9 Up to $500 in coverage if your flight/trip is delayed more than 4 hours",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "Flight Delay Insurance, Emergency Travel Assistance services, and more! What is the minimum credit score for the TD Platinum Travel Visa? When you are ready to apply for the TD Pla",
+      "Common Carrier Travel Accident Insurance 10 Up to $500,000 of coverage for covered losses while travelling on a common carrier (for example, a bus, ferry, plane, or train)",
+      "roadside assistance services in case something goes wrong when you are out on the road"
+    ]
+  },
+  {
+    "name": "TD Rewards Visa* Credit Card",
+    "slug": "td-rewards-visa",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/rewards-visa-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "21.99%",
+    "welcome_bonus": "Earn 15,152 TD Rewards Points + (a value of $50 on Amazon.ca 13 ) when you spend $500 within 90 days of Account opening",
+    "earn_rates": [
+      {
+        "rate": "4X",
+        "category": "you spend when you book travel through Expedia® For TD 2 , 5 , 17 Earn"
+      },
+      {
+        "rate": "3X",
+        "category": "you spend on Groceries, Dining, and Public Transit 3 , 17 Earn"
+      },
+      {
+        "rate": "2X",
+        "category": "you spend on Recurring Bill Payments and Streaming, Digital Gaming &amp; Media 16 , 17 Earn"
+      },
+      {
+        "rate": "1X",
+        "category": "you spend on other Purchases made using your Card 4 , 17 Redeem your TD Rewards Points how you want, for what you want E"
+      },
+      {
+        "rate": "4X",
+        "category": "Purchases of travel made online through Expedia For TD or travel made by phone through Expedia For TD (“Phone Travel Pur"
+      },
+      {
+        "rate": "3X",
+        "category": "Purchases you make on your TD Rewards Visa* Card (\"Account\") at merchants classified by the Visa payment network's Merch"
+      }
+    ],
+    "benefits": [
+      "Travel Medical Insurance 19 , Trip Cancellation and Trip Interruption Insurance 20",
+      "Extended Warranty Protection 8 - You automatically have access to Purchase Security and Extended Warranty Protection, which includes coverage for most eligible new items you’ve pur",
+      "car rentals at participating Avis and Budget locations",
+      "Mobile device insurance of up to $1000 if you lose or damage your phone 7",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "roadside assistance services in case something goes wrong when you are out on the road"
+    ]
+  },
+  {
+    "name": "Apply for a TD U.S. Dollar Visa* Card",
+    "slug": "td-us-dollar-visa",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/us-dollar/us-dollar-visa-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$39",
+    "interest_rate": "21.99%",
+    "benefits": [
+      "Travel Medical Insurance 14 , Trip Cancellation and Trip Interruption Insurance 15",
+      "Extended Warranty Protection 12 – You automatically have access to Purchase Security and Extended Warranty Protection, which includes coverage for most eligible new items you’ve pu",
+      "car rentals at participating Avis and Budget locations",
+      "Auto Rental Collision/Loss Damage Insurance 11 ‑ Use your Canadian TD Credit Card to charge the full cost of a car rental to get the Collision/Loss Damage coverage at no additional",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "Common Carrier Travel Accident Insurance 5 ‑ Up to $500,000 of coverage for covered losses while travelling on a common carrier (for example, a bus, ferry, plane, or train) Emergen"
+    ]
+  },
+  {
+    "name": "TD Low Rate Visa* Credit Card",
+    "slug": "td-low-rate-visa",
+    "url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/low-rate/low-rate-visa-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "interest_rate": "12.90%",
+    "benefits": [
+      "Travel Medical Insurance 4 and Trip Cancellation/Trip Interruption Insurance 5",
+      "Extended Warranty Protection 3 : You automatically have access to Purchase Security and Extended Warranty Protection, covering most eligible new items you’ve purchased with your Ca",
+      "car rentals at participating Avis and Budget locations",
+      "Trip Cancellation &amp; Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File ",
+      "Trip Interruption Insurance Top-up or Extension Tools and Resources TD Protection Plans Assessment Tool Credit Card Travel Insurance Verification Tool File a TD Protection Plans cl",
+      "roadside assistance services in case something goes wrong when you are out on the road"
+    ],
+    "fee": "$25"
+  },
+  {
+    "name": "Apply for TD Business Cash Back Visa* Card",
+    "slug": "td-business-cash-back-visa",
+    "url": "https://www.td.com/ca/en/business-banking/small-business/credit-cards/business-cash-back-visa-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "Gas, Electric Vehicle Charging and Public Transit Purchases 2"
+      },
+      {
+        "rate": "2%",
+        "category": "recurring bill payments and Streaming, Digital Gaming &amp; Media 3 Earn"
+      },
+      {
+        "rate": "2%",
+        "category": "eligible Office Supply Purchases 2 Earn"
+      },
+      {
+        "rate": "0.5%",
+        "category": "all other Purchases made with your Card 4"
+      }
+    ],
+    "benefits": [
+      "Travel Medical Insurance 11 , Trip Cancellation and Trip Interruption Insurance 12",
+      "Extended Warranty Protection 5",
+      "car rentals at participating Avis and Budget locations",
+      "Trip Cancellation and Trip Interruption Insurance 12",
+      "Trip Interruption Insurance 12"
+    ],
+    "fee": "No Annual Fee"
+  },
+  {
+    "name": "Apply for a TD Business Travel Visa* Card",
+    "slug": "td-business-travel-visa",
+    "url": "https://www.td.com/ca/en/business-banking/small-business/credit-cards/business-travel-visa-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "welcome_bonus": "Earn a Welcome Bonus of 30,000 TD Rewards Points when the Primary Business Cardholder 1 makes their first",
+    "earn_rates": [
+      {
+        "rate": "6X",
+        "category": "you spend on Dining 4 , Electric Vehicle Charging 25 , Public Transit 26 Earn"
+      },
+      {
+        "rate": "6X",
+        "category": "you spend on Streaming, Digital Gaming &amp; Media Purchases and recurring bill payments 5 Earn"
+      },
+      {
+        "rate": "6X",
+        "category": "you spend on Foreign Currency Purchases 3"
+      },
+      {
+        "rate": "2X",
+        "category": "you spend on business purchases made using your Card 6"
+      },
+      {
+        "rate": "9X",
+        "category": "Purchases of travel made online through Expedia For TD (\"Online Travel Purchases\") and charged to your TD Business Trave"
+      }
+    ],
+    "benefits": [
+      "travel medical insurance 12 , flight/trip delay insurance 15 and more",
+      "Extended Warranty Protection 24 : You automatically have access to Purchase Security and Extended Warranty Protection, which includes coverage for most eligible new items you’ve pu",
+      "car rental to get the Collision/Loss Damage coverage at no additional cost",
+      "Auto Rental Collision/ Loss Damage Insurance 16",
+      "Trip Cancellation/Trip Interruption Insurance 23 : For Trip Cancellation, up to $1,500 of coverage per insured person, with a maximum of $5,000 for all insured persons; and for Tri",
+      "trip delay insurance 15 and more",
+      "Trip Interruption Insurance 23 : For Trip Cancellation, up to $1,500 of coverage per insured person, with a maximum of $5,000 for all insured persons; and for Trip Interruption, up",
+      "Common Carrier Travel Accident Insurance 13 : Up to $500,000 of coverage for covered losses while travelling on a common carrier (for example: a bus, ferry, plane or train)",
+      "roadside assistance services in case something goes wrong when you are out on the road"
+    ],
+    "fee": "$149"
+  },
+  {
+    "name": "TD Aeroplan Visa Business Credit Card",
+    "slug": "td-aeroplan-visa-business",
+    "url": "https://www.td.com/ca/en/business-banking/small-business/credit-cards/aeroplan-visa-business-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "$149",
+    "interest_rate": "14.99%",
+    "welcome_bonus": "Earn a welcome bonus of 10,000 Aeroplan points when the Primary Business Cardholder 3 makes their first",
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "spent on eligible purchases made directly with Air Canada® including Air Canada Vacations®"
+      },
+      {
+        "rate": "1.5X",
+        "category": "you spend on eligible purchases for travel &amp; transit, dining or electric vehicle charging and select business catego"
+      },
+      {
+        "rate": "1X",
+        "category": "you spend on all other eligible purchases on your Card"
+      }
+    ],
+    "benefits": [
+      "travel medical insurance 5 , flight/trip delay insurance 11 and more",
+      "Extended Warranty Protection 19 : You automatically have access to Purchase Security and Extended Warranty Protection, covering eligible new items you’ve purchased with your Card, ",
+      "car rentals, hotels and more",
+      "auto rental)",
+      "Maple Leaf Lounges 9 Get an Annual Fee rebate for the first year for the Primary Business Cardholder and two Additional Cardholders Γ , 1",
+      "Mobile Device Insurance 14 : Get mobile device protection of up to $1,000 in the event of loss, theft, accidental damage or mechanical breakdown for eligible mobile devices when yo",
+      "Trip Cancellation/Trip Interruption Insurance 10 : For Trip Cancellation, up to $1,500 of coverage per insured person, with a maximum of $5,000 for all insured persons, and for Tri",
+      "trip delay insurance 11 and more",
+      "Trip Interruption Insurance 10 : For Trip Cancellation, up to $1,500 of coverage per insured person, with a maximum of $5,000 for all insured persons, and for Trip Interruption, up",
+      "companions (up to eight) travelling on the same reservation will all enjoy their first checked bag free (up to 23kg/50lb) when travel originates on an Air Canada flight",
+      "Common Carrier Travel Accident Insurance 12 : Up to $500,000 of coverage for covered losses while travelling on a common carrier (for example, a bus, ferry, plane, train, or auto r"
+    ]
+  },
+  {
+    "name": "Apply for Business Select RateTM Visa* Card",
+    "slug": "td-business-select-rate-visa",
+    "url": "https://www.td.com/ca/en/business-banking/small-business/credit-cards/business-select-rate-visa-card",
+    "issuer": "TD",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "benefits": [
+      "Travel Medical Insurance 8 , Trip Cancellation and Trip Interruption Insurance 9",
+      "Extended Warranty Protection",
+      "car rentals at participating Avis and Budget locations",
+      "Auto Rental Collision/Loss Damage Insurance Auto Rental Collision/Loss Damage Insurance 12 coverage for up to 48 consecutive days Save money on interest charges when you carry a ba",
+      "Trip Cancellation and Trip Interruption Insurance 9",
+      "Trip Interruption Insurance 9"
+    ],
+    "fee": "$49"
+  }
+]
