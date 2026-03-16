@@ -1,0 +1,610 @@
+[
+  {
+    "name": "Scotiabank Gold American Express® Card",
+    "slug": "gold-amex",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html",
+    "issuer": "Scotiabank",
+    "network": "American Express",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$120",
+    "interest_rate": "20.99%",
+    "welcome_bonus": "up to 45,000 bonus Scene+ points. ** Browse offer",
+    "earn_rates": [
+      {
+        "rate": "6X",
+        "category": "Sobeys, Safeway, FreshCo, Foodland and more "
+      },
+      {
+        "rate": "5X",
+        "category": "dining, food delivery, food subscriptions, and other eligible grocery stores"
+      },
+      {
+        "rate": "5X",
+        "category": "eligible entertainment purchases. Includes movies, theatre, and ticket agencies"
+      },
+      {
+        "rate": "3X",
+        "category": "eligible gas and transit options. Includes rideshare, buses, taxis, subways, and more"
+      },
+      {
+        "rate": "3X",
+        "category": "eligible streaming services"
+      },
+      {
+        "rate": "1X",
+        "category": "all other eligible purchases. Earn extra points with Scene+ rewards partners when you show your"
+      }
+    ],
+    "benefits": [
+      "Travel Emergency Medical Receive up to $1 million in emergency medical coverage for you, your spouse, and your eligible dependent children",
+      "Purchase Security and Extended Warranty Protection Most new purchases made with your Scotiabank Gold American Express® Card are protected against theft, loss, or damage for 90 days",
+      "Extended Warranty Protection Most new purchases made with your Scotiabank Gold American Express® Card are protected against theft, loss, or damage for 90 days from the purchase dat",
+      "car rentals when you book through Scene+ Travel, Powered by Expedia",
+      "lounge access with Priority Pass As a Scotiabank Gold American Express® cardholder, you get a discount on a Priority Pass™ membership",
+      "Priority Pass As a Scotiabank Gold American Express® cardholder, you get a discount on a Priority Pass™ membership",
+      "No foreign transaction fees 5 , Δ Skip to the Front of the Line ® with Amex 6 Built-in benefits Travel Everyday Amex Insurance Expand all Collapse all Get airport lounge access wit",
+      "concierge services Whether you need help booking restaurant reservations or scoring tickets for a show, the concierge service is happy to help you 24 hours a day, 7 days a week",
+      "Mobile Device Insurance If you charge the full purchase price of your new smartphone or tablet to your Scotiabank Gold American Express® Card and activate available cellular techno",
+      "Trip Cancellation and Trip Interruption Insurance Protect your trip with trip cancellation and interruption insurance when you charge at least 75% of your trip costs to your card",
+      "Trip Interruption Insurance Protect your trip with trip cancellation and interruption insurance when you charge at least 75% of your trip costs to your card",
+      "Lost Luggage Insurance If your checked luggage is delayed or lost, you may be covered up to $1,000 if you charged the full cost of your travel ticket to your card",
+      "Flight Delay Insurance When you charge at least 75% of your ticket to your card, you’re eligible for reimbursement of necessary expenses if your flight is delayed up to $500 per in",
+      "Common Carrier Travel Accident When you charge at least 75% of your trip to your card, you’re insured against accidental loss of life or dismemberment up to $500,000 per insured pe",
+      "Companion Program, plus six complimentary lounge visits per year from the date of enrollment"
+    ]
+  },
+  {
+    "name": "Scotiabank Platinum Amex",
+    "slug": "platinum-amex",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/platinum-card.html",
+    "issuer": "Scotiabank",
+    "network": "American Express",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$399",
+    "interest_rate": "20.99%",
+    "welcome_bonus": "80,000 bonus Scene+ points: Earn 60,000 bonus Scene+ points by making at least $3,000 in everyday eligible purchases in your first",
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "your eligible purchases"
+      }
+    ],
+    "benefits": [
+      "Travel Emergency Medical Insurance 12 Coverage is provided for eligible persons under age 65 for up to 31 consecutive days and for eligible persons age 65 and older for up to 10 co",
+      "Purchase Security &amp; Extended Warranty Protection 12 Most items purchased with your Card are insured against theft, loss or damage for 120 days from the purchase date and the ma",
+      "Extended Warranty Protection 12 Most items purchased with your Card are insured against theft, loss or damage for 120 days from the purchase date and the manufacturer’s warranty is",
+      "car rental bookings made through Scene+ Travel using your Scotiabank American Express Card",
+      "lounge access 6 Be confident that you’ll have a place to relax or catch up on business",
+      "Priority Pass™ and Plaza Premium lounges with access to over 1200+ VIP lounges around the world",
+      "No foreign transaction fees 7 You will not be charged a Foreign Currency Conversion mark-up on foreign currency purchases whether you make them online or outside of Canada",
+      "concierge services 3 For everything from restaurant reservations to show tickets to finding the perfect birthday gift, your full-service travel and lifestyle Concierge Service is h",
+      "Mobile Device Insurance 12 You may have Mobile Device Insurance for new cell phones, smartphones, or tablets purchased on or after July 1, 2022, when you charge the full cost of yo",
+      "Trip Cancellation / Trip Interruption Insurance 12 Protect your travel investment with trip cancellation and trip interruption insurance at no extra cost when you charge at least 7",
+      "Trip Interruption Insurance 12 Protect your travel investment with trip cancellation and trip interruption insurance at no extra cost when you charge at least 75% of your trip cost",
+      "lost luggage benefit is limited to the lesser of the value of the covered luggage or the actual replacement cost of the lost or stolen covered luggage, to a combined maximum of $1,",
+      "Flight Delay Insurance 12 Charge at least 75% of the full ticket cost to your Scotiabank American Express Platinum Card and you’ll be eligible for reimbursement of necessary expens",
+      "common carrier tickets with your Scotiabank American Express Platinum Card, you are eligible for coverage against the loss or the delay of your checked luggage",
+      "Emergency Medical Insurance 12 Coverage is provided for eligible persons under age 65 for up to 31 consecutive days and for eligible persons age 65 and older for up to 10 consecuti"
+    ]
+  },
+  {
+    "name": "Scotiabank No-Fee Amex Travel Card",
+    "slug": "no-fee-amex",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/no-fee-amex-card.html",
+    "issuer": "Scotiabank",
+    "network": "American Express",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "20.99%",
+    "welcome_bonus": "5,000 bonus Scene+ points offer",
+    "earn_rates": [
+      {
+        "rate": "1X",
+        "category": "all other eligible everyday purchases"
+      }
+    ],
+    "benefits": [
+      "Purchase Security &amp; Extended Warranty Protection (Maximum lifetime liability of $60,000) Most items purchased anywhere in the world are automatically insured against theft, los",
+      "Extended Warranty Protection (Maximum lifetime liability of $60,000) Most items purchased anywhere in the world are automatically insured against theft, loss or damage as long as t",
+      "car rental bookings made through Scene+ Travel using your Scotiabank American Express Card",
+      "Mobile Device Insurance 10 You may have Mobile Device Insurance for new cell phones, smartphones, or tablets purchased on or after July 1, 2022, when you charge the full cost of yo",
+      "Scene+ membership account approximately 8 weeks after the qualifying $1,000 in eligible purchases being posted to your Account within the first 3 months of Account opening"
+    ]
+  },
+  {
+    "name": "Scotiabank No-Fee Amex Student Card",
+    "slug": "student-amex",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/student-scotiabank-american-express-card.html",
+    "issuer": "Scotiabank",
+    "network": "American Express",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "19.99%",
+    "welcome_bonus": "5,000 bonus Scene+ points offer",
+    "earn_rates": [
+      {
+        "rate": "1X",
+        "category": "all other eligible everyday purchases"
+      }
+    ],
+    "benefits": [
+      "Purchase Security &amp; Extended Warranty Protection (Maximum lifetime liability of $60,000) Most items purchased anywhere in the world are automatically insured against theft, los",
+      "Extended Warranty Protection (Maximum lifetime liability of $60,000) Most items purchased anywhere in the world are automatically insured against theft, loss or damage as long as t",
+      "car rental bookings made through Scene+ Travel using your Scotiabank American Express Card",
+      "Mobile Device Insurance 10 You may have Mobile Device Insurance for new cell phones, smartphones, or tablets purchased on or after July 1, 2022, when you charge the full cost of yo",
+      "Scene+ membership account approximately 8 weeks after the qualifying $1,000 in eligible purchases being posted to your Account within the first 3 months of Account opening"
+    ]
+  },
+  {
+    "name": "Scotiabank Passport Visa Infinite Credit Card",
+    "slug": "passport-infinite",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$150",
+    "interest_rate": "20.99%",
+    "welcome_bonus": "60,000 bonus Scene+ points: Earn 40,000 bonus Scene+ points by making at least $2,000 in everyday eligible purchases in your first",
+    "benefits": [
+      "Travel Emergency Medical Insurance Receive up to $2 million CAD in emergency medical coverage for you, your spouse, and your eligible dependent children",
+      "Purchase Security and Extended Warranty Most of the new items you buy with your card are insured against theft, loss, or damage for 90 days from the purchase date",
+      "Extended Warranty Most of the new items you buy with your card are insured against theft, loss, or damage for 90 days from the purchase date",
+      "car rentals when you book through Scene+ Travel, Powered by Expedia",
+      "lounge access Access over 1,200 airport lounges, including 6 complimentary lounge visits",
+      "Priority Pass, plus 10 free visits per year from the date of enrollment",
+      "No foreign transaction fees 5 Get six complimentary airport lounge passes 6 Enjoy peace of mind with travel insurance 7 Built-in benefits Travel Everyday Visa Insurance Expand all ",
+      "concierge services Need help with travel, dining, or events? The concierge is available 24 hours a day, 7 days a week",
+      "Trip Cancellation and Trip Interruption Insurance Protect your trip with cancellation and interruption insurance when you charge at least 75% of your trip costs to your card",
+      "Trip Interruption Insurance Protect your trip with cancellation and interruption insurance when you charge at least 75% of your trip costs to your card",
+      "Lost Luggage Insurance If your checked luggage is delayed or lost, you’re covered up to $1,000 if you charged the full cost of your travel ticket to your card",
+      "Flight Delay Insurance If you charge at least 75% of your ticket to your card, you’re eligible for reimbursement of necessary expenses if your flight is delayed up to $500 per insu",
+      "Common Carrier Travel Accident Insurance When you charge at least 75% of your trip to your card, you’re insured against accidental loss of life or dismemberment up to $500,000 per ",
+      "Companion Program",
+      "Emergency Medical Insurance Receive up to $2 million CAD in emergency medical coverage for you, your spouse, and your eligible dependent children"
+    ],
+    "earn_rates": [
+      {
+        "rate": "3X",
+        "category": "Sobeys, Safeway, Foodland, participating IGA and co-ops, and more "
+      },
+      {
+        "rate": "2X",
+        "category": "dining out and other eligible grocery stores"
+      },
+      {
+        "rate": "2X",
+        "category": "eligible entertainment purchases. Includes movies, theatre, and ticket agencies"
+      },
+      {
+        "rate": "2X",
+        "category": "eligible transit options, including rideshare, buses, taxis, subways, and more"
+      },
+      {
+        "rate": "1X",
+        "category": "all other eligible purchases. Earn extra points with Scene+ rewards partners when you show your"
+      },
+      {
+        "rate": "1X",
+        "category": "eligible travel purchases"
+      }
+    ]
+  },
+  {
+    "name": "Scotiabank Passport Visa Infinite Privilege Card",
+    "slug": "passport-infinite-privilege",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-privilege-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$599",
+    "interest_rate": "20.99%",
+    "welcome_bonus": "up to 100,000 bonus Scene+ points: Earn 30,000 bonus Scene+ points by making at least $3,000 in everyday eligible purchases in your first",
+    "earn_rates": [],
+    "benefits": [
+      "Travel Emergency Medical Insurance 20 If you’re travelling outside of the province or territory where you live and you, your spouse, or your dependent children are suddenly sick or",
+      "Purchase Security and Extended Warranty 20 Under Purchase Security coverage, most of the new items you buy with your card are insured against theft, loss, or damage for 180 days fr",
+      "Extended Warranty 20 Under Purchase Security coverage, most of the new items you buy with your card are insured against theft, loss, or damage for 180 days from the purchase date",
+      "car rentals through Scene+ Travel, Powered by Expedia",
+      "lounge access charges will be billed to the Visa Infinite Privilege Card connected to the Cardholders’ Program membership",
+      "concierge services 17 Get 24/7 expert advice with your complimentary and unlimited concierge service in English and French",
+      "Mobile Device Insurance 20 If you charge the full purchase price of your new smartphone or tablet to your card and activate it with a Canadian provider, you could be covered for up",
+      "Trip Cancellation and Trip Interruption Insurance 20 Protect your trip with cancellation and interruption insurance when you charge the full cost of your trip costs to your card",
+      "Trip Interruption Insurance 20 Protect your trip with cancellation and interruption insurance when you charge the full cost of your trip costs to your card",
+      "Flight Delay Insurance 20 When you charge the full cost of your flight to your card, you’re eligible for reimbursement of necessary expenses if your flight is delayed",
+      "Common Carrier Travel Accident Insurance 20 When you charge the full cost of your ticket to your card, you are insured against accidental loss of life or dismemberment",
+      "Companion Program, you and each of your additional cardholders get access to over 1,200 airport lounges worldwide",
+      "Emergency Medical Insurance 20 If you’re travelling outside of the province or territory where you live and you, your spouse, or your dependent children are suddenly sick or accide",
+      "Scene+ membership account in up to 3 instalments: 30,000 bonus Scene+ points will be credited to the applicable Scene+ membership account within 8 weeks after the qualifying $3,000"
+    ]
+  },
+  {
+    "name": "ScotiaGold Passport Visa Credit Card",
+    "slug": "scotiagold-passport",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scotiagold-passport-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$110",
+    "interest_rate": "19.99%",
+    "welcome_bonus": "10,000 bonus Scene+ points, make at least $2,000 in everyday eligible purchases in your first",
+    "earn_rates": [
+      {
+        "rate": "1X",
+        "category": "rent, condo fees, and eligible housing-related bill payments 1 made using your ScotiaGold Passport"
+      }
+    ],
+    "benefits": [
+      "Travel Emergency Medical Insurance 12 Coverage is provided for eligible persons under age 65 for up to 25 consecutive days",
+      "Purchase Security &amp; Extended Warranty Protection 12 Most items purchased with your Card are insured against theft, loss or damage for 90 days from the purchase date and the man",
+      "Extended Warranty Protection 12 Most items purchased with your Card are insured against theft, loss or damage for 90 days from the purchase date and the manufacturer’s warranty is ",
+      "car rentals As a ScotiaGold Passport Visa Cardholder, you can save up to 25% off base rates at participating AVIS locations and at participating Budget locations in Canada and the ",
+      "lost luggage benefit is limited to the lesser of the value of the coverage luggage or the amount equal to the cash reimbursement made by the carrier, to a combined maximum of $1,25",
+      "common carrier tickets with your ScotiaGold Passport® Visa* card, you are eligible for coverage against the loss or the delay of your checked luggage",
+      "Emergency Medical Insurance 12 Coverage is provided for eligible persons under age 65 for up to 25 consecutive days",
+      "Scene+ membership account approximately 8 weeks after the qualifying $2,000 in eligible purchases being posted to your Account within the first 3 months of Account opening"
+    ]
+  },
+  {
+    "name": "Scotia Momentum® Visa Infinite* Card",
+    "slug": "momentum-infinite",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$120",
+    "interest_rate": "20.99%",
+    "welcome_bonus": "Earn up to 4% Cash Back on your eligible everyday purchases when you shop with your card. 4 4 % On groceries and recurring payments, like bills and subscriptions 2 % On gas, electric vehicle charging, daily transit like buses, taxis, rideshares, and food delivery 1 % On all other purchases Browse the Scotia Momentum ® Visa * Infinite Card cash back Terms and Conditions As long as you have over $25",
+    "earn_rates": [
+      {
+        "rate": "10%",
+        "category": "up to $2,000 in purchases in the first three months"
+      },
+      {
+        "rate": "4%",
+        "category": "grocery and recurring payments 4 Enjoy peace of mind with travel insurance 5 Stay covered with"
+      },
+      {
+        "rate": "4%",
+        "category": "your eligible everyday purchases when you shop with your card"
+      },
+      {
+        "rate": "10%",
+        "category": "the first $2,000 in eligible purchases you spend on your new Account within the first 3 months of"
+      },
+      {
+        "rate": "4%",
+        "category": "eligible Purchases on your Account at Grocery and on Recurring Bill Payments, up to an annual spend"
+      }
+    ],
+    "benefits": [
+      "Travel Emergency Medical Insurance Receive up to $1 million CAD in emergency medical coverage for you, your spouse, and your eligible dependent children",
+      "Purchase Security &amp; Extended Warranty Protection Most new purchases made with your card are protected against theft, loss, or damage for 90 days from the purchase date",
+      "Extended Warranty Protection Most new purchases made with your card are protected against theft, loss, or damage for 90 days from the purchase date",
+      "car rentals Save up to 25% off base rates at participating AVIS and Budget locations in Canada and the US when you pay with your Scotia Momentum ® Visa Infinite * Card",
+      "concierge services Need help with travel, dining, or events? The concierge is available 24 hours a day, 7 days a week",
+      "mobile device insurance 5 Cash back on everyday purchases Earn Redeem Earn up to 4% Cash Back on your eligible everyday purchases when you shop with your card",
+      "Trip Cancellation and Trip Interruption Insurance Protect your trip with trip cancellation and interruption insurance when you charge at least 75% of costs to your card",
+      "Trip Interruption Insurance Protect your trip with trip cancellation and interruption insurance when you charge at least 75% of costs to your card",
+      "Flight Delay Insurance If you charge at least 75% of your ticket to your card, you’re eligible for reimbursement of necessary expenses if your flight is delayed up to $500 per insu",
+      "Emergency Medical Insurance Receive up to $1 million CAD in emergency medical coverage for you, your spouse, and your eligible dependent children"
+    ]
+  },
+  {
+    "name": "Scotia Momentum Visa Card",
+    "slug": "momentum-cashback",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-cash-back-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$49",
+    "interest_rate": "25.99%",
+    "welcome_bonus": "Earn up to 2% cash back on select purchases 4 Redeem your Cash Back at any time ($25 minimum) Save on car rentals 5 Cash back on everyday purchases Earn Redeem Earn up to 2% Cash Back on your eligible everyday purchases when you shop with your card. 4 2 % On groceries, food delivery and food subscription services, and drugstore purchases 2 % On gas, electric vehicle charging, and daily transit lik",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "select purchases 4 Redeem your Cash Back at any time ($25 minimum) Save on car rentals 5 Cash back"
+      },
+      {
+        "rate": "2%",
+        "category": "your eligible everyday purchases when you shop with your card"
+      },
+      {
+        "rate": "2%",
+        "category": "eligible Purchases on your Account at Grocery, Gas Stations, Electric Vehicle Charging (EV),"
+      }
+    ],
+    "benefits": [
+      "Purchase Security &amp; Extended Warranty Protection Most new purchases made with your card are protected against theft, loss, or damage for 90 days from the purchase date",
+      "Extended Warranty Protection Most new purchases made with your card are protected against theft, loss, or damage for 90 days from the purchase date",
+      "car rentals 5 Cash back on everyday purchases Earn Redeem Earn up to 2% Cash Back on your eligible everyday purchases when you shop with your card"
+    ]
+  },
+  {
+    "name": "Scotia Momentum No-Fee Visa Card",
+    "slug": "momentum-no-fee",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-no-fee-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "25.99%",
+    "welcome_bonus": "Earn up to 1% cash back on select purchases 2 Enjoy no annual fee Redeem your cash back at any time ($25 minimum) Cash back on everyday purchases Earn Redeem Earn up to 1% Cash Back on your eligible everyday purchases when you shop with your card. 2 1 % On groceries, food delivery and food subscription services, and drugstore purchases 1 % On gas, electric vehicle charging, and daily transit like ",
+    "earn_rates": [
+      {
+        "rate": "10%",
+        "category": "all purchases for the first 3 months (up to $2,000 in total purchases)"
+      },
+      {
+        "rate": "5%",
+        "category": "up to $2,000 in eligible purchases"
+      },
+      {
+        "rate": "1%",
+        "category": "select purchases 2 Enjoy no annual fee Redeem your cash back at any time ($25 minimum) Cash back on"
+      },
+      {
+        "rate": "1%",
+        "category": "your eligible everyday purchases when you shop with your card"
+      },
+      {
+        "rate": "10%",
+        "category": "the first $2,000 in eligible purchases you spend on your new Account within the first 3 months of"
+      },
+      {
+        "rate": "1%",
+        "category": "eligible Purchases on your Account at Grocery, Gas Stations, Electric Vehicle Charging (EV),"
+      }
+    ],
+    "benefits": [
+      "car rentals Save up to 25% off base rates at participating AVIS and Budget locations in Canada and the US when you pay with your Scotia Momentum No-Fee Visa card"
+    ]
+  },
+  {
+    "name": "Scotiabank Momentum Mastercard Credit Card",
+    "slug": "momentum-mastercard",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/mastercard/momentum-card.html",
+    "issuer": "Scotiabank",
+    "network": "Mastercard",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "20.99%",
+    "earn_rates": [
+      {
+        "rate": "1%",
+        "category": "all eligible gas station, grocery store, drug store purchases and recurring payments"
+      },
+      {
+        "rate": "0.5%",
+        "category": "all other eligible purchases"
+      },
+      {
+        "rate": "1%",
+        "category": "net purchases made with your eligible Scotia Momentum Mastercard credit card at gas stations,"
+      }
+    ],
+    "benefits": [
+      "car rentals 4 As a Scotia Momentum Mastercard Cardholder, you can save up to 25% off base rates at participating AVIS locations and at participating Budget locations in Canada and "
+    ]
+  },
+  {
+    "name": "Scotiabank Scene+ Visa Card",
+    "slug": "scene-visa",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "20.99%",
+    "welcome_bonus": "up to 10,000 bonus Scene+ points in your first",
+    "benefits": [
+      "car rentals Save up to 25% off base rates at participating AVIS and Budget locations in Canada and the US when you pay with your Scotiabank Scene+ Visa Card",
+      "Scene+ membership account approximately 8 weeks after the qualifying $250 in eligible purchases being posted to your Account within the first 3 months of Account opening"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "Sobeys, Safeway, Foodland, participating IGA and co-ops, and more "
+      },
+      {
+        "rate": "2X",
+        "category": "Home Hardware, Home Building Centre, Home Furniture locations in Canada, and online at"
+      },
+      {
+        "rate": "2X",
+        "category": "Cineplex theatres or at cineplex.com "
+      },
+      {
+        "rate": "1X",
+        "category": "all other eligible everyday purchases. Earn extra points with Scene+ rewards partners when you show"
+      },
+      {
+        "rate": "1X",
+        "category": "eligible travel purchases"
+      }
+    ]
+  },
+  {
+    "name": "Scotiabank Scene+ Visa Card (for students)",
+    "slug": "scene-student",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-student-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "20.99%",
+    "welcome_bonus": "up to 10,000 bonus Scene+ points in your first",
+    "benefits": [
+      "car rentals Save up to 25% off base rates at participating AVIS and Budget locations in Canada and the US when you pay with your Scotiabank® Scene+™ Visa* Card",
+      "Scene+ membership account approximately 8 weeks after the qualifying $250 in eligible purchases being posted to your Account within the first 3 months of Account opening"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "Sobeys, Safeway, Foodland, participating IGA and Co-ops, and more "
+      },
+      {
+        "rate": "2X",
+        "category": "Home Hardware, Home Building Centre, Home Furniture locations in Canada, and online at"
+      },
+      {
+        "rate": "2X",
+        "category": "Cineplex theatres or at cineplex.com "
+      },
+      {
+        "rate": "1X",
+        "category": "all other eligible everyday purchases. Earn extra points with Scene+ rewards partners when you show"
+      },
+      {
+        "rate": "1X",
+        "category": "eligible travel purchases"
+      }
+    ]
+  },
+  {
+    "name": "Scotia Momentum Visa Card (for students)",
+    "slug": "student-momentum-cashback",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-momentum-cash-back-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$49",
+    "interest_rate": "25.99%",
+    "welcome_bonus": "Earn up to 2% cash back on select purchases 4 Redeem your cash back at any time ($25 minimum) Save on car rentals 5 Cashback on every transaction Earn Redeem Earn up to 2% Cash Back on your eligible everyday purchases when you shop with your card. 4 2 % On groceries, food delivery and food subscription services, and drugstore purchases 2 % On gas, electric vehicle charging, and daily transit like ",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "select purchases 4 Redeem your cash back at any time ($25 minimum) Save on car rentals 5 Cashback"
+      },
+      {
+        "rate": "2%",
+        "category": "your eligible everyday purchases when you shop with your card"
+      },
+      {
+        "rate": "2%",
+        "category": "eligible Purchases on your Account at Grocery, Gas Stations, Electric Vehicle Charging (EV),"
+      }
+    ],
+    "benefits": [
+      "Purchase Security &amp; Extended Warranty Protection Most new purchases made with your card are protected against theft, loss, or damage for 90 days from the purchase date",
+      "Extended Warranty Protection Most new purchases made with your card are protected against theft, loss, or damage for 90 days from the purchase date",
+      "car rentals 5 Cashback on every transaction Earn Redeem Earn up to 2% Cash Back on your eligible everyday purchases when you shop with your card"
+    ]
+  },
+  {
+    "name": "Scotia Momentum No-Fee Visa (for students)",
+    "slug": "student-momentum-no-fee",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-scotia-momentum-no-fee-visa.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "interest_rate": "25.99%",
+    "welcome_bonus": "Earn up to 1% cash back on select purchases 2 Enjoy no annual fee Redeem your cash back at any time ($25 minimum) Cash back on every transaction Earn Redeem Earn up to 1% Cash Back on your eligible everyday purchases when you shop with your card. 2 1 % On groceries, food delivery and food subscription services, and drugstore purchases 1 % On gas, electric vehicle charging, and daily transit like b",
+    "earn_rates": [
+      {
+        "rate": "10%",
+        "category": "all purchases for the first 3 months (up to $2,000 in total purchases)"
+      },
+      {
+        "rate": "5%",
+        "category": "up to $2,000 in eligible purchases"
+      },
+      {
+        "rate": "1%",
+        "category": "select purchases 2 Enjoy no annual fee Redeem your cash back at any time ($25 minimum) Cash back on"
+      },
+      {
+        "rate": "1%",
+        "category": "your eligible everyday purchases when you shop with your card"
+      },
+      {
+        "rate": "10%",
+        "category": "the first $2,000 in eligible purchases you spend on your new Account within the first 3 months of"
+      },
+      {
+        "rate": "1%",
+        "category": "eligible Purchases on your Account at Grocery, Gas Stations, Electric Vehicle Charging (EV),"
+      }
+    ],
+    "benefits": [
+      "car rentals Save up to 25% off base rates at participating AVIS and Budget locations in Canada and the US when you pay with your Scotia Momentum No-Fee Visa card"
+    ]
+  },
+  {
+    "name": "Scotiabank Value Visa Card (for students)",
+    "slug": "student-value",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-value-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$29",
+    "interest_rate": "24.99%",
+    "benefits": [
+      "car rentals Save up to 25% off base rates at participating AVIS locations and at participating Budget locations in Canada and the US when you pay with your Scotiabank Value ® Visa "
+    ]
+  },
+  {
+    "name": "Scotiabank Value Visa card",
+    "slug": "value-card",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/value-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$29",
+    "interest_rate": "24.99%",
+    "benefits": [
+      "car rentals Save up to 25% off base rates at participating AVIS locations and at participating Budget locations in Canada and the US when you pay with your Scotiabank Value ® Visa "
+    ]
+  },
+  {
+    "name": "Scotiabank Visa US Dollar Credit Card",
+    "slug": "us-dollar",
+    "url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/us-card.html",
+    "issuer": "Scotiabank",
+    "network": "Visa",
+    "country": "CA",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$35",
+    "benefits": [
+      "Purchase Security and Extended Warranty Protection",
+      "Extended Warranty Protection",
+      "car rentals As a Scotiabank ® U",
+      "companion"
+    ]
+  }
+]
