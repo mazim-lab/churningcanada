@@ -665,7 +665,21 @@
     "country": "US",
     "category": "Personal",
     "card_type": "Credit Card",
-    "fee": "No Annual Fee"
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "4X",
+        "category": "L.L.Bean purchases"
+      },
+      {
+        "rate": "2X",
+        "category": "Dining and gas"
+      },
+      {
+        "rate": "1X",
+        "category": "All other purchases"
+      }
+    ]
   },
   {
     "name": "Macy's Credit Cards",
@@ -676,7 +690,17 @@
     "country": "US",
     "category": "Personal",
     "card_type": "Credit Card",
-    "fee": "No Annual Fee"
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "5%",
+        "category": "Macy's purchases (with Star Rewards)"
+      },
+      {
+        "rate": "1%",
+        "category": "Macy's purchases (standard)"
+      }
+    ]
   },
   {
     "name": "TSC Credit Cards",
@@ -688,7 +712,13 @@
     "category": "Personal",
     "card_type": "Credit Card",
     "fee": "No Annual Fee",
-    "welcome_bonus": "earn 5 points per dollar on eligible Tractor Supply purchase"
+    "welcome_bonus": "earn 5 points per dollar on eligible Tractor Supply purchase",
+    "earn_rates": [
+      {
+        "rate": "5%",
+        "category": "Tractor Supply and Petsense purchases"
+      }
+    ]
   },
   {
     "name": "Apply for a Dillard’s Credit Card",
@@ -700,7 +730,17 @@
     "category": "Personal",
     "card_type": "Credit Card",
     "fee": "No Annual Fee",
-    "welcome_bonus": "Earn 2 points 4 for qualifying purchase"
+    "welcome_bonus": "Earn 2 points 4 for qualifying purchase",
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "Dillard's purchases"
+      },
+      {
+        "rate": "1X",
+        "category": "All other purchases"
+      }
+    ]
   },
   {
     "name": "Exxon Mobil Smart Card+™ Credit Card",

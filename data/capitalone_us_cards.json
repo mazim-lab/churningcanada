@@ -295,55 +295,6 @@
     ]
   },
   {
-    "name": "Capital One Credit Cards",
-    "slug": "walmart",
-    "url": "https://www.capitalone.com/credit-cards/walmart-rewards/",
-    "issuer": "Capital One",
-    "network": "Mastercard",
-    "country": "US",
-    "category": "Personal",
-    "card_type": "Credit Card",
-    "fee": "No Annual Fee",
-    "welcome_bonus": "earn 75,000 bonus miles. Terms apply. 1 View Card Details Apply Now Important disclosures Rewards terms Compare Excellent Credit More details Quicksilver Rewards $0 annual fee 1.5% cash back on every purchase Earn a $200 cash bonus 2 Low intro APR for 15 months",
-    "earn_rates": [
-      {
-        "rate": "2X miles",
-        "category": "every purchase Enjoy a $250 Capital One Travel credit &amp;"
-      },
-      {
-        "rate": "2X miles",
-        "category": "every purchase"
-      },
-      {
-        "rate": "2%",
-        "category": "Business Banking Accounts Business Checking Accounts for any stage of business Business Savings Grow your money with a p"
-      },
-      {
-        "rate": "3%",
-        "category": "grocery stores, on dining &amp; entertainment 6 and"
-      },
-      {
-        "rate": "7.5%",
-        "category": "in Kohl's rewards 11 Take"
-      },
-      {
-        "rate": "5%",
-        "category": "in rewards Intro"
-      },
-      {
-        "rate": "10%",
-        "category": "in-store purchases See if I'm Pre-Approved Apply Now Important disclosures Compare Good-Excellent Credit More details Wi"
-      },
-      {
-        "rate": "2%",
-        "category": "Bass Pro Shops &amp; Cabela’s purchases"
-      }
-    ],
-    "benefits": [
-      "Travel credit &amp; earn 75,000 bonus miles"
-    ]
-  },
-  {
     "name": "Bass Pro Shops CLUB Credit Card",
     "slug": "bass-pro",
     "url": "https://www.capitalone.com/credit-cards/bass-pro-shops/",
@@ -608,34 +559,6 @@
     ]
   },
   {
-    "name": "Compare Student Credit Cards",
-    "slug": "journey-student",
-    "url": "https://www.capitalone.com/credit-cards/journey-student/",
-    "issuer": "Capital One",
-    "network": "Mastercard",
-    "country": "US",
-    "category": "Personal",
-    "card_type": "Credit Card",
-    "fee": "No Annual Fee",
-    "earn_rates": [
-      {
-        "rate": "2%",
-        "category": "Business Banking Accounts Business Checking Accounts for any stage of business Business Savings Grow"
-      },
-      {
-        "rate": "3%",
-        "category": "grocery stores, on dining &amp; entertainment 1 and"
-      },
-      {
-        "rate": "1.5%",
-        "category": "every purchase"
-      }
-    ],
-    "benefits": [
-      "CreditWise"
-    ]
-  },
-  {
     "name": "Spark Miles Select",
     "slug": "spark-miles-select",
     "url": "https://www.capitalone.com/small-business/credit-cards/spark-miles-select/",
@@ -768,7 +691,7 @@
     "issuer": "Capital One",
     "network": "Mastercard",
     "country": "US",
-    "category": "Personal",
+    "category": "Business",
     "card_type": "Credit Card",
     "fee": "No Annual Fee",
     "earn_rates": [
@@ -912,7 +835,8 @@
     "benefits": [
       "CreditWise",
       "Travel Credit"
-    ]
+    ],
+    "fee": "No Annual Fee"
   },
   {
     "name": "Savor Rewards: Cash Back on Dining &amp; Grocery Stores",

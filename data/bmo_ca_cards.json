@@ -184,7 +184,21 @@
     "country": "CA",
     "category": "Business",
     "card_type": "Credit Card",
-    "fee": "No Annual Fee"
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "Office supplies"
+      },
+      {
+        "rate": "2%",
+        "category": "Gas and EV charging"
+      },
+      {
+        "rate": "0.5%",
+        "category": "All other purchases"
+      }
+    ]
   },
   {
     "name": "BMO eclipse rise Visa Card: No Annual Fee",
@@ -368,7 +382,8 @@
       "baggage loss and more",
       "Zero Liability Safeguard yourself from any monetary loss resulting from fraudulent card use",
       "Roadside assistance BMO PaySmart™ Installment Plans Live now, pay smarter with a BMO PaySmart plan by turning your credit card purchases into smaller, monthly payments at a low cos"
-    ]
+    ],
+    "earn_rates": []
   },
   {
     "name": "Prepaid Mastercard",

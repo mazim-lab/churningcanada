@@ -135,6 +135,20 @@
       "World-class service",
       "Customer service that always has your back – anytime, anywhere.",
       "Exclusive offers with American Express"
+    ],
+    "earn_rates": [
+      {
+        "rate": "3X",
+        "category": "Aeroplan flights and Air Canada Vacations"
+      },
+      {
+        "rate": "1.5X",
+        "category": "Travel, dining, delivery"
+      },
+      {
+        "rate": "1X",
+        "category": "All other purchases"
+      }
     ]
   },
   {
@@ -348,6 +362,16 @@
       "Explore offers for shopping, dining, travel and more − from brands you love.",
       "**Borrowing** Options",
       "Discover an American Express® Borrowing solution that fits your needs."
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "Grocery and gas"
+      },
+      {
+        "rate": "1X",
+        "category": "All other purchases"
+      }
     ]
   },
   {
@@ -428,6 +452,16 @@
       "Travel coverage",
       "Road trip or flight, you may be protected when you book travel with your Card.",
       "Welcome to Amex ExperiencesTM"
+    ],
+    "earn_rates": [
+      {
+        "rate": "1.5X",
+        "category": "Aeroplan flights"
+      },
+      {
+        "rate": "1X",
+        "category": "All other purchases"
+      }
     ]
   },
   {
@@ -464,7 +498,8 @@
       "Book business travel with more benefits",
       "Say hello to Amex ExperiencesTM",
       "Open the door to memorable experiences we think you’ll love."
-    ]
+    ],
+    "fee": "$699"
   },
   {
     "name": "American Express® Business Gold Rewards Card",
@@ -500,7 +535,8 @@
       "Say hello to Amex ExperiencesTM",
       "Open the door to memorable experiences we think you’ll love.",
       "World-class service"
-    ]
+    ],
+    "fee": "$199"
   },
   {
     "name": "American Express® Aeroplan®* Business Reserve Card",
@@ -531,6 +567,12 @@
       "Say hello to Amex ExperiencesTM",
       "Open the door to memorable experiences we think you’ll love.",
       "World-class service"
+    ],
+    "earn_rates": [
+      {
+        "rate": "1.5X",
+        "category": "All purchases"
+      }
     ]
   },
   {

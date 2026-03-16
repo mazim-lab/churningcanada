@@ -50,7 +50,8 @@
       "flight delay insurance 7 Up to $500 per person (over 4 hours) Baggage insurance in case of delay 7 Up to $500 per person (over 6 hours) Baggage insurance in case of theft or loss 7",
       "Zero Liability 9 Included Purchase protection in the event of theft or damage 7 ${p1",
       "Lost or stolen card In Canada or the U"
-    ]
+    ],
+    "fee": "$150"
   },
   {
     "name": "National Bank Platinum Mastercard credit card",
@@ -114,6 +115,16 @@
       "Lounge access and for additional guests, admission is around $40 for adults and $25 for children, plus tax",
       "baggage fees (maximum $100) and seat selection fees (maximum $50)",
       "Lost or stolen card Subsidiaries National Bank Trust National Bank Investments Natbank National Bank Financial Divisions of National Bank Financial National Bank Direct Brokerage P"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "Grocery and recurring bills"
+      },
+      {
+        "rate": "0.5%",
+        "category": "All other purchases"
+      }
     ]
   },
   {
@@ -132,6 +143,12 @@
       "Lounge access and for additional guests, admission is around $40 for adults and $25 for children, plus tax",
       "baggage fees (maximum $100) and seat selection fees (maximum $50)",
       "Lost or stolen? Lock or replace your card online or on the mobile app"
+    ],
+    "earn_rates": [
+      {
+        "rate": "0.5%",
+        "category": "All purchases"
+      }
     ]
   },
   {
