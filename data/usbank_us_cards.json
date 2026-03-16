@@ -1,0 +1,480 @@
+[
+  {
+    "name": "U.S. Bank Altitude® Go Visa Credit Card",
+    "slug": "altitude-go",
+    "url": "https://www.usbank.com/credit-cards/altitude-go-visa-signature-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "Earn 20,000 bonus points. 1 Just spend",
+    "earn_rates": [
+      {
+        "rate": "4X",
+        "category": "dining, takeout and restaurant delivery"
+      },
+      {
+        "rate": "2X",
+        "category": "grocery stores, gas stations/EV charging stations and on streaming services"
+      },
+      {
+        "rate": "1X",
+        "category": "all other eligible purchases"
+      },
+      {
+        "rate": "2X",
+        "category": "grocery stores* and gas stations/EV charging stations*"
+      },
+      {
+        "rate": "2X",
+        "category": "streaming services"
+      }
+    ],
+    "benefits": [
+      "Real-Time Rewards? Yes"
+    ]
+  },
+  {
+    "name": "Build Credit with Altitude® Go Secured Visa®",
+    "slug": "altitude-go-secured",
+    "url": "https://www.usbank.com/credit-cards/altitude-go-secured-visa-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "earn 1 Point for every $1 spent in Net Purchase",
+    "earn_rates": [
+      {
+        "rate": "4X",
+        "category": "dining, takeout and restaurant delivery"
+      },
+      {
+        "rate": "2X",
+        "category": "gas stations and EV charging stations"
+      },
+      {
+        "rate": "2X",
+        "category": "streaming services and at grocery stores"
+      },
+      {
+        "rate": "1X",
+        "category": "all other eligible purchases"
+      },
+      {
+        "rate": "2X",
+        "category": "grocery stores* and gas stations/EV charging stations*"
+      }
+    ]
+  },
+  {
+    "name": "Travel Credit Card from U.S. Bank",
+    "slug": "altitude-connect",
+    "url": "https://www.usbank.com/credit-cards/altitude-connect-visa-signature-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "$95",
+    "welcome_bonus": "Earn 20,000 bonus points. 1 Just spend",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "prepaid hotels and car rentals"
+      },
+      {
+        "rate": "4X",
+        "category": "travel and at gas stations/EV charging stations"
+      },
+      {
+        "rate": "2X",
+        "category": "dining, streaming services and at grocery stores"
+      },
+      {
+        "rate": "1X",
+        "category": "all other eligible purchases"
+      },
+      {
+        "rate": "4X",
+        "category": "travel"
+      },
+      {
+        "rate": "4X",
+        "category": "gas stations/EV charging stations* on your first $1,000 each quarter"
+      },
+      {
+        "rate": "4X",
+        "category": "gas stations and EV charging stations* on your first $1,000 each quarter"
+      }
+    ],
+    "benefits": [
+      "No foreign transaction fees Enjoy no foreign transaction fees when making purchases outside the United States",
+      "Trip Delay Reimbursement, you must use your Altitude Connect Card to secure transactions",
+      "Global Entry® and/or TSA PreCheck® application(s) and pay the application fee(s) with your U",
+      "TSA PreCheck® 4 plus, have peace of mind with travel protections",
+      "Real-Time Rewards? Yes"
+    ]
+  },
+  {
+    "name": "U.S. Bank Cash+ Visa Signature: Up to 5% Cash Back Rewards",
+    "slug": "cash-plus",
+    "url": "https://www.usbank.com/credit-cards/cash-plus-visa-signature-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "5%",
+        "category": "two categories,"
+      },
+      {
+        "rate": "2%",
+        "category": "one everyday category you choose each quarter"
+      },
+      {
+        "rate": "1%",
+        "category": "all other eligible spend"
+      },
+      {
+        "rate": "5%",
+        "category": "prepaid travel"
+      },
+      {
+        "rate": "5%",
+        "category": "two categories you choose Fast food Home utilities TV, internet and streaming Department stores Cell"
+      },
+      {
+        "rate": "5%",
+        "category": "Travel Center reservations Monthly spend Enter your projected monthly spend of prepaid air, hotel an"
+      },
+      {
+        "rate": "1%",
+        "category": "all other purchases"
+      },
+      {
+        "rate": "5%",
+        "category": "your first $2,000 in eligible net purchases each quarter on the combined two categories you choose"
+      }
+    ],
+    "benefits": [
+      "Real-Time Rewards? Yes"
+    ]
+  },
+  {
+    "name": "Cash+ Secured Visa Cash Back Credit Card",
+    "slug": "cash-plus-secured",
+    "url": "https://www.usbank.com/credit-cards/cash-plus-secured-visa-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "one everyday category you choose each quarter"
+      },
+      {
+        "rate": "1%",
+        "category": "all other eligible purchases See annual fee and full terms Next step: Apply U"
+      },
+      {
+        "rate": "5%",
+        "category": "your first $2,000 in combined eligible purchases each quarter in two categories you choose 3"
+      },
+      {
+        "rate": "5%",
+        "category": "prepaid air, hotel and car reservations booked directly in the Travel Center 3 when you use this car"
+      },
+      {
+        "rate": "2%",
+        "category": "eligible purchases in your choice of one everyday category (like gas stations*, grocery stores* and "
+      },
+      {
+        "rate": "5%",
+        "category": "two categories you choose Fast food Home utilities TV, internet and streaming Department stores Cell"
+      }
+    ],
+    "benefits": [
+      "Real-Time Rewards and other rewards options"
+    ]
+  },
+  {
+    "name": "U.S. Bank Smartly Visa Signature Credit Card",
+    "slug": "bank-smartly",
+    "url": "https://www.usbank.com/credit-cards/bank-smartly-visa-signature-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "2%",
+        "category": "every purchase 1 Unlimited"
+      },
+      {
+        "rate": "2%",
+        "category": "your first $10,000 in eligible Net Purchases each billing cycle when paired with a U"
+      }
+    ]
+  },
+  {
+    "name": "U.S. Bank Shopper Cash Rewards Card: Up to 6% Back",
+    "slug": "shopper-cash-rewards",
+    "url": "https://www.usbank.com/credit-cards/shopper-cash-rewards-visa-signature-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "6%",
+        "category": "your favorite stores,"
+      },
+      {
+        "rate": "3%",
+        "category": "one everyday category you choose each quarter up to $1,500"
+      },
+      {
+        "rate": "1.5%",
+        "category": "all eligible purchases"
+      },
+      {
+        "rate": "5.5%",
+        "category": "hotel and car reservations booked directly in the Travel Center when you use this card"
+      },
+      {
+        "rate": "6%",
+        "category": "two retailers you choose, up to $1,500 in combined eligible purchases"
+      },
+      {
+        "rate": "1.5%",
+        "category": "other eligible purchases"
+      },
+      {
+        "rate": "6%",
+        "category": "your first $1,500 in combined Net Purchases at your two chosen"
+      }
+    ],
+    "benefits": [
+      "Real-Time Rewards? Yes"
+    ]
+  },
+  {
+    "name": "Split™ World Mastercard®",
+    "slug": "split-card",
+    "url": "https://www.usbank.com/credit-cards/split-card-world-mastercard-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "1.5%",
+        "category": "All purchases (auto-split between spending and savings)"
+      }
+    ]
+  },
+  {
+    "name": "U.S. Bank Shield™ Visa® Credit Card",
+    "slug": "shield",
+    "url": "https://www.usbank.com/credit-cards/shield-visa-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "4%",
+        "category": "prepaid air, hotel and car reservations booked directly in the Travel Center when you use your card"
+      }
+    ],
+    "benefits": [
+      "Real-Time Rewards? Yes",
+      "Cell phone protection Get up to $600 reimbursed if your cell phone is stolen or damaged when you pay your monthly cellul"
+    ]
+  },
+  {
+    "name": "Secured Visa Credit Card to Help Build Credit",
+    "slug": "secured",
+    "url": "https://www.usbank.com/credit-cards/secured-visa-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Personal",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee"
+  },
+  {
+    "name": "Business Altitude® Connect Visa Signature® Card",
+    "slug": "biz-altitude-connect",
+    "url": "https://www.usbank.com/business-banking/business-credit-cards/business-altitude-connect-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "$95",
+    "welcome_bonus": "earn 1 Point for every $1 spent in eligible Net Purchase",
+    "earn_rates": [
+      {
+        "rate": "4X",
+        "category": "travel, including airfare, hotels, gas and EV charging stations"
+      },
+      {
+        "rate": "2X",
+        "category": "dining, takeout, restaurant delivery and cell phone services and 1 point for all other purchases"
+      }
+    ],
+    "benefits": [
+      "no foreign transaction fees when making purchases outside the United States",
+      "auto rental collision damage waiver, lost luggage insurance and travel assistance services",
+      "Real-Time Rewards"
+    ]
+  },
+  {
+    "name": "Business Altitude® Power Visa Signature® Card",
+    "slug": "biz-altitude-power",
+    "url": "https://www.usbank.com/business-banking/business-credit-cards/business-altitude-power-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "$195",
+    "welcome_bonus": "Earn 75,000 bonus points 3 Up to a $750 value 1 after spend",
+    "earn_rates": [
+      {
+        "rate": "2X",
+        "category": "all purchases"
+      },
+      {
+        "rate": "5X",
+        "category": "up to $5,000 combined mobile wallet and virtual card purchases each quarter"
+      },
+      {
+        "rate": "6X",
+        "category": "prepaid hotel and car rentals booked directly in the Travel Center when you use this card"
+      },
+      {
+        "rate": "5X",
+        "category": "up to $5,000 in combined mobile wallet and virtual card purchases each quarter"
+      }
+    ],
+    "benefits": [
+      "no foreign transaction fees when making purchases outside the United States",
+      "Real-Time Rewards"
+    ]
+  },
+  {
+    "name": "Business Leverage Visa Signature Rewards Credit Card",
+    "slug": "biz-leverage-rewards",
+    "url": "https://www.usbank.com/business-banking/business-credit-cards/business-leverage-rewards-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Visa",
+    "country": "US",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "welcome_bonus": "earn 1 Point for every $1 spent in eligible Net Purchase",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "prepaid hotels and car rentals booked directly in the Travel Center when you use this card"
+      },
+      {
+        "rate": "1X",
+        "category": "dollar spent on all other eligible purchases"
+      },
+      {
+        "rate": "2X",
+        "category": "your top two spend categories each month, and"
+      },
+      {
+        "rate": "1X",
+        "category": "all other purchases"
+      },
+      {
+        "rate": "2X",
+        "category": "their top two highest spend categories each month - automatically"
+      },
+      {
+        "rate": "1X",
+        "category": "all other eligible purchases"
+      }
+    ],
+    "benefits": [
+      "no foreign transaction fees on international inventory, supply or travel expenses",
+      "Real-Time Rewards"
+    ]
+  },
+  {
+    "name": "Low Intro Business Credit Card",
+    "slug": "biz-shield",
+    "url": "https://www.usbank.com/business-banking/business-credit-cards/business-shield-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "5%",
+        "category": "prepaid air, hotel and car rentals booked directly in the Travel Center when using your card"
+      }
+    ],
+    "benefits": [
+      "Purchase protection When you use your card, your purchases are protected",
+      "Real-Time Rewards"
+    ]
+  },
+  {
+    "name": "Triple Cash Back Business Credit Card",
+    "slug": "biz-triple-cash-back",
+    "url": "https://www.usbank.com/business-banking/business-credit-cards/business-triple-cash-back-credit-card.html",
+    "issuer": "US Bank",
+    "network": "Mastercard",
+    "country": "US",
+    "category": "Business",
+    "card_type": "Credit Card",
+    "fee": "No Annual Fee",
+    "earn_rates": [
+      {
+        "rate": "3%",
+        "category": "eligible purchases at gas and EV charging stations (transactions of $200 or less)*, office supply st"
+      },
+      {
+        "rate": "1%",
+        "category": "all other eligible purchases"
+      },
+      {
+        "rate": "3%",
+        "category": "select categories Cash back rewards on all other eligible purchases $100 annual statement credit for"
+      },
+      {
+        "rate": "5%",
+        "category": "prepaid hotels and car rentals booked directly in the Travel Center when you use this card"
+      }
+    ],
+    "benefits": [
+      "Real-Time Rewards"
+    ]
+  }
+]
