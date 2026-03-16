@@ -198,6 +198,28 @@
     "welcome_bonus": "Earn 8 points per $1 spent on eligible purchases made at Hotels by Wyndham as well as on qualifying",
     "benefits": [
       "No Foreign Transaction"
+    ],
+    "earn_rates": [
+      {
+        "rate": "8X",
+        "category": "eligible purchases made at Hotels by Wyndham as well as on qualifying gas purchases"
+      },
+      {
+        "rate": "5X",
+        "category": "marketing, advertising and utility purchases"
+      },
+      {
+        "rate": "1X",
+        "category": "all other purchases (excluding Wyndham Timeshare resort down payments)"
+      },
+      {
+        "rate": "8X",
+        "category": "Hotels by Wyndham and gas 3 Earn"
+      },
+      {
+        "rate": "5X",
+        "category": "eligible marketing, advertising and utility purchases"
+      }
     ]
   },
   {
@@ -215,6 +237,20 @@
       "Lounge",
       "Global Entry",
       "TSA PreCheck"
+    ],
+    "earn_rates": [
+      {
+        "rate": "3X miles",
+        "category": "Emirates and flydubai purchases"
+      },
+      {
+        "rate": "2X miles",
+        "category": "Grocery, dining, and fuel"
+      },
+      {
+        "rate": "1X miles",
+        "category": "All other purchases"
+      }
     ]
   },
   {
@@ -229,6 +265,12 @@
     "fee": "$99",
     "benefits": [
       "No Foreign Transaction"
+    ],
+    "earn_rates": [
+      {
+        "rate": "3X miles",
+        "category": "emirates"
+      }
     ]
   },
   {
@@ -247,7 +289,22 @@
       "Priority Boarding",
       "Companion",
       "Elite Status"
-    ]
+    ],
+    "earn_rates": [
+      {
+        "rate": "5X miles",
+        "category": "Frontier Airlines purchases"
+      },
+      {
+        "rate": "2X miles",
+        "category": "Dining, entertainment, transit"
+      },
+      {
+        "rate": "1X miles",
+        "category": "All other purchases"
+      }
+    ],
+    "fee": "$79"
   },
   {
     "name": "Apply for the Miles &amp; More® World Elite Mastercard®",
@@ -264,6 +321,20 @@
       "No Foreign Transaction",
       "Companion",
       "Lounge"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X miles",
+        "category": "Miles &amp; More partner airline tickets"
+      },
+      {
+        "rate": "1X miles",
+        "category": "all other purchases"
+      },
+      {
+        "rate": "1X miles",
+        "category": "Earn"
+      }
     ]
   },
   {
@@ -278,6 +349,16 @@
     "fee": "No Annual Fee",
     "benefits": [
       "No Foreign Transaction"
+    ],
+    "earn_rates": [
+      {
+        "rate": "2X points",
+        "category": "Carnival purchases"
+      },
+      {
+        "rate": "1X points",
+        "category": "All other purchases"
+      }
     ]
   },
   {
@@ -318,6 +399,20 @@
     "fee": "No Annual Fee",
     "benefits": [
       "No Foreign Transaction"
+    ],
+    "earn_rates": [
+      {
+        "rate": "5X points",
+        "category": "Capital Vacations purchases"
+      },
+      {
+        "rate": "2X points",
+        "category": "Dining and entertainment"
+      },
+      {
+        "rate": "1X points",
+        "category": "All other purchases"
+      }
     ]
   },
   {
@@ -330,7 +425,21 @@
     "category": "Personal",
     "card_type": "Credit Card",
     "fee": "No Annual Fee",
-    "welcome_bonus": "500 Points = $1 Reward redeemable in the Encore Market with exclusive products, offers, and experiences or on purchases at the Gap Inc. family of brands Free shipping on all online orders $35 or more Welcome bonus Receive 20% off your first purchase with your new card at Gap Benefit details No Annua"
+    "welcome_bonus": "500 Points = $1 Reward redeemable in the Encore Market with exclusive products, offers, and experiences or on purchases at the Gap Inc. family of brands Free shipping on all online orders $35 or more Welcome bonus Receive 20% off your first purchase with your new card at Gap Benefit details No Annua",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "the Gap Inc"
+      },
+      {
+        "rate": "3X",
+        "category": "all eligible retail apparel brands"
+      },
+      {
+        "rate": "1X",
+        "category": "everywhere else where Mastercard ® is accepted 500 Points = $1 Reward redeemable in the Encore Marke"
+      }
+    ]
   },
   {
     "name": "Banana Republic Encore Mastercard®",
@@ -342,7 +451,21 @@
     "category": "Personal",
     "card_type": "Credit Card",
     "fee": "No Annual Fee",
-    "welcome_bonus": "500 Points = $1 Reward redeemable in the Encore Market with exclusive products, offers, and experiences or on purchases at the Gap Inc. family of brands Free shipping on all online orders $35 or more Welcome bonus Receive 20% off your first purchase with your new card at Banana Republic Benefit deta"
+    "welcome_bonus": "500 Points = $1 Reward redeemable in the Encore Market with exclusive products, offers, and experiences or on purchases at the Gap Inc. family of brands Free shipping on all online orders $35 or more Welcome bonus Receive 20% off your first purchase with your new card at Banana Republic Benefit deta",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "the Gap Inc"
+      },
+      {
+        "rate": "3X",
+        "category": "all eligible retail apparel brands"
+      },
+      {
+        "rate": "1X",
+        "category": "everywhere else where Mastercard ® is accepted 500 Points = $1 Reward redeemable in the Encore Marke"
+      }
+    ]
   },
   {
     "name": "Old Navy",
@@ -354,7 +477,21 @@
     "category": "Personal",
     "card_type": "Credit Card",
     "fee": "No Annual Fee",
-    "welcome_bonus": "500 Points = $1 Reward redeemable in the Encore Market with exclusive products, offers, and experiences or on purchases at the Gap Inc. family of brands Free shipping on all online orders $35 or more Welcome bonus Receive 30% off your first purchase with your new card at Old Navy Benefit details No "
+    "welcome_bonus": "500 Points = $1 Reward redeemable in the Encore Market with exclusive products, offers, and experiences or on purchases at the Gap Inc. family of brands Free shipping on all online orders $35 or more Welcome bonus Receive 30% off your first purchase with your new card at Old Navy Benefit details No ",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "the Gap Inc"
+      },
+      {
+        "rate": "3X",
+        "category": "all eligible retail apparel brands"
+      },
+      {
+        "rate": "1X",
+        "category": "everywhere else where Mastercard ® is accepted 500 Points = $1 Reward redeemable in the Encore Marke"
+      }
+    ]
   },
   {
     "name": "Athleta Encore Mastercard®",
@@ -366,7 +503,21 @@
     "category": "Personal",
     "card_type": "Credit Card",
     "fee": "No Annual Fee",
-    "welcome_bonus": "500 Points = $1 Reward redeemable in the Encore Market with exclusive products, offers, and experiences or on purchases at the Gap Inc. family of brands Free shipping on all online orders $35 or more Welcome bonus Receive 20% off your first purchase with your new card at Athleta Benefit details No A"
+    "welcome_bonus": "500 Points = $1 Reward redeemable in the Encore Market with exclusive products, offers, and experiences or on purchases at the Gap Inc. family of brands Free shipping on all online orders $35 or more Welcome bonus Receive 20% off your first purchase with your new card at Athleta Benefit details No A",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "the Gap Inc"
+      },
+      {
+        "rate": "3X",
+        "category": "all eligible retail apparel brands"
+      },
+      {
+        "rate": "1X",
+        "category": "everywhere else where Mastercard ® is accepted 500 Points = $1 Reward redeemable in the Encore Marke"
+      }
+    ]
   },
   {
     "name": "The Barnes &amp; Noble Mastercard®",
@@ -430,6 +581,20 @@
     "category": "Business",
     "card_type": "Credit Card",
     "fee": "No Annual Fee",
-    "welcome_bonus": "Earn 100,000 bonus points after spend"
+    "welcome_bonus": "Earn 100,000 bonus points after spend",
+    "earn_rates": [
+      {
+        "rate": "5X",
+        "category": "GM parts and service purchases"
+      },
+      {
+        "rate": "3X",
+        "category": "Gas, dining, office supplies"
+      },
+      {
+        "rate": "1X",
+        "category": "All other purchases"
+      }
+    ]
   }
 ]
