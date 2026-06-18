@@ -2269,7 +2269,19 @@
     "is_business": false,
     "cpp_cad": 1.8,
     "welcome_bonus_points": 70000,
-    "first_year_value_cad": 1140
+    "first_year_value_cad": 1140,
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": false,
+      "car_rental_insurance": true,
+      "travel_medical": false,
+      "trip_cancellation": true,
+      "flight_delay": true,
+      "mobile_insurance": false,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": false
+    }
   },
   {
     "slug": "westjet-rbc-mastercard",
@@ -2364,7 +2376,19 @@
     "is_business": false,
     "cpp_cad": 1.8,
     "welcome_bonus_points": 100000,
-    "first_year_value_cad": 1401
+    "first_year_value_cad": 1401,
+    "benefits": {
+      "lounge_access": true,
+      "no_fx_fee": false,
+      "car_rental_insurance": true,
+      "travel_medical": true,
+      "trip_cancellation": true,
+      "flight_delay": true,
+      "mobile_insurance": true,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": false
+    }
   },
   {
     "slug": "rbc-british-airways-visa-infinite",
@@ -5767,7 +5791,19 @@
     "is_business": true,
     "cpp_cad": 0.67,
     "welcome_bonus_points": 150000,
-    "first_year_value_cad": 856
+    "first_year_value_cad": 856,
+    "benefits": {
+      "lounge_access": true,
+      "no_fx_fee": false,
+      "car_rental_insurance": true,
+      "travel_medical": true,
+      "trip_cancellation": true,
+      "flight_delay": true,
+      "mobile_insurance": false,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": false
+    }
   },
   {
     "slug": "bmo-cashback-business-mastercard",
