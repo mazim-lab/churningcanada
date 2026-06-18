@@ -1,0 +1,72 @@
+name: LLM Card-Data Refresh
+
+# Semi-weekly LLM-assisted refresh of card data. Fetches each card's issuer page,
+# asks Claude to extract current offer details, diffs against the live data, and
+# opens a PULL REQUEST with a change report for human review. It never writes to
+# src/data directly — a person reviews the flagged changes and merges.
+#
+# Setup required (one-time):
+#   1. Add repo secret ANTHROPIC_API_KEY (Settings → Secrets and variables → Actions).
+#   2. Settings → Actions → General → Workflow permissions:
+#      enable "Allow GitHub Actions to create and approve pull requests".
+#
+# Cost: defaults to claude-opus-4-8. Set the CHURNING_EXTRACT_MODEL env below to
+# claude-haiku-4-5 or claude-sonnet-4-6 for a cheaper run.
+
+on:
+  schedule:
+    # Sunday and Wednesday at 7 AM UTC
+    - cron: '0 7 * * 0,3'
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: 'Which cards to refresh'
+        type: choice
+        default: 'all'
+        options: ['all', 'CA', 'US']
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r scrapers/requirements.txt
+
+      - name: Run LLM extraction (writes draft + report; never touches src/data)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # CHURNING_EXTRACT_MODEL: claude-haiku-4-5   # uncomment for a cheaper run
+        run: |
+          if [ "${{ github.event.inputs.scope }}" = "CA" ]; then
+            python scrapers/llm_extract.py --country CA
+          elif [ "${{ github.event.inputs.scope }}" = "US" ]; then
+            python scrapers/llm_extract.py --country US
+          else
+            python scrapers/llm_extract.py --all
+          fi
+
+      - name: Open / update review PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: llm-card-refresh
+          title: 'Card-data refresh — review flagged changes'
+          commit-message: 'chore: LLM card-data refresh report'
+          body: |
+            Automated LLM-assisted card-data refresh.
+
+            See `data/llm_extract/report.md` for flagged changes (🔴 major / 🟡 minor / 🔵 review).
+            Nothing in `src/data/` was modified — verify 🔴 major changes against the issuer
+            site, then apply the ones you trust to the live data files.
+          add-paths: |
+            data/llm_extract/**
