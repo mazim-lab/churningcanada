@@ -19,6 +19,10 @@ const sections = [
     p: `Some currencies — like Membership Rewards, Aeroplan, and Avion — can be transferred to airline and hotel partners, where savvy redemptions (e.g. business-class flights) are worth well above our baseline. Where it's relevant we note that upside, but the headline first-year value always uses the conservative baseline.`,
   },
   {
+    h: 'Canadian and US cards stay in their own currency',
+    p: `We don't convert between currencies. Canadian cards are valued in CAD and US cards in USD, each clearly labelled, so you're never comparing against a guessed exchange rate. Tip: filter the card explorer by country to compare like-for-like.`,
+  },
+  {
     h: 'We keep valuations current',
     p: `Welcome offers and point values change often. We refresh card offers regularly and review our valuations on an ongoing basis. Figures are estimates to help you compare cards — not guarantees, and not financial advice.`,
   },

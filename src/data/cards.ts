@@ -206,12 +206,11 @@ function normalizeCA(raw: RawCA): Card {
   card.cpp_cad = cpp || null;
   card.welcome_bonus_points = pts || null;
   if (card.first_year_value > 0 && pts && cpp) {
-    const bonusVal = Math.round(pts * cpp / 100);
     const feePart = effectiveFee > 0 ? ` − $${effectiveFee} fee` : '';
-    card.first_year_value_formula = `${pts.toLocaleString()} pts × ${cpp}¢${feePart}`;
+    card.first_year_value_formula = `${pts.toLocaleString()} pts × ${cpp}¢ CAD${feePart}`;
   } else if (card.first_year_value > 0 && bonusValue > 0) {
     const feePart = effectiveFee > 0 ? ` − $${effectiveFee} fee` : '';
-    card.first_year_value_formula = `$${bonusValue} bonus${feePart}`;
+    card.first_year_value_formula = `$${bonusValue} CAD bonus${feePart}`;
   } else {
     card.first_year_value_formula = null;
   }
@@ -245,7 +244,7 @@ interface RawUS {
 
 // US rewards valuations — baseline cents-per-point (USD), by program keyword.
 // Source: Frequent Miler / The Points Guy baseline valuations (cross-checked), 2026-06.
-const USD_TO_CAD = 1.37;
+// US values stay in USD (native) and are labelled USD in the UI — we don't convert.
 const US_PROGRAM_CPP: [string, number][] = [
   ['ihg', 0.5], ['hilton', 0.5], ['bonvoy', 0.8], ['marriott', 0.8], ['hyatt', 1.7],
   ['delta', 1.2], ['skymiles', 1.2], ['united', 1.3], ['southwest', 1.4], ['avios', 1.3],
@@ -263,7 +262,7 @@ function normalizeUS(raw: RawUS): Card {
   const cppUsd = usCpp(`${raw.name} ${raw.signup_bonus_currency || ''}`);
   let bonusValueUsd = raw.signup_bonus_value_usd || 0;
   if (bonusValueUsd > 1000) bonusValueUsd = bonusValueUsd * cppUsd / 100; // raw points → dollars
-  const bonusValue = Math.round(bonusValueUsd * USD_TO_CAD); // CAD
+  const bonusValue = Math.round(bonusValueUsd); // USD (native; labelled in UI)
   const fee = raw.annual_fee || 0;
   // Prefer the refreshed welcome_bonus text if present, else build from signup fields.
   const bonusText = (typeof raw.welcome_bonus === 'string' && raw.welcome_bonus.trim())
@@ -314,7 +313,7 @@ function normalizeUS(raw: RawUS): Card {
   if (allBenefitsFalseUS && fee >= 150) {
     card.benefits_incomplete = true;
   }
-  card.first_year_value = Math.round(bonusValue - fee * USD_TO_CAD); // both in CAD
+  card.first_year_value = Math.round(bonusValue - fee); // USD (native)
   card.first_year_value_formula = null;
   card.cpp_cad = null;
   card.welcome_bonus_points = null;

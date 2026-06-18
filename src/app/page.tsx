@@ -47,7 +47,7 @@ const pillars = [
 export default function HomePage() {
   const [query, setQuery] = useState('');
   const router = useRouter();
-  const featured = getTopCardsByValue(6);
+  const featured = getTopCardsByValue(6, 'CA');
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();

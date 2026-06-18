@@ -1,6 +1,6 @@
 'use client';
 
-import { Card, Benefits, BENEFIT_LABELS } from '@/data/cards';
+import { Card, Benefits, BENEFIT_LABELS, formatCurrency } from '@/data/cards';
 import { getCategoryColor } from '@/data/card-images';
 import { IssuerAvatar } from '@/components/IssuerAvatar';
 import { NetworkBadge } from '@/components/NetworkBadge';
@@ -44,9 +44,11 @@ export function CardTileV2({ card }: { card: Card }) {
         {card.first_year_value > 0 ? (
           <>
             <p className="font-[family-name:var(--font-display)] text-3xl font-semibold text-gold-text dark:text-gold leading-none">
-              ${Math.round(card.first_year_value).toLocaleString()}
+              {formatCurrency(Math.round(card.first_year_value), card.country as 'CA' | 'US')}
             </p>
-            <p className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">Est. first-year value</p>
+            <p className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">
+              Est. first-year value{card.first_year_value_formula ? ` · ${card.first_year_value_formula}` : ''}
+            </p>
           </>
         ) : (
           <p className="font-semibold text-card-foreground">{card.welcome_bonus || '—'}</p>
@@ -102,7 +104,7 @@ export function CardCompareRow({ card }: { card: Card }) {
       </div>
       <div className="md:col-span-3 text-sm text-muted-foreground line-clamp-1" title={card.welcome_bonus || ''}>{card.welcome_bonus || '—'}</div>
       <div className="md:col-span-2 text-sm font-bold text-gold-text dark:text-gold">
-        {card.first_year_value > 0 ? `$${Math.round(card.first_year_value).toLocaleString()}` : '—'}
+        {card.first_year_value > 0 ? formatCurrency(Math.round(card.first_year_value), card.country as 'CA' | 'US') : '—'}
       </div>
       <div className="md:col-span-1 text-gold-text dark:text-gold justify-self-end">
         <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
