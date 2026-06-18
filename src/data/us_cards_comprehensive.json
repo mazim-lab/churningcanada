@@ -1,43 +1,5 @@
 [
   {
-    "slug": "membership-rewards-points",
-    "name": "Membership Rewards\u00ae Points",
-    "issuer": "American Express",
-    "network": "Unknown",
-    "card_type": "personal",
-    "annual_fee": 0.0,
-    "signup_bonus": null,
-    "signup_bonus_formatted": null,
-    "signup_bonus_value_usd": null,
-    "signup_bonus_currency": "points",
-    "welcome_bonus_conditions": null,
-    "earn_rates_summary": null,
-    "key_perks": [
-      "Hotel elite status/collection",
-      "Statement credits",
-      "Airport lounge access",
-      "Front of the Line presale tickets",
-      "Priority Pass lounge access",
-      "Premium lounge access",
-      "Free first checked bag"
-    ],
-    "foreign_transaction_fee": false,
-    "country": "US",
-    "source": "bank_website",
-    "last_verified": "2026-02-23",
-    "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "earn_rates": {
-      "purchases and": "21.99%",
-      "purchases in your first": "10%",
-      "gas and grocery purchases": "4%",
-      "everything else": "2%",
-      "purchases": "21.99%",
-      "Card purchases at hotels participating in Marriott Bonvoy": "5x",
-      "All purchases": "10%"
-    }
-  },
-  {
     "slug": "platinum-card",
     "name": "Platinum Card\u00ae",
     "issuer": "American Express",
@@ -852,6 +814,18 @@
       "purchases": "21.99%",
       "Card purchases at hotels participating in Marriott Bonvoy": "5x",
       "All purchases": "10%"
+    },
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": true,
+      "car_rental_insurance": true,
+      "travel_medical": false,
+      "trip_cancellation": false,
+      "flight_delay": true,
+      "mobile_insurance": true,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": false
     }
   },
   {
@@ -1150,7 +1124,19 @@
       "All purchases": "10%"
     },
     "welcome_bonus": "Earn 150,000 Marriott Bonvoy\u00ae Bonus Points and a $125 Statement Credit",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-18",
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": true,
+      "car_rental_insurance": false,
+      "travel_medical": false,
+      "trip_cancellation": false,
+      "flight_delay": false,
+      "mobile_insurance": false,
+      "purchase_protection": false,
+      "extended_warranty": false,
+      "free_checked_bags": false
+    }
   },
   {
     "slug": "hilton-honors-business-card",
@@ -1193,7 +1179,19 @@
       "All purchases": "10%"
     },
     "welcome_bonus": "Earn 130,000 Hilton Honors Bonus Points",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-18",
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": true,
+      "car_rental_insurance": false,
+      "travel_medical": false,
+      "trip_cancellation": false,
+      "flight_delay": false,
+      "mobile_insurance": false,
+      "purchase_protection": false,
+      "extended_warranty": false,
+      "free_checked_bags": false
+    }
   },
   {
     "slug": "amazon-business-prime-card",
