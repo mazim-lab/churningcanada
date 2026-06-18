@@ -119,7 +119,7 @@ function CardGridItem({ card }: { card: Card }) {
         </div>
         <div className="rounded-lg bg-muted/70 p-2.5">
           <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">Welcome Bonus</p>
-          <p className="font-bold text-sm mt-0.5 text-gold-text dark:text-gold line-clamp-1">{card.welcome_bonus || '—'}</p>
+          <p className="font-bold text-sm mt-0.5 text-gold-text dark:text-gold line-clamp-2 leading-tight" title={card.welcome_bonus || undefined}>{card.welcome_bonus || '—'}</p>
         </div>
         {card.first_year_value > 0 && (
           <div className="rounded-lg bg-emerald-50 dark:bg-emerald-900/20 p-2.5" title={card.first_year_value_formula || undefined}>

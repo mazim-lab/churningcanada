@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Newsreader } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { MobileMenu, MobileMenuButton, MobileMenuProvider } from "@/components/MobileMenu";
+import { allCards } from "@/data/cards";
 import "./globals.css";
 
 const body = Plus_Jakarta_Sans({
@@ -20,7 +21,7 @@ const display = Newsreader({
 
 export const metadata: Metadata = {
   title: "ChurningCanada — Find the Best Credit Cards in Canada",
-  description: "Compare 192+ credit cards across Canada and the US. Find the best travel, cashback, and rewards cards for Canadians.",
+  description: `Compare ${allCards.length}+ credit cards across Canada and the US. Find the best travel, cashback, and rewards cards for Canadians.`,
   openGraph: {
     title: "ChurningCanada",
     description: "The smartest way to earn rewards in Canada",
@@ -117,7 +118,7 @@ function Footer() {
             </div>
           </div>
           <div className="mt-10 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-            © 2025 ChurningCanada. Not financial advice.
+            © {new Date().getFullYear()} ChurningCanada. Not financial advice.
           </div>
         </div>
       </div>
