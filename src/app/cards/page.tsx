@@ -49,7 +49,7 @@ function CardsContent() {
   const [minBonus, setMinBonus] = useState(0);
   const [selectedBenefits, setSelectedBenefits] = useState<(keyof Benefits)[]>([]);
   const [sort, setSort] = useState<SortOption>((searchParams.get('sort') as SortOption) || 'value');
-  const [listView, setListView] = useState(false);
+  const [listView, setListView] = useState(true); // default to comparison table
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [issuerSearch, setIssuerSearch] = useState('');
 

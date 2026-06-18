@@ -59,12 +59,14 @@ export interface Card {
 
 // ── Helpers ────────────────────────────────────────────
 
-function normalizeNetwork(n: string | null): string {
-  if (!n) return 'Unknown';
-  const lower = n.toLowerCase();
-  if (lower === 'mc') return 'Mastercard';
-  if (lower === 'american express' || lower === 'amex') return 'Amex';
-  return n;
+function normalizeNetwork(n: string | null, context = ''): string {
+  const lower = (n || '').toLowerCase();
+  const hay = `${n || ''} ${context}`.toLowerCase();
+  if (lower === 'mc' || hay.includes('mastercard')) return 'Mastercard';
+  if (lower === 'amex' || lower === 'american express' || hay.includes('american express') || hay.includes('amex')) return 'Amex';
+  if (hay.includes('visa')) return 'Visa';
+  if (n && lower !== 'unknown' && lower !== 'unkn') return n;
+  return 'Unknown';
 }
 
 function cleanEarnRateKey(key: string): string {
@@ -150,7 +152,7 @@ function normalizeCA(raw: RawCA): Card {
     slug: raw.slug,
     name: raw.name,
     issuer: raw.issuer || 'Unknown',
-    network: normalizeNetwork(raw.network),
+    network: normalizeNetwork(raw.network, `${raw.name} ${raw.issuer || ''}`),
     card_type: raw.card_type || 'rewards',
     annual_fee: fee,
     first_year_fee: firstYearFee,
@@ -272,7 +274,7 @@ function normalizeUS(raw: RawUS): Card {
     slug: raw.slug,
     name: raw.name,
     issuer: raw.issuer,
-    network: normalizeNetwork(raw.network),
+    network: normalizeNetwork(raw.network, `${raw.name} ${raw.issuer || ''}`),
     card_type: raw.card_type,
     annual_fee: fee,
     first_year_fee: null,
