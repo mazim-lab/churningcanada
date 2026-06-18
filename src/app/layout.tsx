@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Newsreader } from "next/font/google";
+import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { MobileMenu, MobileMenuButton, MobileMenuProvider } from "@/components/MobileMenu";
@@ -12,7 +12,7 @@ const body = Plus_Jakarta_Sans({
   variable: "--font-sans",
 });
 
-const display = Newsreader({
+const display = Fraunces({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-display",
@@ -20,14 +20,21 @@ const display = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "ChurningCanada — Find the Best Credit Cards in Canada",
-  description: `Compare ${allCards.length}+ credit cards across Canada and the US. Find the best travel, cashback, and rewards cards for Canadians.`,
+  title: "MoneyAtlas — Cards, Points & Personal Finance for Canadians",
+  description: `Navigate your money. Compare ${allCards.length}+ credit cards, maximize travel points, and master personal finance — built for Canadians.`,
   openGraph: {
-    title: "ChurningCanada",
-    description: "The smartest way to earn rewards in Canada",
+    title: "MoneyAtlas",
+    description: "Navigate your money — cards, points, and personal finance for Canadians.",
     type: "website",
   },
 };
+
+const NAV = [
+  { label: "Cards", href: "/cards" },
+  { label: "Travel", href: "/cards?type=travel&sort=value" },
+  { label: "Money", href: "/blog" },
+  { label: "Tools", href: "/compare" },
+];
 
 export default function RootLayout({
   children,
@@ -50,43 +57,48 @@ export default function RootLayout({
   );
 }
 
+function Wordmark({ className = "" }: { className?: string }) {
+  return (
+    <a href="/" className={`flex items-center gap-2 font-[family-name:var(--font-display)] ${className}`}>
+      <span aria-hidden className="text-xl leading-none">🧭</span>
+      <span className="text-2xl leading-none tracking-tight">
+        <span className="text-foreground">Money</span><span className="text-gold-text dark:text-gold">Atlas</span>
+      </span>
+    </a>
+  );
+}
+
 function Header() {
   return (
-    <>
-    <MobileMenu />
-    <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-3">
           <MobileMenuButton />
-          <a href="/" className="flex items-center gap-2 font-bold text-xl tracking-tight font-[family-name:var(--font-display)]">
-            <span className="text-accent text-2xl leading-none">Churning</span><span className="text-gold-text dark:text-gold text-2xl leading-none">Canada</span>
-            <span className="text-xl leading-none ml-0.5">🍁</span>
-          </a>
+          <Wordmark />
         </div>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="/cards" className="relative text-muted-foreground hover:text-foreground transition-colors after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Cards</a>
-          <a href="/compare" className="relative text-muted-foreground hover:text-foreground transition-colors after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Compare</a>
-          <a href="/guides/us-cards-for-canadians" className="relative text-muted-foreground hover:text-foreground transition-colors after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Guides</a>
-          <a href="/blog" className="relative text-muted-foreground hover:text-foreground transition-colors after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full">Blog</a>
+          {NAV.map((n) => (
+            <a key={n.label} href={n.href} className="relative text-muted-foreground hover:text-foreground transition-colors after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full">
+              {n.label}
+            </a>
+          ))}
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <a href="/cards" className="hidden sm:inline-flex rounded-full bg-gradient-to-r from-gold-dark to-gold px-5 py-2 text-sm font-semibold text-primary-dark hover:brightness-110 transition-all shadow-sm shadow-gold/20">
-            Explore Cards
+          <a href="/cards" className="hidden sm:inline-flex rounded-full bg-gold px-5 py-2 text-sm font-semibold text-primary-dark hover:bg-gold-light transition-all shadow-sm shadow-gold/20">
+            Find a card
           </a>
         </div>
       </div>
     </header>
-    </>
   );
 }
 
 function Footer() {
   return (
-    <footer className="footer-gradient mt-20">
-      {/* Gold divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent" />
-      <div className="border-t border-border/50 bg-muted">
+    <footer className="mt-24">
+      <div className="atlas-rule" />
+      <div className="border-t border-border/60 bg-muted/60">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
@@ -94,31 +106,32 @@ function Footer() {
               <ul className="space-y-2.5 text-sm text-muted-foreground">
                 <li><a href="/cards?country=CA" className="hover:text-foreground transition-colors">Canadian Cards</a></li>
                 <li><a href="/cards?country=US" className="hover:text-foreground transition-colors">US Cards</a></li>
-                <li><a href="/cards?type=travel" className="hover:text-foreground transition-colors">Travel Cards</a></li>
                 <li><a href="/cards?type=cashback" className="hover:text-foreground transition-colors">Cashback Cards</a></li>
+                <li><a href="/cards?maxFee=0" className="hover:text-foreground transition-colors">No-Fee Cards</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 text-foreground/70">Tools</h3>
+              <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 text-foreground/70">Travel &amp; Points</h3>
               <ul className="space-y-2.5 text-sm text-muted-foreground">
-                <li><a href="/compare" className="hover:text-foreground transition-colors">Compare Cards</a></li>
-                <li><a href="/cards?fee=0" className="hover:text-foreground transition-colors">No Fee Cards</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 text-foreground/70">Learn</h3>
-              <ul className="space-y-2.5 text-sm text-muted-foreground">
-                <li><a href="/blog" className="hover:text-foreground transition-colors">Blog</a></li>
+                <li><a href="/cards?type=travel&sort=value" className="hover:text-foreground transition-colors">Best Travel Cards</a></li>
                 <li><a href="/guides/us-cards-for-canadians" className="hover:text-foreground transition-colors">US Cards for Canadians</a></li>
+                <li><a href="/compare" className="hover:text-foreground transition-colors">Compare Cards</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 text-foreground/70">Money</h3>
+              <ul className="space-y-2.5 text-sm text-muted-foreground">
+                <li><a href="/blog" className="hover:text-foreground transition-colors">Guides &amp; Articles</a></li>
+                <li><a href="/guides/us-cards-for-canadians" className="hover:text-foreground transition-colors">Guides</a></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold text-sm uppercase tracking-wider mb-4 text-foreground/70">About</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">ChurningCanada helps Canadians find and compare the best credit cards.</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">MoneyAtlas helps Canadians navigate credit cards, travel rewards, and personal finance.</p>
             </div>
           </div>
-          <div className="mt-10 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} ChurningCanada. Not financial advice.
+          <div className="mt-10 pt-8 border-t border-border/60 text-center text-sm text-muted-foreground">
+            © {new Date().getFullYear()} MoneyAtlas. Information only — not financial advice.
           </div>
         </div>
       </div>

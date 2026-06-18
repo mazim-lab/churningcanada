@@ -3,56 +3,68 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* === LIGHT MODE (default) === */
+  /* === LIGHT MODE — "The Atlas": parchment / navy / brass === */
   /* Surfaces */
-  --color-background: #fdfcfb;
-  --color-card: #ffffff;
-  --color-muted: #f5f2ef;
-  --color-border: #e7e3df;
+  --color-background: #f4eee0;
+  --color-card: #fdfbf5;
+  --color-muted: #ece4d3;
+  --color-border: #ddd2bd;
   /* Text */
-  --color-foreground: #2d2a26;
-  --color-card-foreground: #2d2a26;
-  --color-muted-foreground: #6b6560;
-  /* Primary (buttons + text links share same dark green — works in light mode) */
-  --color-primary: #1a5632;
-  --color-primary-light: #22724a;
-  --color-primary-dark: #14432a;
-  /* Accent (for text links/highlights — same as primary in light mode) */
-  --color-accent: #1a5632;
-  --color-accent-light: #22724a;
-  /* Gold */
-  --color-gold: #d4a853;
-  --color-gold-light: #e4c47a;
-  --color-gold-dark: #c9952a;
-  --color-gold-text: #8a6000;
+  --color-foreground: #15233b;
+  --color-card-foreground: #15233b;
+  --color-muted-foreground: #5c6677;
+  /* Primary = navy (buttons + links) */
+  --color-primary: #15233b;
+  --color-primary-light: #25395a;
+  --color-primary-dark: #0e1829;
+  /* Accent = navy (text links) */
+  --color-accent: #15233b;
+  --color-accent-light: #25395a;
+  /* Brass (kept under the `gold` token names so components reskin automatically) */
+  --color-gold: #b98a3c;
+  --color-gold-light: #cda35c;
+  --color-gold-dark: #9c7128;
+  --color-gold-text: #7c5a1f;
   /* Fonts */
   --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
 }
 
 .dark {
-  /* === DARK MODE — fully independent palette === */
+  /* === DARK MODE — deep navy night === */
   /* Surfaces */
-  --color-background: #0f0d0c;
-  --color-card: #1e1a17;
-  --color-muted: #161311;
-  --color-border: #3a3530;
+  --color-background: #0e1726;
+  --color-card: #16223a;
+  --color-muted: #121b2d;
+  --color-border: #2a3850;
   /* Text */
-  --color-foreground: #ede9e5;
-  --color-card-foreground: #ede9e5;
-  --color-muted-foreground: #a09a95;
-  /* Primary (buttons — dark enough green for white text, 5.4:1) */
-  --color-primary: #1a7a3f;
-  --color-primary-light: #1d8847;
-  --color-primary-dark: #156832;
-  /* Accent (text links/highlights — bright green for readability, 11:1+) */
-  --color-accent: #5ddb94;
-  --color-accent-light: #7ee8ab;
-  /* Gold */
-  --color-gold: #f0c556;
-  --color-gold-light: #f5d88a;
-  --color-gold-dark: #dab240;
-  --color-gold-text: #f0c556;
+  --color-foreground: #ece4d3;
+  --color-card-foreground: #ece4d3;
+  --color-muted-foreground: #9aa6b8;
+  /* Primary = brass (buttons stand out on navy; pair with dark text) */
+  --color-primary: #c39a47;
+  --color-primary-light: #d3ad5f;
+  --color-primary-dark: #0e1829;
+  /* Accent = brass-light (text links/highlights) */
+  --color-accent: #d8b56a;
+  --color-accent-light: #e6c984;
+  /* Brass */
+  --color-gold: #d3ad5f;
+  --color-gold-light: #e6c984;
+  --color-gold-dark: #b8923f;
+  --color-gold-text: #e6c984;
+}
+
+/* Atlas topographic contour background (hero / section accents) */
+.atlas-contours {
+  background-color: var(--color-background);
+  background-image:
+    repeating-radial-gradient(circle at 86% 12%, color-mix(in srgb, var(--color-foreground) 6%, transparent) 0 1.5px, transparent 1.5px 46px),
+    repeating-radial-gradient(circle at 10% 88%, color-mix(in srgb, var(--color-foreground) 4%, transparent) 0 1.5px, transparent 1.5px 62px);
+}
+.atlas-rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, color-mix(in srgb, var(--color-gold) 55%, transparent), transparent);
 }
 
 /* Selection styling */

@@ -6,9 +6,10 @@ const MobileMenuContext = createContext<{ open: boolean; setOpen: (v: boolean) =
 
 const navLinks = [
   { href: '/cards', label: 'Cards' },
-  { href: '/compare', label: 'Compare' },
+  { href: '/cards?type=travel&sort=value', label: 'Travel' },
+  { href: '/blog', label: 'Money' },
+  { href: '/compare', label: 'Tools' },
   { href: '/guides/us-cards-for-canadians', label: 'Guides' },
-  { href: '/blog', label: 'Blog' },
 ];
 
 export function MobileMenuProvider({ children }: { children: React.ReactNode }) {
@@ -39,9 +40,9 @@ export function MobileMenu() {
       <div className="absolute inset-0 bg-black/50" onClick={() => setOpen(false)} />
       <div className="absolute top-0 left-0 h-full w-72 bg-card shadow-2xl border-r border-border">
         <div className="flex items-center justify-between p-4 border-b border-border/50">
-          <a href="/" className="font-bold text-lg font-[family-name:var(--font-display)]">
-            <span className="text-accent">Churning</span><span className="text-gold-text dark:text-gold">Canada</span>
-            <span className="ml-0.5">🍁</span>
+          <a href="/" className="text-lg font-[family-name:var(--font-display)]">
+            <span aria-hidden className="mr-1">🧭</span>
+            <span className="text-foreground">Money</span><span className="text-gold-text dark:text-gold">Atlas</span>
           </a>
           <button onClick={() => setOpen(false)} className="p-2 text-muted-foreground hover:text-foreground" aria-label="Close menu">
             <X className="w-5 h-5" />
@@ -60,8 +61,8 @@ export function MobileMenu() {
           ))}
         </nav>
         <div className="p-4 border-t border-border/50">
-          <a href="/cards" className="block text-center rounded-full bg-gradient-to-r from-gold-dark to-gold px-6 py-2.5 text-sm font-semibold text-primary-dark hover:brightness-110 transition-all">
-            Explore Cards
+          <a href="/cards" className="block text-center rounded-full bg-gold px-6 py-2.5 text-sm font-semibold text-primary-dark hover:bg-gold-light transition-all">
+            Find a card
           </a>
         </div>
       </div>
