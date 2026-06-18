@@ -76,6 +76,18 @@
       "purchases": "21.99%",
       "Card purchases at hotels participating in Marriott Bonvoy": "5x",
       "All purchases": "10%"
+    },
+    "benefits": {
+      "lounge_access": true,
+      "no_fx_fee": true,
+      "car_rental_insurance": true,
+      "travel_medical": false,
+      "trip_cancellation": true,
+      "flight_delay": true,
+      "mobile_insurance": true,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": false
     }
   },
   {
@@ -158,6 +170,18 @@
       "purchases": "21.99%",
       "Card purchases at hotels participating in Marriott Bonvoy": "5x",
       "All purchases": "10%"
+    },
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": false,
+      "car_rental_insurance": true,
+      "travel_medical": false,
+      "trip_cancellation": false,
+      "flight_delay": false,
+      "mobile_insurance": false,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": false
     }
   },
   {
@@ -199,6 +223,18 @@
       "purchases": "21.99%",
       "Card purchases at hotels participating in Marriott Bonvoy": "5x",
       "All purchases": "10%"
+    },
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": false,
+      "car_rental_insurance": true,
+      "travel_medical": false,
+      "trip_cancellation": false,
+      "flight_delay": false,
+      "mobile_insurance": false,
+      "purchase_protection": true,
+      "extended_warranty": false,
+      "free_checked_bags": false
     }
   },
   {
@@ -410,7 +446,19 @@
       "All purchases": "10%"
     },
     "welcome_bonus": "Earn 100,000 Hilton Honors Bonus Points and a $100 Statement Credit",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-18",
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": true,
+      "car_rental_insurance": false,
+      "travel_medical": false,
+      "trip_cancellation": false,
+      "flight_delay": false,
+      "mobile_insurance": false,
+      "purchase_protection": false,
+      "extended_warranty": false,
+      "free_checked_bags": false
+    }
   },
   {
     "slug": "hilton-honors-american-express-surpass-card",
@@ -453,7 +501,19 @@
       "All purchases": "10%"
     },
     "welcome_bonus": "Earn 130,000 Hilton Honors Bonus Points",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-18",
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": true,
+      "car_rental_insurance": false,
+      "travel_medical": false,
+      "trip_cancellation": false,
+      "flight_delay": false,
+      "mobile_insurance": false,
+      "purchase_protection": false,
+      "extended_warranty": false,
+      "free_checked_bags": false
+    }
   },
   {
     "slug": "delta-skymiles-reserve-american-express-card",
@@ -537,7 +597,19 @@
       "All purchases": "10%"
     },
     "welcome_bonus": "Earn 40,000 Membership Rewards\u00ae Points",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-18",
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": true,
+      "car_rental_insurance": true,
+      "travel_medical": false,
+      "trip_cancellation": false,
+      "flight_delay": true,
+      "mobile_insurance": false,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": false
+    }
   },
   {
     "slug": "hilton-honors-american-express-aspire-card",
