@@ -3,12 +3,12 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* === LIGHT MODE — "The Atlas": parchment / navy / brass === */
+  /* === LIGHT MODE — "The Atlas": creamy white / navy / brass === */
   /* Surfaces */
-  --color-background: #f4eee0;
-  --color-card: #fdfbf5;
-  --color-muted: #ece4d3;
-  --color-border: #ddd2bd;
+  --color-background: #faf8f2;
+  --color-card: #ffffff;
+  --color-muted: #f1ede4;
+  --color-border: #e7e1d4;
   /* Text */
   --color-foreground: #15233b;
   --color-card-foreground: #15233b;
