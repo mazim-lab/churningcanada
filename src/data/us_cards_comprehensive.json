@@ -955,47 +955,18 @@
       "All purchases": "10%"
     },
     "welcome_bonus": "Earn 125,000 Bonus Miles",
-    "last_updated": "2026-06-18"
-  },
-  {
-    "slug": "plum-card",
-    "name": "Plum Card\u00ae",
-    "issuer": "American Express",
-    "network": "Unknown",
-    "card_type": "personal",
-    "annual_fee": 250.0,
-    "signup_bonus": null,
-    "signup_bonus_formatted": null,
-    "signup_bonus_value_usd": null,
-    "signup_bonus_currency": "points",
-    "welcome_bonus_conditions": null,
-    "earn_rates_summary": null,
-    "key_perks": [
-      "Hotel elite status/collection",
-      "Statement credits",
-      "Airport lounge access",
-      "Front of the Line presale tickets",
-      "1.5% Early Pay Discount\u2021",
-      "Priority Pass lounge access",
-      "No Foreign Transaction Fees\u2021\u00a4",
-      "Extra Days To Pay\u2021",
-      "Premium lounge access",
-      "Free first checked bag"
-    ],
-    "foreign_transaction_fee": false,
-    "country": "US",
-    "source": "bank_website",
-    "last_verified": "2026-02-23",
-    "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "earn_rates": {
-      "purchases and": "21.99%",
-      "purchases in your first": "10%",
-      "gas and grocery purchases": "4%",
-      "everything else": "2%",
-      "purchases": "21.99%",
-      "Card purchases at hotels participating in Marriott Bonvoy": "5x",
-      "All purchases": "10%"
+    "last_updated": "2026-06-18",
+    "benefits": {
+      "lounge_access": true,
+      "no_fx_fee": true,
+      "car_rental_insurance": true,
+      "travel_medical": false,
+      "trip_cancellation": true,
+      "flight_delay": true,
+      "mobile_insurance": true,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": true
     }
   },
   {
@@ -1081,7 +1052,19 @@
       "All purchases": "10%"
     },
     "welcome_bonus": "Earn 100,000 Bonus Miles",
-    "last_updated": "2026-06-18"
+    "last_updated": "2026-06-18",
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": true,
+      "car_rental_insurance": false,
+      "travel_medical": false,
+      "trip_cancellation": false,
+      "flight_delay": true,
+      "mobile_insurance": false,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": true
+    }
   },
   {
     "slug": "marriott-bonvoy-business-card",
@@ -1191,90 +1174,6 @@
       "purchase_protection": false,
       "extended_warranty": false,
       "free_checked_bags": false
-    }
-  },
-  {
-    "slug": "amazon-business-prime-card",
-    "name": "Amazon Business Prime Card",
-    "issuer": "American Express",
-    "network": "Unknown",
-    "card_type": "business",
-    "annual_fee": 0.0,
-    "signup_bonus": null,
-    "signup_bonus_formatted": null,
-    "signup_bonus_value_usd": null,
-    "signup_bonus_currency": "points",
-    "welcome_bonus_conditions": null,
-    "earn_rates_summary": null,
-    "key_perks": [
-      "Hotel elite status/collection",
-      "Statement credits",
-      "Airport lounge access",
-      "Front of the Line presale tickets",
-      "Priority Pass lounge access",
-      "Premium lounge access",
-      "Free first checked bag"
-    ],
-    "foreign_transaction_fee": false,
-    "country": "US",
-    "source": "bank_website",
-    "last_verified": "2026-02-23",
-    "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "earn_rates": {
-      "purchases and": "21.99%",
-      "purchases in your first": "10%",
-      "gas and grocery purchases": "4%",
-      "everything else": "2%",
-      "purchases": "21.99%",
-      "Card purchases at hotels participating in Marriott Bonvoy": "5x",
-      "All purchases": "10%"
-    }
-  },
-  {
-    "slug": "amazon-business-card",
-    "name": "Amazon Business Card",
-    "issuer": "American Express",
-    "network": "Unknown",
-    "card_type": "business",
-    "annual_fee": 0.0,
-    "signup_bonus": null,
-    "signup_bonus_formatted": null,
-    "signup_bonus_value_usd": null,
-    "signup_bonus_currency": "points",
-    "welcome_bonus_conditions": null,
-    "earn_rates_summary": null,
-    "key_perks": [
-      "Subscription perks",
-      "Travel program credit (NEXUS/Global Entry)",
-      "Statement credits",
-      "Priority Pass lounge access",
-      "Food delivery credits",
-      "Premium lounge access",
-      "No foreign transaction fee"
-    ],
-    "foreign_transaction_fee": false,
-    "country": "US",
-    "source": "bank_website",
-    "last_verified": "2026-02-23",
-    "notes_for_canadians": null,
-    "apply_url": "https://www.americanexpress.com/en-ca/credit-cards/all-cards/view-cards/",
-    "earn_rates": {
-      "purchases through Chase Travel, including The E": "8x",
-      "flights booked direct": "4x",
-      "hotels booked direct": "4x",
-      "dining worldwide": "3x",
-      "other purchases*@font-face{font-family:'Queens'": "1x",
-      "top booked hotels, including The Edit, and flights with selec": "2x",
-      "Lyft rides through": "5x",
-      "Peloton equipment and accessory purchases over $": "10x"
-    },
-    "insurance": {
-      "baggage_delay": "100",
-      "travel_accident": "1000000",
-      "purchase_protection": "120",
-      "mobile_insurance": "Yes",
-      "trip_cancellation": ""
     }
   },
   {

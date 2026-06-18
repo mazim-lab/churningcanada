@@ -2889,7 +2889,19 @@
     "is_business": true,
     "cpp_cad": 1.8,
     "welcome_bonus_points": 35000,
-    "first_year_value_cad": 510
+    "first_year_value_cad": 510,
+    "benefits": {
+      "lounge_access": false,
+      "no_fx_fee": false,
+      "car_rental_insurance": true,
+      "travel_medical": false,
+      "trip_cancellation": true,
+      "flight_delay": false,
+      "mobile_insurance": false,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": false
+    }
   },
   {
     "slug": "rbc-business-cash-back-mastercard",
@@ -5534,48 +5546,6 @@
     }
   },
   {
-    "slug": "bmo-preferred-rate-mastercard",
-    "name": "BMO Preferred Rate Mastercard\u00ae*",
-    "issuer": "BMO",
-    "network": "Mastercard",
-    "card_type": "low_interest",
-    "annual_fee": 29.0,
-    "first_year_fee": null,
-    "welcome_bonus": "0% intro interest rate on Balance Transfers for 18 months (2% transfer fee); $29 annual fee waived for the first year.",
-    "welcome_bonus_value_cad": null,
-    "welcome_bonus_conditions": null,
-    "min_spend": null,
-    "purchase_interest_rate": 13.99,
-    "cash_advance_rate": null,
-    "balance_transfer_rate": null,
-    "earn_rates": {
-      "purchases": "21.99%",
-      "Quebec residents": "21.99%",
-      "All purchases": "5%"
-    },
-    "rewards_program": "bmo rewards",
-    "foreign_transaction_fee": null,
-    "foreign_transaction_fee_pct": null,
-    "key_perks": [
-      "Travel program credit (NEXUS/Global Entry)",
-      "Statement credits"
-    ],
-    "insurance": {},
-    "minimum_income": null,
-    "minimum_credit_score": null,
-    "country": "CA",
-    "sources": [],
-    "last_updated": "2026-06-18",
-    "card_image_url": null,
-    "pot_first_year_value": null,
-    "pot_rewards_valuation_cpp": null,
-    "pot_url": null,
-    "historical_offers": [],
-    "apply_url": "https://www.bmo.com/main/personal/credit-cards/all-cards/",
-    "is_business": false,
-    "cpp_cad": 0.67
-  },
-  {
     "slug": "bmo-cashback-world-elite-mastercard",
     "name": "BMO CashBack\u00ae World Elite\u00ae* Mastercard\u00ae*",
     "issuer": "BMO",
@@ -6596,58 +6566,6 @@
       "extended_warranty": false,
       "free_checked_bags": false
     }
-  },
-  {
-    "slug": "tangerine-money-back-credit-card",
-    "name": "Tangerine Money-Back Credit Card",
-    "issuer": "Tangerine",
-    "network": "Unknown",
-    "card_type": "rewards",
-    "annual_fee": 0.0,
-    "first_year_fee": null,
-    "welcome_bonus": "Get a bonus 10% cash back - up to $100 cash back on purchases made in the first 2 months",
-    "welcome_bonus_value_cad": null,
-    "welcome_bonus_conditions": null,
-    "min_spend": null,
-    "purchase_interest_rate": 20.99,
-    "cash_advance_rate": null,
-    "balance_transfer_rate": null,
-    "earn_rates": {
-      "everything else Money-Back World Mastercard\u00ae* Your everyday C": "0.5%",
-      "everything else Money-Back Credit CardMoney-Back World Master": "0.5%",
-      "everything elseAdditional Benefits \u21b3 FlexiRoam": "0.5%",
-      "purchases in two categories of your choice": "2%",
-      "All purchases": "2%"
-    },
-    "rewards_program": "cash back",
-    "foreign_transaction_fee": null,
-    "foreign_transaction_fee_pct": null,
-    "key_perks": [
-      "2% cash back in up to 2 categories",
-      "0.5% on everything else"
-    ],
-    "insurance": {
-      "purchase_protection": "5",
-      "mobile_insurance": "Yes"
-    },
-    "minimum_income": null,
-    "minimum_credit_score": null,
-    "country": "CA",
-    "sources": [],
-    "last_updated": "2026-06-18",
-    "card_image_url": null,
-    "pot_first_year_value": null,
-    "pot_rewards_valuation_cpp": null,
-    "pot_url": null,
-    "historical_offers": [],
-    "apply_url": "https://www.tangerine.ca/en/personal/spend/credit-cards",
-    "is_business": false,
-    "cpp_cad": 1.0,
-    "interest_rates": {
-      "purchases": 20.95,
-      "balance_transfer": 111.95
-    },
-    "min_income": 12000
   },
   {
     "slug": "tangerine-money-back-world-mastercard",
