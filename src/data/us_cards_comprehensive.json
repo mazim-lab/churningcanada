@@ -798,6 +798,18 @@
       "purchases": "21.99%",
       "Card purchases at hotels participating in Marriott Bonvoy": "5x",
       "All purchases": "10%"
+    },
+    "benefits": {
+      "lounge_access": true,
+      "no_fx_fee": true,
+      "car_rental_insurance": true,
+      "travel_medical": false,
+      "trip_cancellation": true,
+      "flight_delay": true,
+      "mobile_insurance": true,
+      "purchase_protection": true,
+      "extended_warranty": true,
+      "free_checked_bags": false
     }
   },
   {
