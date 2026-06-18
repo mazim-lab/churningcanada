@@ -184,7 +184,9 @@ function normalizeCA(raw: RawCA): Card {
   };
 
   card.is_business = textContains(card.name + ' ' + card.card_type, 'business');
-  card.benefits = extractBenefits(card);
+  card.benefits = ((raw as { benefits?: Record<string, boolean> }).benefits && typeof (raw as { benefits?: unknown }).benefits === 'object')
+    ? { ...card.benefits, ...(raw as { benefits: Record<string, boolean> }).benefits }
+    : extractBenefits(card);
   // Also check key_perks for no_fx_fee
   if (card.key_perks.some(p => textContains(p, 'no foreign transaction'))) {
     card.benefits.no_fx_fee = true;
@@ -311,7 +313,9 @@ function normalizeUS(raw: RawUS): Card {
   };
 
   card.is_business = textContains(card.name + ' ' + card.card_type, 'business');
-  card.benefits = extractBenefits(card);
+  card.benefits = ((raw as { benefits?: Record<string, boolean> }).benefits && typeof (raw as { benefits?: unknown }).benefits === 'object')
+    ? { ...card.benefits, ...(raw as { benefits: Record<string, boolean> }).benefits }
+    : extractBenefits(card);
   if (raw.foreign_transaction_fee === false) {
     card.benefits.no_fx_fee = true;
   }
