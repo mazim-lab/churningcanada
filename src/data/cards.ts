@@ -264,10 +264,16 @@ function normalizeUS(raw: RawUS): Card {
   if (bonusValueUsd > 1000) bonusValueUsd = bonusValueUsd * cppUsd / 100; // raw points → dollars
   const bonusValue = Math.round(bonusValueUsd); // USD (native; labelled in UI)
   const fee = raw.annual_fee || 0;
-  // Prefer the refreshed welcome_bonus text if present, else build from signup fields.
+  // Prefer the refreshed welcome_bonus text if present, else build from signup fields
+  // (without duplicating the currency word, e.g. "100,000 bonus points points").
+  const sf = raw.signup_bonus_formatted || '';
+  const cur = raw.signup_bonus_currency || '';
+  const fallback = sf
+    ? (cur && !sf.toLowerCase().includes(cur.toLowerCase()) ? `${sf} ${cur}` : sf)
+    : '';
   const bonusText = (typeof raw.welcome_bonus === 'string' && raw.welcome_bonus.trim())
     ? String(raw.welcome_bonus)
-    : (raw.signup_bonus_formatted ? `${raw.signup_bonus_formatted} ${raw.signup_bonus_currency || 'points'}` : '');
+    : fallback;
 
   const card: Card = {
     slug: raw.slug,

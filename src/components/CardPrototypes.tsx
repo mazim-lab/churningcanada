@@ -1,6 +1,7 @@
 'use client';
 
 import { Card, Benefits, BENEFIT_LABELS, formatCurrency } from '@/data/cards';
+import { valuationFor } from '@/data/point-valuations';
 import { getCategoryColor } from '@/data/card-images';
 import { IssuerAvatar } from '@/components/IssuerAvatar';
 import { NetworkBadge } from '@/components/NetworkBadge';
@@ -49,6 +50,12 @@ export function CardTileV2({ card }: { card: Card }) {
             <p className="text-[11px] uppercase tracking-wider text-muted-foreground mt-1">
               Est. first-year value{card.first_year_value_formula ? ` · ${card.first_year_value_formula}` : ''}
             </p>
+            {(() => {
+              const v = valuationFor(card.rewards_program);
+              return v.transferable && v.max && v.max > v.baseline ? (
+                <p className="text-[11px] text-gold-text dark:text-gold mt-1">↗ Transferable — up to {v.max}¢/pt via partners</p>
+              ) : null;
+            })()}
           </>
         ) : (
           <p className="font-semibold text-card-foreground">{card.welcome_bonus || '—'}</p>
