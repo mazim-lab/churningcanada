@@ -71,7 +71,7 @@ function CardsContent() {
       });
     }
     if (country !== 'all') cards = cards.filter(c => c.country === country);
-    if (selectedTypes.length > 0) cards = cards.filter(c => selectedTypes.includes(c.card_type));
+    if (selectedTypes.length > 0) cards = cards.filter(c => selectedTypes.some(t => c.categories.includes(t)));
     if (businessOnly) cards = cards.filter(c => c.is_business);
     if (personalOnly) cards = cards.filter(c => !c.is_business);
     if (selectedIssuers.length > 0) cards = cards.filter(c => selectedIssuers.includes(c.issuer));

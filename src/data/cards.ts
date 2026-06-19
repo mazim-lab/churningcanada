@@ -48,6 +48,7 @@ export interface Card {
   cons: string[];
   // Computed
   is_business: boolean;
+  categories: string[];
   benefits: Benefits;
   first_year_value: number;
   first_year_value_formula: string | null;
@@ -101,6 +102,29 @@ function extractBenefits(card: { key_perks?: string[] | null; insurance?: Record
     extended_warranty: textContains(allText, 'extended warranty'),
     free_checked_bags: textContains(allText, 'checked bag', 'free bag'),
   };
+}
+
+// Derive filter categories (travel/hotel/airline/cashback/rewards/business/student/secured)
+// from the card's program, name and earn rates — the raw card_type is too coarse.
+function deriveCategories(card: Card): string[] {
+  const text = `${card.name} ${card.rewards_program} ${card.card_type} ${card.earn_rates_summary}`.toLowerCase();
+  const brand = `${card.name} ${card.rewards_program}`.toLowerCase(); // for co-brand detection (earn rates cause false positives)
+  const cats = new Set<string>();
+  const has = (...ks: string[]) => ks.some(k => text.includes(k));
+  const inBrand = (...ks: string[]) => ks.some(k => brand.includes(k));
+  // airline/hotel = actual co-brand cards (by name/program), NOT cards that merely earn on travel
+  const airline = inBrand('aeroplan', 'air canada', 'westjet', 'delta', 'skymiles', 'united', 'southwest', 'aadvantage', 'american airlines', 'avios', 'alaska', 'jetblue', 'flying blue', 'air miles', 'viporter', 'porter');
+  const hotel = inBrand('bonvoy', 'marriott', 'hilton', 'ihg', 'hyatt', 'wyndham', 'best western');
+  if (airline) cats.add('airline');
+  if (hotel) cats.add('hotel');
+  if (card.card_type === 'cashback' || has('cash back', 'cash-back', 'cashback', 'dividend', 'money-back', 'money back', 'rebate', 'simplycash', 'simply cash')) cats.add('cashback');
+  if (has('membership rewards', 'ultimate rewards', 'td rewards', 'rbc rewards', 'bmo rewards', 'scene', 'thankyou', 'thank you', 'aventura', 'avion', 'aeroplan', 'rewards', 'points', 'miles')) cats.add('rewards');
+  if (airline || hotel || has('aeroplan', 'avion', 'aventura', 'membership rewards', 'ultimate rewards', 'thankyou', 'passport', 'travel', 'miles', 'world elite', 'infinite') || card.benefits.lounge_access) cats.add('travel');
+  if (card.is_business) cats.add('business');
+  if (has('student')) cats.add('student');
+  if (has('secured')) cats.add('secured');
+  if (cats.size === 0) cats.add('rewards');
+  return [...cats];
 }
 
 // ── Normalize Canadian cards ───────────────────────────
@@ -174,6 +198,7 @@ function normalizeCA(raw: RawCA): Card {
     pros: raw.pros || [],
     cons: raw.cons || [],
     is_business: false,
+    categories: [],
     benefits: { lounge_access: false, no_fx_fee: false, car_rental_insurance: false, travel_medical: false, trip_cancellation: false, flight_delay: false, mobile_insurance: false, purchase_protection: false, extended_warranty: false, free_checked_bags: false },
     first_year_value: 0,
     first_year_value_formula: null,
@@ -218,6 +243,7 @@ function normalizeCA(raw: RawCA): Card {
     card.first_year_value_formula = null;
   }
 
+  card.categories = deriveCategories(card);
   return card;
 }
 
@@ -304,6 +330,7 @@ function normalizeUS(raw: RawUS): Card {
     pros: [],
     cons: [],
     is_business: false,
+    categories: [],
     benefits: { lounge_access: false, no_fx_fee: false, car_rental_insurance: false, travel_medical: false, trip_cancellation: false, flight_delay: false, mobile_insurance: false, purchase_protection: false, extended_warranty: false, free_checked_bags: false },
     first_year_value: 0,
     first_year_value_formula: null,
@@ -330,6 +357,7 @@ function normalizeUS(raw: RawUS): Card {
   card.cpp_cad = null;
   card.welcome_bonus_points = null;
 
+  card.categories = deriveCategories(card);
   return card;
 }
 

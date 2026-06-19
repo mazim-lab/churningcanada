@@ -1,18 +1,21 @@
 /**
- * Point & mile valuations (cents per point, CAD).
+ * Point & mile valuations (cents per point, CAD) — CHARTED'S OWN ESTIMATES.
  *
- * SOURCE: Prince of Travel — "Points Valuations" (https://princeoftravel.com/points-valuations/),
- *         cross-checked against the per-program cpp already in our card data. As of 2026-06.
+ * These are our own directional estimates, informed by the per-program cpp already in our
+ * card data and by widely-known Canadian redemption norms. They are NOT taken from a single
+ * external source, and the `max` figures in particular are rough ceilings, not cited values.
  *
  * METHODOLOGY:
  *  - `baseline` is a realistic everyday redemption value. We use it for the headline
  *    "estimated first-year value" so we never over-promise.
- *  - `max` is the upper end reachable via transfer-partner sweet spots (e.g. Membership
- *    Rewards → Aeroplan business class). Shown only as upside ("up to X¢"), never as the
- *    headline number. `null` max = the currency isn't transferable / has a fixed value.
+ *  - `max` is an UPPER-END estimate reachable on premium transfer-partner sweet spots
+ *    (e.g. Aeroplan / Membership Rewards business-class redemptions can reach ~5¢). Shown
+ *    only as upside ("up to X¢"), never as the headline. A rough ceiling, not a guarantee.
+ *    `null` max = the currency isn't transferable / has a fixed value.
  *  - For cash-back currencies, 1 point = 1 cent by definition.
  *
- * Keep this in sync with PoT's monthly update; it is the single source of truth for valuation.
+ * Review quarterly. TODO: if we want hard-sourced numbers, validate against a published
+ * valuations table and record the source + date here.
  */
 
 export interface Valuation {
@@ -43,8 +46,8 @@ export const POINT_VALUATIONS: Record<string, Valuation> = {
 };
 
 export const VALUATION_SOURCE = {
-  name: 'Prince of Travel — Points Valuations',
-  url: 'https://princeoftravel.com/points-valuations/',
+  name: 'Charted estimates',
+  url: null,
   asOf: '2026-06',
 };
 

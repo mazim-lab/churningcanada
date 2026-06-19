@@ -5,9 +5,9 @@
 @theme {
   /* === LIGHT MODE — "The Atlas": creamy white / navy / brass === */
   /* Surfaces */
-  --color-background: #faf8f2;
+  --color-background: #ffffff;
   --color-card: #ffffff;
-  --color-muted: #f1ede4;
+  --color-muted: #f5f3ee;
   --color-border: #e7e1d4;
   /* Text */
   --color-foreground: #15233b;
@@ -193,7 +193,7 @@ input[type="checkbox"]:focus-visible {
   50% { background-position: 100% 50%; }
 }
 .hero-gradient {
-  background: linear-gradient(135deg, #14432a, #1a5632, #166534, #22724a, #14432a);
+  background: linear-gradient(135deg, #0e1726, #15233b, #1d3a5f, #25395a, #0e1726);
   background-size: 400% 400%;
   animation: heroGradient 12s ease infinite;
 }
