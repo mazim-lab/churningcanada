@@ -1,80 +1,99 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
-import { HOLDINGS, getQuotes } from "@/data/portfolio";
+import { POSITIONS, LAST_UPDATED, SNAPSHOT_PENDING, TOTAL_RETURN_PCT } from "@/data/portfolio";
 
 export const metadata: Metadata = {
   title: "Current Portfolio — FinTerminal",
-  description: "My live holdings and the thesis behind each. Personal positions, not advice.",
+  description: "My real positions and the thesis behind each. Personal positions, not advice.",
 };
 
-const cad0 = (n: number) => n.toLocaleString("en-CA", { maximumFractionDigits: 0 });
-const cad2 = (n: number) => n.toLocaleString("en-CA", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const signed = (n: number) => (n < 0 ? "−" : "+") + "$" + cad0(Math.abs(n));
 const pct = (n: number) => (n < 0 ? "−" : "+") + Math.abs(n).toFixed(1) + "%";
-const tsx = (ex: string) => (ex === "TSX" ? "TO" : ex);
 
-export default async function PortfolioPage() {
-  const quotes = await getQuotes(HOLDINGS.map((h) => h.ticker));
-  const rows = HOLDINGS.map((h) => {
-    const q = quotes[h.ticker];
-    const value = h.shares * q.last;
-    const cost = h.shares * h.avgCost;
-    const gain = value - cost;
-    return { ...h, q, value, cost, gain, gainPct: (gain / cost) * 100 };
-  });
+export default function PortfolioPage() {
+  const withNums = POSITIONS.filter((p) => typeof p.returnPct === "number");
+  const ranked = [...withNums].sort((a, b) => (b.weightPct ?? 0) - (a.weightPct ?? 0));
+  const best = withNums.length ? withNums.reduce((a, b) => ((b.returnPct ?? 0) > (a.returnPct ?? 0) ? b : a)) : null;
+  const worst = withNums.length ? withNums.reduce((a, b) => ((b.returnPct ?? 0) < (a.returnPct ?? 0) ? b : a)) : null;
+  const maxWeight = Math.max(1, ...withNums.map((p) => p.weightPct ?? 0));
 
-  const totalValue = rows.reduce((s, r) => s + r.value, 0);
-  const totalCost = rows.reduce((s, r) => s + r.cost, 0);
-  const totalReturn = ((totalValue - totalCost) / totalCost) * 100;
-  const maxValue = Math.max(...rows.map((r) => r.value));
-  const best = rows.reduce((a, b) => (b.gain > a.gain ? b : a));
-  const worst = rows.reduce((a, b) => (b.gain < a.gain ? b : a));
-  rows.sort((a, b) => b.value - a.value);
+  // Until the first snapshot, show positions in a stable, readable order.
+  const rows = SNAPSHOT_PENDING ? POSITIONS : (ranked.length ? ranked : POSITIONS);
+
+  const updated = LAST_UPDATED ? `updated ${LAST_UPDATED}` : "awaiting first snapshot";
 
   return (
     <div className="app norail">
       <main>
-        <div className="head"><h1>Current Portfolio</h1><span className="meta">updated 2026-06-19 · prices delayed</span></div>
-        <div className="subhead">My live holdings and the thesis behind each. <b>Personal positions, not advice.</b></div>
+        <div className="head"><h1>Current Portfolio</h1><span className="meta">{updated} · refreshed twice weekly</span></div>
+        <div className="subhead">My real positions and the thesis behind each. <b>Personal positions, not advice.</b></div>
 
         <div className="stats">
-          <div className="stat"><div className="l">Highest profit</div><div className="v em">{signed(best.gain)}</div><div className="d">{best.ticker}.{tsx(best.exchange)} · {pct(best.gainPct)}</div></div>
-          <div className="stat"><div className="l">Highest loss</div><div className="v" style={{ color: "var(--red)" }}>{signed(worst.gain)}</div><div className="d">{worst.ticker}.{tsx(worst.exchange)} · {pct(worst.gainPct)}</div></div>
-          <div className="stat"><div className="l">Total return</div><div className="v gd">{pct(totalReturn)}</div><div className="d">since inception</div></div>
-          <div className="stat"><div className="l">Holdings</div><div className="v">{rows.length}</div><div className="d">each with a thesis</div></div>
+          <div className="stat">
+            <div className="l">Highest profit</div>
+            <div className="v em">{best ? pct(best.returnPct as number) : "—"}</div>
+            <div className="d">{best ? best.ticker : "pending snapshot"}</div>
+          </div>
+          <div className="stat">
+            <div className="l">Highest loss</div>
+            <div className="v" style={{ color: "var(--red)" }}>{worst ? pct(worst.returnPct as number) : "—"}</div>
+            <div className="d">{worst ? worst.ticker : "pending snapshot"}</div>
+          </div>
+          <div className="stat">
+            <div className="l">Total return</div>
+            <div className="v gd">{typeof TOTAL_RETURN_PCT === "number" ? pct(TOTAL_RETURN_PCT) : "—"}</div>
+            <div className="d">unrealized, vs book</div>
+          </div>
+          <div className="stat">
+            <div className="l">Holdings</div>
+            <div className="v">{POSITIONS.length}</div>
+            <div className="d">each with a thesis</div>
+          </div>
         </div>
+
+        {SNAPSHOT_PENDING && (
+          <div className="cd-note" style={{ marginBottom: 18 }}>
+            <div className="cap">Returns load with the next snapshot</div>
+            Positions are mostly long-dated options, which public price feeds don&apos;t quote, so values come
+            straight from my brokerage twice a week. The convictions and theses below are live now.
+          </div>
+        )}
 
         <div className="tablewrap">
           <div className="tablescroll">
             <table>
               <thead><tr>
-                <th>Holding</th><th>Tags</th><th className="r">Shares</th><th className="r">Avg cost</th>
-                <th className="r">Last</th><th className="r">Day</th><th className="r">Mkt value</th><th className="r">Weight</th>
+                <th>Position</th><th>Theme</th><th>Type</th>
+                <th className="r">Return</th><th className="r">Weight</th>
               </tr></thead>
               <tbody>
-                {rows.map((r) => (
-                  <tr key={r.ticker}>
+                {rows.map((p) => (
+                  <tr key={p.ticker}>
                     <td>
-                      <div className="cn">{r.ticker}<span style={{ color: "var(--ink-dim)" }}>.{tsx(r.exchange)}</span> · {r.name}</div>
-                      <div className="ci"><a className="thesis" href={r.thesisSlug ? `/portfolio/${r.thesisSlug}` : "#"}>read thesis →</a></div>
+                      <div className="cn">{p.ticker} · {p.name}</div>
+                      <div className="ci" style={{ textTransform: "none", whiteSpace: "normal", maxWidth: 520 }}>{p.thesis}</div>
                     </td>
                     <td>
-                      {r.tags.map((t, i) => (
-                        <span key={t} className={i === 0 ? "tag em" : "tag"}>{t}</span>
-                      ))}
+                      <span className="tag em">{p.theme}</span>
+                      {p.tags.map((t) => <span key={t} className="tag">{t}</span>)}
                     </td>
-                    <td className="r mono">{r.shares}</td>
-                    <td className="r mono">${cad2(r.avgCost)}</td>
-                    <td className="r mono">${cad2(r.q.last)}</td>
-                    <td className={`r mono ${r.q.dayPct < 0 ? "negv" : "pos"}`}>{pct(r.q.dayPct)}</td>
-                    <td className="r mono big pos">${cad0(r.value)}</td>
-                    <td className="r"><span className="vbar" style={{ "--w": `${(r.value / maxValue) * 100}%` } as CSSProperties} /></td>
+                    <td className="mono" style={{ color: "var(--ink-soft)", fontSize: 12, whiteSpace: "nowrap" }}>{p.position}</td>
+                    <td className={`r mono ${typeof p.returnPct === "number" ? (p.returnPct < 0 ? "negv" : "pos") : ""}`}>
+                      {typeof p.returnPct === "number" ? pct(p.returnPct) : "—"}
+                    </td>
+                    <td className="r">
+                      {typeof p.weightPct === "number"
+                        ? <span className="vbar" style={{ "--w": `${((p.weightPct ?? 0) / maxWeight) * 100}%` } as CSSProperties} />
+                        : <span className="mono" style={{ color: "var(--ink-dim)" }}>—</span>}
+                    </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <div className="foot"><span>positions marked to last close · CAD · total value ${cad0(totalValue)}</span><span>each holding links to its thesis →</span></div>
+          <div className="foot">
+            <span>combined registered accounts · percentages only, no dollar figures shown</span>
+            <span>thesis articles coming soon</span>
+          </div>
         </div>
       </main>
     </div>

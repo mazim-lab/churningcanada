@@ -1,6 +1,6 @@
 import { allCards } from "@/data/cards";
 import { POINT_VALUATIONS } from "@/data/point-valuations";
-import { HOLDINGS } from "@/data/portfolio";
+import { POSITIONS } from "@/data/portfolio";
 
 const BOARD = [
   { label: "News", href: "/news", sub: "cards · points · markets", what: "Headlines as they break", status: "LIVE", brd: false },
@@ -21,7 +21,7 @@ export default function Home() {
         <div className="stats">
           <div className="stat"><div className="l">Cards tracked</div><div className="v">{allCards.length}</div><div className="d">comprehensive data</div></div>
           <div className="stat"><div className="l">Point programs</div><div className="v em">{Object.keys(POINT_VALUATIONS).length}</div><div className="d">valued &amp; updated</div></div>
-          <div className="stat"><div className="l">Portfolio holdings</div><div className="v gd">{HOLDINGS.length}</div><div className="d">live, with theses</div></div>
+          <div className="stat"><div className="l">Portfolio holdings</div><div className="v gd">{POSITIONS.length}</div><div className="d">live, with theses</div></div>
           <div className="stat"><div className="l">Sponsored posts</div><div className="v">0</div><div className="d">independent</div></div>
         </div>
 
