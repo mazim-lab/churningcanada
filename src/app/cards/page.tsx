@@ -1,290 +1,199 @@
 'use client';
 
 import { useState, useMemo, Suspense } from 'react';
+import type { CSSProperties } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { allCards, Card, Benefits, BENEFIT_LABELS, getUniqueIssuers, getUniqueNetworks } from '@/data/cards';
-import { CardGrid, CardSkeleton } from '@/components/CardGrid';
-import { Search, SlidersHorizontal, X, Grid3X3, List, ChevronDown } from 'lucide-react';
+import { allCards, Card, Benefits, formatCurrency, getUniqueNetworks } from '@/data/cards';
+import { valuationFor } from '@/data/point-valuations';
 
-type SortOption = 'value' | 'bonus' | 'fee' | 'earn';
-type FeeRange = 'all' | '0' | 'under100' | '100-299' | '300+';
+type SortKey = 'name' | 'tags' | 'fee' | 'bonus' | 'cpp' | 'value';
+type SortDir = 'asc' | 'desc';
 
-const SORT_OPTIONS: { value: SortOption; label: string }[] = [
-  { value: 'value', label: 'Best Value' },
-  { value: 'bonus', label: 'Highest Bonus' },
-  { value: 'fee', label: 'Lowest Fee' },
-  { value: 'earn', label: 'Name A-Z' },
+const CARD_TYPES = ['travel', 'cashback', 'airline', 'hotel', 'business'];
+const TAG_DEFS: [keyof Benefits, string][] = [
+  ['lounge_access', 'lounge'], ['no_fx_fee', 'no-fx'], ['car_rental_insurance', 'car-ins'],
+  ['free_checked_bags', 'free-bag'], ['travel_medical', 'travel-med'], ['trip_cancellation', 'trip-cancel'],
+  ['mobile_insurance', 'mobile'], ['purchase_protection', 'purchase'], ['extended_warranty', 'warranty'], ['flight_delay', 'flight-delay'],
 ];
-
-const CARD_TYPES = ['travel', 'cashback', 'rewards', 'hotel', 'airline', 'business', 'student', 'secured'];
-const FEE_RANGES: { value: FeeRange; label: string }[] = [
-  { value: 'all', label: 'Any' },
-  { value: '0', label: '$0' },
-  { value: 'under100', label: 'Under $100' },
-  { value: '100-299', label: '$100–$299' },
-  { value: '300+', label: '$300+' },
+const RAIL_BENEFITS: [keyof Benefits, string][] = [
+  ['lounge_access', 'Lounge access'], ['no_fx_fee', 'No FX fee'], ['car_rental_insurance', 'Car rental ins.'], ['free_checked_bags', 'Free checked bag'],
 ];
+const COLUMNS: { key: SortKey; label: string; right?: boolean }[] = [
+  { key: 'name', label: 'Card' }, { key: 'tags', label: 'Tags' }, { key: 'fee', label: 'Annual fee', right: true },
+  { key: 'bonus', label: 'Bonus', right: true }, { key: 'cpp', label: 'Base ¢/pt', right: true }, { key: 'value', label: 'Est. 12-mo value', right: true },
+];
+const tagsFor = (c: Card) => TAG_DEFS.filter(([k]) => c.benefits[k]).map(([, l]) => l);
+const cppFor = (c: Card) => c.cpp_cad ?? 1.0;
 
 export default function CardsPage() {
-  return <Suspense fallback={<div className="mx-auto max-w-7xl px-4 py-16"><CardSkeleton /></div>}><CardsContent /></Suspense>;
+  return <Suspense fallback={<div className="app norail"><main><div className="head"><h1>Card Explorer</h1></div></main></div>}><Explorer /></Suspense>;
 }
 
-function CardsContent() {
+function Explorer() {
   const searchParams = useSearchParams();
+  const query = searchParams.get('q') || '';
 
-  const [query, setQuery] = useState(searchParams.get('q') || '');
-  const [country, setCountry] = useState<'CA' | 'US' | 'all'>(
-    (searchParams.get('country') as 'CA' | 'US') || 'all'
-  );
-  const [selectedTypes, setSelectedTypes] = useState<string[]>(
-    searchParams.get('type') ? searchParams.get('type')!.split(',') : []
-  );
-  const [businessOnly, setBusinessOnly] = useState(false);
-  const [personalOnly, setPersonalOnly] = useState(false);
-  const [selectedIssuers, setSelectedIssuers] = useState<string[]>([]);
-  const [selectedNetworks, setSelectedNetworks] = useState<string[]>([]);
-  const [feeRange, setFeeRange] = useState<FeeRange>(
-    searchParams.get('maxFee') === '0' ? '0' : (searchParams.get('fee') as FeeRange) || 'all'
-  );
-  const [minBonus, setMinBonus] = useState(0);
-  const [selectedBenefits, setSelectedBenefits] = useState<(keyof Benefits)[]>([]);
-  const [sort, setSort] = useState<SortOption>((searchParams.get('sort') as SortOption) || 'value');
-  const [listView, setListView] = useState(true); // default to comparison table
-  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-  const [issuerSearch, setIssuerSearch] = useState('');
+  const [country, setCountry] = useState<'CA' | 'US' | 'all'>((searchParams.get('country') as 'CA' | 'US') || 'all');
+  const [types, setTypes] = useState<string[]>(searchParams.get('type') ? searchParams.get('type')!.split(',') : []);
+  const [networks, setNetworks] = useState<string[]>([]);
+  const [benefits, setBenefits] = useState<(keyof Benefits)[]>([]);
+  const [maxFee, setMaxFee] = useState(1000);
+  const [sortKey, setSortKey] = useState<SortKey>('value');
+  const [sortDir, setSortDir] = useState<SortDir>('desc');
 
-  const allIssuers = useMemo(() => getUniqueIssuers(), []);
   const allNetworks = useMemo(() => getUniqueNetworks(), []);
-
-  const filteredIssuers = useMemo(
-    () => issuerSearch ? allIssuers.filter(i => i.toLowerCase().includes(issuerSearch.toLowerCase())) : allIssuers,
-    [allIssuers, issuerSearch]
-  );
+  const base = useMemo(() => (country === 'all' ? allCards : allCards.filter((c) => c.country === country)), [country]);
+  const typeCounts = useMemo(() => Object.fromEntries(CARD_TYPES.map((t) => [t, base.filter((c) => c.categories.includes(t)).length])), [base]);
+  const netCounts = useMemo(() => Object.fromEntries(allNetworks.map((n) => [n, base.filter((c) => c.network === n).length])), [base, allNetworks]);
+  const benefitCounts = useMemo(() => Object.fromEntries(RAIL_BENEFITS.map(([k]) => [k, base.filter((c) => c.benefits[k]).length])), [base]);
 
   const filtered = useMemo(() => {
-    let cards = allCards;
+    let cards = base;
     if (query) {
-      const words = query.toLowerCase().split(/\s+/).filter(Boolean);
-      cards = cards.filter(c => {
-        const searchText = `${c.name} ${c.issuer} ${c.rewards_program} ${c.card_type}`.toLowerCase();
-        return words.every(w => searchText.includes(w));
+      const words = query.toLowerCase().split(/\s+/).filter(Boolean).map((w) => (w === 'amex' ? 'american express' : w));
+      cards = cards.filter((c) => {
+        let t = `${c.name} ${c.issuer} ${c.rewards_program} ${c.card_type}`.toLowerCase();
+        if (t.includes('american express')) t += ' amex';
+        if (t.includes('mastercard')) t += ' mc';
+        return words.every((w) => t.includes(w));
       });
     }
-    if (country !== 'all') cards = cards.filter(c => c.country === country);
-    if (selectedTypes.length > 0) cards = cards.filter(c => selectedTypes.some(t => c.categories.includes(t)));
-    if (businessOnly) cards = cards.filter(c => c.is_business);
-    if (personalOnly) cards = cards.filter(c => !c.is_business);
-    if (selectedIssuers.length > 0) cards = cards.filter(c => selectedIssuers.includes(c.issuer));
-    if (selectedNetworks.length > 0) cards = cards.filter(c => selectedNetworks.includes(c.network));
-    if (feeRange === '0') cards = cards.filter(c => c.annual_fee === 0);
-    else if (feeRange === 'under100') cards = cards.filter(c => c.annual_fee < 100);
-    else if (feeRange === '100-299') cards = cards.filter(c => c.annual_fee >= 100 && c.annual_fee < 300);
-    else if (feeRange === '300+') cards = cards.filter(c => c.annual_fee >= 300);
-    if (minBonus > 0) cards = cards.filter(c => c.welcome_bonus_value >= minBonus);
-    if (selectedBenefits.length > 0) cards = cards.filter(c => selectedBenefits.every(b => c.benefits[b]));
+    if (types.length) cards = cards.filter((c) => types.some((t) => c.categories.includes(t)));
+    if (networks.length) cards = cards.filter((c) => networks.includes(c.network));
+    if (benefits.length) cards = cards.filter((c) => benefits.every((b) => c.benefits[b]));
+    if (maxFee < 1000) cards = cards.filter((c) => c.annual_fee <= maxFee);
 
-    switch (sort) {
-      case 'value': cards = [...cards].sort((a, b) => b.first_year_value - a.first_year_value); break;
-      case 'bonus': cards = [...cards].sort((a, b) => b.welcome_bonus_value - a.welcome_bonus_value); break;
-      case 'fee': cards = [...cards].sort((a, b) => a.annual_fee - b.annual_fee); break;
-      case 'earn': cards = [...cards].sort((a, b) => a.name.localeCompare(b.name)); break;
-    }
-    return cards;
-  }, [query, country, selectedTypes, businessOnly, personalOnly, selectedIssuers, selectedNetworks, feeRange, minBonus, selectedBenefits, sort]);
+    const dir = sortDir === 'asc' ? 1 : -1;
+    const val = (c: Card): number | string => {
+      switch (sortKey) {
+        case 'name': return c.name.toLowerCase();
+        case 'tags': return tagsFor(c).length;
+        case 'fee': return c.annual_fee;
+        case 'bonus': return c.welcome_bonus_value;
+        case 'cpp': return cppFor(c);
+        case 'value': return c.first_year_value;
+      }
+    };
+    return [...cards].sort((a, b) => {
+      const av = val(a), bv = val(b);
+      if (typeof av === 'string' || typeof bv === 'string') return String(av).localeCompare(String(bv)) * dir;
+      return (av - bv) * dir;
+    });
+  }, [base, query, types, networks, benefits, maxFee, sortKey, sortDir]);
 
-  const toggleType = (t: string) => setSelectedTypes(prev => prev.includes(t) ? prev.filter(x => x !== t) : [...prev, t]);
-  const toggleIssuer = (i: string) => setSelectedIssuers(prev => prev.includes(i) ? prev.filter(x => x !== i) : [...prev, i]);
-  const toggleNetwork = (n: string) => setSelectedNetworks(prev => prev.includes(n) ? prev.filter(x => x !== n) : [...prev, n]);
-  const toggleBenefit = (b: keyof Benefits) => setSelectedBenefits(prev => prev.includes(b) ? prev.filter(x => x !== b) : [...prev, b]);
+  const maxValue = Math.max(...filtered.map((c) => c.first_year_value), 1);
+  const top = filtered.reduce<Card | null>((a, c) => (!a || c.first_year_value > a.first_year_value ? c : a), null);
+  const noFx = filtered.filter((c) => c.benefits.no_fx_fee).length;
+  let topCpp = 0, topProg = '';
+  filtered.forEach((c) => { const v = valuationFor(c.rewards_program); const m = v.max ?? v.baseline; if (m > topCpp) { topCpp = m; topProg = c.rewards_program; } });
 
-  const clearAll = () => {
-    setQuery(''); setCountry('all'); setSelectedTypes([]); setBusinessOnly(false); setPersonalOnly(false);
-    setSelectedIssuers([]); setSelectedNetworks([]); setFeeRange('all'); setMinBonus(0); setSelectedBenefits([]);
+  const onSort = (key: SortKey) => {
+    if (key === sortKey) setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
+    else { setSortKey(key); setSortDir(key === 'name' ? 'asc' : 'desc'); }
   };
-
-  const hasFilters = query || country !== 'all' || selectedTypes.length > 0 || businessOnly || personalOnly || selectedIssuers.length > 0 || selectedNetworks.length > 0 || feeRange !== 'all' || minBonus > 0 || selectedBenefits.length > 0;
-
-  // Build active filter pills
-  const activeFilterPills: { label: string; onRemove: () => void }[] = [];
-  if (country !== 'all') activeFilterPills.push({ label: country === 'CA' ? '🇨🇦 Canada' : '🇺🇸 US', onRemove: () => setCountry('all') });
-  selectedTypes.forEach(t => activeFilterPills.push({ label: t, onRemove: () => toggleType(t) }));
-  if (businessOnly) activeFilterPills.push({ label: 'Business', onRemove: () => setBusinessOnly(false) });
-  if (personalOnly) activeFilterPills.push({ label: 'Personal', onRemove: () => setPersonalOnly(false) });
-  selectedIssuers.forEach(i => activeFilterPills.push({ label: i, onRemove: () => toggleIssuer(i) }));
-  selectedNetworks.forEach(n => activeFilterPills.push({ label: n, onRemove: () => toggleNetwork(n) }));
-  if (feeRange !== 'all') activeFilterPills.push({ label: `Fee: ${FEE_RANGES.find(r => r.value === feeRange)?.label}`, onRemove: () => setFeeRange('all') });
-  if (minBonus > 0) activeFilterPills.push({ label: `Bonus ≥ $${minBonus}`, onRemove: () => setMinBonus(0) });
-  selectedBenefits.forEach(b => activeFilterPills.push({ label: BENEFIT_LABELS[b], onRemove: () => toggleBenefit(b) }));
-
-  const filterSidebar = (
-    <div className="space-y-1">
-      <CollapsibleSection title="Country" defaultOpen>
-        <div className="flex gap-1">
-          {(['all', 'CA', 'US'] as const).map(c => (
-            <button key={c} onClick={() => setCountry(c)}
-              className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${country === c ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
-              {c === 'all' ? 'All' : c === 'CA' ? '🇨🇦 Canada' : '🇺🇸 US'}
-            </button>
-          ))}
-        </div>
-      </CollapsibleSection>
-
-      <CollapsibleSection title="Card Type" defaultOpen>
-        <div className="flex flex-wrap gap-2">
-          {CARD_TYPES.map(t => (
-            <button key={t} onClick={() => toggleType(t)}
-              className={`rounded-full px-3 py-1 text-xs font-medium capitalize transition-colors ${selectedTypes.includes(t) ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
-              {t}
-            </button>
-          ))}
-        </div>
-      </CollapsibleSection>
-
-      <CollapsibleSection title="Personal / Business" defaultOpen>
-        <div className="flex gap-1">
-          <button onClick={() => { setPersonalOnly(false); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${!personalOnly && !businessOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>All</button>
-          <button onClick={() => { setPersonalOnly(true); setBusinessOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${personalOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>Personal</button>
-          <button onClick={() => { setBusinessOnly(true); setPersonalOnly(false); }} className={`flex-1 rounded-full py-2 text-sm font-medium transition-colors ${businessOnly ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>Business</button>
-        </div>
-      </CollapsibleSection>
-
-      <CollapsibleSection title="Issuer">
-        <input type="text" placeholder="Search issuers..." value={issuerSearch} onChange={e => setIssuerSearch(e.target.value)}
-          className="w-full rounded-lg border border-border bg-background px-3 py-1.5 text-sm mb-2 focus:outline-none focus:ring-1 focus:ring-primary" />
-        <div className="max-h-40 overflow-y-auto space-y-1">
-          {filteredIssuers.map(i => (
-            <label key={i} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-accent">
-              <input type="checkbox" checked={selectedIssuers.includes(i)} onChange={() => toggleIssuer(i)} />
-              {i}
-            </label>
-          ))}
-        </div>
-      </CollapsibleSection>
-
-      <CollapsibleSection title="Network">
-        <div className="space-y-1">
-          {allNetworks.map(n => (
-            <label key={n} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-accent">
-              <input type="checkbox" checked={selectedNetworks.includes(n)} onChange={() => toggleNetwork(n)} />
-              {n}
-            </label>
-          ))}
-        </div>
-      </CollapsibleSection>
-
-      <CollapsibleSection title="Annual Fee">
-        <div className="flex flex-wrap gap-1.5">
-          {FEE_RANGES.map(r => (
-            <button key={r.value} onClick={() => setFeeRange(r.value)}
-              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${feeRange === r.value ? 'bg-primary text-white' : 'bg-muted text-foreground hover:bg-muted/80'}`}>
-              {r.label}
-            </button>
-          ))}
-        </div>
-      </CollapsibleSection>
-
-      <CollapsibleSection title={`Min Bonus: $${minBonus}`}>
-        <input type="range" min={0} max={3000} step={100} value={minBonus} onChange={e => setMinBonus(Number(e.target.value))} className="w-full" />
-        <div className="flex justify-between text-xs text-muted-foreground"><span>$0</span><span>$3,000</span></div>
-      </CollapsibleSection>
-
-      <CollapsibleSection title="Benefits">
-        <div className="space-y-1">
-          {(Object.keys(BENEFIT_LABELS) as (keyof Benefits)[]).map(b => (
-            <label key={b} className="flex items-center gap-2 text-sm text-foreground cursor-pointer hover:text-accent">
-              <input type="checkbox" checked={selectedBenefits.includes(b)} onChange={() => toggleBenefit(b)} />
-              {BENEFIT_LABELS[b]}
-            </label>
-          ))}
-        </div>
-      </CollapsibleSection>
-
-      {hasFilters && (
-        <button onClick={clearAll} className="w-full rounded-lg border border-border py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:border-foreground/20 transition-colors mt-4">
-          Clear all filters
-        </button>
-      )}
-    </div>
-  );
+  const toggle = <T,>(arr: T[], v: T, set: (x: T[]) => void) => set(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
+  const arrow = sortDir === 'asc' ? '▲' : '▼';
+  const sortLabel = COLUMNS.find((c) => c.key === sortKey)?.label.toLowerCase() ?? 'value';
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 py-8">
-      {/* Top bar */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
-        <div>
-          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight font-[family-name:var(--font-display)]">Card Explorer</h1>
-          <p className="text-muted-foreground text-sm">{filtered.length} cards found · <a href="/how-we-value-points" className="text-gold-text dark:text-gold hover:underline">how we value points</a></p>
+    <div className="app">
+      <aside className="rail">
+        <h4>Card type</h4>
+        {CARD_TYPES.map((t) => (
+          <label key={t} className={`filt${types.includes(t) ? ' on' : ''}`} style={{ textTransform: 'capitalize' }}>
+            <input type="checkbox" checked={types.includes(t)} onChange={() => toggle(types, t, setTypes)} /> {t}
+            <span className="ct">{typeCounts[t]}</span>
+          </label>
+        ))}
+
+        <h4>Max annual fee</h4>
+        <input type="range" min={0} max={1000} step={25} value={maxFee} onChange={(e) => setMaxFee(Number(e.target.value))} />
+        <div className="range">{maxFee >= 1000 ? 'Any' : `$0 — $${maxFee}`}</div>
+
+        <h4>Benefits</h4>
+        {RAIL_BENEFITS.map(([k, label]) => (
+          <label key={k} className={`filt${benefits.includes(k) ? ' on' : ''}`}>
+            <input type="checkbox" checked={benefits.includes(k)} onChange={() => toggle(benefits, k, setBenefits)} /> {label}
+            <span className="ct">{benefitCounts[k]}</span>
+          </label>
+        ))}
+
+        <h4>Network</h4>
+        {allNetworks.map((n) => (
+          <label key={n} className={`filt${networks.includes(n) ? ' on' : ''}`}>
+            <input type="checkbox" checked={networks.includes(n)} onChange={() => toggle(networks, n, setNetworks)} /> {n}
+            <span className="ct">{netCounts[n]}</span>
+          </label>
+        ))}
+
+        <h4>Country</h4>
+        {(['all', 'CA', 'US'] as const).map((c) => (
+          <label key={c} className={`filt${country === c ? ' on' : ''}`}>
+            <input type="radio" name="country" checked={country === c} onChange={() => setCountry(c)} /> {c === 'all' ? 'All' : c}
+          </label>
+        ))}
+      </aside>
+
+      <main>
+        <div className="head">
+          <h1>Card Explorer</h1>
+          <span className="meta">showing {filtered.length} / {allCards.length} · sorted by {sortLabel} {arrow}</span>
         </div>
-        <div className="flex items-center gap-3 w-full sm:w-auto">
-          <div className="relative flex-1 sm:w-64">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <input type="text" placeholder="Search..." value={query} onChange={e => setQuery(e.target.value)}
-              className="w-full rounded-lg border border-border bg-background py-2 pl-9 pr-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" />
+        <div className="subhead">Independent value engine — benefits verified from issuer documents, ranked by <b>estimated first-year value</b>. No sponsored placements.</div>
+
+        <div className="stats">
+          <div className="stat"><div className="l">Cards tracked</div><div className="v">{filtered.length}</div><div className="d">comprehensive data</div></div>
+          <div className="stat"><div className="l">Top value</div><div className="v em">{top ? formatCurrency(top.first_year_value, top.country) : '—'}</div><div className="d">{top ? top.name : ''}</div></div>
+          <div className="stat"><div className="l">Top ¢/pt</div><div className="v gd">{topCpp ? `${topCpp.toFixed(1)}¢` : '—'}</div><div className="d">{topProg ? `${topProg} sweet spot` : ''}</div></div>
+          <div className="stat"><div className="l">No-FX options</div><div className="v">{noFx}</div><div className="d">0% foreign txn</div></div>
+        </div>
+
+        <div className="tablewrap">
+          <div className="tablescroll">
+            <table>
+              <thead>
+                <tr>
+                  {COLUMNS.map((col) => (
+                    <th key={col.key} className={col.right ? 'r' : ''} onClick={() => onSort(col.key)}>
+                      {col.label}{sortKey === col.key && <span className="ar"> {arrow}</span>}
+                    </th>
+                  ))}
+                  <th className="r">Value index</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filtered.map((c) => {
+                  const tags = tagsFor(c);
+                  return (
+                    <tr key={c.slug}>
+                      <td>
+                        <a href={`/cards/${c.slug}`}>
+                          <div className="cn">{c.name}</div>
+                          <div className="ci" style={{ textTransform: 'lowercase' }}>{c.issuer} · {c.rewards_program || c.card_type}</div>
+                        </a>
+                      </td>
+                      <td>
+                        {tags.slice(0, 3).map((t, i) => <span key={t} className={i === 0 ? 'tag em' : 'tag'}>{t}</span>)}
+                        {tags.length > 3 && <span className="tag">+{tags.length - 3}</span>}
+                      </td>
+                      <td className={`r mono${c.annual_fee > 0 ? ' negv' : ''}`}>{formatCurrency(c.annual_fee, c.country)}</td>
+                      <td className="r mono">{c.welcome_bonus_points ? c.welcome_bonus_points.toLocaleString() : (c.welcome_bonus_value > 0 ? formatCurrency(c.welcome_bonus_value, c.country) : '—')}</td>
+                      <td className="r mono">{cppFor(c).toFixed(2)}</td>
+                      <td className={`r mono big ${c.first_year_value < 0 ? 'negv' : 'pos'}`}>{formatCurrency(c.first_year_value, c.country)}</td>
+                      <td className="r"><span className="vbar" style={{ '--w': `${Math.max(0, (c.first_year_value / maxValue) * 100)}%` } as CSSProperties} /></td>
+                    </tr>
+                  );
+                })}
+                {filtered.length === 0 && <tr><td colSpan={7} style={{ textAlign: 'center', padding: '60px', color: 'var(--ink-dim)' }} className="mono">no cards match these filters</td></tr>}
+              </tbody>
+            </table>
           </div>
-          <select value={sort} onChange={e => setSort(e.target.value as SortOption)}
-            className="rounded-lg border border-border bg-background py-2 px-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary">
-            {SORT_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
-          </select>
-          <div className="hidden sm:flex border border-border rounded-full overflow-hidden">
-            <button onClick={() => setListView(false)} className={`p-2 ${!listView ? 'bg-primary text-white' : 'bg-background'}`}><Grid3X3 className="w-4 h-4" /></button>
-            <button onClick={() => setListView(true)} className={`p-2 ${listView ? 'bg-primary text-white' : 'bg-background'}`}><List className="w-4 h-4" /></button>
-          </div>
-          <button onClick={() => setMobileFiltersOpen(true)} className="lg:hidden rounded-lg border border-border p-2 hover:bg-muted">
-            <SlidersHorizontal className="w-4 h-4" />
-          </button>
-        </div>
-      </div>
-
-      {/* Active filter pills */}
-      {activeFilterPills.length > 0 && (
-        <div className="flex flex-wrap items-center gap-2 mb-5">
-          {activeFilterPills.map((pill, i) => (
-            <span key={i} className="inline-flex items-center gap-1.5 rounded-full bg-accent/10 text-accent px-3 py-1 text-xs font-medium">
-              {pill.label}
-              <button onClick={pill.onRemove} className="hover:text-red-500 transition-colors"><X className="w-3 h-3" /></button>
-            </span>
-          ))}
-          <button onClick={clearAll} className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-            Clear all
-          </button>
-        </div>
-      )}
-
-      <div className="flex gap-8">
-        <aside className="hidden lg:block w-64 shrink-0">
-          <div className="sticky top-20">{filterSidebar}</div>
-        </aside>
-        <div className="flex-1 min-w-0">
-          <CardGrid cards={filtered} listView={listView} />
-        </div>
-      </div>
-
-      {/* Mobile filter drawer */}
-      {mobileFiltersOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden">
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setMobileFiltersOpen(false)} />
-          <div className="absolute right-0 top-0 bottom-0 w-80 max-w-full bg-background border-l border-border overflow-y-auto p-6">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="font-bold text-lg">Filters</h2>
-              <button onClick={() => setMobileFiltersOpen(false)}><X className="w-5 h-5" /></button>
-            </div>
-            {filterSidebar}
+          <div className="foot">
+            <span>est. value = welcome bonus × base ¢/pt − annual fee · native currency</span>
+            <span>click a column to sort · <a href="/how-we-value-points">methodology →</a></span>
           </div>
         </div>
-      )}
-    </div>
-  );
-}
-
-function CollapsibleSection({ title, children, defaultOpen = false }: { title: string; children: React.ReactNode; defaultOpen?: boolean }) {
-  const [open, setOpen] = useState(defaultOpen);
-  return (
-    <div className="border-b border-border/50 pb-4 pt-3">
-      <button onClick={() => setOpen(!open)} className="flex items-center justify-between w-full text-sm font-semibold text-foreground hover:text-accent transition-colors">
-        {title}
-        <ChevronDown className={`w-4 h-4 text-muted-foreground transition-transform ${open ? 'rotate-180' : ''}`} />
-      </button>
-      {open && <div className="mt-3 animate-fade-in">{children}</div>}
+      </main>
     </div>
   );
 }

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charted — Hybrid concept (Ledger palette × Terminal layout)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Doto:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Gödel-style terminal — charcoal board, neutral text, green/red accents */
+    --paper:#0E1110; --panel:#121613; --panel-2:#1A201C; --line:#242B27; --line-strong:#356B4C;
+    --ink:#C7D1CB; --ink-soft:#8C988F; --ink-dim:#5F6B63;
+    --emerald:#46B36C; --emerald-d:#2F8A50; --emerald-tint:#15251B;   /* accent = green */
+    --red:#E55B52; --gold:#6FC98A; --gold-tint:#15251B;               /* gold repurposed: light-green highlight */
+    --sans:'Inter',system-ui,sans-serif; --serif:'Fraunces',Georgia,serif; --mono:'JetBrains Mono',monospace;
+    --led:'Doto','JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;font-size:14px}
+  /* CRT board texture: scanlines + vignette */
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;
+    background:
+      repeating-linear-gradient(0deg, rgba(0,0,0,.09) 0 1px, transparent 1px 3px),
+      radial-gradient(ellipse at 50% 40%, transparent 58%, rgba(0,0,0,.42) 100%);
+    animation:flicker 7s steps(60) infinite}
+  @keyframes flicker{0%,100%{opacity:.94}48%{opacity:.9}52%{opacity:.98}}
+  a{color:inherit;text-decoration:none}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+  /* top bar */
+  .topbar{display:flex;align-items:center;gap:24px;height:58px;padding:0 24px;border-bottom:2px solid var(--line-strong);background:var(--panel)}
+  .logo{display:flex;align-items:center;gap:10px;cursor:pointer}
+  .logo .mark{display:block;width:22px;height:22px;flex:none}
+  /* split-flap "Charted" */
+  .flap{display:inline-flex;gap:3px}
+  .flap .tile{position:relative;width:21px;height:27px;background:#161208;color:#F0BE55;
+    text-shadow:0 0 7px rgba(233,182,78,.45);
+    font-family:var(--mono);font-weight:700;font-size:16px;line-height:1;display:flex;
+    align-items:center;justify-content:center;border-radius:3px;
+    box-shadow:inset 0 0 0 1px rgba(233,182,78,.14),0 1px 2px rgba(0,0,0,.4)}
+  .flap .tile::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;
+    background:rgba(0,0,0,.6);transform:translateY(-50%)}
+  .flap .tile.flip{animation:flapFlip .11s ease}
+  @keyframes flapFlip{0%{transform:perspective(140px) rotateX(0)}
+    45%{transform:perspective(140px) rotateX(-58deg)}
+    100%{transform:perspective(140px) rotateX(0)}}
+  /* compass tile (the "A") — golden needle that spins to north */
+  .flap .tile.compass{background:radial-gradient(circle at 50% 44%, #2b2615, #1A1A17 72%);
+    box-shadow:inset 0 0 0 1px rgba(216,168,83,.4),0 1px 2px rgba(0,0,0,.25)}
+  .flap .tile.compass::after{display:none}
+  .flap .tile.compass .needle{transform-box:fill-box;transform-origin:center}
+  .topbar nav{display:flex;gap:2px}
+  .topbar nav a{padding:7px 13px;border-radius:6px;color:var(--ink-soft);font-weight:600;font-size:13.5px}
+  .topbar nav a.on{background:var(--panel-2);color:var(--emerald)}
+  .topbar nav a:hover{color:var(--ink)}
+  .topbar .right{margin-left:auto;display:flex;align-items:center;gap:16px}
+  .ticker{font-family:var(--mono);font-size:12px;color:var(--ink-soft);display:inline-flex;align-items:center;gap:6px}
+  .ticker .tk{color:var(--ink-dim);font-weight:700;letter-spacing:.05em}
+  .ticker .sep{color:var(--ink-dim);opacity:.5}
+  .ticker .up{color:var(--emerald);font-weight:700}
+  .miniflap{display:inline-flex;gap:2px}
+  .miniflap .mc{display:inline-flex;align-items:center;justify-content:center;min-width:11px;height:18px;
+    background:#161208;color:#F0BE55;border-radius:2px;font-family:var(--mono);font-size:12px;font-weight:700;
+    text-shadow:0 0 6px rgba(233,182,78,.5);box-shadow:inset 0 0 0 1px rgba(233,182,78,.12)}
+  .miniflap .mc.flip{animation:flapFlip .1s ease}
+  .search{background:var(--paper);border:1px solid var(--line);border-radius:7px;padding:8px 12px;color:var(--ink-dim);font-size:13px;width:230px;font-family:var(--mono)}
+
+  /* layout */
+  .app{display:grid;grid-template-columns:252px 1fr;min-height:calc(100vh - 58px)}
+  .rail{border-right:1px solid var(--line);padding:22px 18px;background:var(--panel)}
+  .rail h4{font-family:var(--led);font-size:15px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);margin:20px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+  .rail h4:first-child{margin-top:0}
+  .filt{display:flex;align-items:center;gap:10px;padding:6px 8px;border-radius:6px;color:var(--ink-soft);font-size:13.5px;cursor:pointer}
+  .filt:hover{background:var(--panel-2);color:var(--ink)}
+  .filt input{accent-color:var(--emerald)}
+  .filt .ct{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--ink-dim)}
+  .filt.on{color:var(--emerald);font-weight:600}
+  .slider{height:4px;background:var(--line);border-radius:2px;margin:14px 4px;position:relative}
+  .slider::after{content:"";position:absolute;left:0;width:62%;height:100%;background:var(--emerald);border-radius:2px}
+  .slider .knob{position:absolute;left:62%;top:50%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:var(--emerald);box-shadow:0 0 0 4px rgba(10,92,62,.14)}
+  .rail .range{font-family:var(--mono);font-size:11px;color:var(--ink-soft);padding:0 4px}
+
+  main{padding:24px 28px}
+  .head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:4px}
+  .head h1{font-family:var(--led);font-size:30px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;text-shadow:0 0 9px rgba(70,179,108,.22)}
+  .head .meta{font-family:var(--mono);font-size:12px;color:var(--ink-soft)}
+  .subhead{color:var(--ink-soft);font-size:13.5px;margin-bottom:22px}
+  .subhead b{color:var(--emerald);font-weight:600}
+
+  /* stats strip */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:15px 17px}
+  .stat .l{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-dim);font-weight:700}
+  .stat .v{font-family:var(--led);font-size:30px;font-weight:700;margin-top:5px;font-variant-numeric:tabular-nums;letter-spacing:.02em;text-shadow:0 0 8px rgba(70,179,108,.25)}
+  .stat .v.em{color:var(--emerald)} .stat .v.gd{color:var(--gold)}
+  .stat .d{font-family:var(--mono);font-size:11px;color:var(--ink-soft);margin-top:2px}
+
+  /* table */
+  .tablewrap{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  table{width:100%;border-collapse:collapse}
+  thead th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#E4EAE6;font-weight:700;padding:13px 16px;border-bottom:2px solid var(--line-strong);background:var(--panel-2);cursor:pointer;white-space:nowrap}
+  thead th.r{text-align:right}
+  thead th .ar{color:var(--emerald)}
+  tbody td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:var(--panel-2)}
+  td.r{text-align:right}
+  .cn{font-weight:600;font-size:14.5px}
+  .ci{font-size:11.5px;color:var(--ink-dim);font-family:var(--mono)}
+  .mono.big{font-family:var(--led);font-size:21px;font-weight:700;letter-spacing:.02em;text-shadow:0 0 8px rgba(70,179,108,.3)}
+  .pos{color:var(--emerald)} .negv{color:var(--red)}
+  .tag{display:inline-block;font-family:var(--mono);font-size:10.5px;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--ink-soft);margin-right:3px}
+  .tag.em{color:var(--emerald);border-color:rgba(10,92,62,.35);background:var(--emerald-tint)}
+  .vbar{height:6px;width:90px;background:var(--line);border-radius:3px;display:inline-block;position:relative;vertical-align:middle}
+  .vbar::after{content:"";position:absolute;left:0;top:0;height:100%;background:linear-gradient(90deg,var(--emerald),var(--gold));border-radius:3px}
+  .v100::after{width:100%} .v92::after{width:92%} .v75::after{width:75%} .v66::after{width:66%} .v58::after{width:58%} .v42::after{width:42%}
+  .foot{padding:14px 16px;font-family:var(--mono);font-size:11.5px;color:var(--ink-dim);border-top:1px solid var(--line);display:flex;justify-content:space-between}
+  .foot a{color:var(--emerald);font-weight:600}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="logo" id="logo" aria-label="Charted"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 13.6,10.4 23,12 13.6,13.6 12,23 10.4,13.6 1,12 10.4,10.4" fill="#E12B22"/><polygon points="12,5 12.9,11.1 19,12 12.9,12.9 12,19 11.1,12.9 5,12 11.1,11.1" fill="#EFE8D6" transform="rotate(45 12 12)"/><circle cx="12" cy="12" r="2.1" fill="#EFE8D6" stroke="#E12B22" stroke-width="1.1"/></svg><span class="flap" id="flap"></span></a>
+  <nav>
+    <a class="on" href="#">Explorer</a>
+    <a href="#">Travel &amp; Points</a>
+    <a href="#">Personal Finance</a>
+    <a href="#">Compare</a>
+    <a href="#">Point Values</a>
+  </nav>
+  <div class="right">
+    <span class="ticker"><span class="tk">AERO</span><span class="miniflap" id="tkAero"></span><span class="up">▲</span><span class="sep">·</span><span class="tk">MR</span><span class="miniflap" id="tkMr"></span><span class="up">▲</span></span>
+    <input class="search" placeholder="⌘K  search 195 cards…">
+  </div>
+</div>
+
+<div class="app">
+  <aside class="rail">
+    <h4>Card type</h4>
+    <label class="filt on"><input type="checkbox" checked> Travel <span class="ct">61</span></label>
+    <label class="filt"><input type="checkbox"> Cashback <span class="ct">48</span></label>
+    <label class="filt"><input type="checkbox"> Airline <span class="ct">22</span></label>
+    <label class="filt"><input type="checkbox"> Hotel <span class="ct">22</span></label>
+    <label class="filt"><input type="checkbox"> Business <span class="ct">37</span></label>
+
+    <h4>Max annual fee</h4>
+    <div class="slider"><span class="knob"></span></div>
+    <div class="range">$0 — $500</div>
+
+    <h4>Benefits</h4>
+    <label class="filt"><input type="checkbox" checked> Lounge access <span class="ct">18</span></label>
+    <label class="filt"><input type="checkbox" checked> No FX fee <span class="ct">14</span></label>
+    <label class="filt"><input type="checkbox"> Car rental ins. <span class="ct">31</span></label>
+    <label class="filt"><input type="checkbox"> Free checked bag <span class="ct">12</span></label>
+
+    <h4>Network</h4>
+    <label class="filt"><input type="checkbox"> Visa <span class="ct">71</span></label>
+    <label class="filt"><input type="checkbox"> Mastercard <span class="ct">66</span></label>
+    <label class="filt"><input type="checkbox"> Amex <span class="ct">29</span></label>
+  </aside>
+
+  <main>
+    <div class="head">
+      <h1>Card Explorer</h1>
+      <span class="meta">showing 6 / 195 · sorted by est. value ▼</span>
+    </div>
+    <div class="subhead">Independent value engine — benefits verified from issuer documents, ranked by <b>estimated first-year value</b>. No sponsored placements.</div>
+
+    <div class="stats">
+      <div class="stat"><div class="l">Cards tracked</div><div class="v">195</div><div class="d">benefits 100% sourced</div></div>
+      <div class="stat"><div class="l">Best value / fee</div><div class="v em">$902</div><div class="d">TD Aeroplan VI</div></div>
+      <div class="stat"><div class="l">Top point value</div><div class="v gd">5.0¢</div><div class="d">Aeroplan sweet spot</div></div>
+      <div class="stat"><div class="l">No-FX options</div><div class="v">14</div><div class="d">0% foreign txn</div></div>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Card</th>
+            <th>Tags</th>
+            <th class="r">Annual fee</th>
+            <th class="r">Bonus</th>
+            <th class="r">Base ¢/pt <span class="ar">▼</span></th>
+            <th class="r">Est. 12-mo value</th>
+            <th class="r">Value index</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="cn">Amex Platinum</div><div class="ci">amex · membership-rewards</div></td>
+            <td><span class="tag em">lounge</span><span class="tag em">no-fx</span><span class="tag">car-ins</span></td>
+            <td class="r mono negv">$799</td>
+            <td class="r mono">100,000</td>
+            <td class="r mono">1.95</td>
+            <td class="r mono big pos">$1,140</td>
+            <td class="r"><span class="vbar v100"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">TD Aeroplan Visa Infinite</div><div class="ci">td · aeroplan</div></td>
+            <td><span class="tag em">free-bag</span><span class="tag">travel-med</span></td>
+            <td class="r mono negv">$139</td>
+            <td class="r mono">40,000</td>
+            <td class="r mono">2.05</td>
+            <td class="r mono big pos">$902</td>
+            <td class="r"><span class="vbar v92"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">Amex Cobalt</div><div class="ci">amex · membership-rewards</div></td>
+            <td><span class="tag em">no-fx</span><span class="tag">5x-dining</span></td>
+            <td class="r mono negv">$155.88</td>
+            <td class="r mono">15,000</td>
+            <td class="r mono">1.95</td>
+            <td class="r mono big pos">$748</td>
+            <td class="r"><span class="vbar v75"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">Scotiabank Gold American Express</div><div class="ci">scotia · scene-plus</div></td>
+            <td><span class="tag em">no-fx</span><span class="tag">5x-grocery</span></td>
+            <td class="r mono negv">$120</td>
+            <td class="r mono">40,000</td>
+            <td class="r mono">1.00</td>
+            <td class="r mono big pos">$655</td>
+            <td class="r"><span class="vbar v66"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">CIBC Aventura Visa Infinite</div><div class="ci">cibc · aventura</div></td>
+            <td><span class="tag">lounge-pass</span><span class="tag">travel-med</span></td>
+            <td class="r mono negv">$139</td>
+            <td class="r mono">35,000</td>
+            <td class="r mono">1.10</td>
+            <td class="r mono big pos">$540</td>
+            <td class="r"><span class="vbar v58"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">Tangerine World Mastercard</div><div class="ci">tangerine · cash-back</div></td>
+            <td><span class="tag">2%-cb</span><span class="tag">$0-fee</span></td>
+            <td class="r mono">$0</td>
+            <td class="r mono">—</td>
+            <td class="r mono">1.00</td>
+            <td class="r mono big pos">$312</td>
+            <td class="r"><span class="vbar v42"></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="foot">
+        <span>est. value = welcome bonus × base ¢/pt + earn − annual fee · CAD</span>
+        <span>updated 2026-06-19 · <a href="#">methodology →</a></span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+(function(){
+  var word = "CHARTED";
+  var glyphs = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var COMPASS_INDEX = 2; // the "A"
+  var NEEDLE_SVG =
+    '<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">' +
+      '<circle cx="12" cy="12" r="10" fill="none" stroke="#D8B56A" stroke-opacity="0.3" stroke-width="1"/>' +
+      '<g class="needle">' +
+        '<polygon points="12,3 9.3,12 14.7,12" fill="#E12B22"/>' +
+        '<polygon points="12,21 9.3,12 14.7,12" fill="#EFE8D6"/>' +
+      '</g>' +
+      '<circle cx="12" cy="12" r="1.7" fill="#9C7A2E"/>' +
+    '</svg>';
+  var flap = document.getElementById('flap');
+  var tiles = word.split('').map(function(ch, i){
+    var t = document.createElement('span');
+    t.className = 'tile';
+    if (i === COMPASS_INDEX){ t.classList.add('compass'); t.innerHTML = NEEDLE_SVG; }
+    else { t.textContent = ch; }
+    flap.appendChild(t);
+    return { el: t, final: ch, compass: i === COMPASS_INDEX };
+  });
+  function flip(el){ el.classList.remove('flip'); void el.offsetWidth; el.classList.add('flip'); }
+  function spinNeedle(tileEl){
+    var needle = tileEl.querySelector('.needle');
+    if (!needle || !needle.animate) return;
+    needle.animate([
+      { transform: 'rotate(-25deg)' },
+      { transform: 'rotate(900deg)',  offset: 0.55 }, // fast spin
+      { transform: 'rotate(1098deg)', offset: 0.80 }, // overshoot past north
+      { transform: 'rotate(1066deg)', offset: 0.91 }, // wobble back
+      { transform: 'rotate(1080deg)', offset: 1 }     // settle on north
+    ], { duration: 3400, easing: 'cubic-bezier(.18,.72,.2,1)', fill: 'forwards' });
+  }
+  function run(){
+    tiles.forEach(function(t, i){
+      if (t.compass){ spinNeedle(t.el); return; }
+      var ticks = 10 + i * 4, n = 0;
+      var iv = setInterval(function(){
+        if (n >= ticks){ t.el.textContent = t.final; flip(t.el); clearInterval(iv); return; }
+        t.el.textContent = glyphs[Math.floor(Math.random() * glyphs.length)];
+        flip(t.el);
+        n++;
+      }, 95);
+    });
+  }
+  run();
+  document.getElementById('logo').addEventListener('mouseenter', run);
+
+  /* split-flap ticker — re-flaps periodically like a live board */
+  var numGlyphs = "0123456789.";
+  function renderFlap(el, text){
+    while (el.children.length < text.length){ var c = document.createElement('span'); c.className = 'mc'; el.appendChild(c); }
+    while (el.children.length > text.length){ el.removeChild(el.lastChild); }
+    for (var i = 0; i < text.length; i++){
+      (function(cell, finalCh, idx){
+        var ticks = 4 + idx * 2, n = 0;
+        var iv = setInterval(function(){
+          if (n >= ticks){ cell.textContent = finalCh; flip(cell); clearInterval(iv); return; }
+          cell.textContent = numGlyphs[Math.floor(Math.random() * numGlyphs.length)];
+          flip(cell); n++;
+        }, 80);
+      })(el.children[i], text[i], i);
+    }
+  }
+  var feeds = [
+    { el: document.getElementById('tkAero'), vals: ['2.05','2.10','2.00'], i: 0 },
+    { el: document.getElementById('tkMr'),   vals: ['1.95','1.90','2.00'], i: 0 }
+  ];
+  feeds.forEach(function(f){ renderFlap(f.el, f.vals[0] + '¢'); });
+  setInterval(function(){
+    feeds.forEach(function(f){ f.i = (f.i + 1) % f.vals.length; renderFlap(f.el, f.vals[f.i] + '¢'); });
+  }, 6500);
+})();
+</script>
+</body>
+</html>

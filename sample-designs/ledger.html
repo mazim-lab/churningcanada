@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charted — Ledger concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFBF9; --ink:#1A1A17; --ink-soft:#54514A; --line:#E4E1D8;
+    --emerald:#0A5C3E; --emerald-d:#08482F; --red:#9E2B25; --gold:#9C7A2E;
+    --sans:'Inter',system-ui,sans-serif; --serif:'Fraunces',Georgia,serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  a{color:inherit;text-decoration:none}
+  .num{font-variant-numeric:tabular-nums}
+
+  /* Masthead */
+  .masthead{border-bottom:2px solid var(--ink)}
+  .mast-top{display:flex;justify-content:space-between;align-items:center;padding:10px 0;font-size:12px;color:var(--ink-soft);border-bottom:1px solid var(--line)}
+  .mast-top .date{letter-spacing:.04em;text-transform:uppercase}
+  .mast-main{display:flex;justify-content:space-between;align-items:baseline;padding:18px 0 14px}
+  .logo{font-family:var(--serif);font-size:38px;font-weight:600;letter-spacing:-.02em}
+  .logo .dot{color:var(--emerald)}
+  .mast-tag{font-family:var(--serif);font-style:italic;color:var(--ink-soft);font-size:15px}
+  nav.sections{display:flex;gap:0;border-bottom:1px solid var(--line);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+  nav.sections a{padding:11px 18px;border-right:1px solid var(--line)}
+  nav.sections a:first-child{padding-left:0}
+  nav.sections a:hover{color:var(--emerald)}
+  nav.sections a.active{color:var(--emerald);box-shadow:inset 0 -2px 0 var(--emerald)}
+
+  /* Lead */
+  .lead{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;padding:46px 0;border-bottom:1px solid var(--line)}
+  .kicker{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--emerald);margin-bottom:14px}
+  .lead h1{font-family:var(--serif);font-weight:600;font-size:54px;line-height:1.04;letter-spacing:-.02em;margin-bottom:18px}
+  .lead p{font-size:18px;color:var(--ink-soft);max-width:30em}
+  .lead .cta{margin-top:26px;display:flex;gap:14px;align-items:center}
+  .btn{background:var(--emerald);color:#fff;padding:11px 22px;font-weight:600;font-size:14px;border-radius:2px}
+  .btn:hover{background:var(--emerald-d)}
+  .btn-text{font-weight:600;font-size:14px;border-bottom:2px solid var(--ink);padding-bottom:1px}
+  .lead-aside{border-left:1px solid var(--line);padding-left:28px}
+  .lead-aside h4{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin-bottom:14px;font-weight:700}
+  .stat{padding:12px 0;border-bottom:1px solid var(--line)}
+  .stat .v{font-family:var(--serif);font-size:30px;font-weight:600}
+  .stat .l{font-size:13px;color:var(--ink-soft)}
+
+  /* Section head */
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;margin:44px 0 18px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+  .sec-head h2{font-family:var(--serif);font-size:26px;font-weight:600}
+  .sec-head a{font-size:13px;font-weight:600;color:var(--emerald)}
+
+  /* Table */
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  thead th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);font-weight:700;padding:0 14px 9px;border-bottom:1px solid var(--ink)}
+  thead th.r,td.r{text-align:right}
+  tbody td{padding:14px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:hover{background:#F4F2EC}
+  .cardname{font-weight:600;font-size:15px}
+  .cardissuer{font-size:12px;color:var(--ink-soft)}
+  .pos{color:var(--emerald);font-weight:600}
+  .neg{color:var(--red)}
+  .pill{display:inline-block;font-size:11px;font-weight:600;border:1px solid var(--line);border-radius:2px;padding:2px 7px;color:var(--ink-soft);margin-right:4px}
+  .val{font-family:var(--serif);font-size:19px;font-weight:600}
+
+  /* Three pillars editorial */
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+  .pillar{padding:26px 24px;border-right:1px solid var(--line)}
+  .pillar:last-child{border-right:none}
+  .pillar .no{font-family:var(--serif);font-size:13px;color:var(--gold);font-weight:600;margin-bottom:8px}
+  .pillar h3{font-family:var(--serif);font-size:22px;font-weight:600;margin-bottom:8px}
+  .pillar p{font-size:14px;color:var(--ink-soft)}
+  .pillar a{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--emerald);border-bottom:1.5px solid var(--emerald);padding-bottom:1px}
+
+  footer{margin-top:50px;border-top:2px solid var(--ink);padding:28px 0 60px;font-size:13px;color:var(--ink-soft)}
+  .foot-grid{display:flex;justify-content:space-between;align-items:flex-start}
+  .disclaim{max-width:46em;font-size:12px;line-height:1.65;border-top:1px solid var(--line);margin-top:20px;padding-top:16px}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <div class="mast-top">
+      <span class="date">Friday, June 19, 2026 · Canada Edition</span>
+      <span>Independent · Source-verified · No sponsored rankings</span>
+    </div>
+    <div class="mast-main">
+      <div class="logo">Charted<span class="dot">.</span></div>
+      <div class="mast-tag">Clear answers on cards, points &amp; money.</div>
+    </div>
+    <nav class="sections">
+      <a href="#" class="active">Cards</a>
+      <a href="#">Travel &amp; Points</a>
+      <a href="#">Personal Finance</a>
+      <a href="#">Guides</a>
+      <a href="#">Point Values</a>
+      <a href="#" style="margin-left:auto;color:var(--emerald)">Find my card →</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="lead">
+    <div>
+      <div class="kicker">The Card Report</div>
+      <h1>The honest way to choose a Canadian credit card.</h1>
+      <p>Every benefit on this site is read from the issuer's own documents — not copied from a blog. We rank by value to you, never by who pays us.</p>
+      <div class="cta">
+        <a href="#" class="btn">Compare 195 cards</a>
+        <a href="#" class="btn-text">How we value points →</a>
+      </div>
+    </div>
+    <aside class="lead-aside">
+      <h4>By the numbers</h4>
+      <div class="stat"><div class="v num">195</div><div class="l">cards tracked, benefits verified</div></div>
+      <div class="stat"><div class="v num">100%</div><div class="l">benefits sourced from issuer docs</div></div>
+      <div class="stat" style="border-bottom:none"><div class="v num">$0</div><div class="l">paid placements — ever</div></div>
+    </aside>
+  </section>
+
+  <div class="sec-head">
+    <h2>Top travel cards this month</h2>
+    <a href="#">View all travel cards →</a>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Card</th><th>Rewards</th><th class="r">Annual fee</th><th class="r">Welcome bonus</th><th class="r">Est. first-year value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="cardname">American Express Cobalt</div><div class="cardissuer">Amex · Membership Rewards</div></td>
+        <td><span class="pill">5x dining</span><span class="pill">No FX</span></td>
+        <td class="r num neg">$155.88</td>
+        <td class="r num">15,000 pts</td>
+        <td class="r"><span class="val pos num">$748</span></td>
+      </tr>
+      <tr>
+        <td><div class="cardname">TD Aeroplan Visa Infinite</div><div class="cardissuer">TD · Aeroplan</div></td>
+        <td><span class="pill">Air Canada</span><span class="pill">Free bag</span></td>
+        <td class="r num neg">$139</td>
+        <td class="r num">40,000 pts</td>
+        <td class="r"><span class="val pos num">$902</span></td>
+      </tr>
+      <tr>
+        <td><div class="cardname">Amex Platinum</div><div class="cardissuer">Amex · Membership Rewards</div></td>
+        <td><span class="pill">Lounge</span><span class="pill">Car rental ins.</span></td>
+        <td class="r num neg">$799</td>
+        <td class="r num">100,000 pts</td>
+        <td class="r"><span class="val pos num">$1,140</span></td>
+      </tr>
+      <tr>
+        <td><div class="cardname">Scotiabank Gold American Express</div><div class="cardissuer">Scotiabank · Scene+</div></td>
+        <td><span class="pill">5x groceries</span><span class="pill">No FX</span></td>
+        <td class="r num neg">$120</td>
+        <td class="r num">40,000 pts</td>
+        <td class="r"><span class="val pos num">$655</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sec-head">
+    <h2>Three things we cover</h2>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="no">No. 01</div>
+      <h3>Cards</h3>
+      <p>A comparison engine for all 195 Canadian cards, with benefits read straight from issuer documents and ranked by real value.</p>
+      <a href="#">Open the explorer</a>
+    </div>
+    <div class="pillar">
+      <div class="no">No. 02</div>
+      <h3>Travel &amp; Points</h3>
+      <p>What your points are actually worth, where they transfer, and the redemptions that beat cash — with our valuation method shown openly.</p>
+      <a href="#">See point values</a>
+    </div>
+    <div class="pillar">
+      <div class="no">No. 03</div>
+      <h3>Personal Finance</h3>
+      <p>The plain-English groundwork — credit scores, interest, fees, and building a setup that works — without the upsell.</p>
+      <a href="#">Read the guides</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-grid">
+      <div class="logo" style="font-size:24px">Charted<span class="dot">.</span></div>
+      <div style="display:flex;gap:40px">
+        <div><strong style="color:var(--ink)">Cards</strong><br>Explorer · Compare · Best-of</div>
+        <div><strong style="color:var(--ink)">Travel</strong><br>Point values · Transfers</div>
+        <div><strong style="color:var(--ink)">Money</strong><br>Guides · Glossary</div>
+      </div>
+    </div>
+    <p class="disclaim">Charted is independent. We don't run sponsored rankings or accept payment for placement. Estimated first-year values use our own published point valuations and assume the welcome bonus is earned; your results will vary. Card benefits are sourced from issuer documentation and reviewed quarterly.</p>
+  </footer>
+</div>
+</body>
+</html>

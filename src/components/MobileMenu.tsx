@@ -1,16 +1,17 @@
 'use client';
 import { useState, createContext, useContext } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Logo } from '@/components/Logo';
 
 const MobileMenuContext = createContext<{ open: boolean; setOpen: (v: boolean) => void }>({ open: false, setOpen: () => {} });
 
 const navLinks = [
-  { href: '/cards', label: 'Cards' },
-  { href: '/cards?type=travel&sort=value', label: 'Travel' },
-  { href: '/blog', label: 'Money' },
-  { href: '/compare', label: 'Tools' },
-  { href: '/guides/us-cards-for-canadians', label: 'Guides' },
+  { href: '/', label: 'Home' },
+  { href: '/news', label: 'News' },
+  { href: '/personal-finance', label: 'Personal Finance' },
+  { href: '/deals', label: 'Deals' },
+  { href: '/cards', label: 'Credit Cards' },
+  { href: '/travel', label: 'Travel & Points' },
+  { href: '/portfolio', label: 'Current Portfolio' },
 ];
 
 export function MobileMenuProvider({ children }: { children: React.ReactNode }) {
@@ -41,9 +42,13 @@ export function MobileMenu() {
       <div className="absolute inset-0 bg-black/50" onClick={() => setOpen(false)} />
       <div className="absolute top-0 left-0 h-full w-72 bg-card shadow-2xl border-r border-border">
         <div className="flex items-center justify-between p-4 border-b border-border/50">
-          <a href="/" className="flex items-center gap-2 text-lg font-[family-name:var(--font-display)]">
-            <Logo className="w-5 h-5 shrink-0 text-gold-text dark:text-gold" />
-            <span className="text-foreground">Chart</span><span className="text-gold-text dark:text-gold">ed</span>
+          <a href="/" className="flex items-center gap-2 text-base font-bold tracking-wide font-[family-name:var(--font-mono)]">
+            <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="12,1 13.6,10.4 23,12 13.6,13.6 12,23 10.4,13.6 1,12 10.4,10.4" fill="#E12B22" />
+              <polygon points="12,5 12.9,11.1 19,12 12.9,12.9 12,19 11.1,12.9 5,12 11.1,11.1" fill="#EFE8D6" transform="rotate(45 12 12)" />
+              <circle cx="12" cy="12" r="2.1" fill="#EFE8D6" stroke="#E12B22" strokeWidth="1.1" />
+            </svg>
+            <span className="text-foreground">FinTerminal</span>
           </a>
           <button onClick={() => setOpen(false)} className="p-2 text-muted-foreground hover:text-foreground" aria-label="Close menu">
             <X className="w-5 h-5" />

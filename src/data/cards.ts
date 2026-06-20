@@ -1,5 +1,6 @@
 import canadianCardsRaw from './canadian_cards_comprehensive.json';
 import usCardsRaw from './us_cards_comprehensive.json';
+import { valuationFor } from './point-valuations';
 
 // ── Types ──────────────────────────────────────────────
 
@@ -167,8 +168,13 @@ function normalizeCA(raw: RawCA): Card {
     : [];
 
   const earnSummary = earnRates.map(e => `${e.rate} ${e.category}`).join(', ');
-  const bonusValue = raw.welcome_bonus_value_cad || raw.pot_first_year_value || 0;
-  const precomputedFYV = raw.first_year_value_cad;
+  // Value the bonus at OUR baseline cpp (points × baseline), consistent across the site;
+  // fall back to the stored CAD value only for cards we have no points count for (e.g. cashback).
+  const baselineCpp = valuationFor(raw.rewards_program || raw.name || '').baseline;
+  const wbPoints = raw.welcome_bonus_points || null;
+  const bonusValue = (wbPoints && baselineCpp)
+    ? Math.round(wbPoints * baselineCpp / 100)
+    : (raw.welcome_bonus_value_cad || raw.pot_first_year_value || 0);
   const firstYearFee = typeof raw.first_year_fee === 'number' ? raw.first_year_fee : null;
   const fee = raw.annual_fee || 0;
 
@@ -226,12 +232,12 @@ function normalizeCA(raw: RawCA): Card {
     card.benefits_incomplete = true;
   }
   const effectiveFee = firstYearFee !== null ? firstYearFee : fee;
-  card.first_year_value = precomputedFYV != null ? precomputedFYV : (bonusValue - effectiveFee);
+  card.first_year_value = bonusValue - effectiveFee;
 
-  // Build formula string
+  // Build formula string (baseline cpp)
   const pts = raw.welcome_bonus_points;
-  const cpp = raw.cpp_cad;
-  card.cpp_cad = cpp || null;
+  const cpp = baselineCpp;
+  card.cpp_cad = baselineCpp || null;
   card.welcome_bonus_points = pts || null;
   if (card.first_year_value > 0 && pts && cpp) {
     const feePart = effectiveFee > 0 ? ` − $${effectiveFee} fee` : '';
@@ -278,6 +284,7 @@ const US_PROGRAM_CPP: [string, number][] = [
   ['ihg', 0.5], ['hilton', 0.5], ['bonvoy', 0.8], ['marriott', 0.8], ['hyatt', 1.7],
   ['delta', 1.2], ['skymiles', 1.2], ['united', 1.3], ['southwest', 1.4], ['avios', 1.3],
   ['membership rewards', 1.5], ['ultimate rewards', 1.5], ['thankyou', 1.3], ['capital one', 1.3],
+  ['american express', 1.5], ['amex', 1.5],
   ['cash', 100], ['miles', 1.3], ['points', 1.3],
 ];
 function usCpp(text: string): number {
@@ -286,11 +293,47 @@ function usCpp(text: string): number {
   return 1.3;
 }
 
+// Pull the welcome-bonus points/miles out of the marketing text. The numeric signup_bonus
+// fields are unreliable (often null, or the *spend* threshold), so the headline figure in
+// signup_bonus_formatted is the source of truth. Take the largest number tied to a
+// points/miles keyword; never grab a "$…" spend amount.
+function extractUsBonusPoints(text: string): number | null {
+  if (!text) return null;
+  let best = 0;
+  let m: RegExpExecArray | null;
+  const re = /([\d][\d,]{2,})\s*(?:bonus\s+)?(?:membership\s+rewards|ultimate\s+rewards|thankyou|skymiles|avios|aeroplan|miles|points|pts)\b/gi;
+  while ((m = re.exec(text))) { const n = parseInt(m[1].replace(/,/g, ''), 10); if (n > best && n <= 2_000_000) best = n; }
+  const re2 = /(?:as high as|up to|earn(?:\s+up\s+to)?)\s+([\d][\d,]{3,})\b/gi;
+  while ((m = re2.exec(text))) {
+    const idx = m.index + m[0].indexOf(m[1]);
+    if (text[idx - 1] === '$') continue;
+    const n = parseInt(m[1].replace(/,/g, ''), 10);
+    if (n > best && n <= 2_000_000) best = n;
+  }
+  return best > 0 ? best : null;
+}
+function extractUsBonusDollars(text: string): number {
+  const m = text.match(/\$\s?([\d][\d,]{1,})/);
+  return m ? parseInt(m[1].replace(/,/g, ''), 10) : 0;
+}
+
 function normalizeUS(raw: RawUS): Card {
   // Value the signup bonus with a program-specific baseline cpp, then convert USD→CAD.
-  const cppUsd = usCpp(`${raw.name} ${raw.signup_bonus_currency || ''}`);
-  let bonusValueUsd = raw.signup_bonus_value_usd || 0;
-  if (bonusValueUsd > 1000) bonusValueUsd = bonusValueUsd * cppUsd / 100; // raw points → dollars
+  const cppUsd = usCpp(`${raw.name} ${raw.issuer || ''} ${raw.signup_bonus_currency || ''}`);
+  const sfRaw = raw.signup_bonus_formatted || '';
+  const curRaw = (raw.signup_bonus_currency || '').toLowerCase();
+  const isCash = curRaw.includes('cash') || curRaw.includes('dollar') || curRaw.includes('statement')
+    || (!/(point|mile|reward|avios|skymiles)/i.test(`${curRaw} ${sfRaw}`) && /\$\s?\d/.test(sfRaw));
+  let bonusPoints: number | null = null;
+  let bonusValueUsd = 0;
+  if (isCash) {
+    bonusValueUsd = (raw.signup_bonus_value_usd && raw.signup_bonus_value_usd <= 5000 ? raw.signup_bonus_value_usd : 0) || extractUsBonusDollars(sfRaw);
+  } else {
+    bonusPoints = extractUsBonusPoints(sfRaw);
+    if (!bonusPoints && raw.signup_bonus && raw.signup_bonus >= 5000) bonusPoints = raw.signup_bonus;
+    if (bonusPoints) bonusValueUsd = bonusPoints * cppUsd / 100;
+    else if (raw.signup_bonus_value_usd) bonusValueUsd = raw.signup_bonus_value_usd > 2000 ? raw.signup_bonus_value_usd * cppUsd / 100 : raw.signup_bonus_value_usd;
+  }
   const bonusValue = Math.round(bonusValueUsd); // USD (native; labelled in UI)
   const fee = raw.annual_fee || 0;
   // Prefer the refreshed welcome_bonus text if present, else build from signup fields
@@ -354,8 +397,8 @@ function normalizeUS(raw: RawUS): Card {
   }
   card.first_year_value = Math.round(bonusValue - fee); // USD (native)
   card.first_year_value_formula = null;
-  card.cpp_cad = null;
-  card.welcome_bonus_points = null;
+  card.cpp_cad = isCash ? 1.0 : cppUsd;
+  card.welcome_bonus_points = bonusPoints;
 
   card.categories = deriveCategories(card);
   return card;

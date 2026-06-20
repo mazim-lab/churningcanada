@@ -27,3 +27,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+design-previews/

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charted — Terminal concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0C0F14; --panel:#141922; --panel-2:#1A212C; --line:#222B38;
+    --txt:#E6EBF2; --txt-soft:#8A97A8; --txt-dim:#5C6776;
+    --cyan:#36D1C4; --lime:#A6E22E; --amber:#F2C94C; --red:#FF6B6B; --blue:#5B9DFF;
+    --sans:'Inter',system-ui,sans-serif; --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;font-size:14px}
+  a{color:inherit;text-decoration:none}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+  /* top bar */
+  .topbar{display:flex;align-items:center;gap:24px;height:54px;padding:0 22px;border-bottom:1px solid var(--line);background:var(--panel)}
+  .logo{font-weight:700;font-size:18px;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+  .logo .sq{width:18px;height:18px;border-radius:4px;background:linear-gradient(135deg,var(--cyan),var(--lime))}
+  .topbar nav{display:flex;gap:4px}
+  .topbar nav a{padding:6px 12px;border-radius:6px;color:var(--txt-soft);font-weight:500;font-size:13.5px}
+  .topbar nav a.on{background:var(--panel-2);color:var(--txt)}
+  .topbar nav a:hover{color:var(--txt)}
+  .topbar .right{margin-left:auto;display:flex;align-items:center;gap:16px}
+  .ticker{font-family:var(--mono);font-size:12px;color:var(--txt-soft)}
+  .ticker .up{color:var(--lime)}
+  .search{background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:7px 12px;color:var(--txt-dim);font-size:13px;width:230px;font-family:var(--mono)}
+
+  /* layout */
+  .app{display:grid;grid-template-columns:248px 1fr;min-height:calc(100vh - 54px)}
+  .rail{border-right:1px solid var(--line);padding:20px 16px;background:var(--panel)}
+  .rail h4{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--txt-dim);margin:18px 0 9px;font-weight:600}
+  .rail h4:first-child{margin-top:0}
+  .filt{display:flex;align-items:center;gap:9px;padding:6px 8px;border-radius:6px;color:var(--txt-soft);font-size:13.5px;cursor:pointer}
+  .filt:hover{background:var(--panel-2);color:var(--txt)}
+  .filt input{accent-color:var(--cyan)}
+  .filt .ct{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--txt-dim)}
+  .filt.on{color:var(--cyan)}
+  .slider{height:4px;background:var(--line);border-radius:2px;margin:12px 4px;position:relative}
+  .slider::after{content:"";position:absolute;left:0;width:62%;height:100%;background:var(--cyan);border-radius:2px}
+  .slider .knob{position:absolute;left:62%;top:50%;transform:translate(-50%,-50%);width:13px;height:13px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(54,209,196,.18)}
+
+  main{padding:22px 26px}
+  .head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px}
+  .head h1{font-size:22px;font-weight:700;letter-spacing:-.01em}
+  .head .meta{font-family:var(--mono);font-size:12px;color:var(--txt-soft)}
+  .subhead{color:var(--txt-soft);font-size:13px;margin-bottom:20px}
+  .subhead b{color:var(--cyan)}
+
+  /* stats strip */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .stat .l{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--txt-dim);font-weight:600}
+  .stat .v{font-family:var(--mono);font-size:24px;font-weight:600;margin-top:5px}
+  .stat .v.cy{color:var(--cyan)} .stat .v.li{color:var(--lime)}
+  .stat .d{font-family:var(--mono);font-size:11px;color:var(--txt-soft);margin-top:2px}
+
+  /* table */
+  .tablewrap{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  table{width:100%;border-collapse:collapse}
+  thead th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--txt-dim);font-weight:600;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--panel-2);cursor:pointer;white-space:nowrap}
+  thead th.r{text-align:right}
+  thead th .ar{color:var(--cyan)}
+  tbody td{padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:var(--panel-2)}
+  td.r{text-align:right}
+  .cn{font-weight:600;font-size:14px}
+  .ci{font-size:11.5px;color:var(--txt-dim);font-family:var(--mono)}
+  .mono.big{font-size:15px;font-weight:600}
+  .pos{color:var(--lime)} .negv{color:var(--red)}
+  .tag{display:inline-block;font-family:var(--mono);font-size:10.5px;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--txt-soft);margin-right:3px}
+  .tag.cy{color:var(--cyan);border-color:rgba(54,209,196,.4)}
+  /* sparkbar */
+  .spark{display:inline-flex;align-items:flex-end;gap:2px;height:22px}
+  .spark i{width:4px;background:var(--cyan);border-radius:1px;opacity:.85}
+  .vbar{height:6px;width:90px;background:var(--line);border-radius:3px;display:inline-block;position:relative;vertical-align:middle;margin-left:8px}
+  .vbar::after{content:"";position:absolute;left:0;top:0;height:100%;background:linear-gradient(90deg,var(--cyan),var(--lime));border-radius:3px}
+  .v75::after{width:75%} .v92::after{width:92%} .v100::after{width:100%} .v58::after{width:58%} .v66::after{width:66%}
+  .foot{padding:14px 16px;font-family:var(--mono);font-size:11.5px;color:var(--txt-dim);border-top:1px solid var(--line);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a class="logo"><span class="sq"></span> charted</a>
+  <nav>
+    <a class="on" href="#">Explorer</a>
+    <a href="#">Travel · Points</a>
+    <a href="#">Finance</a>
+    <a href="#">Compare</a>
+    <a href="#">Values</a>
+  </nav>
+  <div class="right">
+    <span class="ticker">AERO <span class="up">2.05¢ ▲</span> · MR <span class="up">1.95¢ ▲</span></span>
+    <input class="search" placeholder="⌘K  search 195 cards…">
+  </div>
+</div>
+
+<div class="app">
+  <aside class="rail">
+    <h4>Card type</h4>
+    <label class="filt on"><input type="checkbox" checked> Travel <span class="ct">61</span></label>
+    <label class="filt"><input type="checkbox"> Cashback <span class="ct">48</span></label>
+    <label class="filt"><input type="checkbox"> Airline <span class="ct">22</span></label>
+    <label class="filt"><input type="checkbox"> Hotel <span class="ct">22</span></label>
+    <label class="filt"><input type="checkbox"> Business <span class="ct">37</span></label>
+
+    <h4>Max annual fee</h4>
+    <div class="slider"><span class="knob"></span></div>
+    <div style="font-family:var(--mono);font-size:11px;color:var(--txt-soft);padding:0 4px">$0 — $500</div>
+
+    <h4>Benefits</h4>
+    <label class="filt"><input type="checkbox" checked> Lounge access <span class="ct">18</span></label>
+    <label class="filt"><input type="checkbox" checked> No FX fee <span class="ct">14</span></label>
+    <label class="filt"><input type="checkbox"> Car rental ins. <span class="ct">31</span></label>
+    <label class="filt"><input type="checkbox"> Free checked bag <span class="ct">12</span></label>
+
+    <h4>Network</h4>
+    <label class="filt"><input type="checkbox"> Visa <span class="ct">71</span></label>
+    <label class="filt"><input type="checkbox"> Mastercard <span class="ct">66</span></label>
+    <label class="filt"><input type="checkbox"> Amex <span class="ct">29</span></label>
+  </aside>
+
+  <main>
+    <div class="head">
+      <h1>Card Explorer</h1>
+      <span class="meta">showing 6 / 195 · sorted by est. value ▼</span>
+    </div>
+    <div class="subhead">Live value engine — benefits verified from issuer docs, sorted by <b>estimated first-year value</b>.</div>
+
+    <div class="stats">
+      <div class="stat"><div class="l">Cards tracked</div><div class="v">195</div><div class="d">benefits 100% sourced</div></div>
+      <div class="stat"><div class="l">Best value / fee</div><div class="v cy">$902</div><div class="d">TD Aeroplan VI</div></div>
+      <div class="stat"><div class="l">Top point value</div><div class="v li">5.0¢</div><div class="d">Aeroplan sweet spot</div></div>
+      <div class="stat"><div class="l">No-FX options</div><div class="v">14</div><div class="d">0% foreign txn</div></div>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Card</th>
+            <th>Tags</th>
+            <th class="r">Fee</th>
+            <th class="r">Bonus</th>
+            <th class="r">Base ¢/pt <span class="ar">▼</span></th>
+            <th class="r">12-mo value</th>
+            <th class="r">Value index</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="cn">Amex Platinum</div><div class="ci">amex · membership-rewards</div></td>
+            <td><span class="tag cy">lounge</span><span class="tag cy">no-fx</span><span class="tag">car-ins</span></td>
+            <td class="r mono negv">$799</td>
+            <td class="r mono">100,000</td>
+            <td class="r mono">1.95</td>
+            <td class="r mono big pos">$1,140</td>
+            <td class="r"><span class="vbar v100"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">TD Aeroplan Visa Infinite</div><div class="ci">td · aeroplan</div></td>
+            <td><span class="tag cy">free-bag</span><span class="tag">travel-med</span></td>
+            <td class="r mono negv">$139</td>
+            <td class="r mono">40,000</td>
+            <td class="r mono">2.05</td>
+            <td class="r mono big pos">$902</td>
+            <td class="r"><span class="vbar v92"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">Amex Cobalt</div><div class="ci">amex · membership-rewards</div></td>
+            <td><span class="tag cy">no-fx</span><span class="tag">5x-dining</span></td>
+            <td class="r mono negv">$155.88</td>
+            <td class="r mono">15,000</td>
+            <td class="r mono">1.95</td>
+            <td class="r mono big pos">$748</td>
+            <td class="r"><span class="vbar v75"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">Scotiabank Gold Amex</div><div class="ci">scotia · scene-plus</div></td>
+            <td><span class="tag cy">no-fx</span><span class="tag">5x-grocery</span></td>
+            <td class="r mono negv">$120</td>
+            <td class="r mono">40,000</td>
+            <td class="r mono">1.00</td>
+            <td class="r mono big pos">$655</td>
+            <td class="r"><span class="vbar v66"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">CIBC Aventura Visa Infinite</div><div class="ci">cibc · aventura</div></td>
+            <td><span class="tag">lounge-pass</span><span class="tag">travel-med</span></td>
+            <td class="r mono negv">$139</td>
+            <td class="r mono">35,000</td>
+            <td class="r mono">1.10</td>
+            <td class="r mono big pos">$540</td>
+            <td class="r"><span class="vbar v58"></span></td>
+          </tr>
+          <tr>
+            <td><div class="cn">Tangerine World Mastercard</div><div class="ci">tangerine · cash-back</div></td>
+            <td><span class="tag">2%-cb</span><span class="tag">$0-fee</span></td>
+            <td class="r mono">$0</td>
+            <td class="r mono">—</td>
+            <td class="r mono">1.00</td>
+            <td class="r mono big pos">$312</td>
+            <td class="r"><span class="vbar v58"></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="foot">
+        <span>est. value = welcome bonus × base ¢/pt + earn − annual fee · CAD</span>
+        <span>updated 2026-06-19 · methodology →</span>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
