@@ -28,3 +28,6 @@ yarn-error.log*
 # vercel
 .vercel
 design-previews/
+
+# private financial data (Wealthsimple dumps) — never commit
+private/
