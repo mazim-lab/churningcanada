@@ -85,6 +85,55 @@ function textContains(text: string, ...terms: string[]): boolean {
   return terms.some(t => lower.includes(t));
 }
 
+// Strip trailing superscript-footnote markers left by the scrapers, e.g.
+// "Front Of The Line® Access18" → "Front Of The Line® Access", "subscriptions3" → "subscriptions",
+// "points.1" → "points.". Only removes 1–2 digits glued to a letter/®/period and NOT part of a
+// larger number (so "3X", "$150", "10,000", "B2B", "1.5", "2027" are all left untouched).
+function stripFootnotes(s: string): string {
+  return s
+    .replace(/([A-Za-z®™])(\d{1,2})(?![\w%$])/g, '$1')   // glued to a word: points3 → points
+    .replace(/([A-Za-z])\.(\d{1,2})(?![\w%$])/g, '$1.'); // after a period: points.1 → points.
+}
+
+// Welcome-bonus marketing copy often appends a redundant dollar-value claim taken verbatim from
+// the issuer's offer page ("…points – that's up to $150 in value", "Up to $1,350 in value
+// including up to 40,000 points"). We surface value from our own cpp estimates, so strip those
+// claims — but ONLY when a points figure remains; for pure cashback/rebate bundles the dollar
+// value is the only bonus stated, so leave those untouched.
+const POINTS_RE = /\b\d[\d,]{2,}\b[^.!]*?\b(?:points|pts|miles|aeroplan|avion|scene\+?|membership rewards|ultimate rewards|td rewards|rbc rewards|bmo rewards|thankyou|avios|skymiles|aadvantage|moi)\b/i;
+function cleanWelcomeBonus(input: string | null | undefined): string {
+  if (!input) return '';
+  let t = stripFootnotes(String(input));
+  if (POINTS_RE.test(t)) {
+    t = t.replace(/\s*\([^()]*\$[\d,]+[^()]*\)/g, '');                                   // "(up to $800 in value)"
+    t = t.replace(/\s*\([^()]*value[^()]*\)/gi, '');                                      // "(travel value up to $1,500)"
+    t = t.replace(/\s*[-–—]?\s*(?:that['’]?s|that is)\b[^.!]*?\$[\d,]+[^.!]*(?:[.!]|$)/gi, '. '); // "– that's up to $150 in value."
+    t = t.replace(/\$[\d,]+\s*(?:or more\s+)?in (?:travel\s+|total\s+)?value\b[^,.]*?(?:,\s*)?(?:including|which includes|that includes)\s*(?:up to\s+)?/gi, ''); // "$X in value, including up to"
+    t = t.replace(/\b(?:up to\s+)?\$[\d,]+\s*(?:or more\s+)?in (?:travel\s+|total\s+)?value\b/gi, ''); // leftover "$X in value"
+  }
+  t = stripFootnotes(t);
+  t = t.replace(/\.{2,}/g, '.');
+  t = t.replace(/\.\s+\d{1,2}\s*$/, '.');
+  t = t.replace(/\s+\d{1,2}\s*$/, '');
+  t = t.replace(/\bup to\s+up to\b/gi, 'up to');
+  t = t.replace(/\s{2,}/g, ' ');
+  t = t.replace(/\s+([.,!;])/g, '$1');
+  t = t.replace(/,\s*\./g, '.');
+  t = t.replace(/^[\s,.!–—-]+/, '');
+  t = t.replace(/[\s,;–—-]+$/, '');
+  t = t.replace(/^(?:and|which includes|including)\s+/i, '');
+  return t.trim();
+}
+function cleanStr(s: string | null | undefined): string {
+  return s ? stripFootnotes(s) : (s || '');
+}
+function cleanArr(a: string[] | null | undefined): string[] {
+  return (a || []).map(stripFootnotes);
+}
+function cleanRecord(r: Record<string, string> | null | undefined): Record<string, string> {
+  return r ? Object.fromEntries(Object.entries(r).map(([k, v]) => [k, stripFootnotes(v)])) : {};
+}
+
 function extractBenefits(card: { key_perks?: string[] | null; insurance?: Record<string, string> | null }): Benefits {
   const allText = [
     ...(card.key_perks || []),
@@ -164,7 +213,7 @@ interface RawCA {
 
 function normalizeCA(raw: RawCA): Card {
   const earnRates: EarnRate[] = raw.earn_rates
-    ? Object.entries(raw.earn_rates).map(([k, v]) => ({ category: cleanEarnRateKey(k), rate: v }))
+    ? Object.entries(raw.earn_rates).map(([k, v]) => ({ category: stripFootnotes(cleanEarnRateKey(k)), rate: v }))
     : [];
 
   const earnSummary = earnRates.map(e => `${e.rate} ${e.category}`).join(', ');
@@ -186,23 +235,23 @@ function normalizeCA(raw: RawCA): Card {
     card_type: raw.card_type || 'rewards',
     annual_fee: fee,
     first_year_fee: firstYearFee,
-    welcome_bonus: raw.welcome_bonus || '',
+    welcome_bonus: cleanWelcomeBonus(raw.welcome_bonus),
     welcome_bonus_value: bonusValue,
-    welcome_bonus_conditions: raw.welcome_bonus_conditions || '',
+    welcome_bonus_conditions: cleanStr(raw.welcome_bonus_conditions),
     earn_rates: earnRates,
-    earn_rates_summary: earnSummary,
+    earn_rates_summary: stripFootnotes(earnSummary),
     rewards_program: raw.rewards_program || '',
     foreign_transaction_fee: raw.foreign_transaction_fee === false ? false : raw.foreign_transaction_fee === true ? true : null,
     foreign_transaction_fee_pct: raw.foreign_transaction_fee_pct || null,
-    key_perks: raw.key_perks || [],
-    insurance: raw.insurance || {},
+    key_perks: cleanArr(raw.key_perks),
+    insurance: cleanRecord(raw.insurance),
     country: 'CA',
     sources: raw.sources || [],
     last_updated: raw.last_updated || '',
     card_image_url: raw.card_image_url || null,
     notes_for_canadians: null,
-    pros: raw.pros || [],
-    cons: raw.cons || [],
+    pros: cleanArr(raw.pros),
+    cons: cleanArr(raw.cons),
     is_business: false,
     categories: [],
     benefits: { lounge_access: false, no_fx_fee: false, car_rental_insurance: false, travel_medical: false, trip_cancellation: false, flight_delay: false, mobile_insurance: false, purchase_protection: false, extended_warranty: false, free_checked_bags: false },
@@ -355,21 +404,21 @@ function normalizeUS(raw: RawUS): Card {
     card_type: raw.card_type,
     annual_fee: fee,
     first_year_fee: null,
-    welcome_bonus: bonusText,
+    welcome_bonus: cleanWelcomeBonus(bonusText),
     welcome_bonus_value: bonusValue,
-    welcome_bonus_conditions: raw.welcome_bonus_conditions || '',
+    welcome_bonus_conditions: cleanStr(raw.welcome_bonus_conditions),
     earn_rates: [],
-    earn_rates_summary: raw.earn_rates_summary || '',
+    earn_rates_summary: cleanStr(raw.earn_rates_summary),
     rewards_program: raw.signup_bonus_currency || '',
     foreign_transaction_fee: raw.foreign_transaction_fee,
     foreign_transaction_fee_pct: null,
-    key_perks: raw.key_perks || [],
+    key_perks: cleanArr(raw.key_perks),
     insurance: {},
     country: 'US',
     sources: [raw.source || 'manual_research'],
     last_updated: raw.last_verified || '',
     card_image_url: null,
-    notes_for_canadians: raw.notes_for_canadians || null,
+    notes_for_canadians: cleanStr(raw.notes_for_canadians) || null,
     pros: [],
     cons: [],
     is_business: false,
@@ -449,7 +498,7 @@ export function getTopCardsByValue(count: number, country?: 'CA' | 'US'): Card[]
 
 export function formatCurrency(value: number, country: 'CA' | 'US' = 'CA'): string {
   const prefix = country === 'US' ? 'US$' : 'CA$';
-  return `${prefix}${value.toLocaleString()}`;
+  return `${prefix}${Math.round(value).toLocaleString()}`;
 }
 
 export function getMaxFirstYearValue(): number {
