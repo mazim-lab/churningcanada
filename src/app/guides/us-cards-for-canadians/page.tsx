@@ -1,852 +1,425 @@
-'use client';
+import Link from 'next/link';
 
-import { useState, useEffect, useRef } from 'react';
-import {
-  Lightbulb, AlertTriangle, Clock, MapPin, Building2, CreditCard,
-  FileText, TrendingUp, ShieldCheck, Rocket, ChevronDown, ChevronUp,
-  DollarSign, Globe, CheckCircle2, XCircle, ArrowRight, Info
-} from 'lucide-react';
-
-// ── Reading Progress Bar ─────────────────────────────────
-
-function ReadingProgress() {
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const winHeight = window.innerHeight;
-      const docHeight = document.documentElement.scrollHeight - winHeight;
-      setProgress(docHeight > 0 ? Math.min((window.scrollY / docHeight) * 100, 100) : 0);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  return (
-    <div className="fixed top-16 left-0 right-0 z-40 h-1 bg-border/30">
-      <div
-        className="h-full bg-gradient-to-r from-primary to-gold transition-[width] duration-150 ease-out"
-        style={{ width: `${progress}%` }}
-      />
-    </div>
-  );
-}
-
-// ── Tip Box ──────────────────────────────────────────────
-
-function TipBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-6 flex gap-3 rounded-xl border border-gold/30 bg-gold/[0.06] dark:bg-gold/[0.08] p-5">
-      <Lightbulb className="w-5 h-5 text-gold-dark dark:text-gold mt-0.5 shrink-0" />
-      <div className="text-sm leading-relaxed text-foreground/80">{children}</div>
-    </div>
-  );
-}
-
-// ── Warning Box ──────────────────────────────────────────
-
-function WarningBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-6 flex gap-3 rounded-xl border border-red-300/40 dark:border-red-500/30 bg-red-50/60 dark:bg-red-500/[0.08] p-5">
-      <AlertTriangle className="w-5 h-5 text-red-500 dark:text-red-400 mt-0.5 shrink-0" />
-      <div className="text-sm leading-relaxed text-foreground/80">{children}</div>
-    </div>
-  );
-}
-
-// ── Step Card ────────────────────────────────────────────
-
-function StepCard({
-  number, icon: Icon, title, timeEstimate, children, id,
-}: {
-  number: number;
-  icon: React.ElementType;
-  title: string;
-  timeEstimate: string;
-  children: React.ReactNode;
-  id: string;
-}) {
-  const [open, setOpen] = useState(true);
-
-  return (
-    <div id={id} className="relative pl-12 md:pl-16 pb-12 last:pb-0 scroll-mt-24">
-      {/* Timeline line */}
-      <div className="absolute left-[18px] md:left-[26px] top-0 bottom-0 w-px bg-gradient-to-b from-primary/40 via-gold/30 to-border/20" />
-      {/* Timeline dot */}
-      <div className="absolute left-[7px] md:left-[15px] top-1 w-[23px] h-[23px] rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center ring-4 ring-background z-10">
-        {number}
-      </div>
-
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full text-left group"
-      >
-        <div className="flex items-start gap-3">
-          <div className="rounded-lg bg-primary/[0.07] dark:bg-primary/[0.15] p-2 mt-0.5">
-            <Icon className="w-5 h-5 text-accent" />
-          </div>
-          <div className="flex-1 min-w-0">
-            <h3 className="text-xl font-bold font-[family-name:var(--font-display)] group-hover:text-accent transition-colors">
-              {title}
-            </h3>
-            <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
-              <Clock className="w-3.5 h-3.5" />
-              {timeEstimate}
-            </div>
-          </div>
-          <div className="mt-2 text-muted-foreground">
-            {open ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-          </div>
-        </div>
-      </button>
-
-      {open && (
-        <div className="mt-4 prose-guide">
-          {children}
-        </div>
-      )}
-    </div>
-  );
-}
-
-// ── Card Recommendation Inline ───────────────────────────
-
-function CardRec({ name, slug, note }: { name: string; slug?: string; note?: string }) {
-  return (
-    <a
-      href={slug ? `/cards/${slug}` : '/cards?country=US'}
-      className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium hover:border-primary/40 hover:shadow-sm transition-all no-underline"
-    >
-      <CreditCard className="w-3.5 h-3.5 text-accent" />
-      <span>{name}</span>
-      {note && <span className="text-muted-foreground font-normal">— {note}</span>}
-    </a>
-  );
-}
-
-// ── Roadmap Month ────────────────────────────────────────
-
-function RoadmapItem({ month, label, description, accent }: { month: string; label: string; description: string; accent?: boolean }) {
-  return (
-    <div className={`flex gap-4 items-start p-4 rounded-xl border ${accent ? 'border-gold/40 bg-gold/[0.04]' : 'border-border bg-card'}`}>
-      <div className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-bold ${accent ? 'bg-gold/20 text-gold-dark dark:text-gold' : 'bg-primary/10 text-accent'}`}>
-        {month}
-      </div>
-      <div>
-        <p className="font-semibold text-sm">{label}</p>
-        <p className="text-sm text-muted-foreground mt-0.5">{description}</p>
-      </div>
-    </div>
-  );
-}
-
-// ── Mistake Item ─────────────────────────────────────────
-
-function Mistake({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="flex gap-3 items-start">
-      <XCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
-      <p className="text-sm leading-relaxed">{children}</p>
-    </div>
-  );
-}
-
-// ── Main Page ────────────────────────────────────────────
+const TOC = [
+  { id: 'why', label: 'Why US cards' },
+  { id: 'step-1', label: '1. US address' },
+  { id: 'step-2', label: '2. Bank account' },
+  { id: 'step-3', label: '3. First card' },
+  { id: 'step-4', label: '4. Get your ITIN' },
+  { id: 'step-5', label: '5. Build credit' },
+  { id: 'step-6', label: '6. Chase cards' },
+  { id: 'step-7', label: '7. Expand' },
+  { id: 'managing', label: 'Managing from Canada' },
+  { id: 'mistakes', label: 'Mistakes to avoid' },
+  { id: 'roadmap', label: 'First-year sequence' },
+];
 
 export default function USCardsGuidePage() {
-  const tocSections = [
-    { id: 'why', label: 'Why US Cards?' },
-    { id: 'step-1', label: '1. US Address' },
-    { id: 'step-2', label: '2. Bank Account' },
-    { id: 'step-3', label: '3. First Card' },
-    { id: 'step-4', label: '4. Get ITIN' },
-    { id: 'step-5', label: '5. Build Credit' },
-    { id: 'step-6', label: '6. Chase Cards' },
-    { id: 'step-7', label: '7. Expand' },
-    { id: 'managing', label: 'Managing Cards' },
-    { id: 'mistakes', label: 'Mistakes to Avoid' },
-    { id: 'roadmap', label: 'First-Year Roadmap' },
-  ];
-
   return (
-    <>
-      <ReadingProgress />
+    <div className="app norail">
+      <main>
+        <div className="doc">
+          <nav className="crumb">
+            <Link href="/">home</Link><span className="sep">/</span>
+            <Link href="/cards">cards</Link><span className="sep">/</span>
+            <span className="cur">itin-guide</span>
+          </nav>
 
-      {/* Hero */}
-      <section className="relative overflow-hidden hero-gradient text-white">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(212,168,83,0.12)_0%,_transparent_60%)]" />
-          <div className="absolute top-20 right-[12%] w-36 h-22 rounded-xl border border-white/[0.06] animate-float" />
-          <div className="absolute bottom-16 left-[8%] w-28 h-18 rounded-xl border border-white/[0.05] animate-float-delayed" />
-        </div>
-        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 py-24 md:py-32 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.07] px-4 py-1.5 text-sm mb-8 backdrop-blur-sm">
-            <span>🇨🇦</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-            <span>🇺🇸</span>
-            <span className="ml-1 text-white/70">Step-by-step guide</span>
-          </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-5 font-[family-name:var(--font-display)]">
-            The Complete Guide to{' '}
-            <span className="text-gold">US Credit Cards</span>{' '}
-            for Canadians
-          </h1>
-          <p className="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed mb-8">
-            Everything you need to know about getting an ITIN, building US credit, and accessing the world&apos;s best rewards cards
+          <div className="head"><h1>US Cards for Canadians</h1></div>
+          <p className="lede">
+            A complete, plain-language walkthrough for getting a US mailing address, an ITIN, and a real
+            US credit history, so you can reach the best rewards cards in the world. It takes some patience,
+            but thousands of Canadians have done exactly this, and you can too. Take it one step at a time.
           </p>
-          <div className="flex items-center justify-center gap-5 text-sm text-white/50">
-            <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> 25 min read</span>
-            <span>•</span>
-            <span>Last updated February 2026</span>
+          <div className="docmeta">
+            <span className="gd">GUIDE</span><span className="sep">·</span>
+            <span>about 25 min read</span><span className="sep">·</span>
+            <span>covers ITIN, US credit, Chase 5/24</span>
           </div>
-        </div>
-      </section>
 
-      {/* Interactive Guide CTA */}
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 pt-10">
-        <a
-          href="/guides/us-cards-for-canadians/interactive"
-          className="group block rounded-2xl border-2 border-gold/30 bg-gradient-to-r from-gold/[0.08] to-primary/[0.06] dark:from-gold/[0.12] dark:to-primary/[0.10] p-6 sm:p-8 hover:border-gold/50 hover:shadow-lg hover:shadow-gold/10 transition-all"
-        >
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div className="flex items-start gap-4">
-              <span className="text-4xl">🧭</span>
-              <div>
-                <h3 className="text-lg sm:text-xl font-bold font-[family-name:var(--font-display)] mb-1">
-                  Try the Interactive Step-by-Step Guide
-                </h3>
-                <p className="text-muted-foreground text-sm sm:text-base">
-                  Follow along one step at a time with checklists, progress tracking, and your place saved automatically.
-                </p>
+          <div className="toc">
+            <div className="tt">In this guide</div>
+            <div className="toc-grid">
+              {TOC.map(s => <a key={s.id} href={`#${s.id}`}>{s.label}</a>)}
+            </div>
+          </div>
+
+          {/* WHY */}
+          <div id="why" className="cd-sec" style={{ scrollMarginTop: 70 }}>Why Canadians get US cards</div>
+          <p>
+            If you care about travel rewards, the US credit card market is a different league. The welcome
+            bonuses are bigger, there are far more transfer partners, and some cards hand you hotel elite
+            status just for being a cardholder. Here is the short version of why it is worth the effort.
+          </p>
+          <ul>
+            <li><strong>Bigger welcome bonuses.</strong> A US Amex Platinum routinely offers 150k or more Membership Rewards points. The Canadian version usually sits around 70k to 80k.</li>
+            <li><strong>More transfer partners.</strong> Amex US has roughly twice the airline partners that Amex Canada does, which means many more sweet spots to find.</li>
+            <li><strong>Status from a card.</strong> The Hilton Aspire gives you Hilton Diamond and the Marriott Bonvoy Brilliant gives you Platinum, with no nights required.</li>
+            <li><strong>No foreign transaction fees.</strong> Most premium US cards waive FX fees, so you can even use them for Canadian spending without the usual 2.5 percent surcharge.</li>
+          </ul>
+          <p className="sub">
+            The catch is the upfront work. You need a US address, you build credit from zero, and you go
+            through the ITIN process with the IRS. None of it is hard on its own. We will take the steps in
+            an order that lets you start earning early while the slower pieces process in the background.
+          </p>
+
+          {/* STEPS */}
+          <div className="cd-sec">The step-by-step process</div>
+          <div className="steps">
+
+            {/* Step 1 */}
+            <div id="step-1" className="step" style={{ scrollMarginTop: 70 }}>
+              <div className="num">1</div>
+              <div className="st">Get a US mailing address</div>
+              <div className="stm">cost: about $70 to $90 USD per year</div>
+              <p>
+                Before anything else you need a US residential address. This is where your cards, statements,
+                and IRS letters will arrive. You have two good options.
+              </p>
+              <p><strong>Option A, a mail forwarding service.</strong> Providers like 24/7 Parcel, US Global Mail, and Traveling Mailbox give you a real street address (not a PO box) and scan or forward your mail. Budget $70 to $90 USD per year.</p>
+              <p><strong>Option B, a friend or family member in the US.</strong> If someone is willing to receive your mail, this is the cheapest route. Just make sure they are comfortable with the occasional IRS letter and card envelope.</p>
+              <div className="cd-note red">
+                <div className="cap">Important check</div>
+                Look your address up in the USPS tool and check the Commercial Mail Receiving Agency flag. It must read <span className="fld">N</span>. If it shows <span className="fld">Y</span>, issuers like Chase may flag and reject your applications. Some forwarding addresses are flagged as commercial, so always verify before you sign up.
               </div>
             </div>
-            <span className="shrink-0 rounded-full bg-primary text-white px-6 py-3 font-semibold text-sm group-hover:bg-primary-dark transition-colors flex items-center gap-2">
-              Start Guide
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-            </span>
-          </div>
-        </a>
-      </div>
 
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 py-16">
-        {/* Table of Contents */}
-        <nav className="mb-16 rounded-2xl border border-border bg-card p-6">
-          <h2 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-4">In this guide</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {tocSections.map(s => (
-              <a key={s.id} href={`#${s.id}`} className="text-sm text-muted-foreground hover:text-accent transition-colors py-1">
-                {s.label}
-              </a>
-            ))}
-          </div>
-        </nav>
-
-        {/* Why US Cards? */}
-        <section id="why" className="mb-16 scroll-mt-24">
-          <h2 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-display)] mb-6">
-            Why Should Canadians Get US Credit Cards?
-          </h2>
-          <p className="text-muted-foreground leading-relaxed mb-6">
-            If you&apos;re into travel rewards, the US credit card market is an entirely different league. We&apos;re talking bigger sign-up bonuses, more transfer partners, and perks that Canadian issuers can only dream of offering. Here&apos;s the quick pitch:
-          </p>
-
-          <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            {[
-              { title: 'Bigger Welcome Bonuses', desc: 'US Amex Platinum offers 150k+ MR points. Canadian Platinum? Usually 70-80k.' },
-              { title: 'More Transfer Partners', desc: 'Amex US has 21 airline transfer partners vs just 11 in Canada. That\'s nearly double the options for finding sweet-spot redemptions.' },
-              { title: 'Elite Status from Cards', desc: 'Hold the Hilton Aspire and you get Diamond status. Marriott Bonvoy Brilliant gives you Platinum. No stays required.' },
-              { title: 'No FX Fees', desc: 'Most premium US cards waive foreign transaction fees, so you can use them for Canadian spending without the 2.5% surcharge.' },
-            ].map(item => (
-              <div key={item.title} className="rounded-xl border border-border bg-card p-5">
-                <h3 className="font-semibold text-sm mb-1.5">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
+            {/* Step 2 */}
+            <div id="step-2" className="step" style={{ scrollMarginTop: 70 }}>
+              <div className="num">2</div>
+              <div className="st">Open a US bank account</div>
+              <div className="stm">timeline: 1 to 2 weeks</div>
+              <p>
+                A US bank account does two jobs for you. It lets you pay your card bills in US dollars, and it
+                gives you a statement with a US address that issuers accept as proof. The easiest path is a
+                Canadian bank with a US arm.
+              </p>
+              <ul>
+                <li><strong>CIBC US.</strong> The most popular choice. No monthly fee on the Smart Account, and you can open it online from Canada.</li>
+                <li><strong>TD Bank.</strong> Convenient if you already bank with TD in Canada, with branches across the US east coast.</li>
+                <li><strong>BMO.</strong> BMO&apos;s US arm, with an easy cross-border setup.</li>
+                <li><strong>RBC Bank.</strong> RBC&apos;s US presence, mainly in the southeast.</li>
+              </ul>
+              <div className="cd-note">
+                <div className="cap">Tip</div>
+                Set your US mailing address as the primary address on this account. You will use these statements as proof of address when you apply for cards.
               </div>
-            ))}
-          </div>
-
-          <p className="text-muted-foreground leading-relaxed">
-            The catch? It takes some upfront work — getting a US address, building credit history from scratch, and navigating the ITIN process. But thousands of Canadians have done it, and the payoff is absolutely worth it. Let&apos;s walk through it step by step.
-          </p>
-        </section>
-
-        {/* Steps */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-display)] mb-10">
-            The Step-by-Step Process
-          </h2>
-
-          {/* Step 1 */}
-          <StepCard number={1} icon={MapPin} title="Get a US Mailing Address" timeEstimate="~$70-90 USD/year" id="step-1">
-            <p>
-              Before anything else, you need a US residential address. This is where your cards, bank statements, and IRS correspondence will be mailed. You have two options:
-            </p>
-            <p>
-              <strong>Option A: Mail forwarding service.</strong> Companies like <strong>24/7 Parcel</strong>, <strong>US Global Mail</strong>, and <strong>Traveling Mailbox</strong> give you a real street address (not a PO box) and scan or forward your mail. Expect to pay $70–90 USD per year.
-            </p>
-            <p>
-              <strong>Option B: Friend or family in the US.</strong> If you have someone willing to receive mail for you, this is the cheapest option. Just make sure they&apos;re okay with occasional IRS letters and credit card mail.
-            </p>
-
-            <WarningBox>
-              <strong>Critical check:</strong> Go to the USPS address lookup tool and verify your address. Look for &quot;Commercial Mail Receiving Agency&quot; — it must show <strong>&quot;N&quot;</strong>. If it shows &quot;Y&quot;, card issuers like Chase may flag and reject your applications. Some mail forwarding services are flagged as commercial; always verify before signing up.
-            </WarningBox>
-
-            <TipBox>
-              <strong>Pro tip:</strong> Check your address at <strong>USPS.com</strong> before committing to any service. Search your address in their zip code lookup tool — if the result includes &quot;Commercial Mail Receiving Agency: Y&quot;, find a different provider.
-            </TipBox>
-          </StepCard>
-
-          {/* Step 2 */}
-          <StepCard number={2} icon={Building2} title="Open a US Bank Account" timeEstimate="1-2 weeks" id="step-2">
-            <p>
-              You need a US bank account for two things: paying your credit card bills in USD, and having a bank statement with a US address for card issuer verification.
-            </p>
-            <p>
-              The easiest path is through <strong>Canadian banks with US subsidiaries</strong>:
-            </p>
-            <ul>
-              <li><strong>CIBC US (formerly Simplii Financial US)</strong> — The most popular choice. No monthly fee on the Smart Account, and you can open it online from Canada.</li>
-              <li><strong>TD Bank</strong> — Great if you&apos;re already a TD Canada customer. TD has branches across the US East Coast.</li>
-              <li><strong>BMO Harris</strong> — BMO&apos;s US banking arm. Easy cross-border setup.</li>
-              <li><strong>RBC Bank</strong> — RBC&apos;s US presence, primarily in the Southeast.</li>
-            </ul>
-
-            <TipBox>
-              Make sure to set your <strong>US mailing address as the primary address</strong> on this account. You&apos;ll use bank statements from this account as proof of address when applying for credit cards.
-            </TipBox>
-          </StepCard>
-
-          {/* Step 3 */}
-          <StepCard number={3} icon={CreditCard} title="Get Your First US Card via Amex Global Transfer" timeEstimate="2-4 weeks" id="step-3">
-            <p>
-              This is where the magic happens. <strong>Amex Global Transfer</strong> lets you leverage your existing Canadian Amex relationship to get approved for a US Amex card — no US credit history or ITIN required.
-            </p>
-            <p><strong>Requirements:</strong></p>
-            <ul>
-              <li>An existing Canadian Amex card, open for at least 3 months</li>
-              <li>Your US mailing address</li>
-              <li>Your US bank account</li>
-            </ul>
-            <p><strong>How to apply:</strong></p>
-            <ul>
-              <li><strong>Online:</strong> Apply on the US Amex website. During the application, check the box that says you have an existing Amex card from another country. Enter your Canadian Amex card details.</li>
-              <li><strong>Phone:</strong> Call the Amex Global Transfer line and they&apos;ll walk you through it.</li>
-            </ul>
-            <p>
-              You may need to upload your passport and a bank statement showing your US address for verification. This is normal — just have them ready.
-            </p>
-
-            <WarningBox>
-              <strong>Start with a personal card, not a business card.</strong> Business cards do <em>not</em> build personal credit history in the US. Your first card needs to be a personal card so it starts building your credit file with the bureaus.
-            </WarningBox>
-
-            <p>
-              <strong>Best starter cards:</strong>
-            </p>
-            <div className="flex flex-wrap gap-2 my-3">
-              <CardRec name="Amex Hilton Honors" note="no annual fee — great keeper" />
-              <CardRec name="Amex Gold Card" note="strong earning" />
             </div>
 
-            <TipBox>
-              <strong>Choose wisely:</strong> Your first US card will be your oldest account on your US credit report forever. Pick something you&apos;ll want to keep long-term. A no-annual-fee card like the Hilton Honors is a popular choice for exactly this reason.
-            </TipBox>
-          </StepCard>
+            {/* Step 3 */}
+            <div id="step-3" className="step" style={{ scrollMarginTop: 70 }}>
+              <div className="num">3</div>
+              <div className="st">Get your first card via Amex Global Transfer</div>
+              <div className="stm">timeline: 2 to 4 weeks</div>
+              <p>
+                This is the clever part. Amex Global Transfer lets you use your existing Canadian Amex
+                relationship to get approved for a US Amex card, with no US credit history and no ITIN
+                required yet. It is the single best on-ramp Canadians have.
+              </p>
+              <h4>What you need</h4>
+              <ul>
+                <li>An existing Canadian Amex card, open for at least 3 months</li>
+                <li>Your US mailing address</li>
+                <li>Your US bank account</li>
+              </ul>
+              <h4>How to apply</h4>
+              <ul>
+                <li><strong>Online.</strong> Apply on the US Amex site and check the box that says you hold an Amex card from another country, then enter your Canadian card details.</li>
+                <li><strong>By phone.</strong> Call the Amex Global Transfer line and they will walk you through it.</li>
+              </ul>
+              <p>You may be asked to upload your passport and a bank statement showing your US address. That is normal, so just have them ready.</p>
+              <div className="cd-note red">
+                <div className="cap">Start personal, not business</div>
+                Your first card must be a personal card. Business cards do not build personal credit history in the US, and the whole point of this first card is to open your credit file with the bureaus.
+              </div>
+              <p>Popular starter cards are the <Link href="/cards?country=US" className="lnk">Amex Hilton Honors</Link> (no annual fee, a great long-term keeper) and the <Link href="/cards?country=US" className="lnk">Amex Gold</Link> (strong everyday earning).</p>
+              <div className="cd-note">
+                <div className="cap">Choose for the long run</div>
+                Your first US card becomes the oldest account on your US credit report, and account age helps your score for years. A no-fee card like the Hilton Honors is a common pick for exactly this reason.
+              </div>
+            </div>
 
-          {/* Step 4 */}
-          <StepCard number={4} icon={FileText} title="Apply for an ITIN" timeEstimate="6-12 weeks processing" id="step-4">
-            <p>
-              An <strong>Individual Taxpayer Identification Number (ITIN)</strong> is essentially a tax ID number issued by the IRS for people who aren&apos;t eligible for a Social Security Number. You need this to apply for cards from Chase, Citi, Capital One, Bank of America, and most non-Amex issuers.
-            </p>
+            {/* Step 4 — ITIN */}
+            <div id="step-4" className="step" style={{ scrollMarginTop: 70 }}>
+              <div className="num">4</div>
+              <div className="st">Apply for an ITIN</div>
+              <div className="stm">timeline: 6 to 12 weeks to process</div>
+              <p>
+                An Individual Taxpayer Identification Number (ITIN) is a tax ID the IRS issues to people who
+                are not eligible for a Social Security Number. You need one to apply for cards from Chase,
+                Citi, Capital One, Bank of America, and most issuers other than Amex.
+              </p>
+              <h4>Method 1: use a tax service (easiest)</h4>
+              <p>
+                Services that specialize in this handle the whole thing for roughly $150 to $300. They
+                prepare your W-7 and file a 1040-NR return for you. This is the hands-off option if you would
+                rather not touch IRS forms.
+              </p>
+              <h4>Method 2: do it yourself (about $10)</h4>
+              <div className="cd-note">
+                <div className="cap">The DIY path</div>
+                The DIY route is more approachable than it looks and costs under $10. You file a 1040-NR
+                return declaring a small amount of US-source gambling income, around $75 to $100, which you
+                self-declare with no proof required. That creates a valid reason to need an ITIN, and you end
+                up owing about $9 in tax.
+              </div>
+              <p>
+                You will fill out Form W-7 (the ITIN application), Form 1040-NR (the non-resident return),
+                Schedule 1, and Schedule OI. Have your Canadian SIN handy along with a list of any dates you
+                were physically in the US during the tax year.
+              </p>
 
-            <h4 className="font-semibold mt-4 mb-2">Method 1: Use a Tax Service (Easiest)</h4>
-            <p>
-              Services like <strong>US Tax Resources</strong> and <strong>FrugalFlyer&apos;s ITIN service</strong> handle the entire process for $150–300. They prepare your W-7 form and file a 1040-NR tax return on your behalf. This is the hands-off option if you don&apos;t want to deal with IRS forms.
-            </p>
-
-            <h4 className="font-semibold mt-4 mb-2">Method 2: DIY with the Gambling Income Method (~$10)</h4>
-            <TipBox>
-              <strong>The DIY method is straightforward</strong> and costs under $10. You file a 1040-NR tax return declaring a small amount of US-source gambling income ($75–100 USD) from US-based online casinos. You self-declare the income — no proof of gambling is required. This creates a valid reason to need an ITIN and you&apos;ll owe about $9 USD in taxes.
-            </TipBox>
-            <p>
-              You fill out <strong>Form W-7</strong> (the ITIN application), <strong>Form 1040-NR</strong> (non-resident tax return), <strong>Schedule 1</strong>, and <strong>Schedule OI</strong>. You&apos;ll also need your Canadian SIN and a list of dates you were physically present in the US during the tax year.
-            </p>
-
-            {/* ── Submission Paths ─────────────────────────── */}
-            <div className="mt-8 mb-6">
-              <h4 className="text-lg font-bold font-[family-name:var(--font-display)] mb-4">How to Submit Your Application</h4>
-
-              <div className="grid md:grid-cols-2 gap-4">
-                {/* Path A */}
-                <div className="rounded-xl border-2 border-primary/30 bg-primary/[0.03] dark:bg-primary/[0.06] p-5">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="rounded-full bg-primary text-white text-xs font-bold px-2.5 py-1">Recommended</span>
-                  </div>
-                  <h5 className="font-bold mb-2">Path A: In-Person at IRS Taxpayer Assistance Center</h5>
-                  <ul className="text-sm space-y-2 text-foreground/80">
-                    <li>✅ Best option — bring your passport, no mailing needed, get it stamped as received</li>
-                    <li>📞 Call <strong>844-545-5640</strong> to book appointment (up to 2 months ahead)</li>
-                    <li>📞 Backup: <strong>267-941-1000</strong> (not toll-free, works from Canadian numbers)</li>
-                    <li>📋 Bring: completed W-7, 1040-NR, Schedule 1, Schedule OI, passport, duplicate copies of all forms</li>
-                    <li>⏱️ Appointment takes 20 min to 1 hour</li>
-                    <li>ℹ️ The clerk checks completeness only — they don&apos;t approve/deny. Remind them you&apos;re filing a 1040-NR.</li>
+              <h4>How to submit</h4>
+              <div className="acc-pair">
+                <div className="cd-note">
+                  <div className="cap">Path A, in person (recommended)</div>
+                  <ul style={{ margin: '4px 0 0' }}>
+                    <li>Book an appointment at an IRS Taxpayer Assistance Center. Bring your passport, nothing gets mailed, and they stamp your application as received.</li>
+                    <li>Call <span className="fld">844-545-5640</span> to book, up to two months ahead. Backup line: <span className="fld">267-941-1000</span> (not toll free, works from Canadian numbers).</li>
+                    <li>Bring the completed W-7, 1040-NR, Schedule 1, Schedule OI, your passport, and duplicate copies of everything.</li>
+                    <li>The visit takes 20 minutes to an hour. The clerk checks completeness only and does not approve or deny, so just remind them you are filing a 1040-NR.</li>
                   </ul>
                 </div>
-
-                {/* Path B */}
-                <div className="rounded-xl border border-border bg-card p-5">
-                  <h5 className="font-bold mb-2">Path B: Mail-In</h5>
-                  <ul className="text-sm space-y-2 text-foreground/80">
-                    <li>📬 Mail to: <strong>Internal Revenue Service, ITIN Operation, P.O. Box 149342, Austin, TX 78714-9342, USA</strong></li>
-                    <li>📮 Send via Canada Post registered mail (~$15) for tracking/proof</li>
-                    <li>🛂 You must include your <strong>original passport</strong> — IRS no longer accepts certified copies</li>
+                <div className="cd-note red">
+                  <div className="cap">Path B, mail in</div>
+                  <ul style={{ margin: '4px 0 0' }}>
+                    <li>Mail to: Internal Revenue Service, ITIN Operation, P.O. Box 149342, Austin, TX 78714-9342, USA.</li>
+                    <li>Use Canada Post registered mail (about $15) so you have tracking and proof.</li>
+                    <li>You must include your original passport, since the IRS no longer accepts certified copies. It can take around five months to come back, and passports have occasionally been lost in transit. If you have travel coming up, choose Path A.</li>
                   </ul>
-                  <WarningBox>
-                    Your passport can take <strong>~5 months to return</strong>. Some people have had passports lost in transit. Do you have upcoming travel that needs your passport? If so, choose Path A.
-                  </WarningBox>
                 </div>
+              </div>
+
+              <h4>Line-by-line form instructions</h4>
+              <p className="sub">
+                Do not let the forms intimidate you. Most fields are left blank, and the real entries are your
+                name, address, SIN, passport details, and one small income number. Line numbers can shift year
+                to year, so always check against the current forms at <a href="https://www.irs.gov/forms-instructions" target="_blank" rel="noopener noreferrer" className="lnk">irs.gov</a>.
+              </p>
+
+              <details className="acc" open>
+                <summary>Form W-7, ITIN application</summary>
+                <div className="accbody">
+                  <div className="arow"><strong>Top right checkbox:</strong> check <span className="fld">Apply for a new ITIN</span>.</div>
+                  <div className="arow"><strong>Reason for applying:</strong> check box <span className="fld">(b) filing a tax return</span>.</div>
+                  <div className="arow"><strong>Name:</strong> must match your passport exactly.</div>
+                  <div className="arow"><strong>Mailing address:</strong> your Canadian address is fine. The IRS returns your documents here.</div>
+                  <div className="arow"><strong>Foreign address:</strong> write it again even if it is the same as your mailing address.</div>
+                  <div className="arow"><strong>Birth information:</strong> complete as shown on your passport.</div>
+                  <div className="arow"><strong>6a, countries of citizenship:</strong> list every country you hold citizenship in.</div>
+                  <div className="arow"><strong>6b, foreign tax ID:</strong> enter your Canadian <span className="fld">SIN</span>. This is required.</div>
+                  <div className="arow"><strong>Type of US visa:</strong> leave blank, unless you hold a work visa, in which case get professional help.</div>
+                  <div className="arow"><strong>Identification document:</strong> check <span className="fld">Passport</span>, enter Canada, your passport number, and the expiry date. Leave date of entry blank.</div>
+                  <div className="arow"><strong>6e:</strong> No. <strong>6f, 6g:</strong> leave blank.</div>
+                  <div className="arow"><strong>Sign here:</strong> sign in ink (not digital), with the date and a phone number. A Canadian number is fine.</div>
+                  <div className="arow"><strong>Acceptance Agent section:</strong> do not complete.</div>
+                </div>
+              </details>
+
+              <details className="acc">
+                <summary>Form 1040-NR, non-resident return</summary>
+                <div className="accbody">
+                  <div className="arow"><strong>Filing status:</strong> Single (or Married Filing Separately if that fits).</div>
+                  <div className="arow"><strong>Name:</strong> must match your W-7 exactly.</div>
+                  <div className="arow"><strong>Identifying number:</strong> leave blank, since you are applying for one.</div>
+                  <div className="arow"><strong>Address:</strong> your Canadian mailing address.</div>
+                  <div className="arow"><strong>Virtual currency question:</strong> answer Yes or No. You are not reporting crypto income here.</div>
+                  <div className="arow"><strong>Dependents:</strong> leave blank.</div>
+                  <div className="arow" style={{ paddingBottom: 0 }}>
+                    <strong>Income and tax lines</strong> (using $85 of gambling income as the example):
+                    <table className="dtable">
+                      <thead><tr><th>Line</th><th>Amount</th><th>Line</th><th>Amount</th></tr></thead>
+                      <tbody>
+                        <tr><td>8</td><td className="r">$85</td><td>22</td><td className="r">$9</td></tr>
+                        <tr><td>9</td><td className="r">$85</td><td>24</td><td className="r">$9</td></tr>
+                        <tr><td>11</td><td className="r">$85</td><td>26</td><td className="r">$0</td></tr>
+                        <tr><td>15</td><td className="r">$85</td><td>32</td><td className="r">$0</td></tr>
+                        <tr><td>16</td><td className="r">$9</td><td>33</td><td className="r">$0</td></tr>
+                        <tr><td>18</td><td className="r">$9</td><td>37</td><td className="r">$9</td></tr>
+                      </tbody>
+                    </table>
+                    <span style={{ fontSize: 11.5, color: 'var(--ink-dim)', fontFamily: 'var(--mono)' }}>Line 16 ($9) comes from the IRS tax table for income between $75 and $99. Pick any amount in that range.</span>
+                  </div>
+                  <div className="arow"><strong>Line 38:</strong> leave blank. Income under $1,000 means no penalty.</div>
+                  <div className="arow"><strong>Third party designee:</strong> No.</div>
+                  <div className="arow"><strong>Sign here:</strong> sign in ink, with the date and your occupation. Phone and email are optional, and you can leave the PIN blank.</div>
+                  <div className="arow"><strong>Paid preparer:</strong> leave blank unless you used a paid service, in which case they must include their PTIN.</div>
+                </div>
+              </details>
+
+              <details className="acc">
+                <summary>Schedule OI, other information</summary>
+                <div className="accbody">
+                  <div className="arow"><strong>Name:</strong> at the top of the page.</div>
+                  <div className="arow"><strong>A:</strong> your country of citizenship during the tax year.</div>
+                  <div className="arow"><strong>B:</strong> <span className="fld">Canada</span>, if you live and work in Canada.</div>
+                  <div className="arow"><strong>C, D:</strong> usually No.</div>
+                  <div className="arow"><strong>E:</strong> write <span className="fld">Not present in U.S. — no U.S. immigration status</span>, unless you were in the US on December 31.</div>
+                  <div className="arow"><strong>F:</strong> No.</div>
+                  <div className="arow"><strong>G:</strong> list the dates you entered and left the US that year, including layovers. You can check your history at <a href="https://i94.cbp.dhs.gov" target="_blank" rel="noopener noreferrer" className="lnk">i94.cbp.dhs.gov</a>. Leave it blank if you were not in the US.</div>
+                  <div className="arow"><strong>H:</strong> the number of days present in the US for each of the past 3 tax years.</div>
+                  <div className="arow"><strong>I, J, K:</strong> usually No. <strong>L, M:</strong> leave blank.</div>
+                </div>
+              </details>
+
+              <details className="acc">
+                <summary>Schedule 1, additional income</summary>
+                <div className="accbody">
+                  <div className="arow"><strong>Line 8b:</strong> enter your gambling income, the same figure as 1040-NR line 8, for example <span className="fld">$85</span>.</div>
+                  <div className="arow"><strong>Everything else:</strong> leave blank or zero.</div>
+                </div>
+              </details>
+
+              <div className="cd-note red">
+                <div className="cap">Substantial presence test</div>
+                If (this year&apos;s days &times; 1) plus (last year &times; one third) plus (two years ago &times; one sixth) comes to 183 or more, you may be treated as a US tax resident. If that is your situation, get professional help before filing.
+              </div>
+
+              <h4>Payment and what happens next</h4>
+              <ul>
+                <li>Pay the roughly $9 by cheque to the United States Treasury with your mailing, or online at <a href="https://www.irs.gov/payments" target="_blank" rel="noopener noreferrer" className="lnk">irs.gov/payments</a>.</li>
+                <li>Any late penalty caps at 100 percent of the tax owed, so about $9 at most plus a little interest. There is no need to stress about timing.</li>
+                <li>Processing takes 6 to 8 weeks, after which you receive a letter with your nine-digit ITIN.</li>
+                <li>As soon as it arrives, link it to your Amex US account.</li>
+                <li>An ITIN expires if it is not used on a return for three years, so file periodically to keep it active. Lost the letter? Call <span className="fld">267-941-1000</span> with your name, address, and birthdate.</li>
+              </ul>
+              <div className="cd-note">
+                <div className="cap">You do not have to wait</div>
+                This is exactly why we got the Amex card first. Your credit is already building through Global Transfer while your ITIN works its way through the IRS in parallel.
+              </div>
+              <p className="sub" style={{ fontSize: 12 }}>
+                This guide is educational and is not tax advice. For your specific situation, talk to a tax professional.
+              </p>
+            </div>
+
+            {/* Step 5 */}
+            <div id="step-5" className="step" style={{ scrollMarginTop: 70 }}>
+              <div className="num">5</div>
+              <div className="st">Build your US credit history</div>
+              <div className="stm">timeline: 3 to 12 months</div>
+              <p>
+                Now comes the patient part. Your first Amex is reporting to the US bureaus, and you want enough
+                history before other issuers will say yes. A few habits make a real difference here.
+              </p>
+              <ul>
+                <li>Add one or two more Amex personal cards in the first 3 to 6 months. Each one adds depth to your file.</li>
+                <li>Amex business cards do not count toward Chase&apos;s 5/24 rule, so you can pick up a Business Platinum or Business Gold for the bonuses without hurting later Chase applications.</li>
+                <li>Keep utilization around 5 to 10 percent across your cards. Low utilization signals that you handle credit well.</li>
+                <li>If you can visit a US branch, open a Chase checking account. A banking relationship meaningfully helps your approval odds down the road.</li>
+              </ul>
+              <div className="cd-note red">
+                <div className="cap">Do this the day your ITIN arrives</div>
+                Call Amex and have them link your ITIN to every US account you hold. This ties your credit history to your ITIN in the bureau files. Skip it, and Chase and others may not be able to pull your credit.
               </div>
             </div>
 
-            {/* ── Detailed Form Instructions ──────────────── */}
-            <div className="mt-10 mb-6 rounded-2xl border border-primary/20 bg-gradient-to-b from-primary/[0.03] to-transparent dark:from-primary/[0.06] p-6 md:p-8">
-              <div className="text-center mb-6">
-                <h4 className="text-xl font-bold font-[family-name:var(--font-display)]">📝 Line-by-Line Form Instructions</h4>
-                <p className="text-sm text-muted-foreground mt-1">Follow along field by field — most fields are left blank</p>
+            {/* Step 6 */}
+            <div id="step-6" className="step" style={{ scrollMarginTop: 70 }}>
+              <div className="num">6</div>
+              <div className="st">Apply for Chase cards</div>
+              <div className="stm">timeline: 12 to 18 months after your first card</div>
+              <p>
+                Chase is the goal for most people. Ultimate Rewards points are wonderfully flexible and the
+                co-branded hotel cards are best in class. Chase is also the pickiest issuer, so it pays to be
+                ready before you apply.
+              </p>
+              <h4>What Chase looks for</h4>
+              <ul>
+                <li>At least 12 to 18 months of US credit history</li>
+                <li>A score above roughly 700, which you can track on Credit Karma US</li>
+                <li>Ideally a Chase banking relationship</li>
+              </ul>
+              <h4>The 5/24 rule</h4>
+              <p>
+                Chase will decline you automatically if you have opened five or more personal cards across all
+                issuers in the past 24 months. That is the whole reason we leaned on Amex business cards
+                earlier, since those do not count toward 5/24.
+              </p>
+              <p>
+                Good first Chase cards are the <Link href="/cards?country=US" className="lnk">Sapphire Preferred</Link> (a great starter), the <Link href="/cards?country=US" className="lnk">Ink Business Preferred</Link> (does not count toward 5/24), and the <Link href="/cards?country=US" className="lnk">Chase Aeroplan card</Link> (handy for Canadians).
+              </p>
+              <div className="cd-note">
+                <div className="cap">Tip</div>
+                If you can get to a US Chase branch, apply in person. Chase sometimes needs document verification for applicants without an SSN, and being in branch makes that much smoother.
               </div>
-
-              <TipBox>
-                <strong>Don&apos;t be intimidated!</strong> The whole process looks scarier than it is. Most fields are left blank. The key entries are your name, address, SIN, passport info, and a small gambling income number.
-              </TipBox>
-
-              <p className="text-xs text-muted-foreground italic mb-6">
-                ⚠️ Form line numbers may change year to year. Always verify against the current year&apos;s forms from <a href="https://www.irs.gov/forms-instructions" className="underline hover:text-accent" target="_blank" rel="noopener noreferrer">irs.gov</a>.
-              </p>
-
-              {/* W-7 Form */}
-              <details className="mb-4 rounded-xl border border-border bg-card overflow-hidden" open>
-                <summary className="cursor-pointer p-4 md:p-5 font-bold text-base hover:bg-primary/[0.03] transition-colors flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center shrink-0">1</span>
-                  Form W-7 — ITIN Application
-                </summary>
-                <div className="px-4 md:px-5 pb-5 space-y-3">
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>Top right checkbox:</strong> Check <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">&quot;Apply for a New ITIN&quot;</span></p>
-                  </div>
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>Reason for applying:</strong> Check box <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">(b) — filing a tax return</span></p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Name section:</strong> Must match your passport <em>exactly</em></p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Mailing address:</strong> Your Canadian address is fine — the IRS returns documents here</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Foreign address:</strong> Write your address again even if same as mailing address</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Birth information:</strong> Complete as on passport. If your birth country is not recognized by the USA, use a recognized country.</p>
-                  </div>
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>6a — Countries of citizenship:</strong> Enter all countries you hold citizenship in</p>
-                  </div>
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>6b — Foreign Tax ID Number:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Enter your Canadian SIN</span> — this is <strong>REQUIRED</strong></p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Type of US Visa:</strong> Leave blank (unless you have a work visa — if so, get professional help)</p>
-                  </div>
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>Identification Document:</strong> Check <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">&quot;Passport&quot;</span>, enter Canada, your passport number, and expiry date. Leave &quot;date of entry&quot; blank.</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>6e:</strong> No &nbsp;|&nbsp; <strong>6f, 6g:</strong> Leave blank</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Sign Here:</strong> Sign <em>in ink</em> (NOT digital), enter date and phone number (Canadian number is fine)</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Acceptance Agent section:</strong> Do not complete</p>
-                  </div>
-                </div>
-              </details>
-
-              {/* 1040-NR Form */}
-              <details className="mb-4 rounded-xl border border-border bg-card overflow-hidden">
-                <summary className="cursor-pointer p-4 md:p-5 font-bold text-base hover:bg-primary/[0.03] transition-colors flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center shrink-0">2</span>
-                  Form 1040-NR — Non-Resident Tax Return
-                </summary>
-                <div className="px-4 md:px-5 pb-5 space-y-3">
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Filing status:</strong> Single (or Married Filing Separately / Qualifying Widower)</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Name:</strong> Must match your W-7 exactly</p>
-                  </div>
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>Identifying number:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Leave blank</span> — you&apos;re applying for one!</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Address:</strong> Your Canadian mailing address</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Virtual currency question:</strong> Just put Yes or No (about crypto — you don&apos;t need to report income)</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Dependents:</strong> Leave blank</p>
-                  </div>
-
-                  <div className="mt-2 mb-2 p-4 rounded-xl bg-emerald-50/60 dark:bg-emerald-500/[0.08] border border-emerald-200/50 dark:border-emerald-500/20">
-                    <p className="text-sm font-bold text-emerald-700 dark:text-emerald-300 mb-3">💰 Income &amp; Tax Lines (using $85 gambling income as example):</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 8</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$85</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 9</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$85</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 11</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$85</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 15</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$85</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 16</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 18</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 22</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 24</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 26</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$0</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 32</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$0</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 33</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$0</span>
-                      </div>
-                      <div className="flex justify-between bg-white/60 dark:bg-white/5 rounded-lg px-3 py-2">
-                        <span className="font-semibold">Line 37</span>
-                        <span className="font-mono text-emerald-700 dark:text-emerald-300">$9</span>
-                      </div>
-                    </div>
-                    <p className="text-xs text-muted-foreground mt-3">Line 16 ($9) comes from the IRS Tax Table for income $75–$99. Pick any amount in that range (e.g. $85).</p>
-                  </div>
-
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Line 38:</strong> Leave blank (income under $1,000 = no penalty)</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Third Party Designee:</strong> Check &quot;No&quot;</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Sign Here:</strong> Sign in ink, enter date and occupation. Phone/email optional. Leave PIN blank.</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Paid Preparer:</strong> Leave blank (unless using a paid service — they MUST include their PTIN)</p>
-                  </div>
-                </div>
-              </details>
-
-              {/* Schedule OI */}
-              <details className="mb-4 rounded-xl border border-border bg-card overflow-hidden">
-                <summary className="cursor-pointer p-4 md:p-5 font-bold text-base hover:bg-primary/[0.03] transition-colors flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center shrink-0">3</span>
-                  Schedule OI — Other Information
-                </summary>
-                <div className="px-4 md:px-5 pb-5 space-y-3">
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Name:</strong> Your name at the top of the page</p>
-                  </div>
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>A:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Country of citizenship during tax year</span></p>
-                  </div>
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>B:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Canada</span> (if you live/work in Canada)</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>C, D:</strong> Expected to be &quot;No&quot;</p>
-                  </div>
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>E:</strong> Write <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">&quot;Not present in U.S.—No U.S. immigration status&quot;</span> (unless you were in the US on Dec 31)</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>F:</strong> No</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>G:</strong> List all dates you entered/left the USA that year (including layovers). Check travel records at <a href="https://i94.cbp.dhs.gov" className="underline hover:text-accent" target="_blank" rel="noopener noreferrer">i94.cbp.dhs.gov</a>. Leave blank if you weren&apos;t in the US.</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>H:</strong> Number of days present in USA for each of the 3 tax years.</p>
-                  </div>
-                  <WarningBox>
-                    <strong>Substantial Presence Test:</strong> If (current year days × 1) + (prior year × ⅓) + (2 years ago × ⅙) ≥ 183, you may be treated as a US tax resident. <strong>Get professional help immediately.</strong>
-                  </WarningBox>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>I, J, K:</strong> Expected &quot;No&quot;</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>L, M:</strong> Leave blank</p>
-                  </div>
-                </div>
-              </details>
-
-              {/* Schedule 1 */}
-              <details className="mb-4 rounded-xl border border-border bg-card overflow-hidden">
-                <summary className="cursor-pointer p-4 md:p-5 font-bold text-base hover:bg-primary/[0.03] transition-colors flex items-center gap-3">
-                  <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-bold flex items-center justify-center shrink-0">4</span>
-                  Schedule 1 — Additional Income
-                </summary>
-                <div className="px-4 md:px-5 pb-5 space-y-3">
-                  <div className="rounded-lg bg-emerald-50/50 dark:bg-emerald-500/[0.06] border border-emerald-200/40 dark:border-emerald-500/20 p-3">
-                    <p className="text-sm"><strong>Line 8b:</strong> <span className="font-mono bg-emerald-100 dark:bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-300">Enter your gambling income amount</span> (same as 1040-NR Line 8, e.g. $85)</p>
-                  </div>
-                  <div className="rounded-lg bg-card border border-border p-3">
-                    <p className="text-sm"><strong>Everything else:</strong> Leave blank or $0</p>
-                  </div>
-                </div>
-              </details>
             </div>
 
-            {/* ── Payment Section ─────────────────────────── */}
-            <div className="rounded-xl border border-border bg-card p-5 mb-6">
-              <h4 className="font-bold mb-3 flex items-center gap-2">
-                <DollarSign className="w-5 h-5 text-accent" />
-                Payment (~$9 USD)
-              </h4>
-              <ul className="text-sm space-y-2 text-foreground/80">
-                <li>💵 Pay by check (payable to <strong>&quot;United States Treasury&quot;</strong>) included with your mailing, or pay online at <a href="https://www.irs.gov/payments" className="underline hover:text-accent" target="_blank" rel="noopener noreferrer">irs.gov/payments</a></li>
-                <li>📋 Late filing penalty caps at 100% of tax (~$9 max penalty), plus a few dollars interest</li>
-                <li>😌 Don&apos;t stress about being &quot;late&quot; — the total additional cost is minimal</li>
+            {/* Step 7 */}
+            <div id="step-7" className="step" style={{ scrollMarginTop: 70 }}>
+              <div className="num">7</div>
+              <div className="st">Expand to other issuers</div>
+              <div className="stm">timeline: 18 months and beyond</div>
+              <p>Once Chase is on board and your history is solid, the rest of the market opens up.</p>
+              <ul>
+                <li><strong>Capital One.</strong> Usually wants around three years of history, with a strict limit of one application every six months. The Venture X makes it worthwhile.</li>
+                <li><strong>Citi.</strong> The Strata Premier is excellent, and ThankYou points transfer to a strong set of airlines including Air Canada Aeroplan.</li>
+                <li><strong>Bank of America.</strong> The Alaska Airlines card is a long-time favourite. Apply in branch or by phone if you are using an ITIN, since their online system does not always handle ITINs well.</li>
               </ul>
-            </div>
-
-            {/* ── After Submission ────────────────────────── */}
-            <div className="rounded-xl border border-border bg-card p-5 mb-6">
-              <h4 className="font-bold mb-3">After Submission</h4>
-              <ul className="text-sm space-y-2 text-foreground/80">
-                <li>⏱️ Processing: <strong>6–8 weeks</strong></li>
-                <li>📬 You&apos;ll receive a letter with your 9-digit ITIN</li>
-                <li>🚨 <strong>IMMEDIATELY</strong> link it to your Amex US account</li>
-                <li>🔄 ITIN expires if not used on a tax return every 3 years — file periodically to keep it active</li>
-                <li>📞 Lost your letter? Call <strong>+1 267-941-1000</strong> with your name, address, and birthdate to retrieve it</li>
-              </ul>
-            </div>
-
-            <TipBox>
-              You don&apos;t need to wait for your ITIN to start building credit — that&apos;s why we get the Amex card first via Global Transfer. Apply for your ITIN in parallel while your Amex card is building your credit history.
-            </TipBox>
-
-            <p className="text-xs text-muted-foreground italic mt-4">
-              ⚖️ <strong>Disclaimer:</strong> This guide is for informational purposes only and does not constitute tax advice. Consult a tax professional for your specific situation.
-            </p>
-          </StepCard>
-
-          {/* Step 5 */}
-          <StepCard number={5} icon={TrendingUp} title="Build Your US Credit History" timeEstimate="3-12 months" id="step-5">
-            <p>
-              Now you play the waiting game. Your first Amex card is reporting to the US credit bureaus, and you need to build up enough history before other issuers will approve you.
-            </p>
-            <ul>
-              <li><strong>Get 1-2 more Amex personal cards</strong> in your first 3-6 months. Each new personal card adds another account to your credit file.</li>
-              <li><strong>Amex business cards don&apos;t count for Chase&apos;s 5/24 rule</strong> — feel free to grab Amex Business Platinum, Business Gold, etc. during this period. They won&apos;t hurt your future Chase applications.</li>
-              <li><strong>Keep utilization at 5-10%</strong> on all your cards. Low utilization signals responsible credit use.</li>
-              <li><strong>Open a Chase checking account</strong> at a US branch if you can visit. Having a banking relationship with Chase significantly helps approval odds later.</li>
-            </ul>
-
-            <WarningBox>
-              <strong>Critical:</strong> Once you receive your ITIN, call Amex immediately and have them link it to all your existing US accounts. This ensures your credit history is properly tied to your ITIN in the bureau files. Without this step, Chase and other issuers may not be able to pull your credit.
-            </WarningBox>
-          </StepCard>
-
-          {/* Step 6 */}
-          <StepCard number={6} icon={ShieldCheck} title="Apply for Chase Cards" timeEstimate="12-18 months after first card" id="step-6">
-            <p>
-              Chase is the holy grail for most churners — their Ultimate Rewards points are incredibly flexible, and their co-branded hotel cards are best-in-class. But Chase is also the pickiest issuer.
-            </p>
-            <p>
-              <strong>What Chase wants:</strong>
-            </p>
-            <ul>
-              <li>At least <strong>12-18 months</strong> of US credit history</li>
-              <li>A credit score above ~700 (check on Credit Karma US)</li>
-              <li>Ideally, a Chase banking relationship</li>
-            </ul>
-
-            <h4 className="font-semibold mt-4 mb-2">The 5/24 Rule</h4>
-            <p>
-              Chase will automatically deny you if you&apos;ve opened <strong>5 or more personal credit cards</strong> (across all issuers) in the past 24 months. This is why we&apos;re strategic about getting Amex business cards first — they don&apos;t count toward 5/24.
-            </p>
-
-            <p>
-              <strong>Recommended first Chase cards:</strong>
-            </p>
-            <div className="flex flex-wrap gap-2 my-3">
-              <CardRec name="Chase Sapphire Preferred" note="great starter" />
-              <CardRec name="Ink Business Preferred" note="doesn't count for 5/24" />
-              <CardRec name="Chase Aeroplan Card" note="useful for Canadians" />
-            </div>
-
-            <TipBox>
-              If you can visit a US Chase branch, apply in-person. Chase sometimes requires document verification (passport, bank statements) for applicants without a Social Security Number. Being in-branch makes this much smoother.
-            </TipBox>
-          </StepCard>
-
-          {/* Step 7 */}
-          <StepCard number={7} icon={Rocket} title="Expand to Other Issuers" timeEstimate="18+ months" id="step-7">
-            <p>
-              Once you&apos;ve got Chase cards and solid credit history, the world opens up:
-            </p>
-            <ul>
-              <li><strong>Capital One:</strong> Typically wants ~3 years of credit history. They have a strict maximum of 1 application per 6 months. Worth it for the Venture X.</li>
-              <li><strong>Citi:</strong> The Strata Premier (formerly Premier) is excellent. Citi ThankYou points transfer to a great set of airlines including Air Canada Aeroplan.</li>
-              <li><strong>Bank of America:</strong> The Alaska Airlines card is a fan favourite. Apply in-branch or by phone if using an ITIN — their online system doesn&apos;t always handle ITINs well.</li>
-            </ul>
-            <p>
-              Keep building and maintaining your credit. Pay all balances in full every month, keep accounts open, and space out applications. A mature US credit profile unlocks better approval odds and higher credit limits over time.
-            </p>
-          </StepCard>
-        </section>
-
-        {/* Managing Your US Cards */}
-        <section id="managing" className="mb-16 scroll-mt-24">
-          <h2 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-display)] mb-6">
-            Managing Your US Cards from Canada
-          </h2>
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <div className="rounded-xl border border-border bg-card p-6">
-              <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <DollarSign className="w-5 h-5 text-accent" />
-                Paying Your Bills
-              </h3>
               <p>
-                Don&apos;t use your bank&apos;s exchange rate — you&apos;ll lose 2-2.5% on every transfer. Instead, use dedicated FX services like <strong>Wise</strong>, <strong>VBCE</strong>, or <strong>Knightsbridge FX</strong>. They typically charge ~1% above the spot rate, saving you significant money over time.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-border bg-card p-6">
-              <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <Globe className="w-5 h-5 text-accent" />
-                Using US Cards in Canada
-              </h3>
-              <p>
-                Here&apos;s a nice perk: most US premium cards have <strong>no foreign transaction fees</strong>. That means you can use them for everyday Canadian spending and earn US points without the 2.5% FX surcharge you&apos;d pay on Canadian cards abroad. Just be mindful of the CAD→USD→CAD conversion.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-border bg-card p-6">
-              <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <CreditCard className="w-5 h-5 text-accent" />
-                Two-Player Mode
-              </h3>
-              <p>
-                If you have a spouse or partner, set them up simultaneously. Two people means double the welcome bonuses, double the points, and the ability to share points between accounts. It&apos;s the single biggest force multiplier in the churning game.
+                From here it is about steady habits. Pay in full every month, keep your accounts open, and
+                space out applications. A mature profile earns you better approvals and higher limits over time.
               </p>
             </div>
           </div>
-        </section>
 
-        {/* Common Mistakes */}
-        <section id="mistakes" className="mb-16 scroll-mt-24">
-          <h2 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-display)] mb-6">
-            Common Mistakes to Avoid
-          </h2>
-          <div className="rounded-2xl border border-border bg-card p-6 md:p-8 space-y-4">
-            <Mistake>
-              <strong>Getting too many cards too fast.</strong> If you rack up 5+ personal cards in 24 months before applying to Chase, you&apos;re locked out. Plan your sequence.
-            </Mistake>
-            <Mistake>
-              <strong>Not linking your ITIN to existing Amex accounts.</strong> Without this, your credit history may not be visible to other issuers. Call Amex as soon as you receive your ITIN.
-            </Mistake>
-            <Mistake>
-              <strong>Using bank FX rates to pay bills.</strong> The 2-2.5% spread adds up fast. Use Wise, VBCE, or Knightsbridge FX instead.
-            </Mistake>
-            <Mistake>
-              <strong>Cancelling your oldest US card.</strong> Your first US card is the anchor of your credit history. Downgrade it to a no-fee version if needed, but never close it.
-            </Mistake>
-            <Mistake>
-              <strong>Not checking if your mail address is flagged as commercial.</strong> Chase and other issuers can and will reject applications if your address shows up as a &quot;Commercial Mail Receiving Agency&quot; on USPS.
-            </Mistake>
-            <Mistake>
-              <strong>Starting with a business card.</strong> Business cards don&apos;t report to personal credit bureaus. Your first card must be a personal card to start building your credit file.
-            </Mistake>
+          {/* MANAGING */}
+          <div id="managing" className="cd-sec" style={{ scrollMarginTop: 70 }}>Managing your US cards from Canada</div>
+          <h4>Paying your bills</h4>
+          <p>Skip your bank&apos;s exchange rate, since you will lose 2 to 2.5 percent on every transfer. Use a dedicated FX service like Wise, VBCE, or Knightsbridge FX instead. They typically run about 1 percent above the spot rate, which adds up to real savings over a year.</p>
+          <h4>Using US cards in Canada</h4>
+          <p>Here is a nice perk. Most US premium cards have no foreign transaction fee, so you can use them for everyday Canadian spending and earn US points without the 2.5 percent surcharge you would pay abroad on a Canadian card. Just keep the double conversion in mind.</p>
+          <h4>Two-player mode</h4>
+          <p>If you have a spouse or partner, set them up alongside you. Two players means double the welcome bonuses, double the points, and the ability to pool points between accounts. It is the single biggest force multiplier in this hobby.</p>
+
+          {/* MISTAKES */}
+          <div id="mistakes" className="cd-sec" style={{ scrollMarginTop: 70 }}>Mistakes to avoid</div>
+          <ul>
+            <li><strong>Getting too many cards too fast.</strong> Five or more personal cards in 24 months locks you out of Chase. Plan your sequence.</li>
+            <li><strong>Forgetting to link your ITIN to existing Amex accounts.</strong> Without it, your history may be invisible to other issuers. Call Amex the day your ITIN arrives.</li>
+            <li><strong>Paying bills at bank FX rates.</strong> That 2 to 2.5 percent spread is pure waste. Use Wise, VBCE, or Knightsbridge FX.</li>
+            <li><strong>Cancelling your oldest US card.</strong> It anchors your credit history. Downgrade it to a no-fee version if you must, but keep it open.</li>
+            <li><strong>Not checking the commercial-address flag.</strong> Issuers can reject you if your address shows as a Commercial Mail Receiving Agency on USPS.</li>
+            <li><strong>Starting with a business card.</strong> Business cards do not report to personal bureaus, so your first card has to be personal.</li>
+          </ul>
+
+          {/* ROADMAP */}
+          <div id="roadmap" className="cd-sec" style={{ scrollMarginTop: 70 }}>A realistic first-year sequence</div>
+          <p className="sub">Every situation is different, but this is a solid framework for your first 18 months and beyond.</p>
+          <div className="acc-pair">
+            <div className="cd-note"><div className="cap">Month 0</div><strong>Amex Hilton Honors (no-fee keeper).</strong> Your anchor card, kept forever as your oldest account.</div>
+            <div className="cd-note"><div className="cap">Month 1 to 2</div><strong>Apply for your ITIN.</strong> Submit the W-7 through a service or DIY. Roughly 8 weeks to process.</div>
+            <div className="cd-note"><div className="cap">Month 3</div><strong>Amex Hilton Aspire or Amex Gold.</strong> A second personal card to deepen your file, chosen on current offers.</div>
+            <div className="cd-note"><div className="cap">Month 3 to 6</div><strong>Amex Business Platinum and Business Gold.</strong> Business cards do not count toward 5/24, so grab them for the bonuses.</div>
+            <div className="cd-note"><div className="cap">Month 4</div><strong>ITIN arrives, link it everywhere.</strong> Call Amex to link your ITIN to every US account.</div>
+            <div className="cd-note"><div className="cap">Month 12 to 18</div><strong>Chase Sapphire Preferred and Ink Business Preferred.</strong> You now have the history Chase wants.</div>
+            <div className="cd-note"><div className="cap">Month 18+</div><strong>Chase United, IHG, Hyatt, then Capital One and Citi.</strong> Keep expanding, spacing applications a few months apart.</div>
           </div>
-        </section>
 
-        {/* Roadmap */}
-        <section id="roadmap" className="mb-16 scroll-mt-24">
-          <h2 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-display)] mb-6">
-            Recommended First-Year Card Sequence
-          </h2>
-          <p className="text-muted-foreground mb-8">
-            Here&apos;s a realistic timeline for your first 18+ months of US credit cards. Every situation is different, but this is a solid starting framework:
-          </p>
-          <div className="space-y-3">
-            <RoadmapItem month="Month 0" label="Amex Hilton Honors (No-Fee Keeper)" description="Your anchor card. No annual fee, so you'll keep it forever as your oldest account." accent />
-            <RoadmapItem month="Month 1-2" label="Apply for ITIN" description="Submit your W-7 via a tax service or DIY. Processing takes ~8 weeks." />
-            <RoadmapItem month="Month 3" label="Amex Hilton Aspire or Amex Gold" description="Second personal card. Builds credit file depth. Choose based on current offers." accent />
-            <RoadmapItem month="Month 3-6" label="Amex Business Platinum + Business Gold" description="Business cards don't count toward 5/24. Grab these freely for the bonuses." />
-            <RoadmapItem month="Month 4" label="Receive ITIN → Link to All Accounts" description="Call Amex immediately to link your ITIN to every US account you have." accent />
-            <RoadmapItem month="Month 12-18" label="Chase Sapphire Preferred + Ink Business Preferred" description="You now have enough credit history for Chase. Start with their best cards." accent />
-            <RoadmapItem month="Month 18+" label="Chase United, IHG, Hyatt → Capital One, Citi" description="Continue expanding your portfolio. Space applications 3+ months apart." />
+          {/* CTA */}
+          <div className="cd-sec">Ready to start</div>
+          <p>Browse the US cards in our explorer to see current welcome bonuses and plan your sequence.</p>
+          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 6 }}>
+            <Link href="/cards?country=US" className="cd-apply">Browse US cards →</Link>
+            <Link href="/cards?country=CA" className="cd-apply" style={{ borderColor: 'var(--line-strong)', color: 'var(--ink)' }}>Canadian cards →</Link>
           </div>
-        </section>
+        </div>
 
-        {/* Final CTA */}
-        <section className="rounded-2xl bg-gradient-to-br from-primary to-primary-dark text-white p-8 md:p-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-display)] mb-4">
-            Ready to Start?
-          </h2>
-          <p className="text-white/70 max-w-lg mx-auto mb-8">
-            Browse our US cards database to find the best current welcome bonuses and start planning your sequence.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="/cards?country=US&sort=value" className="rounded-full bg-gold px-8 py-3 font-semibold text-primary-dark hover:bg-gold-light transition-colors">
-              Browse US Cards
-            </a>
-            <a href="/cards?country=CA" className="rounded-full border border-white/20 bg-white/10 px-8 py-3 font-semibold hover:bg-white/20 transition-colors">
-              Canadian Cards
-            </a>
-          </div>
-        </section>
-      </div>
-
-      {/* JSON-LD structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Article',
-            headline: 'The Complete Guide to US Credit Cards for Canadians',
-            description: 'Step-by-step guide to getting an ITIN, building US credit, and accessing the best US rewards cards as a Canadian.',
-            datePublished: '2026-02-22',
-            dateModified: '2026-02-22',
-            author: { '@type': 'Organization', name: 'ChurningCanada' },
-            publisher: { '@type': 'Organization', name: 'ChurningCanada' },
-          }),
-        }}
-      />
-    </>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline: 'US Credit Cards for Canadians: the ITIN guide',
+              description: 'Step-by-step guide to getting an ITIN, building US credit, and accessing the best US rewards cards as a Canadian.',
+              datePublished: '2026-02-22',
+              dateModified: '2026-06-20',
+              author: { '@type': 'Organization', name: 'FinTerminal' },
+              publisher: { '@type': 'Organization', name: 'FinTerminal' },
+            }),
+          }}
+        />
+      </main>
+    </div>
   );
 }

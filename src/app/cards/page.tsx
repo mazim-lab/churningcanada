@@ -139,7 +139,11 @@ function Explorer() {
           <h1>Card Explorer</h1>
           <span className="meta">showing {filtered.length} / {allCards.length} · sorted by {sortLabel} {arrow}</span>
         </div>
-        <div className="subhead">Independent value engine — benefits verified from issuer documents, ranked by <b>estimated first-year value</b>. No sponsored placements.</div>
+        <div className="subhead">Independent value engine. Benefits verified from issuer documents, ranked by <b>estimated first-year value</b>. No sponsored placements.</div>
+
+        <div className="guidestrip">
+          <a className="guidechip" href="/guides/us-cards-for-canadians"><span className="gi">▸</span> US Cards for Canadians: the ITIN guide</a>
+        </div>
 
         <div className="stats">
           <div className="stat"><div className="l">Cards tracked</div><div className="v">{filtered.length}</div><div className="d">comprehensive data</div></div>
