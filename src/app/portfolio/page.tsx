@@ -29,13 +29,13 @@ export default function PortfolioPage() {
         <div className="stats">
           <div className="stat">
             <div className="l">Highest profit</div>
-            <div className="v em">{TOP_PROFIT.ticker}</div>
-            <div className="d">{TOP_PROFIT.label}</div>
+            <div className="v em">{pct(TOP_PROFIT.returnPct)}</div>
+            <div className="d">{TOP_PROFIT.ticker} · {TOP_PROFIT.label}</div>
           </div>
           <div className="stat">
             <div className="l">Highest loss</div>
-            <div className="v" style={{ color: "var(--red)" }}>{TOP_LOSS.ticker}</div>
-            <div className="d">{TOP_LOSS.label}</div>
+            <div className="v" style={{ color: "var(--red)" }}>{pct(TOP_LOSS.returnPct)}</div>
+            <div className="d">{TOP_LOSS.ticker} · {TOP_LOSS.label}</div>
           </div>
           <div className="stat">
             <div className="l">Total return</div>
@@ -59,17 +59,18 @@ export default function PortfolioPage() {
 
         <div className="cd-sec">Performance</div>
         {PORTFOLIO_HISTORY.length >= 2 ? (
-          <div className="tablewrap" style={{ padding: "16px 18px 8px", marginBottom: 6 }}>
+          <div className="tablewrap" style={{ padding: "14px 16px 6px", marginBottom: 6, maxWidth: 600 }}>
             <ReturnChart points={PORTFOLIO_HISTORY} />
             <div className="foot" style={{ borderTop: "none", paddingTop: 4 }}>
-              <span>approximate cumulative return since inception (Dec 2024)</span>
-              <span>open positions currently {typeof OPEN_BOOK_RETURN_PCT === "number" ? pct(OPEN_BOOK_RETURN_PCT) : "—"} unrealized</span>
+              <span>cumulative return since Dec 2024</span>
+              <span>open book {typeof OPEN_BOOK_RETURN_PCT === "number" ? pct(OPEN_BOOK_RETURN_PCT) : "—"}</span>
             </div>
           </div>
         ) : (
           <div className="cd-empty">The return chart builds as snapshots come in. It will plot portfolio return % by date here.</div>
         )}
 
+        <div className="cd-sec">Current Positions</div>
         <div className="tablewrap">
           <div className="tablescroll">
             <table>

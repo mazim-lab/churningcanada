@@ -43,8 +43,8 @@ export const OPEN_BOOK_RETURN_PCT: number | null = -24.0;
  * not a %, because per-ticker cost basis (the % denominator) is distorted by account-merge
  * transfers. Ranking by total profit is reliable.
  */
-export const TOP_PROFIT = { ticker: "INTC", label: "biggest gain · realized + open" };
-export const TOP_LOSS = { ticker: "FXI", label: "biggest loss · mostly open" };
+export const TOP_PROFIT = { ticker: "INTC", returnPct: 277, label: "realized + open" };
+export const TOP_LOSS = { ticker: "FXI", returnPct: -58, label: "mostly open" };
 
 /**
  * Cumulative return % by month, read from Wealthsimple's per-account performance graphs
