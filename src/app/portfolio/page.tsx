@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
-import { POSITIONS, LAST_UPDATED, SNAPSHOT_PENDING, TOTAL_RETURN_PCT, PORTFOLIO_HISTORY } from "@/data/portfolio";
+import { POSITIONS, LAST_UPDATED, SNAPSHOT_PENDING, REALIZED_RETURN_PCT, LIFETIME_RETURN_PCT, OPEN_BOOK_RETURN_PCT, PORTFOLIO_HISTORY } from "@/data/portfolio";
 import { ReturnChart } from "@/components/ReturnChart";
 
 export const metadata: Metadata = {
@@ -40,9 +40,9 @@ export default function PortfolioPage() {
             <div className="d">{worst ? worst.ticker : "pending snapshot"}</div>
           </div>
           <div className="stat">
-            <div className="l">Total return</div>
-            <div className="v gd">{typeof TOTAL_RETURN_PCT === "number" ? pct(TOTAL_RETURN_PCT) : "—"}</div>
-            <div className="d">unrealized, vs book</div>
+            <div className="l">Realized return</div>
+            <div className="v gd">{typeof REALIZED_RETURN_PCT === "number" ? pct(REALIZED_RETURN_PCT) : "—"}</div>
+            <div className="d">banked, since Jan 2025</div>
           </div>
           <div className="stat">
             <div className="l">Holdings</div>
@@ -64,11 +64,15 @@ export default function PortfolioPage() {
           <div className="tablewrap" style={{ padding: "16px 18px 8px", marginBottom: 6 }}>
             <ReturnChart points={PORTFOLIO_HISTORY} />
             <div className="foot" style={{ borderTop: "none", paddingTop: 4 }}>
-              <span>portfolio return % over time · marked from brokerage snapshots</span>
+              <span>cumulative realized return since Jan 2025</span>
+              <span>
+                all-in {typeof LIFETIME_RETURN_PCT === "number" ? pct(LIFETIME_RETURN_PCT) : "—"} ·
+                open book {typeof OPEN_BOOK_RETURN_PCT === "number" ? pct(OPEN_BOOK_RETURN_PCT) : "—"} unrealized
+              </span>
             </div>
           </div>
         ) : (
-          <div className="cd-empty">The return chart builds as snapshots come in (twice weekly). It will plot portfolio return % by date here.</div>
+          <div className="cd-empty">The return chart builds as snapshots come in. It will plot portfolio return % by date here.</div>
         )}
 
         <div className="tablewrap">
