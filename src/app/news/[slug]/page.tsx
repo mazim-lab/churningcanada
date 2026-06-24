@@ -62,10 +62,17 @@ export default async function NewsStoryPage({ params }: { params: Promise<{ slug
           {paragraphs.map((p, i) => <p key={i}>{p}</p>)}
 
           <div className="cd-sec">Where to next</div>
-          <p>Read the full story, or jump straight to what it affects.</p>
+          <p>Go straight to the source, or jump to what it affects on FinTerminal.</p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
+            {item.sourceUrl ? (
+              <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer" className="cd-apply">
+                Read it at {item.sourceLabel ?? "the source"} →
+              </a>
+            ) : null}
             {item.href ? (
-              <Link href={item.href} className="cd-apply">{item.hrefLabel ?? "Open related section"} →</Link>
+              <Link href={item.href} className="cd-apply" style={{ borderColor: "var(--line-strong)", color: "var(--ink)" }}>
+                {item.hrefLabel ?? "Open related section"} →
+              </Link>
             ) : null}
             <Link href="/news" className="cd-apply" style={{ borderColor: "var(--line-strong)", color: "var(--ink)" }}>
               ← Back to the newswire
