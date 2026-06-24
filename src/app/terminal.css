@@ -320,3 +320,14 @@ details.coll>summary.cd-sec:hover{color:var(--emerald)}
 .site-foot a:hover{text-decoration:underline}
 .site-foot .sf-meta{white-space:nowrap}
 @media (max-width:720px){.site-foot .sf-meta{white-space:normal}}
+
+/* Newswire: clickable headlines + per-story choice of destination */
+.newsfeed a.ntext{color:var(--ink);text-decoration:none;cursor:pointer}
+.newsfeed a.ntext:hover{color:var(--emerald);text-decoration:underline}
+.arow-card a.at.nlink{display:block;color:var(--ink);text-decoration:none}
+.arow-card a.at.nlink:hover{color:var(--emerald)}
+.nactions{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:11px;padding-top:10px;border-top:1px solid var(--line)}
+.nact{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--emerald);text-decoration:none}
+.nact:hover{text-decoration:underline}
+.nact.nact-alt{color:var(--ink-soft);font-weight:500}
+.nact.nact-alt:hover{color:var(--emerald)}

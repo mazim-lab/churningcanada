@@ -1,6 +1,8 @@
 export interface NewsItem {
   /** Headline timestamp for the typewriter ticker. */
   time: string;
+  /** URL slug for the item's own page at /news/<slug>. */
+  slug: string;
   headline: string;
   dek: string;
   body: string;
@@ -14,14 +16,17 @@ export interface NewsItem {
   exclusive?: string[];
   /** Primary source (issuer / program), shown as a small label. */
   sourceLabel?: string;
-  /** Where "read more" points. Prefer our own pages. */
+  /** Optional related section/filter to jump to (a card filter, a guide, deals). */
   href?: string;
+  /** Short label for that section link, e.g. "Compare Aeroplan cards". */
+  hrefLabel?: string;
 }
 
 // Canadian market first. Newest at the top.
 export const NEWS: NewsItem[] = [
   {
     time: "11:24",
+    slug: "aeroplan-amazon-prime-day-giveaway",
     headline: "Aeroplan and Amazon are giving away a million points to ten winners this Prime Day",
     dek: "Shop Amazon through the Aeroplan eStore by June 26 and you are entered in the draw, with up to 10 times the points on eligible categories on top.",
     body:
@@ -31,9 +36,11 @@ export const NEWS: NewsItem[] = [
     date: "Jun 2026",
     sourceLabel: "Aeroplan",
     href: "/deals",
+    hrefLabel: "Browse this week's deals",
   },
   {
     time: "11:02",
+    slug: "porter-viporter-surcharge-cut",
     headline: "Porter cuts the surcharge on points bookings in half, to $20 each way",
     dek: "As of June 23, redeeming VIPorter points carries a $20 per person surcharge each way, down from the $40 it doubled to three months ago.",
     body:
@@ -43,9 +50,11 @@ export const NEWS: NewsItem[] = [
     date: "Jun 2026",
     sourceLabel: "Porter",
     href: "/travel",
+    hrefLabel: "Explore travel and points",
   },
   {
     time: "10:35",
+    slug: "asiana-korean-air-aeroplan-deadline",
     headline: "Aeroplan flyers have a deadline to book Asiana awards before the Korean Air merger",
     dek: "Asiana leaves Star Alliance on December 16 ahead of folding into Korean Air, so the window to use Aeroplan points on Asiana is closing.",
     body:
@@ -55,9 +64,11 @@ export const NEWS: NewsItem[] = [
     date: "Jun 2026",
     sourceLabel: "Aeroplan",
     href: "/travel/aeroplan-sweet-spots",
+    hrefLabel: "Aeroplan sweet-spots guide",
   },
   {
     time: "09:40",
+    slug: "amex-canada-membership-rewards-bonuses",
     headline: "Amex Canada lifts welcome bonuses across its Membership Rewards cards",
     dek: "American Express has refreshed the offers on its Membership Rewards lineup, with the top of the range now reaching up to 170,000 points.",
     body:
@@ -67,9 +78,11 @@ export const NEWS: NewsItem[] = [
     date: "Jun 2026",
     sourceLabel: "American Express",
     href: "/cards?q=membership%20rewards",
+    hrefLabel: "Compare Membership Rewards cards",
   },
   {
     time: "09:12",
+    slug: "amex-aeroplan-reserve-offers",
     headline: "Amex Aeroplan Reserve cards return with up to 95,000 points",
     dek: "The premium Aeroplan Reserve and Aeroplan Business Reserve cards are back with refreshed welcome offers worth up to 85,000 and 95,000 Aeroplan points.",
     body:
@@ -79,9 +92,11 @@ export const NEWS: NewsItem[] = [
     date: "Jun 2026",
     sourceLabel: "American Express",
     href: "/cards?q=aeroplan",
+    hrefLabel: "Compare Aeroplan cards",
   },
   {
     time: "08:48",
+    slug: "aeroplan-hotel-redemption-rebate",
     headline: "Aeroplan gives 10,000 points back on hotel redemptions",
     dek: "Redeem 50,000 points or more on an Aeroplan hotel stay and get 10,000 points back, through June 22.",
     body:
@@ -91,9 +106,11 @@ export const NEWS: NewsItem[] = [
     date: "Jun 2026",
     sourceLabel: "Aeroplan",
     href: "/travel/aeroplan-sweet-spots",
+    hrefLabel: "Aeroplan sweet-spots guide",
   },
   {
     time: "08:20",
+    slug: "td-aeroplan-visa-welcome-offers",
     headline: "TD bumps its Aeroplan Visa welcome offers to as much as 45,000 points",
     dek: "TD's Aeroplan co-branded cards are carrying higher welcome bonuses, with up to 45,000 points on the table depending on the card.",
     body:
@@ -103,9 +120,11 @@ export const NEWS: NewsItem[] = [
     date: "Jun 2026",
     sourceLabel: "TD",
     href: "/cards?q=td%20aeroplan",
+    hrefLabel: "Compare TD Aeroplan cards",
   },
   {
     time: "07:55",
+    slug: "chase-ink-business-100k",
     headline: "Chase Ink business cards jump to 100,000 points for US-card collectors",
     dek: "The Chase Ink Business Cash and Ink Business Unlimited are offering 100,000 points after $8,000 of spending in four months, starting mid-month.",
     body:
@@ -115,5 +134,6 @@ export const NEWS: NewsItem[] = [
     date: "Jun 2026",
     sourceLabel: "Chase",
     href: "/guides/us-cards-for-canadians",
+    hrefLabel: "US cards for Canadians guide",
   },
 ];

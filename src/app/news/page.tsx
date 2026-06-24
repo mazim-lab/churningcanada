@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import { NEWS } from "@/data/news";
 
 export default function NewsPage() {
@@ -17,7 +18,8 @@ export default function NewsPage() {
       const it = NEWS[i];
       const line = document.createElement("div"); line.className = "nline";
       const ts = document.createElement("span"); ts.className = "nts"; ts.textContent = it.time;
-      const tx = document.createElement("span"); tx.className = "ntext";
+      // Headline is a link to the story's own page.
+      const tx = document.createElement("a"); tx.className = "ntext nlink"; tx.href = `/news/${it.slug}`;
       const cur = document.createElement("span"); cur.className = "cursor"; cur.textContent = "_";
       line.append(ts, tx, cur);
       feed.appendChild(line);
@@ -42,33 +44,30 @@ export default function NewsPage() {
       <main>
         <div className="doc">
           <div className="head"><h1>Newswire</h1><span className="meta">cards · points · markets · Canada first</span></div>
-          <div className="subhead">Headlines as they break, with the context that actually matters to you.</div>
+          <div className="subhead">Headlines as they break. Tap one to read the full story, or jump straight to what it affects.</div>
           <div className="newsfeed" ref={feedRef} style={{ minHeight: "auto", marginBottom: 8 }} />
 
           <div className="cd-sec">The stories</div>
-          {NEWS.map((n, i) => {
-            const Card = n.href ? "a" : "div";
-            return (
-              <Card key={i} {...(n.href ? { href: n.href } : {})} className="arow-card">
-                <div className="at">{n.headline}</div>
-                <div className="ab">{n.dek}</div>
-                <div className="ab" style={{ color: "var(--ink-dim)" }}>{n.body}</div>
-                <div className="am">
-                  <span className="tg">{n.category}</span><span className="sep">·</span>
-                  <span>{n.region === "CA" ? "Canada" : "US"}</span><span className="sep">·</span>
-                  <span>{n.date}</span>
-                  {n.exclusive
-                    ? <span className="sep">·</span>
+          {NEWS.map((n) => (
+            <div key={n.slug} className="arow-card">
+              <Link href={`/news/${n.slug}`} className="at nlink">{n.headline}</Link>
+              <div className="ab">{n.dek}</div>
+              <div className="am">
+                <span className="tg">{n.category}</span><span className="sep">·</span>
+                <span>{n.region === "CA" ? "Canada" : "US"}</span><span className="sep">·</span>
+                <span>{n.date}</span>
+                {n.exclusive
+                  ? <><span className="sep">·</span><span>According to {n.exclusive.join(" and ")}</span></>
+                  : n.sourceLabel
+                    ? <><span className="sep">·</span><span>source: {n.sourceLabel}</span></>
                     : null}
-                  {n.exclusive
-                    ? <span>According to {n.exclusive.join(" and ")}</span>
-                    : n.sourceLabel
-                      ? <><span className="sep">·</span><span>source: {n.sourceLabel}</span></>
-                      : null}
-                </div>
-              </Card>
-            );
-          })}
+              </div>
+              <div className="nactions">
+                <Link href={`/news/${n.slug}`} className="nact">Read the full story →</Link>
+                {n.href ? <Link href={n.href} className="nact nact-alt">{n.hrefLabel ?? "Open related section"} →</Link> : null}
+              </div>
+            </div>
+          ))}
         </div>
       </main>
     </div>
