@@ -54,9 +54,12 @@ const fmtTime = (d: Date | null) =>
   d ? `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}` : "";
 
 function slugify(s: string): string {
-  return (
-    s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 80) || "story"
-  );
+  const base = s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  if (base.length <= 60) return base || "story";
+  // Cap long headlines at a whole-word boundary so slugs never end mid-word.
+  const cut = base.slice(0, 60);
+  const lastDash = cut.lastIndexOf("-");
+  return (lastDash > 20 ? cut.slice(0, lastDash) : cut).replace(/-+$/g, "") || "story";
 }
 
 export async function getDealsRemote(): Promise<Deal[] | null> {
