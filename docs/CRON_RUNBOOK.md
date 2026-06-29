@@ -37,7 +37,7 @@ Last verified: 2026-06-21.
 
 | Job | Cadence | Cloud-cron friendly? | Why |
 |---|---|---|---|
-| Deals | daily ~2am | **No — needs the local browser (changed 2026-06-29)** | RedFlagDeals now 307-redirects WebFetch to a tollbit paywall (HTTP 402), and merchant prices (Amazon/Costco) must be verified on the page, which needs claude-in-chrome. Run Deals LOCALLY, or stage a draft for review. |
+| Deals | on demand | **No — manual job (decided 2026-06-29)** | RFD now paywalls WebFetch (HTTP 402) and merchant prices need on-page checks, so claude-in-chrome plus a live interactive session are required. Run it manually with Claude, not as a cron. |
 | News | daily/weekly | **Yes** | WebSearch/WebFetch only |
 | Card data refresh | quarterly | **Partial** | Issuer pages bot-block `WebFetch`; need the residential/Playwright fetch or the real browser to (re)capture `data/raw/cards/*.md`. The *audit/extraction* over already-captured `.md` files IS cloud-friendly. |
 | Portfolio | twice weekly | **No — stays manual** | Needs the user's private Wealthsimple CSVs + all-time return %. A cloud cron has no access to these. Keep manual. |
@@ -68,9 +68,14 @@ To ship a data update (the News, Deals, and Sweet-spot crons AUTO-PUBLISH to pro
 
 ---
 
-## 1. DEALS — daily (target 2am America/Toronto)
+## 1. DEALS — manual, browser-verified (run with Claude on demand)
 
 **File:** `src/data/deals.ts` (a `Deal[]`). **Page:** `src/app/deals/page.tsx`.
+
+**Not automated (decided 2026-06-29):** Deals run as a MANUAL, interactive job with Claude,
+not a cron. RedFlagDeals now paywalls headless fetches and merchant prices need on-page
+verification, so the claude-in-chrome browser and a live session are required. Just ask
+Claude to refresh deals; the steps below apply. Target 1-2 good deals per refresh.
 
 **Scope (do not drift):** real **product/service** deals that save people money — a
 quality item at a deep discount, OR a productive buy that pays for itself over time
@@ -103,12 +108,12 @@ the "Trending Hot Deals" box. Favour high-engagement, on-theme items.
    Old deals self-archive — you only add new ones and occasionally prune the archive.
 7. Commit & push.
 
-**Browser required (changed 2026-06-29):** RedFlagDeals now 307-redirects `WebFetch` to a
-tollbit paywall (HTTP 402), so the forum can no longer be read by a headless cloud agent,
-and Amazon/Costco product prices have to be verified on the merchant page. Verify deals
-with the **claude-in-chrome browser**, which means the Deals job should run **locally** (or
-stage a draft for the user) rather than as a headless cloud cron. Never post a price you
-could not load on the merchant's own page.
+**Manual, browser-verified (decided 2026-06-29):** RedFlagDeals now 307-redirects `WebFetch`
+to a tollbit paywall (HTTP 402), and Amazon/Costco prices must be verified on the page, so
+this job needs the **claude-in-chrome browser in a live interactive session**. It is run
+**manually with Claude on demand**, not as an unattended cron (a headless `claude -p` run
+can't reliably drive the browser). Never post a price you could not load on the merchant's
+own page.
 
 ---
 

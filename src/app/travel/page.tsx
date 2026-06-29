@@ -69,23 +69,18 @@ export default function TravelPage() {
             </Link>
           ))}
 
-          {SWEET_SPOTS.length > 0 && (
-            <>
-              <div className="cd-sec" style={{ marginTop: 22 }}>Sweet spots</div>
-              {SWEET_SPOTS.map((s) => (
-                <Link key={s.slug} href={`/travel/sweet-spots/${s.slug}`} className="arow-card">
-                  <div className="at">{s.title}</div>
-                  <div className="ab">{s.dek}</div>
-                  <div className="am">
-                    <span className="tg">Sweet spot</span><span className="sep">·</span>
-                    <span>{s.program}</span><span className="sep">·</span>
-                    <span>{s.read}</span><span className="sep">·</span>
-                    <span>{s.date}</span>
-                  </div>
-                </Link>
-              ))}
-            </>
-          )}
+          {SWEET_SPOTS.map((s) => (
+            <Link key={s.slug} href={`/travel/sweet-spots/${s.slug}`} className="arow-card">
+              <div className="at">{s.title}</div>
+              <div className="ab">{s.dek}</div>
+              <div className="am">
+                <span className="tg">Sweet spot</span><span className="sep">·</span>
+                <span>{s.program}</span><span className="sep">·</span>
+                <span>{s.read}</span><span className="sep">·</span>
+                <span>{s.date}</span>
+              </div>
+            </Link>
+          ))}
 
           <p className="lede" style={{ marginTop: 20 }}>
             New worked examples land here a couple of times a week, walking through a real redemption on a
