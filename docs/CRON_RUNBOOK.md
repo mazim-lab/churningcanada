@@ -81,8 +81,9 @@ credit-card or bank welcome offers** — those belong in the Cards tab.
 the "Trending Hot Deals" box. Favour high-engagement, on-theme items.
 
 **Steps:**
-1. Open the Hot Deals forum. Identify 3 (default) on-scope product/service deals — high
-   upvotes/replies and genuine value.
+1. Open the Hot Deals forum. Identify 1-2 (default) on-scope product/service deals — high
+   upvotes/replies and genuine value. One or two strong deals is plenty; only post a third
+   if several are truly great. Posting just one, or none when nothing good is live, is fine.
 2. **Open each thread and VERIFY** price, terms, and expiry. Do not trust the title alone.
    (We were once burned by posting plausible-but-unverified placeholder deals — never again.)
 3. Pull the **clean merchant product URL** from the thread's "Deal Link" / "Get This
