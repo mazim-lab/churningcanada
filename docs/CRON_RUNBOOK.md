@@ -37,7 +37,7 @@ Last verified: 2026-06-21.
 
 | Job | Cadence | Cloud-cron friendly? | Why |
 |---|---|---|---|
-| Deals | daily ~2am | **Yes** | RedFlagDeals is fetchable without a logged-in browser |
+| Deals | daily ~2am | **No — needs the local browser (changed 2026-06-29)** | RedFlagDeals now 307-redirects WebFetch to a tollbit paywall (HTTP 402), and merchant prices (Amazon/Costco) must be verified on the page, which needs claude-in-chrome. Run Deals LOCALLY, or stage a draft for review. |
 | News | daily/weekly | **Yes** | WebSearch/WebFetch only |
 | Card data refresh | quarterly | **Partial** | Issuer pages bot-block `WebFetch`; need the residential/Playwright fetch or the real browser to (re)capture `data/raw/cards/*.md`. The *audit/extraction* over already-captured `.md` files IS cloud-friendly. |
 | Portfolio | twice weekly | **No — stays manual** | Needs the user's private Wealthsimple CSVs + all-time return %. A cloud cron has no access to these. Keep manual. |
@@ -47,25 +47,24 @@ Last verified: 2026-06-21.
 - **Repo:** `github.com/mazim-lab/finterminal`. The working tree **is** a git repo with
   a GitHub remote — **ignore the harness env banner if it says "Is a git repository:
   false", that banner is wrong.** `private/` is gitignored (verified with `git check-ignore`).
-- **Active branch:** `redesign-moneyatlas` (the in-progress redesign; not yet merged to
-  `main` as of 2026-06-21). Deploy is on **Vercel**, configured in the Vercel dashboard
-  (there is no `vercel.json` in-repo).
+- **Production branch:** `main` is the Vercel production branch (the redesign was merged
+  2026-06-24). Deploy is on **Vercel**, configured in the dashboard (no `vercel.json` in-repo).
+- **Source of truth = the committed data files.** News, Deals, and Sweet-spot posts render
+  directly from `src/data/news.ts`, `src/data/deals.ts`, and `src/data/sweet-spots.ts`. The
+  old optional Airtable read was retired 2026-06-29; do NOT reintroduce a remote source.
+  Editing these files and pushing to `main` is the entire publish path.
 - **Prerequisites a runner needs:** `python` and Node/`npm` on PATH. The card-page
   recapture step (§3c) needs a real browser (claude-in-chrome) or the Playwright pipeline
   — **a cloud cron has neither**, and issuer pages bot-block `WebFetch`. If a refresh needs
   new `.md` captures, the cron should STOP and open a task for the user rather than fetch
   with WebFetch.
 
-To ship a data update:
-1. Edit on the working branch — **do not commit straight to `main`.** For an isolated
-   automated change, branch off first: `git checkout -b cron/deals-YYYY-MM-DD`.
+To ship a data update (the News, Deals, and Sweet-spot crons AUTO-PUBLISH to production):
+1. Work on `main`. Pull first (`git pull --rebase origin main`) so you are current.
 2. Stage only intended files (e.g. `git add src/data/deals.ts`). **Never `git add private/`.**
-3. Commit with a clear message; push: `git push -u origin <branch>`.
-4. Vercel auto-redeploys on push to its configured branch. **Confirm with the user which
-   branch Vercel deploys to production before relying on unattended push-to-deploy** —
-   the site is currently mid-redesign on `redesign-moneyatlas`, not `main`.
-5. Roll back a bad data push with `git revert <sha>` then push. **Never force-push a
-   shared branch.**
+3. Commit with a clear message; push to main: `git push origin main`.
+4. Vercel auto-redeploys `main` to production within a couple of minutes. No manual deploy.
+5. Roll back a bad push with `git revert <sha>` then push. **Never force-push.**
 
 ---
 
@@ -103,8 +102,12 @@ the "Trending Hot Deals" box. Favour high-engagement, on-theme items.
    Old deals self-archive — you only add new ones and occasionally prune the archive.
 7. Commit & push.
 
-**Cloud note:** a cron agent fetches RFD via WebFetch/WebSearch (works). It cannot drive
-the local Chrome, so it should read thread text via fetch, not the browser extension.
+**Browser required (changed 2026-06-29):** RedFlagDeals now 307-redirects `WebFetch` to a
+tollbit paywall (HTTP 402), so the forum can no longer be read by a headless cloud agent,
+and Amazon/Costco product prices have to be verified on the merchant page. Verify deals
+with the **claude-in-chrome browser**, which means the Deals job should run **locally** (or
+stage a draft for the user) rather than as a headless cloud cron. Never post a price you
+could not load on the merchant's own page.
 
 ---
 
@@ -244,7 +247,36 @@ access to the private brokerage data) — keep it a manual, user-initiated updat
 
 ---
 
-## 5. Quick file map
+## 5. SWEET SPOTS — twice weekly (rotating program)
+
+**File:** `src/data/sweet-spots.ts` (a `SweetSpot[]` plus a `ROTATION` list).
+**Renders at:** `/travel/sweet-spots/<slug>`, listed on the Travel & Points tab tagged "Sweet spot".
+
+Each run posts ONE worked redemption example for the NEXT program in `ROTATION` after the
+most recent `SWEET_SPOTS` entry, looping back to the start.
+
+**Steps:**
+1. Read `src/data/sweet-spots.ts`. Take `SWEET_SPOTS[0].program` (the newest post) and find
+   its index in `ROTATION`. The program for THIS run is the next one in `ROTATION` (wrap to
+   the first after the last). Current order: Aeroplan, Avios, WestJet, Delta, United, Alaska,
+   Flying Blue, then loop.
+2. Research a genuine, currently-valid sweet spot for that program via WebSearch (a specific
+   route and cabin that prices well on the program's own or partner chart). Do NOT invent
+   numbers; treat mileage figures as approximate and tell readers to confirm live pricing.
+3. Write ONE `SweetSpot` object in the HOUSE VOICE (no em dashes, warm, honest caveats),
+   matching the shape and length of the existing entry: `{ slug, program, title, dek, read,
+   date: "Mon YYYY", body (paragraphs separated by blank lines, with a cents-per-point or
+   value example and at least one honest caveat), href?, hrefLabel? }`. Make `slug` unique
+   and descriptive, e.g. `avios-short-haul-yyz-bos-7500`.
+4. PREPEND it to `SWEET_SPOTS` (newest first).
+5. Commit and push to `main` (auto-publishes). The travel page and sitemap pick it up
+   automatically, so there are no other files to touch.
+
+**Cloud-friendly:** yes. Pure WebSearch plus a data-file edit, no browser needed.
+
+---
+
+## 6. Quick file map
 
 | What | Where |
 |---|---|
@@ -254,6 +286,7 @@ access to the private brokerage data) — keep it a manual, user-initiated updat
 | Point valuations (cpp) | `src/data/point-valuations.ts` |
 | Deals | `src/data/deals.ts` + `src/app/deals/page.tsx` |
 | News | `src/data/news.ts` + `src/app/news/page.tsx` |
+| Sweet-spot posts | `src/data/sweet-spots.ts` + `src/app/travel/sweet-spots/[slug]/page.tsx` |
 | Portfolio (% only) | `src/data/portfolio.ts` |
 | CA card source pages | `data/raw/cards/<slug>.md` |
 | US Amex source | `data/raw/md/american-express-us.md` |

@@ -43,3 +43,4 @@ make_affiliate_guide.py
 
 # stray editor temp files
 *.tmp.*
+tsconfig.tsbuildinfo

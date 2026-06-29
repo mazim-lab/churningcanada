@@ -1,23 +1,20 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { NEWS } from "@/data/news";
-import { getNewsRemote } from "@/data/airtable";
 
-// Build the known (local) slugs; let new Airtable stories render on demand.
+// All stories are known at build time from the committed news list.
 export function generateStaticParams() {
   return NEWS.map((n) => ({ slug: n.slug }));
 }
-export const dynamicParams = true;
-export const revalidate = 60;
+export const dynamicParams = false;
 
-async function findItem(slug: string) {
-  const items = (await getNewsRemote()) ?? NEWS;
-  return items.find((n) => n.slug === slug) ?? null;
+function findItem(slug: string) {
+  return NEWS.find((n) => n.slug === slug) ?? null;
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const item = await findItem(slug);
+  const item = findItem(slug);
   if (!item) return { title: "Story Not Found — FinTerminal" };
   return {
     title: `${item.headline} — FinTerminal`,
@@ -27,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function NewsStoryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const item = await findItem(slug);
+  const item = findItem(slug);
 
   if (!item) {
     return (

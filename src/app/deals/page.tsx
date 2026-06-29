@@ -1,15 +1,14 @@
 import type { Deal } from "@/data/deals";
 import { DEALS } from "@/data/deals";
-import { getDealsRemote } from "@/data/airtable";
 
 export const metadata = {
   title: "Deals — FinTerminal",
   description: "A short, hand-picked list of genuinely good deals for Canadians, refreshed through the day. Links go straight to the merchant.",
 };
 
-// Re-check often so new Airtable posts appear within a minute and deals roll
-// into the archive as their expiry passes, without a fresh deploy.
-export const revalidate = 60;
+// Re-render hourly so deals roll into the archive as their expiry passes
+// (compared in America/Toronto), without needing a fresh deploy.
+export const revalidate = 3600;
 
 // Today's date in Canadian time, as "YYYY-MM-DD" (en-CA formats this way).
 function todayISO(): string {
@@ -54,8 +53,7 @@ function DealCard({ d }: { d: Deal }) {
 
 export default async function DealsPage() {
   const today = todayISO();
-  // Airtable when configured, otherwise the committed list.
-  const source = (await getDealsRemote()) ?? DEALS;
+  const source = DEALS;
   const active = source.filter((d) => !isExpired(d, today));
   // Most-recently-expired first.
   const archived = source.filter((d) => isExpired(d, today)).sort((a, b) =>

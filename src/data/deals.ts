@@ -24,6 +24,41 @@ export interface Deal {
 // to the merchant. Prices below were confirmed on the listed date.
 export const DEALS: Deal[] = [
   {
+    title: "Helinox Chair One lightweight camping chair, 2-pack",
+    merchant: "Costco",
+    url: "https://www.costco.ca/p/-/helinox-chair-one-original-lightweight-compact-collapsible-camping-chair-2-pack/4000420308",
+    price: "$199.99",
+    was: "$239.99",
+    blurb:
+      "Helinox makes the camping chair that backpackers and patio sitters quietly obsess over, the kind that folds down to the size of a water bottle and still holds you up properly, and Costco has a two pack for $199.99, which is $40 off. Buy these one at a time at an outdoor shop and you are usually looking at well over a hundred each, so getting a matched pair for two hundred is the real draw here, perfect for the cottage, the campsite, or a couple of chairs you can toss in the trunk and forget about. One honest note so you go in clear eyed: this is $40 off Costco's own price rather than some blowout, so think of it as a fair deal on a genuinely good chair, not a fire sale. It is online only and the offer runs through July 5.",
+    category: "Outdoors",
+    posted: "Jun 29, 2026",
+    expires: "ends Jul 5",
+    expiresAt: "2026-07-05",
+  },
+  {
+    title: "Savino 10x12 hardtop gazebo with netting",
+    merchant: "Costco",
+    url: "https://www.costco.ca/savino---gazebo-10x12-black-pc-8mm-with-nylon-net.product.4201000439.html",
+    price: "$849.97",
+    was: "$1,699.99",
+    blurb:
+      "If you have been pricing out a permanent shade structure for the deck or backyard, this one is hard to ignore: Costco has the Savino 10x12 hardtop gazebo down to $849.97 from $1,699.99, a clean half off. It is the proper kind with an 8mm polycarbonate roof and built in netting, so you get real shade that stands up to sun and rain and a screen to keep the bugs out on summer evenings, and at this price it undercuts most of what you will find elsewhere by a wide margin. Two honest notes before you commit. This is a last chance clearance item, which means once the stock is gone it is gone and there is no set end date, so it can disappear quietly. And it is a big build that needs a flat spot and proper anchoring, so plan for an afternoon of assembly and a helper or two.",
+    category: "Home & Garden",
+    posted: "Jun 29, 2026",
+  },
+  {
+    title: "9.26-inch wireless CarPlay & Android Auto screen",
+    merchant: "Amazon",
+    url: "https://www.amazon.ca/dp/B0DNZMCN1R",
+    price: "~$100",
+    was: "$138.99",
+    blurb:
+      "If you are driving an older car that never came with CarPlay, a portable screen like this is a genuinely productive little buy that drags your dashboard into the modern era for about a hundred dollars. It runs wireless Apple CarPlay and Android Auto on a 9.26 inch display, supports a backup camera, and handles maps, music, and hands free calls without you ever touching your phone. It lists at $138.99 with a 28% off coupon you tick at checkout, which brings it down to roughly $100. One honest catch so you buy with eyes open: this is an off brand unit from a third party seller rather than a name you will recognize, and the price hinges entirely on that checkout coupon, so make sure the 28% is actually showing before you pay. It is also a screen that mounts on your dash, not a built in head unit.",
+    category: "Electronics",
+    posted: "Jun 29, 2026",
+  },
+  {
     title: "DEWALT 20V MAX cordless tire inflator (DCC020IB)",
     merchant: "Amazon",
     url: "https://www.amazon.ca/dp/B07H39S9JQ",

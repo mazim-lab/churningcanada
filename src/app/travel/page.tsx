@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SWEET_SPOTS } from "@/data/sweet-spots";
 
 export const metadata = {
   title: "Travel & Points — FinTerminal",
@@ -6,6 +7,22 @@ export const metadata = {
 };
 
 const ARTICLES = [
+  {
+    slug: "rbc-avion-to-aadvantage",
+    title: "How to transfer RBC Avion points to American Airlines AAdvantage",
+    dek: "Avion is one of the few Canadian programs that feeds American Airlines, though the rate is a real 1 to 0.7. Here is which cards qualify, the exact steps, and the timing trick that softens the haircut.",
+    tag: "How-to",
+    read: "8 min read",
+    date: "Jun 2026",
+  },
+  {
+    slug: "aadvantage-sweet-spots",
+    title: "AAdvantage sweet spots: redeeming American Airlines miles",
+    dek: "AAdvantage miles shine on partner airlines, not on American's own dynamic pricing. Here are the genuine sweet spots, from business class to Europe to Qatar Qsuite, and how to dodge the surcharge traps.",
+    tag: "Strategy",
+    read: "10 min read",
+    date: "Jun 2026",
+  },
   {
     slug: "avios-sweet-spots-rbc-avion-transfer",
     title: "Avios sweet spots, and converting RBC Avion to Avios",
@@ -52,9 +69,27 @@ export default function TravelPage() {
             </Link>
           ))}
 
+          {SWEET_SPOTS.length > 0 && (
+            <>
+              <div className="cd-sec" style={{ marginTop: 22 }}>Sweet spots</div>
+              {SWEET_SPOTS.map((s) => (
+                <Link key={s.slug} href={`/travel/sweet-spots/${s.slug}`} className="arow-card">
+                  <div className="at">{s.title}</div>
+                  <div className="ab">{s.dek}</div>
+                  <div className="am">
+                    <span className="tg">Sweet spot</span><span className="sep">·</span>
+                    <span>{s.program}</span><span className="sep">·</span>
+                    <span>{s.read}</span><span className="sep">·</span>
+                    <span>{s.date}</span>
+                  </div>
+                </Link>
+              ))}
+            </>
+          )}
+
           <p className="lede" style={{ marginTop: 20 }}>
-            More guides coming, including a plain-English tour of Star Alliance partners worth knowing and how
-            to find award space without losing an afternoon to it.
+            New worked examples land here a couple of times a week, walking through a real redemption on a
+            different program each time.
           </p>
         </div>
       </main>
