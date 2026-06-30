@@ -129,6 +129,7 @@ a.cn:hover{color:var(--emerald)}
 .newsfeed{font-family:var(--mono);font-size:14px;margin-top:4px;min-height:340px}
 .nline{display:flex;gap:16px;padding:9px 2px;border-bottom:1px solid var(--line);align-items:baseline}
 .nts{color:var(--emerald);font-weight:700;flex:none;font-variant-numeric:tabular-nums}
+.ndate{color:var(--ink-dim);font-weight:600;flex:none;font-variant-numeric:tabular-nums}
 .ntext{color:var(--ink)}
 .cursor{display:inline-block;color:var(--ink);font-weight:700;animation:blink 1.05s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
@@ -345,3 +346,8 @@ details.coll>summary.cd-sec:hover{color:var(--emerald)}
 .nact:hover{text-decoration:underline}
 .nact.nact-alt{color:var(--ink-soft);font-weight:500}
 .nact.nact-alt:hover{color:var(--emerald)}
+/* "Load more" pagination button (news stories, guides, sweet spots) */
+.loadmore{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--emerald);
+  background:var(--panel);border:1px solid var(--line-strong);border-radius:8px;padding:9px 16px;cursor:pointer;
+  margin:3px 0 16px;letter-spacing:.02em}
+.loadmore:hover{background:var(--panel-2);border-color:var(--emerald)}

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { LoadMoreCards } from "@/components/LoadMoreCards";
 
 export const metadata = {
   title: "Personal Finance — FinTerminal",
@@ -32,17 +32,16 @@ export default function PersonalFinancePage() {
           <div className="head"><h1>Personal Finance</h1></div>
 
           <div className="cd-sec">Guides</div>
-          {ARTICLES.map((a) => (
-            <Link key={a.slug} href={`/personal-finance/${a.slug}`} className="arow-card">
-              <div className="at">{a.title}</div>
-              <div className="ab">{a.dek}</div>
-              <div className="am">
-                <span className="tg">{a.tag}</span><span className="sep">·</span>
-                <span>{a.read}</span><span className="sep">·</span>
-                <span>{a.date}</span>
-              </div>
-            </Link>
-          ))}
+          <LoadMoreCards
+            cards={ARTICLES.map((a) => ({
+              href: `/personal-finance/${a.slug}`,
+              title: a.title,
+              dek: a.dek,
+              tag: a.tag,
+              meta: [a.read, a.date],
+            }))}
+            pageSize={10}
+          />
 
           <p className="lede" style={{ marginTop: 20 }}>
             More on the way, including TFSA versus RRSP in real numbers, a calm guide to your first taxable

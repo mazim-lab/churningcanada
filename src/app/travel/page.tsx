@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { SWEET_SPOTS } from "@/data/sweet-spots";
+import { LoadMoreCards } from "@/components/LoadMoreCards";
 
 export const metadata = {
   title: "Travel & Points — FinTerminal",
@@ -57,30 +57,25 @@ export default function TravelPage() {
           <div className="head"><h1>Travel &amp; Points</h1></div>
 
           <div className="cd-sec">Guides</div>
-          {ARTICLES.map((a) => (
-            <Link key={a.slug} href={`/travel/${a.slug}`} className="arow-card">
-              <div className="at">{a.title}</div>
-              <div className="ab">{a.dek}</div>
-              <div className="am">
-                <span className="tg">{a.tag}</span><span className="sep">·</span>
-                <span>{a.read}</span><span className="sep">·</span>
-                <span>{a.date}</span>
-              </div>
-            </Link>
-          ))}
-
-          {SWEET_SPOTS.map((s) => (
-            <Link key={s.slug} href={`/travel/sweet-spots/${s.slug}`} className="arow-card">
-              <div className="at">{s.title}</div>
-              <div className="ab">{s.dek}</div>
-              <div className="am">
-                <span className="tg">Sweet spot</span><span className="sep">·</span>
-                <span>{s.program}</span><span className="sep">·</span>
-                <span>{s.read}</span><span className="sep">·</span>
-                <span>{s.date}</span>
-              </div>
-            </Link>
-          ))}
+          <LoadMoreCards
+            cards={[
+              ...ARTICLES.map((a) => ({
+                href: `/travel/${a.slug}`,
+                title: a.title,
+                dek: a.dek,
+                tag: a.tag,
+                meta: [a.read, a.date],
+              })),
+              ...SWEET_SPOTS.map((s) => ({
+                href: `/travel/sweet-spots/${s.slug}`,
+                title: s.title,
+                dek: s.dek,
+                tag: "Sweet spot",
+                meta: [s.program, s.read, s.date],
+              })),
+            ]}
+            pageSize={10}
+          />
 
           <p className="lede" style={{ marginTop: 20 }}>
             New worked examples land here a couple of times a week, walking through a real redemption on a

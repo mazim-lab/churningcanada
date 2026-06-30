@@ -128,7 +128,10 @@ within the last 2 days (ideally same day); verify each one's publication date. D
 any story already in the array. If nothing new qualifies, ADD NOTHING and leave the feed
 unchanged (no padding, no rewriting). The only items ever removed were the stale Jun 1
 Aeroplan chart and Jan Air Transat (a one-time cleanup on 2026-06-30); do not remove anything
-else. Evergreen or structural changes belong in the guides, not the newswire.
+else. Evergreen or structural changes belong in the guides, not the newswire. Each item's `date`
+is a full day-level date in the form `Mon D, YYYY` (e.g. `Jun 30, 2026`) = the day the story
+hit the wire; the ticker shows just the month and day. The ticker shows the 5 newest items;
+the full archive renders below with a "Load more" button.
 
 **Steps:**
 1. Read the EXISTING `NEWS` array first. Via WebSearch, find **Canada-first** items PUBLISHED
