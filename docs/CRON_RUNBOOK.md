@@ -121,15 +121,19 @@ own page.
 
 **File:** `src/data/news.ts` (a `NewsItem[]`). **Page:** `src/app/news/page.tsx`.
 
-**FRESHNESS (strict, set 2026-06-30): include ONLY items published within the LAST 2 DAYS.**
-Verify each item's publication date and DROP anything older, even if still notable. Do NOT
-pad to a target count: a handful (2-5) of genuinely fresh items is normal, fewer is fine,
-and making no change is correct if nothing new qualifies. Evergreen or structural changes
-(e.g. an award-chart revamp) belong in the guides, not the newswire.
+**APPEND-ONLY ARCHIVE + freshness (set 2026-06-30): the `NEWS` array is a PERMANENT archive.
+NEVER delete, reorder, or rewrite existing items** (people browse the news history). Each
+refresh only ADDS new items to the TOP. An item is eligible to add only if it was PUBLISHED
+within the last 2 days (ideally same day); verify each one's publication date. De-dupe: skip
+any story already in the array. If nothing new qualifies, ADD NOTHING and leave the feed
+unchanged (no padding, no rewriting). The only items ever removed were the stale Jun 1
+Aeroplan chart and Jan Air Transat (a one-time cleanup on 2026-06-30); do not remove anything
+else. Evergreen or structural changes belong in the guides, not the newswire.
 
 **Steps:**
-1. Gather the **Canada-first** items from the LAST 2 DAYS via WebSearch (cards/points/
-   travel/personal finance relevant to Canadians); a handful, not a fixed count.
+1. Read the EXISTING `NEWS` array first. Via WebSearch, find **Canada-first** items PUBLISHED
+   in the last 2 days (cards/points/travel/personal finance) that are NOT already present, and
+   PREPEND them while keeping every existing item.
 2. For each, set `exclusive: [...]` (crediting PoT/OMAAT/DoC by name) **only** if the
    story is genuinely exclusive to that outlet. Otherwise write it as our own reporting
    with `sourceLabel` = the issuer/airline.
