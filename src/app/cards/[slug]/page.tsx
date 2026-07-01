@@ -241,13 +241,16 @@ export default async function CardDetailPage({ params }: { params: Promise<{ slu
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
+            // A credit card is a financial product, not a retail Product. Using
+            // schema.org/CreditCard (no offers/price) avoids Google's Merchant-listing
+            // and Product-snippet requirements (image, availability, reviews, etc.),
+            // which do not apply to cards and which we will not fabricate.
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'Product',
+              '@type': 'CreditCard',
               name: card.name,
               description: `${card.name} by ${card.issuer}. ${card.card_type} credit card.`,
-              brand: { '@type': 'Brand', name: card.issuer },
-              offers: { '@type': 'Offer', price: card.annual_fee, priceCurrency: card.country === 'CA' ? 'CAD' : 'USD' },
+              provider: { '@type': 'Organization', name: card.issuer },
             }),
           }}
         />
