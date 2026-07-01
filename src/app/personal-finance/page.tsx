@@ -7,6 +7,14 @@ export const metadata = {
 
 const ARTICLES = [
   {
+    slug: "pay-bills-with-credit-card-canada",
+    title: "Paying rent, taxes, and your mortgage with a credit card in Canada",
+    dek: "Third-party services will run your rent, taxes, or mortgage through your card for a fee of about 1.75 to 2.99 percent. Here is the honest math, the services (Chexy, PaySimply, Plastiq), and the three cases where it actually pays off.",
+    tag: "Cards",
+    read: "10 min read",
+    date: "Jul 2026",
+  },
+  {
     slug: "costco-membership-worth-it-canada",
     title: "Does a Costco membership pay for itself?",
     dek: "A clear, no-hype look at Costco Canada's fees, the 2% Executive reward, and where the savings really come from, so you can run the breakeven math for your own household.",

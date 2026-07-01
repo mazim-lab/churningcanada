@@ -23,6 +23,7 @@ const STATIC_PATHS = [
   "/guides/us-cards-for-canadians/interactive",
   "/personal-finance/smith-manoeuvre",
   "/personal-finance/costco-membership-worth-it-canada",
+  "/personal-finance/pay-bills-with-credit-card-canada",
   "/travel/aeroplan-sweet-spots",
   "/travel/amex-mr-to-aeroplan",
   "/travel/avios-sweet-spots-rbc-avion-transfer",
